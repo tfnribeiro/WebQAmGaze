@@ -77,3 +77,7 @@ Then one can use the latest .HTML file as a template, making note to update the 
 When loading the collected data with **root/scripts/study.py [FOLDER_NAME]**, the user is prompted if they want to generate the word boundaries for this set. This is then used to calculate the target dictionaries, and should be done once. Afterwards, the data will be loaded and any errors will be shown in the console. Check the list for known errors for possible explanations. The user is then prompted to correct the set data, by being shown the response from participants and the Dataset's official response. As answers are corrected, these are stored and re-used in case participants use the same answer. 
 
 ### Known Errors:
+
+### License:
+
+CC-By Attribution 4.0 International
