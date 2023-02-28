@@ -1,0 +1,118 @@
+{% extends 'layouts/layout.html' %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block body %}
+
+
+
+<!--
+	The ad.html has a very specific format.
+
+	Really there are two "ads" contained within this file.
+
+	The first ad displays to participants who are browsing
+	the Amazon Mechanical Turk site but have not yet accepted
+	your hit.
+
+	The second part of the ad display after the person selected
+	"Accept HIT" on the Amazon website.  This will reload the
+	ad and will display a button which, when clicked, will pop
+	open a new browser window pointed at your local psiTurk
+	server (assuming it is running and accessible to the Internet).
+
+	See comments throughout for hints
+
+-->
+
+<div id="container-not-an-ad" class="media">
+	<div class="media-left pull-left" href="#">
+		<!-- REPLACE THE LOGO HERE WITH YOUR  UNIVERSITY, LAB, or COMPANY -->
+		<img id="adlogo" src="{{ server_location }}/static/images/ku_logo_dk_v.png" alt="Lab Logo" />
+	</div>
+	<div class="media-body">
+
+		<!--
+								If assignmentid is "ASSIGNMENT_ID_NOT_AVAILABLE"
+								it means the participant has NOT accepted your hit.
+								This should display the typical advertisement about
+								your experiment: who can participate, what the
+								payment is, the time, etc...
+
+							-->
+		{% if assignmentid == "ASSIGNMENT_ID_NOT_AVAILABLE" %}
+
+		<h1>Call for participants</h1>
+		<p>
+			The University of Copenhagen is looking for online participants for an eye-tracking experiment.
+			For this task you will be reading <b>Russian texts</b> and you need to meet the following requirements:
+		<ul>
+			<li>You are at least 18 years old;</li>
+			<li>You are on a Desktop/Laptop device with a webcam available;</li>
+			<li>Your screen needs to have a resolution of at least 1280x720 or higher;</li>
+			<li>You speak <b>Russian fluently</b>.</li>
+		</ul>
+		The task will take at most <b>30 minutes and will pay 7.00$, if you get 50% or more of the questions correct.</b> There with a possibility of bonus based on the
+		correct answers, these are the criteria:
+		<ul>
+			<li>If you have <b>60% or more of the questions correct</b>, you will be awarded <b>a 1.00$ bonus</b>;</li>
+			<li>If you have <b>75% or more of the questions correct</b>, you will be awarded <b>a 2.00$	bonus.</b></li>
+		</ul>
+		</p>
+		<div class="alert alert-danger">
+			<strong>For the HIT to be approved you need to ensure the following:</strong>
+			<ul>
+				<li>You have not completed this task before.</li>
+				<li>You have at least 50% of the questions correct.</li>
+				<li>When the eye-tracking software starts, your browser will be set in Fullscreen. <b>You will need to keep the browser window in Fullscreen and in focus until you complete this experiment</b>;</li>
+				<li><b>This HIT takes about 20-30 minutes to complete, including pauses during the task</b>. We cannot compensate you if the timer runs out and you haven't completed the task.</li>
+			</ul>
+			If you have already completed this task before the system will not allow you to run again. If this looks familiar please return the	HIT so someone else can participate.
+		</div>
+		<p>
+			Otherwise, please click the "Accept HIT" button on the Amazon site
+			above to begin the task.
+		</p>
+
+
+		{% else %}
+
+		<!--
+									OTHERWISE
+									If assignmentid is NOT "ASSIGNMENT_ID_NOT_AVAILABLE"
+									it means the participant has accepted your hit.
+									You should thus show them instructions to begin the
+									experiment ... usually a button to launch a new browser
+									window pointed at your server.
+
+									It is important you do not change the code for the
+									openwindow() function below if you want you experiment
+									to work.
+								-->
+		<h1>Thank you for accepting this HIT!</h1>
+		<p>
+			By clicking the following URL link, you will be taken to the experiment,
+			including complete instructions and an informed consent agreement.
+		</p>
+		<script type="text/javascript">
+			function openwindow() {
+				popup = window.open('{{ server_location }}/consent?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}', 'Popup', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=' + 1024 + ',height=' + 768 + '');
+			}
+		</script>
+		<div class="alert alert-warning">
+			<b>Warning</b>: Please disable pop-up blockers before continuing.
+		</div>
+
+		<button type="button" class="btn btn-primary btn-lg" onClick="openwindow();">
+			Begin Experiment
+		</button>
+
+
+		{% endif %}
+		<!--
+								endif
+							-->
+	</div>
+</div>
+{% endblock %}

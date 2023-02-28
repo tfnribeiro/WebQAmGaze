@@ -1,0 +1,17 @@
+{% extends 'layouts/layout.html' %}
+{% block body %}
+		<div id="container-not-an-ad" class="media">
+			<div class="media-left pull-left" href="#">
+						<!-- REPLACE THE LOGO HERE WITH YOUR  UNIVERSITY, LAB, or COMPANY -->
+						<img id="adlogo" src="/static/images/ku_logo_dk_v.png" alt="KU Logo"/>
+			</div>
+			<div class="media-body">
+						<h1>Thanks for your participation!</h1>
+						<hr />
+					    <div class="alert alert-warning">
+					    	Our records suggest you have already completed this task.  Thank you.
+					    	You cannot complete the same experiment twice.
+					    </div>
+			</div>
+		</div>
+{% endblock %}

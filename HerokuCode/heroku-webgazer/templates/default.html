@@ -1,0 +1,36 @@
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+		<div id="container-not-an-ad" class="media">
+			<div class="media-left pull-left" href="#">
+						<!-- REPLACE THE LOGO HERE WITH YOUR  UNIVERSITY, LAB, or COMPANY -->
+						<img id="adlogo" src="/static/images/ku_logo_dk_v.png" alt="KU Logo"/>
+			</div>
+			<div class="media-body">
+				<h1>Welcome to the Eye-Tracking Experiment!</h1>
+				<hr />
+			    <div class="alert alert-warning">
+					Begin by viewing the <a href="#" id="ad-href">ad</a>.
+					<script type="text/javascript">
+					function makeid()
+					{
+						var text = "";
+						var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+						for( var i=0; i < 5; i++ )
+							text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+						return text;
+					}
+
+					var assignmentId = "debug" + makeid();
+					var hitId = "debug" + makeid();
+					var workerId = "debug" + makeid();
+					var href = "/ad?assignmentId=" + assignmentId + "&hitId=" + hitId + "&workerId=" + workerId + "&mode=debug"
+
+					document.getElementById('ad-href').setAttribute('href', href);
+					</script>
+				</div>
+			</div>
+		</div>
+{% endblock %}
