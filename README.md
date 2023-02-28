@@ -1,6 +1,9 @@
 # WebQAmGaze
 
-Crowdsourced Eye-tracking while reading dataset using Webgazer. 
+
+Crowdsourced multilingual low-cost eye-tracking dataset while reading dataset using Webgazer. 
+
+Find more about the project here: https://cst.ku.dk/english/projects/low-cost-eye-tracking-corpus-for-explainable-natural-language-processing/
 
 ## Depedencies:
 
