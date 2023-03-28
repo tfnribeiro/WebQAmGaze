@@ -69,6 +69,10 @@ Not-Approved: **177**, had less than 50% of answers correct.
 - **XQuAD**: https://github.com/deepmind/xquad
 - **MECO**: https://meco-read.com/ 
 
+### Libraries used in this project:
+- **jsPsych**: https://github.com/jspsych/jsPsych
+- **psiTurk**: https://github.com/NYUCCL/psiTurk
+
 ### Generating an experiment:
 
 Each HTML in **root/generate_set** 'pilot_webgazer_experiment_dev_[LANG].html', contains all the XQuAD filtered data and when run will create an experiment of 10 questions, 1 MECO, 9 XQUAD texts based on a seed. When opened in the browser, the browser development tools are used to set the page to be 1280x720 (this is done to ensure consistency). Then, the experiment can be skipped through and images are automatically downloaded. At the end choose .CSV. All these files, should then be copied to a folder like the ones in root/python_script/experiment_data, and can then be used to set-up the experiment.
