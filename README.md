@@ -51,7 +51,7 @@ Not-Approved: **177**, had less than 50% of answers correct.
 
 These were obtained using *spaCy* (https://spacy.io/) pipelines with the exception of Turkish, where *TrTokenizer* (https://github.com/apdullahyayik/TrTokenizer) was used.
 
-| Language|Original Dataset| Unique Texts | Char Count   |   Token Count |   Token AVG Length |   Sentence Count |Average Token per Sentence|                       
+| Language|Original Dataset| Unique Texts | Char Count   |   Token Count |   Token AVG Length |   AVG Sentence Count |AVG Token per Sentence|                       
 |:-------|:----------------|-------------:|-------------:|--------------:|-------------------:|-----------------:|---------------------------:|   
 |German  | MECO            |            2 |      1185.00    |        185.00    |               5.52 |             9.00    |                        20.72 |
 |German  | XQuAD           |           45 |       508.87 |         82.04 |               5.37 |             3.22 |                        29.10  |
