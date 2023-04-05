@@ -90,3 +90,16 @@ When loading the collected data with **root/scripts/study.py [FOLDER_NAME]**, th
 ### License:
 
 CC-By Attribution 4.0 International
+
+### Paper:
+
+```
+@misc{ribeiro2023webqamgaze,
+      title={WebQAmGaze: A Multilingual Webcam Eye-Tracking-While-Reading Dataset}, 
+      author={Tiago Ribeiro and Stephanie Brandl and Anders Søgaard and Nora Hollenstein},
+      year={2023},
+      eprint={2303.17876},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
