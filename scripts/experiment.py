@@ -434,7 +434,8 @@ class experiment:
     def __preprocess_load_dataframe(self, filepath):
         """
             When loading the dataframe we need to update the second trial to 
-            represent that it was a "hunt" task, instead of normal reading.
+            represent that it was a "hunt" (we changed this name to 'Information Searching')
+            task, instead of normal reading.
 
             For this, detect if there are 2 duplicated trials with qa in the name.
         """
@@ -459,7 +460,18 @@ class experiment:
 
     def __preprocess_dataframe(self, dataframe):
         """
-            Same as __preprocess_load_dataframe, but takes a dataframe instead.
+            Pre-processing the dataframe containing the trial data.
+            In psiturk, we had users that re-tried the experiment multiple times, so first we check
+            if this is the case.
+
+            First the DataFrame is checked for if the participants have reloaded the experiment.
+            This is done with the "preload" trial, which occurs before displaying any screens.
+
+            If so, then we find if the participant repeated trials and if so we remove them from the Data.
+            This keeps the first attempt at each question.
+
+            As a final step, we set the duplicated questions corresponding to the "hunt" trials with the
+            correct name (we changed this name to 'Information Searching').
         """
         raw_data = dataframe
         completed_experiment = False
