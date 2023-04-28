@@ -77,7 +77,7 @@ These were obtained using *spaCy* (https://spacy.io/) pipelines with the excepti
 
 ### Generating an experiment:
 
-Each HTML in **root/generate_set** 'pilot_webgazer_experiment_dev_[LANG].html', contains all the XQuAD filtered data and when run will create an experiment of 10 questions, 1 MECO, 9 XQUAD texts based on a seed. When opened in the browser, the browser development tools are used to set the page to be 1280x720 (this is done to ensure consistency). Then, the experiment can be skipped through and images are automatically downloaded. At the end choose .CSV. All these files, should then be copied to a folder like the ones in root/python_script/experiment_data, and can then be used to set-up the experiment.
+Each HTML in **root/generate_set** 'pilot_webgazer_experiment_dev_[LANG].html', contains all the XQuAD filtered data and when run will create an experiment of 10 questions, 1 MECO, 9 XQUAD texts based on a seed. When opened in the browser, the browser development tools are used to set the page to be 1280x720 (this is done to ensure consistency). Then, the experiment can be skipped through and images are automatically downloaded. At the end choose .CSV. All these files, should then be copied to a folder like the ones in **root/scripts/experiment_data**, and can then be used to set-up the experiment.
 
 To generate the experiment, run the script **root/scripts/expriment.py [FOLDER_NAME]** and the script will generate a .js file with all the trials linking to the images in this folder. This script expect the images to be of 1280x720 and the names to match those of the trials in the .CSV.
 
