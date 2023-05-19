@@ -799,7 +799,6 @@ if __name__ == '__main__':
             set_data.load_psiturk(os.path.join("experiment_data",experiment_name,"trialdata.csv"))
             set_data.get_study_targets(os.path.join("experiment_data",experiment_name,"webgazer-sample-data.csv"))
             set_data.set_img_directory(os.path.join("experiment_data",experiment_name))
-            set_data = set_data.get_study_settings(os.path.join("experiment_data",experiment_name,"webgazer-sample-data.csv"))
 
             if len(args) > 1 and "recreate-set" in args[1]:
                 test_recreate_set = [name for name in set_data[set_data.trial_name.notna()].trial_name]
