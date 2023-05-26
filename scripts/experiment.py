@@ -15,6 +15,8 @@ import regex as re
 from matplotlib import cm
 import pickle
 import sys
+import pytesseract
+from pytesseract import Output
 import pandas as pd
 import utils
 
@@ -31,7 +33,7 @@ PX_TOLERANCE_COUNT_FIXATIONS = 0
 
 ## These resolutions were extracted from: https://www.screenresolution.org/
 ## Regex was used to capture all and compile them into a file.
-with open('all_resolution.pkl','rb') as f:
+with open('all_resolution.txt','rb') as f:
    ALL_RESOLUTIONS_SET = pickle.load(f)
 
 def to_JSON_dict(dictionary_to_convert):
@@ -299,88 +301,50 @@ class experiment:
             # Each trial
             trial = filter_webgaze_trials.iloc[i_row]
             # Filtering the data points of the eye-tracker
-            if self.__is_psiturk:
-                # Psiturk data is in a dictionary.
-                webgazer_target_list = []
-                webgazer_data_filter = trial["webgazer_data"]
-                eye_tracking_data_post_processed = [
-                    [point["x"],point["y"],point["t"]] for point in webgazer_data_filter]
-                eye_tracking_data_post_processed = np.array(
-                    eye_tracking_data_post_processed)
-                if len(eye_tracking_data_post_processed) == 0:
-                    utils.log_error("NO GAZE DATA FOR TRIAL.", utils.Error.ERROR, self.worker_id, trial.trial_name)
-                    #print(f"############## {self.worker_id}: HAS NO GAZE DATA FOR TRIAL: {trial.trial_name} #################")
+                
+            # Psiturk data is in a dictionary.
+            webgazer_target_list = []
+            webgazer_data_filter = trial["webgazer_data"]
+            target_dictionary = trial["webgazer_targets"]
 
-                for target_name, dict_vals in trial["webgazer_targets"].items():
-                    # name, x, y, width, height, top, right, bottom, left
-                    target_webgazer = WebgazeTarget(
-                        target_name, dict_vals['x'], dict_vals['y'], dict_vals['width'],
-                            dict_vals['height'], dict_vals['top'], dict_vals['right'], dict_vals['bottom'], dict_vals['left'])
-                    webgazer_target_list.append(target_webgazer)
-                if trial.isna()["trial_name"]:
-                    self.webgazer_data[str(
-                        trial["trial_index"])] = eye_tracking_data_post_processed
-                    self.webgazer_targets[str(
-                        trial["trial_index"])] = webgazer_target_list
-                else:
-                    self.webgazer_data[str(
-                        trial["trial_name"])] = eye_tracking_data_post_processed
-                    self.webgazer_targets[str(
-                        trial["trial_name"])] = webgazer_target_list
+            # In cognition data is a str that needs to be made into a JSON file.
+            if not self.is_psiturk:
+                webgazer_data_filter = json.loads(webgazer_data_filter)
+                target_dictionary  = json.loads(target_dictionary)
+                if self.__is_dev:
+                    target_dictionary = {k.replace("#",""):v for k,v in target_dictionary.items()}
+                #webgazer_data_filter = [json.loads(point) for point in webgazer_data_filter]
+            
+            eye_tracking_data_post_processed = [
+                [point["x"],point["y"],point["t"]] for point in webgazer_data_filter]
+            eye_tracking_data_post_processed = np.array(
+                eye_tracking_data_post_processed)
+            if len(eye_tracking_data_post_processed) == 0 and not self.__is_dev:
+                utils.log_error("NO GAZE DATA FOR TRIAL.", utils.Error.ERROR, self.worker_id, trial.trial_name)
+                #print(f"############## {self.worker_id}: HAS NO GAZE DATA FOR TRIAL: {trial.trial_name} #################")
+
+            for target_name, dict_vals in target_dictionary.items():
+                # name, x, y, width, height, top, right, bottom, left
+                target_webgazer = WebgazeTarget(
+                    target_name, dict_vals['x'], dict_vals['y'], dict_vals['width'],
+                        dict_vals['height'], dict_vals['top'], dict_vals['right'], dict_vals['bottom'], dict_vals['left'])
+                webgazer_target_list.append(target_webgazer)
+            if trial.isna()["trial_name"]:
+                self.webgazer_data[str(
+                    trial["trial_index"])] = eye_tracking_data_post_processed
+                self.webgazer_targets[str(
+                    trial["trial_index"])] = webgazer_target_list
             else:
-                # Cognition Data had to be parsed manually.
-                webgazer_data_filter = trial["webgazer_data"].split(",{")
-                webgazer_data_filter = [line.split(
-                    ",") for line in webgazer_data_filter]
-                # Filtering the webgazer targets (title, properties)
-                webgazer_targets_filter = trial["webgazer_targets"].split("#")[
-                    1:]
-                # List to collect data points tracked
-                eye_tracking_data_post_processed = []
-                # List to collect targets in trial
-                webgazer_target_list = []
-                for target in webgazer_targets_filter:
-                    filter_target = target.split(":{")
-                    target_name = filter_target[0].replace("\"", "")
-                    parameters = filter_target[1].split(",\"")
-                    ready_params = []
-                    for param in parameters:
-                        param_split = param.split(":")
-                        if len(param_split) < 2:
-                            continue
-                        param_val = float(param_split[1].replace("}", ""))
-                        ready_params.append(param_val)
-                    x, y, width, height, top, right, bottom, left = ready_params
-                    target_webgazer = WebgazeTarget(
-                        target_name, x, y, width, height, top, right, bottom, left)
-                    webgazer_target_list.append(target_webgazer)
-                for data_point in webgazer_data_filter:
-                    new_data_point = []
-                    if data_point[0] == '[]':
-                        # In case it is empty:
-                        break
-                    for data in data_point:
-                        new_data_point.append(int(data.replace('\'', "").replace(
-                            "}", "").replace("]", "").split(":")[1]))
-                    eye_tracking_data_post_processed.append(new_data_point)
-                eye_tracking_data_post_processed = np.array(
-                    eye_tracking_data_post_processed)
-                if trial.isna()["trial_name"]:
-                    self.webgazer_data[str(
-                        trial["trial_index"])] = eye_tracking_data_post_processed
-                    self.webgazer_targets[str(
-                        trial["trial_index"])] = webgazer_target_list
-                else:
-                    self.webgazer_data[str(
-                        trial["trial_name"])] = eye_tracking_data_post_processed
-                    self.webgazer_targets[str(
-                        trial["trial_name"])] = webgazer_target_list
+                self.webgazer_data[str(
+                    trial["trial_name"])] = eye_tracking_data_post_processed
+                self.webgazer_targets[str(
+                    trial["trial_name"])] = webgazer_target_list
 
     def __load_experiment_answers(self):
         # Loading the answers to the question trials
         filterd_dataframe = self.data[self.data.correct_answer.notna()].filter(
             items=["trial_name", "response", "correct_answer"])
-        if self.__is_psiturk:
+        if self.is_psiturk:
             for trial_i, trial_data in filterd_dataframe.iterrows():
                 if type(trial_data["response"]) is dict:
                     self.trial_answers[trial_data["trial_name"]] = ( 
@@ -414,7 +378,7 @@ class experiment:
         )].to_numpy()
         all_validation = []
         for roi_val in last_validation_data:
-            if self.__is_psiturk:
+            if self.is_psiturk:
                 # Psiturk already has the data in a list form (no need to parse strings)
                 all_validation.append(roi_val)
                 continue
@@ -434,8 +398,7 @@ class experiment:
     def __preprocess_load_dataframe(self, filepath):
         """
             When loading the dataframe we need to update the second trial to 
-            represent that it was a "hunt" (we changed this name to 'Information Searching')
-            task, instead of normal reading.
+            represent that it was a "hunt" task, instead of normal reading.
 
             For this, detect if there are 2 duplicated trials with qa in the name.
         """
@@ -460,18 +423,7 @@ class experiment:
 
     def __preprocess_dataframe(self, dataframe):
         """
-            Pre-processing the dataframe containing the trial data.
-            In psiturk, we had users that re-tried the experiment multiple times, so first we check
-            if this is the case.
-
-            First the DataFrame is checked for if the participants have reloaded the experiment.
-            This is done with the "preload" trial, which occurs before displaying any screens.
-
-            If so, then we find if the participant repeated trials and if so we remove them from the Data.
-            This keeps the first attempt at each question.
-
-            As a final step, we set the duplicated questions corresponding to the "hunt" trials with the
-            correct name (we changed this name to 'Information Searching').
+            Same as __preprocess_load_dataframe, but takes a dataframe instead.
         """
         raw_data = dataframe
         completed_experiment = False
@@ -919,6 +871,8 @@ class experiment:
         # Keys: age, language, fluency
         questionaire_data = self.data[self.data.trial_type ==
                                       "survey-html-form"]['response'].values[0]
+        if type(questionaire_data) != dict:
+            questionaire_data = json.loads(questionaire_data)
         worker_age = questionaire_data['age']
         if 'language' in questionaire_data:
             worker_lang = questionaire_data['language']
@@ -945,7 +899,7 @@ class experiment:
     def __init__(self, filepath="", img_path="experiment_data", is_dev=False, is_psiturk=True, dataframe=None, worker_id=None, assignment_id=None):
         self.__TRIAL_IMG_DIR = path.join("experiment_data")
         self.__is_dev = is_dev
-        self.__is_psiturk = is_psiturk
+        self.is_psiturk = is_psiturk
         
         self.trial_nr = path.split(filepath)[-1].split(".")[0]
         self.features = Features()
@@ -957,6 +911,7 @@ class experiment:
         if is_psiturk:
             assert dataframe is not None, "Please pass the dataframe to be used. dataframe was 'None'"
             self.data = self.__preprocess_dataframe(dataframe)
+            
         else:
             assert filepath != "", "Please filepath to the CSV to be used. filepath was ''"
             self.data = self.__preprocess_load_dataframe(filepath)
@@ -1151,8 +1106,8 @@ class experiment:
         
         # Ensuring the target corresponds to the target image.
         assert (image_location.name == "#jspsych-image-keyboard-response-stimulus" or
-                image_location.name == "#jspsych-image-button-response-stimulus"
-            or image_location.name == "#question"), f"Wrong image location target stored. Check user {self.worker_id}. Target name was: '{image_location.name}'"
+                image_location.name == "#jspsych-image-button-response-stimulus" or
+                image_location.name == "#question"), f"Wrong image location target stored. Check user {self.worker_id}. Target name was: '{image_location.name}'"
 
         if image_location.width != 0 and image_location.height != 0:
             if target.name == "question":
@@ -1390,7 +1345,6 @@ class experiment:
                     utils.log_error("Couldn't generate plotmap. Gaze data might be missing.", utils.Error.ERROR, self.worker_id, trial)
                     #print(f"ERROR when generating the plotmap. There might not be gaze data for this trial ({trial}).")
             
-    
     def __str__(self):
         return str(self.data)
 
@@ -1405,5 +1359,5 @@ if __name__ == '__main__':
     args = sys.argv[1:]
     set_name = args[0]
     experiment_name = set_name
-    test_trial = experiment(os.path.join("experiment_data", experiment_name, "webgazer-sample-data.csv"),
-                            os.path.join("experiment_data", experiment_name), is_dev=True, is_psiturk=False)
+    test_trial = experiment(path.join("experiment_data", experiment_name, "webgazer-sample-data.csv"),
+                            path.join("experiment_data", experiment_name), is_dev=True, is_psiturk=False)

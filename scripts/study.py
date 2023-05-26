@@ -1,6 +1,7 @@
 from experiment import *
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+from scipy.stats import ttest_ind
 import numpy as np
 import json
 import re
@@ -13,6 +14,7 @@ import pandas as pd
 from collections import Counter
 from sys import platform
 import utils
+import argparse
 
 """
 
@@ -115,7 +117,61 @@ class Study:
         print(f"Experiment ROI/SampleRate MAX: {total_experiment_roi.max():.2f} / {total_experiment_sample_rate.max():.2f}")
         print(f"Experiment ROI/SampleRate MIN: {total_experiment_roi.min():.2f} / {total_experiment_sample_rate.min():.2f}")
         print()
+
+    def load_data_from_folder(self, path_to_data, is_psiturk:bool, path_to_setdata="", show_first_part_data=False):
+        """
+            path_to_data is expected to be a folder if is_psiturk is 'False' and a trialdata.csv (from psisturk) if 'True'
+        """
+        if path_to_setdata == "":
+            path_to_setdata = os.path.join("experiment_data", self.experiment_name)
+            utils.log_error(f"No path to set given, defaulting to: '{path_to_setdata}'", utils.Error.INFO)
+        utils.log_error(f"Loading data from: '{path_to_setdata}', is psiturk: '{is_psiturk}'", utils.Error.INFO)
+        if is_psiturk:
+            set_data.load_psiturk(path_to_data)   
+        else:
+            self.load_cognition(path_to_data)              
+        set_data.get_study_targets(os.path.join(path_to_setdata,"webgazer-sample-data.csv"))
+        set_data.set_img_directory(path_to_setdata)
+        set_data.update_all_experiments_targets()
+        set_data.print_all_questionaire_data()
+        set_data.print_all_total_time()
+        set_data.print_all_acc()
+        set_data.correct_study_answers(verbose=True)
+        set_data.print_corrected_answers()
+        set_data.set_approve_reject_flag()
+        print("Fixation Errors Report: ")
+        print()
+        for features in set_data.get_feature_vector_list():
+            print(f"WorkerID {features['worker_id']} has Fixation Error | Target Error: ", features['fixation_error'], features['target_error'])
+            features.to_json(os.path.join("pre_processed_data", f"{features.worker_id}_{features.set_name}.json"))
+        print("All data saved in: ", os.path.join("pre_processed_data"))
+        
+        if show_first_part_data:
+            workers_selected = [
+                worker for worker in set_data.experiment_list 
+                if not worker.features_series['fixation_error'] 
+                and not worker.features_series['target_error'] 
+                and worker.features_series['webgazer_sample_rate'] > 10
+                and worker.features_series['approved_flag'] > 0
+                ]
+            worker_selected = workers_selected[0]
+            if plot_first_part:
+                print("Generating plotmap for the first participant after filtering...")
+                worker_selected.generate_plotmap()
     
+
+    def load_cognition(self, folderpath, verbose=0):
+        utils.log_error(f"Data loading from: {folderpath}", utils.Error.INFO)
+        counter_of_unique_ids = 0
+        for file in os.listdir(folderpath):
+            if "webgazer-sample-data.csv" in file: continue
+            if "word_boundaries.csv" in file: continue
+            if "trialdata.csv" in file: continue
+            if ".csv" in file:
+                print("Loading file: ", file)
+                counter_of_unique_ids += 1
+                self.experiment_list.append(experiment(is_psiturk=False, filepath=os.path.join(folderpath, file), img_path=folderpath, worker_id=file))
+        
     def load_psiturk(self, filepath, verbose = 0):
         """
             This expects the file trialdata.csv from psiturks 'download_datafiles' cmd.
@@ -412,17 +468,17 @@ class Study:
                         print("Data for RT for this task: ", rt_per_trial[paragraph_target])
                 error_load_fixations = False
                 try:
-                    fixations_on_target = exp.features.counts_per_target[paragraph_target][key.replace('q_after_','')]
+                    exp_key = key.replace('q_after_','')
+                    fixations_on_target = exp.features.counts_per_target[paragraph_target][exp_key]
                     total_fixations = exp.features.counts_per_target[paragraph_target]['TotalFix']
                     if verbose:
                         print(f"Total fixations on target: {fixations_on_target}/{total_fixations}")
                 except Exception as e:
                     utils.log_error(f"Fixations contain errors. Exception: {e}", utils.Error.ERROR, exp.worker_id, paragraph_target)
-                    #print(f"ERROR with fixations. Worker ID: {exp.worker_id}")
-                    #print("Exception is: ", e)
+                    utils.log_error(f"Key that was used: {exp_key}", utils.Error.ERROR, exp.worker_id, paragraph_target)
                     utils.log_error(f"Dictionary where error was seen: {exp.features.counts_per_target[paragraph_target]}", utils.Error.INFO)
-                    #print(exp.features.counts_per_target[paragraph_target])
                     error_load_fixations = True
+
                 if answer in dict_unaccepted_answer[key]:
                     if verbose:
                         print(f"WorkerID ({exp.worker_id}), Trial {key} is wrong!")
@@ -630,8 +686,6 @@ class Study:
                         new_series = pd.Series([key] + [key+"_"+value.name] + list(value.to_numpy()), index=column_names)
                     data_frame_target_data.append(new_series)
             pd.DataFrame(data_frame_target_data).to_csv(os.path.join("target_dataframes", f"target_dataframe_{filepath.split(os.sep)[-2]}.csv"))
-        
-
         return self.target_dict
     
     def print_all_questionaire_data(self):
@@ -768,12 +822,25 @@ class Study:
         for exp, data in self.experiment_list[exp_nr].webgazer_data.items():
             np.savetxt(exp+".csv", data, fmt='%i', delimiter=",")
 
-def show_help():
-    print("Study.py HELP:")
-    print(" - Loading a set for correction: Study.py [SET_NAME] [1|recreate-set], ex: 'Study.py mturk_EN_v01'")
-    print(" -- The second argument 1: Shows the plots for the first participant or 'recreate-set' prints a string to paste on the HTML code to recalculate the targets.")
-    print(" - Exporting all the data: Study.py export-data [0|1], if passed with 0 no data is filtered. With 1, all non approved turkers are removed.")
-    print(" - Study.py | Study.py help : show this screen.")
+
+parser = argparse.ArgumentParser(description="Study script to agregate the data from WebQAmGaze.", epilog="""
+                    Example usage, loading the psiturk for set 'mturk_EN_v18': 'python study.py -study-name mturk_EN_v18 -mode p'
+                    """)
+parser.add_argument('-study-name', metavar='path', type=str, nargs=1,
+                    help="""Name of the folder within the 'experiment_data' folder. This will be used as the 
+                    default directory for loading the data. Folder should contain images and targets for experiment.""")
+parser.add_argument('-mode', metavar="r|c|p|e", type=str, nargs=1,
+                    help="""(r)ecreate-set|(c)ognition|(p)siturk|(e)xport.
+                    ''Recreate-Set'': Used to get the experiment names to be used in the html.
+                    ''Cognition'': loads a csv per participant rather than psiturk .csv.
+                    ''Psiturk'': loads a csv with all the data exported from Psiturk. This mode filters the data in the .csv. 
+                    ''Export'': loads the data using Psiturk in each folder and combines it in a single dataframe.
+                    """)
+parser.add_argument('--show-first-participant', metavar="0|1", type=bool, nargs=1,
+                    help="""Plots the data for the first participant.
+                    """)
+parser.add_argument('--data-path', metavar='path', type=str, nargs=1,
+                    help="Path to the data, optional, if not passed the study_name directory is used.")
 
 test_data = None
 all_data_df = None
@@ -781,69 +848,39 @@ if __name__ == '__main__':
     args = sys.argv[1:]
     set_name = None
     if len(args) == 0:
-        show_help()
+        parser.print_help()
     else:
-        if "mturk" in args[0]: 
-            set_name = args[0]
-            plot_first_part = False
-            try:
-                if args[1] == "1":
-                    plot_first_part = True
-            except:
-                pass
-            print(f"Loading set: '{set_name}'")
-            input("Press enter to continue...")
+        args = vars(parser.parse_args())
+        experiment_name = args["study_name"][0]
+        set_data = Study(experiment_name)
+        plot_first_part = True if args['show_first_participant'] is not None else False
+        mode = args['mode'][0]
+        psiturk_default_data_path = os.path.join("experiment_data",experiment_name, "trialdata.csv")
+        csv_default_data_path = os.path.join("experiment_data",experiment_name)
 
-            experiment_name = set_name
-            set_data = Study(experiment_name)
-            set_data.load_psiturk(os.path.join("experiment_data",experiment_name,"trialdata.csv"))
-            set_data.get_study_targets(os.path.join("experiment_data",experiment_name,"webgazer-sample-data.csv"))
-            set_data.set_img_directory(os.path.join("experiment_data",experiment_name))
-
-            if len(args) > 1 and "recreate-set" in args[1]:
-                test_recreate_set = [name for name in set_data[set_data.trial_name.notna()].trial_name]
-                xquad_string = "let reconstruct_trial_xquad = ["
-                for i in range(0, len(test_recreate_set), 2):
-                    if i == 0:
-                        print(f"let reconstruct_trial_meco = [[{test_recreate_set[i]}, [{test_recreate_set[i+1]}]]];")
-                    else:
-                        question = test_recreate_set[i+1].replace("q_after_","")
-                        xquad_string += f"[{test_recreate_set[i]}, [{question}]],"
-                xquad_string += "];"
-                print(xquad_string)
-
-            else:
-                set_data.update_all_experiments_targets()
-                set_data.print_all_questionaire_data()
-                set_data.print_all_total_time()
-                set_data.print_all_acc()
-                set_data.correct_study_answers(verbose=True)
-                set_data.print_corrected_answers()
-                set_data.set_approve_reject_flag()
-                print("Fixation Errors Report: ")
-                print()
-                for features in set_data.get_feature_vector_list():
-                    print(f"WorkerID {features['worker_id']} has Fixation Error | Target Error: ", features['fixation_error'], features['target_error'])
-                    features.to_json(os.path.join("pre_processed_data", f"{features.worker_id}_{features.set_name}.json"))
-                print("All data saved in: ", os.path.join("pre_processed_data"))
-                
-                workers_selected = [
-                    worker for worker in set_data.experiment_list 
-                    if not worker.features_series['fixation_error'] 
-                    and not worker.features_series['target_error'] 
-                    and worker.features_series['webgazer_sample_rate'] > 10
-                    and worker.features_series['approved_flag'] > 0
-                    ]
-                worker_selected = workers_selected[0]
-                if plot_first_part:
-                    print("Generating plotmap for the first participant after filtering...")
-                    worker_selected.generate_plotmap()
-            
-        elif "help" in args[0]:
-            show_help()
-
-        elif "export-data" in args[0]:
-            print("export-data")
+        if mode == "p":
+            data_path = psiturk_default_data_path
+            if args['data_path'] is not None:
+                data_path = args['data_path'][0]
+            set_data.load_data_from_folder(data_path, True, os.path.join("experiment_data",experiment_name), plot_first_part)
+        elif mode == "c":
+            data_path = csv_default_data_path
+            if args['data_path'] is not None:
+                data_path = args['data_path'][0]
+            set_data.load_data_from_folder(data_path, False, os.path.join("experiment_data",experiment_name), plot_first_part)
+        elif mode == "r":
+            test_recreate_set = [name for name in set_data[set_data.trial_name.notna()].trial_name]
+            xquad_string = "let reconstruct_trial_xquad = ["
+            for i in range(0, len(test_recreate_set), 2):
+                if i == 0:
+                    print(f"let reconstruct_trial_meco = [[{test_recreate_set[i]}, [{test_recreate_set[i+1]}]]];")
+                else:
+                    question = test_recreate_set[i+1].replace("q_after_","")
+                    xquad_string += f"[{test_recreate_set[i]}, [{question}]],"
+            xquad_string += "];"
+            print(xquad_string)
+        elif mode == "e":
+            print("Exporting-data ...")
             export_text_bool = False
             export_target_dataframes = False
             export = input("Export texts data for all sets? (y/[n]): ")
@@ -921,9 +958,11 @@ if __name__ == '__main__':
 
             utils.log_error(f"Shape of dataframe         : {all_features_export.shape}", utils.Error.INFO)
             utils.log_error(f"Shape of filtered dataframe: {all_features_filtered.shape}", utils.Error.INFO)
-        else:
-            show_help()
 
+            print(args)
+            print(parser)
+        else:
+            parser.print_help()
 
 """
 Example use:
