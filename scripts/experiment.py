@@ -17,13 +17,16 @@ import pickle
 import sys
 import pytesseract
 from pytesseract import Output
+from study_config import PARTICIPANT_TYPES, PLATFORM_TYPES
 import pandas as pd
 import utils
 
 OUTPUT_HEATGAZE_DIR = path.join("experiment_data", "imgs", "gaze_heatmaps")
 
-## Values for Merging fixations:
+## Variables for participants
+VISION_TYPES = ["Normal", "Contacts", "Glasses"]
 
+## Values for Merging fixations:
 PX_TOLERANCE_FIX_DECISION = 32 # PX Radius to consider
 T_TOLERANCE_FIX_DECISION = 150 # t interval to consider between p1 and p2
 T_TOLERANCE_FIX_FILTER = 50    # t threshold to remove fixations. Fix_t < T_TOLERANCE_FIX_FILTER is removed.
@@ -965,6 +968,9 @@ class experiment:
             "worker_fluency",
             "set_name",
             "set_trials",
+            "participant_type",
+            "platform_type",
+            "vision",
             "target_error",
             "screen_x",
             "screen_y",
@@ -1023,8 +1029,11 @@ class experiment:
             self.features_series['worker_lang'] = worker_lang
             self.features_series['worker_fluency'] = int(worker_fluency)
             self.features_series['set_name'] = self.data['set_name'].iloc[0]
-            self.features_series['set_language'] = self.data['set_name'].iloc[0][len("mturk_"):len("mturk_")+2]
+            self.features_series['set_language'] = self.features_series['set_name'].split("_")[1]
             self.features_series['set_trials'] = [name for name in self.data['trial_name'].values if type(name) is str and "_qa_" not in name and ("meco" in name or "a_" in name)]
+            self.features_series['participant_type'] = None # Volunteer / Lab / Mturk
+            self.features_series['platform_type'] = None # Cognition / Psiturk
+            self.features_series['vision'] = None # normal / glasses / contact lenses 
             self.features_series['screen_x'] = self.get_screen_size(experiment_screen_size)[0]
             self.features_series['screen_y'] = self.get_screen_size(experiment_screen_size)[1]
             self.features_series['webgazer_raw_data'] = to_JSON_dict(self.webgazer_data) 
@@ -1080,6 +1089,25 @@ class experiment:
 
     def set_img_directory(self, path_to_img):
         self.__TRIAL_IMG_DIR = path_to_img
+    
+    def set_set_name(self, new_set_name):
+        self.features_series['set_name'] = new_set_name
+    
+    def set_set_language(self, new_set_language):
+        self.features_series['set_language'] = new_set_language
+
+    def set_participant_type(self, new_participant_type):
+        assert new_participant_type in PARTICIPANT_TYPES, f"Participant type needs to be in {PARTICIPANT_TYPES}, used: '{new_participant_type}'." 
+        self.features_series['participant_type'] = new_participant_type # Volunteer / Lab / Mturk           
+    
+    def set_platform_type(self, new_platform_type):
+        assert new_platform_type in PLATFORM_TYPES, f"Participant type needs to be in {PLATFORM_TYPES}, used: '{new_platform_type}'." 
+        self.features_series['platform_type'] = new_platform_type # Cognition / Psiturk
+    
+    def set_vision(self, new_vision):
+        assert new_vision in VISION_TYPES, f"Participant type needs to be in {VISION_TYPES}, used: '{new_vision}'." 
+        self.features_series['vision'] = new_vision # normal / glasses / contact lenses 
+
 
     def update_webgaze_targets(self, trial, target, verbose=0):
         """

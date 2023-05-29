@@ -6,6 +6,7 @@ import numpy as np
 import json
 import re
 import sys
+from study_config import StudyConfig
 import os
 import pytesseract
 from pytesseract import Output
@@ -89,6 +90,7 @@ class Study:
         self.experiment_dev = None
         self.target_dict = {}
         self.corret_answers = {}
+        self.study_config = StudyConfig()
     
     def print_all_acc(self):
         """
@@ -122,12 +124,26 @@ class Study:
         """
             path_to_data is expected to be a folder if is_psiturk is 'False' and a trialdata.csv (from psisturk) if 'True'
         """
+        def get_config_file(data_dir):
+            for file in os.listdir(data_dir):
+                if ".conf" in file:
+                    return os.path.join(data_dir, file)
+            return False
+        
         if path_to_setdata == "":
             path_to_setdata = os.path.join("experiment_data", self.experiment_name)
             utils.log_error(f"No path to set given, defaulting to: '{path_to_setdata}'", utils.Error.INFO)
         utils.log_error(f"Loading data from: '{path_to_setdata}', is psiturk: '{is_psiturk}'", utils.Error.INFO)
+        path_with_config = path_to_data
+        if not os.path.isdir(path_with_config):
+            # This is the case of psiturk
+            path_with_config = os.sep.join(path_to_data.split(os.path.sep)[:-1])
+        path_to_config = get_config_file(path_with_config)
+        if path_to_config != False:
+            set_data.load_config(path_to_config)
+
         if is_psiturk:
-            set_data.load_psiturk(path_to_data)   
+            set_data.load_psiturk(path_to_data, set_name_config = self.study_config.data["set_name"])   
         else:
             self.load_cognition(path_to_data)              
         set_data.get_study_targets(os.path.join(path_to_setdata,"webgazer-sample-data.csv"))
@@ -139,6 +155,8 @@ class Study:
         set_data.correct_study_answers(verbose=True)
         set_data.print_corrected_answers()
         set_data.set_approve_reject_flag()
+        if path_to_config != False:
+            set_data.set_config_experiment()
         print("Fixation Errors Report: ")
         print()
         for features in set_data.get_feature_vector_list():
@@ -172,7 +190,7 @@ class Study:
                 counter_of_unique_ids += 1
                 self.experiment_list.append(experiment(is_psiturk=False, filepath=os.path.join(folderpath, file), img_path=folderpath, worker_id=file))
         
-    def load_psiturk(self, filepath, verbose = 0):
+    def load_psiturk(self, filepath, set_name_config=None, verbose = 0):
         """
             This expects the file trialdata.csv from psiturks 'download_datafiles' cmd.
             The file contains a row for each trial performed in the Study, as such we need to group them
@@ -180,7 +198,7 @@ class Study:
         """
         #print(f"LOADING DATA FROM: {filepath}")
         utils.log_error(f"Data loading from: {filepath}", utils.Error.INFO)
-        set_name = filepath.split(os.sep)[-2]
+        set_name = filepath.split(os.sep)[-2] if set_name_config is None else set_name_config
         trial_data = pd.read_csv(filepath, names=['id','status','trial_id','data'])
         trial_ids_to_keep = []
         counter_of_unique_ids = 0
@@ -239,6 +257,20 @@ class Study:
             #print("UNIQUE TRIALS: ", counter_of_unique_ids)
         # Replace the old CSV with a filtered CSV with the relevant data. 
         trial_data.loc[trial_ids_to_keep].to_csv(filepath, header=False, index=False)
+    
+    def load_config(self, config_path):
+        self.study_config.load(config_path)
+
+    def set_config_experiment(self):
+        for e in self.experiment_list:
+            e.set_set_name(self.study_config.data["set_name"])
+            e.set_set_language(self.study_config.data["set_language"])
+            e.set_participant_type(self.study_config.data["participant_type"])
+            e.set_platform_type(self.study_config.data["platform_type"])
+        utils.log_error("Updated all the experiments according to configuration.", utils.Error.INFO)
+        print("Configuration used: ")
+        print(self.study_config.data)
+
 
     def get_worker(self, worker_id):
         """
@@ -868,6 +900,7 @@ if __name__ == '__main__':
             if args['data_path'] is not None:
                 data_path = args['data_path'][0]
             set_data.load_data_from_folder(data_path, False, os.path.join("experiment_data",experiment_name), plot_first_part)
+            
         elif mode == "r":
             test_recreate_set = [name for name in set_data[set_data.trial_name.notna()].trial_name]
             xquad_string = "let reconstruct_trial_xquad = ["
