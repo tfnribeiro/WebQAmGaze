@@ -24,7 +24,7 @@ import utils
 OUTPUT_HEATGAZE_DIR = path.join("experiment_data", "imgs", "gaze_heatmaps")
 
 ## Variables for participants
-VISION_TYPES = ["Normal", "Contacts", "Glasses"]
+VISION_TYPES = ["Normal", "Contacts", "Glasses", None]
 
 ## Values for Merging fixations:
 PX_TOLERANCE_FIX_DECISION = 32 # PX Radius to consider
