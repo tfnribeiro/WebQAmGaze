@@ -149,11 +149,13 @@ class Study:
         self.get_study_targets(os.path.join(path_to_setdata,"webgazer-sample-data.csv"))
         self.set_img_directory(path_to_setdata)
         self.update_all_experiments_targets()
-        self.print_all_questionaire_data()
-        self.print_all_total_time()
-        self.print_all_acc()
+        if show_answers:
+            # Only print the information if show_answers is enabled.
+            self.print_all_questionaire_data()
+            self.print_all_total_time()
+            self.print_all_acc()
+            self.print_corrected_answers()
         self.correct_study_answers(verbose=show_answers)
-        self.print_corrected_answers()
         self.set_approve_reject_flag()
         if path_to_config != False:
             self.set_config_experiment()
