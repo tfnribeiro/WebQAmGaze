@@ -120,7 +120,7 @@ class Study:
         print(f"Experiment ROI/SampleRate MIN: {total_experiment_roi.min():.2f} / {total_experiment_sample_rate.min():.2f}")
         print()
 
-    def load_data_from_folder(self, path_to_data, is_psiturk:bool, path_to_setdata="", show_first_part_data=False):
+    def load_data_from_folder(self, path_to_data, is_psiturk:bool, path_to_setdata="", show_first_part_data=False, show_answers=False):
         """
             path_to_data is expected to be a folder if is_psiturk is 'False' and a trialdata.csv (from psisturk) if 'True'
         """
@@ -140,33 +140,33 @@ class Study:
             path_with_config = os.sep.join(path_to_data.split(os.path.sep)[:-1])
         path_to_config = get_config_file(path_with_config)
         if path_to_config != False:
-            set_data.load_config(path_to_config)
+            self.load_config(path_to_config)
 
         if is_psiturk:
-            set_data.load_psiturk(path_to_data, set_name_config = self.study_config.data["set_name"])   
+            self.load_psiturk(path_to_data, set_name_config = self.study_config.data["set_name"])   
         else:
             self.load_cognition(path_to_data)              
-        set_data.get_study_targets(os.path.join(path_to_setdata,"webgazer-sample-data.csv"))
-        set_data.set_img_directory(path_to_setdata)
-        set_data.update_all_experiments_targets()
-        set_data.print_all_questionaire_data()
-        set_data.print_all_total_time()
-        set_data.print_all_acc()
-        set_data.correct_study_answers(verbose=True)
-        set_data.print_corrected_answers()
-        set_data.set_approve_reject_flag()
+        self.get_study_targets(os.path.join(path_to_setdata,"webgazer-sample-data.csv"))
+        self.set_img_directory(path_to_setdata)
+        self.update_all_experiments_targets()
+        self.print_all_questionaire_data()
+        self.print_all_total_time()
+        self.print_all_acc()
+        self.correct_study_answers(verbose=show_answers)
+        self.print_corrected_answers()
+        self.set_approve_reject_flag()
         if path_to_config != False:
-            set_data.set_config_experiment()
+            self.set_config_experiment()
         print("Fixation Errors Report: ")
         print()
-        for features in set_data.get_feature_vector_list():
+        for features in self.get_feature_vector_list():
             print(f"WorkerID {features['worker_id']} has Fixation Error | Target Error: ", features['fixation_error'], features['target_error'])
             features.to_json(os.path.join("pre_processed_data", f"{features.worker_id}_{features.set_name}.json"))
         print("All data saved in: ", os.path.join("pre_processed_data"))
         
         if show_first_part_data:
             workers_selected = [
-                worker for worker in set_data.experiment_list 
+                worker for worker in self.experiment_list 
                 if not worker.features_series['fixation_error'] 
                 and not worker.features_series['target_error'] 
                 and worker.features_series['webgazer_sample_rate'] > 10
@@ -895,12 +895,12 @@ if __name__ == '__main__':
             data_path = psiturk_default_data_path
             if args['data_path'] is not None:
                 data_path = args['data_path'][0]
-            set_data.load_data_from_folder(data_path, True, os.path.join("experiment_data",experiment_name), plot_first_part)
+            set_data.load_data_from_folder(data_path, True, os.path.join("experiment_data",experiment_name), plot_first_part, show_answers=True)
         elif mode == "c":
             data_path = csv_default_data_path
             if args['data_path'] is not None:
                 data_path = args['data_path'][0]
-            set_data.load_data_from_folder(data_path, False, os.path.join("experiment_data",experiment_name), plot_first_part)
+            set_data.load_data_from_folder(data_path, False, os.path.join("experiment_data",experiment_name), plot_first_part, show_answers=True)
             
         elif mode == "r":
             test_recreate_set = [name for name in set_data[set_data.trial_name.notna()].trial_name]
