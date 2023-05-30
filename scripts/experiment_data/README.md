@@ -1,5 +1,11 @@
 ## experiment_data
 
+Folder Structure should be:
+
+- Folder: Set_Name
+    - Files: Images, _Accepted/Unaccepted answers_, HTML file and .csv generated from DEV html ('webgazer-sample-data.csv')
+    - Folder: _Data Folders_, where the data is stored with an optional .conf file which sets the "set" variables, such as language, participant_type and set_name.
+
 ### Each folder needs to contain:
 - images for each of the trials in the experiment
 - the HTML file which was used for the experiment, eg. 'pilot_webgazer_experiment_mturk_TR_v01.html'

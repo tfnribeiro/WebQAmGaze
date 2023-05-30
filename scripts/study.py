@@ -187,8 +187,9 @@ class Study:
             if "trialdata.csv" in file: continue
             if ".csv" in file:
                 print("Loading file: ", file)
+                worker_id = "p"+file.replace(".csv","")
                 counter_of_unique_ids += 1
-                self.experiment_list.append(experiment(is_psiturk=False, filepath=os.path.join(folderpath, file), img_path=folderpath, worker_id=file))
+                self.experiment_list.append(experiment(is_psiturk=False, filepath=os.path.join(folderpath, file), img_path=folderpath, worker_id=worker_id))
         
     def load_psiturk(self, filepath, set_name_config=None, verbose = 0):
         """

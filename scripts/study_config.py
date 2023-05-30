@@ -2,8 +2,8 @@ import json
 import os
 from utils import log_error, Error
 
-PARTICIPANT_TYPES = ["Volunteer", "Lab", "Mturk", None]
-PLATFORM_TYPES = ["Mturk", "Cognition", None]
+PARTICIPANT_TYPES = ["volunteer", "lab", "mturk", None]
+PLATFORM_TYPES = ["mturk", "cognition", None]
 SET_LANGUAGES = ["EN","ES", "DE", "GR", "TR", "RU", None]
 
 KEY_TYPE_MAPPING = {
