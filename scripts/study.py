@@ -255,11 +255,16 @@ class Study:
             # Keep all the indexes of data we have loaded
             trial_ids_to_keep += list(data_trial.index)
 
-        if verbose > 1:
-            utils.log_error(f"Total number of unique experiments: {counter_of_unique_ids}", utils.Error.INFO)
+        
             #print("UNIQUE TRIALS: ", counter_of_unique_ids)
-        # Replace the old CSV with a filtered CSV with the relevant data. 
-        trial_data.loc[trial_ids_to_keep].to_csv(filepath, header=False, index=False)
+        # Replace the old CSV with a filtered CSV with the relevant data.
+        # If no ids are kept, something went wrong, report it 
+        if len(trial_ids_to_keep) > 0:
+            trial_data.loc[trial_ids_to_keep].to_csv(filepath, header=False, index=False)
+            if verbose > 1:
+                utils.log_error(f"Total number of unique experiments: {counter_of_unique_ids}, writing to '{filepath}' to keep only the relevant data.", utils.Error.INFO)
+        else:
+            utils.log_error(f"No experiment was loaded, make sure the set_name matches the data you are trying to load.", utils.Error.ERROR)
     
     def load_config(self, config_path):
         self.study_config.load(config_path)
