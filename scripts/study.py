@@ -135,6 +135,7 @@ class Study:
             utils.log_error(f"No path to set given, defaulting to: '{path_to_setdata}'", utils.Error.INFO)
         utils.log_error(f"Loading data from: '{path_to_setdata}', is psiturk: '{is_psiturk}'", utils.Error.INFO)
         path_with_config = path_to_data
+        self.get_study_targets(os.path.join(path_to_setdata,"webgazer-sample-data.csv"))
         if not os.path.isdir(path_with_config):
             # This is the case of psiturk
             path_with_config = os.sep.join(path_to_data.split(os.path.sep)[:-1])
@@ -146,7 +147,6 @@ class Study:
             self.load_psiturk(path_to_data, set_name_config = self.study_config.data["set_name"])   
         else:
             self.load_cognition(path_to_data)              
-        self.get_study_targets(os.path.join(path_to_setdata,"webgazer-sample-data.csv"))
         self.set_img_directory(path_to_setdata)
         self.update_all_experiments_targets()
         if show_answers:
@@ -164,8 +164,28 @@ class Study:
         for features in self.get_feature_vector_list():
             print(f"WorkerID {features['worker_id']} has Fixation Error | Target Error: ", features['fixation_error'], features['target_error'])
             features.to_json(os.path.join("pre_processed_data", f"{features.worker_id}_{features.set_name}.json"))
-        print("All data saved in: ", os.path.join("pre_processed_data"))
-        
+        utils.log_error("All data saved in: " + os.path.join("pre_processed_data"), utils.Error.INFO)
+        fixation_error_ids = []
+        for worker in set_data.experiment_list:
+            # Features can only be exported if there are no errors.
+            if (not worker.features_series['fixation_error'] 
+            and not worker.features_series['target_error']): 
+                try:
+                    worker_target_df = pd.DataFrame()
+                    experiment_name = worker.features_series["set_name"]
+                    for trial_name in worker.features_series['set_trials']:
+                        duration_dataframe = worker.get_duration_fixation_on_word(trial_name)
+                        worker_target_df = pd.concat((worker_target_df, duration_dataframe))
+                    worker_target_df.to_csv(os.path.join("pre_processed_data","fixation_data_per_part",f"{worker.worker_id}_{experiment_name}_fix_dict.csv"), index=False)
+                except Exception as e:
+                    print(e)
+                    fixation_error_ids.append(worker.worker_id)
+        utils.log_error("All fixation data saved in: " + os.path.join("pre_processed_data", "fixation_data_per_part"), utils.Error.INFO)
+        if len(fixation_error_ids) > 0:
+            utils.log_error("Participants had fixation errors when generating IDs", utils.Error.ERROR)
+            utils.log_error(f"Total errors: {len(fixation_error_ids)}", utils.Error.ERROR)
+            for id in fixation_error_ids:
+                print(id)
         if show_first_part_data:
             workers_selected = [
                 worker for worker in self.experiment_list 
@@ -598,7 +618,7 @@ class Study:
         for file in os.listdir(experiment_path):
             if file.endswith('.png'):
                 words = []
-                img = cv2.imread(join(experiment_path, file))
+                img = cv2.imread(os.path.join(experiment_path, file))
                 d = pytesseract.image_to_data(img, output_type=Output.DICT)
                 n_boxes = len(d['level'])
                 for i in range(n_boxes):
@@ -611,7 +631,7 @@ class Study:
         df.to_csv(path_to_save)
         utils.log_error(f"Bounding boxes areas saved to: {path_to_save}", utils.Error.INFO)
 
-    def get_study_targets(self, filepath, export_dataframe=False, load_word_boundaries=True):
+    def get_study_targets(self, filepath, export_dataframe=True, load_word_boundaries=True):
         """
             Gets the list of targets for the experiment. 
             This needs the original CSV that was used to generate the images.
@@ -620,7 +640,6 @@ class Study:
         new_target_dict = {}
         experiment_dev = experiment(filepath=filepath, is_dev=True, is_psiturk=False)
         self.target_dict = experiment_dev.webgazer_targets
-        
         # Adjust to generate word boundaries around the words.
         LINE_TOLERANCE = 10 # px
 
@@ -635,6 +654,8 @@ class Study:
             if not os.path.exists(path_to_word_boundaries_csv):
                 utils.log_error(f"Creating Word Boundaries for words in dir: {path_to_set_dir}", utils.Error.INFO)
                 self.create_word_target_file(path_to_set_dir)
+            else:
+                utils.log_error(f"Loaded file from: {path_to_word_boundaries_csv}", utils.Error.INFO)
             word_boundaries_df = pd.read_csv(path_to_word_boundaries_csv)
             word_boundaries_df["text"] = word_boundaries_df["text"].str.replace("_1280_720","")
             for k, target_list in self.target_dict.items():
@@ -921,7 +942,8 @@ if __name__ == '__main__':
             xquad_string += "];"
             print(xquad_string)
         elif mode == "e":
-            print("Exporting-data ...")
+            utils.log_error("Not yet updated. This functionality needs to be updated for the new data storing format.", utils.Error.WARNING)
+            utils.log_error("Exporting-data ...", utils.Error.INFO)
             export_text_bool = False
             export_target_dataframes = False
             export = input("Export texts data for all sets? (y/[n]): ")
