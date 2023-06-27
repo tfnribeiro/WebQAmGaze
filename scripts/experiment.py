@@ -21,6 +21,8 @@ from study_config import PARTICIPANT_TYPES, PLATFORM_TYPES
 import pandas as pd
 import utils
 
+# From https://stackoverflow.com/questions/4060221/how-to-reliably-open-a-file-in-the-same-directory-as-the-currently-running-scrip
+__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 OUTPUT_HEATGAZE_DIR = path.join("experiment_data", "imgs", "gaze_heatmaps")
 
 ## Variables for participants
@@ -36,7 +38,7 @@ PX_TOLERANCE_COUNT_FIXATIONS = 0
 
 ## These resolutions were extracted from: https://www.screenresolution.org/
 ## Regex was used to capture all and compile them into a file.
-with open('all_resolution.txt','rb') as f:
+with open(path.join(__location__,'all_resolution.txt'),'rb') as f:
    ALL_RESOLUTIONS_SET = pickle.load(f)
 
 def to_JSON_dict(dictionary_to_convert):
