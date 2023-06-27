@@ -45,8 +45,7 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
                     test_study.load_data_from_folder(join(dir_path,"trialdata.csv"), True, join("../experiment_data", experiment_name,), export_target_dataframes=False)
                 else:
                     test_study.load_data_from_folder(dir_path, False, join("../experiment_data", experiment_name,), export_target_dataframes=False)
-
-
+        print("Before: ", test_study.experiment_list)
         all_workers = [
             worker for worker in test_study.experiment_list
             if not worker.features_series['fixation_error']
@@ -55,13 +54,13 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
                and worker.features_series['approved_flag'] > 0
                and worker.features_series['screen_x'] > 1110
                and worker.features_series['screen_y'] > 615]
-
+        print(all_workers)
         if WORKERS is not None:
             # filenames with "link" are from volunteers, without from Mturk
             if WORKERS == "mturk_only":
                 all_workers = [worker for worker in all_workers if "link" not in worker.worker_id and worker.participant_type != "volunteer" and worker.participant_type != "lab"]
             elif WORKERS == "volunteer_only":
-                all_workers = [worker for worker in all_workers if "link" in worker.worker_id or worker.participant_type == "volunteer"]
+                all_workers = [worker for worker in all_workers if "link" in worker.worker_id or worker.participant_type == "volunteer" or worker.participant_type == "lab"]
             else:
                 print("Check WORKERS variable!")
 
