@@ -124,7 +124,7 @@ class Study:
 
     def load_data_from_folder(self, path_to_data, is_psiturk:bool, path_to_setdata="", 
                               show_first_part_data=False, show_answers=False, export_target_dataframes=False, 
-                              export_feature_dataframes=False,):
+                              export_feature_dataframes=False, align_data=True):
         """
             path_to_data is expected to be a folder if is_psiturk is 'False' and a trialdata.csv (from psisturk) if 'True'
         """
@@ -135,11 +135,13 @@ class Study:
                     return os.path.join(data_dir, file)
             return False
         if path_to_setdata == "":
-            path_to_setdata = os.path.join(__location__, "experiment_data", self.experiment_name)
+            path_to_setdata = os.path.join(__location__, "experiment_data", self.study_name)
             utils.log_error(f"No path to set given, defaulting to: '{path_to_setdata}'", utils.Error.INFO)
         utils.log_error(f"Loading data from: '{path_to_setdata}', is psiturk: '{is_psiturk}'", utils.Error.INFO)
         path_with_config = path_to_data
-        self.get_study_targets(os.path.join(path_to_setdata,"webgazer-sample-data.csv"))
+        target_data_path = os.path.join(path_to_setdata,"webgazer-sample-data.csv")
+        self.get_study_targets(target_data_path)
+        utils.log_error(f"Loading Target data from: '{target_data_path}', is psiturk: '{is_psiturk}'", utils.Error.INFO)
         if not os.path.isdir(path_with_config):
             # This is the case of psiturk
             path_with_config = os.sep.join(path_to_data.split(os.path.sep)[:-1])
@@ -155,6 +157,11 @@ class Study:
         if path_to_config != False:
             self.set_config_experiment(experiment_loaded)             
         self.set_img_directory(path_to_setdata)
+        if align_data:
+            self.align_loaded_data(show_first_part_data, show_answers, export_target_dataframes, export_feature_dataframes)
+    
+    def align_loaded_data(self, show_first_part_data=False, show_answers=False, export_target_dataframes=False, 
+                              export_feature_dataframes=False):
         self.update_all_experiments_targets()
         if show_answers:
             # Only print the information if show_answers is enabled.
@@ -652,6 +659,7 @@ class Study:
             This will then add the targets to the self.target_dict variable.
         """
         new_target_dict = {}
+        self.target_dict = {}
         experiment_dev = experiment(filepath=filepath, is_dev=True, is_psiturk=False)
         self.target_dict = experiment_dev.webgazer_targets
         # Adjust to generate word boundaries around the words.
@@ -780,6 +788,7 @@ class Study:
         """
         error_found = True
         for trial, target_list in self.target_dict.items():
+            experiment.reset_webgaze_targets(trial)
             for target in target_list:
                 result = experiment.update_webgaze_targets(trial, target)
                 error_found = error_found and result
@@ -995,9 +1004,9 @@ if __name__ == '__main__':
                     if set_n == 1 and set_language == "EN":
                             # The experiment was split into two files (this appends the data)
                             test_study.load_data_from_folder(os.path.join(__location__, "experiment_data",study_name,"trialdata_2.csv"), True, os.path.join(__location__, "experiment_data", study_name,), 
-                                                             export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
+                                                             align_data=False)
                     test_study.load_data_from_folder(os.path.join(__location__, "experiment_data", study_name,"trialdata.csv"), True, os.path.join(__location__, "experiment_data", study_name,), 
-                                                     export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
+                                                     align_data=False)
                 else:
                     # Handle cases where the data has been moved.
                     for directory_w_data in os.listdir(os.path.join(path_to_data)):
@@ -1006,11 +1015,13 @@ if __name__ == '__main__':
                             continue
                         if os.path.exists(os.path.join(dir_path, "trialdata.csv")):
                             # Load the data from PsiTurk
-                            test_study.load_data_from_folder(os.path.join(dir_path,"trialdata.csv"), True, os.path.join(__location__, "experiment_data", study_name,), 
-                                                             export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
+                            test_study.load_data_from_folder(os.path.join(dir_path,"trialdata.csv"), True, os.path.join(__location__, "experiment_data", study_name,),
+                                                             align_data=False)
                         else:
                             test_study.load_data_from_folder(dir_path, False, os.path.join(__location__, "experiment_data", study_name,), 
-                                                             export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
+                                                             align_data=False)
+                # Align to avoid repeated targets.
+                test_study.align_loaded_data(export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
 
                 if export_text_bool:
                     test_study.export_set_texts(os.path.join(__location__, "experiment_data",study_name,"webgazer-sample-data.csv"))

@@ -1111,6 +1111,8 @@ class experiment:
         assert new_vision in VISION_TYPES, f"Participant type needs to be in {VISION_TYPES}, used: '{new_vision}'." 
         self.features_series['vision'] = new_vision # normal / glasses / contact lenses 
 
+    def reset_webgaze_targets(self, trial):
+        self.webgazer_targets[trial] = self.webgazer_targets[trial][:1]
 
     def update_webgaze_targets(self, trial, target, verbose=0):
         """
@@ -1134,7 +1136,7 @@ class experiment:
             self.features_series['target_error'] = True
             return False
         image_location = self.webgazer_targets[trial][0]
-        
+
         # Ensuring the target corresponds to the target image.
         assert (image_location.name == "#jspsych-image-keyboard-response-stimulus" or
                 image_location.name == "#jspsych-image-button-response-stimulus" or
