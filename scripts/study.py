@@ -221,7 +221,7 @@ class Study:
             if "trialdata.csv" in file: continue
             if ".csv" in file:
                 print("Loading file: ", file)
-                worker_id = "p"+file.replace(".csv","")+"_"+folderpath.split(os.sep)[-1]
+                worker_id = "p"+file.replace(".csv","")+"-"+folderpath.split(os.sep)[-1]
                 counter_of_unique_ids += 1
                 loaded_experiment_list.append(experiment(is_psiturk=False, filepath=os.path.join(folderpath, file), img_path=folderpath, worker_id=worker_id))
         return loaded_experiment_list
@@ -613,9 +613,9 @@ class Study:
         for i,row in dataframe_with_settings.iterrows():
             string_to_update = row["stimulus"]
             if pd.isnull(string_to_update):
-                new_stimulus.append(html_pattern.sub("", row["question_text"]))
+                new_stimulus.append(html_pattern.sub("", row["question_text"]).strip())
             else:
-                new_stimulus.append(html_pattern.sub("", string_to_update))
+                new_stimulus.append(html_pattern.sub("", string_to_update).strip())
         dataframe_with_settings.stimulus = new_stimulus
         dataframe_with_settings["lang"] = filepath.split(os.sep)[-2][len("mturk_"):len("mturk_")+2]
         dataframe_with_settings["task_type"] = "None"
@@ -957,7 +957,7 @@ if __name__ == '__main__':
             xquad_string += "];"
             print(xquad_string)
         elif mode == "e":
-            utils.log_error("Not yet updated. This functionality needs to be updated for the new data storing format.", utils.Error.WARNING)
+            utils.log_error("## BETA. This functionality needs to be updated for the new data storing format.", utils.Error.WARNING)
             utils.log_error("Exporting-data ...", utils.Error.INFO)
             export_text_bool = False
             export_target_dataframes = False
@@ -968,31 +968,35 @@ if __name__ == '__main__':
             export_t_df = input("Export target df for all sets? (y/[n]): ")
             if export_t_df == "y":
                 export_target_dataframes = True
+            
+            filter_approved = False
+            filter_approved_input = input("Filter Approved? (y/[n]): ")
+            if filter_approved_input == "y":
+                filter_approved = True
 
             all_features = []
             for study_name in os.listdir("experiment_data"):
-                set_n = int(experiment_name.split("_")[2].replace("v",""))
-                set_language = experiment_name.split("_")[1]
-
-                if not os.path.exists(os.path.join("experiment_data",study_name,"trialdata.csv")):
-                    utils.log_error(f"Language: {set_language} | Loading set: {set_n}, is missing 'trial_data.csv', check folder.", utils.Error.WARNING)
+                if "mturk" not in study_name:
                     continue
+                set_n = int(study_name.split("_")[2].replace("v",""))
+                set_language = study_name.split("_")[1]
 
-                if not os.path.exists(os.path.join("experiment_data",study_name,"accepted_answers.json")):
+
+                if not os.path.exists(os.path.join(__location__, "experiment_data",study_name,"accepted_answers.json")):
                     # Set hasn't been corrected yet
                     utils.log_error(f"Set {study_name} has not been corrected yet, skipping...", utils.Error.INFO)
                     continue
                 
-                test_study = Study(experiment_name)
+                test_study = Study(study_name)
 
                 # Check if it is a default set (no changes yet)
-                path_to_data = os.path.join("../experiment_data", experiment_name)
+                path_to_data = os.path.join(__location__, "experiment_data", study_name)
                 if os.path.exists(os.path.join(path_to_data, "trialdata.csv")):
                     if set_n == 1 and set_language == "EN":
                             # The experiment was split into two files (this appends the data)
-                            test_study.load_data_from_folder(os.path.join("../experiment_data",experiment_name,"trialdata_2.csv"), True, os.path.join("../experiment_data", experiment_name,), 
-                                                             eexport_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
-                    test_study.load_data_from_folder(os.path.join("../experiment_data", experiment_name,"trialdata.csv"), True, os.path.join("../experiment_data", experiment_name,), 
+                            test_study.load_data_from_folder(os.path.join(__location__, "experiment_data",study_name,"trialdata_2.csv"), True, os.path.join(__location__, "experiment_data", study_name,), 
+                                                             export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
+                    test_study.load_data_from_folder(os.path.join(__location__, "experiment_data", study_name,"trialdata.csv"), True, os.path.join(__location__, "experiment_data", study_name,), 
                                                      export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
                 else:
                     # Handle cases where the data has been moved.
@@ -1002,20 +1006,20 @@ if __name__ == '__main__':
                             continue
                         if os.path.exists(os.path.join(dir_path, "trialdata.csv")):
                             # Load the data from PsiTurk
-                            test_study.load_data_from_folder(join(dir_path,"trialdata.csv"), True, join("../experiment_data", experiment_name,), 
+                            test_study.load_data_from_folder(os.path.join(dir_path,"trialdata.csv"), True, os.path.join(__location__, "experiment_data", study_name,), 
                                                              export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
                         else:
-                            test_study.load_data_from_folder(dir_path, False, join("../experiment_data", experiment_name,), 
+                            test_study.load_data_from_folder(dir_path, False, os.path.join(__location__, "experiment_data", study_name,), 
                                                              export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
 
                 if export_text_bool:
                     test_study.export_set_texts(os.path.join(__location__, "experiment_data",study_name,"webgazer-sample-data.csv"))
 
-                features = set_data.get_feature_vector_list()
+                features = test_study.get_feature_vector_list()
                 all_features += features
 
                 # Generate all the fixation CSVs
-                for worker in set_data.experiment_list:
+                for worker in test_study.experiment_list:
                     # Features can only be exported if there are no errors.
                     if (not worker.features_series['fixation_error'] 
                     and not worker.features_series['target_error']): 
@@ -1024,11 +1028,9 @@ if __name__ == '__main__':
                         for trial_name in worker.features_series['set_trials']:
                             duration_dataframe = worker.get_duration_fixation_on_word(trial_name)
                             worker_target_df = pd.concat((worker_target_df, duration_dataframe))
-                        worker_target_df.to_csv(os.path.join("pre_processed_data","fixation_data_per_part",f"{worker.worker_id}_{study_name}_fix_dict.csv"), index=False)
+                        worker_target_df.to_csv(os.path.join(__location__, "pre_processed_data","fixation_data_per_part",f"{worker.worker_id}_{study_name}_fix_dict.csv"), index=False)
                     
-            filter_approved = False
-            if len(args) > 1 and int(args[1]) == 1:
-                filter_approved = True
+            
             all_features_filtered = pd.DataFrame(all_features)
             all_features_export = all_features_filtered.copy()
             save_path = os.path.join("pre_processed_data")
@@ -1042,18 +1044,15 @@ if __name__ == '__main__':
                 all_features_filtered = all_features_filtered[all_features_filtered['screen_x'] >  1110]
                 all_features_filtered = all_features_filtered[all_features_filtered['screen_y'] >  615]
                 for row_i, row in all_features_filtered.iterrows():
-                    row.to_json(os.path.join("pre_processed_data", f"{row.worker_id}_{row.set_name}.json"))
+                    row.to_json(os.path.join(__location__, "pre_processed_data", f"{row.worker_id}_{row.set_name}.json"))
                 utils.log_error(f"Filtered data saved to: {save_path}", utils.Error.INFO)
             else:
                 for row_i, row in all_features_export.iterrows():
-                    row.to_json(os.path.join("pre_processed_data", f"{row.worker_id}_{row.set_name}.json"))
+                    row.to_json(os.path.join(__location__, "pre_processed_data", f"{row.worker_id}_{row.set_name}.json"))
                 utils.log_error(f"All data saved to: {save_path}", utils.Error.INFO)
 
             utils.log_error(f"Shape of dataframe         : {all_features_export.shape}", utils.Error.INFO)
             utils.log_error(f"Shape of filtered dataframe: {all_features_filtered.shape}", utils.Error.INFO)
-
-            print(args)
-            print(parser)
         else:
             parser.print_help()
 
