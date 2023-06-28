@@ -1112,7 +1112,9 @@ class experiment:
         self.features_series['vision'] = new_vision # normal / glasses / contact lenses 
 
     def reset_webgaze_targets(self, trial):
-        self.webgazer_targets[trial] = self.webgazer_targets[trial][:1]
+        # If the trial is not present, then there was an error.
+        if trial in self.webgazer_targets:
+            self.webgazer_targets[trial] = self.webgazer_targets[trial][:1]
 
     def update_webgaze_targets(self, trial, target, verbose=0):
         """
