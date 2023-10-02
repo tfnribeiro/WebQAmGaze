@@ -18,11 +18,13 @@ import utils
 import argparse
 
 """
-
 Code used to load a series of experiments and correct the various trials.
 It generates the targets for a set and calculate the features for all the participants given the set.
 
 """
+# From https://stackoverflow.com/questions/4060221/how-to-reliably-open-a-file-in-the-same-directory-as-the-currently-running-scrip
+__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
 if platform == "win32":
     # Assumes it's in the default isntallation location
     # Used to create word boundaries.
@@ -120,21 +122,26 @@ class Study:
         print(f"Experiment ROI/SampleRate MIN: {total_experiment_roi.min():.2f} / {total_experiment_sample_rate.min():.2f}")
         print()
 
-    def load_data_from_folder(self, path_to_data, is_psiturk:bool, path_to_setdata="", show_first_part_data=False, show_answers=False):
+    def load_data_from_folder(self, path_to_data, is_psiturk:bool, path_to_setdata="", 
+                              show_first_part_data=False, show_answers=False, export_target_dataframes=False, 
+                              export_feature_dataframes=False, align_data=True):
         """
             path_to_data is expected to be a folder if is_psiturk is 'False' and a trialdata.csv (from psisturk) if 'True'
         """
+        
         def get_config_file(data_dir):
             for file in os.listdir(data_dir):
                 if ".conf" in file:
                     return os.path.join(data_dir, file)
             return False
-        
         if path_to_setdata == "":
-            path_to_setdata = os.path.join("experiment_data", self.experiment_name)
+            path_to_setdata = os.path.join(__location__, "experiment_data", self.study_name)
             utils.log_error(f"No path to set given, defaulting to: '{path_to_setdata}'", utils.Error.INFO)
         utils.log_error(f"Loading data from: '{path_to_setdata}', is psiturk: '{is_psiturk}'", utils.Error.INFO)
         path_with_config = path_to_data
+        target_data_path = os.path.join(path_to_setdata,"webgazer-sample-data.csv")
+        self.get_study_targets(target_data_path)
+        utils.log_error(f"Loading Target data from: '{target_data_path}', is psiturk: '{is_psiturk}'", utils.Error.INFO)
         if not os.path.isdir(path_with_config):
             # This is the case of psiturk
             path_with_config = os.sep.join(path_to_data.split(os.path.sep)[:-1])
@@ -143,11 +150,18 @@ class Study:
             self.load_config(path_to_config)
 
         if is_psiturk:
-            self.load_psiturk(path_to_data, set_name_config = self.study_config.data["set_name"])   
+            experiment_loaded = self.load_psiturk(path_to_data, set_name_config = self.study_config.data["set_name"])   
         else:
-            self.load_cognition(path_to_data)              
-        self.get_study_targets(os.path.join(path_to_setdata,"webgazer-sample-data.csv"))
+            experiment_loaded = self.load_cognition(path_to_data) 
+        self.experiment_list += experiment_loaded
+        if path_to_config != False:
+            self.set_config_experiment(experiment_loaded)             
         self.set_img_directory(path_to_setdata)
+        if align_data:
+            self.align_loaded_data(show_first_part_data, show_answers, export_target_dataframes, export_feature_dataframes)
+    
+    def align_loaded_data(self, show_first_part_data=False, show_answers=False, export_target_dataframes=False, 
+                              export_feature_dataframes=False):
         self.update_all_experiments_targets()
         if show_answers:
             # Only print the information if show_answers is enabled.
@@ -157,15 +171,39 @@ class Study:
             self.print_corrected_answers()
         self.correct_study_answers(verbose=show_answers)
         self.set_approve_reject_flag()
-        if path_to_config != False:
-            self.set_config_experiment()
+
         print("Fixation Errors Report: ")
         print()
-        for features in self.get_feature_vector_list():
-            print(f"WorkerID {features['worker_id']} has Fixation Error | Target Error: ", features['fixation_error'], features['target_error'])
-            features.to_json(os.path.join("pre_processed_data", f"{features.worker_id}_{features.set_name}.json"))
-        print("All data saved in: ", os.path.join("pre_processed_data"))
         
+        for features in self.get_feature_vector_list():
+            print(f"WorkerID: {features['worker_id']}, Type: {features['participant_type']}, Set: {features['set_name']} || Fixation Error | Target Error: ", features['fixation_error'], features['target_error'])
+            if export_feature_dataframes:
+                features.to_json(os.path.join(__location__, "pre_processed_data", f"{features.worker_id}_{features.set_name}.json"))
+        if export_feature_dataframes:
+            utils.log_error("All data saved in: " + os.path.join("pre_processed_data"), utils.Error.INFO)
+        fixation_error_ids = []
+        if export_target_dataframes:
+            utils.log_error("Exporting all fixation data!", utils.Error.INFO)
+            for worker in self.experiment_list:
+                # Features can only be exported if there are no errors.
+                if (not worker.features_series['fixation_error'] 
+                and not worker.features_series['target_error']): 
+                    try:
+                        worker_target_df = pd.DataFrame()
+                        experiment_name = worker.features_series["set_name"]
+                        for trial_name in worker.features_series['set_trials']:
+                            duration_dataframe = worker.get_duration_fixation_on_word(trial_name)
+                            worker_target_df = pd.concat((worker_target_df, duration_dataframe))
+                        worker_target_df.to_csv(os.path.join(__location__, "pre_processed_data","fixation_data_per_part",f"{worker.worker_id}_{experiment_name}_fix_dict.csv"), index=False)
+                    except Exception as e:
+                        print(e)
+                        fixation_error_ids.append(worker.worker_id)
+            utils.log_error("All fixation data saved in: " + os.path.join(__location__, "pre_processed_data", "fixation_data_per_part"), utils.Error.INFO)
+        if len(fixation_error_ids) > 0:
+            utils.log_error("Participants had fixation errors when generating IDs", utils.Error.ERROR)
+            utils.log_error(f"Total errors: {len(fixation_error_ids)}", utils.Error.ERROR)
+            for id in fixation_error_ids:
+                print(id)
         if show_first_part_data:
             workers_selected = [
                 worker for worker in self.experiment_list 
@@ -183,15 +221,17 @@ class Study:
     def load_cognition(self, folderpath, verbose=0):
         utils.log_error(f"Data loading from: {folderpath}", utils.Error.INFO)
         counter_of_unique_ids = 0
+        loaded_experiment_list = []
         for file in os.listdir(folderpath):
             if "webgazer-sample-data.csv" in file: continue
             if "word_boundaries.csv" in file: continue
             if "trialdata.csv" in file: continue
             if ".csv" in file:
                 print("Loading file: ", file)
-                worker_id = "p"+file.replace(".csv","")
+                worker_id = "p"+file.replace(".csv","")+"-"+folderpath.split(os.sep)[-1]
                 counter_of_unique_ids += 1
-                self.experiment_list.append(experiment(is_psiturk=False, filepath=os.path.join(folderpath, file), img_path=folderpath, worker_id=worker_id))
+                loaded_experiment_list.append(experiment(is_psiturk=False, filepath=os.path.join(folderpath, file), img_path=folderpath, worker_id=worker_id))
+        return loaded_experiment_list
         
     def load_psiturk(self, filepath, set_name_config=None, verbose = 0):
         """
@@ -201,6 +241,7 @@ class Study:
         """
         #print(f"LOADING DATA FROM: {filepath}")
         utils.log_error(f"Data loading from: {filepath}", utils.Error.INFO)
+        loaded_experiment_list = []
         set_name = filepath.split(os.sep)[-2] if set_name_config is None else set_name_config
         trial_data = pd.read_csv(filepath, names=['id','status','trial_id','data'])
         trial_ids_to_keep = []
@@ -250,12 +291,11 @@ class Study:
                 utils.log_error("Experiment has less trials than expected. The experiment was not terminated/missing data.", utils.Error.INFO, worker_id)
                 #print(f"ERROR, Worker ID: {worker_id}, didn't seem to finish the experiment.")
                 continue
-            self.experiment_list.append(experiment(is_psiturk=True, img_path=os.path.join(*img_path), dataframe=trial_df, worker_id=worker_id, assignment_id=assignment_id))
+            loaded_experiment_list.append(experiment(is_psiturk=True, img_path=os.path.join(*img_path), dataframe=trial_df, worker_id=worker_id, assignment_id=assignment_id))
             
             # Keep all the indexes of data we have loaded
             trial_ids_to_keep += list(data_trial.index)
 
-        
             #print("UNIQUE TRIALS: ", counter_of_unique_ids)
         # Replace the old CSV with a filtered CSV with the relevant data.
         # If no ids are kept, something went wrong, report it 
@@ -265,12 +305,13 @@ class Study:
                 utils.log_error(f"Total number of unique experiments: {counter_of_unique_ids}, writing to '{filepath}' to keep only the relevant data.", utils.Error.INFO)
         else:
             utils.log_error(f"No experiment was loaded, make sure the set_name matches the data you are trying to load.", utils.Error.ERROR)
+        return loaded_experiment_list
     
     def load_config(self, config_path):
         self.study_config.load(config_path)
 
-    def set_config_experiment(self):
-        for e in self.experiment_list:
+    def set_config_experiment(self, temporary_list):
+        for e in temporary_list:
             e.set_set_name(self.study_config.data["set_name"])
             e.set_set_language(self.study_config.data["set_language"])
             e.set_participant_type(self.study_config.data["participant_type"])
@@ -297,14 +338,14 @@ class Study:
         worker_id_error = self.get_worker(worker_id_with_error)
         if worker_id_correct is None or worker_id_error is None:
             utils.log_error(f"Reference Experiment ID: {worker_id_with_target} or Error Experiment ID: {worker_id_with_error} is missing.", utils.Error.ERROR)
-            return 
+            return
         if (worker_id_correct.features.screen_size[0] == worker_id_error.features.screen_size[0] and
              worker_id_correct.features.screen_size[1] == worker_id_error.features.screen_size[1]):
                 worker_id_error.webgazer_targets = worker_id_correct.webgazer_targets.copy()
                 utils.log_error(f"WorkerID ({worker_id_with_error}) Webgazer tagets updated successfuly with WorkerID ({worker_id_with_target}) targets.", error_level=utils.Error.INFO)
                 worker_id_error.recalculate_features()
         else:
-            utils.log_error(f"Targets were not updated as experiment with error and reference screen sizes are not the same. Error ID: {worker_id_error} | Reference ID: {worker_id_correct}", utils.Error.ERROR)
+            utils.log_error(f"Targets were not updated as experiment with error and reference screen sizes are not the same. Error ID: {worker_id_error.worker_id} | Reference ID: {worker_id_correct.worker_id}", utils.Error.ERROR)
             #print(f"ERROR: WorkerID ({worker_id_error}) not udpated. The screen size was not the same.")
 
 
@@ -452,8 +493,8 @@ class Study:
         dict_accepted_answer = dict()
         dict_unaccepted_answer = dict()
 
-        path_dict_accepted_answer = os.path.join("experiment_data",self.study_name,"accepted_answers.json")
-        path_dict_unaccepted_answer = os.path.join("experiment_data",self.study_name,"unaccepted_answers.json")
+        path_dict_accepted_answer = os.path.join(__location__, "experiment_data",self.study_name,"accepted_answers.json")
+        path_dict_unaccepted_answer = os.path.join(__location__, "experiment_data",self.study_name,"unaccepted_answers.json")
 
         if os.path.exists(path_dict_accepted_answer):
             with open(path_dict_accepted_answer) as f:
@@ -579,9 +620,9 @@ class Study:
         for i,row in dataframe_with_settings.iterrows():
             string_to_update = row["stimulus"]
             if pd.isnull(string_to_update):
-                new_stimulus.append(html_pattern.sub("", row["question_text"]))
+                new_stimulus.append(html_pattern.sub("", row["question_text"]).strip())
             else:
-                new_stimulus.append(html_pattern.sub("", string_to_update))
+                new_stimulus.append(html_pattern.sub("", string_to_update).strip())
         dataframe_with_settings.stimulus = new_stimulus
         dataframe_with_settings["lang"] = filepath.split(os.sep)[-2][len("mturk_"):len("mturk_")+2]
         dataframe_with_settings["task_type"] = "None"
@@ -598,7 +639,7 @@ class Study:
         for file in os.listdir(experiment_path):
             if file.endswith('.png'):
                 words = []
-                img = cv2.imread(join(experiment_path, file))
+                img = cv2.imread(os.path.join(__location__, experiment_path, file))
                 d = pytesseract.image_to_data(img, output_type=Output.DICT)
                 n_boxes = len(d['level'])
                 for i in range(n_boxes):
@@ -607,20 +648,20 @@ class Study:
                         df.loc[ii] = [file.split(".")[0], d['text'][i], Counter(words)[d['text'][i].lower().replace(".", "").replace(',','').replace(';','')], x, y, w, h]
                         words.append(d['text'][i].lower().replace(".", "").replace(',','').replace(';',''))
                         ii += 1
-        path_to_save = os.path.join(experiment_path,"word_boundaries.csv")
+        path_to_save = os.path.join(__location__, experiment_path,"word_boundaries.csv")
         df.to_csv(path_to_save)
         utils.log_error(f"Bounding boxes areas saved to: {path_to_save}", utils.Error.INFO)
 
-    def get_study_targets(self, filepath, export_dataframe=False, load_word_boundaries=True):
+    def get_study_targets(self, filepath, export_dataframe=True, load_word_boundaries=True):
         """
             Gets the list of targets for the experiment. 
             This needs the original CSV that was used to generate the images.
             This will then add the targets to the self.target_dict variable.
         """
         new_target_dict = {}
+        self.target_dict = {}
         experiment_dev = experiment(filepath=filepath, is_dev=True, is_psiturk=False)
         self.target_dict = experiment_dev.webgazer_targets
-        
         # Adjust to generate word boundaries around the words.
         LINE_TOLERANCE = 10 # px
 
@@ -635,6 +676,8 @@ class Study:
             if not os.path.exists(path_to_word_boundaries_csv):
                 utils.log_error(f"Creating Word Boundaries for words in dir: {path_to_set_dir}", utils.Error.INFO)
                 self.create_word_target_file(path_to_set_dir)
+            else:
+                utils.log_error(f"Loaded file from: {path_to_word_boundaries_csv}", utils.Error.INFO)
             word_boundaries_df = pd.read_csv(path_to_word_boundaries_csv)
             word_boundaries_df["text"] = word_boundaries_df["text"].str.replace("_1280_720","")
             for k, target_list in self.target_dict.items():
@@ -725,7 +768,7 @@ class Study:
                         # The target was a generic #webgazer_target
                         new_series = pd.Series([key] + [key+"_"+value.name] + list(value.to_numpy()), index=column_names)
                     data_frame_target_data.append(new_series)
-            pd.DataFrame(data_frame_target_data).to_csv(os.path.join("target_dataframes", f"target_dataframe_{filepath.split(os.sep)[-2]}.csv"))
+            pd.DataFrame(data_frame_target_data).to_csv(os.path.join(__location__,"target_dataframes", f"target_dataframe_{filepath.split(os.sep)[-2]}.csv"))
         return self.target_dict
     
     def print_all_questionaire_data(self):
@@ -745,6 +788,7 @@ class Study:
         """
         error_found = True
         for trial, target_list in self.target_dict.items():
+            experiment.reset_webgaze_targets(trial)
             for target in target_list:
                 result = experiment.update_webgaze_targets(trial, target)
                 error_found = error_found and result
@@ -789,7 +833,6 @@ class Study:
                         # Ensure the value was updated.
                         assert worker_error_exp.features_series['target_error'] == False
                         assert experiment_loaded_correctly[worker_error_i], f"ERROR: Updating the user failed. Please check WorkerID: {worker_error_exp.worker_id}"
-
                         break
                 if not experiment_loaded_correctly[worker_error_i]:
                     utils.log_error(f"No workers found with same screen size as {worker_error_exp.worker_id}, ({worker_error_screen_size}).", utils.Error.INFO)
@@ -891,23 +934,25 @@ if __name__ == '__main__':
         parser.print_help()
     else:
         args = vars(parser.parse_args())
-        experiment_name = args["study_name"][0]
-        set_data = Study(experiment_name)
+        study_name = args["study_name"][0]
+        set_data = Study(study_name)
         plot_first_part = True if args['show_first_participant'] is not None else False
         mode = args['mode'][0]
-        psiturk_default_data_path = os.path.join("experiment_data",experiment_name, "trialdata.csv")
-        csv_default_data_path = os.path.join("experiment_data",experiment_name)
+        psiturk_default_data_path = os.path.join(__location__, "experiment_data",study_name, "trialdata.csv")
+        csv_default_data_path = os.path.join(__location__, "experiment_data",study_name)
 
         if mode == "p":
             data_path = psiturk_default_data_path
             if args['data_path'] is not None:
                 data_path = args['data_path'][0]
-            set_data.load_data_from_folder(data_path, True, os.path.join("experiment_data",experiment_name), plot_first_part, show_answers=True)
+            set_data.load_data_from_folder(data_path, True, os.path.join("experiment_data",study_name), plot_first_part, 
+                                           show_answers=True, export_target_dataframes=True, export_feature_dataframes=True,)
         elif mode == "c":
             data_path = csv_default_data_path
             if args['data_path'] is not None:
                 data_path = args['data_path'][0]
-            set_data.load_data_from_folder(data_path, False, os.path.join("experiment_data",experiment_name), plot_first_part, show_answers=True)
+            set_data.load_data_from_folder(data_path, False, os.path.join("experiment_data",study_name), plot_first_part, show_answers=True,
+                                           export_target_dataframes=True, export_feature_dataframes=True,)
             
         elif mode == "r":
             test_recreate_set = [name for name in set_data[set_data.trial_name.notna()].trial_name]
@@ -921,7 +966,8 @@ if __name__ == '__main__':
             xquad_string += "];"
             print(xquad_string)
         elif mode == "e":
-            print("Exporting-data ...")
+            utils.log_error("## BETA. This functionality needs to be updated for the new data storing format.", utils.Error.WARNING)
+            utils.log_error("Exporting-data ...", utils.Error.INFO)
             export_text_bool = False
             export_target_dataframes = False
             export = input("Export texts data for all sets? (y/[n]): ")
@@ -931,52 +977,71 @@ if __name__ == '__main__':
             export_t_df = input("Export target df for all sets? (y/[n]): ")
             if export_t_df == "y":
                 export_target_dataframes = True
+            
+            filter_approved = False
+            filter_approved_input = input("Filter Approved? (y/[n]): ")
+            if filter_approved_input == "y":
+                filter_approved = True
 
             all_features = []
-            for experiment_name in os.listdir("experiment_data"):
-                set_language, set_n = experiment_name.replace("mturk_","").split("_")
-
-                if not os.path.exists(os.path.join("experiment_data",experiment_name,"trialdata.csv")):
-                    utils.log_error(f"Language: {set_language} | Loading set: {set_n}, is missing 'trial_data.csv', check folder.", utils.Error.WARNING)
+            for study_name in os.listdir("experiment_data"):
+                if "mturk" not in study_name:
                     continue
+                set_n = int(study_name.split("_")[2].replace("v",""))
+                set_language = study_name.split("_")[1]
 
-                if not os.path.exists(os.path.join("experiment_data",experiment_name,"accepted_answers.json")):
+
+                if not os.path.exists(os.path.join(__location__, "experiment_data",study_name,"accepted_answers.json")):
                     # Set hasn't been corrected yet
-                    utils.log_error(f"Set {experiment_name} has not been corrected yet, skipping...", utils.Error.INFO)
+                    utils.log_error(f"Set {study_name} has not been corrected yet, skipping...", utils.Error.INFO)
                     continue
                 
-                set_data = Study(experiment_name)
-                utils.log_error(f"Language: {set_language} | Loading set: {set_n}", utils.Error.INFO)
-                set_data.load_psiturk(os.path.join("experiment_data",experiment_name,"trialdata.csv"))
-                if set_n == 1 and set_language == "EN":
-                    # The experiment was split into two files (this appends the data)
-                    set_data.load_psiturk(os.path.join("experiment_data",experiment_name,"trialdata_2.csv"))
+                test_study = Study(study_name)
+
+                # Check if it is a default set (no changes yet)
+                path_to_data = os.path.join(__location__, "experiment_data", study_name)
+                if os.path.exists(os.path.join(path_to_data, "trialdata.csv")):
+                    if set_n == 1 and set_language == "EN":
+                            # The experiment was split into two files (this appends the data)
+                            test_study.load_data_from_folder(os.path.join(__location__, "experiment_data",study_name,"trialdata_2.csv"), True, os.path.join(__location__, "experiment_data", study_name,), 
+                                                             align_data=False)
+                    test_study.load_data_from_folder(os.path.join(__location__, "experiment_data", study_name,"trialdata.csv"), True, os.path.join(__location__, "experiment_data", study_name,), 
+                                                     align_data=False)
+                else:
+                    # Handle cases where the data has been moved.
+                    for directory_w_data in os.listdir(os.path.join(path_to_data)):
+                        dir_path = os.path.join(path_to_data, directory_w_data)
+                        if not os.path.isdir(dir_path):
+                            continue
+                        if os.path.exists(os.path.join(dir_path, "trialdata.csv")):
+                            # Load the data from PsiTurk
+                            test_study.load_data_from_folder(os.path.join(dir_path,"trialdata.csv"), True, os.path.join(__location__, "experiment_data", study_name,),
+                                                             align_data=False)
+                        else:
+                            test_study.load_data_from_folder(dir_path, False, os.path.join(__location__, "experiment_data", study_name,), 
+                                                             align_data=False)
+                # Align to avoid repeated targets.
+                test_study.align_loaded_data(export_target_dataframes=export_target_dataframes, export_feature_dataframes=True)
+
                 if export_text_bool:
-                    set_data.export_set_texts(os.path.join("experiment_data",experiment_name,"webgazer-sample-data.csv"))
-                set_data.get_study_targets(os.path.join("experiment_data",experiment_name,"webgazer-sample-data.csv"), export_dataframe=export_target_dataframes)
-                set_data.set_img_directory(os.path.join("experiment_data",experiment_name))
-                set_data.update_all_experiments_targets()
-                #test_study.print_all_acc()
-                set_data.correct_study_answers()
-                set_data.set_approve_reject_flag()
-                features = set_data.get_feature_vector_list()
+                    test_study.export_set_texts(os.path.join(__location__, "experiment_data",study_name,"webgazer-sample-data.csv"))
+
+                features = test_study.get_feature_vector_list()
                 all_features += features
 
                 # Generate all the fixation CSVs
-                for worker in set_data.experiment_list:
+                for worker in test_study.experiment_list:
                     # Features can only be exported if there are no errors.
                     if (not worker.features_series['fixation_error'] 
                     and not worker.features_series['target_error']): 
                         worker_target_df = pd.DataFrame()
-                        experiment_name = worker.features_series["set_name"]
+                        study_name = worker.features_series["set_name"]
                         for trial_name in worker.features_series['set_trials']:
                             duration_dataframe = worker.get_duration_fixation_on_word(trial_name)
                             worker_target_df = pd.concat((worker_target_df, duration_dataframe))
-                        worker_target_df.to_csv(os.path.join("pre_processed_data","fixation_data_per_part",f"{worker.worker_id}_{experiment_name}_fix_dict.csv"), index=False)
+                        worker_target_df.to_csv(os.path.join(__location__, "pre_processed_data","fixation_data_per_part",f"{worker.worker_id}_{study_name}_fix_dict.csv"), index=False)
                     
-            filter_approved = False
-            if len(args) > 1 and int(args[1]) == 1:
-                filter_approved = True
+            
             all_features_filtered = pd.DataFrame(all_features)
             all_features_export = all_features_filtered.copy()
             save_path = os.path.join("pre_processed_data")
@@ -989,12 +1054,16 @@ if __name__ == '__main__':
                 all_features_filtered = all_features_filtered[all_features_filtered["webgazer_sample_rate"] > 10]
                 all_features_filtered = all_features_filtered[all_features_filtered['screen_x'] >  1110]
                 all_features_filtered = all_features_filtered[all_features_filtered['screen_y'] >  615]
+                for row_i, row in all_features_filtered.iterrows():
+                    row.to_json(os.path.join(__location__, "pre_processed_data", f"{row.worker_id}_{row.set_name}.json"))
+                utils.log_error(f"Filtered data saved to: {save_path}", utils.Error.INFO)
+            else:
+                for row_i, row in all_features_export.iterrows():
+                    row.to_json(os.path.join(__location__, "pre_processed_data", f"{row.worker_id}_{row.set_name}.json"))
+                utils.log_error(f"All data saved to: {save_path}", utils.Error.INFO)
 
             utils.log_error(f"Shape of dataframe         : {all_features_export.shape}", utils.Error.INFO)
             utils.log_error(f"Shape of filtered dataframe: {all_features_filtered.shape}", utils.Error.INFO)
-
-            print(args)
-            print(parser)
         else:
             parser.print_help()
 
