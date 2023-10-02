@@ -989,13 +989,6 @@ if __name__ == '__main__':
                 all_features_filtered = all_features_filtered[all_features_filtered["webgazer_sample_rate"] > 10]
                 all_features_filtered = all_features_filtered[all_features_filtered['screen_x'] >  1110]
                 all_features_filtered = all_features_filtered[all_features_filtered['screen_y'] >  615]
-                for row_i, row in all_features_filtered.iterrows():
-                    row.to_json(os.path.join("pre_processed_data", f"{row.worker_id}_{row.set_name}.json"))
-                utils.log_error(f"Filtered data saved to: {save_path}", utils.Error.INFO)
-            else:
-                for row_i, row in all_features_export.iterrows():
-                    row.to_json(os.path.join("pre_processed_data", f"{row.worker_id}_{row.set_name}.json"))
-                utils.log_error(f"All data saved to: {save_path}", utils.Error.INFO)
 
             utils.log_error(f"Shape of dataframe         : {all_features_export.shape}", utils.Error.INFO)
             utils.log_error(f"Shape of filtered dataframe: {all_features_filtered.shape}", utils.Error.INFO)
