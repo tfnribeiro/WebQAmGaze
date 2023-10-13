@@ -1,4 +1,4 @@
-from os.path import join, isfile, isdir
+from os.path import join, isfile, isdir, exists
 from os import listdir, mkdir
 
 import matplotlib.pyplot as plt
@@ -25,13 +25,29 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
         lookup_table = pd.read_csv(f"../experiment_data/set_texts/text_settings_{experiment_name}.csv")
         quality[experiment_name] = []
         test_study = study.Study(experiment_name)
-        test_study.load_psiturk(join("../experiment_data", experiment_name, "trialdata.csv"))
-        test_study.get_study_targets(join("../experiment_data", experiment_name, "webgazer-sample-data.csv"),
-                                     load_word_boundaries=True)
-        test_study.set_img_directory(join("../experiment_data", experiment_name))
-        test_study.update_all_experiments_targets()
-        test_study.correct_study_answers()
-        test_study.set_approve_reject_flag()
+        set_n = int(experiment_name.split("_")[2].replace("v",""))
+        set_language = experiment_name.split("_")[1]
+        # Check if it is a default set (no changes yet)
+        path_to_data = join("../experiment_data", experiment_name)
+        if exists(join(path_to_data, "trialdata.csv")):
+            if set_n == 1 and set_language == "EN":
+                    # The experiment was split into two files (this appends the data)
+                    test_study.load_data_from_folder(join("../experiment_data",experiment_name,"trialdata_2.csv"), True, join("../experiment_data", experiment_name,), export_target_dataframes=False, align_data=False)
+            test_study.load_data_from_folder(join("../experiment_data", experiment_name,"trialdata.csv"), True, join("../experiment_data", experiment_name,), export_target_dataframes=False, align_data=False)
+        else:
+            # Handle cases where the data has been moved.
+            for directory_w_data in listdir(join(path_to_data)):
+                dir_path = join(path_to_data, directory_w_data)
+                if not isdir(dir_path):
+                    continue
+                if exists(join(dir_path, "trialdata.csv")):
+                    # Load the data from PsiTurk
+                    test_study.load_data_from_folder(join(dir_path,"trialdata.csv"), True, join("../experiment_data", experiment_name,), export_target_dataframes=False, align_data=False)
+                else:
+                    test_study.load_data_from_folder(dir_path, False, join("../experiment_data", experiment_name,), export_target_dataframes=False, align_data=False)
+        
+        # Align to avoid repeated targets.
+        test_study.align_loaded_data(export_target_dataframes=False, export_feature_dataframes=False)
 
         all_workers = [
             worker for worker in test_study.experiment_list
@@ -45,9 +61,9 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
         if WORKERS is not None:
             # filenames with "link" are from volunteers, without from Mturk
             if WORKERS == "mturk_only":
-                all_workers = [worker for worker in all_workers if "link" not in worker.worker_id]
+                all_workers = [worker for worker in all_workers if "link" not in worker.worker_id and worker.participant_type != "volunteer" and worker.participant_type != "lab"]
             elif WORKERS == "volunteer_only":
-                all_workers = [worker for worker in all_workers if "link" in worker.worker_id]
+                all_workers = [worker for worker in all_workers if "link" in worker.worker_id or worker.participant_type == "volunteer" or worker.participant_type == "lab"]
             else:
                 print("Check WORKERS variable!")
 

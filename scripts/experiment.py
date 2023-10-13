@@ -15,12 +15,15 @@ import regex as re
 from matplotlib import cm
 import pickle
 import sys
+import copy
 import pytesseract
 from pytesseract import Output
 from study_config import PARTICIPANT_TYPES, PLATFORM_TYPES
 import pandas as pd
 import utils
 
+# From https://stackoverflow.com/questions/4060221/how-to-reliably-open-a-file-in-the-same-directory-as-the-currently-running-scrip
+__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 OUTPUT_HEATGAZE_DIR = path.join("experiment_data", "imgs", "gaze_heatmaps")
 
 ## Variables for participants
@@ -34,9 +37,13 @@ T_TOLERANCE_FIX_FILTER = 50    # t threshold to remove fixations. Fix_t < T_TOLE
 # Counting the fixations on target tolerance
 PX_TOLERANCE_COUNT_FIXATIONS = 0
 
+# Tolerance for filtering the fixations outside
+# target paragraph.
+PX_TOLERANCE_OUTSIDE_TARGET = 25
+
 ## These resolutions were extracted from: https://www.screenresolution.org/
 ## Regex was used to capture all and compile them into a file.
-with open('all_resolution.txt','rb') as f:
+with open(path.join(__location__,'all_resolution.txt'),'rb') as f:
    ALL_RESOLUTIONS_SET = pickle.load(f)
 
 def to_JSON_dict(dictionary_to_convert):
@@ -679,6 +686,10 @@ class experiment:
         """
         new_dict = dict()
         dict_with_fixation_dur = dict()
+        dict_filter_counts = dict()
+        dict_total_counts = dict()
+        total_fix = 0
+        total_fix_filtered = 0
         for webgaze_trial, webgaze_data in webgaze_data.items():
             if len(webgaze_data) == 0:
                 new_dict[webgaze_trial] = webgaze_data
@@ -687,21 +698,29 @@ class experiment:
 
             # Calculate duration based on the differences of the following gaze point.
             fixation_duration = webgaze_data[1:, 2] - webgaze_data[0:-1, 2]
-            
+
             # Assume that the first fixation has no duration (The first point in the data)
             fix_dur = np.hstack([[0], fixation_duration])
-            filter = np.hstack(([True], (fixation_duration >= T_TOLERANCE_FIX_FILTER)))
+            filter_mask = np.hstack(([True], (fixation_duration >= T_TOLERANCE_FIX_FILTER)))
             fix_w_duration = np.zeros((len(fix_dur),4))
             fix_w_duration[:,:3] = webgaze_data
             fix_w_duration[:, 3] = fix_dur
-            
-            new_dict[webgaze_trial] = webgaze_data[filter]
-            dict_with_fixation_dur[webgaze_trial] = fix_w_duration[filter]
+            new_dict[webgaze_trial] = webgaze_data[filter_mask]
+            dict_with_fixation_dur[webgaze_trial] = fix_w_duration[filter_mask]
 
-            if filter.sum() == 0:
+            ## Create the filter dictionaries
+            dict_filter_counts[webgaze_trial] = filter_mask.sum()
+            dict_total_counts[webgaze_trial] = len(filter_mask)
+
+            total_fix += len(filter_mask)
+            total_fix_filtered += len(filter_mask)-filter_mask.sum()        
+
+            if filter_mask.sum() == 0:
                 utils.log_error("Filtering removed all fixations", utils.Error.INFO, self.worker_id, webgaze_trial)
                 #print("## WARNING: Filtering would remove all fixations.")
-        return new_dict, dict_with_fixation_dur
+        self.features_series["total_fix_points_d"] = total_fix
+        self.features_series["total_fix_points_d_filtered"] = total_fix_filtered
+        return new_dict, dict_with_fixation_dur, {"fix_dur_t": dict_total_counts, "fix_dur_t_f": dict_filter_counts}
 
     def __transform_to_scale(points, scale=[300, 800]):
         """
@@ -779,29 +798,39 @@ class experiment:
             AND 
             That the targets have been given from the the study.py (This is called in the recalculate features.)
         """
-        new_fixation_dict = self.webgazer_fixations_filtered.copy()
-        new_fixation_dict_w_dur = self.webgazer_fixations_w_duration.copy()
+        new_fixation_dict = copy.deepcopy(self.webgazer_fixations_filtered)
+        new_fixation_dict_w_dur = copy.deepcopy(self.webgazer_fixations_w_duration)
         last_paragraph = None
+        total_fix = 0
+        total_fix_filtered = 0
+        dict_filter_counts = dict()
+        dict_total_counts = dict()
         try:
-            for i, trial_name in enumerate(self.webgazer_fixations_filtered.keys()):
-                    last_paragraph = trial_name
-                    if "q_before" in trial_name:
-                        # This is same as q_after
-                        updated_trial_name = trial_name.replace("q_before", "q_after")
-                        paragraph_target = self.webgazer_targets[updated_trial_name][1]
-                    else:
-                        paragraph_target = self.webgazer_targets[trial_name][1]
-                    fixations = self.webgazer_fixations_filtered[trial_name]
-                    fixations = np.array([point for point in self.webgazer_fixations_filtered[trial_name]
-                                        if paragraph_target.in_boundaries(point, tolerance=25)])
-                    fixations_w_dur = np.array([point for point in self.webgazer_fixations_w_duration[trial_name]
-                                        if paragraph_target.in_boundaries(point[:3], tolerance=25)])
-                    if len(fixations) == 0 and verbose > 1:
-                        print("INFO: Removing fixations outside of target would remove all fixations!")
-                        print(f"INFO: Fixations not removed for worker: {self.worker_id}, trial: {trial_name}")
-                    if len(fixations > 0) and paragraph_target.width != 0 and paragraph_target.height != 0:
-                        new_fixation_dict[trial_name] = fixations
-                        new_fixation_dict_w_dur[trial_name] = fixations_w_dur
+            for trial_name in self.webgazer_fixations_filtered.keys():
+                last_paragraph = trial_name
+                if "q_before" in trial_name:
+                    # This is same as q_after
+                    updated_trial_name = trial_name.replace("q_before", "q_after")
+                    paragraph_target = self.webgazer_targets[updated_trial_name][1]
+                else:
+                    paragraph_target = self.webgazer_targets[trial_name][1]
+                trial_total_fix = len(self.webgazer_fixations_filtered[trial_name])
+                fixations = np.array([point for point in self.webgazer_fixations_filtered[trial_name]
+                                    if paragraph_target.in_boundaries(point, tolerance=PX_TOLERANCE_OUTSIDE_TARGET)])
+                fixations_w_dur = np.array([point for point in self.webgazer_fixations_w_duration[trial_name]
+                                    if paragraph_target.in_boundaries(point[:3], tolerance=PX_TOLERANCE_OUTSIDE_TARGET)])
+                fixation_n_filtered = len(fixations)
+                total_fix += trial_total_fix
+                total_fix_filtered += fixation_n_filtered
+                dict_total_counts[trial_name] = trial_total_fix
+                dict_filter_counts[trial_name] = fixation_n_filtered
+                if len(fixations) == 0 and verbose > 1:
+                    print("INFO: Removing fixations outside of target would remove all fixations!")
+                    print(f"INFO: Fixations not removed for worker: {self.worker_id}, trial: {trial_name}")
+                if len(fixations > 0) and paragraph_target.width != 0 and paragraph_target.height != 0:
+                    new_fixation_dict[trial_name] = fixations
+                    new_fixation_dict_w_dur[trial_name] = fixations_w_dur
+                
         except Exception as e:
             print("The fixations were not removed, this is most likely because the targets have not been updated.")
             print("#### Exception: ", e)
@@ -810,8 +839,12 @@ class experiment:
             print("#### Last paragraph: ", last_paragraph)
             self.features_series['fixation_error'] = True
             self.features_series['target_error'] = True
+            total_fix = 0
+            total_fix_filtered = 0
             # input("Press enter to continue...")
-        return new_fixation_dict, new_fixation_dict_w_dur
+        self.features_series["total_fix_points_p"] = total_fix
+        self.features_series["total_fix_points_p_filtered"] = total_fix_filtered
+        return new_fixation_dict, new_fixation_dict_w_dur, {"fix_p_t": dict_total_counts, "fix_p_f": dict_filter_counts}
         
     def __trans_cord_merge_gaze_p(self):
         """
@@ -830,6 +863,7 @@ class experiment:
         # Assumes that Targets are just an image with the stimulus.
         target_missing = False
         self.features_series['fixation_error'] = False
+        duration_counts_dict = {"fix_dur_t": dict(), "fix_dur_t_f": dict()}
         
         for i, trial_name in enumerate(self.webgazer_fixations_filtered.keys()):
             paragraph_target = self.webgazer_targets[trial_name][0]
@@ -862,9 +896,9 @@ class experiment:
             self.webgazer_fixations_filtered = experiment.__merge_fixations(self.webgazer_fixations_filtered)
             # With the merged fixations we can now calculate the updated duration
             # we do this by subtracting the t2-t1 (and consider the first point to have duration 0)
-            self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration = self.__filter_fixations(self.webgazer_fixations_filtered)
+            self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration, duration_counts_dict = self.__filter_fixations(self.webgazer_fixations_filtered)
 
-        return self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration 
+        return self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration, duration_counts_dict
 
     def __get_questionaire_answers(self):
         """
@@ -977,6 +1011,10 @@ class experiment:
             "screen_y",
             "webgazer_raw_data",
             "webgazer_filtered_data",
+            "total_fix_points_d", # Total Gaze Points across all trials
+            "total_fix_points_d_filtered", # Total Gaze Points after filtering
+            "total_fix_points_p", # Total Gaze Points across all trials
+            "total_fix_points_p_filtered", # Points filtered due to duration and paragraph filter
             "avg_roi_last_val",
             "webgazer_sample_rate", 
             "exp_total_time",
@@ -994,7 +1032,11 @@ class experiment:
                 f"trial_{i}_fixation_total",
                 f"trial_{i}_fixation_text_TRT",
                 f"trial_{i}_fixation_target_TRT",
-                f"trial_{i}_fixation_on_target", 
+                f"trial_{i}_fixation_on_target",
+                f"trial_{i}_total_fix_points_d", # Total Gaze Points for all trials
+                f"trial_{i}_total_fix_points_d_filtered", # Points kept due to duration Threshold
+                f"trial_{i}_total_fix_points_p", # Total Gaze Points for all trials
+                f"trial_{i}_total_fix_points_p_filtered", # Points filtered due to duration and paragraph filter
                 f"question_{i}_name",
                 f"question_{i}_time",
                 f"question_{i}_answer",
@@ -1010,6 +1052,10 @@ class experiment:
                 f"trial_{i}_fixation_on_target",
                 f"trial_{i}_fixation_text_TRT",
                 f"trial_{i}_fixation_target_TRT",
+                f"trial_{i}_total_fix_points_d", # Total Gaze points before duration filter
+                f"trial_{i}_total_fix_points_d_filtered", # Points kept due to duration Threshold
+                f"trial_{i}_total_fix_points_p", # Total Gaze Points before paragraph filter (after duration)
+                f"trial_{i}_total_fix_points_p_filtered", # Points filtered due to duration and paragraph filter
                 f"pre_question_{i}_name",
                 f"pre_question_{i}_time",
                 f"question_{i}_name",
@@ -1019,8 +1065,8 @@ class experiment:
                 f"question_{i}_target_to_fixation_ratio"]) 
 
             self.features_series = pd.Series(np.zeros(len(self.trial_columns)), index=self.trial_columns)
-            self.webgazer_fixations_filtered = self.webgazer_data.copy()
-            self.webgazer_fixations_w_duration = experiment.__calculate_durations(self.webgazer_data.copy())
+            self.webgazer_fixations_filtered = copy.deepcopy(self.webgazer_data)
+            self.webgazer_fixations_w_duration = experiment.__calculate_durations(copy.deepcopy(self.webgazer_data))
             # Perform the filtering on the Webgaze features.
 
 
@@ -1052,13 +1098,13 @@ class experiment:
             self.features_series['target_error'] = False
         
             # All should be done on the __filter_webgaze method as it will be called to recalculate features.
-            self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration = self.__trans_cord_merge_gaze_p()
+            # self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration, _ = self.__trans_cord_merge_gaze_p()
             # Below only do after adding targets (recalculate method)
             # self.features.counts_per_target = self.__count_fixations_per_target(self.webgazer_fixations_filtered)
 
             # self.webgazer_fixations_w_duration is always updated when self.__trans_cord_merge_gaze_p is called.
             # This is because, fixation duration needs to be estimated with all the data, and not when
-            self.features_series['webgazer_filtered_data'] = to_JSON_dict(self.webgazer_fixations_w_duration) 
+            # self.features_series['webgazer_filtered_data'] = to_JSON_dict(self.webgazer_fixations_w_duration) 
 
             for i, trial_name in enumerate(self.features_series['set_trials']):
                 for j, row in self.data[self.data.trial_name.str.contains(trial_name) == True].iterrows():
@@ -1109,6 +1155,10 @@ class experiment:
         assert new_vision in VISION_TYPES, f"Participant type needs to be in {VISION_TYPES}, used: '{new_vision}'." 
         self.features_series['vision'] = new_vision # normal / glasses / contact lenses 
 
+    def reset_webgaze_targets(self, trial):
+        # If the trial is not present, then there was an error.
+        if trial in self.webgazer_targets:
+            self.webgazer_targets[trial] = self.webgazer_targets[trial][:1]
 
     def update_webgaze_targets(self, trial, target, verbose=0):
         """
@@ -1132,7 +1182,7 @@ class experiment:
             self.features_series['target_error'] = True
             return False
         image_location = self.webgazer_targets[trial][0]
-        
+
         # Ensuring the target corresponds to the target image.
         assert (image_location.name == "#jspsych-image-keyboard-response-stimulus" or
                 image_location.name == "#jspsych-image-button-response-stimulus" or
@@ -1177,9 +1227,9 @@ class experiment:
             For instance, some users don't get the target-location and can be updated later with another
             participant, where we need to recalculate the features.
         """
-        self.webgazer_fixations_filtered = self.webgazer_data.copy()
-        self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration = self.__trans_cord_merge_gaze_p()
-        self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration = self.__remove_fixations_outside_target_region()
+        self.webgazer_fixations_filtered = copy.deepcopy(self.webgazer_data)
+        self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration, d_count_dict = self.__trans_cord_merge_gaze_p()
+        self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration, p_count_dict = self.__remove_fixations_outside_target_region()
         self.features.counts_per_target, duration_dict = self.__count_fixations_per_target(self.webgazer_fixations_w_duration)
         for i, trial_name in enumerate(self.features_series['set_trials']):
                 target = ""
@@ -1194,6 +1244,11 @@ class experiment:
                 self.features_series[f"trial_{i}_fixation_total"] = self.features.counts_per_target[trial_name]["TotalFix"]
                 self.features_series[f"trial_{i}_fixation_text_TRT"] = duration_dict[trial_name].get("paragraph", duration_dict[trial_name]["jsPsychTarget"])
                 self.features_series[f"trial_{i}_fixation_target_TRT"] = duration_dict[trial_name].get(target, 0)
+                self.features_series[f"trial_{i}_total_fix_points_d"] = d_count_dict["fix_dur_t"].get(trial_name, 0)
+                self.features_series[f"trial_{i}_total_fix_points_d_filtered"] = d_count_dict["fix_dur_t_f"].get(trial_name, 0)
+                self.features_series[f"trial_{i}_total_fix_points_p"] = p_count_dict["fix_p_t"].get(trial_name, 0)
+                self.features_series[f"trial_{i}_total_fix_points_p_filtered"] = p_count_dict["fix_p_f"].get(trial_name, 0)
+
         self.features_series['webgazer_filtered_data'] = to_JSON_dict(self.webgazer_fixations_w_duration) #consider using json.dumps
                         
     def get_browser(self):
@@ -1235,6 +1290,7 @@ class experiment:
         fixations = self.webgazer_fixations_w_duration[trial_name]
         non_word_patterns = re.compile(r'meco_para_\w+|#jspsych-image-keyboard-response-stimulus|paragraph|a_\w+_[0-9]|question')
         target_patterns = re.compile(r'meco_para_\w+|a_\w+_[0-9]')
+        scan_paths = []
         for target in self.webgazer_targets[trial_name]:
             if non_word_patterns.match(target.name):
                 # Skip all the non-word paterns. We only want to consider the words TRT.
@@ -1242,29 +1298,38 @@ class experiment:
             duration = 0
             count_fixation = 0
             span_word_is_in = ""
-            is_in_span = False
-            if not is_in_span:
-                for span_target in self.webgazer_targets[trial_name]:
-                    if (target_patterns.match(span_target.name) and
-                    target.target_is_overlapping(span_target)):
-                        is_in_span = True
-                        span_word_is_in += span_target.name + " "
-            for point in fixations:
+
+            for span_target in self.webgazer_targets[trial_name]:
+                if (target_patterns.match(span_target.name) and
+                target.target_is_overlapping(span_target)):
+                    span_word_is_in += span_target.name + " "
+            points_fixated = []
+            for p_i, point in enumerate(fixations):
                 if target.in_boundaries(point[:3], tolerance=PX_TOLERANCE_COUNT_FIXATIONS):
                     duration += point[3]
                     count_fixation += 1
+                    points_fixated.append(p_i)
+            scan_paths.append(points_fixated)
                 
             if duration > 0:
                 duration_dict[target.name] = [duration, count_fixation, span_word_is_in]
             else:
                 duration_dict[target.name] = [np.NaN, count_fixation, span_word_is_in]
         dataframe_format = pd.DataFrame()
-        counts_np = np.array(list(duration_dict.values()))
-        dataframe_format['word_id'] = duration_dict.keys()
-        dataframe_format['TRT'] = counts_np[:,0]
-        dataframe_format['FixCount'] = counts_np[:,1]
-        dataframe_format['Span_word_is_in'] = counts_np[:,2]
-        dataframe_format['text_id'] = trial_name
+        try:
+            counts_np = np.array(list(duration_dict.values()))
+            dataframe_format['word_id'] = duration_dict.keys()
+            dataframe_format['TRT'] = counts_np[:,0]
+            dataframe_format['FixCount'] = counts_np[:,1]
+            dataframe_format['scanPath'] = scan_paths
+            dataframe_format['Span_word_is_in'] = counts_np[:,2]
+            dataframe_format['text_id'] = trial_name
+        except Exception as e:
+            print("Error creating the TRT dictionary.")
+            print("#### Exception: ", e)
+            print(f"#### WorkerID: {self.worker_id}, Set-name: {self.features_series['set_name']}")
+            print(f"#### TRIAL WITH ERROR: '{trial_name}'")
+
         return dataframe_format
 
     def generate_plotmap(self, use_unfiltered_data=False, plot_scan_path=True):
