@@ -1,7 +1,6 @@
 from experiment import *
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-from scipy.stats import ttest_ind
 import numpy as np
 import json
 import re
@@ -16,6 +15,7 @@ from collections import Counter
 from sys import platform
 import utils
 import argparse
+import copy 
 
 """
 Code used to load a series of experiments and correct the various trials.
@@ -341,7 +341,7 @@ class Study:
             return
         if (worker_id_correct.features.screen_size[0] == worker_id_error.features.screen_size[0] and
              worker_id_correct.features.screen_size[1] == worker_id_error.features.screen_size[1]):
-                worker_id_error.webgazer_targets = worker_id_correct.webgazer_targets.copy()
+                worker_id_error.webgazer_targets = copy.deepcopy(worker_id_correct.webgazer_targets)
                 utils.log_error(f"WorkerID ({worker_id_with_error}) Webgazer tagets updated successfuly with WorkerID ({worker_id_with_target}) targets.", error_level=utils.Error.INFO)
                 worker_id_error.recalculate_features()
         else:

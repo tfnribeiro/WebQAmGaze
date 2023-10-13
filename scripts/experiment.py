@@ -15,6 +15,7 @@ import regex as re
 from matplotlib import cm
 import pickle
 import sys
+import copy
 import pytesseract
 from pytesseract import Output
 from study_config import PARTICIPANT_TYPES, PLATFORM_TYPES
@@ -797,8 +798,8 @@ class experiment:
             AND 
             That the targets have been given from the the study.py (This is called in the recalculate features.)
         """
-        new_fixation_dict = self.webgazer_fixations_filtered.copy()
-        new_fixation_dict_w_dur = self.webgazer_fixations_w_duration.copy()
+        new_fixation_dict = copy.deepcopy(self.webgazer_fixations_filtered)
+        new_fixation_dict_w_dur = copy.deepcopy(self.webgazer_fixations_w_duration)
         last_paragraph = None
         total_fix = 0
         total_fix_filtered = 0
@@ -1064,8 +1065,8 @@ class experiment:
                 f"question_{i}_target_to_fixation_ratio"]) 
 
             self.features_series = pd.Series(np.zeros(len(self.trial_columns)), index=self.trial_columns)
-            self.webgazer_fixations_filtered = self.webgazer_data.copy()
-            self.webgazer_fixations_w_duration = experiment.__calculate_durations(self.webgazer_data.copy())
+            self.webgazer_fixations_filtered = copy.deepcopy(self.webgazer_data)
+            self.webgazer_fixations_w_duration = experiment.__calculate_durations(copy.deepcopy(self.webgazer_data))
             # Perform the filtering on the Webgaze features.
 
 
@@ -1097,13 +1098,13 @@ class experiment:
             self.features_series['target_error'] = False
         
             # All should be done on the __filter_webgaze method as it will be called to recalculate features.
-            self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration, _ = self.__trans_cord_merge_gaze_p()
+            # self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration, _ = self.__trans_cord_merge_gaze_p()
             # Below only do after adding targets (recalculate method)
             # self.features.counts_per_target = self.__count_fixations_per_target(self.webgazer_fixations_filtered)
 
             # self.webgazer_fixations_w_duration is always updated when self.__trans_cord_merge_gaze_p is called.
             # This is because, fixation duration needs to be estimated with all the data, and not when
-            self.features_series['webgazer_filtered_data'] = to_JSON_dict(self.webgazer_fixations_w_duration) 
+            # self.features_series['webgazer_filtered_data'] = to_JSON_dict(self.webgazer_fixations_w_duration) 
 
             for i, trial_name in enumerate(self.features_series['set_trials']):
                 for j, row in self.data[self.data.trial_name.str.contains(trial_name) == True].iterrows():
@@ -1226,7 +1227,7 @@ class experiment:
             For instance, some users don't get the target-location and can be updated later with another
             participant, where we need to recalculate the features.
         """
-        self.webgazer_fixations_filtered = self.webgazer_data.copy()
+        self.webgazer_fixations_filtered = copy.deepcopy(self.webgazer_data)
         self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration, d_count_dict = self.__trans_cord_merge_gaze_p()
         self.webgazer_fixations_filtered, self.webgazer_fixations_w_duration, p_count_dict = self.__remove_fixations_outside_target_region()
         self.features.counts_per_target, duration_dict = self.__count_fixations_per_target(self.webgazer_fixations_w_duration)
@@ -1289,6 +1290,7 @@ class experiment:
         fixations = self.webgazer_fixations_w_duration[trial_name]
         non_word_patterns = re.compile(r'meco_para_\w+|#jspsych-image-keyboard-response-stimulus|paragraph|a_\w+_[0-9]|question')
         target_patterns = re.compile(r'meco_para_\w+|a_\w+_[0-9]')
+        scan_paths = []
         for target in self.webgazer_targets[trial_name]:
             if non_word_patterns.match(target.name):
                 # Skip all the non-word paterns. We only want to consider the words TRT.
@@ -1296,14 +1298,18 @@ class experiment:
             duration = 0
             count_fixation = 0
             span_word_is_in = ""
+
             for span_target in self.webgazer_targets[trial_name]:
                 if (target_patterns.match(span_target.name) and
                 target.target_is_overlapping(span_target)):
                     span_word_is_in += span_target.name + " "
-            for point in fixations:
+            points_fixated = []
+            for p_i, point in enumerate(fixations):
                 if target.in_boundaries(point[:3], tolerance=PX_TOLERANCE_COUNT_FIXATIONS):
                     duration += point[3]
                     count_fixation += 1
+                    points_fixated.append(p_i)
+            scan_paths.append(points_fixated)
                 
             if duration > 0:
                 duration_dict[target.name] = [duration, count_fixation, span_word_is_in]
@@ -1315,6 +1321,7 @@ class experiment:
             dataframe_format['word_id'] = duration_dict.keys()
             dataframe_format['TRT'] = counts_np[:,0]
             dataframe_format['FixCount'] = counts_np[:,1]
+            dataframe_format['scanPath'] = scan_paths
             dataframe_format['Span_word_is_in'] = counts_np[:,2]
             dataframe_format['text_id'] = trial_name
         except Exception as e:
