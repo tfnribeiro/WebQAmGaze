@@ -4,6 +4,7 @@ from os import listdir, mkdir
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sys
+
 sys.path.append('../')
 
 import study
@@ -15,27 +16,29 @@ from scipy.stats import spearmanr, entropy
 
 
 def word_per_minute(TRT, nwords):
-    return (nwords/TRT)*60
+    return (nwords / TRT) * 60
 
 
 def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=None, WORKERS=None):
     quality = {}
-    #fixations from the QAmGaze dataset
+    # fixations from the QAmGaze dataset
     for experiment_name in experiments:
         lookup_table = pd.read_csv(f"../experiment_data/set_texts/text_settings_{experiment_name}.csv")
         quality[experiment_name] = []
         test_study = study.Study(experiment_name)
-        set_n = int(experiment_name.split("_")[2].replace("v",""))
+        set_n = int(experiment_name.split("_")[2].replace("v", ""))
         set_language = experiment_name.split("_")[1]
 
         # Check if it is a default set (no changes yet)
         path_to_data = join("../experiment_data", experiment_name)
         if exists(join(path_to_data, "trialdata.csv")):
             if set_n == 1 and set_language == "EN":
-                    # The experiment was split into two files (this appends the data)
-                    test_study.load_data_from_folder(join("../experiment_data",experiment_name,"trialdata_2.csv"), True, join("../experiment_data", experiment_name,), 
-                                                     align_data=False)
-            test_study.load_data_from_folder(join("../experiment_data", experiment_name,"trialdata.csv"), True, join("../experiment_data", experiment_name,), 
+                # The experiment was split into two files (this appends the data)
+                test_study.load_data_from_folder(join("../experiment_data", experiment_name, "trialdata_2.csv"), True,
+                                                 join("../experiment_data", experiment_name, ),
+                                                 align_data=False)
+            test_study.load_data_from_folder(join("../experiment_data", experiment_name, "trialdata.csv"), True,
+                                             join("../experiment_data", experiment_name, ),
                                              align_data=False)
         else:
             # Handle cases where the data has been moved.
@@ -45,10 +48,11 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
                     continue
                 if exists(join(dir_path, "trialdata.csv")):
                     # Load the data from PsiTurk
-                    test_study.load_data_from_folder(join(dir_path,"trialdata.csv"), True, join("../experiment_data", experiment_name,),
+                    test_study.load_data_from_folder(join(dir_path, "trialdata.csv"), True,
+                                                     join("../experiment_data", experiment_name, ),
                                                      align_data=False)
                 else:
-                    test_study.load_data_from_folder(dir_path, False, join("../experiment_data", experiment_name,), 
+                    test_study.load_data_from_folder(dir_path, False, join("../experiment_data", experiment_name, ),
                                                      align_data=False)
         # Align to avoid repeated targets.
         test_study.align_loaded_data(export_target_dataframes=False, export_feature_dataframes=False)
@@ -65,9 +69,13 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
         if WORKERS is not None:
             # filenames with "link" are from volunteers, without from Mturk
             if WORKERS == "mturk_only":
-                all_workers = [worker for worker in all_workers if "link" not in worker.worker_id and worker.participant_type != "volunteer" and worker.participant_type != "lab"]
+                all_workers = [worker for worker in all_workers if
+                               "link" not in worker.worker_id and worker.features_series[
+                                   'participant_type'] != "volunteer" and worker.features_series[
+                                   'participant_type'] != "lab"]
             elif WORKERS == "volunteer_only":
-                all_workers = [worker for worker in all_workers if "link" in worker.worker_id or worker.participant_type == "volunteer" or worker.participant_type == "lab"]
+                all_workers = [worker for worker in all_workers if "link" in worker.worker_id or worker.features_series[
+                    'participant_type'] == "volunteer" or worker.features_series['participant_type'] == "lab"]
             else:
                 print("Check WORKERS variable!")
 
@@ -79,25 +87,27 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
             # import pdb;
             # pdb.set_trace()
 
-
         for ii, selected_worker in enumerate(all_workers):
             print(experiment_name, ii, selected_worker.features_series['worker_id'])
             df_out = pd.DataFrame()
             quality[experiment_name].append(selected_worker.features_series['avg_roi_last_val'])
             # if not isfile(join(out_dir, f"{'_'.join(experiment_name.split('_')[1:])}_{ii}-relfix-feats.csv")):
             if True:
-                all_trials = [selected_worker.features_series['set_trials'][0]] if MECO else selected_worker.features_series['set_trials']
+                all_trials = [selected_worker.features_series['set_trials'][0]] if MECO else \
+                    selected_worker.features_series['set_trials']
                 # for key in selected_worker.features_series.keys():
                 #     print(key)
                 for itrial, trial in enumerate(all_trials):
                     if MECO:
                         if 'meco' not in trial:
-                            import pdb;pdb.set_trace()
+                            import pdb;
+                            pdb.set_trace()
                         # assert 'meco' in trial
                     try:
                         df_worker = selected_worker.get_duration_fixation_on_word(trial)
                     except IndexError:
-                        import pdb;pdb.set_trace()
+                        import pdb;
+                        pdb.set_trace()
                     df_worker = df_worker.rename(columns={'word_id': 'word_id_orig'})
                     df_worker['countFix'] = df_worker['FixCount'].astype(int)
                     df_worker['word_id'] = df_worker['word_id_orig'].apply(lambda x: x.split('_')[0])
@@ -114,12 +124,12 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
 
                     for sen_num, (idx0, idx1) in enumerate(zip(df_worker.query("word_id.str.endswith('.')").index[:-1],
                                                                df_worker.query("word_id.str.endswith('.')").index[1:])):
-                        df_worker.loc[idx0+1:idx1, 'sentence_id'] = sen_num + 2
+                        df_worker.loc[idx0 + 1:idx1, 'sentence_id'] = sen_num + 2
 
                     if MECO:
                         for sen_num, sentence in df_worker.groupby('sentence_id'):
-                                df_worker.loc[df_worker.sentence_id == sen_num, 'relFix'] = [
-                                    float(s) / np.nansum(sentence['TRT'].values) for s in sentence['TRT'].values]
+                            df_worker.loc[df_worker.sentence_id == sen_num, 'relFix'] = [
+                                float(s) / np.nansum(sentence['TRT'].values) for s in sentence['TRT'].values]
                     else:
                         df_worker['relFix'] = [
                             float(s) / np.nansum(df_worker['TRT'].values) for s in df_worker['TRT'].values]
@@ -155,7 +165,7 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
 
 
 def average_features_id(language, experiments, WORKERS=None):
-    #average across experiment sets based on text_id
+    # average across experiment sets based on text_id
     if language == 'en':
         all_texts = [3, 7, 11, 12]
         set_to_text = {3: ['01', '02', '08', '16', '19'],
@@ -167,8 +177,8 @@ def average_features_id(language, experiments, WORKERS=None):
         set_to_text = {12: ['01', '02', '03', '04', '05', '06', '07', '08', '09']}
     elif language == 'de':
         if WORKERS == "volunteer_only":
-                all_texts = [1]
-                set_to_text = {1: ['05']}
+            all_texts = [1]
+            set_to_text = {1: ['05']}
         else:
             all_texts = [1, 12]
             set_to_text = {1: ['03', '05'],
@@ -214,16 +224,18 @@ def average_features_id(language, experiments, WORKERS=None):
                 column_names_count.append(column_count)
                 if len(df) > 0:
                     try:
-                        #print(df_worker)
+                        # print(df_worker)
                         df = df.merge(df_worker[['word_id_orig', 'relFix', 'countFix', 'TRT']].rename(
                             columns={'relFix': column_rel, 'TRT': column_trt, 'countFix': column_count}),
                             on='word_id_orig', how='inner')
                     except KeyError:
-                        import pdb;pdb.set_trace()
+                        import pdb;
+                        pdb.set_trace()
                 else:
                     df = df_worker[['word_id_orig', 'relFix', 'word_id', 'countFix', 'TRT']].rename(
                         columns={'relFix': column_rel, 'TRT': column_trt, 'countFix': column_count})
-        df_out = pd.DataFrame(columns=['relFix', 'TRT', 'countFix', 'word_id', 'word_id_orig', 'text_id', 'sentence_id'])
+        df_out = pd.DataFrame(
+            columns=['relFix', 'TRT', 'countFix', 'word_id', 'word_id_orig', 'text_id', 'sentence_id'])
         try:
             df_out['relFix'] = df[column_names_rel].mean(axis=1)
         except KeyError:
@@ -239,9 +251,139 @@ def average_features_id(language, experiments, WORKERS=None):
         print(df_worker.loc[0, 'text_id'])
         print(df_worker.loc[0, 'text_id'].split('_')[2])
         print(f"{experiment_name.split('_')[1]}_text{df_worker.loc[0, 'text_id'].split('_')[2]}-relfix-feats_avg.csv")
-        df_out.to_csv(join(out_dir, f"{experiment_name.split('_')[1]}_text{df_worker.loc[0, 'text_id'].split('_')[2]}-relfix-feats_avg.csv"), encoding="utf-8")
+        df_out.to_csv(join(out_dir,
+                           f"{experiment_name.split('_')[1]}_text{df_worker.loc[0, 'text_id'].split('_')[2]}-relfix-feats_avg.csv"),
+                      encoding="utf-8")
         print("file saved")
         print("---")
+
+
+def average_features_set(language, experiments, FILTER_CORRECT_ANSWER, FILTER_QUALITY,
+                         threshold, FILTER_VISION=False, vision='normal'):
+    workers_count_overall = 0
+
+    nfix = []
+
+    entropy_dict = pd.DataFrame(columns=['entropy', 'task_type', 'set', 'error_rate', 'TRT'])
+    error_rate = {}
+    # average across experiment sets
+    for experiment_name in sorted(experiments):
+        error_rate[experiment_name.split("_")[-1][-3:]] = []
+        # 1: gather all fixations by experiment set
+        workers = [file for file in listdir(out_dir) if file.startswith('_'.join(experiment_name.split('_')[1:]))
+                   and not file.endswith('avg.csv') and not file.endswith('avg_correct.csv')
+                   and not file.endswith('normal.csv') and not file.endswith('glasses.csv')
+                   and not file.endswith('0.25.csv') and not file.endswith('0.1.csv') and not file.endswith('0.2.csv')
+                   and not file.endswith('high.csv') and not file.endswith('low.csv')]
+        print(experiment_name, len(workers), 'workers')
+        workers_count = 0
+        df = {}
+        column_names_rel = {}
+        column_names_trt = {}
+        column_names_count = {}
+        for selected_worker in workers:
+            df_worker = pd.read_csv(join(out_dir, selected_worker))
+            if FILTER_CORRECT_ANSWER:
+                df_worker = df_worker.query("correct_answer==True")
+            if FILTER_VISION:
+                print(df_worker.vision.unique())
+                df_worker = df_worker.query("vision==@vision")
+            if len(df_worker) == 0:
+                continue
+
+            # collecting true and wrong answers
+            for text_id, subdf in df_worker.groupby("text_id"):
+                if text_id + '_' + experiment_name.split("_")[-1][-3:] not in entropy_dict.index:
+                    entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'error_rate'] = []
+                    entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'TRT'] = []
+                entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'error_rate'].append(
+                    subdf.iloc[0]['correct_answer'])
+                entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'TRT'].append(
+                    np.nansum(subdf.TRT))
+
+            workers_count += 1
+            workers_count_overall += 1
+            column_rel = f'relFix_{selected_worker.split("_")[1]}_{selected_worker.split("_")[2][0]}'
+            column_trt = f'TRT_{selected_worker.split("_")[1]}_{selected_worker.split("_")[2][0]}'
+            column_count = f'count_{selected_worker.split("_")[1]}_{selected_worker.split("_")[2][0]}'
+            if len(df) > 0:
+                for text_id, subdf in df_worker.groupby('text_id'):
+                    nfix.append(len(subdf.dropna(subset=['TRT'])) / len(subdf))
+                    if text_id in df:
+                        df[text_id] = df[text_id].merge(
+                            subdf[['word_id_orig', 'relFix', 'countFix', 'TRT', 'text_id']].rename(
+                                columns={'relFix': column_rel, 'TRT': column_trt, 'countFix': column_count}),
+                            on=['text_id', 'word_id_orig'], how='inner')
+                        column_names_rel[text_id].append(column_rel)
+                        column_names_trt[text_id].append(column_trt)
+                        column_names_count[text_id].append(column_count)
+
+                    else:
+                        df[text_id] = subdf[['word_id_orig', 'relFix', 'countFix', 'TRT', 'text_id', 'sentence_id',
+                                             'word_length', 'word_id', 'task_type']].rename(
+                            columns={'relFix': column_rel, 'TRT': column_trt, 'countFix': column_count})
+                        column_names_rel[text_id] = [column_rel]
+                        column_names_trt[text_id] = [column_trt]
+                        column_names_count[text_id] = [column_count]
+
+            else:
+                for text_id in df_worker.text_id.unique():
+                    df[text_id] = df_worker.query('text_id==@text_id')[
+                        ['word_id_orig', 'relFix', 'word_id', 'countFix', 'TRT', 'text_id', 'sentence_id',
+                         'word_length', 'task_type']].rename(
+                        columns={'relFix': column_rel, 'TRT': column_trt, 'countFix': column_count}).set_index(
+                        'text_id')
+                    column_names_rel[text_id] = [column_rel]
+                    column_names_trt[text_id] = [column_trt]
+                    column_names_count[text_id] = [column_count]
+
+        df_out = pd.DataFrame(columns=['relFix', 'TRT', 'countFix', 'word_id', 'word_id_orig', 'text_id',
+                                       'sentence_id', 'word_length'])
+
+        # # 2: average based on text_id
+        for ii, text_id in enumerate(df):
+            df[text_id]['relFix'] = df[text_id][column_names_rel[text_id]].mean(axis=1)
+            df[text_id]['TRT'] = df[text_id][column_names_trt[text_id]].mean(axis=1)
+            df[text_id]['countFix'] = df[text_id][column_names_count[text_id]].mean(axis=1)
+            df[text_id]['nWorkers'] = len(column_names_rel[text_id])
+
+            entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'entropy'] = entropy(
+                df[text_id]['relFix'].fillna(0).tolist())
+            entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'task_type'] = df[text_id].iloc[0][
+                'task_type']
+            entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'set'] = experiment_name.split("_")[
+                                                                                               -1][-3:]
+
+            if df[text_id].iloc[0]['task_type'] == 'IS':
+                print(text_id, len(column_names_rel[text_id]), 'Workers')
+
+            if 'text_id' not in df[text_id].columns:
+                df[text_id]['text_id'] = text_id
+
+            if len(df_out) > 0:
+                df_out = pd.concat([df_out, df[text_id][
+                    ['word_id', 'word_id_orig', 'text_id', 'sentence_id', 'word_length', 'relFix', 'TRT', 'countFix']]],
+                                   ignore_index=True)
+            else:
+                df_out = df[text_id][
+                    ['word_id', 'word_id_orig', 'text_id', 'sentence_id', 'word_length', 'relFix', 'TRT', 'countFix']]
+
+        df_out = df_out[['relFix', 'TRT', 'countFix', 'word_id', 'word_id_orig', 'text_id',
+                         'sentence_id', 'word_length']]
+
+        if len(df_out) > 0:
+            filename = f"{'_'.join(experiment_name.split('_')[1:])}-relfix-feats_avg"
+            filename = filename + '_correct' if FILTER_CORRECT_ANSWER else filename
+            filename = filename + f'_vision_{vision}' if FILTER_VISION else filename
+
+            df_out.to_csv(join(out_dir, filename + '.csv'), encoding="utf-8")
+
+    plot_name = 'entropy'
+    plot_name = plot_name + f'_{threshold}' if FILTER_QUALITY else plot_name
+    plot_name = plot_name + f'_correct' if FILTER_CORRECT_ANSWER else plot_name
+    plot_name = plot_name + '_' + language
+
+    entropy_dict.to_pickle(join(out_dir, plot_name + '.pkl'))
 
 
 if __name__ == '__main__':
@@ -249,21 +391,22 @@ if __name__ == '__main__':
     with open("config.yaml", "r") as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 
-    data='mecoL1'
+    data = 'mecoL1'
     languages = config[data]['languages_web']
-    out_dir = config[data]['meco_webcam_dir']
+
+    MECO = False
+    WORKERS = "mturk_only"  # "mturk_only", "volunteer_only" or None (= "all")
+    out_dir = config[data]['meco_webcam_dir'] if MECO else config[data]['webcam_dir']
 
     for lang in languages:
         print()
         print(lang)
         print()
 
-        experiments = sorted([folder for folder in listdir('../experiment_data') if folder.startswith(f'mturk_{lang.upper()}')])
+        experiments = sorted(
+            [folder for folder in listdir('../experiment_data') if folder.startswith(f'mturk_{lang.upper()}')])
         print(experiments)
         print()
-
-        MECO = True
-        WORKERS = None # "mturk_only", "volunteer_only" or None (= "all")
 
         FILTER_QUALITY = False
         threshold = None
@@ -276,5 +419,14 @@ if __name__ == '__main__':
 
         collect_fixations(experiments, MECO=MECO, FILTER_QUALITY=FILTER_QUALITY, threshold=threshold, WORKERS=WORKERS)
 
-        #this function averages across MECO ids (relevant for WebQAmGaze dataset paper)
-        average_features_id(lang, experiments, WORKERS=WORKERS)
+        FILTER_CORRECT_ANSWER = False
+        FILTER_VISION = False
+        vision = 'normal' #"glasses", we only have this information for the data recorded at KU
+
+        if MECO:
+            # this function averages across MECO ids (relevant for WebQAmGaze dataset paper)
+            average_features_id(lang, experiments, WORKERS=WORKERS)
+        else:
+            # this function averages across experiment sets (relevant for explainability paper)
+            average_features_set(lang, experiments, FILTER_CORRECT_ANSWER, FILTER_QUALITY=FILTER_QUALITY,
+                                 threshold=threshold, FILTER_VISION=FILTER_VISION, vision=vision)
