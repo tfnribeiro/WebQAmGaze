@@ -1,176 +1,846 @@
-,word_id_orig,TRT,FixCount,scanPath,Span_word_is_in,text_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
-0,The_0,,0,[],,meco_para_11,0,The,1,3,True,0.0,NR,
-1,International_0,129.0,2,"[67, 278]",,meco_para_11,2,International,1,13,True,0.0,NR,0.09809885931558936
-2,Union_0,121.0,1,[82],,meco_para_11,1,Union,1,5,True,0.0,NR,0.09201520912547528
-3,for_0,57.0,1,[83],,meco_para_11,1,for,1,3,True,0.0,NR,0.04334600760456274
-4,Conservation_0,68.0,1,[147],,meco_para_11,1,Conservation,1,12,True,0.0,NR,0.05171102661596958
-5,of_0,,0,[],,meco_para_11,0,of,1,2,True,0.0,NR,
-6,Nature_0,90.0,1,[184],,meco_para_11,1,Nature,1,6,True,0.0,NR,0.06844106463878327
-7,is_0,,0,[],,meco_para_11,0,is,1,2,True,0.0,NR,
-8,an__0,,0,[],meco_para_11_qa_0 ,meco_para_11,0,an,1,2,True,0.0,NR,
-9,international_1,,0,[],meco_para_11_qa_0 ,meco_para_11,0,international,1,13,True,0.0,NR,
-10,organization_0,,0,[],meco_para_11_qa_0 ,meco_para_11,0,organization,1,12,True,0.0,NR,
-11,working_0,201.0,2,"[11, 277]",,meco_para_11,2,working,1,7,True,0.0,NR,0.15285171102661596
-12,in_0,,0,[],,meco_para_11,0,in,1,2,True,0.0,NR,
-13,the_1,55.0,1,[27],,meco_para_11,1,the,1,3,True,0.0,NR,0.04182509505703422
-14,field_0,262.0,3,"[65, 109, 145]",,meco_para_11,3,field,1,5,True,0.0,NR,0.19923954372623573
-15,of_1,133.0,2,"[110, 285]",,meco_para_11,2,of,1,2,True,0.0,NR,0.10114068441064639
-16,nature_1,136.0,2,"[25, 146]",,meco_para_11,2,nature,1,6,True,0.0,NR,0.10342205323193916
-17,conservation_1,63.0,1,[194],,meco_para_11,1,conservation,1,12,True,0.0,NR,0.04790874524714829
-18,and_0,,0,[],,meco_para_11,0,and,1,3,True,0.0,NR,
-19,the_2,,0,[],,meco_para_11,0,the,1,3,True,0.0,NR,
-20,sustainable_0,,0,[],,meco_para_11,0,sustainable,1,11,True,0.0,NR,
-21,use_0,,0,[],,meco_para_11,0,use,1,3,True,0.0,NR,
-22,of_2,,0,[],,meco_para_11,0,of,1,2,True,0.0,NR,
-23,natural_0,,0,[],,meco_para_11,0,natural,1,7,True,0.0,NR,
-24,resources._0,,0,[],,meco_para_11,0,resources.,1,10,True,0.0,NR,
-25,It_0,522.0,6,"[68, 89, 100, 105, 226, 279]",,meco_para_11,6,It,2,2,True,0.0,NR,0.17440694954894753
-26,is_1,245.0,3,"[87, 90, 280]",,meco_para_11,3,is,2,2,True,0.0,NR,0.08185766789174741
-27,involved_0,387.0,6,"[15, 85, 86, 92, 108, 297]",,meco_para_11,6,involved,2,8,True,0.0,NR,0.12930170397594387
-28,in_1,187.0,3,"[64, 111, 298]",,meco_para_11,3,in,2,2,True,0.0,NR,0.06247911794186435
-29,data_0,,0,[],,meco_para_11,0,data,2,4,True,0.0,NR,
-30,gathering_0,,0,[],,meco_para_11,0,gathering,2,9,True,0.0,NR,
-31,and_1,64.0,1,[183],,meco_para_11,1,and,2,3,True,0.0,NR,0.021383227530905446
-32,"analysis,_0",55.0,1,[303],,meco_para_11,1,"analysis,",2,9,True,0.0,NR,0.018376211159371866
-33,"research,_0",103.0,1,[305],,meco_para_11,1,"research,",2,9,True,0.0,NR,0.03441363180755095
-34,field_1,,0,[],,meco_para_11,0,field,2,5,True,0.0,NR,
-35,"projects,_0",,0,[],,meco_para_11,0,"projects,",2,9,True,0.0,NR,
-36,"advocacy,_0",467.0,6,"[10, 54, 55, 101, 155, 242]",,meco_para_11,6,"advocacy,",2,9,True,0.0,NR,0.15603073838957568
-37,and_2,242.0,2,"[91, 136]",,meco_para_11,2,and,2,3,True,0.0,NR,0.08085532910123622
-38,education._0,721.0,10,"[16, 29, 50, 69, 81, 88, 144, 177, 224, 227]",,meco_para_11,10,education.,2,10,True,0.0,NR,0.24089542265285666
-39,Its_0,257.0,4,"[49, 59, 178, 296]",,meco_para_11,4,Its,3,3,True,0.0,NR,0.030837532997360213
-40,mission_0,1183.0,14,"[19, 63, 112, 128, 148, 179, 195, 228, 293, 294, 295, 299, 300, 308]",,meco_para_11,14,mission,3,7,True,0.0,NR,0.14194864410847133
-41,is_2,64.0,1,[196],,meco_para_11,1,is,3,2,True,0.0,NR,0.007679385649148068
-42,to_0,281.0,4,"[24, 161, 229, 309]",,meco_para_11,4,to,3,2,True,0.0,NR,0.033717302615790735
-43,"‘influence,_0",119.0,2,"[233, 263]",,meco_para_11,2,"‘influence,",3,11,True,0.0,NR,0.01427885769138469
-44,encourage_0,147.0,1,[304],,meco_para_11,1,encourage,3,9,True,0.0,NR,0.017638588912886968
-45,and_3,,0,[],,meco_para_11,0,and,3,3,True,0.0,NR,
-46,assist_0,,0,[],,meco_para_11,0,assist,3,6,True,0.0,NR,
-47,societies_0,,0,[],,meco_para_11,0,societies,3,9,True,0.0,NR,
-48,throughout_0,186.0,3,"[56, 156, 244]",meco_para_11_qa_2 ,meco_para_11,3,throughout,3,10,True,0.0,NR,0.022318214542836574
-49,the_3,311.0,4,"[52, 57, 102, 241]",meco_para_11_qa_2 ,meco_para_11,4,the,3,3,True,0.0,NR,0.037317014638828895
-50,world_0,1085.0,10,"[14, 51, 58, 80, 93, 107, 135, 223, 281, 283]",meco_para_11_qa_2 ,meco_para_11,10,world,3,5,True,0.0,NR,0.13018958483321336
-51,to_1,64.0,1,[222],meco_para_11_qa_2 ,meco_para_11,1,to,3,2,True,0.0,NR,0.007679385649148068
-52,conserve_0,1157.0,14,"[48, 60, 61, 118, 127, 129, 149, 150, 160, 180, 191, 192, 193, 310]",meco_para_11_qa_2 ,meco_para_11,14,conserve,3,8,True,0.0,NR,0.13882889368850493
-53,nature_2,217.0,3,"[189, 190, 239]",meco_para_11_qa_2 ,meco_para_11,3,nature,3,6,True,0.0,NR,0.02603791696664267
-54,and_4,313.0,4,"[23, 231, 237, 238]",meco_para_11_qa_2 ,meco_para_11,4,and,3,3,True,0.0,NR,0.03755699544036477
-55,to_2,55.0,1,[262],meco_para_11_qa_2 ,meco_para_11,1,to,3,2,True,0.0,NR,0.006599472042236621
-56,ensure_0,,0,[],meco_para_11_qa_2 ,meco_para_11,0,ensure,3,6,True,0.0,NR,
-57,that_0,58.0,1,[306],meco_para_11_qa_2 ,meco_para_11,1,that,3,4,True,0.0,NR,0.0069594432445404366
-58,any_0,,0,[],meco_para_11_qa_2 ,meco_para_11,0,any,3,3,True,0.0,NR,
-59,use_1,,0,[],meco_para_11_qa_2 ,meco_para_11,0,use,3,3,True,0.0,NR,
-60,of_3,,0,[],meco_para_11_qa_2 ,meco_para_11,0,of,3,2,True,0.0,NR,
-61,natural_1,,0,[],meco_para_11_qa_2 ,meco_para_11,0,natural,3,7,True,0.0,NR,
-62,resources_1,266.0,3,"[95, 141, 276]",meco_para_11_qa_2 ,meco_para_11,3,resources,3,9,True,0.0,NR,0.031917446604271656
-63,is_3,233.0,3,"[9, 157, 275]",meco_para_11_qa_2 ,meco_para_11,3,is,3,2,True,0.0,NR,0.027957763378929686
-64,equitable_0,868.0,11,"[13, 94, 98, 115, 116, 151, 153, 173, 176, 270, 282]",meco_para_11_qa_2 ,meco_para_11,11,equitable,3,9,True,0.0,NR,0.10415166786657068
-65,and_5,203.0,3,"[123, 125, 267]",meco_para_11_qa_2 ,meco_para_11,3,and,3,3,True,0.0,NR,0.02435805135589153
-66,ecologically_0,568.0,9,"[21, 62, 122, 124, 126, 130, 221, 240, 311]",meco_para_11_qa_2 ,meco_para_11,9,ecologically,3,12,True,0.0,NR,0.06815454763618911
-67,sustainable’._0,699.0,9,"[0, 20, 31, 182, 197, 236, 287, 301, 312]",meco_para_11_qa_2 ,meco_para_11,9,sustainable’.,3,13,True,0.0,NR,0.08387329013678906
-68,Over_0,114.0,2,"[32, 261]",meco_para_11_qa_2 ,meco_para_11,2,Over,4,4,True,0.0,NR,0.015539803707742638
-69,the_4,278.0,3,"[33, 185, 219]",meco_para_11_qa_2 ,meco_para_11,3,the,4,3,True,0.0,NR,0.03789531079607415
-70,past_0,,0,[],meco_para_11_qa_2 ,meco_para_11,0,past,4,4,True,0.0,NR,
-71,"decades,_0",,0,[],meco_para_11_qa_2 ,meco_para_11,0,"decades,",4,8,True,0.0,NR,
-72,the_5,,0,[],meco_para_11_qa_2 ,meco_para_11,0,the,4,3,True,0.0,NR,
-73,organization_1,297.0,3,"[137, 142, 143]",,meco_para_11,3,organization,4,12,True,0.0,NR,0.04048527808069793
-74,has_0,276.0,4,"[97, 139, 172, 274]",,meco_para_11,4,has,4,3,True,0.0,NR,0.0376226826608506
-75,widened_0,638.0,8,"[7, 70, 114, 117, 158, 159, 271, 286]",,meco_para_11,8,widened,4,7,True,0.0,NR,0.08696837513631407
-76,its_1,303.0,5,"[71, 72, 134, 170, 246]",,meco_para_11,5,its,4,3,True,0.0,NR,0.041303162486368596
-77,focus_0,321.0,5,"[18, 76, 119, 133, 208]",,meco_para_11,5,focus,4,5,True,0.0,NR,0.04375681570338059
-78,beyond_0,833.0,6,"[47, 131, 132, 169, 289, 292]",,meco_para_11,6,beyond,4,6,True,0.0,NR,0.11354961832061068
-79,conservation_2,613.0,7,"[37, 39, 42, 162, 235, 260, 313]",,meco_para_11,7,conservation,4,12,True,0.0,NR,0.08356052344601964
-80,ecology_0,237.0,3,"[186, 216, 218]",,meco_para_11,3,ecology,4,7,True,0.0,NR,0.032306434023991276
-81,and_6,,0,[],,meco_para_11,0,and,4,3,True,0.0,NR,
-82,now_0,,0,[],,meco_para_11,0,now,4,3,True,0.0,NR,
-83,incorporates_0,,0,[],,meco_para_11,0,incorporates,4,12,True,0.0,NR,
-84,issues_0,,0,[],,meco_para_11,0,issues,4,6,True,0.0,NR,
-85,related_0,57.0,1,[273],,meco_para_11,1,related,4,7,True,0.0,NR,0.007769901853871319
-86,to_3,60.0,1,[272],,meco_para_11,1,to,4,2,True,0.0,NR,0.008178844056706653
-87,sustainable_1,527.0,9,"[6, 75, 77, 113, 121, 171, 174, 268, 269]",,meco_para_11,9,sustainable,4,11,True,0.0,NR,0.07183751363140677
-88,development_0,900.0,12,"[1, 73, 120, 175, 181, 203, 210, 252, 265, 266, 328, 329]",,meco_para_11,12,development,4,11,True,0.0,NR,0.12268266085059978
-89,in_2,248.0,3,"[163, 204, 206]",,meco_para_11,3,in,4,2,True,0.0,NR,0.03380588876772083
-90,its_2,895.0,10,"[38, 43, 44, 46, 166, 167, 205, 248, 288, 302]",,meco_para_11,10,its,4,3,True,0.0,NR,0.12200109051254089
-91,projects._1,739.0,10,"[40, 41, 187, 188, 198, 200, 247, 259, 264, 314]",,meco_para_11,10,projects.,4,9,True,0.0,NR,0.10073609596510359
-92,Unlike_0,116.0,2,"[34, 36]",,meco_para_11,2,Unlike,5,6,True,0.0,NR,0.0670908039329092
-93,many_0,,0,[],,meco_para_11,0,many,5,4,True,0.0,NR,
-94,other_0,,0,[],,meco_para_11,0,other,5,5,True,0.0,NR,
-95,international_2,126.0,1,[138],,meco_para_11,1,international,5,13,True,0.0,NR,0.0728744939271255
-96,environmental_0,121.0,2,"[8, 78]",,meco_para_11,2,environmental,5,13,True,0.0,NR,0.06998264893001735
-97,"organizations,_0",381.0,5,"[253, 254, 321, 322, 330]",,meco_para_11,5,"organizations,",5,14,True,0.0,NR,0.2203585887796414
-98,it_1,219.0,3,"[4, 202, 209]",,meco_para_11,3,it,5,2,True,0.0,NR,0.1266628108733372
-99,does_0,343.0,4,"[165, 168, 249, 327]",,meco_para_11,4,does,5,4,True,0.0,NR,0.19838056680161945
-100,not_0,,0,[],,meco_para_11,0,not,5,3,True,0.0,NR,
-101,aim_0,199.0,3,"[199, 214, 217]",,meco_para_11,3,aim,5,3,True,0.0,NR,0.11509543088490456
-102,to_4,59.0,1,[215],,meco_para_11,1,to,5,2,True,0.0,NR,0.03412377096587623
-103,mobilize_0,100.0,1,[35],,meco_para_11,1,mobilize,5,8,True,0.0,NR,0.0578368999421631
-104,the_6,,0,[],,meco_para_11,0,the,5,3,True,0.0,NR,
-105,public_0,,0,[],,meco_para_11,0,public,5,6,True,0.0,NR,
-106,in_3,,0,[],,meco_para_11,0,in,5,2,True,0.0,NR,
-107,support_0,,0,[],,meco_para_11,0,support,5,7,True,0.0,NR,
-108,of_4,,0,[],,meco_para_11,0,of,5,2,True,0.0,NR,
-109,nature_3,,0,[],,meco_para_11,0,nature,5,6,True,0.0,NR,
-110,conservation._3,65.0,1,[320],,meco_para_11,1,conservation.,5,13,True,0.0,NR,0.03759398496240601
-111,"Instead,_0",329.0,4,"[2, 5, 319, 324]",,meco_para_11,4,"Instead,",6,8,True,0.0,NR,0.192510239906378
-112,the_7,417.0,5,"[251, 255, 291, 318, 326]",,meco_para_11,5,the,6,3,True,0.0,NR,0.24400234055002926
-113,organization_2,416.0,6,"[45, 201, 211, 212, 213, 316]",,meco_para_11,6,organization,6,12,True,0.0,NR,0.24341720304271502
-114,tries_0,,0,[],,meco_para_11,0,tries,6,5,True,0.0,NR,
-115,to_5,,0,[],,meco_para_11,0,to,6,2,True,0.0,NR,
-116,influence_0,,0,[],,meco_para_11,0,influence,6,9,True,0.0,NR,
-117,the_8,,0,[],,meco_para_11,0,the,6,3,True,0.0,NR,
-118,actions_0,,0,[],,meco_para_11,0,actions,6,7,True,0.0,NR,
-119,of_5,,0,[],,meco_para_11,0,of,6,2,True,0.0,NR,
-120,"governments,_0",,0,[],,meco_para_11,0,"governments,",6,12,True,0.0,NR,
-121,business_0,,0,[],,meco_para_11,0,business,6,8,True,0.0,NR,
-122,and_7,54.0,1,[250],,meco_para_11,1,and,6,3,True,0.0,NR,0.03159742539496782
-123,other_1,64.0,1,[323],,meco_para_11,1,other,6,5,True,0.0,NR,0.037448800468110006
-124,stakeholders_0,234.0,4,"[3, 256, 257, 317]",,meco_para_11,4,stakeholders,6,12,True,0.0,NR,0.1369221767115272
-125,by_0,,0,[],,meco_para_11,0,by,6,2,True,0.0,NR,
-126,providing_0,,0,[],,meco_para_11,0,providing,6,9,True,0.0,NR,
-127,information_0,,0,[],,meco_para_11,0,information,6,11,True,0.0,NR,
-128,and_8,,0,[],,meco_para_11,0,and,6,3,True,0.0,NR,
-129,"advice,_0",,0,[],,meco_para_11,0,"advice,",6,7,True,0.0,NR,
-130,and_9,,0,[],,meco_para_11,0,and,6,3,True,0.0,NR,
-131,through_0,,0,[],,meco_para_11,0,through,6,7,True,0.0,NR,
-132,building_0,,0,[],,meco_para_11,0,building,6,8,True,0.0,NR,
-133,partnerships._0,195.0,1,[325],,meco_para_11,1,partnerships.,6,13,True,0.0,NR,0.11410181392627268
-134,The_9,,0,[],,meco_para_11,0,The,7,3,True,0.0,NR,
-135,organization_3,,0,[],,meco_para_11,0,organization,7,12,True,0.0,NR,
-136,is_4,,0,[],,meco_para_11,0,is,7,2,True,0.0,NR,
-137,best_0,,0,[],,meco_para_11,0,best,7,4,True,0.0,NR,
-138,known_0,,0,[],,meco_para_11,0,known,7,5,True,0.0,NR,
-139,to_6,,0,[],,meco_para_11,0,to,7,2,True,0.0,NR,
-140,the_10,,0,[],,meco_para_11,0,the,7,3,True,0.0,NR,
-141,wider_0,,0,[],,meco_para_11,0,wider,7,5,True,0.0,NR,
-142,public_1,,0,[],,meco_para_11,0,public,7,6,True,0.0,NR,
-143,for_1,,0,[],,meco_para_11,0,for,7,3,True,0.0,NR,
-144,compiling_0,,0,[],meco_para_11_qa_3 ,meco_para_11,0,compiling,7,9,True,0.0,NR,
-145,and_10,,0,[],meco_para_11_qa_3 ,meco_para_11,0,and,7,3,True,0.0,NR,
-146,publishing_0,,0,[],meco_para_11_qa_3 ,meco_para_11,0,publishing,7,10,True,0.0,NR,
-147,the_11,,0,[],meco_para_11_qa_3 ,meco_para_11,0,the,7,3,True,0.0,NR,
-148,Red_0,,0,[],meco_para_11_qa_3 ,meco_para_11,0,Red,7,3,True,0.0,NR,
-149,List_0,,0,[],meco_para_11_qa_3 ,meco_para_11,0,List,7,4,True,0.0,NR,
-150,of_6,,0,[],meco_para_11_qa_3 ,meco_para_11,0,of,7,2,True,0.0,NR,
-151,Threatened_0,,0,[],meco_para_11_qa_3 ,meco_para_11,0,Threatened,7,10,True,0.0,NR,
-152,"Species,_0",,0,[],meco_para_11_qa_3 ,meco_para_11,0,"Species,",7,8,True,0.0,NR,
-153,which_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,which,7,5,True,0.0,NR,
-154,assesses_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,assesses,7,8,True,0.0,NR,
-155,the_12,,0,[],meco_para_11_qa_1 ,meco_para_11,0,the,7,3,True,0.0,NR,
-156,conservation_4,,0,[],meco_para_11_qa_1 ,meco_para_11,0,conservation,7,12,True,0.0,NR,
-157,status_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,status,7,6,True,0.0,NR,
-158,of_7,,0,[],meco_para_11_qa_1 ,meco_para_11,0,of,7,2,True,0.0,NR,
-159,species_1,,0,[],meco_para_11_qa_1 ,meco_para_11,0,species,7,7,True,0.0,NR,
-160,worldwide._0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,worldwide.,7,10,True,0.0,NR,
-161,"Today,_0",,0,[],meco_para_11_qa_1 ,meco_para_11,0,"Today,",8,6,True,0.0,NR,
-162,the_13,,0,[],meco_para_11_qa_1 ,meco_para_11,0,the,8,3,True,0.0,NR,
-163,organization_4,,0,[],meco_para_11_qa_1 ,meco_para_11,0,organization,8,12,True,0.0,NR,
-164,employs_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,employs,8,7,True,0.0,NR,
-165,approximately_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,approximately,8,13,True,0.0,NR,
-166,one_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,one,8,3,True,0.0,NR,
-167,thousand_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,thousand,8,8,True,0.0,NR,
-168,full-time_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,full-time,8,9,True,0.0,NR,
-169,staff_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,staff,8,5,True,0.0,NR,
-170,in_4,,0,[],meco_para_11_qa_1 ,meco_para_11,0,in,8,2,True,0.0,NR,
-171,more_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,more,8,4,True,0.0,NR,
-172,than_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,than,8,4,True,0.0,NR,
-173,fifty_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,fifty,8,5,True,0.0,NR,
-174,countries._0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,countries.,8,10,True,0.0,NR,
+,word_id_orig,TRT,FixCount,Scan_path,Span_word_is_in,text_id,worker_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
+0,Peyton_0,248.0,3,"[21, 66, 100]",a_SuperBowl50_2_qa_8 a_SuperBowl50_2_qa_11 a_SuperBowl50_2_qa_14 ,a_SuperBowl50_2,A2UKBPPWF76NCT,3,Peyton,1,6,True,0.009523809523809525,IS,0.05504994450610433
+1,Manning_0,249.0,4,"[14, 56, 97, 101]",a_SuperBowl50_2_qa_8 a_SuperBowl50_2_qa_11 a_SuperBowl50_2_qa_14 ,a_SuperBowl50_2,A2UKBPPWF76NCT,4,Manning,1,7,True,0.009523809523809525,IS,0.055271920088790234
+2,became_0,62.0,1,[52],,a_SuperBowl50_2,A2UKBPPWF76NCT,1,became,1,6,True,0.009523809523809525,IS,0.013762486126526082
+3,the_0,59.0,1,[8],,a_SuperBowl50_2,A2UKBPPWF76NCT,1,the,1,3,True,0.009523809523809525,IS,0.013096559378468368
+4,first_0,,0,[],,a_SuperBowl50_2,A2UKBPPWF76NCT,0,first,1,5,True,0.009523809523809525,IS,
+5,quarterback_0,188.0,3,"[3, 29, 75]",,a_SuperBowl50_2,A2UKBPPWF76NCT,3,quarterback,1,11,True,0.009523809523809525,IS,0.041731409544950054
+6,ever_0,69.0,1,[50],,a_SuperBowl50_2,A2UKBPPWF76NCT,1,ever,1,4,True,0.009523809523809525,IS,0.015316315205327414
+7,to_0,,0,[],,a_SuperBowl50_2,A2UKBPPWF76NCT,0,to,1,2,True,0.009523809523809525,IS,
+8,lead_0,133.0,1,[30],,a_SuperBowl50_2,A2UKBPPWF76NCT,1,lead,1,4,True,0.009523809523809525,IS,0.029522752497225305
+9,two._0,,0,[],a_SuperBowl50_2_qa_9 a_SuperBowl50_2_qa_10 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,two.,1,4,True,0.009523809523809525,IS,
+10,different_0,,0,[],,a_SuperBowl50_2,A2UKBPPWF76NCT,0,different,2,9,True,0.009523809523809525,IS,
+11,teams_0,63.0,1,[20],,a_SuperBowl50_2,A2UKBPPWF76NCT,1,teams,2,5,True,0.009523809523809525,IS,0.013984461709211986
+12,to_1,99.0,1,[60],,a_SuperBowl50_2,A2UKBPPWF76NCT,1,to,2,2,True,0.009523809523809525,IS,0.02197558268590455
+13,multiple_0,281.0,4,"[22, 72, 92, 95]",,a_SuperBowl50_2,A2UKBPPWF76NCT,4,multiple,2,8,True,0.009523809523809525,IS,0.062375138734739176
+14,Super_0,69.0,1,[28],,a_SuperBowl50_2,A2UKBPPWF76NCT,1,Super,2,5,True,0.009523809523809525,IS,0.015316315205327414
+15,Bowls._0,60.0,1,[78],,a_SuperBowl50_2,A2UKBPPWF76NCT,1,Bowls.,2,6,True,0.009523809523809525,IS,0.013318534961154272
+16,He_0,,0,[],,a_SuperBowl50_2,A2UKBPPWF76NCT,0,He,3,2,True,0.009523809523809525,IS,
+17,is_0,,0,[],,a_SuperBowl50_2,A2UKBPPWF76NCT,0,is,3,2,True,0.009523809523809525,IS,
+18,also_0,154.0,2,"[49, 86]",,a_SuperBowl50_2,A2UKBPPWF76NCT,2,also,3,4,True,0.009523809523809525,IS,0.0341842397336293
+19,the_1,119.0,2,"[11, 51]",,a_SuperBowl50_2,A2UKBPPWF76NCT,2,the,3,3,True,0.009523809523809525,IS,0.026415094339622643
+20,oldest_0,,0,[],,a_SuperBowl50_2,A2UKBPPWF76NCT,0,oldest,3,6,True,0.009523809523809525,IS,
+21,quarterback_1,62.0,1,[82],,a_SuperBowl50_2,A2UKBPPWF76NCT,1,quarterback,3,11,True,0.009523809523809525,IS,0.013762486126526082
+22,ever_1,,0,[],,a_SuperBowl50_2,A2UKBPPWF76NCT,0,ever,3,4,True,0.009523809523809525,IS,
+23,to_2,,0,[],,a_SuperBowl50_2,A2UKBPPWF76NCT,0,to,3,2,True,0.009523809523809525,IS,
+24,play_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,play,3,4,True,0.009523809523809525,IS,
+25,in_0,56.0,1,[90],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,in,3,2,True,0.009523809523809525,IS,0.012430632630410655
+26,a_0,65.0,1,[25],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,a,3,1,True,0.009523809523809525,IS,0.014428412874583796
+27,Super_1,130.0,2,"[17, 43]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,2,Super,3,5,True,0.009523809523809525,IS,0.02885682574916759
+28,Bowl_0,124.0,2,"[36, 42]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,2,Bowl,3,4,True,0.009523809523809525,IS,0.027524972253052164
+29,at_0,132.0,2,"[44, 76]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,2,at,3,2,True,0.009523809523809525,IS,0.0293007769145394
+30,age_0,125.0,3,"[0, 77, 87]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,3,age,3,3,True,0.009523809523809525,IS,0.02774694783573807
+31,39._0,,0,[],a_SuperBowl50_2_qa_0 a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_15 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,39.,3,3,True,0.009523809523809525,IS,
+32,The_2,62.0,1,[9],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,The,4,3,True,0.009523809523809525,IS,0.013762486126526082
+33,past_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,past,4,4,True,0.009523809523809525,IS,
+34,record_0,155.0,1,[2],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,record,4,6,True,0.009523809523809525,IS,0.03440621531631521
+35,was_0,64.0,1,[54],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,was,4,3,True,0.009523809523809525,IS,0.014206437291897892
+36,held_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,held,4,4,True,0.009523809523809525,IS,
+37,by_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,by,4,2,True,0.009523809523809525,IS,
+38,John_0,67.0,1,[83],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,John,4,4,True,0.009523809523809525,IS,0.014872364039955606
+39,"Elway,_0",133.0,2,"[18, 69]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,2,"Elway,",4,6,True,0.009523809523809525,IS,0.029522752497225305
+40,who_0,173.0,3,"[59, 63, 91]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,3,who,4,3,True,0.009523809523809525,IS,0.03840177580466149
+41,led_0,189.0,3,"[26, 41, 98]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,3,led,4,3,True,0.009523809523809525,IS,0.04195338512763596
+42,the_3,69.0,1,[15],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,the,4,3,True,0.009523809523809525,IS,0.015316315205327414
+43,Broncos_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_4 a_SuperBowl50_2_qa_5 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,Broncos,4,7,True,0.009523809523809525,IS,
+44,to_3,64.0,1,[13],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,to,4,2,True,0.009523809523809525,IS,0.014206437291897892
+45,victory_0,157.0,2,"[6, 12]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,2,victory,4,7,True,0.009523809523809525,IS,0.03485016648168701
+46,in_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,in,4,2,True,0.009523809523809525,IS,
+47,Super_2,61.0,1,[34],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_13 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,Super,4,5,True,0.009523809523809525,IS,0.013540510543840178
+48,Bowl_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_13 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,Bowl,4,4,True,0.009523809523809525,IS,
+49,XxxXill_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_13 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,XxxXill,4,7,True,0.009523809523809525,IS,
+50,at_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,at,4,2,True,0.009523809523809525,IS,
+51,age_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,age,4,3,True,0.009523809523809525,IS,
+52,38_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_2 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_7 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,38,4,2,True,0.009523809523809525,IS,
+53,and_0,124.0,2,"[19, 70]",a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,2,and,4,3,True,0.009523809523809525,IS,0.027524972253052164
+54,is_1,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,is,4,2,True,0.009523809523809525,IS,
+55,currently_0,193.0,2,"[27, 64]",a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,2,currently,4,9,True,0.009523809523809525,IS,0.042841287458379576
+56,Denver's_0,52.0,1,[88],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,Denver's,4,8,True,0.009523809523809525,IS,0.011542730299667037
+57,Executive_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,Executive,4,9,True,0.009523809523809525,IS,
+58,Vice_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,Vice,4,4,True,0.009523809523809525,IS,
+59,President_0,151.0,2,"[1, 47]",a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,2,President,4,9,True,0.009523809523809525,IS,0.033518312985571584
+60,of_0,52.0,1,[103],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,of,4,2,True,0.009523809523809525,IS,0.011542730299667037
+61,Football_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,Football,4,8,True,0.009523809523809525,IS,
+62,Operations_0,65.0,1,[33],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,1,Operations,4,10,True,0.009523809523809525,IS,0.014428412874583796
+63,and_1,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,and,4,3,True,0.009523809523809525,IS,
+64,General_0,127.0,2,"[39, 71]",a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,2,General,4,7,True,0.009523809523809525,IS,0.028190899001109878
+65,Manager._0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A2UKBPPWF76NCT,0,Manager.,4,8,True,0.009523809523809525,IS,
+0,In_0,,0,[],,a_NikolaTesla_3,A2UKBPPWF76NCT,0,In,1,2,False,0.012987012987012988,IS,
+1,the_0,,0,[],,a_NikolaTesla_3,A2UKBPPWF76NCT,0,the,1,3,False,0.012987012987012988,IS,
+2,years_0,64.0,1,[64],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,years,1,5,False,0.012987012987012988,IS,0.017084890549919914
+3,after_0,,0,[],,a_NikolaTesla_3,A2UKBPPWF76NCT,0,after,1,5,False,0.012987012987012988,IS,
+4,these_0,196.0,3,"[34, 107, 146]",,a_NikolaTesla_3,A2UKBPPWF76NCT,3,these,1,5,False,0.012987012987012988,IS,0.05232247730912974
+5,"rumors,_0",364.0,6,"[49, 50, 70, 83, 99, 109]",,a_NikolaTesla_3,A2UKBPPWF76NCT,6,"rumors,",1,7,False,0.012987012987012988,IS,0.09717031500266951
+6,neither_0,191.0,3,"[33, 47, 120]",,a_NikolaTesla_3,A2UKBPPWF76NCT,3,neither,1,7,False,0.012987012987012988,IS,0.050987720234917246
+7,Tesla_0,142.0,2,"[60, 131]",,a_NikolaTesla_3,A2UKBPPWF76NCT,2,Tesla,1,5,False,0.012987012987012988,IS,0.037907100907634814
+8,nor_0,253.0,4,"[7, 19, 97, 130]",,a_NikolaTesla_3,A2UKBPPWF76NCT,4,nor,1,3,False,0.012987012987012988,IS,0.06753870795515217
+9,Edison_0,133.0,2,"[94, 98]",a_NikolaTesla_3_qa_1 ,a_NikolaTesla_3,A2UKBPPWF76NCT,2,Edison,1,6,False,0.012987012987012988,IS,0.03550453817405232
+10,won_0,,0,[],,a_NikolaTesla_3,A2UKBPPWF76NCT,0,won,1,3,False,0.012987012987012988,IS,
+11,the_1,81.0,1,[76],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,the,1,3,False,0.012987012987012988,IS,0.021623064602242392
+12,prize_0,65.0,1,[85],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,prize,1,5,False,0.012987012987012988,IS,0.017351841964762412
+13,(although_0,114.0,2,"[17, 112]",,a_NikolaTesla_3,A2UKBPPWF76NCT,2,(although,1,9,False,0.012987012987012988,IS,0.030432461292044848
+14,Edison_1,62.0,1,[42],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,Edison,1,6,False,0.012987012987012988,IS,0.016550987720234916
+15,did_0,116.0,2,"[41, 62]",,a_NikolaTesla_3,A2UKBPPWF76NCT,2,did,1,3,False,0.012987012987012988,IS,0.030966364121729845
+16,receive_0,250.0,4,"[6, 36, 61, 100]",,a_NikolaTesla_3,A2UKBPPWF76NCT,4,receive,1,7,False,0.012987012987012988,IS,0.06673785371062467
+17,one_0,70.0,1,[111],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,one,1,3,False,0.012987012987012988,IS,0.01868659903897491
+18,of_0,57.0,1,[22],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,of,1,2,False,0.012987012987012988,IS,0.015216230646022424
+19,38_0,63.0,1,[53],a_NikolaTesla_3_qa_0 ,a_NikolaTesla_3,A2UKBPPWF76NCT,1,38,1,2,False,0.012987012987012988,IS,0.016817939135077415
+20,possible_0,74.0,1,[140],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,possible,1,8,False,0.012987012987012988,IS,0.019754404698344902
+21,bids_0,246.0,4,"[25, 45, 95, 132]",,a_NikolaTesla_3,A2UKBPPWF76NCT,4,bids,1,4,False,0.012987012987012988,IS,0.06567004805125468
+22,in_1,59.0,1,[138],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,in,1,2,False,0.012987012987012988,IS,0.01575013347570742
+23,1915_0,129.0,2,"[54, 96]",,a_NikolaTesla_3,A2UKBPPWF76NCT,2,1915,1,4,False,0.012987012987012988,IS,0.03443673251468233
+24,and__0,83.0,1,[73],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,and,1,3,False,0.012987012987012988,IS,0.02215696743192739
+25,Tesla_1,117.0,2,"[141, 142]",,a_NikolaTesla_3,A2UKBPPWF76NCT,2,Tesla,1,5,False,0.012987012987012988,IS,0.031233315536572343
+26,did_1,,0,[],,a_NikolaTesla_3,A2UKBPPWF76NCT,0,did,1,3,False,0.012987012987012988,IS,
+27,receive_1,181.0,3,"[15, 104, 145]",,a_NikolaTesla_3,A2UKBPPWF76NCT,3,receive,1,7,False,0.012987012987012988,IS,0.04831820608649226
+28,one_1,,0,[],,a_NikolaTesla_3,A2UKBPPWF76NCT,0,one,1,3,False,0.012987012987012988,IS,
+29,of_1,70.0,1,[82],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,of,1,2,False,0.012987012987012988,IS,0.01868659903897491
+30,38_1,116.0,2,"[12, 14]",,a_NikolaTesla_3,A2UKBPPWF76NCT,2,38,1,2,False,0.012987012987012988,IS,0.030966364121729845
+31,possible_1,248.0,4,"[1, 13, 65, 67]",,a_NikolaTesla_3,A2UKBPPWF76NCT,4,possible,1,8,False,0.012987012987012988,IS,0.06620395088093967
+32,bids_1,133.0,2,"[66, 101]",,a_NikolaTesla_3,A2UKBPPWF76NCT,2,bids,1,4,False,0.012987012987012988,IS,0.03550453817405232
+33,in_2,69.0,1,[48],,a_NikolaTesla_3,A2UKBPPWF76NCT,1,in,1,2,False,0.012987012987012988,IS,0.018419647624132406
+34,1937)._0,,0,[],a_NikolaTesla_3_qa_2 ,a_NikolaTesla_3,A2UKBPPWF76NCT,0,1937).,1,6,False,0.012987012987012988,IS,
+0,Kenya_0,65.0,1,[51],,a_Kenya_0,A2UKBPPWF76NCT,1,Kenya,1,5,True,0.0,IS,0.02219187435984978
+1,ranks_0,65.0,1,[17],,a_Kenya_0,A2UKBPPWF76NCT,1,ranks,1,5,True,0.0,IS,0.02219187435984978
+2,low_0,,0,[],a_Kenya_0_qa_0 ,a_Kenya_0,A2UKBPPWF76NCT,0,low,1,3,True,0.0,IS,
+3,on_0,120.0,2,"[5, 30]",,a_Kenya_0,A2UKBPPWF76NCT,2,on,1,2,True,0.0,IS,0.04096961420279959
+4,Transparency_0,241.0,4,"[12, 27, 41, 42]",,a_Kenya_0,A2UKBPPWF76NCT,4,Transparency,1,12,True,0.0,IS,0.08228064185728917
+5,International's_0,50.0,1,[40],,a_Kenya_0,A2UKBPPWF76NCT,1,International's,1,15,True,0.0,IS,0.01707067258449983
+6,Corruption_0,57.0,1,[38],,a_Kenya_0,A2UKBPPWF76NCT,1,Corruption,1,10,True,0.0,IS,0.019460566746329806
+7,Perception_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,Perception,1,10,True,0.0,IS,
+8,Index_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,Index,1,5,True,0.0,IS,
+9,"(CPI),_0",133.0,2,"[16, 48]",a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,2,"(CPI),",1,6,True,0.0,IS,0.04540798907476955
+10,a_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,a,1,1,True,0.0,IS,
+11,metric_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,metric,1,6,True,0.0,IS,
+12,which_0,69.0,1,[11],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,1,which,1,5,True,0.0,IS,0.023557528166609765
+13,attempts_0,60.0,1,[20],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,1,attempts,1,8,True,0.0,IS,0.020484807101399796
+14,to_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,to,1,2,True,0.0,IS,
+15,gauge_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,gauge,1,5,True,0.0,IS,
+16,the_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,the,1,3,True,0.0,IS,
+17,prevalence_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,prevalence,1,10,True,0.0,IS,
+18,of_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,of,1,2,True,0.0,IS,
+19,public_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,public,1,6,True,0.0,IS,
+20,sector_0,50.0,1,[65],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,1,sector,1,6,True,0.0,IS,0.01707067258449983
+21,corruption_1,69.0,1,[49],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,1,corruption,1,10,True,0.0,IS,0.023557528166609765
+22,in_0,136.0,2,"[52, 53]",a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,2,in,1,2,True,0.0,IS,0.04643222942983954
+23,various_0,53.0,1,[23],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,1,various,1,7,True,0.0,IS,0.01809491293956982
+24,countries._0,263.0,4,"[25, 34, 44, 47]",a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,4,countries.,1,10,True,0.0,IS,0.0897917377944691
+25,In_1,118.0,2,"[43, 45]",a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,2,In,2,2,True,0.0,IS,0.0402867872994196
+26,"2012,_0",,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,"2012,",2,5,True,0.0,IS,
+27,the_1,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,the,2,3,True,0.0,IS,
+28,nation_0,105.0,2,"[6, 39]",a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,2,nation,2,6,True,0.0,IS,0.03584841242744964
+29,placed_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,placed,2,6,True,0.0,IS,
+30,139th_0,,0,[],a_Kenya_0_qa_1 a_Kenya_0_qa_2 ,a_Kenya_0,A2UKBPPWF76NCT,0,139th,2,5,True,0.0,IS,
+31,out_0,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,out,2,3,True,0.0,IS,
+32,of_1,,0,[],a_Kenya_0_qa_1 ,a_Kenya_0,A2UKBPPWF76NCT,0,of,2,2,True,0.0,IS,
+33,176_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,176,2,3,True,0.0,IS,
+34,total_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,total,2,5,True,0.0,IS,
+35,countries_1,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,countries,2,9,True,0.0,IS,
+36,in_2,72.0,1,[31],,a_Kenya_0,A2UKBPPWF76NCT,1,in,2,2,True,0.0,IS,0.024581768521679755
+37,the_2,296.0,2,"[21, 54]",,a_Kenya_0,A2UKBPPWF76NCT,2,the,2,3,True,0.0,IS,0.101058381700239
+38,"CPI,_0",,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,"CPI,",2,4,True,0.0,IS,
+39,with_0,117.0,2,"[10, 46]",,a_Kenya_0,A2UKBPPWF76NCT,2,with,2,4,True,0.0,IS,0.0399453738477296
+40,a_1,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,a,2,1,True,0.0,IS,
+41,score_0,61.0,1,[14],,a_Kenya_0,A2UKBPPWF76NCT,1,score,2,5,True,0.0,IS,0.020826220553089792
+42,of_2,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,of,2,2,True,0.0,IS,
+43,27/100._0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,27/100.,2,7,True,0.0,IS,
+44,"However,_0",,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,"However,",3,8,True,0.0,IS,
+45,there_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,there,3,5,True,0.0,IS,
+46,are_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,are,3,3,True,0.0,IS,
+47,several_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,several,3,7,True,0.0,IS,
+48,rather_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,rather,3,6,True,0.0,IS,
+49,significant_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,significant,3,11,True,0.0,IS,
+50,developments_0,194.0,3,"[7, 8, 33]",,a_Kenya_0,A2UKBPPWF76NCT,3,developments,3,12,True,0.0,IS,0.06623420962785934
+51,with_1,66.0,1,[13],,a_Kenya_0,A2UKBPPWF76NCT,1,with,3,4,True,0.0,IS,0.022533287811539775
+52,regards_0,60.0,1,[9],,a_Kenya_0,A2UKBPPWF76NCT,1,regards,3,7,True,0.0,IS,0.020484807101399796
+53,to_1,51.0,1,[68],,a_Kenya_0,A2UKBPPWF76NCT,1,to,3,2,True,0.0,IS,0.017412086036189826
+54,curbing_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,curbing,3,7,True,0.0,IS,
+55,corruption_2,61.0,1,[66],,a_Kenya_0,A2UKBPPWF76NCT,1,corruption,3,10,True,0.0,IS,0.020826220553089792
+56,from_0,,0,[],,a_Kenya_0,A2UKBPPWF76NCT,0,from,3,4,True,0.0,IS,
+57,the_3,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,the,3,3,True,0.0,IS,
+58,Kenyan_0,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,Kenyan,3,6,True,0.0,IS,
+59,"government,_0",63.0,1,[58],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,1,"government,",3,11,True,0.0,IS,0.021509047456469785
+60,for_0,114.0,2,"[22, 32]",a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,2,for,3,3,True,0.0,IS,0.03892113349265961
+61,"instance,_0",,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,"instance,",3,9,True,0.0,IS,
+62,the_4,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,the,3,3,True,0.0,IS,
+63,establishment_0,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,establishment,3,13,True,0.0,IS,
+64,of_3,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,of,3,2,True,0.0,IS,
+65,a_2,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,a,3,1,True,0.0,IS,
+66,new_0,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,new,3,3,True,0.0,IS,
+67,=_0,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,=,3,1,True,0.0,IS,
+68,and_0,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,and,3,3,True,0.0,IS,
+69,independent_0,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,independent,3,11,True,0.0,IS,
+70,Ethics_0,70.0,1,[56],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,1,Ethics,3,6,True,0.0,IS,0.023898941618299762
+71,and_1,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,and,3,3,True,0.0,IS,
+72,Anti-Corruption_0,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,Anti-Corruption,3,15,True,0.0,IS,
+73,Commission_0,,0,[],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,0,Commission,3,10,True,0.0,IS,
+74,(EACC)._0,50.0,1,[2],a_Kenya_0_qa_3 ,a_Kenya_0,A2UKBPPWF76NCT,1,(EACC).,3,7,True,0.0,IS,0.01707067258449983
+0,Professional_0,132.0,2,"[150, 151]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,Professional,1,12,False,0.2914572864321608,IS,0.01753453772582359
+1,sports_0,133.0,2,"[178, 180]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,sports,1,6,False,0.2914572864321608,IS,0.017667375132837407
+2,teams_0,59.0,1,[87],,a_SouthernCalifornia_3,A2UKBPPWF76NCT,1,teams,1,5,False,0.2914572864321608,IS,0.00783740701381509
+3,in_0,,0,[],,a_SouthernCalifornia_3,A2UKBPPWF76NCT,0,in,1,2,False,0.2914572864321608,IS,
+4,Southern_0,343.0,4,"[125, 162, 164, 184]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,4,Southern,1,8,False,0.2914572864321608,IS,0.045563230605738574
+5,California_0,308.0,5,"[69, 71, 91, 169, 187]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,5,California,1,10,False,0.2914572864321608,IS,0.04091392136025505
+6,include_0,173.0,3,"[22, 40, 131]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,3,include,1,7,False,0.2914572864321608,IS,0.02298087141339001
+7,teams_1,188.0,3,"[52, 112, 130]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,3,teams,1,5,False,0.2914572864321608,IS,0.02497343251859724
+8,from_0,,0,[],,a_SouthernCalifornia_3,A2UKBPPWF76NCT,0,from,1,4,False,0.2914572864321608,IS,
+9,the_0,127.0,2,"[113, 133]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,the,1,3,False,0.2914572864321608,IS,0.016870350690754515
+10,NFL_0,,0,[],a_SouthernCalifornia_3_qa_0 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,0,NFL,1,3,False,0.2914572864321608,IS,
+11,(Los_0,64.0,1,[149],,a_SouthernCalifornia_3,A2UKBPPWF76NCT,1,(Los,1,4,False,0.2914572864321608,IS,0.008501594048884165
+12,Angeles_0,252.0,4,"[88, 89, 148, 153]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,4,Angeles,1,7,False,0.2914572864321608,IS,0.0334750265674814
+13,"Rams,_0",137.0,2,"[156, 172]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,"Rams,",1,5,False,0.2914572864321608,IS,0.018198724760892668
+14,San_0,158.0,2,"[35, 58]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,San,1,3,False,0.2914572864321608,IS,0.020988310308182784
+15,Diego_0,259.0,4,"[29, 32, 34, 176]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,4,Diego,1,5,False,0.2914572864321608,IS,0.03440488841657811
+16,Chargers);_0,261.0,4,"[50, 161, 186, 190]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,4,Chargers);,1,10,False,0.2914572864321608,IS,0.03467056323060574
+17,NBA_0,162.0,2,"[68, 170]",a_SouthernCalifornia_3_qa_1 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,NBA,1,3,False,0.2914572864321608,IS,0.021519659936238045
+18,(Los_1,61.0,1,[72],,a_SouthernCalifornia_3,A2UKBPPWF76NCT,1,(Los,1,4,False,0.2914572864321608,IS,0.008103081827842721
+19,Angeles_1,126.0,2,"[23, 67]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,Angeles,1,7,False,0.2914572864321608,IS,0.0167375132837407
+20,"Lakers,_0",247.0,4,"[19, 98, 115, 116]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,4,"Lakers,",1,7,False,0.2914572864321608,IS,0.032810839532412324
+21,Los_0,343.0,4,"[85, 99, 101, 105]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,4,Los,1,3,False,0.2914572864321608,IS,0.045563230605738574
+22,Angeles_2,68.0,1,[141],,a_SouthernCalifornia_3,A2UKBPPWF76NCT,1,Angeles,1,7,False,0.2914572864321608,IS,0.009032943676939426
+23,Clippers);_0,247.0,4,"[36, 37, 147, 152]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,4,Clippers);,1,10,False,0.2914572864321608,IS,0.032810839532412324
+24,MLB_0,66.0,1,[173],a_SouthernCalifornia_3_qa_2 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,1,MLB,1,3,False,0.2914572864321608,IS,0.008767268862911796
+25,(Los_2,108.0,2,"[2, 158]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,(Los,1,4,False,0.2914572864321608,IS,0.014346439957492029
+26,Angeles_3,115.0,2,"[28, 139]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,Angeles,1,7,False,0.2914572864321608,IS,0.015276301806588736
+27,"Dodgers,_0",63.0,1,[138],,a_SouthernCalifornia_3,A2UKBPPWF76NCT,1,"Dodgers,",1,8,False,0.2914572864321608,IS,0.00836875664187035
+28,Los_1,266.0,4,"[46, 94, 119, 191]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,4,Los,1,3,False,0.2914572864321608,IS,0.035334750265674814
+29,Angeles_4,344.0,5,"[18, 64, 95, 117, 118]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,5,Angeles,1,7,False,0.2914572864321608,IS,0.04569606801275239
+30,Angels_0,225.0,3,"[24, 79, 129]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,3,Angels,1,6,False,0.2914572864321608,IS,0.029888416578108395
+31,of_0,58.0,1,[111],,a_SouthernCalifornia_3,A2UKBPPWF76NCT,1,of,1,2,False,0.2914572864321608,IS,0.0077045696068012755
+32,"Anaheim,_0",139.0,2,"[96, 100]",,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,"Anaheim,",1,8,False,0.2914572864321608,IS,0.018464399574920298
+33,San_1,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,0,San,1,3,False,0.2914572864321608,IS,
+34,Diego_1,135.0,2,"[142, 144]",a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,Diego,1,5,False,0.2914572864321608,IS,0.017933049946865037
+35,Padres);_0,199.0,3,"[123, 146, 157]",a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,3,Padres);,1,8,False,0.2914572864321608,IS,0.026434643995749203
+36,NHL_0,325.0,5,"[4, 13, 124, 145, 174]",a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,5,NHL,1,3,False,0.2914572864321608,IS,0.043172157279489906
+37,(Los_3,133.0,2,"[159, 197]",a_SouthernCalifornia_3_qa_3 a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,2,(Los,1,4,False,0.2914572864321608,IS,0.017667375132837407
+38,Angeles_5,229.0,3,"[30, 90, 160]",a_SouthernCalifornia_3_qa_3 a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,3,Angeles,1,7,False,0.2914572864321608,IS,0.030419766206163656
+39,"Kings,_0",55.0,1,[39],a_SouthernCalifornia_3_qa_3 a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,1,"Kings,",1,6,False,0.2914572864321608,IS,0.00730605738575983
+40,Anaheim_1,469.0,7,"[26, 27, 45, 56, 120, 192, 194]",a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,7,Anaheim,1,7,False,0.2914572864321608,IS,0.06230074388947928
+41,Ducks);_0,250.0,4,"[42, 66, 127, 193]",a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,4,Ducks);,1,7,False,0.2914572864321608,IS,0.03320935175345377
+42,and_0,197.0,3,"[53, 54, 78]",a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,3,and,1,3,False,0.2914572864321608,IS,0.026168969181721572
+43,MLS_0,65.0,1,[102],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,1,MLS,1,3,False,0.2914572864321608,IS,0.00863443145589798
+44,(LA_0,239.0,3,"[104, 108, 110]",a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,3,(LA,1,3,False,0.2914572864321608,IS,0.03174814027630181
+45,Galaxy)._0,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A2UKBPPWF76NCT,0,Galaxy).,1,8,False,0.2914572864321608,IS,
+0,In_0,,0,[],,a_Geology_2,A2UKBPPWF76NCT,0,In,1,2,True,0.22587719298245615,IS,
+1,the_0,394.0,5,"[58, 412, 413, 472, 840]",,a_Geology_2,A2UKBPPWF76NCT,5,the,1,3,True,0.22587719298245615,IS,0.005816184936966727
+2,"laboratory,_0",496.0,7,"[148, 183, 469, 473, 849, 1078, 1145]",,a_Geology_2,A2UKBPPWF76NCT,7,"laboratory,",1,11,True,0.22587719298245615,IS,0.007321897788668773
+3,stratigraphers_0,510.0,8,"[16, 17, 44, 293, 908, 1079, 1269, 1279]",a_Geology_2_qa_0 ,a_Geology_2,A2UKBPPWF76NCT,8,stratigraphers,1,14,True,0.22587719298245615,IS,0.00752856425851023
+4,analyze_0,516.0,8,"[30, 196, 199, 641, 845, 846, 1091, 1208]",,a_Geology_2,A2UKBPPWF76NCT,8,analyze,1,7,True,0.22587719298245615,IS,0.007617135602727997
+5,samples_0,1116.0,16,"[38, 82, 83, 229, 313, 417, 431, 434, 436, 489, 642, 1067, 1122, 1127, 1142, 1315]",,a_Geology_2,A2UKBPPWF76NCT,16,samples,1,7,True,0.22587719298245615,IS,0.016474270024504738
+6,of_0,473.0,8,"[39, 87, 245, 278, 314, 961, 1005, 1007]",,a_Geology_2,A2UKBPPWF76NCT,8,of,1,2,True,0.22587719298245615,IS,0.006982374302500665
+7,stratigraphic_0,1133.0,18,"[32, 41, 69, 86, 222, 341, 342, 490, 674, 905, 963, 965, 1045, 1046, 1066, 1081, 1134, 1346]",,a_Geology_2,A2UKBPPWF76NCT,18,stratigraphic,1,13,True,0.22587719298245615,IS,0.01672522216645508
+8,sections_0,558.0,9,"[514, 529, 891, 907, 966, 968, 992, 1138, 1347]",,a_Geology_2,A2UKBPPWF76NCT,9,sections,1,8,True,0.22587719298245615,IS,0.008237135012252369
+9,that_0,175.0,3,"[517, 890, 967]",,a_Geology_2,A2UKBPPWF76NCT,3,that,1,4,True,0.22587719298245615,IS,0.0025833308730182163
+10,can_0,235.0,4,"[303, 1063, 1076, 1077]",,a_Geology_2,A2UKBPPWF76NCT,4,can,1,3,True,0.22587719298245615,IS,0.0034690443151958903
+11,be_0,448.0,7,"[46, 59, 150, 181, 309, 841, 1061]",,a_Geology_2,A2UKBPPWF76NCT,7,be,1,2,True,0.22587719298245615,IS,0.006613327034926633
+12,returned_0,507.0,7,"[173, 304, 393, 1033, 1060, 1216, 1318]",,a_Geology_2,A2UKBPPWF76NCT,7,returned,1,8,True,0.22587719298245615,IS,0.007484278586401346
+13,from_0,538.0,8,"[43, 45, 167, 194, 247, 310, 581, 843]",,a_Geology_2,A2UKBPPWF76NCT,8,from,1,4,True,0.22587719298245615,IS,0.007941897198193144
+14,the_1,409.0,7,"[65, 414, 851, 864, 955, 1069, 1178]",,a_Geology_2,A2UKBPPWF76NCT,7,the,1,3,True,0.22587719298245615,IS,0.006037613297511145
+15,"field,_0",464.0,7,"[195, 440, 884, 1065, 1155, 1365, 1366]",,a_Geology_2,A2UKBPPWF76NCT,7,"field,",1,6,True,0.22587719298245615,IS,0.006849517286174014
+16,such_0,244.0,4,"[92, 246, 1106, 1305]",,a_Geology_2,A2UKBPPWF76NCT,4,such,1,4,True,0.22587719298245615,IS,0.0036019013315225414
+17,as_0,306.0,5,"[29, 280, 437, 488, 501]",,a_Geology_2,A2UKBPPWF76NCT,5,as,1,2,True,0.22587719298245615,IS,0.004517138555106138
+18,those_0,622.0,9,"[88, 233, 544, 883, 962, 1008, 1043, 1124, 1203]",,a_Geology_2,A2UKBPPWF76NCT,9,those,1,5,True,0.22587719298245615,IS,0.009181896017241889
+19,from_1,756.0,10,"[36, 112, 200, 279, 294, 487, 545, 859, 979, 1095]",,a_Geology_2,A2UKBPPWF76NCT,10,from,1,4,True,0.22587719298245615,IS,0.011159989371438694
+20,drill_0,760.0,10,"[339, 430, 892, 1004, 1044, 1080, 1082, 1104, 1118, 1313]",,a_Geology_2,A2UKBPPWF76NCT,10,drill,1,5,True,0.22587719298245615,IS,0.011219036934250538
+21,cores._0,246.0,4,"[904, 906, 1304, 1349]",,a_Geology_2,A2UKBPPWF76NCT,4,cores.,1,6,True,0.22587719298245615,IS,0.003631425112928464
+22,Stratigraphers_1,1211.0,15,"[74, 141, 172, 193, 308, 689, 937, 1025, 1029, 1074, 1319, 1326, 1327, 1331, 1335]",,a_Geology_2,A2UKBPPWF76NCT,15,Stratigraphers,2,14,True,0.22587719298245615,IS,0.017876649641286057
+23,also_0,539.0,8,"[22, 170, 171, 392, 525, 838, 842, 938]",,a_Geology_2,A2UKBPPWF76NCT,8,also,2,4,True,0.22587719298245615,IS,0.007956659088896105
+24,analyze_1,545.0,9,"[60, 145, 146, 583, 878, 1034, 1133, 1317, 1358]",,a_Geology_2,A2UKBPPWF76NCT,9,analyze,2,7,True,0.22587719298245615,IS,0.008045230433113873
+25,data_0,707.0,12,"[93, 135, 154, 522, 574, 640, 932, 942, 1035, 1126, 1195, 1356]",,a_Geology_2,A2UKBPPWF76NCT,12,data,2,4,True,0.22587719298245615,IS,0.010436656726993593
+26,from_2,832.0,11,"[14, 415, 750, 828, 863, 879, 941, 1154, 1156, 1229, 1316]",,a_Geology_2,A2UKBPPWF76NCT,11,from,2,4,True,0.22587719298245615,IS,0.012281893064863748
+27,geophysical_0,1255.0,19,"[28, 54, 242, 276, 311, 332, 441, 492, 502, 518, 643, 645, 881, 1108, 1202, 1205, 1230, 1256, 1314]",a_Geology_2_qa_1 ,a_Geology_2,A2UKBPPWF76NCT,19,geophysical,2,11,True,0.22587719298245615,IS,0.018526172832216352
+28,surveys_0,699.0,10,"[90, 201, 214, 234, 312, 432, 497, 550, 901, 1159]",,a_Geology_2,A2UKBPPWF76NCT,10,surveys,2,7,True,0.22587719298245615,IS,0.010318561601369904
+29,that_1,466.0,6,"[203, 209, 762, 900, 903, 1038]",,a_Geology_2,A2UKBPPWF76NCT,6,that,2,4,True,0.22587719298245615,IS,0.006879041067579935
+30,show_0,655.0,11,"[223, 515, 673, 675, 888, 964, 983, 986, 1002, 1140, 1295]",,a_Geology_2,A2UKBPPWF76NCT,11,show,2,4,True,0.22587719298245615,IS,0.009669038410439609
+31,the_2,328.0,4,"[530, 1286, 1287, 1301]",,a_Geology_2,A2UKBPPWF76NCT,4,the,2,3,True,0.22587719298245615,IS,0.004841900150571285
+32,locations_0,420.0,7,"[73, 151, 307, 912, 1021, 1030, 1057]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,7,locations,2,9,True,0.22587719298245615,IS,0.006199994095243719
+33,of_1,375.0,5,"[152, 184, 921, 1031, 1332]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,5,of,2,2,True,0.22587719298245615,IS,0.005535709013610463
+34,stratigraphic_1,1418.0,21,"[47, 50, 51, 52, 56, 95, 287, 394, 456, 461, 468, 474, 477, 562, 690, 836, 865, 877, 1059, 1194, 1328]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,21,stratigraphic,2,13,True,0.22587719298245615,IS,0.02093236101679903
+35,units_0,621.0,9,"[27, 55, 292, 450, 451, 484, 1253, 1354, 1367]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,9,units,2,5,True,0.22587719298245615,IS,0.009167134126538927
+36,in_1,648.0,9,"[439, 445, 449, 940, 956, 1121, 1258, 1355, 1357]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,9,in,2,2,True,0.22587719298245615,IS,0.00956570517551888
+37,the_3,536.0,9,"[122, 281, 382, 442, 444, 479, 827, 929, 1259]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,9,the,2,3,True,0.22587719298245615,IS,0.007912373416787221
+38,subsurface._0,1426.0,22,"[13, 205, 219, 230, 231, 491, 494, 500, 503, 543, 585, 644, 646, 733, 735, 749, 861, 1119, 1209, 1231, 1345, 1364]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,22,subsurface.,2,11,True,0.22587719298245615,IS,0.02105045614242272
+39,Geophysical_1,1669.0,26,"[33, 35, 106, 202, 208, 213, 227, 343, 418, 429, 498, 548, 763, 858, 860, 887, 982, 984, 1041, 1094, 1096, 1103, 1109, 1123, 1160, 1161]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,26,Geophysical,3,11,True,0.22587719298245615,IS,0.024637595583242303
+40,data_1,1303.0,15,"[110, 295, 320, 324, 351, 425, 855, 1001, 1084, 1111, 1129, 1283, 1288, 1348, 1350]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,15,data,3,4,True,0.22587719298245615,IS,0.01923474358595849
+41,and_0,347.0,6,"[158, 322, 531, 1112, 1117, 1284]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,6,and,3,3,True,0.22587719298245615,IS,0.005122376073927549
+42,well_0,130.0,2,"[1039, 1292]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,2,well,3,4,True,0.22587719298245615,IS,0.0019190457913849607
+43,logs_0,228.0,4,"[175, 192, 1337, 1338]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,4,logs,3,4,True,0.22587719298245615,IS,0.0033657110802751615
+44,can_1,261.0,3,"[565, 579, 1336]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,3,can,3,3,True,0.22587719298245615,IS,0.0038528534734728823
+45,be_1,711.0,11,"[75, 191, 397, 410, 572, 578, 688, 867, 917, 919, 1028]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,11,be,3,2,True,0.22587719298245615,IS,0.010495704289805438
+46,combined_0,1391.0,21,"[23, 143, 144, 187, 268, 286, 301, 395, 452, 455, 475, 575, 598, 636, 935, 936, 1072, 1250, 1266, 1273, 1330]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,21,combined,3,8,True,0.22587719298245615,IS,0.02053378996781908
+47,to_0,1182.0,15,"[48, 49, 269, 282, 291, 464, 467, 480, 526, 599, 819, 1181, 1249, 1254, 1307]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,15,to,3,2,True,0.22587719298245615,IS,0.01744855481090018
+48,produce_0,1688.0,22,"[61, 64, 77, 134, 162, 190, 271, 272, 290, 334, 535, 751, 822, 826, 927, 930, 933, 1068, 1125, 1146, 1267, 1278]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,22,produce,3,7,True,0.22587719298245615,IS,0.024918071506598565
+49,a_0,244.0,4,"[241, 438, 443, 1246]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,4,a,3,1,True,0.22587719298245615,IS,0.0036019013315225414
+50,better_0,1571.0,16,"[216, 217, 273, 325, 499, 647, 648, 736, 958, 1036, 1042, 1131, 1148, 1190, 1204, 1363]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,16,better,3,6,True,0.22587719298245615,IS,0.0231909302943521
+51,view_0,583.0,10,"[34, 113, 345, 542, 553, 560, 729, 862, 1167, 1201]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,10,view,3,4,True,0.22587719298245615,IS,0.0086061822798264
+52,of_2,489.0,7,"[547, 734, 760, 973, 1110, 1130, 1210]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,7,of,3,2,True,0.22587719298245615,IS,0.007218564553748044
+53,the_4,291.0,4,"[510, 532, 853, 1097]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,4,the,3,3,True,0.22587719298245615,IS,0.0042957101945617195
+54,"subsurface,_1",1707.0,24,"[109, 156, 159, 160, 226, 323, 373, 374, 426, 511, 546, 766, 778, 854, 893, 897, 898, 899, 1000, 1040, 1047, 1085, 1128, 1291]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,24,"subsurface,",3,11,True,0.22587719298245615,IS,0.025198547429954827
+55,and_1,237.0,4,"[894, 1048, 1114, 1294]",a_Geology_2_qa_2 ,a_Geology_2,A2UKBPPWF76NCT,4,and,3,3,True,0.22587719298245615,IS,0.0034985680966018126
+56,stratigraphers_2,511.0,8,"[179, 250, 305, 306, 569, 570, 915, 1238]",,a_Geology_2,A2UKBPPWF76NCT,8,stratigraphers,3,14,True,0.22587719298245615,IS,0.007543326149213192
+57,often_0,1293.0,18,"[96, 119, 185, 251, 288, 289, 386, 405, 409, 454, 520, 835, 866, 876, 1013, 1058, 1073, 1329]",,a_Geology_2,A2UKBPPWF76NCT,18,often,3,5,True,0.22587719298245615,IS,0.01908712467892888
+58,use_0,358.0,5,"[97, 466, 833, 873, 1226]",,a_Geology_2,A2UKBPPWF76NCT,5,use,3,3,True,0.22587719298245615,IS,0.005284756871660122
+59,computer_0,2124.0,31,"[26, 63, 136, 138, 252, 253, 270, 300, 326, 335, 446, 447, 462, 825, 831, 832, 925, 934, 953, 1016, 1185, 1186, 1207, 1215, 1248, 1252, 1265, 1275, 1306, 1343, 1359]",a_Geology_2_qa_3 ,a_Geology_2,A2UKBPPWF76NCT,31,computer,3,8,True,0.22587719298245615,IS,0.031354255853089666
+60,programs_0,1237.0,19,"[105, 240, 261, 263, 481, 483, 485, 519, 559, 584, 635, 711, 726, 737, 759, 830, 1163, 1177, 1247]",a_Geology_2_qa_3 ,a_Geology_2,A2UKBPPWF76NCT,19,programs,3,8,True,0.22587719298245615,IS,0.018260458799563048
+61,to_1,418.0,7,"[12, 493, 725, 1166, 1176, 1234, 1311]",,a_Geology_2,A2UKBPPWF76NCT,7,to,3,2,True,0.22587719298245615,IS,0.006170470313837796
+62,do_0,412.0,7,"[256, 533, 586, 730, 814, 1090, 1351]",,a_Geology_2,A2UKBPPWF76NCT,7,do,3,2,True,0.22587719298245615,IS,0.006081898969620029
+63,this_0,770.0,12,"[207, 210, 496, 505, 541, 614, 617, 747, 976, 1168, 1244, 1245]",,a_Geology_2,A2UKBPPWF76NCT,12,this,3,4,True,0.22587719298245615,IS,0.011366655841280151
+64,in_2,256.0,4,"[381, 779, 1150, 1211]",,a_Geology_2,A2UKBPPWF76NCT,4,in,3,2,True,0.22587719298245615,IS,0.003779044019958076
+65,three_0,1082.0,13,"[107, 161, 315, 318, 319, 375, 427, 676, 972, 991, 997, 998, 1170]",,a_Geology_2,A2UKBPPWF76NCT,13,three,3,5,True,0.22587719298245615,IS,0.015972365740604056
+66,dimensions._0,944.0,14,"[108, 157, 296, 316, 321, 350, 352, 353, 896, 971, 989, 1049, 1115, 1290]",,a_Geology_2,A2UKBPPWF76NCT,14,dimensions.,3,11,True,0.22587719298245615,IS,0.013935224823595407
+67,Stratigraphers_3,532.0,8,"[98, 99, 180, 359, 567, 576, 1020, 1237]",,a_Geology_2,A2UKBPPWF76NCT,8,Stratigraphers,4,14,True,0.22587719298245615,IS,0.007853325853975378
+68,can_2,327.0,4,"[21, 120, 267, 388]",,a_Geology_2,A2UKBPPWF76NCT,4,can,4,3,True,0.22587719298245615,IS,0.004827138259868324
+69,then_0,709.0,7,"[118, 453, 458, 524, 874, 1012, 1015]",,a_Geology_2,A2UKBPPWF76NCT,7,then,4,4,True,0.22587719298245615,IS,0.010466180508399515
+70,use_1,1059.0,13,"[137, 283, 398, 407, 465, 621, 624, 697, 698, 926, 1132, 1251, 1342]",,a_Geology_2,A2UKBPPWF76NCT,13,use,4,3,True,0.22587719298245615,IS,0.01563284225443595
+71,these_0,791.0,12,"[336, 385, 408, 625, 682, 824, 944, 949, 1189, 1227, 1255, 1276]",,a_Geology_2,A2UKBPPWF76NCT,12,these,4,5,True,0.22587719298245615,IS,0.011676655546042337
+72,data_2,1076.0,16,"[81, 264, 534, 593, 620, 700, 710, 818, 948, 1120, 1191, 1221, 1241, 1260, 1271, 1362]",,a_Geology_2,A2UKBPPWF76NCT,16,data,4,4,True,0.22587719298245615,IS,0.015883794396386288
+73,to_2,466.0,7,"[114, 561, 727, 789, 816, 1165, 1219]",,a_Geology_2,A2UKBPPWF76NCT,7,to,4,2,True,0.22587719298245615,IS,0.006879041067579935
+74,reconstruct_0,1577.0,23,"[9, 70, 131, 206, 239, 254, 329, 587, 607, 609, 613, 651, 652, 655, 713, 720, 728, 731, 738, 790, 791, 882, 1200]",,a_Geology_2,A2UKBPPWF76NCT,23,reconstruct,4,11,True,0.22587719298245615,IS,0.023279501638569868
+75,ancient_0,782.0,12,"[130, 212, 372, 495, 540, 653, 721, 959, 978, 1102, 1173, 1233]",,a_Geology_2,A2UKBPPWF76NCT,12,ancient,4,7,True,0.22587719298245615,IS,0.011543798529715685
+76,processes_0,722.0,11,"[225, 376, 378, 421, 428, 764, 765, 767, 987, 1172, 1289]",,a_Geology_2,A2UKBPPWF76NCT,11,processes,4,9,True,0.22587719298245615,IS,0.010658085087538013
+77,occurring_0,,0,[],,a_Geology_2,A2UKBPPWF76NCT,0,occurring,4,9,True,0.22587719298245615,IS,
+78,on_0,,0,[],,a_Geology_2,A2UKBPPWF76NCT,0,on,4,2,True,0.22587719298245615,IS,
+79,the_5,728.0,11,"[20, 100, 248, 361, 460, 1019, 1053, 1055, 1309, 1340, 1341]",,a_Geology_2,A2UKBPPWF76NCT,11,the,4,3,True,0.22587719298245615,IS,0.010746656431755779
+80,surface_0,581.0,9,"[266, 387, 389, 403, 404, 459, 602, 869, 1310]",,a_Geology_2,A2UKBPPWF76NCT,9,surface,4,7,True,0.22587719298245615,IS,0.008576658498420478
+81,of_3,1051.0,16,"[6, 19, 24, 25, 116, 188, 401, 627, 696, 699, 706, 786, 820, 1225, 1240, 1277]",,a_Geology_2,A2UKBPPWF76NCT,16,of,4,2,True,0.22587719298245615,IS,0.015514747128812258
+82,the_6,1019.0,13,"[7, 337, 362, 402, 555, 597, 623, 709, 810, 1223, 1263, 1272, 1353]",,a_Geology_2,A2UKBPPWF76NCT,13,the,4,3,True,0.22587719298245615,IS,0.0150423666263175
+83,"Earth,_0",1055.0,15,"[3, 80, 260, 558, 592, 681, 793, 794, 807, 817, 945, 950, 1183, 1242, 1361]",,a_Geology_2,A2UKBPPWF76NCT,15,"Earth,",4,6,True,0.22587719298245615,IS,0.015573794691624104
+84,interpret_0,585.0,10,"[1, 123, 363, 590, 604, 610, 946, 1192, 1206, 1243]",,a_Geology_2,A2UKBPPWF76NCT,10,interpret,4,9,True,0.22587719298245615,IS,0.008635706061232323
+85,past_0,1080.0,17,"[10, 299, 366, 506, 618, 649, 656, 661, 719, 739, 780, 781, 815, 975, 1009, 1199, 1218]",,a_Geology_2,A2UKBPPWF76NCT,17,past,4,4,True,0.22587719298245615,IS,0.015942841959198133
+86,"environments,_0",1404.0,21,"[0, 124, 128, 211, 347, 354, 379, 423, 538, 588, 606, 657, 745, 768, 775, 782, 1050, 1086, 1087, 1088, 1101]",,a_Geology_2,A2UKBPPWF76NCT,21,"environments,",4,13,True,0.22587719298245615,IS,0.020725694546957576
+87,and_2,184.0,3,"[669, 774, 999]",,a_Geology_2,A2UKBPPWF76NCT,3,and,4,3,True,0.22587719298245615,IS,0.0027161878893448674
+88,locate_0,,0,[],,a_Geology_2,A2UKBPPWF76NCT,0,locate,4,6,True,0.22587719298245615,IS,
+89,areas_0,65.0,1,[693],,a_Geology_2,A2UKBPPWF76NCT,1,areas,4,5,True,0.22587719298245615,IS,0.0009595228956924803
+90,for_0,125.0,2,"[800, 872]",,a_Geology_2,A2UKBPPWF76NCT,2,for,4,3,True,0.22587719298245615,IS,0.0018452363378701545
+91,"water,_0",679.0,8,"[71, 684, 685, 686, 691, 694, 801, 811]",,a_Geology_2,A2UKBPPWF76NCT,8,"water,",4,6,True,0.22587719298245615,IS,0.010023323787310679
+92,"coal,_0",519.0,8,"[102, 115, 284, 603, 683, 705, 797, 803]",,a_Geology_2,A2UKBPPWF76NCT,8,"coal,",4,5,True,0.22587719298245615,IS,0.007661421274836881
+93,and_3,357.0,5,"[703, 754, 787, 809, 1360]",,a_Geology_2,A2UKBPPWF76NCT,5,and,4,3,True,0.22587719298245615,IS,0.005269994980957161
+94,hydrocarbon_0,1205.0,19,"[4, 8, 237, 238, 259, 328, 331, 384, 628, 795, 805, 806, 951, 952, 1010, 1099, 1220, 1235, 1308]",a_Geology_2_qa_4 ,a_Geology_2,A2UKBPPWF76NCT,19,hydrocarbon,4,11,True,0.22587719298245615,IS,0.01778807829706829
+95,—_0,574.0,9,"[238, 364, 589, 591, 605, 783, 1010, 1214, 1220]",a_Geology_2_qa_4 ,a_Geology_2,A2UKBPPWF76NCT,9,—,4,1,True,0.22587719298245615,IS,0.008473325263499748
+96,extraction._0,1466.0,21,"[11, 129, 165, 262, 346, 364, 367, 368, 369, 536, 589, 591, 605, 612, 629, 630, 678, 715, 748, 783, 1100]",,a_Geology_2,A2UKBPPWF76NCT,21,extraction.,4,11,True,0.22587719298245615,IS,0.02164093177054117
+0,Published_0,62.0,1,[10],,a_MartinLuther_2,A2UKBPPWF76NCT,1,Published,1,9,True,0.29705882352941176,NR,0.003703703703703704
+1,at_0,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,at,1,2,True,0.29705882352941176,NR,
+2,a_0,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,a,1,1,True,0.29705882352941176,NR,
+3,time_0,51.0,1,[21],,a_MartinLuther_2,A2UKBPPWF76NCT,1,time,1,4,True,0.29705882352941176,NR,0.0030465949820788533
+4,of_0,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,of,1,2,True,0.29705882352941176,NR,
+5,rising_0,426.0,7,"[36, 97, 224, 241, 271, 276, 337]",,a_MartinLuther_2,A2UKBPPWF76NCT,7,rising,1,6,True,0.29705882352941176,NR,0.025448028673835124
+6,demand_0,767.0,11,"[15, 61, 137, 192, 202, 223, 226, 229, 258, 264, 283]",,a_MartinLuther_2,A2UKBPPWF76NCT,11,demand,1,6,True,0.29705882352941176,NR,0.045818399044205496
+7,for_0,53.0,1,[23],,a_MartinLuther_2,A2UKBPPWF76NCT,1,for,1,3,True,0.29705882352941176,NR,0.003166069295101553
+8,German-language_0,390.0,6,"[53, 55, 56, 67, 70, 99]",a_MartinLuther_2_qa_0 ,a_MartinLuther_2,A2UKBPPWF76NCT,6,German-language,1,15,True,0.29705882352941176,NR,0.023297491039426525
+9,"publications,_0",,0,[],a_MartinLuther_2_qa_0 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,"publications,",1,13,True,0.29705882352941176,NR,
+10,Luther's_0,51.0,1,[160],,a_MartinLuther_2,A2UKBPPWF76NCT,1,Luther's,1,8,True,0.29705882352941176,NR,0.0030465949820788533
+11,version_0,227.0,4,"[7, 8, 158, 159]",,a_MartinLuther_2,A2UKBPPWF76NCT,4,version,1,7,True,0.29705882352941176,NR,0.013560334528076463
+12,quickly_0,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,quickly,1,7,True,0.29705882352941176,NR,
+13,became_0,238.0,4,"[94, 95, 237, 242]",,a_MartinLuther_2,A2UKBPPWF76NCT,4,became,1,6,True,0.29705882352941176,NR,0.014217443249701315
+14,a_1,127.0,2,"[138, 269]",,a_MartinLuther_2,A2UKBPPWF76NCT,2,a,1,1,True,0.29705882352941176,NR,0.007586618876941458
+15,popular_0,508.0,8,"[91, 190, 203, 221, 225, 236, 256, 312]",,a_MartinLuther_2,A2UKBPPWF76NCT,8,popular,1,7,True,0.29705882352941176,NR,0.03034647550776583
+16,and__0,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,and,1,3,True,0.29705882352941176,NR,
+17,influential_0,410.0,6,"[20, 39, 40, 54, 62, 98]",,a_MartinLuther_2,A2UKBPPWF76NCT,6,influential,1,11,True,0.29705882352941176,NR,0.024492234169653525
+18,Bible_0,166.0,3,"[51, 52, 105]",a_MartinLuther_2_qa_1 ,a_MartinLuther_2,A2UKBPPWF76NCT,3,Bible,1,5,True,0.29705882352941176,NR,0.00991636798088411
+19,translation._0,84.0,1,[64],,a_MartinLuther_2,A2UKBPPWF76NCT,1,translation.,1,12,True,0.29705882352941176,NR,0.005017921146953405
+20,As_0,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,As,2,2,True,0.29705882352941176,NR,
+21,"such,_0",,0,[],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,"such,",2,5,True,0.29705882352941176,NR,
+22,it_0,126.0,1,[81],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,1,it,2,2,True,0.29705882352941176,NR,0.007526881720430108
+23,made_0,,0,[],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,made,2,4,True,0.29705882352941176,NR,
+24,a__0,,0,[],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,a,2,1,True,0.29705882352941176,NR,
+25,significant_0,400.0,6,"[5, 85, 96, 239, 308, 335]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,6,significant,2,11,True,0.29705882352941176,NR,0.023894862604540025
+26,contribution_0,930.0,13,"[35, 130, 131, 139, 197, 198, 220, 227, 228, 235, 238, 266, 277]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,13,contribution,2,12,True,0.29705882352941176,NR,0.05555555555555555
+27,to_0,265.0,2,"[49, 113]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,2,to,2,2,True,0.29705882352941176,NR,0.015830346475507767
+28,the_0,58.0,1,[58],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,1,the,2,3,True,0.29705882352941176,NR,0.0034647550776583033
+29,evolution_0,437.0,7,"[18, 46, 47, 57, 102, 106, 315]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,7,evolution,2,9,True,0.29705882352941176,NR,0.026105137395459978
+30,of_1,,0,[],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,of,2,2,True,0.29705882352941176,NR,
+31,the_1,,0,[],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,the,2,3,True,0.29705882352941176,NR,
+32,German_0,,0,[],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,German,2,6,True,0.29705882352941176,NR,
+33,language_0,66.0,1,[80],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,1,language,2,8,True,0.29705882352941176,NR,0.003942652329749104
+34,and_0,197.0,3,"[82, 157, 161]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,3,and,2,3,True,0.29705882352941176,NR,0.011768219832735962
+35,literature._0,434.0,7,"[22, 83, 187, 295, 296, 299, 334]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,7,literature.,2,11,True,0.29705882352941176,NR,0.025925925925925925
+36,Furnished_0,784.0,12,"[109, 132, 133, 146, 147, 174, 188, 196, 230, 267, 326, 338]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,12,Furnished,3,9,True,0.29705882352941176,NR,0.04683393070489845
+37,with_0,429.0,7,"[24, 33, 59, 115, 200, 253, 274]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,7,with,3,4,True,0.29705882352941176,NR,0.025627240143369177
+38,notes_0,1109.0,17,"[17, 38, 73, 76, 117, 125, 134, 135, 191, 195, 201, 219, 255, 257, 259, 282, 317]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,17,notes,3,5,True,0.29705882352941176,NR,0.06624850657108722
+39,and_1,121.0,2,"[90, 194]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,2,and,3,3,True,0.29705882352941176,NR,0.007228195937873357
+40,prefaces_0,276.0,4,"[41, 69, 74, 314]",a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,4,prefaces,3,8,True,0.29705882352941176,NR,0.016487455197132617
+41,by_0,,0,[],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,by,3,2,True,0.29705882352941176,NR,
+42,"Luther,_0",69.0,1,[101],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,1,"Luther,",3,7,True,0.29705882352941176,NR,0.004121863799283154
+43,and_2,,0,[],a_MartinLuther_2_qa_2 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,and,3,3,True,0.29705882352941176,NR,
+44,with_1,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,with,3,4,True,0.29705882352941176,NR,
+45,woodcuts_0,103.0,1,[154],,a_MartinLuther_2,A2UKBPPWF76NCT,1,woodcuts,3,8,True,0.29705882352941176,NR,0.006152927120669056
+46,by_1,60.0,1,[163],,a_MartinLuther_2,A2UKBPPWF76NCT,1,by,3,2,True,0.29705882352941176,NR,0.0035842293906810036
+47,Lucas_0,127.0,1,[165],a_MartinLuther_2_qa_3 ,a_MartinLuther_2,A2UKBPPWF76NCT,1,Lucas,3,5,True,0.29705882352941176,NR,0.007586618876941458
+48,Cranach_0,543.0,9,"[3, 25, 128, 290, 310, 311, 324, 325, 333]",a_MartinLuther_2_qa_3 ,a_MartinLuther_2,A2UKBPPWF76NCT,9,Cranach,3,7,True,0.29705882352941176,NR,0.03243727598566308
+49,that_0,678.0,10,"[77, 110, 123, 204, 250, 252, 260, 278, 279, 323]",,a_MartinLuther_2,A2UKBPPWF76NCT,10,that,3,4,True,0.29705882352941176,NR,0.04050179211469534
+50,contained_0,424.0,7,"[89, 114, 140, 254, 262, 263, 318]",,a_MartinLuther_2,A2UKBPPWF76NCT,7,contained,3,9,True,0.29705882352941176,NR,0.025328554360812425
+51,anti-papal_0,54.0,1,[43],,a_MartinLuther_2,A2UKBPPWF76NCT,1,anti-papal,3,10,True,0.29705882352941176,NR,0.0032258064516129032
+52,"imagery,_0",224.0,3,"[42, 63, 104]",,a_MartinLuther_2,A2UKBPPWF76NCT,3,"imagery,",3,8,True,0.29705882352941176,NR,0.013381123058542414
+53,it_1,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,it,3,2,True,0.29705882352941176,NR,
+54,played_0,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,played,3,6,True,0.29705882352941176,NR,
+55,a_2,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,a,3,1,True,0.29705882352941176,NR,
+56,major_0,65.0,1,[186],,a_MartinLuther_2,A2UKBPPWF76NCT,1,major,3,5,True,0.29705882352941176,NR,0.003882915173237754
+57,role_0,66.0,1,[183],,a_MartinLuther_2,A2UKBPPWF76NCT,1,role,3,4,True,0.29705882352941176,NR,0.003942652329749104
+58,in_0,202.0,1,[167],,a_MartinLuther_2,A2UKBPPWF76NCT,1,in,3,2,True,0.29705882352941176,NR,0.012066905615292712
+59,the_2,180.0,3,"[166, 301, 331]",,a_MartinLuther_2,A2UKBPPWF76NCT,3,the,3,3,True,0.29705882352941176,NR,0.010752688172043012
+60,spread_0,238.0,3,"[149, 151, 327]",,a_MartinLuther_2,A2UKBPPWF76NCT,3,spread,3,6,True,0.29705882352941176,NR,0.014217443249701315
+61,of_2,135.0,2,"[16, 302]",,a_MartinLuther_2,A2UKBPPWF76NCT,2,of,3,2,True,0.29705882352941176,NR,0.008064516129032258
+62,Luther's_1,411.0,7,"[27, 28, 116, 141, 143, 251, 339]",,a_MartinLuther_2,A2UKBPPWF76NCT,7,Luther's,3,8,True,0.29705882352941176,NR,0.024551971326164875
+63,doctrine_0,320.0,4,"[119, 193, 215, 280]",,a_MartinLuther_2,A2UKBPPWF76NCT,4,doctrine,3,8,True,0.29705882352941176,NR,0.019115890083632018
+64,throughout_0,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,throughout,3,10,True,0.29705882352941176,NR,
+65,Germany._0,168.0,3,"[1, 100, 103]",,a_MartinLuther_2,A2UKBPPWF76NCT,3,Germany.,3,8,True,0.29705882352941176,NR,0.01003584229390681
+66,The_3,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,The,4,3,True,0.29705882352941176,NR,
+67,Luther_1,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,Luther,4,6,True,0.29705882352941176,NR,
+68,Bible_1,157.0,2,"[155, 156]",,a_MartinLuther_2,A2UKBPPWF76NCT,2,Bible,4,5,True,0.29705882352941176,NR,0.00937873357228196
+69,influenced_0,194.0,3,"[168, 184, 286]",,a_MartinLuther_2,A2UKBPPWF76NCT,3,influenced,4,10,True,0.29705882352941176,NR,0.01158900836320191
+70,other_0,386.0,6,"[79, 177, 181, 293, 294, 332]",,a_MartinLuther_2,A2UKBPPWF76NCT,6,other,4,5,True,0.29705882352941176,NR,0.023058542413381122
+71,vernacular_0,519.0,7,"[26, 176, 217, 248, 291, 303, 330]",,a_MartinLuther_2,A2UKBPPWF76NCT,7,vernacular,4,10,True,0.29705882352941176,NR,0.03100358422939068
+72,"translations,_0",946.0,14,"[34, 111, 118, 122, 142, 206, 209, 211, 213, 214, 243, 244, 246, 281]",,a_MartinLuther_2,A2UKBPPWF76NCT,14,"translations,",4,13,True,0.29705882352941176,NR,0.056511350059737155
+73,such_1,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,such,4,4,True,0.29705882352941176,NR,
+74,as_1,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,as,4,2,True,0.29705882352941176,NR,
+75,William_0,,0,[],a_MartinLuther_2_qa_4 ,a_MartinLuther_2,A2UKBPPWF76NCT,0,William,4,7,True,0.29705882352941176,NR,
+76, Tyndale's_0,,0,[],a_MartinLuther_2_qa_4 ,a_MartinLuther_2,A2UKBPPWF76NCT,0, Tyndale's,4,10,True,0.29705882352941176,NR,
+77,English_0,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,English,4,7,True,0.29705882352941176,NR,
+78,Bible_2,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,Bible,4,5,True,0.29705882352941176,NR,
+79,(1525_0,249.0,2,"[169, 288]",,a_MartinLuther_2,A2UKBPPWF76NCT,2,(1525,4,5,True,0.29705882352941176,NR,0.014874551971326165
+80,"forward),_0",171.0,3,"[180, 292, 329]",,a_MartinLuther_2,A2UKBPPWF76NCT,3,"forward),",4,9,True,0.29705882352941176,NR,0.01021505376344086
+81,a_3,98.0,1,[234],,a_MartinLuther_2,A2UKBPPWF76NCT,1,a,4,1,True,0.29705882352941176,NR,0.005854241338112306
+82,precursor_0,479.0,7,"[31, 171, 216, 231, 233, 247, 304]",,a_MartinLuther_2,A2UKBPPWF76NCT,7,precursor,4,9,True,0.29705882352941176,NR,0.02861409796893668
+83,of_3,85.0,1,[218],,a_MartinLuther_2,A2UKBPPWF76NCT,1,of,4,2,True,0.29705882352941176,NR,0.005077658303464755
+84,the_4,73.0,1,[319],,a_MartinLuther_2,A2UKBPPWF76NCT,1,the,4,3,True,0.29705882352941176,NR,0.004360812425328554
+85,King_0,65.0,1,[120],,a_MartinLuther_2,A2UKBPPWF76NCT,1,King,4,4,True,0.29705882352941176,NR,0.003882915173237754
+86,James_0,59.0,1,[126],,a_MartinLuther_2,A2UKBPPWF76NCT,1,James,4,5,True,0.29705882352941176,NR,0.0035244922341696534
+87,Bible._3,,0,[],,a_MartinLuther_2,A2UKBPPWF76NCT,0,Bible.,4,6,True,0.29705882352941176,NR,
+0,In_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,In,1,2,False,0.0,NR,
+1,1891_0,,0,[],a_Oxygen_1_qa_1 ,a_Oxygen_1,A2UKBPPWF76NCT,0,1891,1,4,False,0.0,NR,
+2,Scottish_0,193.0,2,"[30, 32]",,a_Oxygen_1,A2UKBPPWF76NCT,2,Scottish,1,8,False,0.0,NR,0.02947014811421591
+3,chemist_0,65.0,1,[27],,a_Oxygen_1,A2UKBPPWF76NCT,1,chemist,1,7,False,0.0,NR,0.00992517941670484
+4,James_0,,0,[],a_Oxygen_1_qa_0 ,a_Oxygen_1,A2UKBPPWF76NCT,0,James,1,5,False,0.0,NR,
+5,Dewar_0,,0,[],a_Oxygen_1_qa_0 ,a_Oxygen_1,A2UKBPPWF76NCT,0,Dewar,1,5,False,0.0,NR,
+6,was_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,was,1,3,False,0.0,NR,
+7,able_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,able,1,4,False,0.0,NR,
+8,to_0,68.0,1,[78],,a_Oxygen_1,A2UKBPPWF76NCT,1,to,1,2,False,0.0,NR,0.010383264620552756
+9,produce_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,produce,1,7,False,0.0,NR,
+10,enough_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,enough,1,6,False,0.0,NR,
+11,liquid_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,liquid,1,6,False,0.0,NR,
+12,oxygen_0,64.0,1,[9],,a_Oxygen_1,A2UKBPPWF76NCT,1,oxygen,1,6,False,0.0,NR,0.009772484348755535
+13,to_1,64.0,1,[33],,a_Oxygen_1,A2UKBPPWF76NCT,1,to,1,2,False,0.0,NR,0.009772484348755535
+14,study._0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,study.,1,6,False,0.0,NR,
+15,The_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,The,2,3,False,0.0,NR,
+16,first_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,first,2,5,False,0.0,NR,
+17,commercially_0,55.0,1,[6],,a_Oxygen_1,A2UKBPPWF76NCT,1,commercially,2,12,False,0.0,NR,0.008398228737211789
+18,viable_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,viable,2,6,False,0.0,NR,
+19,process_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,process,2,7,False,0.0,NR,
+20,for_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,for,2,3,False,0.0,NR,
+21,producing_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,producing,2,9,False,0.0,NR,
+22,—_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,—,2,1,False,0.0,NR,
+23,liquid_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,liquid,2,6,False,0.0,NR,
+24,oxygen_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,oxygen,2,6,False,0.0,NR,
+25,was_1,63.0,1,[34],,a_Oxygen_1,A2UKBPPWF76NCT,1,was,2,3,False,0.0,NR,0.00961978928080623
+26,independently_0,494.0,6,"[26, 49, 50, 52, 54, 88]",,a_Oxygen_1,A2UKBPPWF76NCT,6,independently,2,13,False,0.0,NR,0.07543136356695679
+27,developed_0,75.0,1,[121],,a_Oxygen_1,A2UKBPPWF76NCT,1,developed,2,9,False,0.0,NR,0.011452130096197893
+28,in_1,65.0,1,[74],,a_Oxygen_1,A2UKBPPWF76NCT,1,in,2,2,False,0.0,NR,0.00992517941670484
+29,1895_0,57.0,1,[75],a_Oxygen_1_qa_2 ,a_Oxygen_1,A2UKBPPWF76NCT,1,1895,2,4,False,0.0,NR,0.008703618873110398
+30,by_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,by,2,2,False,0.0,NR,
+31,German_0,64.0,1,[79],,a_Oxygen_1,A2UKBPPWF76NCT,1,German,2,6,False,0.0,NR,0.009772484348755535
+32,engineer_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,engineer,2,8,False,0.0,NR,
+33,Carl_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,Carl,2,4,False,0.0,NR,
+34,von_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,von,2,3,False,0.0,NR,
+35,Linde_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,Linde,2,5,False,0.0,NR,
+36,and_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,and,2,3,False,0.0,NR,
+37,British_0,626.0,7,"[10, 36, 40, 45, 58, 104, 106]",,a_Oxygen_1,A2UKBPPWF76NCT,7,British,2,7,False,0.0,NR,0.09558711253626508
+38,engineer_1,126.0,2,"[38, 46]",,a_Oxygen_1,A2UKBPPWF76NCT,2,engineer,2,8,False,0.0,NR,0.01923957856161246
+39,William_0,350.0,5,"[25, 60, 72, 73, 115]",,a_Oxygen_1,A2UKBPPWF76NCT,5,William,2,7,False,0.0,NR,0.053443273782256835
+40,Hampson._0,57.0,1,[62],,a_Oxygen_1,A2UKBPPWF76NCT,1,Hampson.,2,8,False,0.0,NR,0.008703618873110398
+41,Both_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,Both,3,4,False,0.0,NR,
+42,men_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,men,3,3,False,0.0,NR,
+43,lowered_0,69.0,1,[64],,a_Oxygen_1,A2UKBPPWF76NCT,1,lowered,3,7,False,0.0,NR,0.010535959688502062
+44,the_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,the,3,3,False,0.0,NR,
+45,temperature_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,temperature,3,11,False,0.0,NR,
+46,of_0,376.0,5,"[42, 44, 57, 105, 109]",,a_Oxygen_1,A2UKBPPWF76NCT,5,of,3,2,False,0.0,NR,0.05741334554893877
+47,air_0,287.0,4,"[41, 59, 89, 107]",,a_Oxygen_1,A2UKBPPWF76NCT,4,air,3,3,False,0.0,NR,0.043823484501450606
+48,until_0,210.0,3,"[87, 92, 93]",,a_Oxygen_1,A2UKBPPWF76NCT,3,until,3,5,False,0.0,NR,0.0320659642693541
+49,it_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,it,3,2,False,0.0,NR,
+50,liquefied_0,235.0,3,"[61, 71, 81]",,a_Oxygen_1,A2UKBPPWF76NCT,3,liquefied,3,9,False,0.0,NR,0.03588334096808673
+51,and_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,and,3,3,False,0.0,NR,
+52,then_0,60.0,1,[80],,a_Oxygen_1,A2UKBPPWF76NCT,1,then,3,4,False,0.0,NR,0.009161704076958314
+53,distilled_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,distilled,3,9,False,0.0,NR,
+54,the_2,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,the,3,3,False,0.0,NR,
+55,component_0,230.0,2,"[66, 69]",,a_Oxygen_1,A2UKBPPWF76NCT,2,component,3,9,False,0.0,NR,0.035119865628340206
+56,gases_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,gases,3,5,False,0.0,NR,
+57,by_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,by,3,2,False,0.0,NR,
+58,boiling_0,63.0,1,[43],,a_Oxygen_1,A2UKBPPWF76NCT,1,boiling,3,7,False,0.0,NR,0.00961978928080623
+59,them_0,189.0,2,"[37, 108]",,a_Oxygen_1,A2UKBPPWF76NCT,2,them,3,4,False,0.0,NR,0.02885936784241869
+60,off_0,355.0,4,"[13, 90, 96, 102]",,a_Oxygen_1,A2UKBPPWF76NCT,4,off,3,3,False,0.0,NR,0.05420674912200336
+61,one_0,305.0,5,"[1, 84, 94, 113, 119]",,a_Oxygen_1,A2UKBPPWF76NCT,5,one,3,3,False,0.0,NR,0.046571995724538094
+62,at_0,70.0,2,"[0, 2]",,a_Oxygen_1,A2UKBPPWF76NCT,2,at,3,2,False,0.0,NR,0.010688654756451367
+63,a_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,a,3,1,False,0.0,NR,
+64,time_0,184.0,2,"[22, 23]",,a_Oxygen_1,A2UKBPPWF76NCT,2,time,3,4,False,0.0,NR,0.028095892502672165
+65,and_2,126.0,2,"[4, 70]",,a_Oxygen_1,A2UKBPPWF76NCT,2,and,3,3,False,0.0,NR,0.01923957856161246
+66,capturing_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,capturing,3,9,False,0.0,NR,
+67,them._1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,them.,3,5,False,0.0,NR,
+68,"Later,_0",64.0,1,[68],,a_Oxygen_1,A2UKBPPWF76NCT,1,"Later,",4,6,False,0.0,NR,0.009772484348755535
+69,in_2,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,in,4,2,False,0.0,NR,
+70,"1901,_0",,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,"1901,",4,5,False,0.0,NR,
+71,oxyacetylene_0,,0,[],a_Oxygen_1_qa_3 ,a_Oxygen_1,A2UKBPPWF76NCT,0,oxyacetylene,4,12,False,0.0,NR,
+72,welding_0,134.0,2,"[12, 97]",a_Oxygen_1_qa_3 ,a_Oxygen_1,A2UKBPPWF76NCT,2,welding,4,7,False,0.0,NR,0.020461139105206902
+73,was_2,518.0,6,"[15, 16, 98, 101, 110, 112]",,a_Oxygen_1,A2UKBPPWF76NCT,6,was,4,3,False,0.0,NR,0.07909604519774012
+74,demonstrated_0,283.0,4,"[3, 18, 21, 114]",,a_Oxygen_1,A2UKBPPWF76NCT,4,demonstrated,4,12,False,0.0,NR,0.043212704229653384
+75,for_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,for,4,3,False,0.0,NR,
+76,the_3,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,the,4,3,False,0.0,NR,
+77,first_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,first,4,5,False,0.0,NR,
+78,time_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,time,4,4,False,0.0,NR,
+79,by_2,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,by,4,2,False,0.0,NR,
+80,burning_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,burning,4,7,False,0.0,NR,
+81,a_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,a,4,1,False,0.0,NR,
+82,mixture_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,mixture,4,7,False,0.0,NR,
+83,of_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,of,4,2,False,0.0,NR,
+84,acetylene_0,64.0,1,[14],,a_Oxygen_1,A2UKBPPWF76NCT,1,acetylene,4,9,False,0.0,NR,0.009772484348755535
+85,and_3,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,and,4,3,False,0.0,NR,
+86,compressed_0,184.0,2,"[20, 118]",,a_Oxygen_1,A2UKBPPWF76NCT,2,compressed,4,10,False,0.0,NR,0.028095892502672165
+87,O_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,O,4,1,False,0.0,NR,
+88,2._0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,2.,4,2,False,0.0,NR,
+89,This_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,This,5,4,False,0.0,NR,
+90,method_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,method,5,6,False,0.0,NR,
+91,of_2,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,of,5,2,False,0.0,NR,
+92,welding_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,welding,5,7,False,0.0,NR,
+93,and_4,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,and,5,3,False,0.0,NR,
+94,cutting_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,cutting,5,7,False,0.0,NR,
+95,metal_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,metal,5,5,False,0.0,NR,
+96,later_1,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,later,5,5,False,0.0,NR,
+97,became_0,,0,[],,a_Oxygen_1,A2UKBPPWF76NCT,0,became,5,6,False,0.0,NR,
+98,common._0,57.0,1,[117],,a_Oxygen_1,A2UKBPPWF76NCT,1,common.,5,7,False,0.0,NR,0.008703618873110398
+0,With_0,135.0,2,"[637, 639]",,a_Apolloprogram_4,A2UKBPPWF76NCT,2,With,1,4,False,0.002512562814070352,NR,0.003130144450369821
+1,a_0,230.0,3,"[301, 539, 632]",,a_Apolloprogram_4,A2UKBPPWF76NCT,3,a,1,1,False,0.002512562814070352,NR,0.0053328386932226576
+2,budget_0,1465.0,20,"[120, 165, 453, 468, 482, 507, 510, 520, 523, 530, 548, 603, 623, 630, 633, 688, 690, 701, 712, 721]",,a_Apolloprogram_4,A2UKBPPWF76NCT,20,budget,1,6,False,0.002512562814070352,NR,0.03396786385030954
+3,of_0,825.0,11,"[16, 101, 571, 615, 617, 628, 629, 702, 715, 723, 733]",,a_Apolloprogram_4,A2UKBPPWF76NCT,11,of,1,2,False,0.002512562814070352,NR,0.019128660530037794
+4,"$230,000,_0",1119.0,15,"[7, 8, 9, 99, 392, 424, 508, 558, 559, 604, 607, 616, 706, 751, 752]",,a_Apolloprogram_4,A2UKBPPWF76NCT,15,"$230,000,",1,9,False,0.002512562814070352,NR,0.025945419555287626
+5,the_0,399.0,6,"[10, 19, 608, 664, 680, 754]",,a_Apolloprogram_4,A2UKBPPWF76NCT,6,the,1,3,False,0.002512562814070352,NR,0.009251315819981915
+6,surviving_0,321.0,4,"[177, 394, 674, 756]",,a_Apolloprogram_4,A2UKBPPWF76NCT,4,surviving,1,9,False,0.002512562814070352,NR,0.007442787915323796
+7,original_0,170.0,2,"[578, 771]",,a_Apolloprogram_4,A2UKBPPWF76NCT,2,original,1,8,False,0.002512562814070352,NR,0.003941663381947182
+8,lunar_0,58.0,1,[777],,a_Apolloprogram_4,A2UKBPPWF76NCT,1,lunar,1,5,False,0.002512562814070352,NR,0.0013448028008996268
+9,broadcast_0,57.0,1,[776],,a_Apolloprogram_4,A2UKBPPWF76NCT,1,broadcast,1,9,False,0.002512562814070352,NR,0.001321616545711702
+10,data_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,data,1,4,False,0.002512562814070352,NR,
+11,from_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,from,1,4,False,0.002512562814070352,NR,
+12,Apollo_0,587.0,8,"[203, 428, 478, 481, 499, 541, 635, 640]",,a_Apolloprogram_4,A2UKBPPWF76NCT,8,Apollo,1,6,False,0.002512562814070352,NR,0.01361033179531174
+13,11_0,941.0,12,"[164, 207, 300, 306, 349, 364, 427, 497, 524, 529, 634, 697]",,a_Apolloprogram_4,A2UKBPPWF76NCT,12,11,1,2,False,0.002512562814070352,NR,0.021818266131837048
+14,was_0,1604.0,21,"[119, 121, 166, 351, 356, 361, 470, 474, 547, 598, 620, 624, 625, 641, 642, 646, 647, 649, 686, 698, 727]",,a_Apolloprogram_4,A2UKBPPWF76NCT,21,was,1,3,False,0.002512562814070352,NR,0.037190753321431055
+15,compiled_0,1909.0,25,"[14, 102, 118, 153, 171, 172, 375, 376, 391, 425, 484, 506, 513, 518, 532, 536, 610, 626, 650, 685, 711, 713, 714, 732, 740]",,a_Apolloprogram_4,A2UKBPPWF76NCT,25,compiled,1,8,False,0.002512562814070352,NR,0.044262561153748055
+16,by_0,649.0,9,"[11, 191, 295, 397, 652, 665, 666, 667, 753]",,a_Apolloprogram_4,A2UKBPPWF76NCT,9,by,1,2,False,0.002512562814070352,NR,0.015047879616963064
+17,Nafzger_0,842.0,11,"[176, 294, 560, 561, 562, 565, 609, 657, 673, 749, 767]",a_Apolloprogram_4_qa_0 ,a_Apolloprogram_4,A2UKBPPWF76NCT,11,Nafzger,1,7,False,0.002512562814070352,NR,0.01952282686823251
+18,and_0,127.0,2,"[769, 770]",,a_Apolloprogram_4,A2UKBPPWF76NCT,2,and,1,3,False,0.002512562814070352,NR,0.002944654408866424
+19,assigned_0,179.0,3,"[39, 577, 778]",,a_Apolloprogram_4,A2UKBPPWF76NCT,3,assigned,1,8,False,0.002512562814070352,NR,0.004150339678638503
+20,to_0,64.0,1,[774],,a_Apolloprogram_4,A2UKBPPWF76NCT,1,to,1,2,False,0.002512562814070352,NR,0.0014839203320271743
+21,Lowry_0,138.0,2,"[589, 775]",a_Apolloprogram_4_qa_3 ,a_Apolloprogram_4,A2UKBPPWF76NCT,2,Lowry,1,5,False,0.002512562814070352,NR,0.0031997032159335947
+22,Digital_0,,0,[],a_Apolloprogram_4_qa_3 ,a_Apolloprogram_4,A2UKBPPWF76NCT,0,Digital,1,7,False,0.002512562814070352,NR,
+23,for_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,for,1,3,False,0.002512562814070352,NR,
+24,restoration._0,1949.0,26,"[206, 299, 302, 305, 307, 347, 348, 350, 353, 354, 357, 358, 360, 429, 432, 436, 438, 444, 462, 471, 473, 495, 496, 521, 601, 728]",,a_Apolloprogram_4,A2UKBPPWF76NCT,26,restoration.,1,12,False,0.002512562814070352,NR,0.04519001136126504
+25,The_1,1095.0,14,"[122, 212, 213, 355, 366, 426, 455, 483, 517, 527, 528, 551, 602, 687]",,a_Apolloprogram_4,A2UKBPPWF76NCT,14,The,2,3,False,0.002512562814070352,NR,0.025388949430777435
+26,video_0,1270.0,19,"[12, 100, 142, 168, 170, 236, 238, 291, 490, 505, 511, 514, 556, 570, 597, 618, 648, 684, 734]",,a_Apolloprogram_4,A2UKBPPWF76NCT,19,video,2,5,False,0.002512562814070352,NR,0.02944654408866424
+27,was_1,1121.0,15,"[154, 173, 189, 296, 422, 489, 535, 566, 569, 596, 651, 669, 683, 709, 793]",,a_Apolloprogram_4,A2UKBPPWF76NCT,15,was,2,3,False,0.002512562814070352,NR,0.025991792065663474
+28,processed_0,1440.0,18,"[2, 3, 4, 6, 20, 135, 178, 293, 395, 396, 534, 658, 668, 675, 676, 710, 748, 759]",,a_Apolloprogram_4,A2UKBPPWF76NCT,18,processed,2,9,False,0.002512562814070352,NR,0.03338820747061142
+29,to_1,69.0,1,[768],,a_Apolloprogram_4,A2UKBPPWF76NCT,1,to,2,2,False,0.002512562814070352,NR,0.0015998516079667974
+30,remove_0,596.0,8,"[37, 38, 40, 576, 586, 587, 772, 779]",,a_Apolloprogram_4,A2UKBPPWF76NCT,8,remove,2,6,False,0.002512562814070352,NR,0.01381900809200306
+31,random_0,167.0,2,"[575, 585]",,a_Apolloprogram_4,A2UKBPPWF76NCT,2,random,2,6,False,0.002512562814070352,NR,0.0038721046163834078
+32,noise_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,noise,2,5,False,0.002512562814070352,NR,
+33,and_1,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,and,2,3,False,0.002512562814070352,NR,
+34,camera_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,camera,2,6,False,0.002512562814070352,NR,
+35,shake_0,748.0,10,"[202, 230, 308, 338, 343, 346, 431, 437, 461, 498]",,a_Apolloprogram_4,A2UKBPPWF76NCT,10,shake,2,5,False,0.002512562814070352,NR,0.017343318880567598
+36,without_0,1367.0,20,"[0, 205, 209, 211, 225, 231, 242, 303, 344, 439, 451, 452, 458, 472, 493, 494, 500, 516, 526, 720]",a_Apolloprogram_4_qa_1 ,a_Apolloprogram_4,A2UKBPPWF76NCT,20,without,2,7,False,0.002512562814070352,NR,0.03169561084189292
+37,destroying_0,1965.0,27,"[1, 55, 56, 137, 139, 141, 151, 163, 194, 195, 198, 224, 239, 241, 290, 297, 315, 377, 492, 504, 515, 553, 555, 695, 729, 735, 795]",a_Apolloprogram_4_qa_1 ,a_Apolloprogram_4,A2UKBPPWF76NCT,27,destroying,2,10,False,0.002512562814070352,NR,0.04556099144427184
+38,historical_0,1676.0,24,"[21, 51, 98, 136, 144, 150, 188, 190, 264, 265, 399, 403, 421, 564, 653, 654, 672, 741, 742, 744, 745, 747, 766, 780]",a_Apolloprogram_4_qa_1 ,a_Apolloprogram_4,A2UKBPPWF76NCT,24,historical,2,10,False,0.002512562814070352,NR,0.038860163694961626
+39,legitimacy._0,815.0,9,"[71, 83, 84, 175, 400, 595, 656, 659, 760]",a_Apolloprogram_4_qa_1 ,a_Apolloprogram_4,A2UKBPPWF76NCT,9,legitimacy.,2,11,False,0.002512562814070352,NR,0.018896797978158547
+40,The_2,161.0,3,"[35, 36, 145]",,a_Apolloprogram_4,A2UKBPPWF76NCT,3,The,3,3,False,0.002512562814070352,NR,0.00373298708525586
+41,images_0,271.0,5,"[41, 44, 580, 583, 584]",,a_Apolloprogram_4,A2UKBPPWF76NCT,5,images,3,6,False,0.002512562814070352,NR,0.006283475155927566
+42,were_0,64.0,1,[590],,a_Apolloprogram_4,A2UKBPPWF76NCT,1,were,3,4,False,0.002512562814070352,NR,0.0014839203320271743
+43,from_1,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,from,3,4,False,0.002512562814070352,NR,
+44,tapes_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,tapes,3,5,False,0.002512562814070352,NR,
+45,in_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,in,3,2,False,0.002512562814070352,NR,
+46,"Australia,_0",632.0,9,"[201, 227, 229, 309, 342, 443, 457, 464, 542]",,a_Apolloprogram_4,A2UKBPPWF76NCT,9,"Australia,",3,10,False,0.002512562814070352,NR,0.014653713278768346
+47,the_3,412.0,7,"[313, 337, 365, 447, 449, 450, 791]",,a_Apolloprogram_4,A2UKBPPWF76NCT,7,the,3,3,False,0.002512562814070352,NR,0.009552737137424935
+48,CBS_0,869.0,14,"[53, 54, 123, 140, 233, 234, 254, 314, 367, 374, 380, 466, 692, 782]",,a_Apolloprogram_4,A2UKBPPWF76NCT,14,CBS,3,3,False,0.002512562814070352,NR,0.020148855758306477
+49,News_0,967.0,14,"[22, 162, 196, 210, 240, 256, 259, 260, 261, 404, 417, 419, 491, 554]",,a_Apolloprogram_4,A2UKBPPWF76NCT,14,News,3,4,False,0.002512562814070352,NR,0.022421108766723086
+50,"archive,_0",1767.0,22,"[52, 67, 77, 79, 86, 87, 96, 134, 159, 174, 187, 262, 266, 280, 289, 369, 401, 485, 567, 743, 746, 794]",,a_Apolloprogram_4,A2UKBPPWF76NCT,22,"archive,",3,8,False,0.002512562814070352,NR,0.04097011291706276
+51,and_2,881.0,10,"[68, 149, 268, 281, 288, 568, 655, 660, 661, 765]",,a_Apolloprogram_4,A2UKBPPWF76NCT,10,and,3,3,False,0.002512562814070352,NR,0.020427090820561572
+52,kinescope_0,363.0,6,"[146, 179, 573, 593, 594, 761]",a_Apolloprogram_4_qa_2 ,a_Apolloprogram_4,A2UKBPPWF76NCT,6,kinescope,3,9,False,0.002512562814070352,NR,0.00841661063321663
+53,recordings_0,421.0,6,"[34, 42, 45, 582, 591, 592]",a_Apolloprogram_4_qa_2 ,a_Apolloprogram_4,A2UKBPPWF76NCT,6,recordings,3,10,False,0.002512562814070352,NR,0.009761413434116255
+54,made_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,made,3,4,False,0.002512562814070352,NR,
+55,at_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,at,3,2,False,0.002512562814070352,NR,
+56,Johnson_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,Johnson,3,7,False,0.002512562814070352,NR,
+57,Space_0,113.0,2,"[440, 717]",,a_Apolloprogram_4,A2UKBPPWF76NCT,2,Space,3,5,False,0.002512562814070352,NR,0.0026200468362354797
+58,Center._0,719.0,9,"[215, 232, 243, 320, 324, 325, 456, 463, 783]",,a_Apolloprogram_4,A2UKBPPWF76NCT,9,Center.,3,7,False,0.002512562814070352,NR,0.016670917480117786
+59,The_4,520.0,8,"[23, 253, 323, 373, 383, 503, 694, 790]",,a_Apolloprogram_4,A2UKBPPWF76NCT,8,The,4,3,False,0.002512562814070352,NR,0.01205685269772079
+60,restored_0,2019.0,26,"[59, 78, 80, 88, 103, 104, 112, 113, 114, 124, 125, 157, 197, 257, 258, 263, 371, 389, 405, 409, 412, 414, 416, 418, 448, 487]",,a_Apolloprogram_4,A2UKBPPWF76NCT,26,restored,4,8,False,0.002512562814070352,NR,0.04681304922441976
+61,"video,_1",929.0,10,"[58, 61, 73, 76, 82, 95, 97, 158, 161, 420]",,a_Apolloprogram_4,A2UKBPPWF76NCT,10,"video,",4,6,False,0.002512562814070352,NR,0.021540031069581952
+62,remaining_0,1155.0,12,"[29, 50, 64, 70, 106, 107, 182, 186, 282, 284, 285, 662]",,a_Apolloprogram_4,A2UKBPPWF76NCT,12,remaining,4,9,False,0.002512562814070352,NR,0.02678012474205291
+63,in_1,59.0,1,[574],,a_Apolloprogram_4,A2UKBPPWF76NCT,1,in,4,2,False,0.002512562814070352,NR,0.0013679890560875513
+64,black_0,164.0,2,"[46, 148]",a_Apolloprogram_4_qa_4 ,a_Apolloprogram_4,A2UKBPPWF76NCT,2,black,4,5,False,0.002512562814070352,NR,0.003802545850819634
+65,and_3,,0,[],a_Apolloprogram_4_qa_4 ,a_Apolloprogram_4,A2UKBPPWF76NCT,0,and,4,3,False,0.002512562814070352,NR,
+66,"white,_0",,0,[],a_Apolloprogram_4_qa_4 ,a_Apolloprogram_4,A2UKBPPWF76NCT,0,"white,",4,6,False,0.002512562814070352,NR,
+67,contains_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,contains,4,8,False,0.002512562814070352,NR,
+68,conservative_0,464.0,6,"[199, 244, 318, 336, 442, 719]",,a_Apolloprogram_4,A2UKBPPWF76NCT,6,conservative,4,12,False,0.002512562814070352,NR,0.010758422407197014
+69,digital_1,386.0,6,"[252, 326, 385, 386, 545, 787]",,a_Apolloprogram_4,A2UKBPPWF76NCT,6,digital,4,7,False,0.002512562814070352,NR,0.008949894502538894
+70,enhancements_0,1554.0,24,"[24, 26, 74, 89, 91, 111, 126, 127, 155, 217, 255, 370, 378, 379, 382, 406, 408, 410, 411, 413, 415, 486, 781, 788]",,a_Apolloprogram_4,A2UKBPPWF76NCT,24,enhancements,4,12,False,0.002512562814070352,NR,0.036031440562034826
+71,and_4,672.0,10,"[63, 75, 94, 105, 132, 160, 269, 287, 763, 764]",,a_Apolloprogram_4,A2UKBPPWF76NCT,10,and,4,3,False,0.002512562814070352,NR,0.01558116348628533
+72,did_0,472.0,6,"[28, 30, 109, 184, 273, 762]",,a_Apolloprogram_4,A2UKBPPWF76NCT,6,did,4,3,False,0.002512562814070352,NR,0.01094391244870041
+73,not_0,265.0,3,"[31, 108, 286]",,a_Apolloprogram_4,A2UKBPPWF76NCT,3,not,4,3,False,0.002512562814070352,NR,0.006144357624800019
+74,include_0,70.0,1,[32],,a_Apolloprogram_4,A2UKBPPWF76NCT,1,include,4,7,False,0.002512562814070352,NR,0.0016230378631547219
+75,sound_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,sound,4,5,False,0.002512562814070352,NR,
+76,quality_0,,0,[],,a_Apolloprogram_4,A2UKBPPWF76NCT,0,quality,4,7,False,0.002512562814070352,NR,
+77,improvements._0,663.0,8,"[317, 319, 335, 441, 718, 784, 785, 786]",,a_Apolloprogram_4,A2UKBPPWF76NCT,8,improvements.,4,13,False,0.002512562814070352,NR,0.015372487189594008
+0,The_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,The,1,3,True,0.008928571428571428,NR,
+1,agreements_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,agreements,1,10,True,0.008928571428571428,NR,
+2,include_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,include,1,7,True,0.008928571428571428,NR,
+3,fixed_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,fixed,1,5,True,0.008928571428571428,NR,
+4,annual_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,annual,1,6,True,0.008928571428571428,NR,
+5,carriage_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,carriage,1,8,True,0.008928571428571428,NR,
+6,fees_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,fees,1,4,True,0.008928571428571428,NR,
+7,of_0,191.0,1,[284],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,of,1,2,True,0.008928571428571428,NR,0.008725844031248573
+8,£30m_0,113.0,2,"[292, 308]",a_SkyUnitedKingdom_4_qa_0 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,2,£30m,1,4,True,0.008928571428571428,NR,0.0051624103430947055
+9,for_0,199.0,3,"[73, 76, 309]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,for,1,3,True,0.008928571428571428,NR,0.009091324409520764
+10,the_1,203.0,3,"[64, 74, 291]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,the,1,3,True,0.008928571428571428,NR,0.00927406459865686
+11,channels_0,53.0,1,[311],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,channels,1,8,True,0.008928571428571428,NR,0.002421307506053269
+12,with_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,with,1,4,True,0.008928571428571428,NR,
+13,both_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,both,1,4,True,0.008928571428571428,NR,
+14,channel_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,channel,1,7,True,0.008928571428571428,NR,
+15,suppliers_0,358.0,4,"[88, 89, 121, 123]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,4,suppliers,1,9,True,0.008928571428571428,NR,0.01635524692768057
+16,able_0,187.0,3,"[104, 124, 142]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,able,1,4,True,0.008928571428571428,NR,0.008543103842112477
+17,to_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,to,1,2,True,0.008928571428571428,NR,
+18,secure_0,197.0,2,"[81, 158]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,2,secure,1,6,True,0.008928571428571428,NR,0.008999954314952716
+19,additional_0,380.0,6,"[105, 107, 159, 282, 283, 289]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,6,additional,1,10,True,0.008928571428571428,NR,0.017360317967929098
+20,capped_0,1416.0,18,"[26, 28, 70, 72, 77, 78, 108, 151, 195, 254, 256, 281, 290, 306, 312, 315, 316, 317]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,18,capped,1,6,True,0.008928571428571428,NR,0.0646900269541779
+21,payments_0,790.0,11,"[29, 63, 65, 67, 109, 110, 185, 192, 194, 293, 294]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,11,payments,1,8,True,0.008928571428571428,NR,0.03609118735437891
+22,if_0,165.0,2,"[111, 188]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,2,if,1,2,True,0.008928571428571428,NR,0.00753803280186395
+23,their_0,,0,[],a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,their,1,5,True,0.008928571428571428,NR,
+24,channels_1,,0,[],a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,channels,1,8,True,0.008928571428571428,NR,
+25,meet_0,191.0,2,"[138, 171]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,2,meet,1,4,True,0.008928571428571428,NR,0.008725844031248573
+26,certain_0,605.0,7,"[7, 84, 87, 90, 92, 102, 141]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,7,certain,1,7,True,0.008928571428571428,NR,0.027639453606834483
+27,performance-related_0,970.0,15,"[17, 36, 82, 116, 125, 134, 135, 136, 143, 144, 145, 146, 155, 157, 260]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,15,performance-related,1,19,True,0.008928571428571428,NR,0.04431449586550322
+28,targets._0,532.0,8,"[71, 80, 106, 115, 184, 196, 259, 279]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,8,targets.,1,8,True,0.008928571428571428,NR,0.024304445155100735
+29,Currently_0,1276.0,15,"[27, 62, 69, 127, 132, 253, 257, 278, 280, 285, 295, 305, 313, 318, 319]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,15,Currently,2,9,True,0.008928571428571428,NR,0.05829412033441455
+30,there_0,605.0,9,"[30, 68, 130, 131, 150, 190, 191, 193, 255]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,9,there,2,5,True,0.008928571428571428,NR,0.027639453606834483
+31,is_0,84.0,1,[112],a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,is,2,2,True,0.008928571428571428,NR,0.003837543971858011
+32,no_0,,0,[],a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,no,2,2,True,0.008928571428571428,NR,
+33,indication_0,,0,[],a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,indication,2,10,True,0.008928571428571428,NR,
+34,as_0,166.0,1,[177],a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,as,2,2,True,0.008928571428571428,NR,0.0075837178491479735
+35,to_1,242.0,1,[167],a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,to,2,2,True,0.008928571428571428,NR,0.011055781442733793
+36,whether_0,371.0,5,"[48, 49, 83, 140, 169]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,5,whether,2,7,True,0.008928571428571428,NR,0.01694915254237288
+37,the_2,566.0,8,"[5, 6, 8, 16, 86, 100, 118, 182]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,8,the,2,3,True,0.008928571428571428,NR,0.02585773676275755
+38,new_0,389.0,5,"[85, 101, 103, 117, 137]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,5,new,2,3,True,0.008928571428571428,NR,0.01777148339348531
+39,deal_0,449.0,5,"[18, 40, 41, 156, 242]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,5,deal,2,4,True,0.008928571428571428,NR,0.02051258623052675
+40,includes_0,881.0,12,"[32, 38, 39, 61, 183, 197, 206, 230, 232, 261, 322, 323]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,12,includes,2,8,True,0.008928571428571428,NR,0.040248526657225094
+41,the_3,233.0,2,"[237, 302]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,2,the,2,3,True,0.008928571428571428,NR,0.010644616017177578
+42,additional_1,937.0,11,"[24, 31, 126, 128, 147, 160, 236, 258, 303, 314, 320]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,11,additional,2,10,True,0.008928571428571428,NR,0.04280688930513043
+43,Video_0,106.0,2,"[113, 149]",a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,2,Video,2,5,True,0.008928571428571428,NR,0.004842615012106538
+44,On_0,,0,[],a_SkyUnitedKingdom_4_qa_1 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,On,2,2,True,0.008928571428571428,NR,
+45,Demand_0,202.0,3,"[176, 217, 219]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,Demand,2,6,True,0.008928571428571428,NR,0.009228379551372836
+46,and_0,389.0,3,"[179, 216, 223]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,and,2,3,True,0.008928571428571428,NR,0.01777148339348531
+47,High_0,463.0,6,"[94, 165, 166, 168, 175, 273]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,6,High,2,4,True,0.008928571428571428,NR,0.021152176892503084
+48,Definition_0,752.0,9,"[4, 10, 91, 99, 173, 181, 214, 226, 227]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,9,Definition,2,10,True,0.008928571428571428,NR,0.034355155557586003
+49,content_0,817.0,11,"[0, 1, 11, 44, 59, 162, 228, 247, 249, 274, 333]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,11,content,2,7,True,0.008928571428571428,NR,0.03732468363104756
+50,which_0,1105.0,12,"[51, 60, 161, 198, 199, 243, 263, 275, 276, 288, 324, 335]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,12,which,2,5,True,0.008928571428571428,NR,0.050481977248846455
+51,had_0,352.0,6,"[35, 52, 57, 277, 301, 334]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,6,had,2,3,True,0.008928571428571428,NR,0.016081136643976427
+52,previously_0,1214.0,15,"[55, 56, 148, 205, 207, 209, 210, 233, 235, 238, 239, 240, 252, 296, 321]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,15,previously,2,10,True,0.008928571428571428,NR,0.05546164740280506
+53,been_0,59.0,1,[129],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,been,2,4,True,0.008928571428571428,NR,0.0026954177897574125
+54,offered_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,offered,2,7,True,0.008928571428571428,NR,
+55,by_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,by,2,2,True,0.008928571428571428,NR,
+56,BSkyB._0,129.0,2,"[178, 220]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,2,BSkyB.,2,6,True,0.008928571428571428,NR,0.005893371099639088
+57,As_1,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,As,3,2,True,0.008928571428571428,NR,
+58,part_0,297.0,3,"[180, 270, 272]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,part,3,4,True,0.008928571428571428,NR,0.01356845904335511
+59,of_1,297.0,3,"[95, 224, 225]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,of,3,2,True,0.008928571428571428,NR,0.01356845904335511
+60,the_4,303.0,3,"[98, 174, 215]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,the,3,3,True,0.008928571428571428,NR,0.013842569327059254
+61,"agreements,_1",769.0,11,"[14, 20, 46, 163, 213, 246, 248, 250, 265, 267, 331]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,11,"agreements,",3,11,True,0.008928571428571428,NR,0.03513180136141441
+62,both_1,690.0,9,"[45, 200, 203, 204, 212, 229, 244, 251, 299]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,9,both,3,4,True,0.008928571428571428,NR,0.03152268262597652
+63,BSkyB_1,308.0,5,"[33, 34, 54, 298, 300]",a_SkyUnitedKingdom_4_qa_3 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,5,BSkyB,3,5,True,0.008928571428571428,NR,0.014070994563479372
+64,and_1,181.0,3,"[23, 53, 286]",,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,and,3,3,True,0.008928571428571428,NR,0.008268993558408332
+65,Virgin_0,249.0,3,"[208, 234, 287]",a_SkyUnitedKingdom_4_qa_2 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,3,Virgin,3,6,True,0.008928571428571428,NR,0.011375576773721962
+66,Media_0,,0,[],a_SkyUnitedKingdom_4_qa_2 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,Media,3,5,True,0.008928571428571428,NR,
+67,agreed_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,agreed,3,6,True,0.008928571428571428,NR,
+68,to_2,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,to,3,2,True,0.008928571428571428,NR,
+69,terminate_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,terminate,3,9,True,0.008928571428571428,NR,
+70,all_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,all,3,3,True,0.008928571428571428,NR,
+71,High_1,64.0,1,[269],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,High,3,4,True,0.008928571428571428,NR,0.002923843026177532
+72,Court_0,95.0,1,[330],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,Court,3,5,True,0.008928571428571428,NR,0.0043400794919822745
+73,proceedings_0,55.0,1,[325],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,proceedings,3,11,True,0.008928571428571428,NR,0.0025126776006213166
+74,against_0,68.0,1,[201],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,against,3,7,True,0.008928571428571428,NR,0.003106583215313628
+75,each_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,each,3,4,True,0.008928571428571428,NR,
+76,other_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,other,3,5,True,0.008928571428571428,NR,
+77,relating_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,relating,3,8,True,0.008928571428571428,NR,
+78,to_3,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,to,3,2,True,0.008928571428571428,NR,
+79,the_5,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,the,3,3,True,0.008928571428571428,NR,
+80,carriage_1,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,carriage,3,8,True,0.008928571428571428,NR,
+81,of_2,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,of,3,2,True,0.008928571428571428,NR,
+82,their_1,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,their,3,5,True,0.008928571428571428,NR,
+83,respective_0,,0,[],,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,0,respective,3,10,True,0.008928571428571428,NR,
+84,basic_0,121.0,2,"[327, 329]",a_SkyUnitedKingdom_4_qa_4 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,2,basic,3,5,True,0.008928571428571428,NR,0.0055278907213668965
+85,channels._2,55.0,1,[326],a_SkyUnitedKingdom_4_qa_4 ,a_SkyUnitedKingdom_4,A2UKBPPWF76NCT,1,channels.,3,9,True,0.008928571428571428,NR,0.0025126776006213166
+0,The_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,The,1,3,True,0.0,NR,
+1,International_0,129.0,2,"[67, 278]",,meco_para_11,A2UKBPPWF76NCT,2,International,1,13,True,0.0,NR,0.005509053638537752
+2,Union_0,121.0,1,[82],,meco_para_11,A2UKBPPWF76NCT,1,Union,1,5,True,0.0,NR,0.005167406901264093
+3,for_0,57.0,1,[83],,meco_para_11,A2UKBPPWF76NCT,1,for,1,3,True,0.0,NR,0.002434233003074821
+4,Conservation_0,68.0,1,[147],,meco_para_11,A2UKBPPWF76NCT,1,Conservation,1,12,True,0.0,NR,0.0029039972668261018
+5,of_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,of,1,2,True,0.0,NR,
+6,Nature_0,90.0,1,[184],,meco_para_11,A2UKBPPWF76NCT,1,Nature,1,6,True,0.0,NR,0.003843525794328664
+7,is_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,is,1,2,True,0.0,NR,
+8,an__0,,0,[],meco_para_11_qa_0 ,meco_para_11,A2UKBPPWF76NCT,0,an,1,2,True,0.0,NR,
+9,international_1,,0,[],meco_para_11_qa_0 ,meco_para_11,A2UKBPPWF76NCT,0,international,1,13,True,0.0,NR,
+10,organization_0,,0,[],meco_para_11_qa_0 ,meco_para_11,A2UKBPPWF76NCT,0,organization,1,12,True,0.0,NR,
+11,working_0,201.0,2,"[11, 277]",,meco_para_11,A2UKBPPWF76NCT,2,working,1,7,True,0.0,NR,0.008583874274000683
+12,in_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,in,1,2,True,0.0,NR,
+13,the_1,55.0,1,[27],,meco_para_11,A2UKBPPWF76NCT,1,the,1,3,True,0.0,NR,0.002348821318756406
+14,field_0,262.0,3,"[65, 109, 145]",,meco_para_11,A2UKBPPWF76NCT,3,field,1,5,True,0.0,NR,0.011188930645712334
+15,of_1,133.0,2,"[110, 285]",,meco_para_11,A2UKBPPWF76NCT,2,of,1,2,True,0.0,NR,0.005679877007174581
+16,nature_1,136.0,2,"[25, 146]",,meco_para_11,A2UKBPPWF76NCT,2,nature,1,6,True,0.0,NR,0.0058079945336522035
+17,conservation_1,63.0,1,[194],,meco_para_11,A2UKBPPWF76NCT,1,conservation,1,12,True,0.0,NR,0.002690468056030065
+18,and_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,and,1,3,True,0.0,NR,
+19,the_2,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,the,1,3,True,0.0,NR,
+20,sustainable_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,sustainable,1,11,True,0.0,NR,
+21,use_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,use,1,3,True,0.0,NR,
+22,of_2,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,of,1,2,True,0.0,NR,
+23,natural_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,natural,1,7,True,0.0,NR,
+24,resources._0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,resources.,1,10,True,0.0,NR,
+25,It_0,522.0,6,"[68, 89, 100, 105, 226, 279]",,meco_para_11,A2UKBPPWF76NCT,6,It,2,2,True,0.0,NR,0.022292449607106253
+26,is_1,245.0,3,"[87, 90, 280]",,meco_para_11,A2UKBPPWF76NCT,3,is,2,2,True,0.0,NR,0.010462931329005809
+27,involved_0,387.0,6,"[15, 85, 86, 92, 108, 297]",,meco_para_11,A2UKBPPWF76NCT,6,involved,2,8,True,0.0,NR,0.016527160915613254
+28,in_1,187.0,3,"[64, 111, 298]",,meco_para_11,A2UKBPPWF76NCT,3,in,2,2,True,0.0,NR,0.00798599248377178
+29,data_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,data,2,4,True,0.0,NR,
+30,gathering_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,gathering,2,9,True,0.0,NR,
+31,and_1,64.0,1,[183],,meco_para_11,A2UKBPPWF76NCT,1,and,2,3,True,0.0,NR,0.0027331738981892723
+32,"analysis,_0",55.0,1,[303],,meco_para_11,A2UKBPPWF76NCT,1,"analysis,",2,9,True,0.0,NR,0.002348821318756406
+33,"research,_0",103.0,1,[305],,meco_para_11,A2UKBPPWF76NCT,1,"research,",2,9,True,0.0,NR,0.00439870174239836
+34,field_1,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,field,2,5,True,0.0,NR,
+35,"projects,_0",,0,[],,meco_para_11,A2UKBPPWF76NCT,0,"projects,",2,9,True,0.0,NR,
+36,"advocacy,_0",467.0,6,"[10, 54, 55, 101, 155, 242]",,meco_para_11,A2UKBPPWF76NCT,6,"advocacy,",2,9,True,0.0,NR,0.019943628288349845
+37,and_2,242.0,2,"[91, 136]",,meco_para_11,A2UKBPPWF76NCT,2,and,2,3,True,0.0,NR,0.010334813802528186
+38,education._0,721.0,10,"[16, 29, 50, 69, 81, 88, 144, 177, 224, 227]",,meco_para_11,A2UKBPPWF76NCT,10,education.,2,10,True,0.0,NR,0.03079091219678852
+39,Its_0,257.0,4,"[49, 59, 178, 296]",,meco_para_11,A2UKBPPWF76NCT,4,Its,3,3,True,0.0,NR,0.010975401434916297
+40,mission_0,1183.0,14,"[19, 63, 112, 128, 148, 179, 195, 228, 293, 294, 295, 299, 300, 308]",,meco_para_11,A2UKBPPWF76NCT,14,mission,3,7,True,0.0,NR,0.05052101127434233
+41,is_2,64.0,1,[196],,meco_para_11,A2UKBPPWF76NCT,1,is,3,2,True,0.0,NR,0.0027331738981892723
+42,to_0,281.0,4,"[24, 161, 229, 309]",,meco_para_11,A2UKBPPWF76NCT,4,to,3,2,True,0.0,NR,0.012000341646737274
+43,"‘influence,_0",119.0,2,"[233, 263]",,meco_para_11,A2UKBPPWF76NCT,2,"‘influence,",3,11,True,0.0,NR,0.005081995216945678
+44,encourage_0,147.0,1,[304],,meco_para_11,A2UKBPPWF76NCT,1,encourage,3,9,True,0.0,NR,0.006277758797403485
+45,and_3,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,and,3,3,True,0.0,NR,
+46,assist_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,assist,3,6,True,0.0,NR,
+47,societies_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,societies,3,9,True,0.0,NR,
+48,throughout_0,186.0,3,"[56, 156, 244]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,3,throughout,3,10,True,0.0,NR,0.007943286641612573
+49,the_3,311.0,4,"[52, 57, 102, 241]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,4,the,3,3,True,0.0,NR,0.013281516911513495
+50,world_0,1085.0,10,"[14, 51, 58, 80, 93, 107, 135, 223, 281, 283]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,10,world,3,5,True,0.0,NR,0.046335838742740006
+51,to_1,64.0,1,[222],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,1,to,3,2,True,0.0,NR,0.0027331738981892723
+52,conserve_0,1157.0,14,"[48, 60, 61, 118, 127, 129, 149, 150, 160, 180, 191, 192, 193, 310]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,14,conserve,3,8,True,0.0,NR,0.04941065937820294
+53,nature_2,217.0,3,"[189, 190, 239]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,3,nature,3,6,True,0.0,NR,0.009267167748548001
+54,and_4,313.0,4,"[23, 231, 237, 238]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,4,and,3,3,True,0.0,NR,0.01336692859583191
+55,to_2,55.0,1,[262],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,1,to,3,2,True,0.0,NR,0.002348821318756406
+56,ensure_0,,0,[],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,0,ensure,3,6,True,0.0,NR,
+57,that_0,58.0,1,[306],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,1,that,3,4,True,0.0,NR,0.002476938845234028
+58,any_0,,0,[],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,0,any,3,3,True,0.0,NR,
+59,use_1,,0,[],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,0,use,3,3,True,0.0,NR,
+60,of_3,,0,[],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,0,of,3,2,True,0.0,NR,
+61,natural_1,,0,[],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,0,natural,3,7,True,0.0,NR,
+62,resources_1,266.0,3,"[95, 141, 276]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,3,resources,3,9,True,0.0,NR,0.011359754014349162
+63,is_3,233.0,3,"[9, 157, 275]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,3,is,3,2,True,0.0,NR,0.009950461223095319
+64,equitable_0,868.0,11,"[13, 94, 98, 115, 116, 151, 153, 173, 176, 270, 282]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,11,equitable,3,9,True,0.0,NR,0.037068670994192005
+65,and_5,203.0,3,"[123, 125, 267]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,3,and,3,3,True,0.0,NR,0.008669285958319098
+66,ecologically_0,568.0,9,"[21, 62, 122, 124, 126, 130, 221, 240, 311]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,9,ecologically,3,12,True,0.0,NR,0.02425691834642979
+67,sustainable’._0,699.0,9,"[0, 20, 31, 182, 197, 236, 287, 301, 312]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,9,sustainable’.,3,13,True,0.0,NR,0.02985138366928596
+68,Over_0,114.0,2,"[32, 261]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,2,Over,4,4,True,0.0,NR,0.004868466006149642
+69,the_4,278.0,3,"[33, 185, 219]",meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,3,the,4,3,True,0.0,NR,0.011872224120259652
+70,past_0,,0,[],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,0,past,4,4,True,0.0,NR,
+71,"decades,_0",,0,[],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,0,"decades,",4,8,True,0.0,NR,
+72,the_5,,0,[],meco_para_11_qa_2 ,meco_para_11,A2UKBPPWF76NCT,0,the,4,3,True,0.0,NR,
+73,organization_1,297.0,3,"[137, 142, 143]",,meco_para_11,A2UKBPPWF76NCT,3,organization,4,12,True,0.0,NR,0.012683635121284592
+74,has_0,276.0,4,"[97, 139, 172, 274]",,meco_para_11,A2UKBPPWF76NCT,4,has,4,3,True,0.0,NR,0.011786812435941237
+75,widened_0,638.0,8,"[7, 70, 114, 117, 158, 159, 271, 286]",,meco_para_11,A2UKBPPWF76NCT,8,widened,4,7,True,0.0,NR,0.02724632729757431
+76,its_1,303.0,5,"[71, 72, 134, 170, 246]",,meco_para_11,A2UKBPPWF76NCT,5,its,4,3,True,0.0,NR,0.012939870174239835
+77,focus_0,321.0,5,"[18, 76, 119, 133, 208]",,meco_para_11,A2UKBPPWF76NCT,5,focus,4,5,True,0.0,NR,0.013708575333105568
+78,beyond_0,833.0,6,"[47, 131, 132, 169, 289, 292]",,meco_para_11,A2UKBPPWF76NCT,6,beyond,4,6,True,0.0,NR,0.03557396651861975
+79,conservation_2,613.0,7,"[37, 39, 42, 162, 235, 260, 313]",,meco_para_11,A2UKBPPWF76NCT,7,conservation,4,12,True,0.0,NR,0.026178681243594123
+80,ecology_0,237.0,3,"[186, 216, 218]",,meco_para_11,A2UKBPPWF76NCT,3,ecology,4,7,True,0.0,NR,0.010121284591732149
+81,and_6,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,and,4,3,True,0.0,NR,
+82,now_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,now,4,3,True,0.0,NR,
+83,incorporates_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,incorporates,4,12,True,0.0,NR,
+84,issues_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,issues,4,6,True,0.0,NR,
+85,related_0,57.0,1,[273],,meco_para_11,A2UKBPPWF76NCT,1,related,4,7,True,0.0,NR,0.002434233003074821
+86,to_3,60.0,1,[272],,meco_para_11,A2UKBPPWF76NCT,1,to,4,2,True,0.0,NR,0.002562350529552443
+87,sustainable_1,527.0,9,"[6, 75, 77, 113, 121, 171, 174, 268, 269]",,meco_para_11,A2UKBPPWF76NCT,9,sustainable,4,11,True,0.0,NR,0.02250597881790229
+88,development_0,900.0,12,"[1, 73, 120, 175, 181, 203, 210, 252, 265, 266, 328, 329]",,meco_para_11,A2UKBPPWF76NCT,12,development,4,11,True,0.0,NR,0.038435257943286644
+89,in_2,248.0,3,"[163, 204, 206]",,meco_para_11,A2UKBPPWF76NCT,3,in,4,2,True,0.0,NR,0.01059104885548343
+90,its_2,895.0,10,"[38, 43, 44, 46, 166, 167, 205, 248, 288, 302]",,meco_para_11,A2UKBPPWF76NCT,10,its,4,3,True,0.0,NR,0.038221728732490606
+91,projects._1,739.0,10,"[40, 41, 187, 188, 198, 200, 247, 259, 264, 314]",,meco_para_11,A2UKBPPWF76NCT,10,projects.,4,9,True,0.0,NR,0.031559617355654254
+92,Unlike_0,116.0,2,"[34, 36]",,meco_para_11,A2UKBPPWF76NCT,2,Unlike,5,6,True,0.0,NR,0.004953877690468056
+93,many_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,many,5,4,True,0.0,NR,
+94,other_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,other,5,5,True,0.0,NR,
+95,international_2,126.0,1,[138],,meco_para_11,A2UKBPPWF76NCT,1,international,5,13,True,0.0,NR,0.00538093611206013
+96,environmental_0,121.0,2,"[8, 78]",,meco_para_11,A2UKBPPWF76NCT,2,environmental,5,13,True,0.0,NR,0.005167406901264093
+97,"organizations,_0",381.0,5,"[253, 254, 321, 322, 330]",,meco_para_11,A2UKBPPWF76NCT,5,"organizations,",5,14,True,0.0,NR,0.016270925862658013
+98,it_1,219.0,3,"[4, 202, 209]",,meco_para_11,A2UKBPPWF76NCT,3,it,5,2,True,0.0,NR,0.009352579432866416
+99,does_0,343.0,4,"[165, 168, 249, 327]",,meco_para_11,A2UKBPPWF76NCT,4,does,5,4,True,0.0,NR,0.01464810386060813
+100,not_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,not,5,3,True,0.0,NR,
+101,aim_0,199.0,3,"[199, 214, 217]",,meco_para_11,A2UKBPPWF76NCT,3,aim,5,3,True,0.0,NR,0.008498462589682268
+102,to_4,59.0,1,[215],,meco_para_11,A2UKBPPWF76NCT,1,to,5,2,True,0.0,NR,0.0025196446873932354
+103,mobilize_0,100.0,1,[35],,meco_para_11,A2UKBPPWF76NCT,1,mobilize,5,8,True,0.0,NR,0.004270584215920738
+104,the_6,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,the,5,3,True,0.0,NR,
+105,public_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,public,5,6,True,0.0,NR,
+106,in_3,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,in,5,2,True,0.0,NR,
+107,support_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,support,5,7,True,0.0,NR,
+108,of_4,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,of,5,2,True,0.0,NR,
+109,nature_3,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,nature,5,6,True,0.0,NR,
+110,conservation._3,65.0,1,[320],,meco_para_11,A2UKBPPWF76NCT,1,conservation.,5,13,True,0.0,NR,0.0027758797403484798
+111,"Instead,_0",329.0,4,"[2, 5, 319, 324]",,meco_para_11,A2UKBPPWF76NCT,4,"Instead,",6,8,True,0.0,NR,0.014050222070379228
+112,the_7,417.0,5,"[251, 255, 291, 318, 326]",,meco_para_11,A2UKBPPWF76NCT,5,the,6,3,True,0.0,NR,0.01780833618038948
+113,organization_2,416.0,6,"[45, 201, 211, 212, 213, 316]",,meco_para_11,A2UKBPPWF76NCT,6,organization,6,12,True,0.0,NR,0.01776563033823027
+114,tries_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,tries,6,5,True,0.0,NR,
+115,to_5,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,to,6,2,True,0.0,NR,
+116,influence_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,influence,6,9,True,0.0,NR,
+117,the_8,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,the,6,3,True,0.0,NR,
+118,actions_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,actions,6,7,True,0.0,NR,
+119,of_5,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,of,6,2,True,0.0,NR,
+120,"governments,_0",,0,[],,meco_para_11,A2UKBPPWF76NCT,0,"governments,",6,12,True,0.0,NR,
+121,business_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,business,6,8,True,0.0,NR,
+122,and_7,54.0,1,[250],,meco_para_11,A2UKBPPWF76NCT,1,and,6,3,True,0.0,NR,0.0023061154765971984
+123,other_1,64.0,1,[323],,meco_para_11,A2UKBPPWF76NCT,1,other,6,5,True,0.0,NR,0.0027331738981892723
+124,stakeholders_0,234.0,4,"[3, 256, 257, 317]",,meco_para_11,A2UKBPPWF76NCT,4,stakeholders,6,12,True,0.0,NR,0.009993167065254526
+125,by_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,by,6,2,True,0.0,NR,
+126,providing_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,providing,6,9,True,0.0,NR,
+127,information_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,information,6,11,True,0.0,NR,
+128,and_8,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,and,6,3,True,0.0,NR,
+129,"advice,_0",,0,[],,meco_para_11,A2UKBPPWF76NCT,0,"advice,",6,7,True,0.0,NR,
+130,and_9,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,and,6,3,True,0.0,NR,
+131,through_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,through,6,7,True,0.0,NR,
+132,building_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,building,6,8,True,0.0,NR,
+133,partnerships._0,195.0,1,[325],,meco_para_11,A2UKBPPWF76NCT,1,partnerships.,6,13,True,0.0,NR,0.008327639221045438
+134,The_9,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,The,7,3,True,0.0,NR,
+135,organization_3,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,organization,7,12,True,0.0,NR,
+136,is_4,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,is,7,2,True,0.0,NR,
+137,best_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,best,7,4,True,0.0,NR,
+138,known_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,known,7,5,True,0.0,NR,
+139,to_6,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,to,7,2,True,0.0,NR,
+140,the_10,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,the,7,3,True,0.0,NR,
+141,wider_0,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,wider,7,5,True,0.0,NR,
+142,public_1,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,public,7,6,True,0.0,NR,
+143,for_1,,0,[],,meco_para_11,A2UKBPPWF76NCT,0,for,7,3,True,0.0,NR,
+144,compiling_0,,0,[],meco_para_11_qa_3 ,meco_para_11,A2UKBPPWF76NCT,0,compiling,7,9,True,0.0,NR,
+145,and_10,,0,[],meco_para_11_qa_3 ,meco_para_11,A2UKBPPWF76NCT,0,and,7,3,True,0.0,NR,
+146,publishing_0,,0,[],meco_para_11_qa_3 ,meco_para_11,A2UKBPPWF76NCT,0,publishing,7,10,True,0.0,NR,
+147,the_11,,0,[],meco_para_11_qa_3 ,meco_para_11,A2UKBPPWF76NCT,0,the,7,3,True,0.0,NR,
+148,Red_0,,0,[],meco_para_11_qa_3 ,meco_para_11,A2UKBPPWF76NCT,0,Red,7,3,True,0.0,NR,
+149,List_0,,0,[],meco_para_11_qa_3 ,meco_para_11,A2UKBPPWF76NCT,0,List,7,4,True,0.0,NR,
+150,of_6,,0,[],meco_para_11_qa_3 ,meco_para_11,A2UKBPPWF76NCT,0,of,7,2,True,0.0,NR,
+151,Threatened_0,,0,[],meco_para_11_qa_3 ,meco_para_11,A2UKBPPWF76NCT,0,Threatened,7,10,True,0.0,NR,
+152,"Species,_0",,0,[],meco_para_11_qa_3 ,meco_para_11,A2UKBPPWF76NCT,0,"Species,",7,8,True,0.0,NR,
+153,which_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,which,7,5,True,0.0,NR,
+154,assesses_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,assesses,7,8,True,0.0,NR,
+155,the_12,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,the,7,3,True,0.0,NR,
+156,conservation_4,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,conservation,7,12,True,0.0,NR,
+157,status_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,status,7,6,True,0.0,NR,
+158,of_7,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,of,7,2,True,0.0,NR,
+159,species_1,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,species,7,7,True,0.0,NR,
+160,worldwide._0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,worldwide.,7,10,True,0.0,NR,
+161,"Today,_0",,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,"Today,",8,6,True,0.0,NR,
+162,the_13,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,the,8,3,True,0.0,NR,
+163,organization_4,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,organization,8,12,True,0.0,NR,
+164,employs_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,employs,8,7,True,0.0,NR,
+165,approximately_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,approximately,8,13,True,0.0,NR,
+166,one_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,one,8,3,True,0.0,NR,
+167,thousand_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,thousand,8,8,True,0.0,NR,
+168,full-time_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,full-time,8,9,True,0.0,NR,
+169,staff_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,staff,8,5,True,0.0,NR,
+170,in_4,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,in,8,2,True,0.0,NR,
+171,more_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,more,8,4,True,0.0,NR,
+172,than_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,than,8,4,True,0.0,NR,
+173,fifty_0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,fifty,8,5,True,0.0,NR,
+174,countries._0,,0,[],meco_para_11_qa_1 ,meco_para_11,A2UKBPPWF76NCT,0,countries.,8,10,True,0.0,NR,

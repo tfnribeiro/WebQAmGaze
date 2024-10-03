@@ -22,10 +22,28 @@ from study_config import PARTICIPANT_TYPES, PLATFORM_TYPES
 import pandas as pd
 import utils
 
+
 # From https://stackoverflow.com/questions/4060221/how-to-reliably-open-a-file-in-the-same-directory-as-the-currently-running-scrip
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 OUTPUT_HEATGAZE_DIR = path.join("experiment_data", "imgs", "gaze_heatmaps")
-
+## Calibration Grid points
+CALIBRATION_POINTS = [
+        [60, 60],
+        [50, 50],
+        [25, 25],
+        [25, 75],
+        [75, 25],
+        [75, 75],
+        [40, 40],
+        [40, 60],
+        [60, 40],
+      ]
+QUICK_CALIBRATION_POINTS = [        
+    [50, 50],
+    [25, 25],
+    [25, 75],
+    [75, 25],
+    [75, 75]]
 ## Variables for participants
 VISION_TYPES = ["normal", "contact-lenses", "glasses", None]
 
@@ -40,6 +58,18 @@ PX_TOLERANCE_COUNT_FIXATIONS = 0
 # Tolerance for filtering the fixations outside
 # target paragraph.
 PX_TOLERANCE_OUTSIDE_TARGET = 25
+
+COLOURS = [
+            'tab:blue',
+            'tab:orange',
+            'tab:green',
+            'tab:red',
+            'tab:purple',
+            'tab:brown',
+            'tab:pink',
+            'tab:olive',
+            'tab:cyan',
+        ]
 
 ## These resolutions were extracted from: https://www.screenresolution.org/
 ## Regex was used to capture all and compile them into a file.
@@ -384,10 +414,9 @@ class experiment:
 
     def __get_validation_roi(self):
         # Return the validation roi (List with the 5 target acc)
-        last_validation_data = self.data.percent_in_roi[self.data.percent_in_roi.notna(
-        )].to_numpy()
+        validation_data = self.data.percent_in_roi[self.data.percent_in_roi.notna()].to_numpy()
         all_validation = []
-        for roi_val in last_validation_data:
+        for roi_val in validation_data:
             if self.is_psiturk:
                 # Psiturk already has the data in a list form (no need to parse strings)
                 all_validation.append(roi_val)
@@ -398,6 +427,26 @@ class experiment:
                 val_array = np.array([float(x) for x in val_array])
                 all_validation.append(val_array)
         return np.array(all_validation)
+    
+    def __get_validation_average_offset(self):
+        # The average x and y distance from each validation point, plus the median distance r of the points from this average offset.
+        # https://www.jspsych.org/7.0/plugins/webgazer-validate/
+        validation_data = self.data.average_offset[self.data.average_offset.notna()]
+        last_val_data = validation_data.iloc[-1]
+        avg_offset_data = {
+            "x":[],
+            "y":[],
+            "r":[]
+        }
+        if not self.is_psiturk:
+            last_val_data = json.loads(last_val_data)
+            
+        for average_offset_point in last_val_data:
+            for k, v in average_offset_point.items():
+                avg_offset_data[k].append(abs(v))
+        for k, v in avg_offset_data.items():
+            avg_offset_data[k] = np.array(v).mean()
+        return avg_offset_data
     
     def __get_sample_rate(self):
         # Returns the list with the validation samples_per_sec (can be 1 or 2), returns mean.
@@ -1016,6 +1065,9 @@ class experiment:
             "total_fix_points_p", # Total Gaze Points across all trials
             "total_fix_points_p_filtered", # Points filtered due to duration and paragraph filter
             "avg_roi_last_val",
+            "avg_offset_x",
+            "avg_offset_y",
+            "avg_offset_r",
             "webgazer_sample_rate", 
             "exp_total_time",
             "experiment_reload",
@@ -1035,7 +1087,7 @@ class experiment:
                 f"trial_{i}_fixation_on_target",
                 f"trial_{i}_total_fix_points_d", # Total Gaze Points for all trials
                 f"trial_{i}_total_fix_points_d_filtered", # Points kept due to duration Threshold
-                f"trial_{i}_total_fix_points_p", # Total Gaze Points for all trials
+                f"trial_{i}_total_fix_points_p", # Total Gaze Points for trial after duration threshold
                 f"trial_{i}_total_fix_points_p_filtered", # Points filtered due to duration and paragraph filter
                 f"question_{i}_name",
                 f"question_{i}_time",
@@ -1086,10 +1138,17 @@ class experiment:
             self.features_series['webgazer_raw_data'] = to_JSON_dict(self.webgazer_data) 
             if pd.isnull(self.val_roi[-1]).any():
                 utils.log_error("Could not load AVG ROI. A value is Null.", utils.Error.WARNING, self.worker_id)
-                #print(f"## WARNING: Error in loading the AVG ROI for worker id: {self.worker_id} ####")
                 self.features_series['avg_roi_last_val'] = np.nan
+                self.features_series["avg_offset_x"] = np.nan
+                self.features_series["avg_offset_y"] = np.nan
+                self.features_series["avg_offset_r"] = np.nan
             else:
+                avg_offset_data = self.__get_validation_average_offset()
+                self.features_series["avg_offset_x"] = avg_offset_data["x"]
+                self.features_series["avg_offset_y"] = avg_offset_data["y"]
+                self.features_series["avg_offset_r"] = avg_offset_data["r"]
                 self.features_series['avg_roi_last_val'] = self.val_roi[-1].mean()
+            
             self.features_series['webgazer_sample_rate'] = self.__get_sample_rate()
             self.features_series['exp_total_time'] = self.total_time
             self.features_series['experiment_reload'] = self.experiment_reload
@@ -1321,7 +1380,7 @@ class experiment:
             dataframe_format['word_id'] = duration_dict.keys()
             dataframe_format['TRT'] = counts_np[:,0]
             dataframe_format['FixCount'] = counts_np[:,1]
-            dataframe_format['scanPath'] = scan_paths
+            dataframe_format['Scan_path'] = scan_paths
             dataframe_format['Span_word_is_in'] = counts_np[:,2]
             dataframe_format['text_id'] = trial_name
         except Exception as e:
@@ -1372,17 +1431,6 @@ class experiment:
                 try:
                     plt.clf()
                     img = plt.imread(path_to_bg_img)
-                    colours = [
-                        'tab:blue',
-                        'tab:orange',
-                        'tab:green',
-                        'tab:red',
-                        'tab:purple',
-                        'tab:brown',
-                        'tab:pink',
-                        'tab:olive',
-                        'tab:cyan',
-                    ]
                     colour_word = 'tab:gray'
                     target_rect = []
                     for i, target in enumerate(self.webgazer_targets[trial]):
@@ -1392,8 +1440,8 @@ class experiment:
                                 # print(target.name)
                                 rect = patches.Rectangle((target.x-PX_TOLERANCE_COUNT_FIXATIONS, target.y-PX_TOLERANCE_COUNT_FIXATIONS), target.width+2*PX_TOLERANCE_COUNT_FIXATIONS, target.height+2*PX_TOLERANCE_COUNT_FIXATIONS, linewidth=1, edgecolor=colour_word, facecolor='none', alpha=0.5)
                             else:
-                                rect = patches.Rectangle((target.x-PX_TOLERANCE_COUNT_FIXATIONS, target.y-PX_TOLERANCE_COUNT_FIXATIONS), target.width+2*PX_TOLERANCE_COUNT_FIXATIONS, target.height+2*PX_TOLERANCE_COUNT_FIXATIONS, linewidth=3, alpha=0.8, edgecolor=colours[i % len(
-                                colours)], facecolor='none', label=target.name)
+                                rect = patches.Rectangle((target.x-PX_TOLERANCE_COUNT_FIXATIONS, target.y-PX_TOLERANCE_COUNT_FIXATIONS), target.width+2*PX_TOLERANCE_COUNT_FIXATIONS, target.height+2*PX_TOLERANCE_COUNT_FIXATIONS, linewidth=3, alpha=0.8, edgecolor=COLOURS[i % len(
+                                COLOURS)], facecolor='none', label=target.name)
                             target_rect.append(rect)
                         
                     fig, ax = plt.subplots()
@@ -1405,40 +1453,112 @@ class experiment:
                         colour = "b"
                         for j, target in enumerate(self.webgazer_targets[trial]):
                             if target.in_boundaries(point, tolerance=PX_TOLERANCE_COUNT_FIXATIONS) and "#" not in target.name and "paragraph" not in target.name:
-                                colour = colours[j % len(colours)]
+                                colour = COLOURS[j % len(COLOURS)]
                                 break
                         colour_array.append(colour)
                     size_array = np.hstack(([0], gaze[:-1,2]))
                     size_array = gaze[:,2] - size_array
+                    size_array = (size_array/max(size_array) * 100) * 15
+                    colour_array = np.array(colour_array)
+
+                    ax.scatter(gaze[0, 0], gaze[0, 1],
+                            alpha=0.8, s=size_array[0], color="red", label="First Fixation")
+                    ax.scatter(gaze[1:, 0], gaze[1:, 1],
+                            alpha=0.8, s=size_array[1:])
                     
                     #for i_w, row_w in self.get_duration_fixation_on_word(trial).iterrows():
                     #    print(row_w['word_id'], row_w['TRT'])
-                    
-                    #print(size_array)
-                    size_array = (size_array/max(size_array) * 100)*2
-                    colour_array = np.array(colour_array)
-                    ax.scatter(gaze[:, 0], gaze[:, 1],
-                            alpha=0.8, s=size_array)
-                    
                     if plot_scan_path:
                         n = len(gaze)
                         viridis = cm.get_cmap('viridis', n)
-                        for i in range(n-1):
-                            x = gaze[i:i+2,0]
-                            y = gaze[i:i+2,1]
-                            ax.plot(x, y, c=viridis(i), alpha=0.4)
-                    #print(self.webgazer_data[trial][:15])
-                    #print(self.webgazer_data[trial].shape)
-                    #print(self.webgazer_fixations_filtered[trial][:15])
-                    #print(self.webgazer_fixations_filtered[trial].shape)
+                        for i in range(0, n-1):
+                            p1 = gaze[i, :2]
+                            p2 = gaze[i+1, :2]
+                            dif = p2 - p1 
+                            ax.arrow(p1[0], p1[1], dif[0], dif[1], 
+                                     alpha=0.6, head_length=15, head_width=10,
+                                     width=0.01, #facecolor="blue", edgecolor="blue",
+                                     length_includes_head=True)
+
                     print(f"Plot path if saved: {save_file_path}")
-                    ax.legend()
+                    plt.rcParams.update({'font.size': 18})
+                    ax.set_xlabel("X Axis (px)", fontsize=16)
+                    ax.set_ylabel("Y Axis (px)", fontsize=16)
+                    ax.tick_params(axis='both', which='major', labelsize=16)
+                    plt.axis('scaled')
+                    box = ax.get_position()
+                    ax.set_position([box.x0, box.y0 + box.height * 0.1,
+                                    box.width, box.height * 0.9])
+                    ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
+                                        fancybox=True, shadow=True, ncol=1)
                     plt.show()
                     
                 except IndexError:
                     utils.log_error("Couldn't generate plotmap. Gaze data might be missing.", utils.Error.ERROR, self.worker_id, trial)
                     #print(f"ERROR when generating the plotmap. There might not be gaze data for this trial ({trial}).")
-            
+    
+    def visualize_validation_data(self):
+        validation_data = self.data.loc[self.data["trial_type"] == "webgazer-validate"]
+        last_val_data = validation_data.iloc[-1]
+        gaze_data = last_val_data.loc["raw_gaze"]
+        gaze_data = [np.array([[int(p["x"]), int(p["y"])] for p in g_l], dtype=int) for g_l in gaze_data]
+        screen_x, screen_y = self.features_series.loc[['screen_x', 'screen_y']]
+        val_points = np.array([(screen_x * (x/100), (screen_y * (y/100))) for (x,y) in last_val_data.loc["validation_points"]])
+        fig, ax = plt.subplots()
+        plt.gca().invert_yaxis()
+        ax.add_patch(patches.Rectangle((0, 0), screen_x, screen_y, linewidth=1, edgecolor="black", facecolor='none', label=f"Screen Area ({int(screen_x)}x{int(screen_y)})"))
+        print("Worker ID: ", self.worker_id)
+        print("ROI: ", round(self.features_series["avg_roi_last_val"],2))
+        print("AVG R Offset: ", round(self.features_series["avg_offset_r"],2))
+        print("Screen Size: ", screen_x, screen_y)
+        
+        for point_i, gaze in enumerate(gaze_data):
+            if point_i == 0:
+                roi_area = patches.Circle(val_points[point_i], radius=100, facecolor='none', linewidth=2, edgecolor="red", label="ROI Area")
+            else:
+                roi_area = patches.Circle(val_points[point_i], radius=100, facecolor='none', linewidth=2, edgecolor="red")
+            ax.add_patch(roi_area)
+            ax.scatter(val_points[point_i][0], val_points[point_i][1], color=COLOURS[point_i], s=50, alpha=0.8, label=f"Val. Point {point_i}")
+            ax.scatter(gaze[:, 0], gaze[:, 1], alpha=0.7, color = COLOURS[point_i], marker="x")
+        plt.rcParams.update({'font.size': 18})
+        ax.set_xlabel("X Axis (px)", fontsize=16)
+        ax.set_ylabel("Y Axis (px)", fontsize=16)
+        ax.tick_params(axis='both', which='major', labelsize=16)
+        plt.axis('scaled')
+        box = ax.get_position()
+        ax.set_position([box.x0, box.y0 + box.height * 0.1,
+                        box.width, box.height * 0.9])
+        ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
+                            fancybox=True, shadow=True, ncol=3)
+        plt.show()
+
+    def visualize_calibration_grid(self, is_quick=False):
+        screen_x, screen_y = self.features_series.loc[['screen_x', 'screen_y']]
+        if is_quick:
+            cal_points = np.array([(screen_x * (x/100), (screen_y * (y/100))) for (x,y) in QUICK_CALIBRATION_POINTS])
+        else:
+            cal_points = np.array([(screen_x * (x/100), (screen_y * (y/100))) for (x,y) in CALIBRATION_POINTS])
+        fig, ax = plt.subplots()
+        plt.gca().invert_yaxis()
+        ax.add_patch(patches.Rectangle((0, 0), screen_x, screen_y, linewidth=1, edgecolor="black", facecolor='none', label=f"Screen Area ({int(screen_x)}x{int(screen_y)})"))
+        print("Worker ID: ", self.worker_id)
+        
+        for point_i, p in enumerate(cal_points):
+            if point_i == 0:
+                ax.scatter(p[0], p[1], color="black", s=100, alpha=1, label=f"Calibration Point")
+            ax.scatter(p[0], p[1], color="black", s=100, alpha=1)
+        plt.rcParams.update({'font.size': 18})
+        ax.set_xlabel("X Axis (px)", fontsize=16)
+        ax.set_ylabel("Y Axis (px)", fontsize=16)
+        ax.tick_params(axis='both', which='major', labelsize=16)
+        plt.axis('scaled')
+        box = ax.get_position()
+        ax.set_position([box.x0, box.y0 + box.height * 0.1,
+                        box.width, box.height * 0.9])
+        ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
+                            fancybox=True, shadow=True, ncol=3)
+        plt.show()
+
     def __str__(self):
         return str(self.data)
 

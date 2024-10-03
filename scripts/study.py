@@ -925,8 +925,6 @@ parser.add_argument('--show-first-participant', metavar="0|1", type=bool, nargs=
 parser.add_argument('--data-path', metavar='path', type=str, nargs=1,
                     help="Path to the data, optional, if not passed the study_name directory is used.")
 
-test_data = None
-all_data_df = None
 if __name__ == '__main__':
     args = sys.argv[1:]
     set_name = None

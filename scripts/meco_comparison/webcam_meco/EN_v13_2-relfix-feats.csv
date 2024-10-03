@@ -1,163 +1,975 @@
-,word_id_orig,TRT,FixCount,scanPath,Span_word_is_in,text_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
-0,A_0,96.0,1,[3],,meco_para_12,1,A,1,1,True,0.03125,NR,0.022857142857142857
-1,vehicle_0,825.0,3,"[4, 25, 66]",,meco_para_12,3,vehicle,1,7,True,0.03125,NR,0.19642857142857142
-2,registration_0,127.0,2,"[27, 69]",,meco_para_12,2,registration,1,12,True,0.03125,NR,0.030238095238095238
-3,plate_0,,0,[],,meco_para_12,0,plate,1,5,True,0.03125,NR,
-4,is_0,,0,[],,meco_para_12,0,is,1,2,True,0.03125,NR,
-5,a_1,,0,[],,meco_para_12,0,a,1,1,True,0.03125,NR,
-6,metal_0,167.0,1,[33],,meco_para_12,1,metal,1,5,True,0.03125,NR,0.03976190476190476
-7,or_0,,0,[],,meco_para_12,0,or,1,2,True,0.03125,NR,
-8,plastic_0,98.0,1,[61],,meco_para_12,1,plastic,1,7,True,0.03125,NR,0.023333333333333334
-9,plate_1,470.0,4,"[16, 37, 48, 60]",,meco_para_12,4,plate,1,5,True,0.03125,NR,0.11190476190476191
-10,attached_0,,0,[],,meco_para_12,0,attached,1,8,True,0.03125,NR,
-11,to_0,338.0,1,[39],,meco_para_12,1,to,1,2,True,0.03125,NR,0.08047619047619048
-12,a_2,,0,[],,meco_para_12,0,a,1,1,True,0.03125,NR,
-13,vehicle_1,1268.0,4,"[41, 42, 64, 94]",,meco_para_12,4,vehicle,1,7,True,0.03125,NR,0.3019047619047619
-14,for_0,,0,[],,meco_para_12,0,for,1,3,True,0.03125,NR,
-15,officialidentification_0,683.0,6,"[2, 5, 22, 23, 26, 77]",,meco_para_12,6,officialidentification,1,22,True,0.03125,NR,0.1626190476190476
-16,purposes._0,128.0,1,[28],,meco_para_12,1,purposes.,1,9,True,0.03125,NR,0.030476190476190476
-17,All_0,,0,[],,meco_para_12,0,All,2,3,True,0.03125,NR,
-18,countries_0,1064.0,7,"[11, 29, 32, 34, 70, 71, 85]",,meco_para_12,7,countries,2,9,True,0.03125,NR,0.23206106870229007
-19,require_0,475.0,3,"[35, 62, 63]",,meco_para_12,3,require,2,7,True,0.03125,NR,0.10359869138495092
-20,registration_1,441.0,3,"[17, 18, 36]",,meco_para_12,3,registration,2,12,True,0.03125,NR,0.09618320610687023
-21,plates_0,271.0,1,[50],,meco_para_12,1,plates,2,6,True,0.03125,NR,0.05910577971646674
-22,for_1,103.0,1,[20],,meco_para_12,1,for,2,3,True,0.03125,NR,0.022464558342420938
-23,road_0,239.0,2,"[21, 40]",,meco_para_12,2,road,2,4,True,0.03125,NR,0.05212649945474373
-24,vehicles_0,233.0,2,"[110, 111]",,meco_para_12,2,vehicles,2,8,True,0.03125,NR,0.050817884405670664
-25,such_0,,0,[],,meco_para_12,0,such,2,4,True,0.03125,NR,
-26,as_0,71.0,1,[97],,meco_para_12,1,as,2,2,True,0.03125,NR,0.015485278080697927
-27,"cars,_0",104.0,1,[98],,meco_para_12,1,"cars,",2,5,True,0.03125,NR,0.022682660850599782
-28,"trucks,and_0",972.0,4,"[6, 81, 99, 114]",,meco_para_12,4,"trucks,and",2,10,True,0.03125,NR,0.21199563794983642
-29,motorcycles._0,612.0,4,"[9, 30, 31, 83]",,meco_para_12,4,motorcycles.,2,12,True,0.03125,NR,0.13347873500545257
-30,Whether_0,580.0,4,"[12, 13, 86, 117]",,meco_para_12,4,Whether,3,7,True,0.03125,NR,0.1112176414189837
-31,they_0,642.0,3,"[14, 72, 87]",,meco_para_12,3,they,3,4,True,0.03125,NR,0.12310642377756471
-32,are_0,587.0,4,"[15, 19, 49, 73]",,meco_para_12,4,are,3,3,True,0.03125,NR,0.11255992329817834
-33,required_0,,0,[],,meco_para_12,0,required,3,8,True,0.03125,NR,
-34,for_2,137.0,1,[74],,meco_para_12,1,for,3,3,True,0.03125,NR,0.02627037392138063
-35,other_0,210.0,1,[76],,meco_para_12,1,other,3,5,True,0.03125,NR,0.040268456375838924
-36,"vehicles,_1",64.0,1,[93],,meco_para_12,1,"vehicles,",3,9,True,0.03125,NR,0.012272291466922339
-37,such_1,468.0,3,"[112, 123, 124]",,meco_para_12,3,such,3,4,True,0.03125,NR,0.0897411313518696
-38,as__0,,0,[],,meco_para_12,0,as,3,2,True,0.03125,NR,
-39,"bicycles,_0",272.0,2,"[79, 80]",,meco_para_12,2,"bicycles,",3,9,True,0.03125,NR,0.05215723873441994
-40,"boats,_0",585.0,3,"[7, 82, 100]",meco_para_12_qa_2 ,meco_para_12,3,"boats,",3,6,True,0.03125,NR,0.11217641418983701
-41,or_1,140.0,2,"[8, 101]",meco_para_12_qa_2 ,meco_para_12,2,or,3,2,True,0.03125,NR,0.026845637583892617
-42,"tractors,_0",940.0,4,"[84, 102, 103, 115]",meco_para_12_qa_2 ,meco_para_12,4,"tractors,",3,9,True,0.03125,NR,0.18024928092042186
-43,may_0,,0,[],meco_para_12_qa_2 ,meco_para_12,0,may,3,3,True,0.03125,NR,
-44,vary_0,105.0,1,[1],meco_para_12_qa_2 ,meco_para_12,1,vary,3,4,True,0.03125,NR,0.020134228187919462
-45,by_0,274.0,2,"[105, 119]",meco_para_12_qa_2 ,meco_para_12,2,by,3,2,True,0.03125,NR,0.05254074784276126
-46,jurisdiction._0,211.0,2,"[107, 120]",meco_para_12_qa_2 ,meco_para_12,2,jurisdiction.,3,13,True,0.03125,NR,0.04046021093000959
-47,The_0,159.0,2,"[90, 108]",,meco_para_12,2,The,4,3,True,0.03125,NR,0.05443341321465252
-48,registration_2,167.0,1,[92],,meco_para_12,1,registration,4,12,True,0.03125,NR,0.05717220130092434
-49,identifier_0,618.0,4,"[78, 113, 125, 152]",,meco_para_12,4,identifier,4,10,True,0.03125,NR,0.21157137966449846
-50,is_1,62.0,1,[126],,meco_para_12,1,is,4,2,True,0.03125,NR,0.021225607668606643
-51,a_3,,0,[],,meco_para_12,0,a,4,1,True,0.03125,NR,
-52,series_0,,0,[],meco_para_12_qa_3 ,meco_para_12,0,series,4,6,True,0.03125,NR,
-53,of_0,,0,[],meco_para_12_qa_3 ,meco_para_12,0,of,4,2,True,0.03125,NR,
-54,letters_0,,0,[],meco_para_12_qa_3 ,meco_para_12,0,letters,4,7,True,0.03125,NR,
-55,and_0,68.0,1,[127],meco_para_12_qa_3 ,meco_para_12,1,and,4,3,True,0.03125,NR,0.02327969873331051
-56,digits_0,235.0,2,"[116, 128]",meco_para_12_qa_3 ,meco_para_12,2,digits,4,6,True,0.03125,NR,0.08045190003423486
-57,that_0,,0,[],,meco_para_12,0,that,4,4,True,0.03125,NR,
-58,uniquely_0,388.0,2,"[88, 106]",,meco_para_12,2,uniquely,4,8,True,0.03125,NR,0.1328312221841835
-59,identifies_0,325.0,3,"[51, 138, 139]",,meco_para_12,3,identifies,4,10,True,0.03125,NR,0.11126326600479287
-60,the_1,262.0,2,"[168, 181]",,meco_para_12,2,the,4,3,True,0.03125,NR,0.08969530982540226
-61,vehicle_2,,0,[],,meco_para_12,0,vehicle,4,7,True,0.03125,NR,
-62,owner_0,135.0,1,[142],,meco_para_12,1,owner,4,5,True,0.03125,NR,0.046217048955837045
-63,within_0,67.0,1,[143],,meco_para_12,1,within,4,6,True,0.03125,NR,0.02293735022252653
-64,the_2,301.0,1,[144],,meco_para_12,1,the,4,3,True,0.03125,NR,0.1030469017459774
-65,issuing_0,,0,[],,meco_para_12,0,issuing,4,7,True,0.03125,NR,
-66,region's_0,72.0,1,[156],,meco_para_12,1,region's,4,8,True,0.03125,NR,0.024649092776446422
-67,vehicle_3,,0,[],,meco_para_12,0,vehicle,4,7,True,0.03125,NR,
-68,register._0,62.0,1,[188],,meco_para_12,1,register.,4,9,True,0.03125,NR,0.021225607668606643
-69,In_0,,0,[],,meco_para_12,0,In,5,2,True,0.03125,NR,
-70,some_0,306.0,1,[189],,meco_para_12,1,some,5,4,True,0.03125,NR,0.036974383760270665
-71,"countries,_1",628.0,3,"[52, 89, 166]",,meco_para_12,3,"countries,",5,10,True,0.03125,NR,0.07588206863218946
-72,the_3,,0,[],,meco_para_12,0,the,5,3,True,0.03125,NR,
-73,identifier_1,137.0,1,[151],,meco_para_12,1,identifier,5,10,True,0.03125,NR,0.016553890768487192
-74,is_2,,0,[],,meco_para_12,0,is,5,2,True,0.03125,NR,
-75,unique_0,168.0,2,"[141, 171]",,meco_para_12,2,unique,5,6,True,0.03125,NR,0.02029966167230546
-76,within_1,681.0,1,[153],,meco_para_12,1,within,5,6,True,0.03125,NR,0.08228612856452393
-77,the_4,303.0,1,[154],,meco_para_12,1,the,5,3,True,0.03125,NR,0.03661188980183663
-78,entire_0,174.0,2,"[155, 173]",,meco_para_12,2,entire,5,6,True,0.03125,NR,0.021024649589173515
-79,"country,_0",402.0,2,"[157, 158]",,meco_para_12,2,"country,",5,8,True,0.03125,NR,0.048574190430159495
-80,while_0,1357.0,6,"[134, 145, 146, 159, 175, 176]",,meco_para_12,6,while,5,5,True,0.03125,NR,0.1639681005316578
-81,in_1,780.0,5,"[129, 133, 160, 161, 187]",,meco_para_12,5,in,5,2,True,0.03125,NR,0.09424842919284679
-82,others_0,1468.0,4,"[131, 147, 148, 177]",,meco_para_12,4,others,5,6,True,0.03125,NR,0.17738037699371678
-83,it_0,73.0,1,[162],,meco_para_12,1,it,5,2,True,0.03125,NR,0.008820686321894635
-84,is_3,575.0,2,"[137, 164]",,meco_para_12,2,is,5,2,True,0.03125,NR,0.069478008699855
-85,unique_1,247.0,2,"[165, 190]",,meco_para_12,2,unique,5,6,True,0.03125,NR,0.02984533591106815
-86,within_2,206.0,1,[150],,meco_para_12,1,within,5,6,True,0.03125,NR,0.024891251812469792
-87,a_4,,0,[],,meco_para_12,0,a,5,1,True,0.03125,NR,
-88,state_0,136.0,1,[122],,meco_para_12,1,state,5,5,True,0.03125,NR,0.016433059449009184
-89,or_2,571.0,4,"[169, 170, 183, 184]",,meco_para_12,4,or,5,2,True,0.03125,NR,0.06899468342194297
-90,province._0,64.0,1,[185],,meco_para_12,1,province.,5,9,True,0.03125,NR,0.007733204446592557
-91,France_0,,0,[],meco_para_12_qa_0 ,meco_para_12,0,France,6,6,True,0.03125,NR,
-92,was_0,781.0,1,[172],meco_para_12_qa_0 ,meco_para_12,1,was,6,3,True,0.03125,NR,0.3538740371545084
-93,the_5,,0,[],meco_para_12_qa_0 ,meco_para_12,0,the,6,3,True,0.03125,NR,
-94,first_0,105.0,1,[174],meco_para_12_qa_0 ,meco_para_12,1,first,6,5,True,0.03125,NR,0.047575894879927506
-95,country_1,344.0,1,[186],meco_para_12_qa_0 ,meco_para_12,1,country,6,7,True,0.03125,NR,0.1558676937018577
-96,to_1,,0,[],meco_para_12_qa_0 ,meco_para_12,0,to,6,2,True,0.03125,NR,
-97,introduce_0,543.0,3,"[130, 132, 178]",meco_para_12_qa_0 ,meco_para_12,3,introduce,6,9,True,0.03125,NR,0.24603534209333938
-98,the_6,337.0,3,"[0, 163, 180]",,meco_para_12,3,the,6,3,True,0.03125,NR,0.1526959673765292
-99,registration_3,,0,[],,meco_para_12,0,registration,6,12,True,0.03125,NR,
-100,"plate,_2",97.0,1,[121],,meco_para_12,1,"plate,",6,6,True,0.03125,NR,0.04395106479383779
-101,in_2,,0,[],,meco_para_12,0,in,6,2,True,0.03125,NR,
-102,the_7,,0,[],,meco_para_12,0,the,6,3,True,0.03125,NR,
-103,late_0,,0,[],,meco_para_12,0,late,6,4,True,0.03125,NR,
-104,nineteenth_0,,0,[],,meco_para_12,0,nineteenth,6,10,True,0.03125,NR,
-105,century._0,,0,[],,meco_para_12,0,century.,6,8,True,0.03125,NR,
-106,Early_0,,0,[],,meco_para_12,0,Early,7,5,True,0.03125,NR,
-107,twentieth_0,73.0,1,[135],,meco_para_12,1,twentieth,7,9,True,0.03125,NR,0.17936117936117937
-108,century_1,,0,[],,meco_para_12,0,century,7,7,True,0.03125,NR,
-109,plates_1,136.0,1,[136],,meco_para_12,1,plates,7,6,True,0.03125,NR,0.33415233415233414
-110,varied_0,,0,[],,meco_para_12,0,varied,7,6,True,0.03125,NR,
-111,in_3,,0,[],,meco_para_12,0,in,7,2,True,0.03125,NR,
-112,size_0,,0,[],,meco_para_12,0,size,7,4,True,0.03125,NR,
-113,and_1,,0,[],,meco_para_12,0,and,7,3,True,0.03125,NR,
-114,shape_0,,0,[],,meco_para_12,0,shape,7,5,True,0.03125,NR,
-115,from_0,,0,[],,meco_para_12,0,from,7,4,True,0.03125,NR,
-116,one_0,,0,[],,meco_para_12,0,one,7,3,True,0.03125,NR,
-117,jurisdiction_1,,0,[],,meco_para_12,0,jurisdiction,7,12,True,0.03125,NR,
-118,to_2,,0,[],,meco_para_12,0,to,7,2,True,0.03125,NR,
-119,the_8,,0,[],,meco_para_12,0,the,7,3,True,0.03125,NR,
-120,"next,_0",,0,[],,meco_para_12,0,"next,",7,5,True,0.03125,NR,
-121,such_2,,0,[],,meco_para_12,0,such,7,4,True,0.03125,NR,
-122,that_1,,0,[],,meco_para_12,0,that,7,4,True,0.03125,NR,
-123,if_0,,0,[],,meco_para_12,0,if,7,2,True,0.03125,NR,
-124,a_5,,0,[],,meco_para_12,0,a,7,1,True,0.03125,NR,
-125,person_0,,0,[],,meco_para_12,0,person,7,6,True,0.03125,NR,
-126,"moved,_0",,0,[],,meco_para_12,0,"moved,",7,6,True,0.03125,NR,
-127,new_0,,0,[],,meco_para_12,0,new,7,3,True,0.03125,NR,
-128,holes_0,,0,[],,meco_para_12,0,holes,7,5,True,0.03125,NR,
-129,would_0,,0,[],,meco_para_12,0,would,7,5,True,0.03125,NR,
-130,need_0,,0,[],,meco_para_12,0,need,7,4,True,0.03125,NR,
-131,to_3,,0,[],,meco_para_12,0,to,7,2,True,0.03125,NR,
-132,be_0,,0,[],,meco_para_12,0,be,7,2,True,0.03125,NR,
-133,drilled_0,,0,[],,meco_para_12,0,drilled,7,7,True,0.03125,NR,
-134,into_0,,0,[],,meco_para_12,0,into,7,4,True,0.03125,NR,
-135,the_9,,0,[],,meco_para_12,0,the,7,3,True,0.03125,NR,
-136,automobile_0,198.0,1,[191],,meco_para_12,1,automobile,7,10,True,0.03125,NR,0.4864864864864865
-137,to_4,,0,[],,meco_para_12,0,to,7,2,True,0.03125,NR,
-138,support_0,,0,[],,meco_para_12,0,support,7,7,True,0.03125,NR,
-139,the_10,,0,[],,meco_para_12,0,the,7,3,True,0.03125,NR,
-140,new_1,,0,[],,meco_para_12,0,new,7,3,True,0.03125,NR,
-141,plate._3,,0,[],,meco_para_12,0,plate.,7,6,True,0.03125,NR,
-142,Standardization_0,,0,[],meco_para_12_qa_1 ,meco_para_12,0,Standardization,8,15,True,0.03125,NR,
-143,of_1,,0,[],meco_para_12_qa_1 ,meco_para_12,0,of,8,2,True,0.03125,NR,
-144,plates_2,,0,[],meco_para_12_qa_1 ,meco_para_12,0,plates,8,6,True,0.03125,NR,
-145,came_0,,0,[],meco_para_12_qa_1 ,meco_para_12,0,came,8,4,True,0.03125,NR,
-146,in_4,,0,[],meco_para_12_qa_1 ,meco_para_12,0,in,8,2,True,0.03125,NR,
-147,the_11,,0,[],meco_para_12_qa_1 ,meco_para_12,0,the,8,3,True,0.03125,NR,
-148,late_1,,0,[],meco_para_12_qa_1 ,meco_para_12,0,late,8,4,True,0.03125,NR,
-149,"fifties,_0",,0,[],meco_para_12_qa_1 ,meco_para_12,0,"fifties,",8,8,True,0.03125,NR,
-150,when_0,,0,[],,meco_para_12,0,when,8,4,True,0.03125,NR,
-151,automobile_1,,0,[],,meco_para_12,0,automobile,8,10,True,0.03125,NR,
-152,manufacturers_0,,0,[],,meco_para_12,0,manufacturers,8,13,True,0.03125,NR,
-153,came_1,,0,[],,meco_para_12,0,came,8,4,True,0.03125,NR,
-154,to_5,,0,[],,meco_para_12,0,to,8,2,True,0.03125,NR,
-155,an_0,,0,[],,meco_para_12,0,an,8,2,True,0.03125,NR,
-156,agreement_0,,0,[],,meco_para_12,0,agreement,8,9,True,0.03125,NR,
-157,with_0,,0,[],,meco_para_12,0,with,8,4,True,0.03125,NR,
-158,governments_0,,0,[],,meco_para_12,0,governments,8,11,True,0.03125,NR,
-159,and__0,,0,[],,meco_para_12,0,and,8,3,True,0.03125,NR,
-160,international_0,,0,[],,meco_para_12,0,international,8,13,True,0.03125,NR,
-161,organizations._0,,0,[],,meco_para_12,0,organizations.,8,14,True,0.03125,NR,
+,word_id_orig,TRT,FixCount,Scan_path,Span_word_is_in,text_id,worker_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
+0,The_0,203.0,2,"[1, 15]",,a_FresnoCalifornia_0,A4W9APAHFWVLO,2,The,1,3,True,0.0,IS,0.12962962962962962
+1,"""West_0",71.0,1,[16],a_FresnoCalifornia_0_qa_4 ,a_FresnoCalifornia_0,A4W9APAHFWVLO,1,"""West",1,5,True,0.0,IS,0.04533844189016603
+2,"Side""_0",,0,[],a_FresnoCalifornia_0_qa_4 ,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,"Side""",1,5,True,0.0,IS,
+3,of_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,of,1,2,True,0.0,IS,
+4,"Fresno,_0",,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,"Fresno,",1,7,True,0.0,IS,
+5,also_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,also,1,4,True,0.0,IS,
+6,often_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,often,1,5,True,0.0,IS,
+7,called_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,called,1,6,True,0.0,IS,
+8,"""Southwest_0",,0,[],a_FresnoCalifornia_0_qa_0 ,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,"""Southwest",1,10,True,0.0,IS,
+9,"Fresno"",_0",,0,[],a_FresnoCalifornia_0_qa_0 ,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,"Fresno"",",1,8,True,0.0,IS,
+10,is_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,is,1,2,True,0.0,IS,
+11,one_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,one,1,3,True,0.0,IS,
+12,of_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,of,1,2,True,0.0,IS,
+13,the_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,the,1,3,True,0.0,IS,
+14,oldest_0,311.0,3,"[3, 13, 25]",,a_FresnoCalifornia_0,A4W9APAHFWVLO,3,oldest,1,6,True,0.0,IS,0.19859514687100893
+15,neighborhoods_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,neighborhoods,1,13,True,0.0,IS,
+16,in_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,in,1,2,True,0.0,IS,
+17,the_2,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,the,1,3,True,0.0,IS,
+18,city._0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,city.,1,5,True,0.0,IS,
+19,The_3,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,The,2,3,True,0.0,IS,
+20,neighborhood_0,63.0,1,[11],,a_FresnoCalifornia_0,A4W9APAHFWVLO,1,neighborhood,2,12,True,0.0,IS,0.040229885057471264
+21,lies_0,62.0,1,[10],,a_FresnoCalifornia_0,A4W9APAHFWVLO,1,lies,2,4,True,0.0,IS,0.03959131545338442
+22,southwest_0,,0,[],a_FresnoCalifornia_0_qa_1 ,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,southwest,2,9,True,0.0,IS,
+23,of_2,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,of,2,2,True,0.0,IS,
+24,the_4,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,the,2,3,True,0.0,IS,
+25,99_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,99,2,2,True,0.0,IS,
+26,freeway_0,72.0,1,[20],,a_FresnoCalifornia_0,A4W9APAHFWVLO,1,freeway,2,7,True,0.0,IS,0.04597701149425287
+27,(which_0,168.0,1,[21],,a_FresnoCalifornia_0,A4W9APAHFWVLO,1,(which,2,6,True,0.0,IS,0.10727969348659004
+28,divides_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,divides,2,7,True,0.0,IS,
+29,it_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,it,2,2,True,0.0,IS,
+30,from_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,from,2,4,True,0.0,IS,
+31,Downtown_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,Downtown,2,8,True,0.0,IS,
+32,"Fresno),_0",,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,"Fresno),",2,8,True,0.0,IS,
+33,west_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,west,2,4,True,0.0,IS,
+34,of_3,65.0,1,[9],,a_FresnoCalifornia_0,A4W9APAHFWVLO,1,of,2,2,True,0.0,IS,0.041507024265644954
+35,the_5,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,the,2,3,True,0.0,IS,
+36,41_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,41,2,2,True,0.0,IS,
+37,freeway_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,freeway,2,7,True,0.0,IS,
+38,and_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,and,2,3,True,0.0,IS,
+39,south_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,south,2,5,True,0.0,IS,
+40,of_4,207.0,2,"[4, 5]",,a_FresnoCalifornia_0,A4W9APAHFWVLO,2,of,2,2,True,0.0,IS,0.13218390804597702
+41,Nielsen_0,176.0,2,"[6, 22]",,a_FresnoCalifornia_0,A4W9APAHFWVLO,2,Nielsen,2,7,True,0.0,IS,0.1123882503192848
+42,Ave_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,Ave,2,3,True,0.0,IS,
+43,(or_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,(or,2,3,True,0.0,IS,
+44,the_6,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,the,2,3,True,0.0,IS,
+45,newly_0,96.0,1,[7],,a_FresnoCalifornia_0,A4W9APAHFWVLO,1,newly,2,5,True,0.0,IS,0.06130268199233716
+46,constructed_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,constructed,2,11,True,0.0,IS,
+47,180_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,180,2,3,True,0.0,IS,
+48,"Freeway),_0",,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,"Freeway),",2,9,True,0.0,IS,
+49,and_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,and,2,3,True,0.0,IS,
+50,extends_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,extends,2,7,True,0.0,IS,
+51,to_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,to,2,2,True,0.0,IS,
+52,the_7,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,the,2,3,True,0.0,IS,
+53,city_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,city,2,4,True,0.0,IS,
+54,limits_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,limits,2,6,True,0.0,IS,
+55,to_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,to,2,2,True,0.0,IS,
+56,the_8,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,the,2,3,True,0.0,IS,
+57,west_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,west,2,4,True,0.0,IS,
+58,and_2,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,and,2,3,True,0.0,IS,
+59,south._1,72.0,1,[18],,a_FresnoCalifornia_0,A4W9APAHFWVLO,1,south.,2,6,True,0.0,IS,0.04597701149425287
+60,The_9,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,The,3,3,True,0.0,IS,
+61,neighborhood_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,neighborhood,3,12,True,0.0,IS,
+62,is_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,is,3,2,True,0.0,IS,
+63,traditionally_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,traditionally,3,13,True,0.0,IS,
+64,considered_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,considered,3,10,True,0.0,IS,
+65,to_2,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,to,3,2,True,0.0,IS,
+66,be_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,be,3,2,True,0.0,IS,
+67,the_10,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,the,3,3,True,0.0,IS,
+68,center_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,center,3,6,True,0.0,IS,
+69,of_5,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,of,3,2,True,0.0,IS,
+70,Fresno's_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,Fresno's,3,8,True,0.0,IS,
+71,African-American_0,,0,[],a_FresnoCalifornia_0_qa_2 ,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,African-American,3,16,True,0.0,IS,
+72,community._0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,community.,3,10,True,0.0,IS,
+73,It_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,It,4,2,True,0.0,IS,
+74,is_2,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,is,4,2,True,0.0,IS,
+75,culturally_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,culturally,4,10,True,0.0,IS,
+76,diverse_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,diverse,4,7,True,0.0,IS,
+77,and_3,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,and,4,3,True,0.0,IS,
+78,also_1,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,also,4,4,True,0.0,IS,
+79,includes_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,includes,4,8,True,0.0,IS,
+80,significant_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,significant,4,11,True,0.0,IS,
+81,Mexican-American_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,Mexican-American,4,16,True,0.0,IS,
+82,and_4,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,and,4,3,True,0.0,IS,
+83,Asian-American_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,Asian-American,4,14,True,0.0,IS,
+84,(principally_0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,(principally,4,12,True,0.0,IS,
+85,Hmong_0,,0,[],a_FresnoCalifornia_0_qa_3 ,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,Hmong,4,5,True,0.0,IS,
+86,or_0,,0,[],a_FresnoCalifornia_0_qa_3 ,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,or,4,2,True,0.0,IS,
+87,Laotian)_0,,0,[],a_FresnoCalifornia_0_qa_3 ,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,Laotian),4,8,True,0.0,IS,
+88,populations._0,,0,[],,a_FresnoCalifornia_0,A4W9APAHFWVLO,0,populations.,4,12,True,0.0,IS,
+0,Much_0,73.0,1,[36],,a_ScottishParliament_1,A4W9APAHFWVLO,1,Much,1,4,True,0.11607142857142858,IS,0.00862170780677926
+1,of_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,of,1,2,True,0.11607142857142858,IS,
+2,the_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,the,1,3,True,0.11607142857142858,IS,
+3,work_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,work,1,4,True,0.11607142857142858,IS,
+4,of_1,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,of,1,2,True,0.11607142857142858,IS,
+5,the_1,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,the,1,3,True,0.11607142857142858,IS,
+6,Scottish_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,Scottish,1,8,True,0.11607142857142858,IS,
+7,Parliament_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,Parliament,1,10,True,0.11607142857142858,IS,
+8,is_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,is,1,2,True,0.11607142857142858,IS,
+9,done_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,done,1,4,True,0.11607142857142858,IS,
+10,in_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,in,1,2,True,0.11607142857142858,IS,
+11,committee._0,,0,[],a_ScottishParliament_1_qa_0 ,a_ScottishParliament_1,A4W9APAHFWVLO,0,committee.,1,10,True,0.11607142857142858,IS,
+12,The_2,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,The,2,3,True,0.11607142857142858,IS,
+13,role_0,500.0,3,"[2, 17, 38]",,a_ScottishParliament_1,A4W9APAHFWVLO,3,role,2,4,True,0.11607142857142858,IS,0.059052793197118224
+14,of_2,543.0,2,"[5, 6]",,a_ScottishParliament_1,A4W9APAHFWVLO,2,of,2,2,True,0.11607142857142858,IS,0.06413133341207039
+15,committees_0,63.0,1,[98],,a_ScottishParliament_1,A4W9APAHFWVLO,1,committees,2,10,True,0.11607142857142858,IS,0.007440651942836897
+16,is_1,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,is,2,2,True,0.11607142857142858,IS,
+17,stronger_0,,0,[],a_ScottishParliament_1_qa_1 ,a_ScottishParliament_1,A4W9APAHFWVLO,0,stronger,2,8,True,0.11607142857142858,IS,
+18,in_1,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,in,2,2,True,0.11607142857142858,IS,
+19,the_3,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,the,2,3,True,0.11607142857142858,IS,
+20,Scottish_1,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,Scottish,2,8,True,0.11607142857142858,IS,
+21,Parliament_1,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,Parliament,2,10,True,0.11607142857142858,IS,
+22,than_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,than,2,4,True,0.11607142857142858,IS,
+23,in_2,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,in,2,2,True,0.11607142857142858,IS,
+24,other_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,other,2,5,True,0.11607142857142858,IS,
+25,parliamentary_0,508.0,5,"[1, 44, 67, 68, 107]",,a_ScottishParliament_1,A4W9APAHFWVLO,5,parliamentary,2,13,True,0.11607142857142858,IS,0.059997637888272115
+26,"systems,_0",72.0,1,[7],,a_ScottishParliament_1,A4W9APAHFWVLO,1,"systems,",2,8,True,0.11607142857142858,IS,0.008503602220385023
+27,partly_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,partly,2,6,True,0.11607142857142858,IS,
+28,as_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,as,2,2,True,0.11607142857142858,IS,
+29,a_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,a,2,1,True,0.11607142857142858,IS,
+30,means_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,means,2,5,True,0.11607142857142858,IS,
+31,of_3,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,of,2,2,True,0.11607142857142858,IS,
+32,strengthening_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,strengthening,2,13,True,0.11607142857142858,IS,
+33,the_4,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,the,2,3,True,0.11607142857142858,IS,
+34,role_1,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,role,2,4,True,0.11607142857142858,IS,
+35,of_4,63.0,1,[65],,a_ScottishParliament_1,A4W9APAHFWVLO,1,of,2,2,True,0.11607142857142858,IS,0.007440651942836897
+36,backbenchers_0,961.0,10,"[28, 39, 42, 46, 66, 69, 71, 95, 96, 108]",,a_ScottishParliament_1,A4W9APAHFWVLO,10,backbenchers,2,12,True,0.11607142857142858,IS,0.11349946852486123
+37,in_3,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,in,2,2,True,0.11607142857142858,IS,
+38,their_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,their,2,5,True,0.11607142857142858,IS,
+39,scrutiny_0,308.0,2,"[82, 99]",,a_ScottishParliament_1,A4W9APAHFWVLO,2,scrutiny,2,8,True,0.11607142857142858,IS,0.036376520609424826
+40,of_5,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,of,2,2,True,0.11607142857142858,IS,
+41,the_5,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,the,2,3,True,0.11607142857142858,IS,
+42,government_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,government,2,10,True,0.11607142857142858,IS,
+43,and_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,and,2,3,True,0.11607142857142858,IS,
+44,partly_1,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,partly,2,6,True,0.11607142857142858,IS,
+45,to_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,to,2,2,True,0.11607142857142858,IS,
+46,compensate_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,compensate,2,10,True,0.11607142857142858,IS,
+47,for_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,for,2,3,True,0.11607142857142858,IS,
+48,the_6,199.0,1,[90],,a_ScottishParliament_1,A4W9APAHFWVLO,1,the,2,3,True,0.11607142857142858,IS,0.023503011692453054
+49,fact_0,190.0,3,"[19, 72, 94]",,a_ScottishParliament_1,A4W9APAHFWVLO,3,fact,2,4,True,0.11607142857142858,IS,0.022440061414904924
+50,that_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,that,2,4,True,0.11607142857142858,IS,
+51,there_0,664.0,6,"[0, 9, 21, 22, 79, 81]",,a_ScottishParliament_1,A4W9APAHFWVLO,6,there,2,5,True,0.11607142857142858,IS,0.078422109365773
+52,is_2,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,is,2,2,True,0.11607142857142858,IS,
+53,no_0,72.0,1,[29],a_ScottishParliament_1_qa_2 ,a_ScottishParliament_1,A4W9APAHFWVLO,1,no,2,2,True,0.11607142857142858,IS,0.008503602220385023
+54,revising_0,564.0,7,"[10, 24, 25, 76, 77, 100, 101]",a_ScottishParliament_1_qa_2 ,a_ScottishParliament_1,A4W9APAHFWVLO,7,revising,2,8,True,0.11607142857142858,IS,0.06661155072634936
+55,chamber._0,585.0,5,"[11, 12, 59, 60, 92]",a_ScottishParliament_1_qa_2 ,a_ScottishParliament_1,A4W9APAHFWVLO,5,chamber.,2,8,True,0.11607142857142858,IS,0.06909176804062832
+56,The_7,98.0,1,[58],,a_ScottishParliament_1,A4W9APAHFWVLO,1,The,3,3,True,0.11607142857142858,IS,0.011574347466635172
+57,principal_0,103.0,1,[64],a_ScottishParliament_1_qa_3 ,a_ScottishParliament_1,A4W9APAHFWVLO,1,principal,3,9,True,0.11607142857142858,IS,0.012164875398606355
+58,role_2,73.0,1,[88],a_ScottishParliament_1_qa_3 ,a_ScottishParliament_1,A4W9APAHFWVLO,1,role,3,4,True,0.11607142857142858,IS,0.00862170780677926
+59,of_6,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,of,3,2,True,0.11607142857142858,IS,
+60,committees_1,71.0,1,[47],,a_ScottishParliament_1,A4W9APAHFWVLO,1,committees,3,10,True,0.11607142857142858,IS,0.008385496633990788
+61,in_4,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,in,3,2,True,0.11607142857142858,IS,
+62,the_8,246.0,2,"[49, 73]",,a_ScottishParliament_1,A4W9APAHFWVLO,2,the,3,3,True,0.11607142857142858,IS,0.029053974252982166
+63,Scottish_2,72.0,1,[80],,a_ScottishParliament_1,A4W9APAHFWVLO,1,Scottish,3,8,True,0.11607142857142858,IS,0.008503602220385023
+64,Parliament_2,152.0,2,"[54, 91]",,a_ScottishParliament_1,A4W9APAHFWVLO,2,Parliament,3,10,True,0.11607142857142858,IS,0.01795204913192394
+65,is_3,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,is,3,2,True,0.11607142857142858,IS,
+66,to_1,375.0,2,"[61, 78]",,a_ScottishParliament_1,A4W9APAHFWVLO,2,to,3,2,True,0.11607142857142858,IS,0.044289594897838666
+67,take_0,209.0,2,"[13, 32]",,a_ScottishParliament_1,A4W9APAHFWVLO,2,take,3,4,True,0.11607142857142858,IS,0.024684067556395416
+68,evidence_0,510.0,5,"[14, 56, 57, 83, 84]",,a_ScottishParliament_1,A4W9APAHFWVLO,5,evidence,3,8,True,0.11607142857142858,IS,0.060233849061060586
+69,from_0,242.0,3,"[26, 85, 86]",,a_ScottishParliament_1,A4W9APAHFWVLO,3,from,3,4,True,0.11607142857142858,IS,0.02858155190740522
+70,"witnesses,_0",,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,"witnesses,",3,10,True,0.11607142857142858,IS,
+71,conduct_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,conduct,3,7,True,0.11607142857142858,IS,
+72,inquiries_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,inquiries,3,9,True,0.11607142857142858,IS,
+73,and__0,137.0,1,[51],,a_ScottishParliament_1,A4W9APAHFWVLO,1,and,3,3,True,0.11607142857142858,IS,0.016180465336010395
+74,scrutinise_0,71.0,1,[52],,a_ScottishParliament_1,A4W9APAHFWVLO,1,scrutinise,3,10,True,0.11607142857142858,IS,0.008385496633990788
+75,legislation._0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,legislation.,3,12,True,0.11607142857142858,IS,
+76,Committee_1,136.0,1,[111],,a_ScottishParliament_1,A4W9APAHFWVLO,1,Committee,4,9,True,0.11607142857142858,IS,0.016062359749616156
+77,meetings_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,meetings,4,8,True,0.11607142857142858,IS,
+78,take_1,135.0,2,"[105, 106]",,a_ScottishParliament_1,A4W9APAHFWVLO,2,take,4,4,True,0.11607142857142858,IS,0.01594425416322192
+79,place_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,place,4,5,True,0.11607142857142858,IS,
+80,on_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,on,4,2,True,0.11607142857142858,IS,
+81,"Tuesday,_0",,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,"Tuesday,",4,8,True,0.11607142857142858,IS,
+82,Wednesday_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,Wednesday,4,9,True,0.11607142857142858,IS,
+83,and_1,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,and,4,3,True,0.11607142857142858,IS,
+84,Thursday_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,Thursday,4,8,True,0.11607142857142858,IS,
+85,morning_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,morning,4,7,True,0.11607142857142858,IS,
+86,when_0,239.0,3,"[33, 102, 110]",,a_ScottishParliament_1,A4W9APAHFWVLO,3,when,4,4,True,0.11607142857142858,IS,0.02822723514822251
+87,Parliament_3,66.0,1,[104],,a_ScottishParliament_1,A4W9APAHFWVLO,1,Parliament,4,10,True,0.11607142857142858,IS,0.007794968702019606
+88,is_4,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,is,4,2,True,0.11607142857142858,IS,
+89,sitting._0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,sitting.,4,8,True,0.11607142857142858,IS,
+90,Committees_2,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,Committees,5,10,True,0.11607142857142858,IS,
+91,can_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,can,5,3,True,0.11607142857142858,IS,
+92,also_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,also,5,4,True,0.11607142857142858,IS,
+93,meet_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,meet,5,4,True,0.11607142857142858,IS,
+94,at_0,,0,[],,a_ScottishParliament_1,A4W9APAHFWVLO,0,at,5,2,True,0.11607142857142858,IS,
+95,other_1,,0,[],a_ScottishParliament_1_qa_4 ,a_ScottishParliament_1,A4W9APAHFWVLO,0,other,5,5,True,0.11607142857142858,IS,
+96,locations_0,,0,[],a_ScottishParliament_1_qa_4 ,a_ScottishParliament_1,A4W9APAHFWVLO,0,locations,5,9,True,0.11607142857142858,IS,
+97,throughout_0,167.0,1,[103],a_ScottishParliament_1_qa_4 ,a_ScottishParliament_1,A4W9APAHFWVLO,1,throughout,5,10,True,0.11607142857142858,IS,0.019723632927837485
+98,Scotland._0,,0,[],a_ScottishParliament_1_qa_4 ,a_ScottishParliament_1,A4W9APAHFWVLO,0,Scotland.,5,9,True,0.11607142857142858,IS,
+0,where_0,375.0,1,[207],,a_Force_4,A4W9APAHFWVLO,1,where,1,5,True,0.03162055335968379,IS,0.014781237682301931
+1,is_0,62.0,1,[97],,a_Force_4,A4W9APAHFWVLO,1,is,1,2,True,0.03162055335968379,IS,0.002443831296807253
+2,the_0,439.0,2,"[3, 98]",,a_Force_4,A4W9APAHFWVLO,2,the,1,3,True,0.03162055335968379,IS,0.01730390224674813
+3,relevant_0,1517.0,12,"[2, 13, 14, 35, 36, 37, 104, 105, 106, 230, 231, 248]",,a_Force_4,A4W9APAHFWVLO,12,relevant,1,8,True,0.03162055335968379,IS,0.05979503350413875
+4,cross-sectional_0,1327.0,8,"[9, 30, 38, 125, 222, 223, 228, 229]",,a_Force_4,A4W9APAHFWVLO,8,cross-sectional,1,15,True,0.03162055335968379,IS,0.0523058730784391
+5,area_0,130.0,2,"[10, 39]",,a_Force_4,A4W9APAHFWVLO,2,area,1,4,True,0.03162055335968379,IS,0.005124162396531336
+6,for_0,240.0,2,"[29, 40]",,a_Force_4,A4W9APAHFWVLO,2,for,1,3,True,0.03162055335968379,IS,0.009459992116673236
+7,the_1,,0,[],,a_Force_4,A4W9APAHFWVLO,0,the,1,3,True,0.03162055335968379,IS,
+8,volume_0,168.0,1,[28],,a_Force_4,A4W9APAHFWVLO,1,volume,1,6,True,0.03162055335968379,IS,0.006621994481671265
+9,for_1,170.0,1,[12],,a_Force_4,A4W9APAHFWVLO,1,for,1,3,True,0.03162055335968379,IS,0.006700827749310209
+10,which_0,,0,[],,a_Force_4,A4W9APAHFWVLO,0,which,1,5,True,0.03162055335968379,IS,
+11,the_2,65.0,1,[242],,a_Force_4,A4W9APAHFWVLO,1,the,1,3,True,0.03162055335968379,IS,0.002562081198265668
+12,stress-tensor_0,3175.0,16,"[4, 5, 15, 19, 95, 96, 102, 118, 126, 206, 209, 214, 215, 216, 239, 247]",,a_Force_4,A4W9APAHFWVLO,16,stress-tensor,1,13,True,0.03162055335968379,IS,0.12514781237682301
+13,is_1,339.0,3,"[99, 122, 238]",,a_Force_4,A4W9APAHFWVLO,3,is,1,2,True,0.03162055335968379,IS,0.013362238864800946
+14,being_0,996.0,9,"[65, 82, 123, 161, 219, 220, 232, 243, 250]",,a_Force_4,A4W9APAHFWVLO,9,being,1,5,True,0.03162055335968379,IS,0.03925896728419393
+15,calculated._0,1828.0,13,"[27, 34, 50, 52, 53, 81, 107, 127, 128, 130, 131, 164, 233]",,a_Force_4,A4W9APAHFWVLO,13,calculated.,1,11,True,0.03162055335968379,IS,0.07205360662199448
+16,This_0,909.0,5,"[33, 44, 51, 129, 226]",,a_Force_4,A4W9APAHFWVLO,5,This,2,4,True,0.03162055335968379,IS,0.03582972014189988
+17,formalism_0,854.0,8,"[31, 32, 55, 69, 108, 109, 147, 149]",a_Force_4_qa_3 ,a_Force_4,A4W9APAHFWVLO,8,formalism,2,9,True,0.03162055335968379,IS,0.03366180528182893
+18,includes_0,739.0,6,"[11, 56, 74, 111, 148, 151]",,a_Force_4,A4W9APAHFWVLO,6,includes,2,8,True,0.03162055335968379,IS,0.029128892392589673
+19,pressure_0,,0,[],a_Force_4_qa_1 a_Force_4_qa_2 ,a_Force_4,A4W9APAHFWVLO,0,pressure,2,8,True,0.03162055335968379,IS,
+20,terms_0,165.0,2,"[75, 76]",a_Force_4_qa_1 a_Force_4_qa_2 ,a_Force_4,A4W9APAHFWVLO,2,terms,2,5,True,0.03162055335968379,IS,0.00650374458021285
+21,associated_0,1753.0,10,"[16, 17, 60, 61, 62, 119, 145, 191, 213, 241]",,a_Force_4,A4W9APAHFWVLO,10,associated,2,10,True,0.03162055335968379,IS,0.06909735908553409
+22,with_0,1789.0,14,"[24, 64, 86, 100, 121, 146, 171, 187, 201, 210, 211, 217, 218, 246]",,a_Force_4,A4W9APAHFWVLO,14,with,2,4,True,0.03162055335968379,IS,0.07051635790303508
+23,forces_0,673.0,5,"[26, 66, 85, 170, 237]",,a_Force_4,A4W9APAHFWVLO,5,forces,2,6,True,0.03162055335968379,IS,0.026527394560504534
+24,that_0,1192.0,8,"[47, 48, 49, 67, 84, 165, 196, 249]",,a_Force_4,A4W9APAHFWVLO,8,that,2,4,True,0.03162055335968379,IS,0.046984627512810406
+25,act_0,408.0,5,"[46, 71, 80, 168, 234]",,a_Force_4,A4W9APAHFWVLO,5,act,2,3,True,0.03162055335968379,IS,0.016081986598344502
+26,normal_0,448.0,4,"[54, 72, 140, 184]",,a_Force_4,A4W9APAHFWVLO,4,normal,2,6,True,0.03162055335968379,IS,0.017658651951123375
+27,to_0,201.0,3,"[73, 133, 176]",,a_Force_4,A4W9APAHFWVLO,3,to,2,2,True,0.03162055335968379,IS,0.007922743397713835
+28,the_3,237.0,3,"[141, 152, 166]",,a_Force_4,A4W9APAHFWVLO,3,the,2,3,True,0.03162055335968379,IS,0.00934174221521482
+29,cross-sectional_1,391.0,4,"[58, 77, 114, 154]",,a_Force_4,A4W9APAHFWVLO,4,cross-sectional,2,15,True,0.03162055335968379,IS,0.01541190382341348
+30,area_1,124.0,2,"[155, 185]",,a_Force_4,A4W9APAHFWVLO,2,area,2,4,True,0.03162055335968379,IS,0.004887662593614506
+31,(the_0,61.0,1,[156],,a_Force_4,A4W9APAHFWVLO,1,(the,2,4,True,0.03162055335968379,IS,0.0024044146629877807
+32,matrix_0,,0,[],,a_Force_4,A4W9APAHFWVLO,0,matrix,2,6,True,0.03162055335968379,IS,
+33,diagonals_0,61.0,1,[160],,a_Force_4,A4W9APAHFWVLO,1,diagonals,2,9,True,0.03162055335968379,IS,0.0024044146629877807
+34,of_0,942.0,5,"[88, 158, 193, 202, 245]",,a_Force_4,A4W9APAHFWVLO,5,of,2,2,True,0.03162055335968379,IS,0.03713046905794245
+35,the_4,408.0,5,"[25, 63, 87, 157, 172]",,a_Force_4,A4W9APAHFWVLO,5,the,2,3,True,0.03162055335968379,IS,0.016081986598344502
+36,tensor)_0,165.0,2,"[173, 195]",,a_Force_4,A4W9APAHFWVLO,2,tensor),2,7,True,0.03162055335968379,IS,0.00650374458021285
+37,as_0,139.0,1,[174],,a_Force_4,A4W9APAHFWVLO,1,as,2,2,True,0.03162055335968379,IS,0.005478912100906582
+38,well_0,,0,[],,a_Force_4,A4W9APAHFWVLO,0,well,2,4,True,0.03162055335968379,IS,
+39,as_1,,1,[0],,a_Force_4,A4W9APAHFWVLO,1,as,2,2,True,0.03162055335968379,IS,
+40,shear_0,166.0,2,"[175, 179]",,a_Force_4,A4W9APAHFWVLO,2,shear,2,5,True,0.03162055335968379,IS,0.006543161214032322
+41,terms_1,652.0,6,"[43, 92, 93, 134, 139, 178]",,a_Force_4,A4W9APAHFWVLO,6,terms,2,5,True,0.03162055335968379,IS,0.025699645250295625
+42,associated_1,511.0,5,"[41, 135, 136, 137, 142]",,a_Force_4,A4W9APAHFWVLO,5,associated,2,10,True,0.03162055335968379,IS,0.020141899881750098
+43,with_1,262.0,2,"[115, 143]",,a_Force_4,A4W9APAHFWVLO,2,with,2,4,True,0.03162055335968379,IS,0.010327158060701617
+44,forces_1,420.0,2,"[144, 186]",,a_Force_4,A4W9APAHFWVLO,2,forces,2,6,True,0.03162055335968379,IS,0.016554986204178165
+45,that_1,,0,[],,a_Force_4,A4W9APAHFWVLO,0,that,2,4,True,0.03162055335968379,IS,
+46,act_1,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,act,2,3,True,0.03162055335968379,IS,
+47,parallel_0,284.0,2,"[159, 204]",a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,2,parallel,2,8,True,0.03162055335968379,IS,0.011194324004729996
+48,to_1,71.0,1,[90],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,1,to,2,2,True,0.03162055335968379,IS,0.002798581001182499
+49,the_5,175.0,2,"[91, 194]",a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,2,the,2,3,True,0.03162055335968379,IS,0.006897910918407568
+50,cross-sectional_2,135.0,2,"[182, 183]",a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,2,cross-sectional,2,15,True,0.03162055335968379,IS,0.005321245565628695
+51,area_2,65.0,1,[181],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,1,area,2,4,True,0.03162055335968379,IS,0.002562081198265668
+52,(the_1,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,(the,2,4,True,0.03162055335968379,IS,
+53,off-diagonal_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,off-diagonal,2,12,True,0.03162055335968379,IS,
+54,elements)._0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,elements).,2,10,True,0.03162055335968379,IS,
+55,The_6,69.0,1,[189],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,1,The,1,3,True,0.03162055335968379,IS,0.0027197477335435555
+56,stress_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,stress,1,6,True,0.03162055335968379,IS,
+57,tensor_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,tensor,1,6,True,0.03162055335968379,IS,
+58,accounts_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,accounts,1,8,True,0.03162055335968379,IS,
+59,for_2,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,for,1,3,True,0.03162055335968379,IS,
+60,forces_2,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,forces,1,6,True,0.03162055335968379,IS,
+61,that_2,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,that,1,4,True,0.03162055335968379,IS,
+62,cause_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,cause,1,5,True,0.03162055335968379,IS,
+63,all_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,all,1,3,True,0.03162055335968379,IS,
+64,strains_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,strains,1,7,True,0.03162055335968379,IS,
+65,(deformations)_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,(deformations),1,14,True,0.03162055335968379,IS,
+66,including_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,including,1,9,True,0.03162055335968379,IS,
+67,also_0,,0,[],a_Force_4_qa_0 ,a_Force_4,A4W9APAHFWVLO,0,also,1,4,True,0.03162055335968379,IS,
+68,tensile_0,,0,[],,a_Force_4,A4W9APAHFWVLO,0,tensile,1,7,True,0.03162055335968379,IS,
+69,stresses_0,,0,[],,a_Force_4,A4W9APAHFWVLO,0,stresses,1,8,True,0.03162055335968379,IS,
+70,and_0,,0,[],,a_Force_4,A4W9APAHFWVLO,0,and,1,3,True,0.03162055335968379,IS,
+71, compressions.:133-134:38-1-38-11_0,70.0,1,[252],,a_Force_4,A4W9APAHFWVLO,1, compressions.:133-134:38-1-38-11,1,33,True,0.03162055335968379,IS,0.0027591643673630273
+0,In_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,In,1,2,True,0.0,IS,
+1,"Europe,_0",,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,"Europe,",1,7,True,0.0,IS,
+2,the_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,the,1,3,True,0.0,IS,
+3,North_0,201.0,2,"[6, 7]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,North,1,5,True,0.0,IS,0.020621729763004002
+4,American_0,163.0,2,"[8, 9]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,American,1,8,True,0.0,IS,0.016723094285421156
+5,theater_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,theater,1,7,True,0.0,IS,
+6,of_0,203.0,1,[27],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,of,1,2,True,0.0,IS,0.020826921103929415
+7,the_1,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,the,1,3,True,0.0,IS,
+8,Seven_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,Seven,1,5,True,0.0,IS,
+9,Years'_0,72.0,1,[13],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,Years',1,6,True,0.0,IS,0.007386888273314866
+10,War_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,War,1,3,True,0.0,IS,
+11,usually_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,usually,1,7,True,0.0,IS,
+12,is_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,is,1,2,True,0.0,IS,
+13,not_0,64.0,1,[1],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,not,1,3,True,0.0,IS,0.006566122909613214
+14,given_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,given,1,5,True,0.0,IS,
+15,a__0,273.0,1,[22],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,a,1,1,True,0.0,IS,0.028008618036318867
+16,separate_0,,1,[0],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,separate,1,8,True,0.0,IS,
+17,name._0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,name.,1,5,True,0.0,IS,
+18,The_2,63.0,1,[24],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,The,2,3,True,0.0,IS,0.006463527239150508
+19,entire_0,140.0,2,"[25, 28]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,entire,2,6,True,0.0,IS,0.014363393864778907
+20,international_0,403.0,3,"[10, 29, 43]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,international,2,13,True,0.0,IS,0.04134605519647071
+21,conflict_0,176.0,2,"[11, 83]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,conflict,2,8,True,0.0,IS,0.01805683800143634
+22,is_1,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,is,2,2,True,0.0,IS,
+23,known_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,known,2,5,True,0.0,IS,
+24,as__0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,as,2,2,True,0.0,IS,
+25,the_3,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,the,2,3,True,0.0,IS,
+26,Seven_1,167.0,2,"[2, 4]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,Seven,2,5,True,0.0,IS,0.01713347696727198
+27,Years'_1,738.0,7,"[21, 34, 35, 44, 45, 52, 55]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,7,Years',2,6,True,0.0,IS,0.07571560480147738
+28,War._1,104.0,1,[70],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,War.,2,4,True,0.0,IS,0.010669949728121473
+29,"""Seven_0",63.0,1,[23],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,"""Seven",3,6,True,0.0,IS,0.006463527239150508
+30,"Years""_0",,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,"Years""",3,6,True,0.0,IS,
+31,refers_0,241.0,3,"[36, 46, 75]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,refers,3,6,True,0.0,IS,0.02472555658151226
+32,to_0,199.0,2,"[37, 76]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,to,3,2,True,0.0,IS,0.02041653842207859
+33,events_0,233.0,3,"[38, 58, 59]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,events,3,6,True,0.0,IS,0.023904791217810608
+34,in_1,64.0,1,[42],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,in,3,2,True,0.0,IS,0.006566122909613214
+35,"Europe,_1",164.0,2,"[15, 82]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,"Europe,",3,7,True,0.0,IS,0.016825689955883863
+36,from_0,270.0,3,"[31, 47, 65]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,from,3,4,True,0.0,IS,0.027700831024930747
+37,the_4,336.0,2,"[32, 48]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,the,3,3,True,0.0,IS,0.03447214527546937
+38,official_0,544.0,3,"[19, 85, 86]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,official,3,8,True,0.0,IS,0.05581204473171232
+39,declaration_0,450.0,3,"[54, 68, 69]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,declaration,3,11,True,0.0,IS,0.046168051708217916
+40,of_1,473.0,3,"[56, 71, 72]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,of,3,2,True,0.0,IS,0.04852775212886016
+41,war_2,272.0,1,[74],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,war,3,3,True,0.0,IS,0.02790602236585616
+42,in_2,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,in,3,2,True,0.0,IS,
+43,1756_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,1756,3,4,True,0.0,IS,
+44,to_1,218.0,3,"[57, 61, 77]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,to,3,2,True,0.0,IS,0.02236585616087001
+45,the_5,133.0,1,[60],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,the,3,3,True,0.0,IS,0.01364522417153996
+46,signing_0,139.0,2,"[79, 80]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,signing,3,7,True,0.0,IS,0.0142607981943162
+47,of_2,110.0,1,[39],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,of,3,2,True,0.0,IS,0.011285523750897712
+48,the_6,166.0,2,"[40, 66]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,the,3,3,True,0.0,IS,0.017030881296809276
+49,peace_0,301.0,3,"[16, 64, 67]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,peace,3,5,True,0.0,IS,0.03088129680927465
+50,treaty_0,201.0,1,[49],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,treaty,3,6,True,0.0,IS,0.020621729763004002
+51,in_3,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,in,3,2,True,0.0,IS,
+52,1763._0,139.0,1,[18],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,1763.,3,5,True,0.0,IS,0.0142607981943162
+53,These_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,These,4,5,True,0.0,IS,
+54,dates_0,445.0,4,"[88, 89, 91, 92]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,4,dates,4,5,True,0.0,IS,0.04565507335590438
+55,do_0,71.0,1,[90],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,do,4,2,True,0.0,IS,0.00728429260285216
+56,not_1,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,not,4,3,True,0.0,IS,
+57,correspond_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,correspond,4,10,True,0.0,IS,
+58,with_0,344.0,1,[94],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,with,4,4,True,0.0,IS,0.035292910639171025
+59,the_7,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,the,4,3,True,0.0,IS,
+60,fighting_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,fighting,4,8,True,0.0,IS,
+61,on_0,311.0,3,"[62, 84, 98]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,3,on,4,2,True,0.0,IS,0.031907253513901716
+62,mainland_0,73.0,1,[99],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,mainland,4,8,True,0.0,IS,0.0074894839437775725
+63,North_1,71.0,1,[100],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,North,4,5,True,0.0,IS,0.00728429260285216
+64,"America,_0",,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,"America,",4,8,True,0.0,IS,
+65,where_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,where,4,5,True,0.0,IS,
+66,the_8,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,the,4,3,True,0.0,IS,
+67,fighting_1,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,fighting,4,8,True,0.0,IS,
+68,between_0,305.0,2,"[104, 105]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,between,4,7,True,0.0,IS,0.031291679491125476
+69,the_9,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,the,4,3,True,0.0,IS,
+70,two_0,63.0,1,[95],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,two,4,3,True,0.0,IS,0.006463527239150508
+71,colonial_0,171.0,2,"[96, 97]",,a_FrenchandIndianWar_0,A4W9APAHFWVLO,2,colonial,4,8,True,0.0,IS,0.017543859649122806
+72,powers_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,powers,4,6,True,0.0,IS,
+73,was_0,205.0,1,[107],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,was,4,3,True,0.0,IS,0.02103211244485483
+74,largely_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,largely,4,7,True,0.0,IS,
+75,concluded_0,71.0,1,[102],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,concluded,4,9,True,0.0,IS,0.00728429260285216
+76,in_4,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,in,4,2,True,0.0,IS,
+77,six_0,,0,[],a_FrenchandIndianWar_0_qa_1 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,six,4,3,True,0.0,IS,
+78,"years,_0",,0,[],a_FrenchandIndianWar_0_qa_1 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,"years,",4,6,True,0.0,IS,
+79,from_1,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,from,4,4,True,0.0,IS,
+80,the_10,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,the,4,3,True,0.0,IS,
+81,Battle_0,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,Battle,4,6,True,0.0,IS,
+82,of_3,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,of,4,2,True,0.0,IS,
+83,Jumonville_0,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,Jumonville,4,10,True,0.0,IS,
+84,Glen_0,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,Glen,4,4,True,0.0,IS,
+85,in_5,134.0,1,[106],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,1,in,4,2,True,0.0,IS,0.013747819842002667
+86,1754_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,1754,4,4,True,0.0,IS,
+87,to_2,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,to,4,2,True,0.0,IS,
+88,the_11,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,the,4,3,True,0.0,IS,
+89,capture_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,capture,4,7,True,0.0,IS,
+90,of_4,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,of,4,2,True,0.0,IS,
+91,Montreal_0,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,Montreal,4,8,True,0.0,IS,
+92,in_6,,0,[],,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,in,4,2,True,0.0,IS,
+93,1760._0,,0,[],a_FrenchandIndianWar_0_qa_2 ,a_FrenchandIndianWar_0,A4W9APAHFWVLO,0,1760.,4,5,True,0.0,IS,
+0,On_0,272.0,2,"[2, 43]",,a_Kenya_1,A4W9APAHFWVLO,2,On,1,2,True,0.16666666666666666,IS,0.1040152963671128
+1,28_0,749.0,4,"[1, 41, 51, 53]",a_Kenya_1_qa_0 ,a_Kenya_1,A4W9APAHFWVLO,4,28,1,2,True,0.16666666666666666,IS,0.2864244741873805
+2,February_0,466.0,4,"[11, 32, 47, 48]",a_Kenya_1_qa_0 ,a_Kenya_1,A4W9APAHFWVLO,4,February,1,8,True,0.16666666666666666,IS,0.17820267686424474
+3,"2008,_0",70.0,2,"[0, 30]",a_Kenya_1_qa_0 ,a_Kenya_1,A4W9APAHFWVLO,2,"2008,",1,5,True,0.16666666666666666,IS,0.02676864244741874
+4,Kibaki_0,137.0,2,"[27, 37]",,a_Kenya_1,A4W9APAHFWVLO,2,Kibaki,1,6,True,0.16666666666666666,IS,0.052390057361376675
+5,and_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,and,1,3,True,0.16666666666666666,IS,
+6,Odinga_0,141.0,2,"[26, 38]",,a_Kenya_1,A4W9APAHFWVLO,2,Odinga,1,6,True,0.16666666666666666,IS,0.053919694072657745
+7,signed_0,135.0,1,[39],,a_Kenya_1,A4W9APAHFWVLO,1,signed,1,6,True,0.16666666666666666,IS,0.05162523900573614
+8,an_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,an,1,2,True,0.16666666666666666,IS,
+9,agreement_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,agreement,1,9,True,0.16666666666666666,IS,
+10,on__0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,on,1,2,True,0.16666666666666666,IS,
+11,the_0,66.0,1,[21],,a_Kenya_1,A4W9APAHFWVLO,1,the,1,3,True,0.16666666666666666,IS,0.025239005736137667
+12,formation_0,404.0,3,"[42, 44, 52]",,a_Kenya_1,A4W9APAHFWVLO,3,formation,1,9,True,0.16666666666666666,IS,0.15449330783938814
+13,of_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,of,1,2,True,0.16666666666666666,IS,
+14,a_0,72.0,1,[46],,a_Kenya_1,A4W9APAHFWVLO,1,a,1,1,True,0.16666666666666666,IS,0.027533460803059275
+15,coalition_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,coalition,1,9,True,0.16666666666666666,IS,
+16,government_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,government,1,10,True,0.16666666666666666,IS,
+17,in_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,in,1,2,True,0.16666666666666666,IS,
+18,which_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,which,1,5,True,0.16666666666666666,IS,
+19,Odinga_1,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,Odinga,1,6,True,0.16666666666666666,IS,
+20,would_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,would,1,5,True,0.16666666666666666,IS,
+21,become_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,become,1,6,True,0.16666666666666666,IS,
+22,Kenya's_0,103.0,1,[15],,a_Kenya_1,A4W9APAHFWVLO,1,Kenya's,1,7,True,0.16666666666666666,IS,0.03938814531548757
+23,second_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,second,1,6,True,0.16666666666666666,IS,
+24,Prime_0,,0,[],a_Kenya_1_qa_1 ,a_Kenya_1,A4W9APAHFWVLO,0,Prime,1,5,True,0.16666666666666666,IS,
+25,Minister._0,,0,[],a_Kenya_1_qa_1 ,a_Kenya_1,A4W9APAHFWVLO,0,Minister.,1,9,True,0.16666666666666666,IS,
+26,Under_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,Under,2,5,True,0.16666666666666666,IS,
+27,the_1,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,the,2,3,True,0.16666666666666666,IS,
+28,"deal,_0",,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,"deal,",2,5,True,0.16666666666666666,IS,
+29,the_2,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,the,2,3,True,0.16666666666666666,IS,
+30,president_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,president,2,9,True,0.16666666666666666,IS,
+31,would_1,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,would,2,5,True,0.16666666666666666,IS,
+32,appoint_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,appoint,2,7,True,0.16666666666666666,IS,
+33,cabinet_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,cabinet,2,7,True,0.16666666666666666,IS,
+34,ministers_0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,ministers,2,9,True,0.16666666666666666,IS,
+35,from_0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,from,2,4,True,0.16666666666666666,IS,
+36,both_0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,both,2,4,True,0.16666666666666666,IS,
+37,PNU_0,,0,[],a_Kenya_1_qa_2 a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,PNU,2,3,True,0.16666666666666666,IS,
+38,and_1,,0,[],a_Kenya_1_qa_2 a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,and,2,3,True,0.16666666666666666,IS,
+39,ODM_0,,0,[],a_Kenya_1_qa_2 a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,ODM,2,3,True,0.16666666666666666,IS,
+40,camps_0,,0,[],a_Kenya_1_qa_2 a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,camps,2,5,True,0.16666666666666666,IS,
+41,depending_0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,depending,2,9,True,0.16666666666666666,IS,
+42,on_1,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,on,2,2,True,0.16666666666666666,IS,
+43,each_0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,each,2,4,True,0.16666666666666666,IS,
+44,party's_0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,party's,2,7,True,0.16666666666666666,IS,
+45,strength_0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,strength,2,8,True,0.16666666666666666,IS,
+46,in_1,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,in,2,2,True,0.16666666666666666,IS,
+47,Parliament._0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,Parliament.,2,11,True,0.16666666666666666,IS,
+48,The_3,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,The,3,3,True,0.16666666666666666,IS,
+49,agreement_1,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,agreement,3,9,True,0.16666666666666666,IS,
+50,stipulated_0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,stipulated,3,10,True,0.16666666666666666,IS,
+51,that_0,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,that,3,4,True,0.16666666666666666,IS,
+52,the_4,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,the,3,3,True,0.16666666666666666,IS,
+53,cabinet_1,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,cabinet,3,7,True,0.16666666666666666,IS,
+54,would_2,,0,[],a_Kenya_1_qa_3 ,a_Kenya_1,A4W9APAHFWVLO,0,would,3,5,True,0.16666666666666666,IS,
+55,include_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,include,3,7,True,0.16666666666666666,IS,
+56,a__0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,a,3,1,True,0.16666666666666666,IS,
+57,vice-president_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,vice-president,3,14,True,0.16666666666666666,IS,
+58,and_2,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,and,3,3,True,0.16666666666666666,IS,
+59,two_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,two,3,3,True,0.16666666666666666,IS,
+60,deputy_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,deputy,3,6,True,0.16666666666666666,IS,
+61,Prime_1,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,Prime,3,5,True,0.16666666666666666,IS,
+62,Ministers._1,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,Ministers.,3,10,True,0.16666666666666666,IS,
+63,After_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,After,4,5,True,0.16666666666666666,IS,
+64,"debates,_0",,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,"debates,",4,8,True,0.16666666666666666,IS,
+65,it_0,,0,[],,a_Kenya_1,A4W9APAHFWVLO,0,it,4,2,True,0.16666666666666666,IS,
+66,was_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,was,4,3,True,0.16666666666666666,IS,
+67,passed_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,passed,4,6,True,0.16666666666666666,IS,
+68,by_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,by,4,2,True,0.16666666666666666,IS,
+69,"Parliament,_1",,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,"Parliament,",4,11,True,0.16666666666666666,IS,
+70,the_5,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,the,4,3,True,0.16666666666666666,IS,
+71,coalition_1,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,coalition,4,9,True,0.16666666666666666,IS,
+72,would_3,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,would,4,5,True,0.16666666666666666,IS,
+73,hold_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,hold,4,4,True,0.16666666666666666,IS,
+74,until_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,until,4,5,True,0.16666666666666666,IS,
+75,the_6,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,the,4,3,True,0.16666666666666666,IS,
+76,end_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,end,4,3,True,0.16666666666666666,IS,
+77,of_1,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,of,4,2,True,0.16666666666666666,IS,
+78,the_7,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,the,4,3,True,0.16666666666666666,IS,
+79,current_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,current,4,7,True,0.16666666666666666,IS,
+80,Parliament_2,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,Parliament,4,10,True,0.16666666666666666,IS,
+81,or_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,or,4,2,True,0.16666666666666666,IS,
+82,if_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,if,4,2,True,0.16666666666666666,IS,
+83,either_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,either,4,6,True,0.16666666666666666,IS,
+84,of_2,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,of,4,2,True,0.16666666666666666,IS,
+85,the_8,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,the,4,3,True,0.16666666666666666,IS,
+86,parties_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,parties,4,7,True,0.16666666666666666,IS,
+87,withdraws_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,withdraws,4,9,True,0.16666666666666666,IS,
+88,from_1,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,from,4,4,True,0.16666666666666666,IS,
+89,the_9,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,the,4,3,True,0.16666666666666666,IS,
+90,deal_1,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,deal,4,4,True,0.16666666666666666,IS,
+91,before_0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,before,4,6,True,0.16666666666666666,IS,
+92,then._0,,0,[],a_Kenya_1_qa_4 ,a_Kenya_1,A4W9APAHFWVLO,0,then.,4,5,True,0.16666666666666666,IS,
+0,BSkyB's_0,438.0,5,"[21, 95, 96, 97, 98]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,5,BSkyB's,1,7,False,0.006060606060606061,NR,0.0338720903255742
+1,standard_0,956.0,6,"[27, 42, 43, 68, 69, 101]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,6,standard,1,8,False,0.006060606060606061,NR,0.07393086381563684
+2,definition_0,538.0,4,"[46, 55, 71, 103]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,4,definition,1,10,False,0.006060606060606061,NR,0.04160544428118475
+3,broadcasts_0,71.0,1,[56],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,broadcasts,1,10,False,0.006060606060606061,NR,0.0054906813084834895
+4,are_0,73.0,1,[72],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,are,1,3,False,0.006060606060606061,NR,0.0056453483875957
+5,in_0,105.0,1,[31],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,in,1,2,False,0.006060606060606061,NR,0.008120021653391075
+6,DVB-compliant_0,142.0,2,"[59, 60]",a_SkyUnitedKingdom_0_qa_0 ,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,DVB-compliant,1,13,False,0.006060606060606061,NR,0.010981362616966979
+7,"MPEG-2,_0",345.0,2,"[38, 50]",a_SkyUnitedKingdom_0_qa_0 ,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,"MPEG-2,",1,7,False,0.006060606060606061,NR,0.02668007114685639
+8,with_0,171.0,2,"[36, 41]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,with,1,4,False,0.006060606060606061,NR,0.013224035264094037
+9,the_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,the,1,3,False,0.006060606060606061,NR,
+10,Sky_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,Sky,1,3,False,0.006060606060606061,NR,
+11,Movies_0,241.0,3,"[24, 25, 26]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,3,Movies,1,6,False,0.006060606060606061,NR,0.018637383033021423
+12,and_0,166.0,1,[44],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,and,1,3,False,0.006060606060606061,NR,0.01283736756631351
+13,Sky_1,586.0,3,"[70, 120, 121]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,3,Sky,1,3,False,0.006060606060606061,NR,0.045317454179877814
+14,Box_0,168.0,2,"[45, 144]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,Box,1,3,False,0.006060606060606061,NR,0.012992034645425721
+15,Office_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,Office,1,6,False,0.006060606060606061,NR,
+16,channels_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,channels,1,8,False,0.006060606060606061,NR,
+17,including_0,1194.0,7,"[74, 75, 79, 85, 89, 106, 107]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,7,including,1,9,False,0.006060606060606061,NR,0.09233624622998994
+18,optional_0,411.0,4,"[0, 61, 62, 80]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,4,optional,1,8,False,0.006060606060606061,NR,0.03178408475755935
+19,Dolby_0,134.0,2,"[49, 51]",a_SkyUnitedKingdom_0_qa_1 ,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,Dolby,1,5,False,0.006060606060606061,NR,0.010362694300518135
+20,Digital_0,,0,[],a_SkyUnitedKingdom_0_qa_1 ,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,Digital,1,7,False,0.006060606060606061,NR,
+21,soundtracks_0,343.0,4,"[5, 7, 8, 117]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,4,soundtracks,1,11,False,0.006060606060606061,NR,0.02652540406774418
+22,for_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,for,1,3,False,0.006060606060606061,NR,
+23,recent_0,444.0,2,"[142, 143]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,recent,1,6,False,0.006060606060606061,NR,0.034336091562910835
+24,"films,_0",,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,"films,",1,6,False,0.006060606060606061,NR,
+25,although_0,510.0,5,"[122, 123, 124, 125, 127]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,5,although,1,8,False,0.006060606060606061,NR,0.03944010517361379
+26,these_0,302.0,1,[104],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,these,1,5,False,0.006060606060606061,NR,0.023354728945943856
+27,are_1,262.0,4,"[84, 86, 88, 105]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,4,are,1,3,False,0.006060606060606061,NR,0.020261387363699635
+28,only_0,344.0,4,"[76, 87, 90, 91]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,4,only,1,4,False,0.006060606060606061,NR,0.026602737607300288
+29,accessible_0,168.0,2,"[81, 83]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,accessible,1,10,False,0.006060606060606061,NR,0.012992034645425721
+30,with_1,66.0,1,[64],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,with,1,4,False,0.006060606060606061,NR,0.005104013610702962
+31,a_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,a,1,1,False,0.006060606060606061,NR,
+32,Sky+_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,Sky+,1,4,False,0.006060606060606061,NR,
+33,box._1,679.0,3,"[4, 11, 14]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,3,box.,1,4,False,0.006060606060606061,NR,0.052509473358595626
+34,Sky+_1,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,Sky+,2,4,False,0.006060606060606061,NR,
+35,HD_0,168.0,1,[118],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,HD,2,2,False,0.006060606060606061,NR,0.012992034645425721
+36,material_0,268.0,3,"[141, 156, 157]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,3,material,2,8,False,0.006060606060606061,NR,0.02072538860103627
+37,is_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,is,2,2,False,0.006060606060606061,NR,
+38,broadcast_0,103.0,1,[145],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,broadcast,2,9,False,0.006060606060606061,NR,0.007965354574278865
+39,using_0,159.0,2,"[129, 146]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,using,2,5,False,0.006060606060606061,NR,0.012296032789420772
+40,MPEG-4_0,164.0,1,[77],a_SkyUnitedKingdom_0_qa_2 ,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,MPEG-4,2,6,False,0.006060606060606061,NR,0.0126827004872013
+41,and_1,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,and,2,3,False,0.006060606060606061,NR,
+42,most_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,most,2,4,False,0.006060606060606061,NR,
+43,of_0,168.0,1,[109],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,of,2,2,False,0.006060606060606061,NR,0.012992034645425721
+44,the_1,167.0,2,"[93, 114]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,the,2,3,False,0.006060606060606061,NR,0.012914701105869616
+45,HD_1,161.0,2,"[65, 94]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,HD,2,2,False,0.006060606060606061,NR,0.012450699868532982
+46,material_1,64.0,1,[12],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,material,2,8,False,0.006060606060606061,NR,0.004949346531590751
+47,uses_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,uses,2,4,False,0.006060606060606061,NR,
+48,the_2,176.0,1,[139],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,the,2,3,False,0.006060606060606061,NR,0.013610702961874565
+49,DVB-S2__0,169.0,1,[159],a_SkyUnitedKingdom_0_qa_4 ,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,DVB-S2,2,6,False,0.006060606060606061,NR,0.013069368184981826
+50,standard._1,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,standard.,2,9,False,0.006060606060606061,NR,
+51,Interactive_0,97.0,1,[2],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,Interactive,3,11,False,0.006060606060606061,NR,0.007501353336942232
+52,services_0,376.0,2,"[161, 162]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,services,3,8,False,0.006060606060606061,NR,0.029077410873095663
+53,and_2,203.0,2,"[147, 163]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,and,3,3,False,0.006060606060606061,NR,0.015698708529889412
+54,7-day_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,7-day,3,5,False,0.006060606060606061,NR,
+55,EPG_0,175.0,2,"[110, 150]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,EPG,3,3,False,0.006060606060606061,NR,0.01353336942231846
+56,use_0,175.0,2,"[112, 113]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,use,3,3,False,0.006060606060606061,NR,0.01353336942231846
+57,the_3,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,the,3,3,False,0.006060606060606061,NR,
+58,proprietary_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,proprietary,3,11,False,0.006060606060606061,NR,
+59,OpenTV_0,79.0,1,[137],a_SkyUnitedKingdom_0_qa_3 ,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,OpenTV,3,6,False,0.006060606060606061,NR,0.006109349624932333
+60,"system,_0",,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,"system,",3,7,False,0.006060606060606061,NR,
+61,with_2,106.0,1,[160],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,with,3,4,False,0.006060606060606061,NR,0.00819735519294718
+62,set-top_0,314.0,2,"[1, 164]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,set-top,3,7,False,0.006060606060606061,NR,0.024282731420617123
+63,boxes_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,boxes,3,5,False,0.006060606060606061,NR,
+64,including_1,168.0,2,"[130, 131]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,2,including,3,9,False,0.006060606060606061,NR,0.012992034645425721
+65,modems_0,278.0,4,"[132, 133, 148, 149]",,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,4,modems,3,6,False,0.006060606060606061,NR,0.021498723996597323
+66,for_1,274.0,1,[152],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,for,3,3,False,0.006060606060606061,NR,0.021189389838372902
+67,a_1,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,a,3,1,False,0.006060606060606061,NR,
+68,return_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,return,3,6,False,0.006060606060606061,NR,
+69,path._0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,path.,3,5,False,0.006060606060606061,NR,
+70,Sky_2,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,Sky,4,3,False,0.006060606060606061,NR,
+71,"News,_0",,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,"News,",4,5,False,0.006060606060606061,NR,
+72,amongst_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,amongst,4,7,False,0.006060606060606061,NR,
+73,other_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,other,4,5,False,0.006060606060606061,NR,
+74,"channels,_1",,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,"channels,",4,9,False,0.006060606060606061,NR,
+75,provides_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,provides,4,8,False,0.006060606060606061,NR,
+76,a_2,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,a,4,1,False,0.006060606060606061,NR,
+77,pseudo-video_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,pseudo-video,4,12,False,0.006060606060606061,NR,
+78,on_0,62.0,1,[153],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,1,on,4,2,False,0.006060606060606061,NR,0.00479467945247854
+79,demand_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,demand,4,6,False,0.006060606060606061,NR,
+80,interactive_1,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,interactive,4,11,False,0.006060606060606061,NR,
+81,service_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,service,4,7,False,0.006060606060606061,NR,
+82,by_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,by,4,2,False,0.006060606060606061,NR,
+83,broadcasting_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,broadcasting,4,12,False,0.006060606060606061,NR,
+84,looping_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,looping,4,7,False,0.006060606060606061,NR,
+85,video_0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,video,4,5,False,0.006060606060606061,NR,
+86,streams._0,,0,[],,a_SkyUnitedKingdom_0,A4W9APAHFWVLO,0,streams.,4,8,False,0.006060606060606061,NR,
+0,The_0,,0,[],a_1973oilcrisis_1_qa_0 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,The,1,3,False,0.028169014084507043,NR,
+1,embargo_0,201.0,1,[3],a_1973oilcrisis_1_qa_0 ,a_1973oilcrisis_1,A4W9APAHFWVLO,1,embargo,1,7,False,0.028169014084507043,NR,0.012963560141889712
+2,had_0,447.0,4,"[6, 7, 8, 127]",,a_1973oilcrisis_1,A4W9APAHFWVLO,4,had,1,3,False,0.028169014084507043,NR,0.028829409867784584
+3,a__0,63.0,1,[9],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,a,1,1,False,0.028169014084507043,NR,0.004063205417607223
+4,negative_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,negative,1,8,False,0.028169014084507043,NR,
+5,influence_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,influence,1,9,False,0.028169014084507043,NR,
+6,on_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,on,1,2,False,0.028169014084507043,NR,
+7,the_1,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,the,1,3,False,0.028169014084507043,NR,
+8,US_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,US,1,2,False,0.028169014084507043,NR,
+9,economy_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,economy,1,7,False,0.028169014084507043,NR,
+10,by_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,by,1,2,False,0.028169014084507043,NR,
+11,causing_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,causing,1,7,False,0.028169014084507043,NR,
+12,immediate_0,240.0,3,"[2, 19, 20]",,a_1973oilcrisis_1,A4W9APAHFWVLO,3,immediate,1,9,False,0.028169014084507043,NR,0.015478877781360851
+13,demands_0,260.0,3,"[5, 38, 39]",,a_1973oilcrisis_1,A4W9APAHFWVLO,3,demands,1,7,False,0.028169014084507043,NR,0.01676878426314092
+14,to_0,97.0,1,[128],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,to,1,2,False,0.028169014084507043,NR,0.006256046436633344
+15,address_0,136.0,2,"[11, 43]",,a_1973oilcrisis_1,A4W9APAHFWVLO,2,address,1,7,False,0.028169014084507043,NR,0.008771364076104482
+16,the_2,104.0,1,[71],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,the,1,3,False,0.028169014084507043,NR,0.006707513705256369
+17,threats_0,916.0,5,"[12, 26, 27, 28, 42]",,a_1973oilcrisis_1,A4W9APAHFWVLO,5,threats,1,7,False,0.028169014084507043,NR,0.05907771686552725
+18,to_1,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,to,1,2,False,0.028169014084507043,NR,
+19,U.S._1,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,U.S.,1,4,False,0.028169014084507043,NR,
+20,energy_0,137.0,1,[76],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,energy,2,6,False,0.028169014084507043,NR,0.008835859400193486
+21,security._0,440.0,4,"[31, 32, 59, 61]",,a_1973oilcrisis_1,A4W9APAHFWVLO,4,security.,2,9,False,0.028169014084507043,NR,0.02837794259916156
+22,On_1,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,On,3,2,False,0.028169014084507043,NR,
+23,an_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,an,3,2,False,0.028169014084507043,NR,
+24,international_0,281.0,3,"[36, 64, 123]",,a_1973oilcrisis_1,A4W9APAHFWVLO,3,international,3,13,False,0.028169014084507043,NR,0.018123186069009995
+25,"level,_0",313.0,2,"[34, 37]",,a_1973oilcrisis_1,A4W9APAHFWVLO,2,"level,",3,6,False,0.028169014084507043,NR,0.02018703643985811
+26,the_3,272.0,1,[40],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,the,3,3,False,0.028169014084507043,NR,0.017542728152208965
+27,price_0,338.0,2,"[53, 54]",,a_1973oilcrisis_1,A4W9APAHFWVLO,2,price,3,5,False,0.028169014084507043,NR,0.021799419542083198
+28,increases_0,475.0,3,"[41, 82, 83]",,a_1973oilcrisis_1,A4W9APAHFWVLO,3,increases,3,9,False,0.028169014084507043,NR,0.030635278942276686
+29,changed_0,1911.0,9,"[13, 29, 30, 45, 73, 74, 84, 85, 86]",,a_1973oilcrisis_1,A4W9APAHFWVLO,9,changed,3,7,False,0.028169014084507043,NR,0.12325056433408578
+30,competitive_0,1005.0,6,"[14, 16, 57, 58, 75, 87]",,a_1973oilcrisis_1,A4W9APAHFWVLO,6,competitive,3,11,False,0.028169014084507043,NR,0.06481780070944856
+31,positions_0,306.0,3,"[18, 46, 47]",,a_1973oilcrisis_1,A4W9APAHFWVLO,3,positions,3,9,False,0.028169014084507043,NR,0.019735569171235087
+32,in_0,296.0,2,"[33, 77]",,a_1973oilcrisis_1,A4W9APAHFWVLO,2,in,3,2,False,0.028169014084507043,NR,0.01909061593034505
+33,many_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,many,3,4,False,0.028169014084507043,NR,
+34,"industries,_0",157.0,2,"[65, 122]",,a_1973oilcrisis_1,A4W9APAHFWVLO,2,"industries,",3,11,False,0.028169014084507043,NR,0.010125765881973557
+35,such_0,429.0,3,"[22, 35, 51]",,a_1973oilcrisis_1,A4W9APAHFWVLO,3,such,3,4,False,0.028169014084507043,NR,0.027668494034182523
+36,as_0,240.0,1,[52],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,as,3,2,False,0.028169014084507043,NR,0.015478877781360851
+37,automobiles._0,200.0,2,"[21, 70]",a_1973oilcrisis_1_qa_1 ,a_1973oilcrisis_1,A4W9APAHFWVLO,2,automobiles.,3,12,False,0.028169014084507043,NR,0.012899064817800709
+38,Macroeconomic_0,368.0,4,"[0, 55, 137, 138]",a_1973oilcrisis_1_qa_2 ,a_1973oilcrisis_1,A4W9APAHFWVLO,4,Macroeconomic,4,13,False,0.028169014084507043,NR,0.023734279264753307
+39,problems_0,65.0,1,[108],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,problems,4,8,False,0.028169014084507043,NR,0.00419219606578523
+40,consisted_0,71.0,1,[113],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,consisted,4,9,False,0.028169014084507043,NR,0.004579168010319252
+41,of_0,407.0,2,"[48, 90]",,a_1973oilcrisis_1,A4W9APAHFWVLO,2,of,4,2,False,0.028169014084507043,NR,0.026249596904224445
+42,both_0,343.0,4,"[49, 50, 63, 91]",,a_1973oilcrisis_1,A4W9APAHFWVLO,4,both,4,4,False,0.028169014084507043,NR,0.022121896162528215
+43,inflationary_0,518.0,7,"[66, 80, 94, 95, 117, 121, 125]",,a_1973oilcrisis_1,A4W9APAHFWVLO,7,inflationary,4,12,False,0.028169014084507043,NR,0.033408577878103835
+44,and_0,1046.0,4,"[81, 96, 98, 119]",,a_1973oilcrisis_1,A4W9APAHFWVLO,4,and,4,3,False,0.028169014084507043,NR,0.06746210899709772
+45,deflationary_0,821.0,6,"[68, 69, 99, 100, 101, 134]",,a_1973oilcrisis_1,A4W9APAHFWVLO,6,deflationary,4,12,False,0.028169014084507043,NR,0.052950661077071914
+46,impacts._0,678.0,6,"[1, 102, 103, 135, 136, 140]",,a_1973oilcrisis_1,A4W9APAHFWVLO,6,impacts.,4,8,False,0.028169014084507043,NR,0.0437278297323444
+47,The_4,161.0,2,"[104, 106]",,a_1973oilcrisis_1,A4W9APAHFWVLO,2,The,5,3,False,0.028169014084507043,NR,0.01038374717832957
+48,embargo_1,173.0,1,[105],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,embargo,5,7,False,0.028169014084507043,NR,0.011157691067397614
+49,left_0,304.0,1,[109],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,left,5,4,False,0.028169014084507043,NR,0.01960657852305708
+50,oil_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,oil,5,3,False,0.028169014084507043,NR,
+51,companies_0,134.0,1,[89],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,companies,5,9,False,0.028169014084507043,NR,0.008642373427926476
+52,searching_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,searching,5,9,False,0.028169014084507043,NR,
+53,for_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,for,5,3,False,0.028169014084507043,NR,
+54,new_0,136.0,1,[116],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,new,5,3,False,0.028169014084507043,NR,0.008771364076104482
+55,ways_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,ways,5,4,False,0.028169014084507043,NR,
+56,to_2,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,to,5,2,False,0.028169014084507043,NR,
+57,increase_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,increase,5,8,False,0.028169014084507043,NR,
+58,oil_1,169.0,2,"[129, 130]",,a_1973oilcrisis_1,A4W9APAHFWVLO,2,oil,5,3,False,0.028169014084507043,NR,0.010899709771041599
+59,"supplies,_0",,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,"supplies,",5,9,False,0.028169014084507043,NR,
+60,even_0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,even,5,4,False,0.028169014084507043,NR,
+61,in_1,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,in,5,2,False,0.028169014084507043,NR,
+62,rugged_0,71.0,1,[110],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,rugged,5,6,False,0.028169014084507043,NR,0.004579168010319252
+63,terrain_0,441.0,1,[111],,a_1973oilcrisis_1,A4W9APAHFWVLO,1,terrain,5,7,False,0.028169014084507043,NR,0.028442437923250564
+64,such_1,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,such,5,4,False,0.028169014084507043,NR,
+65,as__0,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,as,5,2,False,0.028169014084507043,NR,
+66,the_5,,0,[],,a_1973oilcrisis_1,A4W9APAHFWVLO,0,the,5,3,False,0.028169014084507043,NR,
+67,Arctic._0,,0,[],a_1973oilcrisis_1_qa_3 a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,Arctic.,5,7,False,0.028169014084507043,NR,
+68,Finding_0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,Finding,6,7,False,0.028169014084507043,NR,
+69,oil_2,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,oil,6,3,False,0.028169014084507043,NR,
+70,and_1,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,and,6,3,False,0.028169014084507043,NR,
+71,developing_0,335.0,2,"[132, 141]",a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,2,developing,6,10,False,0.028169014084507043,NR,0.021605933569816188
+72,new_1,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,new,6,3,False,0.028169014084507043,NR,
+73,fields_0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,fields,6,6,False,0.028169014084507043,NR,
+74,usually_0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,usually,6,7,False,0.028169014084507043,NR,
+75,required_0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,required,6,8,False,0.028169014084507043,NR,
+76,five_0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,five,6,4,False,0.028169014084507043,NR,
+77,to_3,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,to,6,2,False,0.028169014084507043,NR,
+78,ten_0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,ten,6,3,False,0.028169014084507043,NR,
+79,years_0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,years,6,5,False,0.028169014084507043,NR,
+80,before_0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,before,6,6,False,0.028169014084507043,NR,
+81,significant_0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,significant,6,11,False,0.028169014084507043,NR,
+82,production._0,,0,[],a_1973oilcrisis_1_qa_4 ,a_1973oilcrisis_1,A4W9APAHFWVLO,0,production.,6,11,False,0.028169014084507043,NR,
+0,"Historically,_0",433.0,4,"[5, 7, 36, 37]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,4,"Historically,",1,13,False,0.005050505050505051,NR,0.023943817739438177
+1,Victoria_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,Victoria,1,8,False,0.005050505050505051,NR,
+2,has_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,has,1,3,False,0.005050505050505051,NR,
+3,been_0,138.0,2,"[13, 78]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,been,1,4,False,0.005050505050505051,NR,0.007631055076310551
+4,the_0,69.0,1,[79],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,the,1,3,False,0.005050505050505051,NR,0.0038155275381552755
+5,base_0,176.0,2,"[80, 157]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,base,1,4,False,0.005050505050505051,NR,0.009732360097323601
+6,for_0,134.0,1,[18],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,for,1,3,False,0.005050505050505051,NR,0.007409865074098651
+7,the_1,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,the,1,3,False,0.005050505050505051,NR,
+8,manufacturing_0,480.0,4,"[0, 21, 31, 160]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,4,manufacturing,1,13,False,0.005050505050505051,NR,0.026542800265428004
+9,plants_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,plants,1,6,False,0.005050505050505051,NR,
+10,of_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,of,1,2,False,0.005050505050505051,NR,
+11,the_2,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,the,1,3,False,0.005050505050505051,NR,
+12,major_0,138.0,2,"[51, 151]",a_VictoriaAustralia_2_qa_0 ,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,major,1,5,False,0.005050505050505051,NR,0.007631055076310551
+13,car_0,333.0,2,"[52, 154]",a_VictoriaAustralia_2_qa_0 ,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,car,1,3,False,0.005050505050505051,NR,0.018414067684140677
+14,brands_0,652.0,6,"[9, 10, 38, 53, 155, 156]",a_VictoriaAustralia_2_qa_0 ,a_VictoriaAustralia_2,A4W9APAHFWVLO,6,brands,1,6,False,0.005050505050505051,NR,0.03605397036053971
+15,"Ford,_0",163.0,1,[11],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,"Ford,",1,5,False,0.005050505050505051,NR,0.009013492590134927
+16,Toyota_0,581.0,6,"[26, 27, 28, 77, 171, 172]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,6,Toyota,1,6,False,0.005050505050505051,NR,0.03212784782127848
+17,and_0,273.0,3,"[24, 25, 29]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,and,1,3,False,0.005050505050505051,NR,0.015096217650962177
+18,Holden;_0,1012.0,9,"[19, 30, 57, 58, 81, 84, 85, 170, 183]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,9,Holden;,1,7,False,0.005050505050505051,NR,0.05596107055961071
+19,"however,_0",74.0,1,[59],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,"however,",1,8,False,0.005050505050505051,NR,0.00409201504092015
+20,closure_0,259.0,4,"[20, 32, 64, 66]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,4,closure,1,7,False,0.005050505050505051,NR,0.014322052643220527
+21,announcements_0,336.0,3,"[22, 61, 62]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,announcements,1,13,False,0.005050505050505051,NR,0.0185799601857996
+22,by_0,141.0,2,"[108, 136]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,by,1,2,False,0.005050505050505051,NR,0.0077969475779694755
+23,all_0,439.0,3,"[4, 94, 112]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,all,1,3,False,0.005050505050505051,NR,0.024275602742756027
+24,three_0,379.0,5,"[71, 95, 109, 110, 184]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,5,three,1,5,False,0.005050505050505051,NR,0.02095775270957753
+25,companies_0,538.0,5,"[39, 40, 54, 72, 96]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,5,companies,1,9,False,0.005050505050505051,NR,0.029750055297500553
+26,in_0,69.0,1,[41],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,in,1,2,False,0.005050505050505051,NR,0.0038155275381552755
+27,the_3,302.0,3,"[1, 56, 76]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,the,1,3,False,0.005050505050505051,NR,0.01669984516699845
+28,21st_0,205.0,1,[149],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,21st,1,4,False,0.005050505050505051,NR,0.011335987613359876
+29,century_0,545.0,5,"[42, 43, 83, 86, 125]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,5,century,1,7,False,0.005050505050505051,NR,0.030137137801371377
+30,will_0,135.0,1,[87],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,will,1,4,False,0.005050505050505051,NR,0.007465162574651626
+31,mean_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,mean,1,4,False,0.005050505050505051,NR,
+32,that_0,248.0,3,"[46, 60, 67]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,that,1,4,False,0.005050505050505051,NR,0.013713780137137801
+33,Australia_0,372.0,3,"[23, 34, 63]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,Australia,1,9,False,0.005050505050505051,NR,0.0205706702057067
+34,will_1,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,will,1,4,False,0.005050505050505051,NR,
+35,no_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,no,1,2,False,0.005050505050505051,NR,
+36,longer_0,496.0,6,"[138, 139, 185, 186, 187, 196]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,6,longer,1,6,False,0.005050505050505051,NR,0.027427560274275602
+37,be_0,106.0,1,[114],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,be,1,2,False,0.005050505050505051,NR,0.005861535058615351
+38,a_0,63.0,1,[188],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,a,1,1,False,0.005050505050505051,NR,0.0034837425348374254
+39,base_1,374.0,3,"[73, 75, 97]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,base,1,4,False,0.005050505050505051,NR,0.02068126520681265
+40,for_1,104.0,1,[74],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,for,1,3,False,0.005050505050505051,NR,0.0057509400575094
+41,the_4,886.0,3,"[98, 120, 148]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,the,1,3,False,0.005050505050505051,NR,0.048993585489935855
+42,global_0,752.0,5,"[99, 119, 123, 142, 191]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,5,global,1,6,False,0.005050505050505051,NR,0.0415837204158372
+43,car_1,375.0,4,"[100, 124, 126, 167]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,4,car,1,3,False,0.005050505050505051,NR,0.020736562707365628
+44,"industry,_0",613.0,4,"[101, 175, 177, 192]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,4,"industry,",1,9,False,0.005050505050505051,NR,0.03389736783897368
+45,with_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,with,1,4,False,0.005050505050505051,NR,
+46,Toyota's_0,738.0,7,"[47, 68, 88, 89, 104, 131, 182]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,7,Toyota's,1,8,False,0.005050505050505051,NR,0.040809555408095555
+47,statement_0,266.0,3,"[69, 92, 105]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,statement,1,9,False,0.005050505050505051,NR,0.014709135147091351
+48,in_1,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,in,1,2,False,0.005050505050505051,NR,
+49,February_0,416.0,2,"[194, 195]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,February,1,8,False,0.005050505050505051,NR,0.0230037602300376
+50,2014_0,66.0,1,[193],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,2014,1,4,False,0.005050505050505051,NR,0.0036496350364963502
+51,outlining_0,959.0,5,"[115, 116, 117, 118, 189]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,5,outlining,1,9,False,0.005050505050505051,NR,0.05303030303030303
+52,a_1,138.0,2,"[166, 190]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,a,1,1,False,0.005050505050505051,NR,0.007631055076310551
+53,closure_1,511.0,5,"[122, 141, 143, 146, 147]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,5,closure,1,7,False,0.005050505050505051,NR,0.028257022782570227
+54,year_0,413.0,2,"[127, 163]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,year,1,4,False,0.005050505050505051,NR,0.022837867728378678
+55,of_1,137.0,1,[128],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,of,1,2,False,0.005050505050505051,NR,0.007575757575757576
+56,2017._0,,0,[],a_VictoriaAustralia_2_qa_1 ,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,2017.,1,5,False,0.005050505050505051,NR,
+57,Holden's_0,783.0,6,"[103, 130, 132, 179, 180, 181]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,6,Holden's,2,8,False,0.005050505050505051,NR,0.04329794293297943
+58,announcement_0,342.0,3,"[90, 91, 135]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,3,announcement,2,12,False,0.005050505050505051,NR,0.01891174518911745
+59,occurred_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,occurred,2,8,False,0.005050505050505051,NR,
+60,in_2,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,in,2,2,False,0.005050505050505051,NR,
+61,May_0,,0,[],a_VictoriaAustralia_2_qa_2 ,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,May,2,3,False,0.005050505050505051,NR,
+62,"2013,_0",135.0,1,[164],a_VictoriaAustralia_2_qa_2 ,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,"2013,",2,5,False,0.005050505050505051,NR,0.007465162574651626
+63,followed_0,137.0,2,"[144, 165]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,followed,2,8,False,0.005050505050505051,NR,0.007575757575757576
+64,by_1,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,by,2,2,False,0.005050505050505051,NR,
+65,Ford's_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,Ford's,2,6,False,0.005050505050505051,NR,
+66,decision_0,208.0,1,[129],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,decision,2,8,False,0.005050505050505051,NR,0.0115018801150188
+67,in_3,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,in,2,2,False,0.005050505050505051,NR,
+68,December_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,December,2,8,False,0.005050505050505051,NR,
+69,of_2,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,of,2,2,False,0.005050505050505051,NR,
+70,the_5,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,the,2,3,False,0.005050505050505051,NR,
+71,same_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,same,2,4,False,0.005050505050505051,NR,
+72,year_1,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,year,2,4,False,0.005050505050505051,NR,
+73,(Ford's_0,,0,[],a_VictoriaAustralia_2_qa_4 ,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,(Ford's,2,7,False,0.005050505050505051,NR,
+74,Victorian_0,65.0,1,[140],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,Victorian,2,9,False,0.005050505050505051,NR,0.003594337535943375
+75,plants—in_0,138.0,1,[161],,a_VictoriaAustralia_2,A4W9APAHFWVLO,1,plants—in,2,9,False,0.005050505050505051,NR,0.007631055076310551
+76,Broadmeadows_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,Broadmeadows,2,12,False,0.005050505050505051,NR,
+77,and__0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,and,2,3,False,0.005050505050505051,NR,
+78,Geelong—will_0,239.0,2,"[133, 134]",,a_VictoriaAustralia_2,A4W9APAHFWVLO,2,Geelong—will,2,12,False,0.005050505050505051,NR,0.013216102632161027
+79,close_0,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,close,2,5,False,0.005050505050505051,NR,
+80,in_4,,0,[],,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,in,2,2,False,0.005050505050505051,NR,
+81,October_0,,0,[],a_VictoriaAustralia_2_qa_3 ,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,October,2,7,False,0.005050505050505051,NR,
+82,2016)._0,,0,[],a_VictoriaAustralia_2_qa_3 ,a_VictoriaAustralia_2,A4W9APAHFWVLO,0,2016).,2,6,False,0.005050505050505051,NR,
+0, _0,476.0,3,"[115, 133, 134]",a_DoctorWho_4_qa_1 a_DoctorWho_4_qa_2 ,a_DoctorWho_4,A4W9APAHFWVLO,3, ,1,1,False,0.03482587064676617,NR,0.020511052699616495
+1,Doctor_0,272.0,1,[169],,a_DoctorWho_4,A4W9APAHFWVLO,1,Doctor,1,6,False,0.03482587064676617,NR,0.011720601542637998
+2,Who_0,71.0,1,[171],,a_DoctorWho_4,A4W9APAHFWVLO,1,Who,1,3,False,0.03482587064676617,NR,0.0030594217262033007
+3,has_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,has,1,3,False,0.03482587064676617,NR,
+4,appeared_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,appeared,1,8,False,0.03482587064676617,NR,
+5,on_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,on,1,2,False,0.03482587064676617,NR,
+6,stage_0,273.0,1,[71],,a_DoctorWho_4,A4W9APAHFWVLO,1,stage,1,5,False,0.03482587064676617,NR,0.01176369198948593
+7,numerous_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,numerous,1,8,False,0.03482587064676617,NR,
+8,times._0,467.0,4,"[39, 42, 43, 183]",,a_DoctorWho_4,A4W9APAHFWVLO,4,times.,1,6,False,0.03482587064676617,NR,0.02012323867798509
+9,In_0,886.0,3,"[40, 41, 182]",,a_DoctorWho_4,A4W9APAHFWVLO,3,In,2,2,False,0.03482587064676617,NR,0.03817813590726936
+10,the_0,136.0,1,[18],,a_DoctorWho_4,A4W9APAHFWVLO,1,the,2,3,False,0.03482587064676617,NR,0.005860300771318999
+11,early_0,368.0,3,"[46, 189, 190]",,a_DoctorWho_4,A4W9APAHFWVLO,3,early,2,5,False,0.03482587064676617,NR,0.015857284440039643
+12,"1970s,_0",273.0,1,[47],,a_DoctorWho_4,A4W9APAHFWVLO,1,"1970s,",2,6,False,0.03482587064676617,NR,0.01176369198948593
+13,Trevor_0,341.0,3,"[22, 23, 49]",a_DoctorWho_4_qa_0 a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,3,Trevor,2,6,False,0.03482587064676617,NR,0.01469384237514543
+14,Martin_0,808.0,4,"[66, 168, 170, 174]",a_DoctorWho_4_qa_0 a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,4,Martin,2,6,False,0.03482587064676617,NR,0.03481708105313052
+15,played_0,245.0,2,"[6, 26]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,2,played,2,6,False,0.03482587064676617,NR,0.010557159477743784
+16,the_1,746.0,3,"[7, 8, 28]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,3,the,2,3,False,0.03482587064676617,NR,0.03214547334855863
+17,role_0,1253.0,7,"[9, 10, 52, 70, 87, 98, 173]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,7,role,2,4,False,0.03482587064676617,NR,0.053992329900461065
+18,in_1,883.0,6,"[33, 35, 54, 85, 97, 107]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,6,in,2,2,False,0.03482587064676617,NR,0.03804886456672556
+19,Doctor_1,746.0,7,"[11, 37, 55, 88, 89, 108, 109]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,7,Doctor,2,6,False,0.03482587064676617,NR,0.03214547334855863
+20,Who_1,1079.0,8,"[14, 38, 45, 60, 110, 175, 176, 185]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,8,Who,2,3,False,0.03482587064676617,NR,0.046494592148920585
+21,and_0,1049.0,6,"[15, 44, 61, 177, 184, 197]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,6,and,2,3,False,0.03482587064676617,NR,0.04520187874348257
+22,the_2,356.0,5,"[16, 63, 186, 198, 199]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,5,the,2,3,False,0.03482587064676617,NR,0.015340199077864438
+23,Daleks_0,512.0,4,"[94, 181, 188, 200]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,4,Daleks,2,6,False,0.03482587064676617,NR,0.022062308786142112
+24,in_2,64.0,1,[64],a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,1,in,2,2,False,0.03482587064676617,NR,0.002757788598267764
+25,the_3,,0,[],a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,0,the,2,3,False,0.03482587064676617,NR,
+26,Seven_0,73.0,1,[102],a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,1,Seven,2,5,False,0.03482587064676617,NR,0.0031456026198991684
+27,Keys_0,546.0,4,"[2, 3, 65, 79]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,4,Keys,2,4,False,0.03482587064676617,NR,0.02352738397897186
+28,to_0,375.0,2,"[50, 80]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,2,to,2,2,False,0.03482587064676617,NR,0.01615891756797518
+29,Doomsday._0,510.0,5,"[5, 51, 105, 193, 194]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,5,Doomsday.,2,9,False,0.03482587064676617,NR,0.021976127892446243
+30,In_3,73.0,1,[67],a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,1,In,3,2,False,0.03482587064676617,NR,0.0031456026198991684
+31,the_4,311.0,4,"[29, 30, 106, 195]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,4,the,3,3,False,0.03482587064676617,NR,0.013401128969707415
+32,late_0,332.0,3,"[32, 69, 196]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,3,late,3,4,False,0.03482587064676617,NR,0.014306028353514025
+33,"1980s,_0",384.0,3,"[12, 13, 83]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,3,"1980s,",3,6,False,0.03482587064676617,NR,0.016546731589606584
+34,Jon_0,,0,[],a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,0,Jon,3,3,False,0.03482587064676617,NR,
+35,Pertwee_0,1254.0,5,"[59, 74, 111, 112, 113]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,5,Pertwee,3,7,False,0.03482587064676617,NR,0.054035420347309
+36,and_1,467.0,3,"[75, 91, 95]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,3,and,3,3,False,0.03482587064676617,NR,0.02012323867798509
+37,Colin_0,612.0,4,"[76, 93, 99, 187]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,4,Colin,3,5,False,0.03482587064676617,NR,0.026371353470935492
+38,Baker_0,446.0,3,"[78, 100, 116]",a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,3,Baker,3,5,False,0.03482587064676617,NR,0.01921833929417848
+39,both_0,64.0,1,[101],a_DoctorWho_4_qa_3 ,a_DoctorWho_4,A4W9APAHFWVLO,1,both,3,4,False,0.03482587064676617,NR,0.002757788598267764
+40,played_1,69.0,1,[135],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,1,played,3,6,False,0.03482587064676617,NR,0.002973240832507433
+41,the_5,,0,[],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,0,the,3,3,False,0.03482587064676617,NR,
+42,Doctor_2,,0,[],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,0,Doctor,3,6,False,0.03482587064676617,NR,
+43,at_0,,0,[],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,0,at,3,2,False,0.03482587064676617,NR,
+44,different_0,103.0,1,[31],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,1,different,3,9,False,0.03482587064676617,NR,0.004438316025337182
+45,times_1,373.0,2,"[123, 145]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,2,times,3,5,False,0.03482587064676617,NR,0.016072736674279314
+46,during_0,170.0,2,"[0, 146]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,2,during,3,6,False,0.03482587064676617,NR,0.007325375964148748
+47,the_6,168.0,1,[148],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,1,the,3,3,False,0.03482587064676617,NR,0.007239195070452881
+48,run_0,72.0,1,[129],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,1,run,3,3,False,0.03482587064676617,NR,0.0031025121730512343
+49,of_0,65.0,1,[130],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,1,of,3,2,False,0.03482587064676617,NR,0.0028008790451156977
+50,a_0,574.0,2,"[114, 151]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,2,a,3,1,False,0.03482587064676617,NR,0.02473391649071401
+51,play_0,274.0,2,"[115, 152]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,2,play,3,4,False,0.03482587064676617,NR,0.011806782436333865
+52,titled_0,,0,[],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,0,titled,3,6,False,0.03482587064676617,NR,
+53,Doctor_3,,0,[],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,0,Doctor,3,6,False,0.03482587064676617,NR,
+54,Who_2,65.0,1,[119],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,1,Who,3,3,False,0.03482587064676617,NR,0.0028008790451156977
+55,-_0,65.0,1,[138],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,1,-,3,1,False,0.03482587064676617,NR,0.0028008790451156977
+56,The_7,272.0,2,"[120, 139]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,2,The,3,3,False,0.03482587064676617,NR,0.011720601542637998
+57,Ultimate_0,208.0,2,"[121, 122]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,2,Ultimate,3,8,False,0.03482587064676617,NR,0.008962812944370234
+58,Adventure._0,1064.0,6,"[140, 141, 143, 144, 159, 160]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,6,Adventure.,3,10,False,0.03482587064676617,NR,0.04584823544620158
+59,For_0,200.0,1,[124],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,1,For,4,3,False,0.03482587064676617,NR,0.008618089369586763
+60,two_0,378.0,2,"[1, 161]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,2,two,4,3,False,0.03482587064676617,NR,0.01628818890851898
+61,"performances,_0",472.0,5,"[127, 147, 163, 164, 165]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,5,"performances,",4,13,False,0.03482587064676617,NR,0.02033869091222476
+62,while_0,476.0,2,"[131, 132]",a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,2,while,4,5,False,0.03482587064676617,NR,0.020511052699616495
+63,Pertwee_1,170.0,1,[133],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,1,Pertwee,4,7,False,0.03482587064676617,NR,0.007325375964148748
+64,was_0,,0,[],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,0,was,4,3,False,0.03482587064676617,NR,
+65,"ill,_0",,0,[],a_DoctorWho_4_qa_1 ,a_DoctorWho_4,A4W9APAHFWVLO,0,"ill,",4,4,False,0.03482587064676617,NR,
+66,David_0,68.0,1,[155],a_DoctorWho_4_qa_4 ,a_DoctorWho_4,A4W9APAHFWVLO,1,David,4,5,False,0.03482587064676617,NR,0.0029301503856594994
+67,Banks_0,136.0,2,"[156, 157]",a_DoctorWho_4_qa_4 ,a_DoctorWho_4,A4W9APAHFWVLO,2,Banks,4,5,False,0.03482587064676617,NR,0.005860300771318999
+68,(better_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,(better,4,7,False,0.03482587064676617,NR,
+69,known_0,504.0,2,"[142, 158]",,a_DoctorWho_4,A4W9APAHFWVLO,2,known,4,5,False,0.03482587064676617,NR,0.021717585211358643
+70,for_1,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,for,4,3,False,0.03482587064676617,NR,
+71,playing_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,playing,4,7,False,0.03482587064676617,NR,
+72,Cybermen)_0,201.0,1,[166],,a_DoctorWho_4,A4W9APAHFWVLO,1,Cybermen),4,9,False,0.03482587064676617,NR,0.008661179816434696
+73,played_2,71.0,1,[167],,a_DoctorWho_4,A4W9APAHFWVLO,1,played,4,6,False,0.03482587064676617,NR,0.0030594217262033007
+74,the_8,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,the,4,3,False,0.03482587064676617,NR,
+75,Doctor._4,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,Doctor.,4,7,False,0.03482587064676617,NR,
+76,Other_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,Other,5,5,False,0.03482587064676617,NR,
+77,original_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,original,5,8,False,0.03482587064676617,NR,
+78,plays_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,plays,5,5,False,0.03482587064676617,NR,
+79,have_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,have,5,4,False,0.03482587064676617,NR,
+80,been_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,been,5,4,False,0.03482587064676617,NR,
+81,staged_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,staged,5,6,False,0.03482587064676617,NR,
+82,as_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,as,5,2,False,0.03482587064676617,NR,
+83,amateur_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,amateur,5,7,False,0.03482587064676617,NR,
+84,"productions,_0",,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,"productions,",5,12,False,0.03482587064676617,NR,
+85,with_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,with,5,4,False,0.03482587064676617,NR,
+86,other_1,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,other,5,5,False,0.03482587064676617,NR,
+87,actors_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,actors,5,6,False,0.03482587064676617,NR,
+88,playing_1,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,playing,5,7,False,0.03482587064676617,NR,
+89,the_9,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,the,5,3,False,0.03482587064676617,NR,
+90,"Doctor,_5",,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,"Doctor,",5,7,False,0.03482587064676617,NR,
+91,while_1,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,while,5,5,False,0.03482587064676617,NR,
+92,Terry_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,Terry,5,5,False,0.03482587064676617,NR,
+93,Nation_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,Nation,5,6,False,0.03482587064676617,NR,
+94,wrote_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,wrote,5,5,False,0.03482587064676617,NR,
+95,The_10,238.0,2,"[179, 180]",a_DoctorWho_4_qa_2 ,a_DoctorWho_4,A4W9APAHFWVLO,2,The,5,3,False,0.03482587064676617,NR,0.010255526349808248
+96,Curse_0,,0,[],a_DoctorWho_4_qa_2 ,a_DoctorWho_4,A4W9APAHFWVLO,0,Curse,5,5,False,0.03482587064676617,NR,
+97,of_1,,0,[],a_DoctorWho_4_qa_2 ,a_DoctorWho_4,A4W9APAHFWVLO,0,of,5,2,False,0.03482587064676617,NR,
+98,the_11,,0,[],a_DoctorWho_4_qa_2 ,a_DoctorWho_4,A4W9APAHFWVLO,0,the,5,3,False,0.03482587064676617,NR,
+99,"Daleks,_1",,0,[],a_DoctorWho_4_qa_2 ,a_DoctorWho_4,A4W9APAHFWVLO,0,"Daleks,",5,7,False,0.03482587064676617,NR,
+100,a_1,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,a,5,1,False,0.03482587064676617,NR,
+101,stage_1,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,stage,5,5,False,0.03482587064676617,NR,
+102,play_1,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,play,5,4,False,0.03482587064676617,NR,
+103,mounted_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,mounted,5,7,False,0.03482587064676617,NR,
+104,in_4,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,in,5,2,False,0.03482587064676617,NR,
+105,the_12,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,the,5,3,False,0.03482587064676617,NR,
+106,late_1,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,late,5,4,False,0.03482587064676617,NR,
+107,"1960s,_0",,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,"1960s,",5,6,False,0.03482587064676617,NR,
+108,but_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,but,5,3,False,0.03482587064676617,NR,
+109,without_0,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,without,5,7,False,0.03482587064676617,NR,
+110,the_13,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,the,5,3,False,0.03482587064676617,NR,
+111,Doctor._6,,0,[],,a_DoctorWho_4,A4W9APAHFWVLO,0,Doctor.,5,7,False,0.03482587064676617,NR,
+0,A_0,96.0,1,[3],,meco_para_12,A4W9APAHFWVLO,1,A,1,1,True,0.03125,NR,0.003451871561612312
+1,vehicle_0,825.0,3,"[4, 25, 66]",,meco_para_12,A4W9APAHFWVLO,3,vehicle,1,7,True,0.03125,NR,0.029664521232605802
+2,registration_0,127.0,2,"[27, 69]",,meco_para_12,A4W9APAHFWVLO,2,registration,1,12,True,0.03125,NR,0.00456653842004962
+3,plate_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,plate,1,5,True,0.03125,NR,
+4,is_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,is,1,2,True,0.03125,NR,
+5,a_1,,0,[],,meco_para_12,A4W9APAHFWVLO,0,a,1,1,True,0.03125,NR,
+6,metal_0,167.0,1,[33],,meco_para_12,A4W9APAHFWVLO,1,metal,1,5,True,0.03125,NR,0.0060048182373880835
+7,or_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,or,1,2,True,0.03125,NR,
+8,plastic_0,98.0,1,[61],,meco_para_12,A4W9APAHFWVLO,1,plastic,1,7,True,0.03125,NR,0.003523785552479235
+9,plate_1,470.0,4,"[16, 37, 48, 60]",,meco_para_12,A4W9APAHFWVLO,4,plate,1,5,True,0.03125,NR,0.016899787853726943
+10,attached_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,attached,1,8,True,0.03125,NR,
+11,to_0,338.0,1,[39],,meco_para_12,A4W9APAHFWVLO,1,to,1,2,True,0.03125,NR,0.012153464456510015
+12,a_2,,0,[],,meco_para_12,A4W9APAHFWVLO,0,a,1,1,True,0.03125,NR,
+13,vehicle_1,1268.0,4,"[41, 42, 64, 94]",,meco_para_12,A4W9APAHFWVLO,4,vehicle,1,7,True,0.03125,NR,0.04559347020962928
+14,for_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,for,1,3,True,0.03125,NR,
+15,officialidentification_0,683.0,6,"[2, 5, 22, 23, 26, 77]",,meco_para_12,A4W9APAHFWVLO,6,officialidentification,1,22,True,0.03125,NR,0.02455862788105426
+16,purposes._0,128.0,1,[28],,meco_para_12,A4W9APAHFWVLO,1,purposes.,1,9,True,0.03125,NR,0.004602495415483082
+17,All_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,All,2,3,True,0.03125,NR,
+18,countries_0,1064.0,7,"[11, 29, 32, 34, 70, 71, 85]",,meco_para_12,A4W9APAHFWVLO,7,countries,2,9,True,0.03125,NR,0.03825824314120312
+19,require_0,475.0,3,"[35, 62, 63]",,meco_para_12,A4W9APAHFWVLO,3,require,2,7,True,0.03125,NR,0.01707957283089425
+20,registration_1,441.0,3,"[17, 18, 36]",,meco_para_12,A4W9APAHFWVLO,3,registration,2,12,True,0.03125,NR,0.015857034986156558
+21,plates_0,271.0,1,[50],,meco_para_12,A4W9APAHFWVLO,1,plates,2,6,True,0.03125,NR,0.009744345762468088
+22,for_1,103.0,1,[20],,meco_para_12,A4W9APAHFWVLO,1,for,2,3,True,0.03125,NR,0.0037035705296465425
+23,road_0,239.0,2,"[21, 40]",,meco_para_12,A4W9APAHFWVLO,2,road,2,4,True,0.03125,NR,0.008593721908597318
+24,vehicles_0,233.0,2,"[110, 111]",,meco_para_12,A4W9APAHFWVLO,2,vehicles,2,8,True,0.03125,NR,0.008377979935996548
+25,such_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,such,2,4,True,0.03125,NR,
+26,as_0,71.0,1,[97],,meco_para_12,A4W9APAHFWVLO,1,as,2,2,True,0.03125,NR,0.002552946675775772
+27,"cars,_0",104.0,1,[98],,meco_para_12,A4W9APAHFWVLO,1,"cars,",2,5,True,0.03125,NR,0.0037395275250800045
+28,"trucks,and_0",972.0,4,"[6, 81, 99, 114]",,meco_para_12,A4W9APAHFWVLO,4,"trucks,and",2,10,True,0.03125,NR,0.034950199561324655
+29,motorcycles._0,612.0,4,"[9, 30, 31, 83]",,meco_para_12,A4W9APAHFWVLO,4,motorcycles.,2,12,True,0.03125,NR,0.022005681205278488
+30,Whether_0,580.0,4,"[12, 13, 86, 117]",,meco_para_12,A4W9APAHFWVLO,4,Whether,3,7,True,0.03125,NR,0.020855057351407715
+31,they_0,642.0,3,"[14, 72, 87]",,meco_para_12,A4W9APAHFWVLO,3,they,3,4,True,0.03125,NR,0.023084391068282334
+32,are_0,587.0,4,"[15, 19, 49, 73]",,meco_para_12,A4W9APAHFWVLO,4,are,3,3,True,0.03125,NR,0.021106756319441946
+33,required_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,required,3,8,True,0.03125,NR,
+34,for_2,137.0,1,[74],,meco_para_12,A4W9APAHFWVLO,1,for,3,3,True,0.03125,NR,0.0049261083743842365
+35,other_0,210.0,1,[76],,meco_para_12,A4W9APAHFWVLO,1,other,3,5,True,0.03125,NR,0.007550969041026932
+36,"vehicles,_1",64.0,1,[93],,meco_para_12,A4W9APAHFWVLO,1,"vehicles,",3,9,True,0.03125,NR,0.002301247707741541
+37,such_1,468.0,3,"[112, 123, 124]",,meco_para_12,A4W9APAHFWVLO,3,such,3,4,True,0.03125,NR,0.01682787386286002
+38,as__0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,as,3,2,True,0.03125,NR,
+39,"bicycles,_0",272.0,2,"[79, 80]",,meco_para_12,A4W9APAHFWVLO,2,"bicycles,",3,9,True,0.03125,NR,0.00978030275790155
+40,"boats,_0",585.0,3,"[7, 82, 100]",meco_para_12_qa_2 ,meco_para_12,A4W9APAHFWVLO,3,"boats,",3,6,True,0.03125,NR,0.021034842328575023
+41,or_1,140.0,2,"[8, 101]",meco_para_12_qa_2 ,meco_para_12,A4W9APAHFWVLO,2,or,3,2,True,0.03125,NR,0.005033979360684621
+42,"tractors,_0",940.0,4,"[84, 102, 103, 115]",meco_para_12_qa_2 ,meco_para_12,A4W9APAHFWVLO,4,"tractors,",3,9,True,0.03125,NR,0.033799575707453886
+43,may_0,,0,[],meco_para_12_qa_2 ,meco_para_12,A4W9APAHFWVLO,0,may,3,3,True,0.03125,NR,
+44,vary_0,105.0,1,[1],meco_para_12_qa_2 ,meco_para_12,A4W9APAHFWVLO,1,vary,3,4,True,0.03125,NR,0.003775484520513466
+45,by_0,274.0,2,"[105, 119]",meco_para_12_qa_2 ,meco_para_12,A4W9APAHFWVLO,2,by,3,2,True,0.03125,NR,0.009852216748768473
+46,jurisdiction._0,211.0,2,"[107, 120]",meco_para_12_qa_2 ,meco_para_12,A4W9APAHFWVLO,2,jurisdiction.,3,13,True,0.03125,NR,0.007586926036460394
+47,The_0,159.0,2,"[90, 108]",,meco_para_12,A4W9APAHFWVLO,2,The,4,3,True,0.03125,NR,0.005717162273920391
+48,registration_2,167.0,1,[92],,meco_para_12,A4W9APAHFWVLO,1,registration,4,12,True,0.03125,NR,0.0060048182373880835
+49,identifier_0,618.0,4,"[78, 113, 125, 152]",,meco_para_12,A4W9APAHFWVLO,4,identifier,4,10,True,0.03125,NR,0.022221423177879257
+50,is_1,62.0,1,[126],,meco_para_12,A4W9APAHFWVLO,1,is,4,2,True,0.03125,NR,0.002229333716874618
+51,a_3,,0,[],,meco_para_12,A4W9APAHFWVLO,0,a,4,1,True,0.03125,NR,
+52,series_0,,0,[],meco_para_12_qa_3 ,meco_para_12,A4W9APAHFWVLO,0,series,4,6,True,0.03125,NR,
+53,of_0,,0,[],meco_para_12_qa_3 ,meco_para_12,A4W9APAHFWVLO,0,of,4,2,True,0.03125,NR,
+54,letters_0,,0,[],meco_para_12_qa_3 ,meco_para_12,A4W9APAHFWVLO,0,letters,4,7,True,0.03125,NR,
+55,and_0,68.0,1,[127],meco_para_12_qa_3 ,meco_para_12,A4W9APAHFWVLO,1,and,4,3,True,0.03125,NR,0.0024450756894753875
+56,digits_0,235.0,2,"[116, 128]",meco_para_12_qa_3 ,meco_para_12,A4W9APAHFWVLO,2,digits,4,6,True,0.03125,NR,0.008449893926863471
+57,that_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,that,4,4,True,0.03125,NR,
+58,uniquely_0,388.0,2,"[88, 106]",,meco_para_12,A4W9APAHFWVLO,2,uniquely,4,8,True,0.03125,NR,0.013951314228183093
+59,identifies_0,325.0,3,"[51, 138, 139]",,meco_para_12,A4W9APAHFWVLO,3,identifies,4,10,True,0.03125,NR,0.011686023515875013
+60,the_1,262.0,2,"[168, 181]",,meco_para_12,A4W9APAHFWVLO,2,the,4,3,True,0.03125,NR,0.009420732803566935
+61,vehicle_2,,0,[],,meco_para_12,A4W9APAHFWVLO,0,vehicle,4,7,True,0.03125,NR,
+62,owner_0,135.0,1,[142],,meco_para_12,A4W9APAHFWVLO,1,owner,4,5,True,0.03125,NR,0.0048541943835173134
+63,within_0,67.0,1,[143],,meco_para_12,A4W9APAHFWVLO,1,within,4,6,True,0.03125,NR,0.002409118694041926
+64,the_2,301.0,1,[144],,meco_para_12,A4W9APAHFWVLO,1,the,4,3,True,0.03125,NR,0.010823055625471936
+65,issuing_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,issuing,4,7,True,0.03125,NR,
+66,region's_0,72.0,1,[156],,meco_para_12,A4W9APAHFWVLO,1,region's,4,8,True,0.03125,NR,0.0025889036712092336
+67,vehicle_3,,0,[],,meco_para_12,A4W9APAHFWVLO,0,vehicle,4,7,True,0.03125,NR,
+68,register._0,62.0,1,[188],,meco_para_12,A4W9APAHFWVLO,1,register.,4,9,True,0.03125,NR,0.002229333716874618
+69,In_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,In,5,2,True,0.03125,NR,
+70,some_0,306.0,1,[189],,meco_para_12,A4W9APAHFWVLO,1,some,5,4,True,0.03125,NR,0.011002840602639244
+71,"countries,_1",628.0,3,"[52, 89, 166]",,meco_para_12,A4W9APAHFWVLO,3,"countries,",5,10,True,0.03125,NR,0.022580993132213872
+72,the_3,,0,[],,meco_para_12,A4W9APAHFWVLO,0,the,5,3,True,0.03125,NR,
+73,identifier_1,137.0,1,[151],,meco_para_12,A4W9APAHFWVLO,1,identifier,5,10,True,0.03125,NR,0.0049261083743842365
+74,is_2,,0,[],,meco_para_12,A4W9APAHFWVLO,0,is,5,2,True,0.03125,NR,
+75,unique_0,168.0,2,"[141, 171]",,meco_para_12,A4W9APAHFWVLO,2,unique,5,6,True,0.03125,NR,0.006040775232821546
+76,within_1,681.0,1,[153],,meco_para_12,A4W9APAHFWVLO,1,within,5,6,True,0.03125,NR,0.024486713890187337
+77,the_4,303.0,1,[154],,meco_para_12,A4W9APAHFWVLO,1,the,5,3,True,0.03125,NR,0.01089496961633886
+78,entire_0,174.0,2,"[155, 173]",,meco_para_12,A4W9APAHFWVLO,2,entire,5,6,True,0.03125,NR,0.006256517205422315
+79,"country,_0",402.0,2,"[157, 158]",,meco_para_12,A4W9APAHFWVLO,2,"country,",5,8,True,0.03125,NR,0.014454712164251555
+80,while_0,1357.0,6,"[134, 145, 146, 159, 175, 176]",,meco_para_12,A4W9APAHFWVLO,6,while,5,5,True,0.03125,NR,0.04879364280320737
+81,in_1,780.0,5,"[129, 133, 160, 161, 187]",,meco_para_12,A4W9APAHFWVLO,5,in,5,2,True,0.03125,NR,0.028046456438100033
+82,others_0,1468.0,4,"[131, 147, 148, 177]",,meco_para_12,A4W9APAHFWVLO,4,others,5,6,True,0.03125,NR,0.0527848692963216
+83,it_0,73.0,1,[162],,meco_para_12,A4W9APAHFWVLO,1,it,5,2,True,0.03125,NR,0.002624860666642695
+84,is_3,575.0,2,"[137, 164]",,meco_para_12,A4W9APAHFWVLO,2,is,5,2,True,0.03125,NR,0.020675272374240408
+85,unique_1,247.0,2,"[165, 190]",,meco_para_12,A4W9APAHFWVLO,2,unique,5,6,True,0.03125,NR,0.00888137787206501
+86,within_2,206.0,1,[150],,meco_para_12,A4W9APAHFWVLO,1,within,5,6,True,0.03125,NR,0.007407141059293085
+87,a_4,,0,[],,meco_para_12,A4W9APAHFWVLO,0,a,5,1,True,0.03125,NR,
+88,state_0,136.0,1,[122],,meco_para_12,A4W9APAHFWVLO,1,state,5,5,True,0.03125,NR,0.004890151378950775
+89,or_2,571.0,4,"[169, 170, 183, 184]",,meco_para_12,A4W9APAHFWVLO,4,or,5,2,True,0.03125,NR,0.02053144439250656
+90,province._0,64.0,1,[185],,meco_para_12,A4W9APAHFWVLO,1,province.,5,9,True,0.03125,NR,0.002301247707741541
+91,France_0,,0,[],meco_para_12_qa_0 ,meco_para_12,A4W9APAHFWVLO,0,France,6,6,True,0.03125,NR,
+92,was_0,781.0,1,[172],meco_para_12_qa_0 ,meco_para_12,A4W9APAHFWVLO,1,was,6,3,True,0.03125,NR,0.028082413433533494
+93,the_5,,0,[],meco_para_12_qa_0 ,meco_para_12,A4W9APAHFWVLO,0,the,6,3,True,0.03125,NR,
+94,first_0,105.0,1,[174],meco_para_12_qa_0 ,meco_para_12,A4W9APAHFWVLO,1,first,6,5,True,0.03125,NR,0.003775484520513466
+95,country_1,344.0,1,[186],meco_para_12_qa_0 ,meco_para_12,A4W9APAHFWVLO,1,country,6,7,True,0.03125,NR,0.012369206429110784
+96,to_1,,0,[],meco_para_12_qa_0 ,meco_para_12,A4W9APAHFWVLO,0,to,6,2,True,0.03125,NR,
+97,introduce_0,543.0,3,"[130, 132, 178]",meco_para_12_qa_0 ,meco_para_12,A4W9APAHFWVLO,3,introduce,6,9,True,0.03125,NR,0.01952464852036964
+98,the_6,337.0,3,"[0, 163, 180]",,meco_para_12,A4W9APAHFWVLO,3,the,6,3,True,0.03125,NR,0.012117507461076553
+99,registration_3,,0,[],,meco_para_12,A4W9APAHFWVLO,0,registration,6,12,True,0.03125,NR,
+100,"plate,_2",97.0,1,[121],,meco_para_12,A4W9APAHFWVLO,1,"plate,",6,6,True,0.03125,NR,0.0034878285570457733
+101,in_2,,0,[],,meco_para_12,A4W9APAHFWVLO,0,in,6,2,True,0.03125,NR,
+102,the_7,,0,[],,meco_para_12,A4W9APAHFWVLO,0,the,6,3,True,0.03125,NR,
+103,late_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,late,6,4,True,0.03125,NR,
+104,nineteenth_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,nineteenth,6,10,True,0.03125,NR,
+105,century._0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,century.,6,8,True,0.03125,NR,
+106,Early_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,Early,7,5,True,0.03125,NR,
+107,twentieth_0,73.0,1,[135],,meco_para_12,A4W9APAHFWVLO,1,twentieth,7,9,True,0.03125,NR,0.002624860666642695
+108,century_1,,0,[],,meco_para_12,A4W9APAHFWVLO,0,century,7,7,True,0.03125,NR,
+109,plates_1,136.0,1,[136],,meco_para_12,A4W9APAHFWVLO,1,plates,7,6,True,0.03125,NR,0.004890151378950775
+110,varied_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,varied,7,6,True,0.03125,NR,
+111,in_3,,0,[],,meco_para_12,A4W9APAHFWVLO,0,in,7,2,True,0.03125,NR,
+112,size_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,size,7,4,True,0.03125,NR,
+113,and_1,,0,[],,meco_para_12,A4W9APAHFWVLO,0,and,7,3,True,0.03125,NR,
+114,shape_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,shape,7,5,True,0.03125,NR,
+115,from_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,from,7,4,True,0.03125,NR,
+116,one_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,one,7,3,True,0.03125,NR,
+117,jurisdiction_1,,0,[],,meco_para_12,A4W9APAHFWVLO,0,jurisdiction,7,12,True,0.03125,NR,
+118,to_2,,0,[],,meco_para_12,A4W9APAHFWVLO,0,to,7,2,True,0.03125,NR,
+119,the_8,,0,[],,meco_para_12,A4W9APAHFWVLO,0,the,7,3,True,0.03125,NR,
+120,"next,_0",,0,[],,meco_para_12,A4W9APAHFWVLO,0,"next,",7,5,True,0.03125,NR,
+121,such_2,,0,[],,meco_para_12,A4W9APAHFWVLO,0,such,7,4,True,0.03125,NR,
+122,that_1,,0,[],,meco_para_12,A4W9APAHFWVLO,0,that,7,4,True,0.03125,NR,
+123,if_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,if,7,2,True,0.03125,NR,
+124,a_5,,0,[],,meco_para_12,A4W9APAHFWVLO,0,a,7,1,True,0.03125,NR,
+125,person_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,person,7,6,True,0.03125,NR,
+126,"moved,_0",,0,[],,meco_para_12,A4W9APAHFWVLO,0,"moved,",7,6,True,0.03125,NR,
+127,new_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,new,7,3,True,0.03125,NR,
+128,holes_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,holes,7,5,True,0.03125,NR,
+129,would_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,would,7,5,True,0.03125,NR,
+130,need_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,need,7,4,True,0.03125,NR,
+131,to_3,,0,[],,meco_para_12,A4W9APAHFWVLO,0,to,7,2,True,0.03125,NR,
+132,be_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,be,7,2,True,0.03125,NR,
+133,drilled_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,drilled,7,7,True,0.03125,NR,
+134,into_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,into,7,4,True,0.03125,NR,
+135,the_9,,0,[],,meco_para_12,A4W9APAHFWVLO,0,the,7,3,True,0.03125,NR,
+136,automobile_0,198.0,1,[191],,meco_para_12,A4W9APAHFWVLO,1,automobile,7,10,True,0.03125,NR,0.007119485095825393
+137,to_4,,0,[],,meco_para_12,A4W9APAHFWVLO,0,to,7,2,True,0.03125,NR,
+138,support_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,support,7,7,True,0.03125,NR,
+139,the_10,,0,[],,meco_para_12,A4W9APAHFWVLO,0,the,7,3,True,0.03125,NR,
+140,new_1,,0,[],,meco_para_12,A4W9APAHFWVLO,0,new,7,3,True,0.03125,NR,
+141,plate._3,,0,[],,meco_para_12,A4W9APAHFWVLO,0,plate.,7,6,True,0.03125,NR,
+142,Standardization_0,,0,[],meco_para_12_qa_1 ,meco_para_12,A4W9APAHFWVLO,0,Standardization,8,15,True,0.03125,NR,
+143,of_1,,0,[],meco_para_12_qa_1 ,meco_para_12,A4W9APAHFWVLO,0,of,8,2,True,0.03125,NR,
+144,plates_2,,0,[],meco_para_12_qa_1 ,meco_para_12,A4W9APAHFWVLO,0,plates,8,6,True,0.03125,NR,
+145,came_0,,0,[],meco_para_12_qa_1 ,meco_para_12,A4W9APAHFWVLO,0,came,8,4,True,0.03125,NR,
+146,in_4,,0,[],meco_para_12_qa_1 ,meco_para_12,A4W9APAHFWVLO,0,in,8,2,True,0.03125,NR,
+147,the_11,,0,[],meco_para_12_qa_1 ,meco_para_12,A4W9APAHFWVLO,0,the,8,3,True,0.03125,NR,
+148,late_1,,0,[],meco_para_12_qa_1 ,meco_para_12,A4W9APAHFWVLO,0,late,8,4,True,0.03125,NR,
+149,"fifties,_0",,0,[],meco_para_12_qa_1 ,meco_para_12,A4W9APAHFWVLO,0,"fifties,",8,8,True,0.03125,NR,
+150,when_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,when,8,4,True,0.03125,NR,
+151,automobile_1,,0,[],,meco_para_12,A4W9APAHFWVLO,0,automobile,8,10,True,0.03125,NR,
+152,manufacturers_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,manufacturers,8,13,True,0.03125,NR,
+153,came_1,,0,[],,meco_para_12,A4W9APAHFWVLO,0,came,8,4,True,0.03125,NR,
+154,to_5,,0,[],,meco_para_12,A4W9APAHFWVLO,0,to,8,2,True,0.03125,NR,
+155,an_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,an,8,2,True,0.03125,NR,
+156,agreement_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,agreement,8,9,True,0.03125,NR,
+157,with_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,with,8,4,True,0.03125,NR,
+158,governments_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,governments,8,11,True,0.03125,NR,
+159,and__0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,and,8,3,True,0.03125,NR,
+160,international_0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,international,8,13,True,0.03125,NR,
+161,organizations._0,,0,[],,meco_para_12,A4W9APAHFWVLO,0,organizations.,8,14,True,0.03125,NR,

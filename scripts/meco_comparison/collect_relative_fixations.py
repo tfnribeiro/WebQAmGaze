@@ -59,15 +59,16 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
                and not worker.features_series['target_error']
                and worker.features_series['webgazer_sample_rate'] > 10
                and worker.features_series['approved_flag'] > 0
+               #and worker.features_series['avg_roi_last_val'] > 20
                and worker.features_series['screen_x'] > 1110
                and worker.features_series['screen_y'] > 615]
 
         if WORKERS is not None:
             # filenames with "link" are from volunteers, without from Mturk
             if WORKERS == "mturk_only":
-                all_workers = [worker for worker in all_workers if "link" not in worker.worker_id and worker.participant_type != "volunteer" and worker.participant_type != "lab"]
+                all_workers = [worker for worker in all_workers if "link" not in worker.worker_id and worker.features_series['participant_type'] != "volunteer" and worker.features_series['participant_type'] != "lab"]
             elif WORKERS == "volunteer_only":
-                all_workers = [worker for worker in all_workers if "link" in worker.worker_id or worker.participant_type == "volunteer" or worker.participant_type == "lab"]
+                all_workers = [worker for worker in all_workers if "link" in worker.worker_id or worker.features_series['participant_type'] == "volunteer" or worker.features_series['participant_type'] == "lab"]
             else:
                 print("Check WORKERS variable!")
 
@@ -99,8 +100,13 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
                     except IndexError:
                         import pdb;pdb.set_trace()
                     df_worker = df_worker.rename(columns={'word_id': 'word_id_orig'})
+                    df_worker["worker_id"] = selected_worker.worker_id
                     df_worker['countFix'] = df_worker['FixCount'].astype(int)
-                    df_worker['word_id'] = df_worker['word_id_orig'].apply(lambda x: x.split('_')[0])
+                    df_worker['word_id'] = df_worker['word_id_orig']
+                    if trial == "meco_para_7" and selected_worker.features_series.set_language == 'TR':
+                        # There is a word gettin removed because it has two trailing underscores.
+                        df_worker.loc[df_worker['word_id'].str.match("__rengini_0"), "word_id"] = "rengini_0"
+                    df_worker['word_id'] = df_worker['word_id'].apply(lambda x: x.split('_')[0])
                     df_worker['sentence_id'] = 1
                     df_worker['word_length'] = df_worker['word_id'].apply(lambda x: len(x))
                     df_worker['TRT'] = df_worker['TRT'].astype(float)
@@ -115,6 +121,15 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
                     for sen_num, (idx0, idx1) in enumerate(zip(df_worker.query("word_id.str.endswith('.')").index[:-1],
                                                                df_worker.query("word_id.str.endswith('.')").index[1:])):
                         df_worker.loc[idx0+1:idx1, 'sentence_id'] = sen_num + 2
+                    
+                    # Sentence 6 was terminated early in the WebQAmData, Trial 12 in DE.
+                    if trial == "meco_para_12" and selected_worker.features_series.set_language == 'DE':
+                        df_worker.loc[df_worker.sentence_id > 6, "sentence_id"] = df_worker.loc[df_worker.sentence_id > 6, "sentence_id"] - 1
+                    
+                    # Sentence 1 is too long on WebQAmData, Trial 12 in ES.
+                    if trial == "meco_para_12" and selected_worker.features_series.set_language == 'ES':
+                        index_to_fix = df_worker.loc[df_worker.word_id_orig == "oficial_0"].index[0]
+                        df_worker.loc[df_worker.index > index_to_fix, "sentence_id"] = df_worker.loc[df_worker.index > index_to_fix, "sentence_id"] + 1
 
                     if MECO:
                         for sen_num, sentence in df_worker.groupby('sentence_id'):
@@ -123,7 +138,7 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
                     else:
                         df_worker['relFix'] = [
                             float(s) / np.nansum(df_worker['TRT'].values) for s in df_worker['TRT'].values]
-
+                        
                     df_out = pd.concat([df_worker, df_out])
 
                     #  uncomment to plot for first trials
@@ -212,20 +227,21 @@ def average_features_id(language, experiments, WORKERS=None):
                 column_names_rel.append(column_rel)
                 column_names_trt.append(column_trt)
                 column_names_count.append(column_count)
+                df_worker["word_id_text_id_task_key"] = df_worker["word_id_orig"] + "_" + df_worker["text_id"] + "_" + df_worker["task_type"]
                 if len(df) > 0:
                     try:
-                        #print(df_worker)
-                        df = df.merge(df_worker[['word_id_orig', 'relFix', 'countFix', 'TRT']].rename(
+                        df = df.merge(df_worker[['word_id_text_id_task_key', 'relFix', 'countFix', 'TRT']].rename(
                             columns={'relFix': column_rel, 'TRT': column_trt, 'countFix': column_count}),
-                            on='word_id_orig', how='inner')
+                            on='word_id_text_id_task_key', how='left')
                     except KeyError:
                         import pdb;pdb.set_trace()
                 else:
-                    df = df_worker[['word_id_orig', 'relFix', 'word_id', 'countFix', 'TRT']].rename(
+                    df = df_worker[['word_id_text_id_task_key', 'word_id_orig', 'relFix', 'word_id', 'countFix', 'TRT']].rename(
                         columns={'relFix': column_rel, 'TRT': column_trt, 'countFix': column_count})
         df_out = pd.DataFrame(columns=['relFix', 'TRT', 'countFix', 'word_id', 'word_id_orig', 'text_id', 'sentence_id'])
         try:
             df_out['relFix'] = df[column_names_rel].mean(axis=1)
+            df_out['word_id_orig'] = df['word_id_orig']
         except KeyError:
             import pdb;
             pdb.set_trace()
@@ -262,7 +278,7 @@ if __name__ == '__main__':
         print(experiments)
         print()
 
-        MECO = True
+        MECO = False
         WORKERS = None # "mturk_only", "volunteer_only" or None (= "all")
 
         FILTER_QUALITY = False
