@@ -74,6 +74,7 @@ These were obtained using *spaCy* (https://spacy.io/) pipelines with the excepti
 ### Libraries used in this project:
 - **jsPsych**: https://github.com/jspsych/jsPsych
 - **psiTurk**: https://github.com/NYUCCL/psiTurk
+- **WebGazer**: https://webgazer.cs.brown.edu/
 
 ### Generating an experiment:
 
