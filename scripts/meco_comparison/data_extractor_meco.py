@@ -78,8 +78,6 @@ def read_meco_file(filename, language, data_path, out_dir):
                 if trialid==3 and 10 in text.sentnum.unique() and 'en' in subj:
                     text.loc[text.sentnum>5, 'sentnum'] = text[text.sentnum>5].sentnum-1
 
-                word_order = 0
-
                 for w_id, row in text.sort_values("ianum").iterrows():
 
                     trt = float(row['dur']) if row['dur'] != "NA" else np.nan
@@ -157,7 +155,7 @@ def extract_features(data_dir, language):
 
     # MECO texts used in WebQAmGaze
     if language == 'en':
-        all_texts = [3, 7, 11, 12]
+        all_texts = [i for i in range(1, 13)] #[3, 7, 11, 12]
     elif language == 'es':
         all_texts = [12]
     elif language == 'de':

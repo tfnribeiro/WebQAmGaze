@@ -1,182 +1,931 @@
-,word_id_orig,TRT,FixCount,scanPath,Span_word_is_in,text_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
-0,In_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,In,1,2,True,0.1365079365079365,NR,
-1,competitive_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,competitive,1,11,True,0.1365079365079365,NR,
-2,"sports,_0",,0,[],meco_para_3_qa_1 ,meco_para_3,0,"sports,",1,7,True,0.1365079365079365,NR,
-3,doping_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,doping,1,6,True,0.1365079365079365,NR,
-4,is_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,is,1,2,True,0.1365079365079365,NR,
-5,the_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,the,1,3,True,0.1365079365079365,NR,
-6,use_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,use,1,3,True,0.1365079365079365,NR,
-7,of_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,of,1,2,True,0.1365079365079365,NR,
-8,banned_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,banned,1,6,True,0.1365079365079365,NR,
-9,performance-enhancing_0,545.0,4,"[21, 22, 25, 28]",meco_para_3_qa_1 ,meco_para_3,4,performance-enhancing,1,21,True,0.1365079365079365,NR,0.334561080417434
-10,drugs_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,drugs,1,5,True,0.1365079365079365,NR,
-11,by_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,by,1,2,True,0.1365079365079365,NR,
-12,athletic_0,539.0,5,"[31, 33, 51, 52, 53]",meco_para_3_qa_1 ,meco_para_3,5,athletic,1,8,True,0.1365079365079365,NR,0.33087783916513197
-13,competitors._0,545.0,2,"[72, 73]",meco_para_3_qa_1 ,meco_para_3,2,competitors.,1,12,True,0.1365079365079365,NR,0.334561080417434
-14,The_1,,0,[],meco_para_3_qa_1 ,meco_para_3,0,The,2,3,True,0.1365079365079365,NR,
-15,term_0,135.0,1,[7],meco_para_3_qa_1 ,meco_para_3,1,term,2,4,True,0.1365079365079365,NR,0.14210526315789473
-16,doping_1,,0,[],meco_para_3_qa_1 ,meco_para_3,0,doping,2,6,True,0.1365079365079365,NR,
-17,is_1,,0,[],meco_para_3_qa_1 ,meco_para_3,0,is,2,2,True,0.1365079365079365,NR,
-18,widely_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,widely,2,6,True,0.1365079365079365,NR,
-19,used_0,70.0,1,[62],meco_para_3_qa_1 ,meco_para_3,1,used,2,4,True,0.1365079365079365,NR,0.07368421052631578
-20,by_1,,0,[],meco_para_3_qa_1 ,meco_para_3,0,by,2,2,True,0.1365079365079365,NR,
-21,organizations_0,577.0,6,"[26, 27, 45, 46, 49, 50]",meco_para_3_qa_1 ,meco_para_3,6,organizations,2,13,True,0.1365079365079365,NR,0.6073684210526316
-22,which_0,101.0,1,[68],meco_para_3_qa_1 ,meco_para_3,1,which,2,5,True,0.1365079365079365,NR,0.10631578947368421
-23,regulate_0,,0,[],,meco_para_3,0,regulate,2,8,True,0.1365079365079365,NR,
-24,sporting_0,67.0,1,[71],,meco_para_3,1,sporting,2,8,True,0.1365079365079365,NR,0.07052631578947369
-25,competitions._0,,0,[],,meco_para_3,0,competitions.,2,13,True,0.1365079365079365,NR,
-26,The_2,70.0,1,[8],,meco_para_3,1,The,3,3,True,0.1365079365079365,NR,0.011647254575707155
-27,use_1,,0,[],,meco_para_3,0,use,3,3,True,0.1365079365079365,NR,
-28,of_1,374.0,2,"[16, 60]",,meco_para_3,2,of,3,2,True,0.1365079365079365,NR,0.062229617304492515
-29,drugs_1,135.0,2,"[17, 61]",,meco_para_3,2,drugs,3,5,True,0.1365079365079365,NR,0.022462562396006656
-30,to_0,67.0,1,[43],,meco_para_3,1,to,3,2,True,0.1365079365079365,NR,0.011148086522462563
-31,enhance_0,404.0,3,"[48, 63, 65]",,meco_para_3,3,enhance,3,7,True,0.1365079365079365,NR,0.06722129783693843
-32,performance_0,305.0,3,"[47, 66, 67]",,meco_para_3,3,performance,3,11,True,0.1365079365079365,NR,0.050748752079866885
-33,is_2,68.0,1,[69],,meco_para_3,1,is,3,2,True,0.1365079365079365,NR,0.011314475873544094
-34,largely_0,,0,[],,meco_para_3,0,largely,3,7,True,0.1365079365079365,NR,
-35,considered_0,335.0,4,"[34, 104, 139, 140]",,meco_para_3,4,considered,3,10,True,0.1365079365079365,NR,0.05574043261231281
-36,"unethical,_0",542.0,5,"[35, 54, 103, 156, 157]",,meco_para_3,5,"unethical,",3,10,True,0.1365079365079365,NR,0.09018302828618968
-37,and_0,169.0,2,"[106, 107]",,meco_para_3,2,and,3,3,True,0.1365079365079365,NR,0.0281198003327787
-38,is_3,,0,[],,meco_para_3,0,is,3,2,True,0.1365079365079365,NR,
-39,therefore_0,,0,[],,meco_para_3,0,therefore,3,9,True,0.1365079365079365,NR,
-40,prohibited_0,66.0,1,[18],,meco_para_3,1,prohibited,3,10,True,0.1365079365079365,NR,0.010981697171381031
-41,by_2,,0,[],,meco_para_3,0,by,3,2,True,0.1365079365079365,NR,
-42,most_0,345.0,3,"[19, 20, 64]",,meco_para_3,3,most,3,4,True,0.1365079365079365,NR,0.05740432612312812
-43,international_0,168.0,2,"[86, 97]",,meco_para_3,2,international,3,13,True,0.1365079365079365,NR,0.027953410981697173
-44,sports_1,68.0,1,[102],,meco_para_3,1,sports,3,6,True,0.1365079365079365,NR,0.011314475873544094
-45,"organizations,_1",237.0,2,"[87, 141]",,meco_para_3,2,"organizations,",3,14,True,0.1365079365079365,NR,0.039434276206322796
-46,including_0,239.0,3,"[13, 55, 158]",,meco_para_3,3,including,3,9,True,0.1365079365079365,NR,0.03976705490848586
-47,the_3,135.0,2,"[12, 37]",,meco_para_3,2,the,3,3,True,0.1365079365079365,NR,0.022462562396006656
-48,International_1,1771.0,12,"[9, 10, 11, 56, 57, 59, 76, 108, 143, 179, 180, 181]",,meco_para_3,12,International,3,13,True,0.1365079365079365,NR,0.29467554076539104
-49,Olympic_0,444.0,2,"[42, 79]",,meco_para_3,2,Olympic,3,7,True,0.1365079365079365,NR,0.07387687188019967
-50,Committee._0,68.0,1,[148],,meco_para_3,1,Committee.,3,10,True,0.1365079365079365,NR,0.011314475873544094
-51,"Furthermore,_0",135.0,2,"[85, 98]",,meco_para_3,2,"Furthermore,",4,12,True,0.1365079365079365,NR,0.3994082840236686
-52,athletes_0,103.0,1,[101],,meco_para_3,1,athletes,4,8,True,0.1365079365079365,NR,0.3047337278106509
-53,who_0,,0,[],,meco_para_3,0,who,4,3,True,0.1365079365079365,NR,
-54,take_0,,0,[],,meco_para_3,0,take,4,4,True,0.1365079365079365,NR,
-55,explicit._0,100.0,1,[88],,meco_para_3,1,explicit.,4,9,True,0.1365079365079365,NR,0.2958579881656805
-56,measures_0,479.0,5,"[89, 90, 91, 142, 155]",,meco_para_3,5,measures,5,8,True,0.1365079365079365,NR,0.07615262321144674
-57,to_1,337.0,2,"[74, 159]",,meco_para_3,2,to,5,2,True,0.1365079365079365,NR,0.05357710651828299
-58,evade_0,987.0,7,"[38, 39, 40, 77, 92, 160, 178]",,meco_para_3,7,evade,5,5,True,0.1365079365079365,NR,0.15691573926868044
-59,detection_0,2003.0,9,"[78, 80, 81, 93, 109, 144, 161, 162, 167]",,meco_para_3,9,detection,5,9,True,0.1365079365079365,NR,0.31844197138314784
-60,exacerbate_0,615.0,6,"[83, 116, 118, 125, 147, 187]",,meco_para_3,6,exacerbate,5,10,True,0.1365079365079365,NR,0.09777424483306836
-61,the_4,850.0,4,"[84, 96, 117, 124]",,meco_para_3,4,the,5,3,True,0.1365079365079365,NR,0.13513513513513514
-62,ethical_0,271.0,3,"[122, 123, 152]",,meco_para_3,3,ethical,5,7,True,0.1365079365079365,NR,0.04308426073131955
-63,violation_0,239.0,2,"[99, 153]",,meco_para_3,2,violation,5,9,True,0.1365079365079365,NR,0.037996820349761526
-64,with_0,,0,[],,meco_para_3,0,with,5,4,True,0.1365079365079365,NR,
-65,overt_0,,0,[],,meco_para_3,0,overt,5,5,True,0.1365079365079365,NR,
-66,deception_0,,0,[],,meco_para_3,0,deception,5,9,True,0.1365079365079365,NR,
-67,and_1,136.0,1,[174],,meco_para_3,1,and,5,3,True,0.1365079365079365,NR,0.021621621621621623
-68,cheating._0,373.0,3,"[175, 176, 222]",,meco_para_3,3,cheating.,5,9,True,0.1365079365079365,NR,0.05930047694753577
-69,Despite_0,612.0,3,"[75, 110, 177]",,meco_para_3,3,Despite,6,7,True,0.1365079365079365,NR,0.0929384965831435
-70,its_0,,0,[],,meco_para_3,0,its,6,3,True,0.1365079365079365,NR,
-71,prevalence_0,2667.0,17,"[2, 3, 4, 5, 94, 112, 113, 114, 119, 120, 121, 126, 127, 166, 168, 169, 183]",,meco_para_3,17,prevalence,6,10,True,0.1365079365079365,NR,0.40501138952164006
-72,in_1,643.0,3,"[115, 145, 146]",,meco_para_3,3,in,6,2,True,0.1365079365079365,NR,0.0976461655277145
-73,the_5,,0,[],,meco_para_3,0,the,6,3,True,0.1365079365079365,NR,
-74,headlines_0,171.0,2,"[130, 151]",,meco_para_3,2,headlines,6,9,True,0.1365079365079365,NR,0.025968109339407745
-75,"recently,_0",170.0,1,[100],,meco_para_3,1,"recently,",6,9,True,0.1365079365079365,NR,0.025816249050873197
-76,doping_2,133.0,1,[154],,meco_para_3,1,doping,6,6,True,0.1365079365079365,NR,0.02019741837509491
-77,is_4,,0,[],,meco_para_3,0,is,6,2,True,0.1365079365079365,NR,
-78,not_0,,0,[],,meco_para_3,0,not,6,3,True,0.1365079365079365,NR,
-79,a_0,,0,[],,meco_para_3,0,a,6,1,True,0.1365079365079365,NR,
-80,new_0,,0,[],,meco_para_3,0,new,6,3,True,0.1365079365079365,NR,
-81,phenomenon;_0,474.0,2,"[223, 224]",,meco_para_3,2,phenomenon;,6,11,True,0.1365079365079365,NR,0.07198177676537586
-82,in_2,130.0,2,"[209, 225]",,meco_para_3,2,in,6,2,True,0.1365079365079365,NR,0.019741837509491267
-83,"fact,_0",411.0,4,"[111, 207, 208, 211]",,meco_para_3,4,"fact,",6,5,True,0.1365079365079365,NR,0.06241457858769932
-84,it_0,,0,[],,meco_para_3,0,it,6,2,True,0.1365079365079365,NR,
-85,is_5,,0,[],,meco_para_3,0,is,6,2,True,0.1365079365079365,NR,
-86,as_0,134.0,2,"[184, 186]",,meco_para_3,2,as,6,2,True,0.1365079365079365,NR,0.020349278663629462
-87,old_0,294.0,3,"[95, 164, 170]",,meco_para_3,3,old,6,3,True,0.1365079365079365,NR,0.04464692482915718
-88,as_1,68.0,1,[128],,meco_para_3,1,as,6,2,True,0.1365079365079365,NR,0.010326499620349278
-89,sport_0,477.0,2,"[129, 188]",,meco_para_3,2,sport,6,5,True,0.1365079365079365,NR,0.0724373576309795
-90,itself._0,201.0,2,"[131, 190]",,meco_para_3,2,itself.,6,7,True,0.1365079365079365,NR,0.03052391799544419
-91,From_0,240.0,2,"[132, 133]",,meco_para_3,2,From,7,4,True,0.1365079365079365,NR,0.05355947333184557
-92,the_6,373.0,2,"[135, 138]",,meco_para_3,2,the,7,3,True,0.1365079365079365,NR,0.08324034813657666
-93,use_2,,0,[],,meco_para_3,0,use,7,3,True,0.1365079365079365,NR,
-94,of_2,,0,[],meco_para_3_qa_2 ,meco_para_3,0,of,7,2,True,0.1365079365079365,NR,
-95,substances_0,,0,[],meco_para_3_qa_2 ,meco_para_3,0,substances,7,10,True,0.1365079365079365,NR,
-96,in_3,67.0,1,[238],meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,1,in,7,2,True,0.1365079365079365,NR,0.014952019638473556
-97,ancient_0,136.0,1,[210],meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,1,ancient,7,7,True,0.1365079365079365,NR,0.030350368221379157
-98,chariot_0,271.0,3,"[202, 203, 242]",meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,3,chariot,7,7,True,0.1365079365079365,NR,0.060477571970542286
-99,races_0,,0,[],meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,0,races,7,5,True,0.1365079365079365,NR,
-100,to_2,103.0,1,[226],meco_para_3_qa_2 ,meco_para_3,1,to,7,2,True,0.1365079365079365,NR,0.02298594063825039
-101,more_0,236.0,2,"[165, 185]",meco_para_3_qa_2 ,meco_para_3,2,more,7,4,True,0.1365079365079365,NR,0.05266681544298148
-102,recent_0,340.0,2,"[150, 171]",meco_para_3_qa_2 ,meco_para_3,2,recent,7,6,True,0.1365079365079365,NR,0.07587592055344788
-103,controversies_0,580.0,4,"[134, 172, 189, 192]",meco_para_3_qa_2 ,meco_para_3,4,controversies,7,13,True,0.1365079365079365,NR,0.12943539388529346
-104,in_4,102.0,1,[191],meco_para_3_qa_2 ,meco_para_3,1,in,7,2,True,0.1365079365079365,NR,0.02276277616603437
-105,baseball_0,174.0,2,"[136, 198]",meco_para_3_qa_2 ,meco_para_3,2,baseball,7,8,True,0.1365079365079365,NR,0.03883061816558804
-106,and_2,,0,[],meco_para_3_qa_2 ,meco_para_3,0,and,7,3,True,0.1365079365079365,NR,
-107,"cycling,_0",169.0,1,[199],meco_para_3_qa_2 ,meco_para_3,1,"cycling,",7,8,True,0.1365079365079365,NR,0.03771479580450792
-108,popular_0,234.0,2,"[201, 261]",meco_para_3_qa_2 ,meco_para_3,2,popular,7,7,True,0.1365079365079365,NR,0.052220486498549434
-109,views_0,204.0,2,"[241, 281]",meco_para_3_qa_2 ,meco_para_3,2,views,7,5,True,0.1365079365079365,NR,0.04552555233206874
-110,among_0,170.0,2,"[204, 206]",meco_para_3_qa_2 ,meco_para_3,2,among,7,5,True,0.1365079365079365,NR,0.03793796027672394
-111,athletes_1,136.0,1,[229],meco_para_3_qa_2 ,meco_para_3,1,athletes,7,8,True,0.1365079365079365,NR,0.030350368221379157
-112,have_0,374.0,3,"[228, 244, 265]",meco_para_3_qa_2 ,meco_para_3,3,have,7,4,True,0.1365079365079365,NR,0.08346351260879269
-113,varied_0,271.0,1,[213],meco_para_3_qa_2 ,meco_para_3,1,varied,7,6,True,0.1365079365079365,NR,0.060477571970542286
-114,widely_1,,0,[],meco_para_3_qa_2 ,meco_para_3,0,widely,7,6,True,0.1365079365079365,NR,
-115,over_0,169.0,1,[237],meco_para_3_qa_2 ,meco_para_3,1,over,7,4,True,0.1365079365079365,NR,0.03771479580450792
-116,the_7,,0,[],meco_para_3_qa_2 ,meco_para_3,0,the,7,3,True,0.1365079365079365,NR,
-117,years._0,132.0,2,"[137, 197]",meco_para_3_qa_2 ,meco_para_3,2,years.,7,6,True,0.1365079365079365,NR,0.029457710332515062
-118,In_5,,0,[],meco_para_3_qa_2 ,meco_para_3,0,In,8,2,True,0.1365079365079365,NR,
-119,recent_1,,0,[],,meco_para_3,0,recent,8,6,True,0.1365079365079365,NR,
-120,"decades,_0",303.0,2,"[200, 240]",,meco_para_3,2,"decades,",8,8,True,0.1365079365079365,NR,0.08901292596944771
-121,authorities_0,388.0,4,"[205, 262, 263, 280]",,meco_para_3,4,authorities,8,11,True,0.1365079365079365,NR,0.11398354876615746
-122,and_3,224.0,3,"[264, 282, 283]",,meco_para_3,3,and,8,3,True,0.1365079365079365,NR,0.06580493537015276
-123,sporting_1,69.0,1,[284],,meco_para_3,1,sporting,8,8,True,0.1365079365079365,NR,0.02027027027027027
-124,organizations_2,546.0,5,"[212, 230, 245, 246, 248]",,meco_para_3,5,organizations,8,13,True,0.1365079365079365,NR,0.16039952996474735
-125,have_1,545.0,3,"[214, 233, 249]",,meco_para_3,3,have,8,4,True,0.1365079365079365,NR,0.1601057579318449
-126,tried_0,135.0,2,"[250, 266]",,meco_para_3,2,tried,8,5,True,0.1365079365079365,NR,0.03965922444183314
-127,to_3,342.0,2,"[220, 221]",,meco_para_3,2,to,8,2,True,0.1365079365079365,NR,0.10047003525264395
-128,strictly_0,206.0,3,"[0, 196, 277]",,meco_para_3,3,strictly,8,8,True,0.1365079365079365,NR,0.060517038777908344
-129,regulate_1,171.0,1,[259],,meco_para_3,1,regulate,8,8,True,0.1365079365079365,NR,0.05023501762632197
-130,the_8,,0,[],meco_para_3_qa_0 ,meco_para_3,0,the,8,3,True,0.1365079365079365,NR,
-131,use_3,,0,[],meco_para_3_qa_0 ,meco_para_3,0,use,8,3,True,0.1365079365079365,NR,
-132,of_3,104.0,1,[298],meco_para_3_qa_0 ,meco_para_3,1,of,8,2,True,0.1365079365079365,NR,0.03055229142185664
-133,drugs_2,371.0,4,"[279, 299, 300, 311]",meco_para_3_qa_0 ,meco_para_3,4,drugs,8,5,True,0.1365079365079365,NR,0.10898942420681551
-134,in_6,,0,[],meco_para_3_qa_0 ,meco_para_3,0,in,8,2,True,0.1365079365079365,NR,
-135,sport._1,,0,[],meco_para_3_qa_0 ,meco_para_3,0,sport.,8,6,True,0.1365079365079365,NR,
-136,The_9,,0,[],meco_para_3_qa_0 ,meco_para_3,0,The,9,3,True,0.1365079365079365,NR,
-137,primary_0,,0,[],meco_para_3_qa_0 ,meco_para_3,0,primary,9,7,True,0.1365079365079365,NR,
-138,reasons_0,342.0,4,"[149, 216, 271, 285]",meco_para_3_qa_0 ,meco_para_3,4,reasons,9,7,True,0.1365079365079365,NR,0.05493093478959203
-139,for_0,308.0,3,"[268, 274, 292]",meco_para_3_qa_0 ,meco_para_3,3,for,9,3,True,0.1365079365079365,NR,0.04946996466431095
-140,this_0,171.0,1,[251],meco_para_3_qa_0 ,meco_para_3,1,this,9,4,True,0.1365079365079365,NR,0.027465467394796016
-141,ban_0,135.0,1,[219],meco_para_3_qa_0 ,meco_para_3,1,ban,9,3,True,0.1365079365079365,NR,0.021683263732733698
-142,are_0,102.0,1,[195],meco_para_3_qa_0 ,meco_para_3,1,are,9,3,True,0.1365079365079365,NR,0.01638291037584324
-143,the_10,306.0,2,"[255, 256]",meco_para_3_qa_0 ,meco_para_3,2,the,9,3,True,0.1365079365079365,NR,0.04914873112752972
-144,health_0,,0,[],meco_para_3_qa_0 ,meco_para_3,0,health,9,6,True,0.1365079365079365,NR,
-145,risks_0,,0,[],meco_para_3_qa_0 ,meco_para_3,0,risks,9,5,True,0.1365079365079365,NR,
-146,of_4,,0,[],meco_para_3_qa_0 ,meco_para_3,0,of,9,2,True,0.1365079365079365,NR,
-147,performance-enhancing_1,373.0,2,"[301, 312]",meco_para_3_qa_0 ,meco_para_3,2,performance-enhancing,9,21,True,0.1365079365079365,NR,0.05991005460970125
-148,"drugs,_3",204.0,1,[302],meco_para_3_qa_0 ,meco_para_3,1,"drugs,",9,6,True,0.1365079365079365,NR,0.03276582075168648
-149,the_11,,0,[],meco_para_3_qa_0 ,meco_para_3,0,the,9,3,True,0.1365079365079365,NR,
-150,equality_0,169.0,2,"[289, 290]",meco_para_3_qa_0 ,meco_para_3,2,equality,9,8,True,0.1365079365079365,NR,0.027144233858014778
-151,of_5,409.0,3,"[215, 272, 286]",meco_para_3_qa_0 ,meco_para_3,3,of,9,2,True,0.1365079365079365,NR,0.06569225827176357
-152,opportunity_0,1085.0,6,"[194, 218, 252, 273, 291, 293]",meco_para_3_qa_0 ,meco_para_3,6,opportunity,9,11,True,0.1365079365079365,NR,0.17426919370382268
-153,for_1,206.0,2,"[254, 257]",meco_para_3_qa_0 ,meco_para_3,2,for,9,3,True,0.1365079365079365,NR,0.03308705428846771
-154,"athletes,_2",954.0,7,"[236, 276, 278, 294, 295, 296, 297]",meco_para_3_qa_0 ,meco_para_3,7,"athletes,",9,9,True,0.1365079365079365,NR,0.15322839704465147
-155,and_4,,0,[],meco_para_3_qa_0 ,meco_para_3,0,and,9,3,True,0.1365079365079365,NR,
-156,the_12,,0,[],,meco_para_3,0,the,9,3,True,0.1365079365079365,NR,
-157,positive_0,,0,[],,meco_para_3,0,positive,9,8,True,0.1365079365079365,NR,
-158,example_0,,0,[],,meco_para_3,0,example,9,7,True,0.1365079365079365,NR,
-159,to_4,136.0,1,[313],,meco_para_3,1,to,9,2,True,0.1365079365079365,NR,0.02184388050112432
-160,the_13,,0,[],,meco_para_3,0,the,9,3,True,0.1365079365079365,NR,
-161,public_0,,0,[],,meco_para_3,0,public,9,6,True,0.1365079365079365,NR,
-162,set_0,,0,[],,meco_para_3,0,set,9,3,True,0.1365079365079365,NR,
-163,by_3,306.0,2,"[288, 304]",,meco_para_3,2,by,9,2,True,0.1365079365079365,NR,0.04914873112752972
-164,drug-free_0,715.0,3,"[270, 287, 306]",,meco_para_3,3,drug-free,9,9,True,0.1365079365079365,NR,0.11484098939929328
-165,sport._2,305.0,1,[269],,meco_para_3,1,sport.,9,6,True,0.1365079365079365,NR,0.04898811435913909
-166,Anti-doping_0,712.0,7,"[234, 235, 253, 275, 307, 308, 309]",,meco_para_3,7,Anti-doping,10,11,True,0.1365079365079365,NR,0.8036117381489842
-167,authorities_1,,0,[],,meco_para_3,0,authorities,10,11,True,0.1365079365079365,NR,
-168,have_2,,0,[],,meco_para_3,0,have,10,4,True,0.1365079365079365,NR,
-169,repeatedly_0,,0,[],,meco_para_3,0,repeatedly,10,10,True,0.1365079365079365,NR,
-170,emphasized_0,,0,[],,meco_para_3,0,emphasized,10,10,True,0.1365079365079365,NR,
-171,that_0,,0,[],,meco_para_3,0,that,10,4,True,0.1365079365079365,NR,
-172,using_0,174.0,1,[305],,meco_para_3,1,using,10,5,True,0.1365079365079365,NR,0.1963882618510158
-173, performance-enhancing_0,,0,[],,meco_para_3,0, performance-enhancing,10,22,True,0.1365079365079365,NR,
-174,drugs_4,,0,[],,meco_para_3,0,drugs,10,5,True,0.1365079365079365,NR,
-175,goes_0,,0,[],,meco_para_3,0,goes,10,4,True,0.1365079365079365,NR,
-176,against_0,,0,[],,meco_para_3,0,against,10,7,True,0.1365079365079365,NR,
-177,the_14,,0,[],,meco_para_3,0,the,10,3,True,0.1365079365079365,NR,
-178,‘spirit_0,,0,[],,meco_para_3,0,‘spirit,10,7,True,0.1365079365079365,NR,
-179,of_6,,0,[],,meco_para_3,0,of,10,2,True,0.1365079365079365,NR,
-180,sport’._0,,0,[],,meco_para_3,0,sport’.,10,7,True,0.1365079365079365,NR,
+,word_id_orig,TRT,FixCount,Scan_path,Span_word_is_in,text_id,worker_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
+0,The_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,The,1,3,True,0.0,IS,
+1,most_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,most,1,4,True,0.0,IS,
+2,frequent_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,frequent,1,8,True,0.0,IS,
+3,musical_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,musical,1,7,True,0.0,IS,
+4,contributor_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,contributor,1,11,True,0.0,IS,
+5,during_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,during,1,6,True,0.0,IS,
+6,the_1,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,the,1,3,True,0.0,IS,
+7,first_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,first,1,5,True,0.0,IS,
+8,15_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,15,1,2,True,0.0,IS,
+9,years_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,years,1,5,True,0.0,IS,
+10,was_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,was,1,3,True,0.0,IS,
+11,Dudley_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,Dudley,1,6,True,0.0,IS,
+12,"Simpson,_0",,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,"Simpson,",1,8,True,0.0,IS,
+13,who_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,who,1,3,True,0.0,IS,
+14,is_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,is,1,2,True,0.0,IS,
+15,also_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,also,1,4,True,0.0,IS,
+16,well_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,well,1,4,True,0.0,IS,
+17,known_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,known,1,5,True,0.0,IS,
+18,for_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,for,1,3,True,0.0,IS,
+19,his_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,his,1,3,True,0.0,IS,
+20,theme_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,theme,1,5,True,0.0,IS,
+21,and__0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,and,1,3,True,0.0,IS,
+22,incidental_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,incidental,1,10,True,0.0,IS,
+23,music_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,music,1,5,True,0.0,IS,
+24,for_1,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,p6-volunteer-cognition,0,for,1,3,True,0.0,IS,
+25,Blake's_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,Blake's,1,7,True,0.0,IS,
+26,"7,_0",,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,"7,",1,2,True,0.0,IS,
+27,and_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,and,1,3,True,0.0,IS,
+28,for_2,104.0,1,[8],,a_DoctorWho_3,p6-volunteer-cognition,1,for,1,3,True,0.0,IS,0.11134903640256959
+29,his_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,his,1,3,True,0.0,IS,
+30,haunting_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,haunting,1,8,True,0.0,IS,
+31,theme_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,theme,1,5,True,0.0,IS,
+32,music_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,music,1,5,True,0.0,IS,
+33,and_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,and,1,3,True,0.0,IS,
+34,score_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,score,1,5,True,0.0,IS,
+35,for_3,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,for,1,3,True,0.0,IS,
+36,the_2,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,the,1,3,True,0.0,IS,
+37,original_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,original,1,8,True,0.0,IS,
+38,1970s_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,1970s,1,5,True,0.0,IS,
+39,version_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,version,1,7,True,0.0,IS,
+40,of_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,of,1,2,True,0.0,IS,
+41,The_3,67.0,2,"[0, 5]",,a_DoctorWho_3,p6-volunteer-cognition,2,The,1,3,True,0.0,IS,0.07173447537473233
+42,Tomorrow_0,67.0,1,[6],,a_DoctorWho_3,p6-volunteer-cognition,1,Tomorrow,1,8,True,0.0,IS,0.07173447537473233
+43,People._0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,People.,1,7,True,0.0,IS,
+44,Simpson's_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,Simpson's,2,9,True,0.0,IS,
+45,first_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,first,2,5,True,0.0,IS,
+46,Doctor_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,Doctor,2,6,True,0.0,IS,
+47,Who_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,Who,2,3,True,0.0,IS,
+48,score_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,score,2,5,True,0.0,IS,
+49,was_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,was,2,3,True,0.0,IS,
+50,Planet_0,101.0,1,[4],a_DoctorWho_3_qa_1 ,a_DoctorWho_3,p6-volunteer-cognition,1,Planet,2,6,True,0.0,IS,0.10813704496788008
+51,of_1,103.0,1,[16],a_DoctorWho_3_qa_1 ,a_DoctorWho_3,p6-volunteer-cognition,1,of,2,2,True,0.0,IS,0.11027837259100642
+52,Giants_0,134.0,2,"[1, 18]",a_DoctorWho_3_qa_1 ,a_DoctorWho_3,p6-volunteer-cognition,2,Giants,2,6,True,0.0,IS,0.14346895074946467
+53,(1964)_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,(1964),2,6,True,0.0,IS,
+54,and_2,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,and,2,3,True,0.0,IS,
+55,he_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,he,2,2,True,0.0,IS,
+56,went_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,went,2,4,True,0.0,IS,
+57,on_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,on,2,2,True,0.0,IS,
+58,to_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,to,2,2,True,0.0,IS,
+59,write_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,write,2,5,True,0.0,IS,
+60,music_2,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,music,2,5,True,0.0,IS,
+61,for_4,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,for,2,3,True,0.0,IS,
+62,many_0,68.0,1,[13],,a_DoctorWho_3,p6-volunteer-cognition,1,many,2,4,True,0.0,IS,0.0728051391862955
+63,adventures_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,adventures,2,10,True,0.0,IS,
+64,of_2,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,of,2,2,True,0.0,IS,
+65,the_4,,0,[],a_DoctorWho_3_qa_2 ,a_DoctorWho_3,p6-volunteer-cognition,0,the,2,3,True,0.0,IS,
+66,1960s_0,,0,[],a_DoctorWho_3_qa_2 ,a_DoctorWho_3,p6-volunteer-cognition,0,1960s,2,5,True,0.0,IS,
+67,and_3,,0,[],a_DoctorWho_3_qa_2 ,a_DoctorWho_3,p6-volunteer-cognition,0,and,2,3,True,0.0,IS,
+68,"1970s,_1",82.0,1,[2],a_DoctorWho_3_qa_2 ,a_DoctorWho_3,p6-volunteer-cognition,1,"1970s,",2,6,True,0.0,IS,0.08779443254817987
+69,including_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,including,2,9,True,0.0,IS,
+70,most_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,most,2,4,True,0.0,IS,
+71,of_3,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,of,2,2,True,0.0,IS,
+72,the_5,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,the,2,3,True,0.0,IS,
+73,stories_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,stories,2,7,True,0.0,IS,
+74,of_4,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,of,2,2,True,0.0,IS,
+75,the_6,69.0,1,[14],,a_DoctorWho_3,p6-volunteer-cognition,1,the,2,3,True,0.0,IS,0.07387580299785867
+76,Jon_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,Jon,2,3,True,0.0,IS,
+77,Pertwee/Tom_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,Pertwee/Tom,2,11,True,0.0,IS,
+78,Baker_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,Baker,2,5,True,0.0,IS,
+79,"periods,_0",,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,"periods,",2,8,True,0.0,IS,
+80,ending_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,ending,2,6,True,0.0,IS,
+81,with_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,with,2,4,True,0.0,IS,
+82,The_7,,0,[],a_DoctorWho_3_qa_3 ,a_DoctorWho_3,p6-volunteer-cognition,0,The,2,3,True,0.0,IS,
+83,Horns_0,,0,[],a_DoctorWho_3_qa_3 ,a_DoctorWho_3,p6-volunteer-cognition,0,Horns,2,5,True,0.0,IS,
+84,of_5,,0,[],a_DoctorWho_3_qa_3 ,a_DoctorWho_3,p6-volunteer-cognition,0,of,2,2,True,0.0,IS,
+85,Nimon_0,,0,[],a_DoctorWho_3_qa_3 ,a_DoctorWho_3,p6-volunteer-cognition,0,Nimon,2,5,True,0.0,IS,
+86,(1979)._0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,(1979).,2,7,True,0.0,IS,
+87,He_1,70.0,1,[15],,a_DoctorWho_3,p6-volunteer-cognition,1,He,3,2,True,0.0,IS,0.07494646680942184
+88,also._1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,also.,3,5,True,0.0,IS,
+89,made_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,made,4,4,True,0.0,IS,
+90,a_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,a,4,1,True,0.0,IS,
+91,cameo_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,cameo,4,5,True,0.0,IS,
+92,appearance_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,appearance,4,10,True,0.0,IS,
+93,in_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,in,4,2,True,0.0,IS,
+94,The_8,69.0,1,[11],a_DoctorWho_3_qa_4 ,a_DoctorWho_3,p6-volunteer-cognition,1,The,4,3,True,0.0,IS,0.07387580299785867
+95,Talons_0,,0,[],a_DoctorWho_3_qa_4 ,a_DoctorWho_3,p6-volunteer-cognition,0,Talons,4,6,True,0.0,IS,
+96,of_6,,0,[],a_DoctorWho_3_qa_4 ,a_DoctorWho_3,p6-volunteer-cognition,0,of,4,2,True,0.0,IS,
+97,Weng-Chiang_0,,0,[],a_DoctorWho_3_qa_4 ,a_DoctorWho_3,p6-volunteer-cognition,0,Weng-Chiang,4,11,True,0.0,IS,
+98,(as_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,(as,4,3,True,0.0,IS,
+99,a_1,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,a,4,1,True,0.0,IS,
+100,Music_3,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,Music,4,5,True,0.0,IS,
+101,hall_0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,hall,4,4,True,0.0,IS,
+102,conductor)._0,,0,[],,a_DoctorWho_3,p6-volunteer-cognition,0,conductor).,4,11,True,0.0,IS,
+0,Construction_0,69.0,1,[18],a_Construction_0_qa_0 ,a_Construction_0,p6-volunteer-cognition,1,Construction,1,12,True,0.029411764705882353,IS,0.04149128081779916
+1,is_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,is,1,2,True,0.029411764705882353,IS,
+2,the_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,the,1,3,True,0.029411764705882353,IS,
+3,process_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,process,1,7,True,0.029411764705882353,IS,
+4,of_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,of,1,2,True,0.029411764705882353,IS,
+5,constructing_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,constructing,1,12,True,0.029411764705882353,IS,
+6,a_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,a,1,1,True,0.029411764705882353,IS,
+7,building_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,building,1,8,True,0.029411764705882353,IS,
+8,or_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,or,1,2,True,0.029411764705882353,IS,
+9,infrastructure._0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,infrastructure.,1,15,True,0.029411764705882353,IS,
+10,Construction_1,410.0,5,"[6, 19, 20, 22, 28]",,a_Construction_0,p6-volunteer-cognition,5,Construction,2,12,True,0.029411764705882353,IS,0.2465423932651834
+11,differs_0,238.0,2,"[7, 8]",,a_Construction_0,p6-volunteer-cognition,2,differs,2,7,True,0.029411764705882353,IS,0.14311485267588694
+12,from_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,from,2,4,True,0.029411764705882353,IS,
+13,manufacturing_0,136.0,1,[32],,a_Construction_0,p6-volunteer-cognition,1,manufacturing,2,13,True,0.029411764705882353,IS,0.08177991581479255
+14,in_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,in,2,2,True,0.029411764705882353,IS,
+15,that_0,68.0,1,[14],,a_Construction_0,p6-volunteer-cognition,1,that,2,4,True,0.029411764705882353,IS,0.040889957907396274
+16,manufacturing_1,,0,[],a_Construction_0_qa_1 ,a_Construction_0,p6-volunteer-cognition,0,manufacturing,2,13,True,0.029411764705882353,IS,
+17,typically_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,typically,2,9,True,0.029411764705882353,IS,
+18,involves_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,involves,2,8,True,0.029411764705882353,IS,
+19,mass_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,mass,2,4,True,0.029411764705882353,IS,
+20,production_0,204.0,3,"[9, 10, 26]",,a_Construction_0,p6-volunteer-cognition,3,production,2,10,True,0.029411764705882353,IS,0.12266987372218882
+21,of_1,,0,[],,a_Construction_0,p6-volunteer-cognition,0,of,2,2,True,0.029411764705882353,IS,
+22,similar_0,126.0,2,"[2, 15]",,a_Construction_0,p6-volunteer-cognition,2,similar,2,7,True,0.029411764705882353,IS,0.07576668671076368
+23,items_0,137.0,2,"[0, 33]",,a_Construction_0,p6-volunteer-cognition,2,items,2,5,True,0.029411764705882353,IS,0.08238123872519543
+24,without_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,without,2,7,True,0.029411764705882353,IS,
+25,a_1,,0,[],,a_Construction_0,p6-volunteer-cognition,0,a,2,1,True,0.029411764705882353,IS,
+26,designated_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,designated,2,10,True,0.029411764705882353,IS,
+27,"purchaser,_0",,0,[],,a_Construction_0,p6-volunteer-cognition,0,"purchaser,",2,10,True,0.029411764705882353,IS,
+28,while_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,while,2,5,True,0.029411764705882353,IS,
+29,construction_2,,0,[],,a_Construction_0,p6-volunteer-cognition,0,construction,2,12,True,0.029411764705882353,IS,
+30,typically_1,,0,[],,a_Construction_0,p6-volunteer-cognition,0,typically,2,9,True,0.029411764705882353,IS,
+31,takes_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,takes,2,5,True,0.029411764705882353,IS,
+32,place_0,103.0,1,[3],,a_Construction_0,p6-volunteer-cognition,1,place,2,5,True,0.029411764705882353,IS,0.0619362597714973
+33,on_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,on,2,2,True,0.029411764705882353,IS,
+34,location_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,location,2,8,True,0.029411764705882353,IS,
+35,for_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,for,2,3,True,0.029411764705882353,IS,
+36,a_2,,0,[],a_Construction_0_qa_4 ,a_Construction_0,p6-volunteer-cognition,0,a,2,1,True,0.029411764705882353,IS,
+37,known_0,,0,[],a_Construction_0_qa_4 ,a_Construction_0,p6-volunteer-cognition,0,known,2,5,True,0.029411764705882353,IS,
+38,client._0,,0,[],a_Construction_0_qa_4 ,a_Construction_0,p6-volunteer-cognition,0,client.,2,7,True,0.029411764705882353,IS,
+39,Construction_3,,0,[],,a_Construction_0,p6-volunteer-cognition,0,Construction,3,12,True,0.029411764705882353,IS,
+40,as_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,as,3,2,True,0.029411764705882353,IS,
+41,an_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,an,3,2,True,0.029411764705882353,IS,
+42,industry_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,industry,3,8,True,0.029411764705882353,IS,
+43,comprises_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,comprises,3,9,True,0.029411764705882353,IS,
+44,six_0,70.0,1,[12],a_Construction_0_qa_2 ,a_Construction_0,p6-volunteer-cognition,1,six,3,3,True,0.029411764705882353,IS,0.04209260372820205
+45,to_0,102.0,1,[13],a_Construction_0_qa_2 ,a_Construction_0,p6-volunteer-cognition,1,to,3,2,True,0.029411764705882353,IS,0.06133493686109441
+46,nine_0,,0,[],a_Construction_0_qa_2 ,a_Construction_0,p6-volunteer-cognition,0,nine,3,4,True,0.029411764705882353,IS,
+47,percent_0,,0,[],a_Construction_0_qa_2 ,a_Construction_0,p6-volunteer-cognition,0,percent,3,7,True,0.029411764705882353,IS,
+48,of_2,,0,[],,a_Construction_0,p6-volunteer-cognition,0,of,3,2,True,0.029411764705882353,IS,
+49,the_1,,0,[],,a_Construction_0,p6-volunteer-cognition,0,the,3,3,True,0.029411764705882353,IS,
+50,gross_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,gross,3,5,True,0.029411764705882353,IS,
+51,domestic_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,domestic,3,8,True,0.029411764705882353,IS,
+52,product_0,,0,[],,a_Construction_0,p6-volunteer-cognition,0,product,3,7,True,0.029411764705882353,IS,
+53,of_3,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,of,3,2,True,0.029411764705882353,IS,
+54,developed_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,developed,3,9,True,0.029411764705882353,IS,
+55,countries._0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,countries.,3,10,True,0.029411764705882353,IS,
+56,Construction_4,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,Construction,4,12,True,0.029411764705882353,IS,
+57,starts_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,starts,4,6,True,0.029411764705882353,IS,
+58,with_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,with,4,4,True,0.029411764705882353,IS,
+59,planningcitation_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,planningcitation,4,16,True,0.029411764705882353,IS,
+60,needed]_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,needed],4,7,True,0.029411764705882353,IS,
+61,"design,_0",,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,"design,",4,7,True,0.029411764705882353,IS,
+62,and_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,and,4,3,True,0.029411764705882353,IS,
+63,financing_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,financing,4,9,True,0.029411764705882353,IS,
+64,and_1,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,and,4,3,True,0.029411764705882353,IS,
+65,continues_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,continues,4,9,True,0.029411764705882353,IS,
+66,until_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,until,4,5,True,0.029411764705882353,IS,
+67,the_2,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,the,4,3,True,0.029411764705882353,IS,
+68,project_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,project,4,7,True,0.029411764705882353,IS,
+69,is_1,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,is,4,2,True,0.029411764705882353,IS,
+70,built_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,built,4,5,True,0.029411764705882353,IS,
+71,and_2,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,and,4,3,True,0.029411764705882353,IS,
+72,ready_0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,ready,4,5,True,0.029411764705882353,IS,
+73,for_1,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,for,4,3,True,0.029411764705882353,IS,
+74,use._0,,0,[],a_Construction_0_qa_3 ,a_Construction_0,p6-volunteer-cognition,0,use.,4,4,True,0.029411764705882353,IS,
+0,BSkyB's_0,69.0,1,[6],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,BSkyB's,1,7,True,0.030303030303030304,IS,0.02823240589198036
+1,standard_0,69.0,1,[7],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,standard,1,8,True,0.030303030303030304,IS,0.02823240589198036
+2,definition_0,138.0,1,[4],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,definition,1,10,True,0.030303030303030304,IS,0.05646481178396072
+3,broadcasts_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,broadcasts,1,10,True,0.030303030303030304,IS,
+4,are_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,are,1,3,True,0.030303030303030304,IS,
+5,in_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,in,1,2,True,0.030303030303030304,IS,
+6,DVB-compliant_0,,0,[],a_SkyUnitedKingdom_0_qa_0 ,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,DVB-compliant,1,13,True,0.030303030303030304,IS,
+7,"MPEG-2,_0",109.0,1,[17],a_SkyUnitedKingdom_0_qa_0 ,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,"MPEG-2,",1,7,True,0.030303030303030304,IS,0.04459901800327332
+8,with_0,68.0,1,[16],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,with,1,4,True,0.030303030303030304,IS,0.027823240589198037
+9,the_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,the,1,3,True,0.030303030303030304,IS,
+10,Sky_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,Sky,1,3,True,0.030303030303030304,IS,
+11,Movies_0,68.0,1,[8],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,Movies,1,6,True,0.030303030303030304,IS,0.027823240589198037
+12,and_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,and,1,3,True,0.030303030303030304,IS,
+13,Sky_1,68.0,1,[13],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,Sky,1,3,True,0.030303030303030304,IS,0.027823240589198037
+14,Box_0,69.0,1,[12],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,Box,1,3,True,0.030303030303030304,IS,0.02823240589198036
+15,Office_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,Office,1,6,True,0.030303030303030304,IS,
+16,channels_0,169.0,2,"[20, 25]",,a_SkyUnitedKingdom_0,p6-volunteer-cognition,2,channels,1,8,True,0.030303030303030304,IS,0.06914893617021277
+17,including_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,including,1,9,True,0.030303030303030304,IS,
+18,optional_0,263.0,2,"[14, 27]",,a_SkyUnitedKingdom_0,p6-volunteer-cognition,2,optional,1,8,True,0.030303030303030304,IS,0.10761047463175123
+19,Dolby_0,204.0,1,[28],a_SkyUnitedKingdom_0_qa_1 ,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,Dolby,1,5,True,0.030303030303030304,IS,0.08346972176759411
+20,Digital_0,,0,[],a_SkyUnitedKingdom_0_qa_1 ,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,Digital,1,7,True,0.030303030303030304,IS,
+21,soundtracks_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,soundtracks,1,11,True,0.030303030303030304,IS,
+22,for_0,272.0,2,"[9, 10]",,a_SkyUnitedKingdom_0,p6-volunteer-cognition,2,for,1,3,True,0.030303030303030304,IS,0.11129296235679215
+23,recent_0,63.0,1,[19],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,recent,1,6,True,0.030303030303030304,IS,0.025777414075286414
+24,"films,_0",101.0,2,"[0, 30]",,a_SkyUnitedKingdom_0,p6-volunteer-cognition,2,"films,",1,6,True,0.030303030303030304,IS,0.04132569558101473
+25,although_0,477.0,4,"[1, 2, 18, 31]",,a_SkyUnitedKingdom_0,p6-volunteer-cognition,4,although,1,8,True,0.030303030303030304,IS,0.1951718494271686
+26,these_0,171.0,2,"[3, 21]",,a_SkyUnitedKingdom_0,p6-volunteer-cognition,2,these,1,5,True,0.030303030303030304,IS,0.06996726677577741
+27,are_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,are,1,3,True,0.030303030303030304,IS,
+28,only_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,only,1,4,True,0.030303030303030304,IS,
+29,accessible_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,accessible,1,10,True,0.030303030303030304,IS,
+30,with_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,with,1,4,True,0.030303030303030304,IS,
+31,a_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,a,1,1,True,0.030303030303030304,IS,
+32,Sky+_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,Sky+,1,4,True,0.030303030303030304,IS,
+33,box._1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,box.,1,4,True,0.030303030303030304,IS,
+34,Sky+_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,Sky+,2,4,True,0.030303030303030304,IS,
+35,HD_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,HD,2,2,True,0.030303030303030304,IS,
+36,material_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,material,2,8,True,0.030303030303030304,IS,
+37,is_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,is,2,2,True,0.030303030303030304,IS,
+38,broadcast_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,broadcast,2,9,True,0.030303030303030304,IS,
+39,using_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,using,2,5,True,0.030303030303030304,IS,
+40,MPEG-4_0,,0,[],a_SkyUnitedKingdom_0_qa_2 ,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,MPEG-4,2,6,True,0.030303030303030304,IS,
+41,and_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,and,2,3,True,0.030303030303030304,IS,
+42,most_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,most,2,4,True,0.030303030303030304,IS,
+43,of_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,of,2,2,True,0.030303030303030304,IS,
+44,the_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,the,2,3,True,0.030303030303030304,IS,
+45,HD_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,HD,2,2,True,0.030303030303030304,IS,
+46,material_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,material,2,8,True,0.030303030303030304,IS,
+47,uses_0,66.0,1,[11],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,1,uses,2,4,True,0.030303030303030304,IS,0.027004909983633387
+48,the_2,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,the,2,3,True,0.030303030303030304,IS,
+49,DVB-S2__0,,0,[],a_SkyUnitedKingdom_0_qa_4 ,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,DVB-S2,2,6,True,0.030303030303030304,IS,
+50,standard._1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,standard.,2,9,True,0.030303030303030304,IS,
+51,Interactive_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,Interactive,3,11,True,0.030303030303030304,IS,
+52,services_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,services,3,8,True,0.030303030303030304,IS,
+53,and_2,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,and,3,3,True,0.030303030303030304,IS,
+54,7-day_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,7-day,3,5,True,0.030303030303030304,IS,
+55,EPG_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,EPG,3,3,True,0.030303030303030304,IS,
+56,use_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,use,3,3,True,0.030303030303030304,IS,
+57,the_3,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,the,3,3,True,0.030303030303030304,IS,
+58,proprietary_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,proprietary,3,11,True,0.030303030303030304,IS,
+59,OpenTV_0,,0,[],a_SkyUnitedKingdom_0_qa_3 ,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,OpenTV,3,6,True,0.030303030303030304,IS,
+60,"system,_0",,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,"system,",3,7,True,0.030303030303030304,IS,
+61,with_2,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,with,3,4,True,0.030303030303030304,IS,
+62,set-top_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,set-top,3,7,True,0.030303030303030304,IS,
+63,boxes_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,boxes,3,5,True,0.030303030303030304,IS,
+64,including_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,including,3,9,True,0.030303030303030304,IS,
+65,modems_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,modems,3,6,True,0.030303030303030304,IS,
+66,for_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,for,3,3,True,0.030303030303030304,IS,
+67,a_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,a,3,1,True,0.030303030303030304,IS,
+68,return_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,return,3,6,True,0.030303030303030304,IS,
+69,path._0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,path.,3,5,True,0.030303030303030304,IS,
+70,Sky_2,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,Sky,4,3,True,0.030303030303030304,IS,
+71,"News,_0",,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,"News,",4,5,True,0.030303030303030304,IS,
+72,amongst_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,amongst,4,7,True,0.030303030303030304,IS,
+73,other_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,other,4,5,True,0.030303030303030304,IS,
+74,"channels,_1",,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,"channels,",4,9,True,0.030303030303030304,IS,
+75,provides_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,provides,4,8,True,0.030303030303030304,IS,
+76,a_2,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,a,4,1,True,0.030303030303030304,IS,
+77,pseudo-video_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,pseudo-video,4,12,True,0.030303030303030304,IS,
+78,on_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,on,4,2,True,0.030303030303030304,IS,
+79,demand_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,demand,4,6,True,0.030303030303030304,IS,
+80,interactive_1,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,interactive,4,11,True,0.030303030303030304,IS,
+81,service_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,service,4,7,True,0.030303030303030304,IS,
+82,by_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,by,4,2,True,0.030303030303030304,IS,
+83,broadcasting_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,broadcasting,4,12,True,0.030303030303030304,IS,
+84,looping_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,looping,4,7,True,0.030303030303030304,IS,
+85,video_0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,video,4,5,True,0.030303030303030304,IS,
+86,streams._0,,0,[],,a_SkyUnitedKingdom_0,p6-volunteer-cognition,0,streams.,4,8,True,0.030303030303030304,IS,
+0,Islamist_0,,0,[],a_Islamism_1_qa_0 ,a_Islamism_1,p6-volunteer-cognition,0,Islamist,1,8,True,0.0,IS,
+1,movements_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,movements,1,9,True,0.0,IS,
+2,such_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,such,1,4,True,0.0,IS,
+3,as_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,as,1,2,True,0.0,IS,
+4,the_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,the,1,3,True,0.0,IS,
+5,Muslim_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,Muslim,1,6,True,0.0,IS,
+6,"Brotherhood,_0",,0,[],,a_Islamism_1,p6-volunteer-cognition,0,"Brotherhood,",1,12,True,0.0,IS,
+7,‘are_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,‘are,1,4,True,0.0,IS,
+8,well_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,well,1,4,True,0.0,IS,
+9,known_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,known,1,5,True,0.0,IS,
+10,for_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,for,1,3,True,0.0,IS,
+11,providing_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,providing,1,9,True,0.0,IS,
+12,"shelters,_0",,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,"shelters,",1,9,True,0.0,IS,
+13,educational_0,67.0,1,[16],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,1,educational,1,11,True,0.0,IS,0.019313923320841742
+14,"assistance,_0",,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,"assistance,",1,11,True,0.0,IS,
+15,free_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,free,1,4,True,0.0,IS,
+16,or_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,or,1,2,True,0.0,IS,
+17,low_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,low,1,3,True,0.0,IS,
+18,cost_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,cost,1,4,True,0.0,IS,
+19,medical_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,medical,1,7,True,0.0,IS,
+20,"clinics,_0",,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,"clinics,",1,8,True,0.0,IS,
+21,housing_0,69.0,1,[22],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,1,housing,1,7,True,0.0,IS,0.01989045834534448
+22,assistance_1,373.0,3,"[15, 23, 24]",a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,3,assistance,1,10,True,0.0,IS,0.10752378206976074
+23,to_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,to,1,2,True,0.0,IS,
+24,students_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,students,1,8,True,0.0,IS,
+25,from_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,from,1,4,True,0.0,IS,
+26,out_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,out,1,3,True,0.0,IS,
+27,of_0,,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,of,1,2,True,0.0,IS,
+28,"town,_0",,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,"town,",1,5,True,0.0,IS,
+29,student_0,67.0,1,[10],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,1,student,1,7,True,0.0,IS,0.019313923320841742
+30,advisory_0,136.0,1,[12],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,1,advisory,1,8,True,0.0,IS,0.03920438166618622
+31,"groups,_0",,0,[],a_Islamism_1_qa_2 ,a_Islamism_1,p6-volunteer-cognition,0,"groups,",1,7,True,0.0,IS,
+32,facilitation_0,,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,facilitation,1,12,True,0.0,IS,
+33,of_1,,1,[0],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,1,of,1,2,True,0.0,IS,
+34,inexpensive_0,203.0,2,"[3, 4]",a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,2,inexpensive,1,11,True,0.0,IS,0.05851830498702796
+35,mass_0,137.0,2,"[5, 27]",a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,2,mass,1,4,True,0.0,IS,0.03949264917843759
+36,marriage_0,67.0,1,[26],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,1,marriage,1,8,True,0.0,IS,0.019313923320841742
+37,ceremonies_0,66.0,1,[7],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,1,ceremonies,1,10,True,0.0,IS,0.01902565580859037
+38,to_1,,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,to,1,2,True,0.0,IS,
+39,avoid_0,171.0,1,[8],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,1,avoid,1,5,True,0.0,IS,0.049293744594984146
+40,prohibitively_0,71.0,1,[20],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,1,prohibitively,1,13,True,0.0,IS,0.020466993369847218
+41,costly_0,,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,costly,1,6,True,0.0,IS,
+42,dowry_0,,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,dowry,1,5,True,0.0,IS,
+43,"demands,_0",,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,"demands,",1,8,True,0.0,IS,
+44,legal_0,,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,legal,1,5,True,0.0,IS,
+45,"assistance,_2",,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,"assistance,",1,11,True,0.0,IS,
+46,sports_0,,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,sports,1,6,True,0.0,IS,
+47,"facilities,_0",,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,"facilities,",1,11,True,0.0,IS,
+48,and_0,,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,and,1,3,True,0.0,IS,
+49,women's’_0,204.0,1,[11],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,1,women's’,1,8,True,0.0,IS,0.058806572499279335
+50,"groups.""_0",,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,"groups.""",1,8,True,0.0,IS,
+51,All_0,,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,All,1,3,True,0.0,IS,
+52,this_0,,0,[],a_Islamism_1_qa_4 ,a_Islamism_1,p6-volunteer-cognition,0,this,1,4,True,0.0,IS,
+53,compares_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,compares,1,8,True,0.0,IS,
+54,very_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,very,1,4,True,0.0,IS,
+55,favourably_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,favourably,1,10,True,0.0,IS,
+56,against_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,against,1,7,True,0.0,IS,
+57,"incompetent,_0",338.0,3,"[36, 45, 46]",a_Islamism_1_qa_1 ,a_Islamism_1,p6-volunteer-cognition,3,"incompetent,",1,12,True,0.0,IS,0.09743441914096282
+58,"inefficient,_0",482.0,5,"[17, 31, 33, 37, 40]",a_Islamism_1_qa_1 ,a_Islamism_1,p6-volunteer-cognition,5,"inefficient,",1,12,True,0.0,IS,0.13894494090516
+59,or_1,237.0,2,"[38, 39]",a_Islamism_1_qa_1 ,a_Islamism_1,p6-volunteer-cognition,2,or,1,2,True,0.0,IS,0.06831940040357452
+60,neglectful_0,,0,[],a_Islamism_1_qa_1 ,a_Islamism_1,p6-volunteer-cognition,0,neglectful,1,10,True,0.0,IS,
+61,governments_0,170.0,1,[34],,a_Islamism_1,p6-volunteer-cognition,1,governments,1,11,True,0.0,IS,0.04900547708273278
+62,whose_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,whose,1,5,True,0.0,IS,
+63,commitment_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,commitment,1,10,True,0.0,IS,
+64,to_2,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,to,1,2,True,0.0,IS,
+65,social_0,,0,[],,a_Islamism_1,p6-volunteer-cognition,0,social,1,6,True,0.0,IS,
+66,justice_0,173.0,2,"[29, 44]",,a_Islamism_1,p6-volunteer-cognition,2,justice,1,7,True,0.0,IS,0.04987027961948688
+67,is_0,168.0,2,"[30, 41]",,a_Islamism_1,p6-volunteer-cognition,2,is,1,2,True,0.0,IS,0.048428942058230035
+68,limited_0,101.0,1,[18],,a_Islamism_1,p6-volunteer-cognition,1,limited,1,7,True,0.0,IS,0.029115018737388296
+69,to_3,169.0,1,[42],,a_Islamism_1,p6-volunteer-cognition,1,to,1,2,True,0.0,IS,0.04871720957048141
+70,rhetoric._0,,0,[],a_Islamism_1_qa_3 ,a_Islamism_1,p6-volunteer-cognition,0,rhetoric.,1,9,True,0.0,IS,
+0,In_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,In,1,2,True,0.3877551020408163,IS,
+1,"Europe,_0",,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,"Europe,",1,7,True,0.3877551020408163,IS,
+2,the_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,the,1,3,True,0.3877551020408163,IS,
+3,North_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,North,1,5,True,0.3877551020408163,IS,
+4,American_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,American,1,8,True,0.3877551020408163,IS,
+5,theater_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,theater,1,7,True,0.3877551020408163,IS,
+6,of_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,of,1,2,True,0.3877551020408163,IS,
+7,the_1,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,the,1,3,True,0.3877551020408163,IS,
+8,Seven_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,Seven,1,5,True,0.3877551020408163,IS,
+9,Years'_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,Years',1,6,True,0.3877551020408163,IS,
+10,War_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,War,1,3,True,0.3877551020408163,IS,
+11,usually_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,usually,1,7,True,0.3877551020408163,IS,
+12,is_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,is,1,2,True,0.3877551020408163,IS,
+13,not_0,136.0,1,[38],,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,not,1,3,True,0.3877551020408163,IS,0.01710261569416499
+14,given_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,given,1,5,True,0.3877551020408163,IS,
+15,a__0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,a,1,1,True,0.3877551020408163,IS,
+16,separate_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,separate,1,8,True,0.3877551020408163,IS,
+17,name._0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,name.,1,5,True,0.3877551020408163,IS,
+18,The_2,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,The,2,3,True,0.3877551020408163,IS,
+19,entire_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,entire,2,6,True,0.3877551020408163,IS,
+20,international_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,international,2,13,True,0.3877551020408163,IS,
+21,conflict_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,conflict,2,8,True,0.3877551020408163,IS,
+22,is_1,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,is,2,2,True,0.3877551020408163,IS,
+23,known_0,306.0,1,[11],,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,known,2,5,True,0.3877551020408163,IS,0.03848088531187123
+24,as__0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,as,2,2,True,0.3877551020408163,IS,
+25,the_3,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,the,2,3,True,0.3877551020408163,IS,
+26,Seven_1,167.0,2,"[6, 13]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,Seven,2,5,True,0.3877551020408163,IS,0.021001006036217303
+27,Years'_1,137.0,1,[12],,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,Years',2,6,True,0.3877551020408163,IS,0.017228370221327966
+28,War._1,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,War.,2,4,True,0.3877551020408163,IS,
+29,"""Seven_0",204.0,2,"[22, 23]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,"""Seven",3,6,True,0.3877551020408163,IS,0.025653923541247486
+30,"Years""_0",,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,"Years""",3,6,True,0.3877551020408163,IS,
+31,refers_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,refers,3,6,True,0.3877551020408163,IS,
+32,to_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,to,3,2,True,0.3877551020408163,IS,
+33,events_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,events,3,6,True,0.3877551020408163,IS,
+34,in_1,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,in,3,2,True,0.3877551020408163,IS,
+35,"Europe,_1",,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,"Europe,",3,7,True,0.3877551020408163,IS,
+36,from_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,from,3,4,True,0.3877551020408163,IS,
+37,the_4,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,the,3,3,True,0.3877551020408163,IS,
+38,official_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,official,3,8,True,0.3877551020408163,IS,
+39,declaration_0,101.0,1,[16],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,declaration,3,11,True,0.3877551020408163,IS,0.012701207243460765
+40,of_1,68.0,1,[26],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,of,3,2,True,0.3877551020408163,IS,0.008551307847082495
+41,war_2,171.0,2,"[27, 28]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,war,3,3,True,0.3877551020408163,IS,0.021504024144869214
+42,in_2,69.0,1,[48],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,in,3,2,True,0.3877551020408163,IS,0.008677062374245472
+43,1756_0,136.0,1,[40],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,1756,3,4,True,0.3877551020408163,IS,0.01710261569416499
+44,to_1,203.0,2,"[10, 41]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,to,3,2,True,0.3877551020408163,IS,0.025528169014084508
+45,the_5,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,the,3,3,True,0.3877551020408163,IS,
+46,signing_0,68.0,1,[9],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,signing,3,7,True,0.3877551020408163,IS,0.008551307847082495
+47,of_2,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,of,3,2,True,0.3877551020408163,IS,
+48,the_6,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,the,3,3,True,0.3877551020408163,IS,
+49,peace_0,203.0,1,[44],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,peace,3,5,True,0.3877551020408163,IS,0.025528169014084508
+50,treaty_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,treaty,3,6,True,0.3877551020408163,IS,
+51,in_3,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,in,3,2,True,0.3877551020408163,IS,
+52,1763._0,68.0,1,[15],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,1763.,3,5,True,0.3877551020408163,IS,0.008551307847082495
+53,These_0,101.0,1,[25],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,These,4,5,True,0.3877551020408163,IS,0.012701207243460765
+54,dates_0,172.0,1,[24],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,dates,4,5,True,0.3877551020408163,IS,0.021629778672032193
+55,do_0,66.0,1,[85],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,do,4,2,True,0.3877551020408163,IS,0.00829979879275654
+56,not_1,62.0,1,[72],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,not,4,3,True,0.3877551020408163,IS,0.007796780684104628
+57,correspond_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,correspond,4,10,True,0.3877551020408163,IS,
+58,with_0,63.0,1,[86],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,with,4,4,True,0.3877551020408163,IS,0.007922535211267605
+59,the_7,590.0,6,"[1, 3, 18, 29, 42, 87]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,6,the,4,3,True,0.3877551020408163,IS,0.07419517102615694
+60,fighting_0,345.0,5,"[0, 30, 31, 32, 57]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,5,fighting,4,8,True,0.3877551020408163,IS,0.043385311871227364
+61,on_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,on,4,2,True,0.3877551020408163,IS,
+62,mainland_0,376.0,4,"[36, 45, 63, 94]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,4,mainland,4,8,True,0.3877551020408163,IS,0.047283702213279676
+63,North_1,272.0,2,"[47, 82]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,North,4,5,True,0.3877551020408163,IS,0.03420523138832998
+64,"America,_0",,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,"America,",4,8,True,0.3877551020408163,IS,
+65,where_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,where,4,5,True,0.3877551020408163,IS,
+66,the_8,101.0,1,[84],,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,the,4,3,True,0.3877551020408163,IS,0.012701207243460765
+67,fighting_1,476.0,4,"[7, 71, 73, 74]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,4,fighting,4,8,True,0.3877551020408163,IS,0.05985915492957746
+68,between_0,340.0,2,"[39, 75]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,between,4,7,True,0.3877551020408163,IS,0.04275653923541248
+69,the_9,708.0,4,"[49, 50, 76, 88]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,4,the,4,3,True,0.3877551020408163,IS,0.08903420523138833
+70,two_0,269.0,3,"[2, 51, 89]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,3,two,4,3,True,0.3877551020408163,IS,0.033827967806841046
+71,colonial_0,406.0,4,"[4, 33, 79, 80]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,4,colonial,4,8,True,0.3877551020408163,IS,0.051056338028169015
+72,powers_0,247.0,3,"[34, 81, 92]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,3,powers,4,6,True,0.3877551020408163,IS,0.031061368209255532
+73,was_0,204.0,2,"[58, 62]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,was,4,3,True,0.3877551020408163,IS,0.025653923541247486
+74,largely_0,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,largely,4,7,True,0.3877551020408163,IS,
+75,concluded_0,102.0,1,[83],,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,concluded,4,9,True,0.3877551020408163,IS,0.012826961770623743
+76,in_4,67.0,1,[96],,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,in,4,2,True,0.3877551020408163,IS,0.008425553319919517
+77,six_0,,0,[],a_FrenchandIndianWar_0_qa_1 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,six,4,3,True,0.3877551020408163,IS,
+78,"years,_0",68.0,1,[70],a_FrenchandIndianWar_0_qa_1 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,"years,",4,6,True,0.3877551020408163,IS,0.008551307847082495
+79,from_1,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,from,4,4,True,0.3877551020408163,IS,
+80,the_10,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,the,4,3,True,0.3877551020408163,IS,
+81,Battle_0,103.0,1,[77],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,Battle,4,6,True,0.3877551020408163,IS,0.01295271629778672
+82,of_3,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,of,4,2,True,0.3877551020408163,IS,
+83,Jumonville_0,239.0,2,"[19, 90]",a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,Jumonville,4,10,True,0.3877551020408163,IS,0.03005533199195171
+84,Glen_0,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,Glen,4,4,True,0.3877551020408163,IS,
+85,in_5,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,in,4,2,True,0.3877551020408163,IS,
+86,1754_0,239.0,2,"[59, 60]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,1754,4,4,True,0.3877551020408163,IS,0.03005533199195171
+87,to_2,102.0,1,[61],,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,to,4,2,True,0.3877551020408163,IS,0.012826961770623743
+88,the_11,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,the,4,3,True,0.3877551020408163,IS,
+89,capture_0,129.0,2,"[67, 68]",,a_FrenchandIndianWar_0,p6-volunteer-cognition,2,capture,4,7,True,0.3877551020408163,IS,0.016222334004024144
+90,of_4,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,of,4,2,True,0.3877551020408163,IS,
+91,Montreal_0,68.0,1,[97],,a_FrenchandIndianWar_0,p6-volunteer-cognition,1,Montreal,4,8,True,0.3877551020408163,IS,0.008551307847082495
+92,in_6,,0,[],,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,in,4,2,True,0.3877551020408163,IS,
+93,1760._0,,0,[],a_FrenchandIndianWar_0_qa_2 ,a_FrenchandIndianWar_0,p6-volunteer-cognition,0,1760.,4,5,True,0.3877551020408163,IS,
+0,In_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,In,1,2,True,0.022727272727272728,NR,
+1,"2000,_0",,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,"2000,",1,5,True,0.022727272727272728,NR,
+2,ABC_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,ABC,1,3,True,0.022727272727272728,NR,
+3,launched_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,launched,1,8,True,0.022727272727272728,NR,
+4,a__0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,a,1,1,True,0.022727272727272728,NR,
+5,web-based_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,web-based,1,9,True,0.022727272727272728,NR,
+6,promotional_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,promotional,1,11,True,0.022727272727272728,NR,
+7,campaign_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,campaign,1,8,True,0.022727272727272728,NR,
+8,focused_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,focused,1,7,True,0.022727272727272728,NR,
+9,around_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,around,1,6,True,0.022727272727272728,NR,
+10,its_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,its,1,3,True,0.022727272727272728,NR,
+11,circle_0,209.0,2,"[5, 28]",a_AmericanBroadcastingCompany_0_qa_0 ,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,circle,1,6,True,0.022727272727272728,NR,0.018968959883826467
+12,"logo,_0",67.0,1,[7],a_AmericanBroadcastingCompany_0_qa_0 ,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,"logo,",1,5,True,0.022727272727272728,NR,0.006080958431657288
+13,also_0,102.0,1,[6],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,also,1,4,True,0.022727272727272728,NR,0.00925757850789617
+14,called_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,called,1,6,True,0.022727272727272728,NR,
+15,“the_0,,0,[],a_AmericanBroadcastingCompany_0_qa_3 ,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,“the,1,4,True,0.022727272727272728,NR,
+16,"dot"",_0",,0,[],a_AmericanBroadcastingCompany_0_qa_3 ,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,"dot"",",1,5,True,0.022727272727272728,NR,
+17,in_1,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,in,1,2,True,0.022727272727272728,NR,
+18,which_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,which,1,5,True,0.022727272727272728,NR,
+19,comic_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,comic,1,5,True,0.022727272727272728,NR,
+20,book_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,book,1,4,True,0.022727272727272728,NR,
+21,character_0,62.0,1,[23],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,character,1,9,True,0.022727272727272728,NR,0.005627155563623162
+22,Little_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,Little,1,6,True,0.022727272727272728,NR,
+23,Dot_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,Dot,1,3,True,0.022727272727272728,NR,
+24,prompted_0,238.0,2,"[29, 50]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,prompted,1,8,True,0.022727272727272728,NR,0.021601016518424398
+25,visitors_0,234.0,3,"[3, 8, 69]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,3,visitors,1,8,True,0.022727272727272728,NR,0.021237974223997095
+26,to_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,to,1,2,True,0.022727272727272728,NR,
+27,“download_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,“download,1,9,True,0.022727272727272728,NR,
+28,the_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,the,1,3,True,0.022727272727272728,NR,
+29,"dot"",_1",,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,"dot"",",1,5,True,0.022727272727272728,NR,
+30,a_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,a,1,1,True,0.022727272727272728,NR,
+31,program_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,program,1,7,True,0.022727272727272728,NR,
+32,which_1,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,which,1,5,True,0.022727272727272728,NR,
+33,would_0,228.0,3,"[22, 25, 64]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,3,would,1,5,True,0.022727272727272728,NR,0.020693410782356144
+34,cause_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,cause,1,5,True,0.022727272727272728,NR,
+35,the_1,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,the,1,3,True,0.022727272727272728,NR,
+36,ABC_1,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,ABC,1,3,True,0.022727272727272728,NR,
+37,logo_1,376.0,3,"[30, 67, 68]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,3,logo,1,4,True,0.022727272727272728,NR,0.03412597567616627
+38,to_1,205.0,1,[52],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,to,1,2,True,0.022727272727272728,NR,0.018605917589399164
+39,fly_0,267.0,2,"[11, 51]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,fly,1,3,True,0.022727272727272728,NR,0.024233073153022328
+40,around_1,166.0,2,"[70, 71]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,around,1,6,True,0.022727272727272728,NR,0.015066255218732982
+41,the_2,136.0,1,[54],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,the,1,3,True,0.022727272727272728,NR,0.012343438010528226
+42,screen_0,138.0,1,[88],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,screen,1,6,True,0.022727272727272728,NR,0.012524959157741877
+43,and_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,and,1,3,True,0.022727272727272728,NR,
+44,settle_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,settle,1,6,True,0.022727272727272728,NR,
+45,in_2,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,in,1,2,True,0.022727272727272728,NR,
+46,the_3,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,the,1,3,True,0.022727272727272728,NR,
+47,bottom-right_0,326.0,3,"[21, 26, 49]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,3,bottom-right,1,12,True,0.022727272727272728,NR,0.029587946995825013
+48,corner._0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,corner.,1,7,True,0.022727272727272728,NR,
+49,The_4,135.0,2,"[31, 66]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,The,2,3,True,0.022727272727272728,NR,0.012252677436921402
+50,network_0,204.0,1,[83],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,network,2,7,True,0.022727272727272728,NR,0.01851515701579234
+51,hired_0,104.0,1,[82],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,hired,2,5,True,0.022727272727272728,NR,0.00943909965510982
+52,the_5,70.0,1,[33],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,the,2,3,True,0.022727272727272728,NR,0.0063532401524777635
+53,Troika_0,677.0,4,"[34, 35, 72, 73]",a_AmericanBroadcastingCompany_0_qa_1 ,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,4,Troika,2,6,True,0.022727272727272728,NR,0.061444908331820654
+54,Design_0,369.0,5,"[2, 39, 56, 74, 87]",a_AmericanBroadcastingCompany_0_qa_1 ,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,5,Design,2,6,True,0.022727272727272728,NR,0.0334906516609185
+55,Group_0,205.0,2,"[75, 89]",a_AmericanBroadcastingCompany_0_qa_1 ,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,Group,2,5,True,0.022727272727272728,NR,0.018605917589399164
+56,to_2,168.0,2,"[15, 41]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,to,2,2,True,0.022727272727272728,NR,0.015247776365946633
+57,design_1,578.0,5,"[18, 42, 43, 44, 63]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,5,design,2,6,True,0.022727272727272728,NR,0.05245961154474496
+58,and_1,273.0,3,"[16, 17, 20]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,3,and,2,3,True,0.022727272727272728,NR,0.02477763659466328
+59,produce_0,66.0,1,[19],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,produce,2,7,True,0.022727272727272728,NR,0.005990197858050463
+60,its_1,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,its,2,3,True,0.022727272727272728,NR,
+61,2001-02_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,2001-02,2,7,True,0.022727272727272728,NR,
+62,"identity,_0",442.0,3,"[81, 84, 98]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,3,"identity,",2,9,True,0.022727272727272728,NR,0.04011617353421674
+63,which_2,406.0,3,"[32, 38, 99]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,3,which,2,5,True,0.022727272727272728,NR,0.036848792884371026
+64,continued_0,409.0,4,"[36, 100, 101, 102]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,4,continued,2,9,True,0.022727272727272728,NR,0.037121074605191505
+65,using_0,237.0,2,"[14, 86]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,using,2,5,True,0.022727272727272728,NR,0.02151025594481757
+66,the_6,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,the,2,3,True,0.022727272727272728,NR,
+67, black-and-yellow_0,1224.0,8,"[46, 47, 60, 62, 77, 78, 79, 91]",a_AmericanBroadcastingCompany_0_qa_2 ,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,8, black-and-yellow,2,17,True,0.022727272727272728,NR,0.11109094209475404
+68,coloring_0,579.0,4,"[61, 93, 95, 106]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,4,coloring,2,8,True,0.022727272727272728,NR,0.052550372118351785
+69,of_0,67.0,1,[107],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,of,2,2,True,0.022727272727272728,NR,0.006080958431657288
+70,the_7,69.0,1,[108],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,the,2,3,True,0.022727272727272728,NR,0.006262479578870939
+71,logo_2,70.0,1,[109],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,logo,2,4,True,0.022727272727272728,NR,0.0063532401524777635
+72,and_2,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,and,2,3,True,0.022727272727272728,NR,
+73,featured_0,201.0,2,"[96, 97]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,featured,2,8,True,0.022727272727272728,NR,0.018242875294971865
+74,dots_0,,0,[],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,0,dots,2,4,True,0.022727272727272728,NR,
+75,and_3,216.0,2,"[115, 116]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,and,2,3,True,0.022727272727272728,NR,0.019604283899074242
+76,=_0,114.0,1,[116],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,=,2,1,True,0.022727272727272728,NR,0.010346705391178072
+77,stripes_0,130.0,2,"[85, 117]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,stripes,2,7,True,0.022727272727272728,NR,0.011798874568887275
+78,in_3,171.0,1,[103],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,in,2,2,True,0.022727272727272728,NR,0.015520058086767109
+79,various_0,371.0,3,"[59, 118, 119]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,3,various,2,7,True,0.022727272727272728,NR,0.033672172808132145
+80,promotional_1,305.0,2,"[80, 104]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,promotional,2,11,True,0.022727272727272728,NR,0.027681974950081685
+81,and__0,66.0,1,[128],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,and,2,3,True,0.022727272727272728,NR,0.005990197858050463
+82,identification_0,170.0,1,[129],,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,1,identification,2,14,True,0.022727272727272728,NR,0.015429297513160283
+83,spots._0,168.0,2,"[110, 111]",,a_AmericanBroadcastingCompany_0,p6-volunteer-cognition,2,spots.,2,6,True,0.022727272727272728,NR,0.015247776365946633
+0,Peyton_0,67.0,1,[29],a_SuperBowl50_2_qa_8 a_SuperBowl50_2_qa_11 a_SuperBowl50_2_qa_14 ,a_SuperBowl50_2,p6-volunteer-cognition,1,Peyton,1,6,True,0.0,NR,0.011338635979015061
+1,Manning_0,,0,[],a_SuperBowl50_2_qa_8 a_SuperBowl50_2_qa_11 a_SuperBowl50_2_qa_14 ,a_SuperBowl50_2,p6-volunteer-cognition,0,Manning,1,7,True,0.0,NR,
+2,became_0,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,became,1,6,True,0.0,NR,
+3,the_0,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,the,1,3,True,0.0,NR,
+4,first_0,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,first,1,5,True,0.0,NR,
+5,quarterback_0,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,quarterback,1,11,True,0.0,NR,
+6,ever_0,136.0,2,"[15, 22]",,a_SuperBowl50_2,p6-volunteer-cognition,2,ever,1,4,True,0.0,NR,0.023015738703672364
+7,to_0,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,to,1,2,True,0.0,NR,
+8,lead_0,69.0,1,[26],,a_SuperBowl50_2,p6-volunteer-cognition,1,lead,1,4,True,0.0,NR,0.011677102724657303
+9,two._0,68.0,1,[27],a_SuperBowl50_2_qa_9 a_SuperBowl50_2_qa_10 ,a_SuperBowl50_2,p6-volunteer-cognition,1,two.,1,4,True,0.0,NR,0.011507869351836182
+10,different_0,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,different,2,9,True,0.0,NR,
+11,teams_0,336.0,4,"[5, 6, 45, 47]",,a_SuperBowl50_2,p6-volunteer-cognition,4,teams,2,5,True,0.0,NR,0.05686241326789643
+12,to_1,68.0,1,[7],,a_SuperBowl50_2,p6-volunteer-cognition,1,to,2,2,True,0.0,NR,0.011507869351836182
+13,multiple_0,137.0,2,"[8, 33]",,a_SuperBowl50_2,p6-volunteer-cognition,2,multiple,2,8,True,0.0,NR,0.023184972076493483
+14,Super_0,202.0,2,"[34, 75]",,a_SuperBowl50_2,p6-volunteer-cognition,2,Super,2,5,True,0.0,NR,0.03418514130986631
+15,Bowls._0,66.0,1,[20],,a_SuperBowl50_2,p6-volunteer-cognition,1,Bowls.,2,6,True,0.0,NR,0.01116940260619394
+16,He_0,140.0,2,"[12, 14]",,a_SuperBowl50_2,p6-volunteer-cognition,2,He,3,2,True,0.0,NR,0.023692672194956844
+17,is_0,205.0,1,[37],,a_SuperBowl50_2,p6-volunteer-cognition,1,is,3,2,True,0.0,NR,0.034692841428329665
+18,also_0,68.0,1,[38],,a_SuperBowl50_2,p6-volunteer-cognition,1,also,3,4,True,0.0,NR,0.011507869351836182
+19,the_1,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,the,3,3,True,0.0,NR,
+20,oldest_0,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,oldest,3,6,True,0.0,NR,
+21,quarterback_1,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,quarterback,3,11,True,0.0,NR,
+22,ever_1,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,ever,3,4,True,0.0,NR,
+23,to_2,,0,[],,a_SuperBowl50_2,p6-volunteer-cognition,0,to,3,2,True,0.0,NR,
+24,play_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,play,3,4,True,0.0,NR,
+25,in_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,in,3,2,True,0.0,NR,
+26,a_0,138.0,1,[19],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,a,3,1,True,0.0,NR,0.023354205449314606
+27,Super_1,205.0,1,[73],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,Super,3,5,True,0.0,NR,0.034692841428329665
+28,Bowl_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,Bowl,3,4,True,0.0,NR,
+29,at_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,at,3,2,True,0.0,NR,
+30,age_0,135.0,2,"[35, 76]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,2,age,3,3,True,0.0,NR,0.022846505330851245
+31,39._0,,0,[],a_SuperBowl50_2_qa_0 a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_15 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,39.,3,3,True,0.0,NR,
+32,The_2,133.0,2,"[51, 56]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,2,The,4,3,True,0.0,NR,0.022508038585209004
+33,past_0,339.0,3,"[40, 58, 59]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,3,past,4,4,True,0.0,NR,0.05737011338635979
+34,record_0,170.0,2,"[39, 41]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,2,record,4,6,True,0.0,NR,0.028769673379590455
+35,was_0,69.0,1,[43],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,was,4,3,True,0.0,NR,0.011677102724657303
+36,held_0,102.0,1,[44],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,held,4,4,True,0.0,NR,0.017261804027754273
+37,by_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,by,4,2,True,0.0,NR,
+38,John_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,John,4,4,True,0.0,NR,
+39,"Elway,_0",237.0,3,"[72, 90, 91]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,3,"Elway,",4,6,True,0.0,NR,0.040108309358605515
+40,who_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,who,4,3,True,0.0,NR,
+41,led_0,237.0,1,[49],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,led,4,3,True,0.0,NR,0.040108309358605515
+42,the_3,306.0,1,[48],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,the,4,3,True,0.0,NR,0.051785412083262816
+43,Broncos_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_4 a_SuperBowl50_2_qa_5 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,Broncos,4,7,True,0.0,NR,
+44,to_3,312.0,3,"[53, 77, 80]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,3,to,4,2,True,0.0,NR,0.052800812320189544
+45,victory_0,377.0,4,"[55, 57, 78, 79]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,4,victory,4,7,True,0.0,NR,0.06380098155356237
+46,in_1,69.0,1,[60],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,in,4,2,True,0.0,NR,0.011677102724657303
+47,Super_2,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_13 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,Super,4,5,True,0.0,NR,
+48,Bowl_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_13 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,0,Bowl,4,4,True,0.0,NR,
+49,XxxXill_0,136.0,1,[84],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_13 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,XxxXill,4,7,True,0.0,NR,0.023015738703672364
+50,at_1,133.0,2,"[63, 87]",a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,2,at,4,2,True,0.0,NR,0.022508038585209004
+51,age_1,204.0,1,[65],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,age,4,3,True,0.0,NR,0.034523608055508546
+52,38_0,67.0,1,[67],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_2 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_7 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,p6-volunteer-cognition,1,38,4,2,True,0.0,NR,0.011338635979015061
+53,and_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,0,and,4,3,True,0.0,NR,
+54,is_1,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,0,is,4,2,True,0.0,NR,
+55,currently_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,0,currently,4,9,True,0.0,NR,
+56,Denver's_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,0,Denver's,4,8,True,0.0,NR,
+57,Executive_0,94.0,1,[1],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,1,Executive,4,9,True,0.0,NR,0.01590793704518531
+58,Vice_0,239.0,3,"[2, 3, 4]",a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,3,Vice,4,4,True,0.0,NR,0.04044677610424776
+59,President_0,67.0,1,[61],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,1,President,4,9,True,0.0,NR,0.011338635979015061
+60,of_0,68.0,1,[83],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,1,of,4,2,True,0.0,NR,0.011507869351836182
+61,Football_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,0,Football,4,8,True,0.0,NR,
+62,Operations_0,510.0,3,"[62, 88, 89]",a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,3,Operations,4,10,True,0.0,NR,0.08630902013877137
+63,and_1,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,0,and,4,3,True,0.0,NR,
+64,General_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,0,General,4,7,True,0.0,NR,
+65,Manager._0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,p6-volunteer-cognition,0,Manager.,4,8,True,0.0,NR,
+0,Many_0,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,Many,1,4,False,0.08695652173913043,NR,
+1,known_0,308.0,2,"[9, 10]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,known,1,5,False,0.08695652173913043,NR,0.02108433734939759
+2,complexity_0,137.0,1,[14],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,complexity,1,10,False,0.08695652173913043,NR,0.00937842278203724
+3,classes_0,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,classes,1,7,False,0.08695652173913043,NR,
+4,are_0,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,are,1,3,False,0.08695652173913043,NR,
+5,suspected_0,169.0,1,[18],a_Computationalcomplexitytheory_4_qa_0 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,suspected,1,9,False,0.08695652173913043,NR,0.011569003285870755
+6,to_0,,0,[],a_Computationalcomplexitytheory_4_qa_0 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,to,1,2,False,0.08695652173913043,NR,
+7,be_0,,0,[],a_Computationalcomplexitytheory_4_qa_0 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,be,1,2,False,0.08695652173913043,NR,
+8,"unequal,_0",137.0,1,[27],a_Computationalcomplexitytheory_4_qa_0 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,"unequal,",1,8,False,0.08695652173913043,NR,0.00937842278203724
+9,but_0,170.0,2,"[31, 47]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,but,1,3,False,0.08695652173913043,NR,0.011637458926615553
+10,this_0,106.0,1,[28],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,this,1,4,False,0.08695652173913043,NR,0.0072562979189485215
+11,has_0,204.0,1,[29],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,has,1,3,False,0.08695652173913043,NR,0.013964950711938665
+12,not_0,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,not,1,3,False,0.08695652173913043,NR,
+13,been_0,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,been,1,4,False,0.08695652173913043,NR,
+14,proved._0,306.0,2,"[8, 60]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,proved.,1,7,False,0.08695652173913043,NR,0.020947426067907997
+15,For_0,172.0,2,"[23, 61]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,For,2,3,False,0.08695652173913043,NR,0.011774370208105149
+16,instance_0,135.0,2,"[15, 19]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,instance,2,8,False,0.08695652173913043,NR,0.009241511500547646
+17,P_0,69.0,1,[20],a_Computationalcomplexitytheory_4_qa_1 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,P,2,1,False,0.08695652173913043,NR,0.004723439211391019
+18,©_0,68.0,1,[16],a_Computationalcomplexitytheory_4_qa_1 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,©,2,1,False,0.08695652173913043,NR,0.004654983570646221
+19,NP_0,341.0,2,"[17, 37]",a_Computationalcomplexitytheory_4_qa_1 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,NP,2,2,False,0.08695652173913043,NR,0.023343373493975902
+20,¢_0,579.0,1,[24],a_Computationalcomplexitytheory_4_qa_1 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,¢,2,1,False,0.08695652173913043,NR,0.03963581599123768
+21,PP_0,102.0,1,[43],a_Computationalcomplexitytheory_4_qa_1 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,PP,2,2,False,0.08695652173913043,NR,0.006982475355969332
+22,¢__0,,0,[],a_Computationalcomplexitytheory_4_qa_1 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,¢,2,1,False,0.08695652173913043,NR,
+23,"PSPACE,_0",475.0,4,"[25, 26, 44, 82]",a_Computationalcomplexitytheory_4_qa_1 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,4,"PSPACE,",2,7,False,0.08695652173913043,NR,0.03251642935377875
+24,but_1,136.0,2,"[45, 48]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,but,2,3,False,0.08695652173913043,NR,0.009309967141292442
+25,it_0,69.0,1,[30],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,it,2,2,False,0.08695652173913043,NR,0.004723439211391019
+26,is_0,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,is,2,2,False,0.08695652173913043,NR,
+27,possible_0,575.0,3,"[53, 74, 85]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,possible,2,8,False,0.08695652173913043,NR,0.03936199342825849
+28,that_0,67.0,1,[73],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,that,2,4,False,0.08695652173913043,NR,0.004586527929901424
+29,P_1,308.0,3,"[54, 59, 76]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,P,2,1,False,0.08695652173913043,NR,0.02108433734939759
+30,=_0,303.0,2,"[36, 58]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,=,2,1,False,0.08695652173913043,NR,0.020742059145673602
+31,PSPACE._1,543.0,6,"[22, 55, 56, 62, 63, 128]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,6,PSPACE.,2,7,False,0.08695652173913043,NR,0.037171412924424975
+32,If_0,375.0,3,"[0, 57, 90]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,If,3,2,False,0.08695652173913043,NR,0.025670865279299016
+33,P_2,208.0,2,"[92, 129]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,P,3,1,False,0.08695652173913043,NR,0.014238773274917854
+34,is_1,102.0,1,[21],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,is,3,2,False,0.08695652173913043,NR,0.006982475355969332
+35,not_1,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,not,3,3,False,0.08695652173913043,NR,
+36,equal_0,474.0,2,"[38, 39]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,equal,3,5,False,0.08695652173913043,NR,0.032447973713033956
+37,to_1,407.0,4,"[40, 42, 65, 71]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,4,to,3,2,False,0.08695652173913043,NR,0.02786144578313253
+38,"NP,_1",170.0,1,[98],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,"NP,",3,3,False,0.08695652173913043,NR,0.011637458926615553
+39,then_0,476.0,2,"[49, 80]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,then,3,4,False,0.08695652173913043,NR,0.03258488499452355
+40,P__0,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,P,3,1,False,0.08695652173913043,NR,
+41,is_2,206.0,2,"[50, 99]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,is,3,2,False,0.08695652173913043,NR,0.014101861993428258
+42,not_2,202.0,1,[83],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,not,3,3,False,0.08695652173913043,NR,0.013828039430449069
+43,equal_1,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,equal,3,5,False,0.08695652173913043,NR,
+44,to_2,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,to,3,2,False,0.08695652173913043,NR,
+45,PSPACE_2,434.0,3,"[33, 34, 105]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,PSPACE,3,6,False,0.08695652173913043,NR,0.02970974808324206
+46,either._0,307.0,3,"[88, 127, 144]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,either.,3,7,False,0.08695652173913043,NR,0.021015881708652793
+47,Since_0,69.0,1,[89],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,Since,4,5,False,0.08695652173913043,NR,0.004723439211391019
+48,there_0,64.0,1,[130],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,there,4,5,False,0.08695652173913043,NR,0.004381161007667032
+49,are_1,304.0,2,"[2, 68]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,are,4,3,False,0.08695652173913043,NR,0.0208105147864184
+50,many_1,818.0,6,"[66, 67, 69, 70, 110, 134]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,6,many,4,4,False,0.08695652173913043,NR,0.05599671412924425
+51,known_1,340.0,3,"[78, 95, 115]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,known,4,5,False,0.08695652173913043,NR,0.023274917853231106
+52,complexity_1,439.0,5,"[96, 113, 116, 117, 118]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,5,complexity,4,10,False,0.08695652173913043,NR,0.030052026286966047
+53,classes_1,69.0,1,[100],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,classes,4,7,False,0.08695652173913043,NR,0.004723439211391019
+54,between_0,303.0,3,"[102, 125, 142]",a_Computationalcomplexitytheory_4_qa_2 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,between,4,7,False,0.08695652173913043,NR,0.020742059145673602
+55,P_3,109.0,1,[104],a_Computationalcomplexitytheory_4_qa_2 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,P,4,1,False,0.08695652173913043,NR,0.007461664841182913
+56,and_0,76.0,1,[160],a_Computationalcomplexitytheory_4_qa_2 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,and,4,3,False,0.08695652173913043,NR,0.0052026286966046
+57,"PSPACE,_3",137.0,1,[143],a_Computationalcomplexitytheory_4_qa_2 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,"PSPACE,",4,7,False,0.08695652173913043,NR,0.00937842278203724
+58,such_0,273.0,2,"[106, 145]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,such,4,4,False,0.08695652173913043,NR,0.018688389923329683
+59,as__0,136.0,2,"[93, 108]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,as,4,2,False,0.08695652173913043,NR,0.009309967141292442
+60,"RP,_0",66.0,1,[131],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,"RP,",4,3,False,0.08695652173913043,NR,0.004518072289156626
+61,"BPP,_0",306.0,4,"[3, 4, 94, 132]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,4,"BPP,",4,4,False,0.08695652173913043,NR,0.020947426067907997
+62,"PP,_1",,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,"PP,",4,3,False,0.08695652173913043,NR,
+63,"BQP,_0",448.0,3,"[111, 112, 136]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,"BQP,",4,4,False,0.08695652173913043,NR,0.03066812705366922
+64,"MA,_0",101.0,1,[137],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,"MA,",4,3,False,0.08695652173913043,NR,0.0069140197152245345
+65,"PH,_0",,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,"PH,",4,3,False,0.08695652173913043,NR,
+66,"etc,_0",238.0,2,"[119, 120]",,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,2,"etc,",4,4,False,0.08695652173913043,NR,0.016292442497261774
+67,it_1,170.0,1,[101],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,it,4,2,False,0.08695652173913043,NR,0.011637458926615553
+68,is_3,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,is,4,2,False,0.08695652173913043,NR,
+69,possible_1,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,possible,4,8,False,0.08695652173913043,NR,
+70,that_1,68.0,1,[159],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,that,4,4,False,0.08695652173913043,NR,0.004654983570646221
+71,all_0,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,all,4,3,False,0.08695652173913043,NR,
+72,these_0,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,these,4,5,False,0.08695652173913043,NR,
+73,complexity_2,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,complexity,4,10,False,0.08695652173913043,NR,
+74,classes_2,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,classes,4,7,False,0.08695652173913043,NR,
+75,collapse_0,342.0,3,"[150, 151, 152]",a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,collapse,4,8,False,0.08695652173913043,NR,0.023411829134720702
+76,to_3,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,to,4,2,False,0.08695652173913043,NR,
+77,one_0,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,one,4,3,False,0.08695652173913043,NR,
+78,class._0,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,class.,4,6,False,0.08695652173913043,NR,
+79,Proving_0,408.0,3,"[121, 139, 158]",a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,Proving,5,7,False,0.08695652173913043,NR,0.02792990142387733
+80,that_2,102.0,1,[122],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,that,5,4,False,0.08695652173913043,NR,0.006982475355969332
+81,any_0,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,any,5,3,False,0.08695652173913043,NR,
+82,of_0,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,of,5,2,False,0.08695652173913043,NR,
+83,these_1,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,these,5,5,False,0.08695652173913043,NR,
+84,classes_3,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,classes,5,7,False,0.08695652173913043,NR,
+85,are_2,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,are,5,3,False,0.08695652173913043,NR,
+86,unequal_1,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,unequal,5,7,False,0.08695652173913043,NR,
+87,would_0,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,would,5,5,False,0.08695652173913043,NR,
+88,be_1,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,be,5,2,False,0.08695652173913043,NR,
+89,a_0,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,a,5,1,False,0.08695652173913043,NR,
+90,major_0,306.0,3,"[153, 154, 155]",a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,3,major,5,5,False,0.08695652173913043,NR,0.020947426067907997
+91,breakthrough_0,76.0,1,[156],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,1,breakthrough,5,12,False,0.08695652173913043,NR,0.0052026286966046
+92,in_0,,0,[],a_Computationalcomplexitytheory_4_qa_3 ,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,in,5,2,False,0.08695652173913043,NR,
+93,complexity_3,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,complexity,5,10,False,0.08695652173913043,NR,
+94,theory._0,,0,[],,a_Computationalcomplexitytheory_4,p6-volunteer-cognition,0,theory.,5,7,False,0.08695652173913043,NR,
+0,When_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,When,1,4,True,0.014598540145985401,NR,
+1,considering_0,408.0,3,"[5, 33, 34]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,3,considering,1,11,True,0.014598540145985401,NR,0.025124699796785516
+2,computational_0,340.0,2,"[6, 12]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,computational,1,13,True,0.014598540145985401,NR,0.020937249830654595
+3,"problems,_0",,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,"problems,",1,9,True,0.014598540145985401,NR,
+4,a_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,a,1,1,True,0.014598540145985401,NR,
+5,problem_0,68.0,1,[18],a_Computationalcomplexitytheory_1_qa_0 ,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,problem,1,7,True,0.014598540145985401,NR,0.004187449966130919
+6,instance_0,67.0,1,[17],a_Computationalcomplexitytheory_1_qa_0 ,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,instance,1,8,True,0.014598540145985401,NR,0.00412586981957017
+7,is_0,137.0,1,[24],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,is,1,2,True,0.014598540145985401,NR,0.008436480078822587
+8,a__0,339.0,1,[25],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,a,1,1,True,0.014598540145985401,NR,0.020875669684093847
+9,string_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,string,1,6,True,0.014598540145985401,NR,
+10,over_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,over,1,4,True,0.014598540145985401,NR,
+11,an_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,an,1,2,True,0.014598540145985401,NR,
+12,alphabet._0,171.0,2,"[2, 56]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,alphabet.,1,9,True,0.014598540145985401,NR,0.010530205061888048
+13,"Usually,_0",339.0,3,"[35, 57, 58]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,3,"Usually,",2,8,True,0.014598540145985401,NR,0.020875669684093847
+14,the_0,306.0,4,"[8, 10, 11, 59]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,4,the,2,3,True,0.014598540145985401,NR,0.018843524847589138
+15,alphabet_1,206.0,2,"[36, 60]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,alphabet,2,8,True,0.014598540145985401,NR,0.012685510191514256
+16,is_1,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,is,2,2,True,0.014598540145985401,NR,
+17,taken_0,1182.0,5,"[13, 14, 20, 38, 41]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,5,taken,2,5,True,0.014598540145985401,NR,0.0727877332348051
+18,to_0,476.0,2,"[19, 63]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,to,2,2,True,0.014598540145985401,NR,0.029312149762916434
+19,be_0,69.0,1,[15],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,be,2,2,True,0.014598540145985401,NR,0.0042490301126916685
+20,the_1,170.0,1,[16],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,the,2,3,True,0.014598540145985401,NR,0.010468624915327298
+21,binary_0,169.0,2,"[21, 22]",a_Computationalcomplexitytheory_1_qa_1 ,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,binary,2,6,True,0.014598540145985401,NR,0.01040704476876655
+22,alphabet_2,283.0,2,"[23, 53]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,alphabet,2,8,True,0.014598540145985401,NR,0.017427181476691915
+23,"(i.e.,_0",,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,"(i.e.,",2,6,True,0.014598540145985401,NR,
+24,the_2,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,the,2,3,True,0.014598540145985401,NR,
+25,set_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,set,2,3,True,0.014598540145985401,NR,
+26,"{0,1}),_0",444.0,3,"[54, 55, 73]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,3,"{0,1}),",2,7,True,0.014598540145985401,NR,0.027341585072972473
+27,and_0,101.0,1,[74],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,and,2,3,True,0.014598540145985401,NR,0.00621959480263563
+28,thus_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,thus,2,4,True,0.014598540145985401,NR,
+29,the_3,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,the,2,3,True,0.014598540145985401,NR,
+30,strings_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,strings,2,7,True,0.014598540145985401,NR,
+31,are_0,1503.0,4,"[1, 26, 42, 61]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,4,are,2,3,True,0.014598540145985401,NR,0.09255496028080547
+32, bitstrings._0,1264.0,6,"[27, 39, 40, 43, 62, 64]",a_Computationalcomplexitytheory_1_qa_2 ,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,6, bitstrings.,2,12,True,0.014598540145985401,NR,0.0778373052527865
+33,As_0,64.0,1,[28],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,As,3,2,True,0.014598540145985401,NR,0.003941129379887924
+34,in_0,169.0,2,"[51, 52]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,in,3,2,True,0.014598540145985401,NR,0.01040704476876655
+35,a__1,56.0,1,[32],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,a,3,1,True,0.014598540145985401,NR,0.0034484882074019337
+36,real-world_0,67.0,1,[31],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,real-world,3,10,True,0.014598540145985401,NR,0.00412586981957017
+37,"computer,_0",,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,"computer,",3,9,True,0.014598540145985401,NR,
+38,mathematical_0,477.0,4,"[75, 92, 93, 98]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,4,mathematical,3,12,True,0.014598540145985401,NR,0.029373729909477186
+39,objects_0,410.0,2,"[76, 97]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,objects,3,7,True,0.014598540145985401,NR,0.025247860089907013
+40,other_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,other,3,5,True,0.014598540145985401,NR,
+41,than_0,237.0,2,"[0, 77]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,than,3,4,True,0.014598540145985401,NR,0.014594494734897469
+42,bitstrings_0,341.0,4,"[46, 47, 49, 78]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,4,bitstrings,3,10,True,0.014598540145985401,NR,0.020998829977215347
+43,must_0,139.0,2,"[45, 50]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,must,3,4,True,0.014598540145985401,NR,0.008559640371944085
+44,be_1,136.0,2,"[29, 30]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,be,3,2,True,0.014598540145985401,NR,0.008374899932261839
+45,suitably_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,suitably,3,8,True,0.014598540145985401,NR,
+46,encoded._0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,encoded.,3,8,True,0.014598540145985401,NR,
+47,For_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,For,4,3,True,0.014598540145985401,NR,
+48,"example,_0",274.0,2,"[115, 116]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,"example,",4,8,True,0.014598540145985401,NR,0.016872960157645174
+49,integers_0,69.0,1,[99],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,integers,4,8,True,0.014598540145985401,NR,0.0042490301126916685
+50,can_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,can,4,3,True,0.014598540145985401,NR,
+51,be_2,102.0,1,[96],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,be,4,2,True,0.014598540145985401,NR,0.006281174949196379
+52,represented_0,710.0,5,"[79, 82, 95, 105, 114]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,5,represented,4,11,True,0.014598540145985401,NR,0.04372190405813166
+53,in_1,238.0,2,"[80, 124]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,in,4,2,True,0.014598540145985401,NR,0.014656074881458217
+54,binary_1,272.0,2,"[84, 125]",a_Computationalcomplexitytheory_1_qa_3 ,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,binary,4,6,True,0.014598540145985401,NR,0.016749799864523678
+55,"notation,_0",510.0,5,"[44, 65, 68, 71, 89]",a_Computationalcomplexitytheory_1_qa_3 ,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,5,"notation,",4,9,True,0.014598540145985401,NR,0.031405874745981895
+56,and_1,205.0,2,"[90, 91]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,and,4,3,True,0.014598540145985401,NR,0.012623930044953506
+57,graphs_0,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,graphs,4,6,True,0.014598540145985401,NR,
+58,can_1,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,can,4,3,True,0.014598540145985401,NR,
+59,be_3,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,be,4,2,True,0.014598540145985401,NR,
+60,encoded_1,169.0,1,[117],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,encoded,4,7,True,0.014598540145985401,NR,0.01040704476876655
+61,directly_0,138.0,2,"[100, 118]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,directly,4,8,True,0.014598540145985401,NR,0.008498060225383337
+62,via_0,67.0,1,[101],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,via,4,3,True,0.014598540145985401,NR,0.00412586981957017
+63,their_0,171.0,1,[102],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,their,4,5,True,0.014598540145985401,NR,0.010530205061888048
+64,adjacency_0,919.0,3,"[103, 104, 122]",a_Computationalcomplexitytheory_1_qa_4 ,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,3,adjacency,4,9,True,0.014598540145985401,NR,0.05659215468932816
+65,"matrices,_0",882.0,4,"[107, 109, 123, 126]",a_Computationalcomplexitytheory_1_qa_4 ,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,4,"matrices,",4,9,True,0.014598540145985401,NR,0.05431368926658046
+66,or_0,130.0,2,"[69, 108]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,or,4,2,True,0.014598540145985401,NR,0.008005419052897346
+67,by_0,306.0,2,"[129, 130]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,2,by,4,2,True,0.014598540145985401,NR,0.018843524847589138
+68,encoding_0,770.0,6,"[67, 85, 88, 112, 113, 131]",,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,6,encoding,4,8,True,0.014598540145985401,NR,0.047416712851776587
+69,their_1,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,their,4,5,True,0.014598540145985401,NR,
+70,adjacency_1,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,adjacency,4,9,True,0.014598540145985401,NR,
+71,lists_0,169.0,1,[132],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,1,lists,4,5,True,0.014598540145985401,NR,0.01040704476876655
+72,in_2,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,in,4,2,True,0.014598540145985401,NR,
+73,binary._2,,0,[],,a_Computationalcomplexitytheory_1,p6-volunteer-cognition,0,binary.,4,7,True,0.014598540145985401,NR,
+0,In_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,In,1,2,True,0.1365079365079365,NR,
+1,competitive_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,competitive,1,11,True,0.1365079365079365,NR,
+2,"sports,_0",,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,"sports,",1,7,True,0.1365079365079365,NR,
+3,doping_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,doping,1,6,True,0.1365079365079365,NR,
+4,is_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,is,1,2,True,0.1365079365079365,NR,
+5,the_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,the,1,3,True,0.1365079365079365,NR,
+6,use_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,use,1,3,True,0.1365079365079365,NR,
+7,of_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,of,1,2,True,0.1365079365079365,NR,
+8,banned_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,banned,1,6,True,0.1365079365079365,NR,
+9,performance-enhancing_0,545.0,4,"[21, 22, 25, 28]",meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,4,performance-enhancing,1,21,True,0.1365079365079365,NR,0.014810185059376613
+10,drugs_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,drugs,1,5,True,0.1365079365079365,NR,
+11,by_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,by,1,2,True,0.1365079365079365,NR,
+12,athletic_0,539.0,5,"[31, 33, 51, 52, 53]",meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,5,athletic,1,8,True,0.1365079365079365,NR,0.014647137150466045
+13,competitors._0,545.0,2,"[72, 73]",meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,2,competitors.,1,12,True,0.1365079365079365,NR,0.014810185059376613
+14,The_1,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,The,2,3,True,0.1365079365079365,NR,
+15,term_0,135.0,1,[7],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,1,term,2,4,True,0.1365079365079365,NR,0.003668577950487785
+16,doping_1,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,doping,2,6,True,0.1365079365079365,NR,
+17,is_1,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,is,2,2,True,0.1365079365079365,NR,
+18,widely_0,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,widely,2,6,True,0.1365079365079365,NR,
+19,used_0,70.0,1,[62],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,1,used,2,4,True,0.1365079365079365,NR,0.0019022256039566293
+20,by_1,,0,[],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,0,by,2,2,True,0.1365079365079365,NR,
+21,organizations_0,577.0,6,"[26, 27, 45, 46, 49, 50]",meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,6,organizations,2,13,True,0.1365079365079365,NR,0.015679773906899643
+22,which_0,101.0,1,[68],meco_para_3_qa_1 ,meco_para_3,p6-volunteer-cognition,1,which,2,5,True,0.1365079365079365,NR,0.002744639799994565
+23,regulate_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,regulate,2,8,True,0.1365079365079365,NR,
+24,sporting_0,67.0,1,[71],,meco_para_3,p6-volunteer-cognition,1,sporting,2,8,True,0.1365079365079365,NR,0.0018207016495013452
+25,competitions._0,,0,[],,meco_para_3,p6-volunteer-cognition,0,competitions.,2,13,True,0.1365079365079365,NR,
+26,The_2,70.0,1,[8],,meco_para_3,p6-volunteer-cognition,1,The,3,3,True,0.1365079365079365,NR,0.0019022256039566293
+27,use_1,,0,[],,meco_para_3,p6-volunteer-cognition,0,use,3,3,True,0.1365079365079365,NR,
+28,of_1,374.0,2,"[16, 60]",,meco_para_3,p6-volunteer-cognition,2,of,3,2,True,0.1365079365079365,NR,0.01016331965542542
+29,drugs_1,135.0,2,"[17, 61]",,meco_para_3,p6-volunteer-cognition,2,drugs,3,5,True,0.1365079365079365,NR,0.003668577950487785
+30,to_0,67.0,1,[43],,meco_para_3,p6-volunteer-cognition,1,to,3,2,True,0.1365079365079365,NR,0.0018207016495013452
+31,enhance_0,404.0,3,"[48, 63, 65]",,meco_para_3,p6-volunteer-cognition,3,enhance,3,7,True,0.1365079365079365,NR,0.01097855919997826
+32,performance_0,305.0,3,"[47, 66, 67]",,meco_para_3,p6-volunteer-cognition,3,performance,3,11,True,0.1365079365079365,NR,0.008288268702953884
+33,is_2,68.0,1,[69],,meco_para_3,p6-volunteer-cognition,1,is,3,2,True,0.1365079365079365,NR,0.0018478763009864398
+34,largely_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,largely,3,7,True,0.1365079365079365,NR,
+35,considered_0,335.0,4,"[34, 104, 139, 140]",,meco_para_3,p6-volunteer-cognition,4,considered,3,10,True,0.1365079365079365,NR,0.009103508247506725
+36,"unethical,_0",542.0,5,"[35, 54, 103, 156, 157]",,meco_para_3,p6-volunteer-cognition,5,"unethical,",3,10,True,0.1365079365079365,NR,0.014728661104921329
+37,and_0,169.0,2,"[106, 107]",,meco_para_3,p6-volunteer-cognition,2,and,3,3,True,0.1365079365079365,NR,0.004592516100981005
+38,is_3,,0,[],,meco_para_3,p6-volunteer-cognition,0,is,3,2,True,0.1365079365079365,NR,
+39,therefore_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,therefore,3,9,True,0.1365079365079365,NR,
+40,prohibited_0,66.0,1,[18],,meco_para_3,p6-volunteer-cognition,1,prohibited,3,10,True,0.1365079365079365,NR,0.0017935269980162505
+41,by_2,,0,[],,meco_para_3,p6-volunteer-cognition,0,by,3,2,True,0.1365079365079365,NR,
+42,most_0,345.0,3,"[19, 20, 64]",,meco_para_3,p6-volunteer-cognition,3,most,3,4,True,0.1365079365079365,NR,0.009375254762357673
+43,international_0,168.0,2,"[86, 97]",,meco_para_3,p6-volunteer-cognition,2,international,3,13,True,0.1365079365079365,NR,0.00456534144949591
+44,sports_1,68.0,1,[102],,meco_para_3,p6-volunteer-cognition,1,sports,3,6,True,0.1365079365079365,NR,0.0018478763009864398
+45,"organizations,_1",237.0,2,"[87, 141]",,meco_para_3,p6-volunteer-cognition,2,"organizations,",3,14,True,0.1365079365079365,NR,0.006440392401967445
+46,including_0,239.0,3,"[13, 55, 158]",,meco_para_3,p6-volunteer-cognition,3,including,3,9,True,0.1365079365079365,NR,0.006494741704937634
+47,the_3,135.0,2,"[12, 37]",,meco_para_3,p6-volunteer-cognition,2,the,3,3,True,0.1365079365079365,NR,0.003668577950487785
+48,International_1,1771.0,12,"[9, 10, 11, 56, 57, 59, 76, 108, 143, 179, 180, 181]",,meco_para_3,p6-volunteer-cognition,12,International,3,13,True,0.1365079365079365,NR,0.04812630778010272
+49,Olympic_0,444.0,2,"[42, 79]",,meco_para_3,p6-volunteer-cognition,2,Olympic,3,7,True,0.1365079365079365,NR,0.01206554525938205
+50,Committee._0,68.0,1,[148],,meco_para_3,p6-volunteer-cognition,1,Committee.,3,10,True,0.1365079365079365,NR,0.0018478763009864398
+51,"Furthermore,_0",135.0,2,"[85, 98]",,meco_para_3,p6-volunteer-cognition,2,"Furthermore,",4,12,True,0.1365079365079365,NR,0.003668577950487785
+52,athletes_0,103.0,1,[101],,meco_para_3,p6-volunteer-cognition,1,athletes,4,8,True,0.1365079365079365,NR,0.0027989891029647543
+53,who_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,who,4,3,True,0.1365079365079365,NR,
+54,take_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,take,4,4,True,0.1365079365079365,NR,
+55,explicit._0,100.0,1,[88],,meco_para_3,p6-volunteer-cognition,1,explicit.,4,9,True,0.1365079365079365,NR,0.0027174651485094704
+56,measures_0,479.0,5,"[89, 90, 91, 142, 155]",,meco_para_3,p6-volunteer-cognition,5,measures,5,8,True,0.1365079365079365,NR,0.013016658061360363
+57,to_1,337.0,2,"[74, 159]",,meco_para_3,p6-volunteer-cognition,2,to,5,2,True,0.1365079365079365,NR,0.009157857550476916
+58,evade_0,987.0,7,"[38, 39, 40, 77, 92, 160, 178]",,meco_para_3,p6-volunteer-cognition,7,evade,5,5,True,0.1365079365079365,NR,0.026821381015788473
+59,detection_0,2003.0,9,"[78, 80, 81, 93, 109, 144, 161, 162, 167]",,meco_para_3,p6-volunteer-cognition,9,detection,5,9,True,0.1365079365079365,NR,0.05443082692464469
+60,exacerbate_0,615.0,6,"[83, 116, 118, 125, 147, 187]",,meco_para_3,p6-volunteer-cognition,6,exacerbate,5,10,True,0.1365079365079365,NR,0.016712410663333243
+61,the_4,850.0,4,"[84, 96, 117, 124]",,meco_para_3,p6-volunteer-cognition,4,the,5,3,True,0.1365079365079365,NR,0.0230984537623305
+62,ethical_0,271.0,3,"[122, 123, 152]",,meco_para_3,p6-volunteer-cognition,3,ethical,5,7,True,0.1365079365079365,NR,0.0073643305524606646
+63,violation_0,239.0,2,"[99, 153]",,meco_para_3,p6-volunteer-cognition,2,violation,5,9,True,0.1365079365079365,NR,0.006494741704937634
+64,with_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,with,5,4,True,0.1365079365079365,NR,
+65,overt_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,overt,5,5,True,0.1365079365079365,NR,
+66,deception_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,deception,5,9,True,0.1365079365079365,NR,
+67,and_1,136.0,1,[174],,meco_para_3,p6-volunteer-cognition,1,and,5,3,True,0.1365079365079365,NR,0.0036957526019728796
+68,cheating._0,373.0,3,"[175, 176, 222]",,meco_para_3,p6-volunteer-cognition,3,cheating.,5,9,True,0.1365079365079365,NR,0.010136145003940325
+69,Despite_0,612.0,3,"[75, 110, 177]",,meco_para_3,p6-volunteer-cognition,3,Despite,6,7,True,0.1365079365079365,NR,0.016630886708877957
+70,its_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,its,6,3,True,0.1365079365079365,NR,
+71,prevalence_0,2667.0,17,"[2, 3, 4, 5, 94, 112, 113, 114, 119, 120, 121, 126, 127, 166, 168, 169, 183]",,meco_para_3,p6-volunteer-cognition,17,prevalence,6,10,True,0.1365079365079365,NR,0.07247479551074758
+72,in_1,643.0,3,"[115, 145, 146]",,meco_para_3,p6-volunteer-cognition,3,in,6,2,True,0.1365079365079365,NR,0.017473300904915893
+73,the_5,,0,[],,meco_para_3,p6-volunteer-cognition,0,the,6,3,True,0.1365079365079365,NR,
+74,headlines_0,171.0,2,"[130, 151]",,meco_para_3,p6-volunteer-cognition,2,headlines,6,9,True,0.1365079365079365,NR,0.0046468654039511946
+75,"recently,_0",170.0,1,[100],,meco_para_3,p6-volunteer-cognition,1,"recently,",6,9,True,0.1365079365079365,NR,0.0046196907524661
+76,doping_2,133.0,1,[154],,meco_para_3,p6-volunteer-cognition,1,doping,6,6,True,0.1365079365079365,NR,0.0036142286475175957
+77,is_4,,0,[],,meco_para_3,p6-volunteer-cognition,0,is,6,2,True,0.1365079365079365,NR,
+78,not_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,not,6,3,True,0.1365079365079365,NR,
+79,a_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,a,6,1,True,0.1365079365079365,NR,
+80,new_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,new,6,3,True,0.1365079365079365,NR,
+81,phenomenon;_0,474.0,2,"[223, 224]",,meco_para_3,p6-volunteer-cognition,2,phenomenon;,6,11,True,0.1365079365079365,NR,0.01288078480393489
+82,in_2,130.0,2,"[209, 225]",,meco_para_3,p6-volunteer-cognition,2,in,6,2,True,0.1365079365079365,NR,0.0035327046930623113
+83,"fact,_0",411.0,4,"[111, 207, 208, 211]",,meco_para_3,p6-volunteer-cognition,4,"fact,",6,5,True,0.1365079365079365,NR,0.011168781760373923
+84,it_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,it,6,2,True,0.1365079365079365,NR,
+85,is_5,,0,[],,meco_para_3,p6-volunteer-cognition,0,is,6,2,True,0.1365079365079365,NR,
+86,as_0,134.0,2,"[184, 186]",,meco_para_3,p6-volunteer-cognition,2,as,6,2,True,0.1365079365079365,NR,0.0036414032990026903
+87,old_0,294.0,3,"[95, 164, 170]",,meco_para_3,p6-volunteer-cognition,3,old,6,3,True,0.1365079365079365,NR,0.007989347536617843
+88,as_1,68.0,1,[128],,meco_para_3,p6-volunteer-cognition,1,as,6,2,True,0.1365079365079365,NR,0.0018478763009864398
+89,sport_0,477.0,2,"[129, 188]",,meco_para_3,p6-volunteer-cognition,2,sport,6,5,True,0.1365079365079365,NR,0.012962308758390174
+90,itself._0,201.0,2,"[131, 190]",,meco_para_3,p6-volunteer-cognition,2,itself.,6,7,True,0.1365079365079365,NR,0.0054621049485040355
+91,From_0,240.0,2,"[132, 133]",,meco_para_3,p6-volunteer-cognition,2,From,7,4,True,0.1365079365079365,NR,0.006521916356422729
+92,the_6,373.0,2,"[135, 138]",,meco_para_3,p6-volunteer-cognition,2,the,7,3,True,0.1365079365079365,NR,0.010136145003940325
+93,use_2,,0,[],,meco_para_3,p6-volunteer-cognition,0,use,7,3,True,0.1365079365079365,NR,
+94,of_2,,0,[],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,0,of,7,2,True,0.1365079365079365,NR,
+95,substances_0,,0,[],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,0,substances,7,10,True,0.1365079365079365,NR,
+96,in_3,67.0,1,[238],meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,p6-volunteer-cognition,1,in,7,2,True,0.1365079365079365,NR,0.0018207016495013452
+97,ancient_0,136.0,1,[210],meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,p6-volunteer-cognition,1,ancient,7,7,True,0.1365079365079365,NR,0.0036957526019728796
+98,chariot_0,271.0,3,"[202, 203, 242]",meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,p6-volunteer-cognition,3,chariot,7,7,True,0.1365079365079365,NR,0.0073643305524606646
+99,races_0,,0,[],meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,p6-volunteer-cognition,0,races,7,5,True,0.1365079365079365,NR,
+100,to_2,103.0,1,[226],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,1,to,7,2,True,0.1365079365079365,NR,0.0027989891029647543
+101,more_0,236.0,2,"[165, 185]",meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,2,more,7,4,True,0.1365079365079365,NR,0.0064132177504823504
+102,recent_0,340.0,2,"[150, 171]",meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,2,recent,7,6,True,0.1365079365079365,NR,0.0092393815049322
+103,controversies_0,580.0,4,"[134, 172, 189, 192]",meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,4,controversies,7,13,True,0.1365079365079365,NR,0.01576129786135493
+104,in_4,102.0,1,[191],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,1,in,7,2,True,0.1365079365079365,NR,0.0027718144514796597
+105,baseball_0,174.0,2,"[136, 198]",meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,2,baseball,7,8,True,0.1365079365079365,NR,0.0047283893584064785
+106,and_2,,0,[],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,0,and,7,3,True,0.1365079365079365,NR,
+107,"cycling,_0",169.0,1,[199],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,1,"cycling,",7,8,True,0.1365079365079365,NR,0.004592516100981005
+108,popular_0,234.0,2,"[201, 261]",meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,2,popular,7,7,True,0.1365079365079365,NR,0.00635886844751216
+109,views_0,204.0,2,"[241, 281]",meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,2,views,7,5,True,0.1365079365079365,NR,0.005543628902959319
+110,among_0,170.0,2,"[204, 206]",meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,2,among,7,5,True,0.1365079365079365,NR,0.0046196907524661
+111,athletes_1,136.0,1,[229],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,1,athletes,7,8,True,0.1365079365079365,NR,0.0036957526019728796
+112,have_0,374.0,3,"[228, 244, 265]",meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,3,have,7,4,True,0.1365079365079365,NR,0.01016331965542542
+113,varied_0,271.0,1,[213],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,1,varied,7,6,True,0.1365079365079365,NR,0.0073643305524606646
+114,widely_1,,0,[],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,0,widely,7,6,True,0.1365079365079365,NR,
+115,over_0,169.0,1,[237],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,1,over,7,4,True,0.1365079365079365,NR,0.004592516100981005
+116,the_7,,0,[],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,0,the,7,3,True,0.1365079365079365,NR,
+117,years._0,132.0,2,"[137, 197]",meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,2,years.,7,6,True,0.1365079365079365,NR,0.003587053996032501
+118,In_5,,0,[],meco_para_3_qa_2 ,meco_para_3,p6-volunteer-cognition,0,In,8,2,True,0.1365079365079365,NR,
+119,recent_1,,0,[],,meco_para_3,p6-volunteer-cognition,0,recent,8,6,True,0.1365079365079365,NR,
+120,"decades,_0",303.0,2,"[200, 240]",,meco_para_3,p6-volunteer-cognition,2,"decades,",8,8,True,0.1365079365079365,NR,0.008233919399983695
+121,authorities_0,388.0,4,"[205, 262, 263, 280]",,meco_para_3,p6-volunteer-cognition,4,authorities,8,11,True,0.1365079365079365,NR,0.010543764776216744
+122,and_3,224.0,3,"[264, 282, 283]",,meco_para_3,p6-volunteer-cognition,3,and,8,3,True,0.1365079365079365,NR,0.006087121932661214
+123,sporting_1,69.0,1,[284],,meco_para_3,p6-volunteer-cognition,1,sporting,8,8,True,0.1365079365079365,NR,0.0018750509524715347
+124,organizations_2,546.0,5,"[212, 230, 245, 246, 248]",,meco_para_3,p6-volunteer-cognition,5,organizations,8,13,True,0.1365079365079365,NR,0.014837359710861708
+125,have_1,545.0,3,"[214, 233, 249]",,meco_para_3,p6-volunteer-cognition,3,have,8,4,True,0.1365079365079365,NR,0.014810185059376613
+126,tried_0,135.0,2,"[250, 266]",,meco_para_3,p6-volunteer-cognition,2,tried,8,5,True,0.1365079365079365,NR,0.003668577950487785
+127,to_3,342.0,2,"[220, 221]",,meco_para_3,p6-volunteer-cognition,2,to,8,2,True,0.1365079365079365,NR,0.009293730807902389
+128,strictly_0,206.0,3,"[0, 196, 277]",,meco_para_3,p6-volunteer-cognition,3,strictly,8,8,True,0.1365079365079365,NR,0.005597978205929509
+129,regulate_1,171.0,1,[259],,meco_para_3,p6-volunteer-cognition,1,regulate,8,8,True,0.1365079365079365,NR,0.0046468654039511946
+130,the_8,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,the,8,3,True,0.1365079365079365,NR,
+131,use_3,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,use,8,3,True,0.1365079365079365,NR,
+132,of_3,104.0,1,[298],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,1,of,8,2,True,0.1365079365079365,NR,0.002826163754449849
+133,drugs_2,371.0,4,"[279, 299, 300, 311]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,4,drugs,8,5,True,0.1365079365079365,NR,0.010081795700970135
+134,in_6,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,in,8,2,True,0.1365079365079365,NR,
+135,sport._1,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,sport.,8,6,True,0.1365079365079365,NR,
+136,The_9,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,The,9,3,True,0.1365079365079365,NR,
+137,primary_0,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,primary,9,7,True,0.1365079365079365,NR,
+138,reasons_0,342.0,4,"[149, 216, 271, 285]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,4,reasons,9,7,True,0.1365079365079365,NR,0.009293730807902389
+139,for_0,308.0,3,"[268, 274, 292]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,3,for,9,3,True,0.1365079365079365,NR,0.008369792657409168
+140,this_0,171.0,1,[251],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,1,this,9,4,True,0.1365079365079365,NR,0.0046468654039511946
+141,ban_0,135.0,1,[219],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,1,ban,9,3,True,0.1365079365079365,NR,0.003668577950487785
+142,are_0,102.0,1,[195],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,1,are,9,3,True,0.1365079365079365,NR,0.0027718144514796597
+143,the_10,306.0,2,"[255, 256]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,2,the,9,3,True,0.1365079365079365,NR,0.008315443354438979
+144,health_0,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,health,9,6,True,0.1365079365079365,NR,
+145,risks_0,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,risks,9,5,True,0.1365079365079365,NR,
+146,of_4,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,of,9,2,True,0.1365079365079365,NR,
+147,performance-enhancing_1,373.0,2,"[301, 312]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,2,performance-enhancing,9,21,True,0.1365079365079365,NR,0.010136145003940325
+148,"drugs,_3",204.0,1,[302],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,1,"drugs,",9,6,True,0.1365079365079365,NR,0.005543628902959319
+149,the_11,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,the,9,3,True,0.1365079365079365,NR,
+150,equality_0,169.0,2,"[289, 290]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,2,equality,9,8,True,0.1365079365079365,NR,0.004592516100981005
+151,of_5,409.0,3,"[215, 272, 286]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,3,of,9,2,True,0.1365079365079365,NR,0.011114432457403733
+152,opportunity_0,1085.0,6,"[194, 218, 252, 273, 291, 293]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,6,opportunity,9,11,True,0.1365079365079365,NR,0.029484496861327755
+153,for_1,206.0,2,"[254, 257]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,2,for,9,3,True,0.1365079365079365,NR,0.005597978205929509
+154,"athletes,_2",954.0,7,"[236, 276, 278, 294, 295, 296, 297]",meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,7,"athletes,",9,9,True,0.1365079365079365,NR,0.025924617516780348
+155,and_4,,0,[],meco_para_3_qa_0 ,meco_para_3,p6-volunteer-cognition,0,and,9,3,True,0.1365079365079365,NR,
+156,the_12,,0,[],,meco_para_3,p6-volunteer-cognition,0,the,9,3,True,0.1365079365079365,NR,
+157,positive_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,positive,9,8,True,0.1365079365079365,NR,
+158,example_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,example,9,7,True,0.1365079365079365,NR,
+159,to_4,136.0,1,[313],,meco_para_3,p6-volunteer-cognition,1,to,9,2,True,0.1365079365079365,NR,0.0036957526019728796
+160,the_13,,0,[],,meco_para_3,p6-volunteer-cognition,0,the,9,3,True,0.1365079365079365,NR,
+161,public_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,public,9,6,True,0.1365079365079365,NR,
+162,set_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,set,9,3,True,0.1365079365079365,NR,
+163,by_3,306.0,2,"[288, 304]",,meco_para_3,p6-volunteer-cognition,2,by,9,2,True,0.1365079365079365,NR,0.008315443354438979
+164,drug-free_0,715.0,3,"[270, 287, 306]",,meco_para_3,p6-volunteer-cognition,3,drug-free,9,9,True,0.1365079365079365,NR,0.019429875811842714
+165,sport._2,305.0,1,[269],,meco_para_3,p6-volunteer-cognition,1,sport.,9,6,True,0.1365079365079365,NR,0.008288268702953884
+166,Anti-doping_0,712.0,7,"[234, 235, 253, 275, 307, 308, 309]",,meco_para_3,p6-volunteer-cognition,7,Anti-doping,10,11,True,0.1365079365079365,NR,0.019348351857387428
+167,authorities_1,,0,[],,meco_para_3,p6-volunteer-cognition,0,authorities,10,11,True,0.1365079365079365,NR,
+168,have_2,,0,[],,meco_para_3,p6-volunteer-cognition,0,have,10,4,True,0.1365079365079365,NR,
+169,repeatedly_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,repeatedly,10,10,True,0.1365079365079365,NR,
+170,emphasized_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,emphasized,10,10,True,0.1365079365079365,NR,
+171,that_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,that,10,4,True,0.1365079365079365,NR,
+172,using_0,174.0,1,[305],,meco_para_3,p6-volunteer-cognition,1,using,10,5,True,0.1365079365079365,NR,0.0047283893584064785
+173, performance-enhancing_0,,0,[],,meco_para_3,p6-volunteer-cognition,0, performance-enhancing,10,22,True,0.1365079365079365,NR,
+174,drugs_4,,0,[],,meco_para_3,p6-volunteer-cognition,0,drugs,10,5,True,0.1365079365079365,NR,
+175,goes_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,goes,10,4,True,0.1365079365079365,NR,
+176,against_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,against,10,7,True,0.1365079365079365,NR,
+177,the_14,,0,[],,meco_para_3,p6-volunteer-cognition,0,the,10,3,True,0.1365079365079365,NR,
+178,‘spirit_0,,0,[],,meco_para_3,p6-volunteer-cognition,0,‘spirit,10,7,True,0.1365079365079365,NR,
+179,of_6,,0,[],,meco_para_3,p6-volunteer-cognition,0,of,10,2,True,0.1365079365079365,NR,
+180,sport’._0,,0,[],,meco_para_3,p6-volunteer-cognition,0,sport’.,10,7,True,0.1365079365079365,NR,

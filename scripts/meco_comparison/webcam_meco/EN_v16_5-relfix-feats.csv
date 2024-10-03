@@ -1,182 +1,972 @@
-,word_id_orig,TRT,FixCount,scanPath,Span_word_is_in,text_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
-0,In_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,In,1,2,True,0.018315018315018316,NR,
-1,competitive_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,competitive,1,11,True,0.018315018315018316,NR,
-2,"sports,_0",,0,[],meco_para_3_qa_1 ,meco_para_3,0,"sports,",1,7,True,0.018315018315018316,NR,
-3,doping_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,doping,1,6,True,0.018315018315018316,NR,
-4,is_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,is,1,2,True,0.018315018315018316,NR,
-5,the_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,the,1,3,True,0.018315018315018316,NR,
-6,use_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,use,1,3,True,0.018315018315018316,NR,
-7,of_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,of,1,2,True,0.018315018315018316,NR,
-8,banned_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,banned,1,6,True,0.018315018315018316,NR,
-9,performance-enhancing_0,61.0,1,[20],meco_para_3_qa_1 ,meco_para_3,1,performance-enhancing,1,21,True,0.018315018315018316,NR,1.0
-10,drugs_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,drugs,1,5,True,0.018315018315018316,NR,
-11,by_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,by,1,2,True,0.018315018315018316,NR,
-12,athletic_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,athletic,1,8,True,0.018315018315018316,NR,
-13,competitors._0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,competitors.,1,12,True,0.018315018315018316,NR,
-14,The_1,,0,[],meco_para_3_qa_1 ,meco_para_3,0,The,2,3,True,0.018315018315018316,NR,
-15,term_0,102.0,2,"[36, 37]",meco_para_3_qa_1 ,meco_para_3,2,term,2,4,True,0.018315018315018316,NR,0.14166666666666666
-16,doping_1,,0,[],meco_para_3_qa_1 ,meco_para_3,0,doping,2,6,True,0.018315018315018316,NR,
-17,is_1,,0,[],meco_para_3_qa_1 ,meco_para_3,0,is,2,2,True,0.018315018315018316,NR,
-18,widely_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,widely,2,6,True,0.018315018315018316,NR,
-19,used_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,used,2,4,True,0.018315018315018316,NR,
-20,by_1,65.0,1,[17],meco_para_3_qa_1 ,meco_para_3,1,by,2,2,True,0.018315018315018316,NR,0.09027777777777778
-21,organizations_0,124.0,1,[21],meco_para_3_qa_1 ,meco_para_3,1,organizations,2,13,True,0.018315018315018316,NR,0.17222222222222222
-22,which_0,,0,[],meco_para_3_qa_1 ,meco_para_3,0,which,2,5,True,0.018315018315018316,NR,
-23,regulate_0,,0,[],,meco_para_3,0,regulate,2,8,True,0.018315018315018316,NR,
-24,sporting_0,,0,[],,meco_para_3,0,sporting,2,8,True,0.018315018315018316,NR,
-25,competitions._0,429.0,2,"[8, 35]",,meco_para_3,2,competitions.,2,13,True,0.018315018315018316,NR,0.5958333333333333
-26,The_2,107.0,1,[38],,meco_para_3,1,The,3,3,True,0.018315018315018316,NR,0.023516483516483517
-27,use_1,,0,[],,meco_para_3,0,use,3,3,True,0.018315018315018316,NR,
-28,of_1,,0,[],,meco_para_3,0,of,3,2,True,0.018315018315018316,NR,
-29,drugs_1,131.0,2,"[15, 48]",,meco_para_3,2,drugs,3,5,True,0.018315018315018316,NR,0.02879120879120879
-30,to_0,,0,[],,meco_para_3,0,to,3,2,True,0.018315018315018316,NR,
-31,enhance_0,135.0,2,"[16, 47]",,meco_para_3,2,enhance,3,7,True,0.018315018315018316,NR,0.02967032967032967
-32,performance_0,138.0,2,"[22, 43]",,meco_para_3,2,performance,3,11,True,0.018315018315018316,NR,0.03032967032967033
-33,is_2,222.0,3,"[65, 91, 93]",,meco_para_3,3,is,3,2,True,0.018315018315018316,NR,0.04879120879120879
-34,largely_0,398.0,4,"[45, 66, 92, 94]",,meco_para_3,4,largely,3,7,True,0.018315018315018316,NR,0.08747252747252747
-35,considered_0,59.0,1,[33],,meco_para_3,1,considered,3,10,True,0.018315018315018316,NR,0.012967032967032967
-36,"unethical,_0",315.0,3,"[34, 130, 131]",,meco_para_3,3,"unethical,",3,10,True,0.018315018315018316,NR,0.06923076923076923
-37,and_0,122.0,2,"[29, 133]",,meco_para_3,2,and,3,3,True,0.018315018315018316,NR,0.026813186813186812
-38,is_3,147.0,2,"[9, 28]",,meco_para_3,2,is,3,2,True,0.018315018315018316,NR,0.03230769230769231
-39,therefore_0,175.0,3,"[7, 10, 134]",,meco_para_3,3,therefore,3,9,True,0.018315018315018316,NR,0.038461538461538464
-40,prohibited_0,445.0,4,"[14, 40, 41, 42]",,meco_para_3,4,prohibited,3,10,True,0.018315018315018316,NR,0.0978021978021978
-41,by_2,,0,[],,meco_para_3,0,by,3,2,True,0.018315018315018316,NR,
-42,most_0,185.0,1,[89],,meco_para_3,1,most,3,4,True,0.018315018315018316,NR,0.04065934065934066
-43,international_0,342.0,5,"[26, 44, 62, 63, 64]",,meco_para_3,5,international,3,13,True,0.018315018315018316,NR,0.07516483516483516
-44,sports_1,275.0,1,[24],,meco_para_3,1,sports,3,6,True,0.018315018315018316,NR,0.06043956043956044
-45,"organizations,_1",76.0,1,[32],,meco_para_3,1,"organizations,",3,14,True,0.018315018315018316,NR,0.016703296703296705
-46,including_0,221.0,3,"[30, 31, 132]",,meco_para_3,3,including,3,9,True,0.018315018315018316,NR,0.04857142857142857
-47,the_3,,0,[],,meco_para_3,0,the,3,3,True,0.018315018315018316,NR,
-48,International_1,565.0,6,"[3, 12, 57, 83, 118, 135]",,meco_para_3,6,International,3,13,True,0.018315018315018316,NR,0.12417582417582418
-49,Olympic_0,276.0,4,"[11, 13, 49, 58]",,meco_para_3,4,Olympic,3,7,True,0.018315018315018316,NR,0.06065934065934066
-50,Committee._0,216.0,3,"[27, 61, 88]",,meco_para_3,3,Committee.,3,10,True,0.018315018315018316,NR,0.047472527472527476
-51,"Furthermore,_0",,0,[],,meco_para_3,0,"Furthermore,",4,12,True,0.018315018315018316,NR,
-52,athletes_0,111.0,2,"[23, 68]",,meco_para_3,2,athletes,4,8,True,0.018315018315018316,NR,0.40217391304347827
-53,who_0,98.0,1,[25],,meco_para_3,1,who,4,3,True,0.018315018315018316,NR,0.35507246376811596
-54,take_0,,0,[],,meco_para_3,0,take,4,4,True,0.018315018315018316,NR,
-55,explicit._0,67.0,1,[78],,meco_para_3,1,explicit.,4,9,True,0.018315018315018316,NR,0.2427536231884058
-56,measures_0,503.0,4,"[54, 79, 97, 129]",,meco_para_3,4,measures,5,8,True,0.018315018315018316,NR,0.2015224358974359
-57,to_1,134.0,2,"[6, 128]",,meco_para_3,2,to,5,2,True,0.018315018315018316,NR,0.05368589743589743
-58,evade_0,264.0,3,"[50, 82, 113]",,meco_para_3,3,evade,5,5,True,0.018315018315018316,NR,0.10576923076923077
-59,detection_0,296.0,4,"[84, 85, 120, 127]",,meco_para_3,4,detection,5,9,True,0.018315018315018316,NR,0.11858974358974358
-60,exacerbate_0,326.0,4,"[59, 60, 87, 96]",,meco_para_3,4,exacerbate,5,10,True,0.018315018315018316,NR,0.13060897435897437
-61,the_4,,0,[],,meco_para_3,0,the,5,3,True,0.018315018315018316,NR,
-62,ethical_0,,0,[],,meco_para_3,0,ethical,5,7,True,0.018315018315018316,NR,
-63,violation_0,,0,[],,meco_para_3,0,violation,5,9,True,0.018315018315018316,NR,
-64,with_0,57.0,1,[69],,meco_para_3,1,with,5,4,True,0.018315018315018316,NR,0.02283653846153846
-65,overt_0,,0,[],,meco_para_3,0,overt,5,5,True,0.018315018315018316,NR,
-66,deception_0,152.0,1,[77],,meco_para_3,1,deception,5,9,True,0.018315018315018316,NR,0.060897435897435896
-67,and_1,66.0,1,[76],,meco_para_3,1,and,5,3,True,0.018315018315018316,NR,0.026442307692307692
-68,cheating._0,698.0,5,"[52, 74, 75, 80, 98]",,meco_para_3,5,cheating.,5,9,True,0.018315018315018316,NR,0.2796474358974359
-69,Despite_0,350.0,4,"[73, 81, 86, 117]",,meco_para_3,4,Despite,6,7,True,0.018315018315018316,NR,0.17073170731707318
-70,its_0,330.0,2,"[2, 4]",,meco_para_3,2,its,6,3,True,0.018315018315018316,NR,0.16097560975609757
-71,prevalence_0,159.0,2,"[56, 121]",,meco_para_3,2,prevalence,6,10,True,0.018315018315018316,NR,0.0775609756097561
-72,in_1,77.0,1,[99],,meco_para_3,1,in,6,2,True,0.018315018315018316,NR,0.037560975609756096
-73,the_5,132.0,1,[136],,meco_para_3,1,the,6,3,True,0.018315018315018316,NR,0.06439024390243903
-74,headlines_0,,0,[],,meco_para_3,0,headlines,6,9,True,0.018315018315018316,NR,
-75,"recently,_0",,0,[],,meco_para_3,0,"recently,",6,9,True,0.018315018315018316,NR,
-76,doping_2,121.0,2,"[124, 125]",,meco_para_3,2,doping,6,6,True,0.018315018315018316,NR,0.059024390243902436
-77,is_4,63.0,1,[105],,meco_para_3,1,is,6,2,True,0.018315018315018316,NR,0.03073170731707317
-78,not_0,,0,[],,meco_para_3,0,not,6,3,True,0.018315018315018316,NR,
-79,a_0,,0,[],,meco_para_3,0,a,6,1,True,0.018315018315018316,NR,
-80,new_0,,0,[],,meco_para_3,0,new,6,3,True,0.018315018315018316,NR,
-81,phenomenon;_0,392.0,5,"[51, 115, 176, 177, 248]",,meco_para_3,5,phenomenon;,6,11,True,0.018315018315018316,NR,0.19121951219512195
-82,in_2,,0,[],,meco_para_3,0,in,6,2,True,0.018315018315018316,NR,
-83,"fact,_0",287.0,2,"[72, 122]",,meco_para_3,2,"fact,",6,5,True,0.018315018315018316,NR,0.14
-84,it_0,,0,[],,meco_para_3,0,it,6,2,True,0.018315018315018316,NR,
-85,is_5,,0,[],,meco_para_3,0,is,6,2,True,0.018315018315018316,NR,
-86,as_0,68.0,1,[112],,meco_para_3,1,as,6,2,True,0.018315018315018316,NR,0.033170731707317075
-87,old_0,,0,[],,meco_para_3,0,old,6,3,True,0.018315018315018316,NR,
-88,as_1,,0,[],,meco_para_3,0,as,6,2,True,0.018315018315018316,NR,
-89,sport_0,71.0,1,[138],,meco_para_3,1,sport,6,5,True,0.018315018315018316,NR,0.03463414634146342
-90,itself._0,,0,[],,meco_para_3,0,itself.,6,7,True,0.018315018315018316,NR,
-91,From_0,,0,[],,meco_para_3,0,From,7,4,True,0.018315018315018316,NR,
-92,the_6,93.0,1,[71],,meco_para_3,1,the,7,3,True,0.018315018315018316,NR,0.03286219081272085
-93,use_2,,0,[],,meco_para_3,0,use,7,3,True,0.018315018315018316,NR,
-94,of_2,,0,[],meco_para_3_qa_2 ,meco_para_3,0,of,7,2,True,0.018315018315018316,NR,
-95,substances_0,,0,[],meco_para_3_qa_2 ,meco_para_3,0,substances,7,10,True,0.018315018315018316,NR,
-96,in_3,147.0,2,"[178, 249]",meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,2,in,7,2,True,0.018315018315018316,NR,0.0519434628975265
-97,ancient_0,506.0,4,"[116, 146, 175, 250]",meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,4,ancient,7,7,True,0.018315018315018316,NR,0.17879858657243816
-98,chariot_0,276.0,2,"[145, 162]",meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,2,chariot,7,7,True,0.018315018315018316,NR,0.09752650176678446
-99,races_0,177.0,1,[55],meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,1,races,7,5,True,0.018315018315018316,NR,0.06254416961130742
-100,to_2,,0,[],meco_para_3_qa_2 ,meco_para_3,0,to,7,2,True,0.018315018315018316,NR,
-101,more_0,,0,[],meco_para_3_qa_2 ,meco_para_3,0,more,7,4,True,0.018315018315018316,NR,
-102,recent_0,224.0,3,"[100, 111, 137]",meco_para_3_qa_2 ,meco_para_3,3,recent,7,6,True,0.018315018315018316,NR,0.07915194346289753
-103,controversies_0,321.0,4,"[102, 110, 139, 174]",meco_para_3_qa_2 ,meco_para_3,4,controversies,7,13,True,0.018315018315018316,NR,0.11342756183745584
-104,in_4,,0,[],meco_para_3_qa_2 ,meco_para_3,0,in,7,2,True,0.018315018315018316,NR,
-105,baseball_0,,0,[],meco_para_3_qa_2 ,meco_para_3,0,baseball,7,8,True,0.018315018315018316,NR,
-106,and_2,,0,[],meco_para_3_qa_2 ,meco_para_3,0,and,7,3,True,0.018315018315018316,NR,
-107,"cycling,_0",,0,[],meco_para_3_qa_2 ,meco_para_3,0,"cycling,",7,8,True,0.018315018315018316,NR,
-108,popular_0,,0,[],meco_para_3_qa_2 ,meco_para_3,0,popular,7,7,True,0.018315018315018316,NR,
-109,views_0,145.0,1,[179],meco_para_3_qa_2 ,meco_para_3,1,views,7,5,True,0.018315018315018316,NR,0.05123674911660778
-110,among_0,613.0,2,"[1, 147]",meco_para_3_qa_2 ,meco_para_3,2,among,7,5,True,0.018315018315018316,NR,0.2166077738515901
-111,athletes_1,,0,[],meco_para_3_qa_2 ,meco_para_3,0,athletes,7,8,True,0.018315018315018316,NR,
-112,have_0,,0,[],meco_para_3_qa_2 ,meco_para_3,0,have,7,4,True,0.018315018315018316,NR,
-113,varied_0,,0,[],meco_para_3_qa_2 ,meco_para_3,0,varied,7,6,True,0.018315018315018316,NR,
-114,widely_1,140.0,2,"[159, 160]",meco_para_3_qa_2 ,meco_para_3,2,widely,7,6,True,0.018315018315018316,NR,0.04946996466431095
-115,over_0,115.0,2,"[101, 140]",meco_para_3_qa_2 ,meco_para_3,2,over,7,4,True,0.018315018315018316,NR,0.04063604240282685
-116,the_7,,0,[],meco_para_3_qa_2 ,meco_para_3,0,the,7,3,True,0.018315018315018316,NR,
-117,years._0,73.0,1,[109],meco_para_3_qa_2 ,meco_para_3,1,years.,7,6,True,0.018315018315018316,NR,0.025795053003533568
-118,In_5,,0,[],meco_para_3_qa_2 ,meco_para_3,0,In,8,2,True,0.018315018315018316,NR,
-119,recent_1,,0,[],,meco_para_3,0,recent,8,6,True,0.018315018315018316,NR,
-120,"decades,_0",80.0,1,[202],,meco_para_3,1,"decades,",8,8,True,0.018315018315018316,NR,0.031189083820662766
-121,authorities_0,194.0,3,"[203, 204, 251]",,meco_para_3,3,authorities,8,11,True,0.018315018315018316,NR,0.07563352826510722
-122,and_3,472.0,1,[189],,meco_para_3,1,and,8,3,True,0.018315018315018316,NR,0.18401559454191033
-123,sporting_1,395.0,6,"[0, 149, 187, 188, 205, 206]",,meco_para_3,6,sporting,8,8,True,0.018315018315018316,NR,0.1539961013645224
-124,organizations_2,128.0,2,"[144, 165]",,meco_para_3,2,organizations,8,13,True,0.018315018315018316,NR,0.04990253411306043
-125,have_1,,0,[],,meco_para_3,0,have,8,4,True,0.018315018315018316,NR,
-126,tried_0,68.0,1,[226],,meco_para_3,1,tried,8,5,True,0.018315018315018316,NR,0.026510721247563353
-127,to_3,81.0,1,[141],,meco_para_3,1,to,8,2,True,0.018315018315018316,NR,0.031578947368421054
-128,strictly_0,271.0,2,"[155, 196]",,meco_para_3,2,strictly,8,8,True,0.018315018315018316,NR,0.10565302144249512
-129,regulate_1,141.0,2,"[156, 197]",,meco_para_3,2,regulate,8,8,True,0.018315018315018316,NR,0.05497076023391813
-130,the_8,,0,[],meco_para_3_qa_0 ,meco_para_3,0,the,8,3,True,0.018315018315018316,NR,
-131,use_3,,0,[],meco_para_3_qa_0 ,meco_para_3,0,use,8,3,True,0.018315018315018316,NR,
-132,of_3,99.0,1,[201],meco_para_3_qa_0 ,meco_para_3,1,of,8,2,True,0.018315018315018316,NR,0.03859649122807018
-133,drugs_2,132.0,2,"[247, 268]",meco_para_3_qa_0 ,meco_para_3,2,drugs,8,5,True,0.018315018315018316,NR,0.05146198830409357
-134,in_6,69.0,1,[269],meco_para_3_qa_0 ,meco_para_3,1,in,8,2,True,0.018315018315018316,NR,0.026900584795321637
-135,sport._1,435.0,4,"[233, 266, 267, 270]",meco_para_3_qa_0 ,meco_para_3,4,sport.,8,6,True,0.018315018315018316,NR,0.1695906432748538
-136,The_9,341.0,4,"[211, 213, 225, 256]",meco_para_3_qa_0 ,meco_para_3,4,The,9,3,True,0.018315018315018316,NR,0.06984842277755018
-137,primary_0,688.0,7,"[166, 167, 190, 207, 210, 212, 232]",meco_para_3_qa_0 ,meco_para_3,7,primary,9,7,True,0.018315018315018316,NR,0.14092585006145023
-138,reasons_0,60.0,1,[231],meco_para_3_qa_0 ,meco_para_3,1,reasons,9,7,True,0.018315018315018316,NR,0.012290045063498567
-139,for_0,97.0,1,[195],meco_para_3_qa_0 ,meco_para_3,1,for,9,3,True,0.018315018315018316,NR,0.019868906185989348
-140,this_0,,0,[],meco_para_3_qa_0 ,meco_para_3,0,this,9,4,True,0.018315018315018316,NR,
-141,ban_0,73.0,1,[227],meco_para_3_qa_0 ,meco_para_3,1,ban,9,3,True,0.018315018315018316,NR,0.014952888160589923
-142,are_0,71.0,1,[158],meco_para_3_qa_0 ,meco_para_3,1,are,9,3,True,0.018315018315018316,NR,0.014543219991806636
-143,the_10,64.0,1,[142],meco_para_3_qa_0 ,meco_para_3,1,the,9,3,True,0.018315018315018316,NR,0.013109381401065138
-144,health_0,241.0,2,"[153, 157]",meco_para_3_qa_0 ,meco_para_3,2,health,9,6,True,0.018315018315018316,NR,0.04936501433838591
-145,risks_0,,0,[],meco_para_3_qa_0 ,meco_para_3,0,risks,9,5,True,0.018315018315018316,NR,
-146,of_4,,0,[],meco_para_3_qa_0 ,meco_para_3,0,of,9,2,True,0.018315018315018316,NR,
-147,performance-enhancing_1,330.0,3,"[219, 239, 252]",meco_para_3_qa_0 ,meco_para_3,3,performance-enhancing,9,21,True,0.018315018315018316,NR,0.06759524784924212
-148,"drugs,_3",566.0,7,"[214, 220, 221, 224, 234, 255, 271]",meco_para_3_qa_0 ,meco_para_3,7,"drugs,",9,6,True,0.018315018315018316,NR,0.11593609176566981
-149,the_11,257.0,3,"[209, 237, 257]",meco_para_3_qa_0 ,meco_para_3,3,the,9,3,True,0.018315018315018316,NR,0.05264235968865219
-150,equality_0,378.0,3,"[191, 194, 200]",meco_para_3_qa_0 ,meco_para_3,3,equality,9,8,True,0.018315018315018316,NR,0.07742728390004097
-151,of_5,,0,[],meco_para_3_qa_0 ,meco_para_3,0,of,9,2,True,0.018315018315018316,NR,
-152,opportunity_0,108.0,2,"[151, 246]",meco_para_3_qa_0 ,meco_para_3,2,opportunity,9,11,True,0.018315018315018316,NR,0.02212208111429742
-153,for_1,,0,[],meco_para_3_qa_0 ,meco_para_3,0,for,9,3,True,0.018315018315018316,NR,
-154,"athletes,_2",173.0,2,"[154, 245]",meco_para_3_qa_0 ,meco_para_3,2,"athletes,",9,9,True,0.018315018315018316,NR,0.0354362965997542
-155,and_4,148.0,2,"[228, 244]",meco_para_3_qa_0 ,meco_para_3,2,and,9,3,True,0.018315018315018316,NR,0.03031544448996313
-156,the_12,,0,[],,meco_para_3,0,the,9,3,True,0.018315018315018316,NR,
-157,positive_0,,0,[],,meco_para_3,0,positive,9,8,True,0.018315018315018316,NR,
-158,example_0,,0,[],,meco_para_3,0,example,9,7,True,0.018315018315018316,NR,
-159,to_4,63.0,1,[222],,meco_para_3,1,to,9,2,True,0.018315018315018316,NR,0.012904547316673495
-160,the_13,131.0,2,"[223, 254]",,meco_para_3,2,the,9,3,True,0.018315018315018316,NR,0.026833265055305203
-161,public_0,328.0,4,"[180, 181, 235, 238]",,meco_para_3,4,public,9,6,True,0.018315018315018316,NR,0.06718557968045882
-162,set_0,322.0,3,"[192, 236, 265]",,meco_para_3,3,set,9,3,True,0.018315018315018316,NR,0.06595657517410897
-163,by_3,231.0,3,"[208, 215, 258]",,meco_para_3,3,by,9,2,True,0.018315018315018316,NR,0.04731667349446948
-164,drug-free_0,70.0,1,[259],,meco_para_3,1,drug-free,9,9,True,0.018315018315018316,NR,0.014338385907414994
-165,sport._2,142.0,1,[150],,meco_para_3,1,sport.,9,6,True,0.018315018315018316,NR,0.029086439983613273
-166,Anti-doping_0,116.0,1,[260],,meco_para_3,1,Anti-doping,10,11,True,0.018315018315018316,NR,0.07426376440460948
-167,authorities_1,404.0,5,"[169, 170, 183, 184, 230]",,meco_para_3,5,authorities,10,11,True,0.018315018315018316,NR,0.2586427656850192
-168,have_2,,0,[],,meco_para_3,0,have,10,4,True,0.018315018315018316,NR,
-169,repeatedly_0,,0,[],,meco_para_3,0,repeatedly,10,10,True,0.018315018315018316,NR,
-170,emphasized_0,69.0,1,[253],,meco_para_3,1,emphasized,10,10,True,0.018315018315018316,NR,0.0441741357234315
-171,that_0,,0,[],,meco_para_3,0,that,10,4,True,0.018315018315018316,NR,
-172,using_0,,0,[],,meco_para_3,0,using,10,5,True,0.018315018315018316,NR,
-173, performance-enhancing_0,129.0,2,"[182, 264]",,meco_para_3,2, performance-enhancing,10,22,True,0.018315018315018316,NR,0.08258642765685019
-174,drugs_4,74.0,1,[199],,meco_para_3,1,drugs,10,5,True,0.018315018315018316,NR,0.04737516005121639
-175,goes_0,53.0,1,[216],,meco_para_3,1,goes,10,4,True,0.018315018315018316,NR,0.03393085787451985
-176,against_0,579.0,4,"[217, 240, 261, 262]",,meco_para_3,4,against,10,7,True,0.018315018315018316,NR,0.3706786171574904
-177,the_14,138.0,2,"[198, 241]",,meco_para_3,2,the,10,3,True,0.018315018315018316,NR,0.088348271446863
-178,‘spirit_0,,0,[],,meco_para_3,0,‘spirit,10,7,True,0.018315018315018316,NR,
-179,of_6,,0,[],,meco_para_3,0,of,10,2,True,0.018315018315018316,NR,
-180,sport’._0,,0,[],,meco_para_3,0,sport’.,10,7,True,0.018315018315018316,NR,
+,word_id_orig,TRT,FixCount,Scan_path,Span_word_is_in,text_id,worker_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
+0,Ranging_0,63.0,1,[1],,a_Ctenophora_2,A1BASVXQK125PD,1,Ranging,1,7,True,0.06329113924050633,IS,0.0074991072491370075
+1,from_0,84.0,1,[3],,a_Ctenophora_2,A1BASVXQK125PD,1,from,1,4,True,0.06329113924050633,IS,0.00999880966551601
+2,about_0,240.0,2,"[70, 146]",,a_Ctenophora_2,A1BASVXQK125PD,2,about,1,5,True,0.06329113924050633,IS,0.02856802761576003
+3,1°_0,146.0,1,[40],,a_Ctenophora_2,A1BASVXQK125PD,1,1°,1,2,True,0.06329113924050633,IS,0.017378883466254016
+4,millimeter_0,256.0,3,"[22, 39, 143]",,a_Ctenophora_2,A1BASVXQK125PD,3,millimeter,1,10,True,0.06329113924050633,IS,0.03047256279014403
+5,(0.039_0,179.0,3,"[11, 72, 110]",,a_Ctenophora_2,A1BASVXQK125PD,3,(0.039,1,6,True,0.06329113924050633,IS,0.02130698726342102
+6,in)_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,in),1,3,True,0.06329113924050633,IS,
+7,to_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,to,1,2,True,0.06329113924050633,IS,
+8,1.5_0,124.0,2,"[52, 62]",,a_Ctenophora_2,A1BASVXQK125PD,2,1.5,1,3,True,0.06329113924050633,IS,0.014760147601476014
+9,meters_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,meters,1,6,True,0.06329113924050633,IS,
+10,(4.9_0,65.0,1,[131],,a_Ctenophora_2,A1BASVXQK125PD,1,(4.9,1,4,True,0.06329113924050633,IS,0.0077371741459350074
+11,ft)_0,57.0,1,[142],,a_Ctenophora_2,A1BASVXQK125PD,1,ft),1,3,True,0.06329113924050633,IS,0.006784906558743007
+12,in_0,158.0,3,"[81, 135, 141]",,a_Ctenophora_2,A1BASVXQK125PD,3,in,1,2,True,0.06329113924050633,IS,0.01880728484704202
+13,"size,_0",,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,"size,",1,5,True,0.06329113924050633,IS,
+14,ctenophores_0,58.0,1,[147],,a_Ctenophora_2,A1BASVXQK125PD,1,ctenophores,1,11,True,0.06329113924050633,IS,0.0069039400071420065
+15,are_0,61.0,1,[148],,a_Ctenophora_2,A1BASVXQK125PD,1,are,1,3,True,0.06329113924050633,IS,0.007261040352339008
+16,the_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,the,1,3,True,0.06329113924050633,IS,
+17,largest_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,largest,1,7,True,0.06329113924050633,IS,
+18,non-colonial_0,67.0,1,[125],,a_Ctenophora_2,A1BASVXQK125PD,1,non-colonial,1,12,True,0.06329113924050633,IS,0.007975241042733007
+19,animals_0,332.0,3,"[18, 73, 82]",,a_Ctenophora_2,A1BASVXQK125PD,3,animals,1,7,True,0.06329113924050633,IS,0.03951910486846804
+20,that_0,164.0,2,"[19, 61]",,a_Ctenophora_2,A1BASVXQK125PD,2,that,1,4,True,0.06329113924050633,IS,0.01952148553743602
+21,use_0,100.0,1,[53],,a_Ctenophora_2,A1BASVXQK125PD,1,use,1,3,True,0.06329113924050633,IS,0.011903344839900012
+22,cilia_0,137.0,2,"[130, 132]",a_Ctenophora_2_qa_0 ,a_Ctenophora_2,A1BASVXQK125PD,2,cilia,1,5,True,0.06329113924050633,IS,0.016307582430663017
+23,"(""hairs"")_0",,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,"(""hairs"")",1,9,True,0.06329113924050633,IS,
+24,as_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,as,1,2,True,0.06329113924050633,IS,
+25,their_0,60.0,1,[2],,a_Ctenophora_2,A1BASVXQK125PD,1,their,1,5,True,0.06329113924050633,IS,0.007142006903940007
+26,main_0,52.0,1,[9],,a_Ctenophora_2,A1BASVXQK125PD,1,main,1,4,True,0.06329113924050633,IS,0.006189739316748006
+27,method_0,272.0,3,"[23, 24, 26]",a_Ctenophora_2_qa_1 ,a_Ctenophora_2,A1BASVXQK125PD,3,method,1,6,True,0.06329113924050633,IS,0.032377097964528034
+28,of_0,71.0,1,[122],a_Ctenophora_2_qa_1 ,a_Ctenophora_2,A1BASVXQK125PD,1,of,1,2,True,0.06329113924050633,IS,0.008451374836329009
+29,locomotion._0,549.0,6,"[27, 43, 108, 119, 126, 157]",a_Ctenophora_2_qa_1 ,a_Ctenophora_2,A1BASVXQK125PD,6,locomotion.,1,11,True,0.06329113924050633,IS,0.06534936317105107
+30,Most_0,272.0,4,"[16, 17, 21, 64]",,a_Ctenophora_2,A1BASVXQK125PD,4,Most,2,4,True,0.06329113924050633,IS,0.032377097964528034
+31,species_0,233.0,4,"[12, 20, 29, 66]",,a_Ctenophora_2,A1BASVXQK125PD,4,species,2,7,True,0.06329113924050633,IS,0.02773479347696703
+32,have_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,have,2,4,True,0.06329113924050633,IS,
+33,eight_0,133.0,2,"[35, 38]",,a_Ctenophora_2,A1BASVXQK125PD,2,eight,2,5,True,0.06329113924050633,IS,0.015831448637067015
+34,"strips,_0",,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,"strips,",2,7,True,0.06329113924050633,IS,
+35,called_0,197.0,3,"[55, 80, 86]",,a_Ctenophora_2,A1BASVXQK125PD,3,called,2,6,True,0.06329113924050633,IS,0.023449589334603022
+36,comb_0,178.0,3,"[138, 139, 140]",,a_Ctenophora_2,A1BASVXQK125PD,3,comb,2,4,True,0.06329113924050633,IS,0.02118795381502202
+37,"rows,_0",,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,"rows,",2,5,True,0.06329113924050633,IS,
+38,that_1,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,that,2,4,True,0.06329113924050633,IS,
+39,run_0,191.0,1,[93],,a_Ctenophora_2,A1BASVXQK125PD,1,run,2,3,True,0.06329113924050633,IS,0.02273538864420902
+40,the_1,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,the,2,3,True,0.06329113924050633,IS,
+41,length_0,82.0,1,[123],,a_Ctenophora_2,A1BASVXQK125PD,1,length,2,6,True,0.06329113924050633,IS,0.00976074276871801
+42,of_1,52.0,1,[124],,a_Ctenophora_2,A1BASVXQK125PD,1,of,2,2,True,0.06329113924050633,IS,0.006189739316748006
+43,their_1,63.0,1,[85],,a_Ctenophora_2,A1BASVXQK125PD,1,their,2,5,True,0.06329113924050633,IS,0.0074991072491370075
+44,bodies_0,162.0,2,"[34, 74]",,a_Ctenophora_2,A1BASVXQK125PD,2,bodies,2,6,True,0.06329113924050633,IS,0.01928341864063802
+45,and_0,213.0,3,"[33, 51, 127]",,a_Ctenophora_2,A1BASVXQK125PD,3,and,2,3,True,0.06329113924050633,IS,0.025354124508987025
+46,bear_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,bear,2,4,True,0.06329113924050633,IS,
+47,comb-like_0,108.0,2,"[56, 100]",,a_Ctenophora_2,A1BASVXQK125PD,2,comb-like,2,9,True,0.06329113924050633,IS,0.012855612427092013
+48,bands_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,bands,2,5,True,0.06329113924050633,IS,
+49,of_2,66.0,1,[36],,a_Ctenophora_2,A1BASVXQK125PD,1,of,2,2,True,0.06329113924050633,IS,0.007856207594334008
+50,"cilia,_1",,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,"cilia,",2,6,True,0.06329113924050633,IS,
+51,called_1,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,called,2,6,True,0.06329113924050633,IS,
+52,"""ctenes,""_0",152.0,2,"[120, 153]",a_Ctenophora_2_qa_2 ,a_Ctenophora_2,A1BASVXQK125PD,2,"""ctenes,""",2,9,True,0.06329113924050633,IS,0.01809308415664802
+53,stacked_0,246.0,4,"[84, 118, 152, 156]",,a_Ctenophora_2,A1BASVXQK125PD,4,stacked,2,7,True,0.06329113924050633,IS,0.02928222830615403
+54,along_0,199.0,3,"[44, 150, 154]",,a_Ctenophora_2,A1BASVXQK125PD,3,along,2,5,True,0.06329113924050633,IS,0.023687656231401025
+55,the_2,50.0,1,[102],,a_Ctenophora_2,A1BASVXQK125PD,1,the,2,3,True,0.06329113924050633,IS,0.005951672419950006
+56,comb_1,78.0,1,[60],,a_Ctenophora_2,A1BASVXQK125PD,1,comb,2,4,True,0.06329113924050633,IS,0.009284608975122009
+57,rows_1,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,rows,2,4,True,0.06329113924050633,IS,
+58,so_0,166.0,3,"[31, 57, 91]",,a_Ctenophora_2,A1BASVXQK125PD,3,so,2,2,True,0.06329113924050633,IS,0.01975955243423402
+59,that_2,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,that,2,4,True,0.06329113924050633,IS,
+60,when_0,103.0,2,"[7, 128]",,a_Ctenophora_2,A1BASVXQK125PD,2,when,2,4,True,0.06329113924050633,IS,0.012260445185097012
+61,the_3,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,the,2,3,True,0.06329113924050633,IS,
+62,cilia_2,73.0,1,[78],,a_Ctenophora_2,A1BASVXQK125PD,1,cilia,2,5,True,0.06329113924050633,IS,0.008689441733127008
+63,"beat,_0",,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,"beat,",2,5,True,0.06329113924050633,IS,
+64,those_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,those,2,5,True,0.06329113924050633,IS,
+65,of_3,88.0,1,[92],,a_Ctenophora_2,A1BASVXQK125PD,1,of,2,2,True,0.06329113924050633,IS,0.010474943459112011
+66,each_0,63.0,1,[116],,a_Ctenophora_2,A1BASVXQK125PD,1,each,2,4,True,0.06329113924050633,IS,0.0074991072491370075
+67,comb_2,207.0,2,"[94, 151]",,a_Ctenophora_2,A1BASVXQK125PD,2,comb,2,4,True,0.06329113924050633,IS,0.024639923818593024
+68,touch_0,149.0,2,"[45, 107]",,a_Ctenophora_2,A1BASVXQK125PD,2,touch,2,5,True,0.06329113924050633,IS,0.017735983811451018
+69,the_4,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,the,2,3,True,0.06329113924050633,IS,
+70,comb_3,68.0,1,[103],,a_Ctenophora_2,A1BASVXQK125PD,1,comb,2,4,True,0.06329113924050633,IS,0.008094274491132009
+71,below._0,142.0,2,"[8, 95]",,a_Ctenophora_2,A1BASVXQK125PD,2,below.,2,6,True,0.06329113924050633,IS,0.016902749672658018
+72,The_5,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,The,3,3,True,0.06329113924050633,IS,
+73,name__0,282.0,3,"[13, 32, 90]",,a_Ctenophora_2,A1BASVXQK125PD,3,name,3,4,True,0.06329113924050633,IS,0.033567432448518036
+74,"""ctenophora""_0",56.0,1,[87],,a_Ctenophora_2,A1BASVXQK125PD,1,"""ctenophora""",3,12,True,0.06329113924050633,IS,0.006665873110344007
+75,means_0,72.0,1,[114],,a_Ctenophora_2,A1BASVXQK125PD,1,means,3,5,True,0.06329113924050633,IS,0.008570408284728008
+76,"""comb-bearing"",_0",205.0,3,"[113, 115, 117]",a_Ctenophora_2_qa_3 ,a_Ctenophora_2,A1BASVXQK125PD,3,"""comb-bearing"",",3,15,True,0.06329113924050633,IS,0.024401856921795025
+77,from_1,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,from,3,4,True,0.06329113924050633,IS,
+78,the_6,74.0,1,[46],,a_Ctenophora_2,A1BASVXQK125PD,1,the,3,3,True,0.06329113924050633,IS,0.00880847518152601
+79,Greek_0,174.0,2,"[76, 104]",,a_Ctenophora_2,A1BASVXQK125PD,2,Greek,3,5,True,0.06329113924050633,IS,0.02071182002142602
+80,xkteig_0,57.0,1,[58],,a_Ctenophora_2,A1BASVXQK125PD,1,xkteig,3,6,True,0.06329113924050633,IS,0.006784906558743007
+81,(stem-form_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,(stem-form,3,10,True,0.06329113924050633,IS,
+82,xktev-)_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,xktev-),3,7,True,0.06329113924050633,IS,
+83,meaning_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,meaning,3,7,True,0.06329113924050633,IS,
+84,"""comb""_0",189.0,2,"[88, 98]",,a_Ctenophora_2,A1BASVXQK125PD,2,"""comb""",3,6,True,0.06329113924050633,IS,0.022497321747411023
+85,and_1,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,and,3,3,True,0.06329113924050633,IS,
+86,the_7,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,the,3,3,True,0.06329113924050633,IS,
+87,Greek_1,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,Greek,3,5,True,0.06329113924050633,IS,
+88,suffix_0,,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,suffix,3,6,True,0.06329113924050633,IS,
+89,-popoc_0,141.0,2,"[47, 105]",,a_Ctenophora_2,A1BASVXQK125PD,2,-popoc,3,6,True,0.06329113924050633,IS,0.016783716224259018
+90,meaning_1,122.0,2,"[50, 77]",,a_Ctenophora_2,A1BASVXQK125PD,2,meaning,3,7,True,0.06329113924050633,IS,0.014522080704678015
+91,"""carrying""._0",,0,[],,a_Ctenophora_2,A1BASVXQK125PD,0,"""carrying"".",3,11,True,0.06329113924050633,IS,
+0,Chloroplasts_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,Chloroplasts,1,12,True,0.0,IS,
+1,have_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,have,1,4,True,0.0,IS,
+2,their_0,153.0,2,"[22, 32]",,a_Chloroplast_2,A1BASVXQK125PD,2,their,1,5,True,0.0,IS,0.060117878192534384
+3,own_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,own,1,3,True,0.0,IS,
+4,"DNA,_0",69.0,1,[10],,a_Chloroplast_2,A1BASVXQK125PD,1,"DNA,",1,4,True,0.0,IS,0.02711198428290766
+5,often_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,often,1,5,True,0.0,IS,
+6,abbreviated_0,141.0,2,"[2, 41]",,a_Chloroplast_2,A1BASVXQK125PD,2,abbreviated,1,11,True,0.0,IS,0.055402750491159135
+7,as_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,as,1,2,True,0.0,IS,
+8,"ctDNA,_0",,0,[],a_Chloroplast_2_qa_0 ,a_Chloroplast_2,A1BASVXQK125PD,0,"ctDNA,",1,6,True,0.0,IS,
+9,or_0,,0,[],a_Chloroplast_2_qa_0 ,a_Chloroplast_2,A1BASVXQK125PD,0,or,1,2,True,0.0,IS,
+10,cpDNA._0,,0,[],a_Chloroplast_2_qa_0 ,a_Chloroplast_2,A1BASVXQK125PD,0,cpDNA.,1,6,True,0.0,IS,
+11,It_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,It,2,2,True,0.0,IS,
+12,is_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,is,2,2,True,0.0,IS,
+13,also_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,also,2,4,True,0.0,IS,
+14,known_0,115.0,2,"[23, 31]",,a_Chloroplast_2,A1BASVXQK125PD,2,known,2,5,True,0.0,IS,0.04518664047151277
+15,as_1,79.0,1,[24],,a_Chloroplast_2,A1BASVXQK125PD,1,as,2,2,True,0.0,IS,0.031041257367387033
+16,the_0,60.0,1,[42],a_Chloroplast_2_qa_1 ,a_Chloroplast_2,A1BASVXQK125PD,1,the,2,3,True,0.0,IS,0.023575638506876228
+17,plastome._0,,0,[],a_Chloroplast_2_qa_1 ,a_Chloroplast_2,A1BASVXQK125PD,0,plastome.,2,9,True,0.0,IS,
+18,Its_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,Its,3,3,True,0.0,IS,
+19,existence_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,existence,3,9,True,0.0,IS,
+20,was_0,123.0,2,"[39, 40]",,a_Chloroplast_2,A1BASVXQK125PD,2,was,3,3,True,0.0,IS,0.04833005893909627
+21,first_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,first,3,5,True,0.0,IS,
+22,proved_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,proved,3,6,True,0.0,IS,
+23,in_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,in,3,2,True,0.0,IS,
+24,"1962,_0",,0,[],a_Chloroplast_2_qa_2 ,a_Chloroplast_2,A1BASVXQK125PD,0,"1962,",3,5,True,0.0,IS,
+25,and_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,and,3,3,True,0.0,IS,
+26,first_1,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,first,3,5,True,0.0,IS,
+27,sequenced_0,64.0,1,[12],,a_Chloroplast_2,A1BASVXQK125PD,1,sequenced,3,9,True,0.0,IS,0.025147347740667975
+28,in_1,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,in,3,2,True,0.0,IS,
+29,1986—when_0,,0,[],a_Chloroplast_2_qa_3 ,a_Chloroplast_2,A1BASVXQK125PD,0,1986—when,3,9,True,0.0,IS,
+30,two_0,,0,[],a_Chloroplast_2_qa_4 ,a_Chloroplast_2,A1BASVXQK125PD,0,two,3,3,True,0.0,IS,
+31,Japanese_0,53.0,1,[38],a_Chloroplast_2_qa_4 ,a_Chloroplast_2,A1BASVXQK125PD,1,Japanese,3,8,True,0.0,IS,0.02082514734774067
+32,research_0,,0,[],a_Chloroplast_2_qa_4 ,a_Chloroplast_2,A1BASVXQK125PD,0,research,3,8,True,0.0,IS,
+33,teams_0,,0,[],a_Chloroplast_2_qa_4 ,a_Chloroplast_2,A1BASVXQK125PD,0,teams,3,5,True,0.0,IS,
+34,sequenced_1,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,sequenced,3,9,True,0.0,IS,
+35,the_1,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,the,3,3,True,0.0,IS,
+36,chloroplast_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,chloroplast,3,11,True,0.0,IS,
+37,DNA_1,59.0,1,[46],,a_Chloroplast_2,A1BASVXQK125PD,1,DNA,3,3,True,0.0,IS,0.02318271119842829
+38,of_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,of,3,2,True,0.0,IS,
+39,liverwort_0,52.0,1,[25],,a_Chloroplast_2,A1BASVXQK125PD,1,liverwort,3,9,True,0.0,IS,0.02043222003929273
+40,and_1,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,and,3,3,True,0.0,IS,
+41,tobacco._0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,tobacco.,3,8,True,0.0,IS,
+42,Since_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,Since,4,5,True,0.0,IS,
+43,"then,_0",60.0,1,[3],,a_Chloroplast_2,A1BASVXQK125PD,1,"then,",4,5,True,0.0,IS,0.023575638506876228
+44,hundreds_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,hundreds,4,8,True,0.0,IS,
+45,of_1,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,of,4,2,True,0.0,IS,
+46,chloroplast_1,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,chloroplast,4,11,True,0.0,IS,
+47,DNAs_0,122.0,1,[54],,a_Chloroplast_2,A1BASVXQK125PD,1,DNAs,4,4,True,0.0,IS,0.04793713163064833
+48,from_0,197.0,3,"[43, 44, 53]",,a_Chloroplast_2,A1BASVXQK125PD,3,from,4,4,True,0.0,IS,0.07740667976424362
+49,various_0,72.0,1,[45],,a_Chloroplast_2,A1BASVXQK125PD,1,various,4,7,True,0.0,IS,0.028290766208251474
+50,species_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,species,4,7,True,0.0,IS,
+51,have_1,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,have,4,4,True,0.0,IS,
+52,been_0,197.0,1,[37],,a_Chloroplast_2,A1BASVXQK125PD,1,been,4,4,True,0.0,IS,0.07740667976424362
+53,"sequenced,_2",,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,"sequenced,",4,10,True,0.0,IS,
+54,but_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,but,4,3,True,0.0,IS,
+55,they're_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,they're,4,7,True,0.0,IS,
+56,mostly_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,mostly,4,6,True,0.0,IS,
+57,those_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,those,4,5,True,0.0,IS,
+58,of_2,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,of,4,2,True,0.0,IS,
+59,land_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,land,4,4,True,0.0,IS,
+60,plants_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,plants,4,6,True,0.0,IS,
+61,and_2,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,and,4,3,True,0.0,IS,
+62,green_0,97.0,1,[13],,a_Chloroplast_2,A1BASVXQK125PD,1,green,4,5,True,0.0,IS,0.0381139489194499
+63,"algae—glaucophytes,_0",53.0,1,[14],,a_Chloroplast_2,A1BASVXQK125PD,1,"algae—glaucophytes,",4,19,True,0.0,IS,0.02082514734774067
+64,red_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,red,4,3,True,0.0,IS,
+65,"algae,_0",,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,"algae,",4,6,True,0.0,IS,
+66,and_3,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,and,4,3,True,0.0,IS,
+67,other_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,other,4,5,True,0.0,IS,
+68,algal_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,algal,4,5,True,0.0,IS,
+69,groups_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,groups,4,6,True,0.0,IS,
+70,are_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,are,4,3,True,0.0,IS,
+71,extremely_0,126.0,1,[48],,a_Chloroplast_2,A1BASVXQK125PD,1,extremely,4,9,True,0.0,IS,0.04950884086444008
+72,"underrepresented,_0",54.0,1,[52],,a_Chloroplast_2,A1BASVXQK125PD,1,"underrepresented,",4,17,True,0.0,IS,0.021218074656188603
+73,potentially_0,73.0,1,[36],,a_Chloroplast_2,A1BASVXQK125PD,1,potentially,4,11,True,0.0,IS,0.028683693516699412
+74,introducing_0,275.0,3,"[7, 17, 21]",,a_Chloroplast_2,A1BASVXQK125PD,3,introducing,4,11,True,0.0,IS,0.10805500982318271
+75,some_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,some,4,4,True,0.0,IS,
+76,bias_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,bias,4,4,True,0.0,IS,
+77,in_2,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,in,4,2,True,0.0,IS,
+78,views_0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,views,4,5,True,0.0,IS,
+79,of_3,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,of,4,2,True,0.0,IS,
+80,"""typical""_0",,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,"""typical""",4,9,True,0.0,IS,
+81,chloroplast_2,109.0,1,[47],,a_Chloroplast_2,A1BASVXQK125PD,1,chloroplast,4,11,True,0.0,IS,0.04282907662082515
+82,DNA_2,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,DNA,4,3,True,0.0,IS,
+83,structure_0,79.0,1,[49],,a_Chloroplast_2,A1BASVXQK125PD,1,structure,4,9,True,0.0,IS,0.031041257367387033
+84,and__0,,0,[],,a_Chloroplast_2,A1BASVXQK125PD,0,and,4,3,True,0.0,IS,
+85,content._0,63.0,1,[5],,a_Chloroplast_2,A1BASVXQK125PD,1,content.,4,8,True,0.0,IS,0.02475442043222004
+0,Even_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Even,1,4,True,0.009259259259259259,IS,
+1,before_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,before,1,6,True,0.009259259259259259,IS,
+2,Washington_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Washington,1,10,True,0.009259259259259259,IS,
+3,"returned,_0",50.0,1,[12],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,"returned,",1,9,True,0.009259259259259259,IS,0.011921793037672867
+4,Dinwiddie_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Dinwiddie,1,9,True,0.009259259259259259,IS,
+5,had_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,had,1,3,True,0.009259259259259259,IS,
+6,sent_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,sent,1,4,True,0.009259259259259259,IS,
+7,a_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,a,1,1,True,0.009259259259259259,IS,
+8,company_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,company,1,7,True,0.009259259259259259,IS,
+9,of_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,of,1,2,True,0.009259259259259259,IS,
+10,40_0,,0,[],a_FrenchandIndianWar_2_qa_0 ,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,40,1,2,True,0.009259259259259259,IS,
+11,men_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,men,1,3,True,0.009259259259259259,IS,
+12,under_0,83.0,1,[23],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,under,1,5,True,0.009259259259259259,IS,0.019790176442536958
+13,William_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,William,1,7,True,0.009259259259259259,IS,
+14,Trent_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Trent,1,5,True,0.009259259259259259,IS,
+15,to_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,to,1,2,True,0.009259259259259259,IS,
+16,that_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,that,1,4,True,0.009259259259259259,IS,
+17,"point,_0",,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,"point,",1,6,True,0.009259259259259259,IS,
+18,where_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,where,1,5,True,0.009259259259259259,IS,
+19,in_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,in,1,2,True,0.009259259259259259,IS,
+20,the_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,the,1,3,True,0.009259259259259259,IS,
+21,early_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,early,1,5,True,0.009259259259259259,IS,
+22,months_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,months,1,6,True,0.009259259259259259,IS,
+23,of_1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,of,1,2,True,0.009259259259259259,IS,
+24,1754_0,,0,[],a_FrenchandIndianWar_2_qa_1 ,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,1754,1,4,True,0.009259259259259259,IS,
+25,they_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,they,1,4,True,0.009259259259259259,IS,
+26,began_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,began,1,5,True,0.009259259259259259,IS,
+27,construction_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,construction,1,12,True,0.009259259259259259,IS,
+28,of_2,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,of,1,2,True,0.009259259259259259,IS,
+29,a_1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,a,1,1,True,0.009259259259259259,IS,
+30,small_0,52.0,1,[24],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,small,1,5,True,0.009259259259259259,IS,0.01239866475917978
+31,stockaded_0,59.0,1,[38],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,stockaded,1,9,True,0.009259259259259259,IS,0.014067715784453982
+32,fort._0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,fort.,1,5,True,0.009259259259259259,IS,
+33,Governor_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Governor,2,8,True,0.009259259259259259,IS,
+34,Duquesne_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Duquesne,2,8,True,0.009259259259259259,IS,
+35,sent_1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,sent,2,4,True,0.009259259259259259,IS,
+36,additional_0,53.0,1,[19],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,additional,2,10,True,0.009259259259259259,IS,0.012637100619933238
+37,French_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,French,2,6,True,0.009259259259259259,IS,
+38,forces_0,52.0,1,[2],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,forces,2,6,True,0.009259259259259259,IS,0.01239866475917978
+39,under_1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,under,2,5,True,0.009259259259259259,IS,
+40,Claude-Pierre_0,107.0,2,"[26, 39]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,Claude-Pierre,2,13,True,0.009259259259259259,IS,0.025512637100619934
+41,Pecaudy_0,100.0,2,"[37, 61]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,Pecaudy,2,7,True,0.009259259259259259,IS,0.023843586075345733
+42,de_0,53.0,1,[36],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,de,2,2,True,0.009259259259259259,IS,0.012637100619933238
+43,Contrecceur_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Contrecceur,2,11,True,0.009259259259259259,IS,
+44,to_1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,to,2,2,True,0.009259259259259259,IS,
+45,relieve_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,relieve,2,7,True,0.009259259259259259,IS,
+46,Saint-Pierre_0,52.0,1,[14],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,Saint-Pierre,2,12,True,0.009259259259259259,IS,0.01239866475917978
+47,during_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,during,2,6,True,0.009259259259259259,IS,
+48,the_1,163.0,2,"[1, 59]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,the,2,3,True,0.009259259259259259,IS,0.038865045302813546
+49,same_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,same,2,4,True,0.009259259259259259,IS,
+50,"period,_0",,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,"period,",2,7,True,0.009259259259259259,IS,
+51,and_0,69.0,1,[3],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,and,2,3,True,0.009259259259259259,IS,0.016452074391988557
+52,Contrecceur_1,112.0,2,"[4, 27]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,Contrecceur,2,11,True,0.009259259259259259,IS,0.02670481640438722
+53,led_0,51.0,1,[28],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,led,2,3,True,0.009259259259259259,IS,0.012160228898426323
+54,500_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,500,2,3,True,0.009259259259259259,IS,
+55,men__0,50.0,1,[18],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,men,2,3,True,0.009259259259259259,IS,0.011921793037672867
+56,south_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,south,2,5,True,0.009259259259259259,IS,
+57,from_0,68.0,1,[105],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,from,2,4,True,0.009259259259259259,IS,0.016213638531235097
+58,Fort_1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Fort,2,4,True,0.009259259259259259,IS,
+59,Venango_0,52.0,1,[72],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,Venango,2,7,True,0.009259259259259259,IS,0.01239866475917978
+60,on_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,on,2,2,True,0.009259259259259259,IS,
+61,April_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,April,2,5,True,0.009259259259259259,IS,
+62,"5,_0",,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,"5,",2,2,True,0.009259259259259259,IS,
+63,1754._1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,1754.,2,5,True,0.009259259259259259,IS,
+64,When_0,58.0,1,[66],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,When,3,4,True,0.009259259259259259,IS,0.013829279923700524
+65,these_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,these,3,5,True,0.009259259259259259,IS,
+66,forces_1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,forces,3,6,True,0.009259259259259259,IS,
+67,arrived_0,198.0,2,"[30, 35]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,arrived,3,7,True,0.009259259259259259,IS,0.04721030042918455
+68,at_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,at,3,2,True,0.009259259259259259,IS,
+69,the_2,51.0,1,[44],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,the,3,3,True,0.009259259259259259,IS,0.012160228898426323
+70,fort_2,246.0,2,"[64, 95]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,fort,3,4,True,0.009259259259259259,IS,0.058655221745350504
+71,on_1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,on,3,2,True,0.009259259259259259,IS,
+72,April_1,261.0,3,"[55, 63, 69]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,3,April,3,5,True,0.009259259259259259,IS,0.06223175965665236
+73,"16,_0",129.0,2,"[73, 98]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,"16,",3,3,True,0.009259259259259259,IS,0.030758226037195996
+74,Contrecceur_2,277.0,4,"[56, 65, 99, 100]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,4,Contrecceur,3,11,True,0.009259259259259259,IS,0.06604673342870768
+75,generously_0,129.0,2,"[85, 101]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,generously,3,10,True,0.009259259259259259,IS,0.030758226037195996
+76,allowed_0,114.0,2,"[52, 67]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,allowed,3,7,True,0.009259259259259259,IS,0.027181688125894134
+77,Trent's_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Trent's,3,7,True,0.009259259259259259,IS,
+78,small_1,108.0,2,"[17, 42]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,small,3,5,True,0.009259259259259259,IS,0.02575107296137339
+79,company_1,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,company,3,7,True,0.009259259259259259,IS,
+80,to_2,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,to,3,2,True,0.009259259259259259,IS,
+81,withdraw._0,72.0,1,[54],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,withdraw.,3,9,True,0.009259259259259259,IS,0.017167381974248927
+82,He_0,231.0,3,"[70, 97, 106]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,3,He,4,2,True,0.009259259259259259,IS,0.05507868383404864
+83,purchased_0,60.0,1,[74],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,purchased,4,9,True,0.009259259259259259,IS,0.01430615164520744
+84,their_0,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,their,4,5,True,0.009259259259259259,IS,
+85,construction_1,194.0,3,"[15, 60, 94]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,3,construction,4,12,True,0.009259259259259259,IS,0.04625655698617072
+86,tools_0,190.0,2,"[16, 76]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,tools,4,5,True,0.009259259259259259,IS,0.04530281354315689
+87,to_3,,0,[],,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,to,4,2,True,0.009259259259259259,IS,
+88,continue_0,67.0,1,[91],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,continue,4,8,True,0.009259259259259259,IS,0.01597520267048164
+89,building_0,127.0,2,"[34, 48]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,building,4,8,True,0.009259259259259259,IS,0.03028135431568908
+90,what_0,57.0,1,[33],,a_FrenchandIndianWar_2,A1BASVXQK125PD,1,what,4,4,True,0.009259259259259259,IS,0.013590844062947067
+91,became_0,252.0,2,"[96, 104]",,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,became,4,6,True,0.009259259259259259,IS,0.060085836909871244
+92,Fort_3,147.0,2,"[58, 81]",a_FrenchandIndianWar_2_qa_2 ,a_FrenchandIndianWar_2,A1BASVXQK125PD,2,Fort,4,4,True,0.009259259259259259,IS,0.035050071530758224
+93,Duquesne._1,,0,[],a_FrenchandIndianWar_2_qa_2 ,a_FrenchandIndianWar_2,A1BASVXQK125PD,0,Duquesne.,4,9,True,0.009259259259259259,IS,
+0,In_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,In,1,2,True,0.0,IS,
+1,"2000,_0",,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,"2000,",1,5,True,0.0,IS,
+2,ABC_0,100.0,1,[28],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,ABC,1,3,True,0.0,IS,0.043271311120726956
+3,launched_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,launched,1,8,True,0.0,IS,
+4,a__0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,a,1,1,True,0.0,IS,
+5,web-based_0,129.0,2,"[6, 33]",,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,2,web-based,1,9,True,0.0,IS,0.05581999134573778
+6,promotional_0,204.0,3,"[46, 49, 50]",,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,3,promotional,1,11,True,0.0,IS,0.088273474686283
+7,campaign_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,campaign,1,8,True,0.0,IS,
+8,focused_0,104.0,2,"[10, 18]",,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,2,focused,1,7,True,0.0,IS,0.04500216356555604
+9,around_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,around,1,6,True,0.0,IS,
+10,its_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,its,1,3,True,0.0,IS,
+11,circle_0,,0,[],a_AmericanBroadcastingCompany_0_qa_0 ,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,circle,1,6,True,0.0,IS,
+12,"logo,_0",,0,[],a_AmericanBroadcastingCompany_0_qa_0 ,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,"logo,",1,5,True,0.0,IS,
+13,also_0,275.0,3,"[4, 25, 29]",,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,3,also,1,4,True,0.0,IS,0.11899610558199913
+14,called_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,called,1,6,True,0.0,IS,
+15,“the_0,,0,[],a_AmericanBroadcastingCompany_0_qa_3 ,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,“the,1,4,True,0.0,IS,
+16,"dot"",_0",,0,[],a_AmericanBroadcastingCompany_0_qa_3 ,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,"dot"",",1,5,True,0.0,IS,
+17,in_1,77.0,1,[47],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,in,1,2,True,0.0,IS,0.033318909562959756
+18,which_0,356.0,4,"[23, 34, 45, 48]",,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,4,which,1,5,True,0.0,IS,0.15404586758978797
+19,comic_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,comic,1,5,True,0.0,IS,
+20,book_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,book,1,4,True,0.0,IS,
+21,character_0,143.0,1,[17],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,character,1,9,True,0.0,IS,0.06187797490263955
+22,Little_0,140.0,2,"[12, 16]",,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,2,Little,1,6,True,0.0,IS,0.06057983556901774
+23,Dot_0,59.0,1,[9],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,Dot,1,3,True,0.0,IS,0.025530073561228904
+24,prompted_0,59.0,1,[3],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,prompted,1,8,True,0.0,IS,0.025530073561228904
+25,visitors_0,130.0,2,"[26, 30]",,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,2,visitors,1,8,True,0.0,IS,0.056252704456945045
+26,to_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,to,1,2,True,0.0,IS,
+27,“download_0,123.0,2,"[43, 44]",,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,2,“download,1,9,True,0.0,IS,0.053223712678494156
+28,the_0,51.0,1,[35],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,the,1,3,True,0.0,IS,0.02206836867157075
+29,"dot"",_1",,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,"dot"",",1,5,True,0.0,IS,
+30,a_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,a,1,1,True,0.0,IS,
+31,program_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,program,1,7,True,0.0,IS,
+32,which_1,53.0,1,[22],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,which,1,5,True,0.0,IS,0.02293379489398529
+33,would_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,would,1,5,True,0.0,IS,
+34,cause_0,57.0,1,[21],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,cause,1,5,True,0.0,IS,0.024664647338814367
+35,the_1,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,the,1,3,True,0.0,IS,
+36,ABC_1,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,ABC,1,3,True,0.0,IS,
+37,logo_1,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,logo,1,4,True,0.0,IS,
+38,to_1,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,to,1,2,True,0.0,IS,
+39,fly_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,fly,1,3,True,0.0,IS,
+40,around_1,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,around,1,6,True,0.0,IS,
+41,the_2,118.0,1,[36],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,the,1,3,True,0.0,IS,0.05106014712245781
+42,screen_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,screen,1,6,True,0.0,IS,
+43,and_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,and,1,3,True,0.0,IS,
+44,settle_0,69.0,1,[40],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,settle,1,6,True,0.0,IS,0.0298572046733016
+45,in_2,64.0,1,[39],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,1,in,1,2,True,0.0,IS,0.027693639117265252
+46,the_3,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,the,1,3,True,0.0,IS,
+47,bottom-right_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,bottom-right,1,12,True,0.0,IS,
+48,corner._0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,corner.,1,7,True,0.0,IS,
+49,The_4,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,The,2,3,True,0.0,IS,
+50,network_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,network,2,7,True,0.0,IS,
+51,hired_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,hired,2,5,True,0.0,IS,
+52,the_5,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,the,2,3,True,0.0,IS,
+53,Troika_0,,0,[],a_AmericanBroadcastingCompany_0_qa_1 ,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,Troika,2,6,True,0.0,IS,
+54,Design_0,,0,[],a_AmericanBroadcastingCompany_0_qa_1 ,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,Design,2,6,True,0.0,IS,
+55,Group_0,,0,[],a_AmericanBroadcastingCompany_0_qa_1 ,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,Group,2,5,True,0.0,IS,
+56,to_2,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,to,2,2,True,0.0,IS,
+57,design_1,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,design,2,6,True,0.0,IS,
+58,and_1,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,and,2,3,True,0.0,IS,
+59,produce_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,produce,2,7,True,0.0,IS,
+60,its_1,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,its,2,3,True,0.0,IS,
+61,2001-02_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,2001-02,2,7,True,0.0,IS,
+62,"identity,_0",,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,"identity,",2,9,True,0.0,IS,
+63,which_2,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,which,2,5,True,0.0,IS,
+64,continued_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,continued,2,9,True,0.0,IS,
+65,using_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,using,2,5,True,0.0,IS,
+66,the_6,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,the,2,3,True,0.0,IS,
+67, black-and-yellow_0,,0,[],a_AmericanBroadcastingCompany_0_qa_2 ,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0, black-and-yellow,2,17,True,0.0,IS,
+68,coloring_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,coloring,2,8,True,0.0,IS,
+69,of_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,of,2,2,True,0.0,IS,
+70,the_7,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,the,2,3,True,0.0,IS,
+71,logo_2,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,logo,2,4,True,0.0,IS,
+72,and_2,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,and,2,3,True,0.0,IS,
+73,featured_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,featured,2,8,True,0.0,IS,
+74,dots_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,dots,2,4,True,0.0,IS,
+75,and_3,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,and,2,3,True,0.0,IS,
+76,=_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,=,2,1,True,0.0,IS,
+77,stripes_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,stripes,2,7,True,0.0,IS,
+78,in_3,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,in,2,2,True,0.0,IS,
+79,various_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,various,2,7,True,0.0,IS,
+80,promotional_1,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,promotional,2,11,True,0.0,IS,
+81,and__0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,and,2,3,True,0.0,IS,
+82,identification_0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,identification,2,14,True,0.0,IS,
+83,spots._0,,0,[],,a_AmericanBroadcastingCompany_0,A1BASVXQK125PD,0,spots.,2,6,True,0.0,IS,
+0,The_0,,0,[],a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,The,1,3,True,0.06857142857142857,IS,
+1,costume_0,87.0,1,[9],a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,costume,1,7,True,0.06857142857142857,IS,0.009385113268608414
+2,collection_0,52.0,1,[8],a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,collection,1,10,True,0.06857142857142857,IS,0.005609492988133765
+3,is_0,,0,[],a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,is,1,2,True,0.06857142857142857,IS,
+4,the_1,,0,[],a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,the,1,3,True,0.06857142857142857,IS,
+5,most_0,,0,[],a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,most,1,4,True,0.06857142857142857,IS,
+6,comprehensive_0,251.0,3,"[3, 14, 44]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,3,comprehensive,1,13,True,0.06857142857142857,IS,0.027076591154261056
+7,in_0,119.0,2,"[45, 69]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,in,1,2,True,0.06857142857142857,IS,0.012837108953613808
+8,"Britain,_0",264.0,4,"[27, 34, 68, 72]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,4,"Britain,",1,8,True,0.06857142857142857,IS,0.0284789644012945
+9,containing_0,107.0,2,"[25, 70]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,containing,1,10,True,0.06857142857142857,IS,0.011542610571736785
+10,over_0,111.0,2,"[33, 55]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,over,1,4,True,0.06857142857142857,IS,0.01197411003236246
+11,"14,000_0",,0,[],a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,"14,000",1,6,True,0.06857142857142857,IS,
+12,outfits_0,,0,[],a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,outfits,1,7,True,0.06857142857142857,IS,
+13,plus_0,,0,[],a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,plus,1,4,True,0.06857142857142857,IS,
+14,"accessories,_0",187.0,3,"[5, 6, 89]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,3,"accessories,",1,12,True,0.06857142857142857,IS,0.02017259978425027
+15,mainly_0,121.0,2,"[4, 165]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,mainly,1,6,True,0.06857142857142857,IS,0.013052858683926645
+16,dating_0,426.0,5,"[2, 13, 42, 109, 164]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,5,dating,1,6,True,0.06857142857142857,IS,0.045954692556634306
+17,from_0,243.0,3,"[1, 43, 110]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,3,from,1,4,True,0.06857142857142857,IS,0.02621359223300971
+18,1600_0,123.0,2,"[36, 92]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,1600,1,4,True,0.06857142857142857,IS,0.013268608414239482
+19,to_0,176.0,3,"[61, 67, 93]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,3,to,1,2,True,0.06857142857142857,IS,0.018985976267529667
+20,the_2,307.0,4,"[47, 49, 51, 73]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,4,the,1,3,True,0.06857142857142857,IS,0.033117583603020494
+21,present._0,448.0,6,"[19, 29, 48, 50, 71, 74]",a_VictoriaandAlbertMuseum_2_qa_0 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,6,present.,1,8,True,0.06857142857142857,IS,0.04832793959007551
+22,Costume_1,70.0,1,[86],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,Costume,2,7,True,0.06857142857142857,IS,0.007551240560949299
+23,"sketches,_0",50.0,1,[121],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,"sketches,",2,9,True,0.06857142857142857,IS,0.005393743257820928
+24,design_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,design,2,6,True,0.06857142857142857,IS,
+25,"notebooks,_0",436.0,6,"[59, 81, 163, 166, 167, 169]",,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,6,"notebooks,",2,10,True,0.06857142857142857,IS,0.04703344120819849
+26,and_0,68.0,1,[58],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,and,2,3,True,0.06857142857142857,IS,0.007335490830636462
+27,other_0,63.0,1,[90],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,other,2,5,True,0.06857142857142857,IS,0.006796116504854369
+28,works_0,256.0,4,"[0, 32, 40, 111]",,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,4,works,2,5,True,0.06857142857142857,IS,0.02761596548004315
+29,on_0,155.0,2,"[62, 63]",,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,on,2,2,True,0.06857142857142857,IS,0.016720604099244876
+30,paper_0,289.0,4,"[30, 31, 57, 94]",,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,4,paper,2,5,True,0.06857142857142857,IS,0.031175836030204962
+31,are_0,256.0,3,"[66, 77, 114]",,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,3,are,2,3,True,0.06857142857142857,IS,0.02761596548004315
+32,___0,107.0,1,[114],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,,2,0,True,0.06857142857142857,IS,0.011542610571736785
+33,typically_0,249.0,2,"[76, 95]",,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,typically,2,9,True,0.06857142857142857,IS,0.02686084142394822
+34,held_0,81.0,1,[117],a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,held,2,4,True,0.06857142857142857,IS,0.008737864077669903
+35,by_0,,0,[],a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,by,2,2,True,0.06857142857142857,IS,
+36,the_3,486.0,5,"[85, 102, 105, 123, 171]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,5,the,2,3,True,0.06857142857142857,IS,0.05242718446601942
+37,Word_0,302.0,4,"[83, 84, 106, 172]",a_VictoriaandAlbertMuseum_2_qa_1 a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,4,Word,2,4,True,0.06857142857142857,IS,0.0325782092772384
+38,and_1,,0,[],a_VictoriaandAlbertMuseum_2_qa_1 a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,and,2,3,True,0.06857142857142857,IS,
+39,Image_0,350.0,5,"[101, 115, 147, 150, 168]",a_VictoriaandAlbertMuseum_2_qa_1 a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,5,Image,2,5,True,0.06857142857142857,IS,0.037756202804746494
+40,department._0,83.0,1,[162],a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,department.,2,11,True,0.06857142857142857,IS,0.00895361380798274
+41,Because_0,328.0,4,"[38, 39, 41, 80]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,4,Because,3,7,True,0.06857142857142857,IS,0.035382955771305284
+42,everyday_0,163.0,2,"[64, 79]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,everyday,3,8,True,0.06857142857142857,IS,0.017583603020496226
+43,clothing_0,170.0,2,"[65, 78]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,clothing,3,8,True,0.06857142857142857,IS,0.018338727076591153
+44,from_1,,0,[],a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,from,3,4,True,0.06857142857142857,IS,
+45,previous_0,218.0,3,"[118, 120, 132]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,3,previous,3,8,True,0.06857142857142857,IS,0.023516720604099244
+46,eras_0,,0,[],a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,eras,3,4,True,0.06857142857142857,IS,
+47,has_0,213.0,2,"[130, 170]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,has,3,3,True,0.06857142857142857,IS,0.022977346278317153
+48,not’_0,135.0,2,"[129, 148]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,not’,3,4,True,0.06857142857142857,IS,0.014563106796116505
+49,generally_0,345.0,5,"[103, 126, 127, 155, 159]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,5,generally,3,9,True,0.06857142857142857,IS,0.0372168284789644
+50,"survived,_0",144.0,2,"[151, 154]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,"survived,",3,9,True,0.06857142857142857,IS,0.015533980582524271
+51,the_4,181.0,2,"[96, 152]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,the,3,3,True,0.06857142857142857,IS,0.019525350593311758
+52,collection_1,65.0,1,[146],a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,collection,3,10,True,0.06857142857142857,IS,0.007011866235167206
+53,is_1,,0,[],a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,is,3,2,True,0.06857142857142857,IS,
+54,dominated_0,123.0,2,"[23, 24]",a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,dominated,3,9,True,0.06857142857142857,IS,0.013268608414239482
+55,by_1,,0,[],a_VictoriaandAlbertMuseum_2_qa_2 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,by,3,2,True,0.06857142857142857,IS,
+56,fashionable_0,271.0,2,"[119, 131]",,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,fashionable,3,11,True,0.06857142857142857,IS,0.029234088457389427
+57,clothes_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,clothes,3,7,True,0.06857142857142857,IS,
+58,made_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,made,3,4,True,0.06857142857142857,IS,
+59,for_0,52.0,1,[173],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,for,3,3,True,0.06857142857142857,IS,0.005609492988133765
+60,special_0,174.0,2,"[97, 160]",,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,2,special,3,7,True,0.06857142857142857,IS,0.018770226537216828
+61,occasions._0,59.0,1,[100],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,occasions.,3,10,True,0.06857142857142857,IS,0.006364617044228695
+62,One_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,One,4,3,True,0.06857142857142857,IS,
+63,of_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,of,4,2,True,0.06857142857142857,IS,
+64,the_5,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,the,4,3,True,0.06857142857142857,IS,
+65,first_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,first,4,5,True,0.06857142857142857,IS,
+66,significant_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,significant,4,11,True,0.06857142857142857,IS,
+67,gifts_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,gifts,4,5,True,0.06857142857142857,IS,
+68,of_1,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,of,4,2,True,0.06857142857142857,IS,
+69,costume_2,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,costume,4,7,True,0.06857142857142857,IS,
+70,came_0,147.0,1,[137],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,came,4,4,True,0.06857142857142857,IS,0.015857605177993526
+71,in_1,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,in,4,2,True,0.06857142857142857,IS,
+72,1913._0,,0,[],a_VictoriaandAlbertMuseum_2_qa_3 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,1913.,4,5,True,0.06857142857142857,IS,
+73,when_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,when,5,4,True,0.06857142857142857,IS,
+74,the_6,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,the,5,3,True,0.06857142857142857,IS,
+75,V&A__0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,V&A,5,3,True,0.06857142857142857,IS,
+76,received_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,received,5,8,True,0.06857142857142857,IS,
+77,the_7,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,the,5,3,True,0.06857142857142857,IS,
+78,Talbot_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,Talbot,5,6,True,0.06857142857142857,IS,
+79,Hughes_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,Hughes,5,6,True,0.06857142857142857,IS,
+80,collection_2,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,collection,5,10,True,0.06857142857142857,IS,
+81,containing_1,72.0,1,[138],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,containing,5,10,True,0.06857142857142857,IS,0.007766990291262136
+82,"1,442_0",,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,"1,442",5,5,True,0.06857142857142857,IS,
+83,costumes_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,costumes,5,8,True,0.06857142857142857,IS,
+84,and_2,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,and,5,3,True,0.06857142857142857,IS,
+85,items_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,items,5,5,True,0.06857142857142857,IS,
+86,as_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,as,5,2,True,0.06857142857142857,IS,
+87,a=_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,a=,5,2,True,0.06857142857142857,IS,
+88,gift_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,gift,5,4,True,0.06857142857142857,IS,
+89,from_2,87.0,1,[141],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,1,from,5,4,True,0.06857142857142857,IS,0.009385113268608414
+90,Harrods_0,,0,[],a_VictoriaandAlbertMuseum_2_qa_4 ,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,Harrods,5,7,True,0.06857142857142857,IS,
+91,following_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,following,5,9,True,0.06857142857142857,IS,
+92,its_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,its,5,3,True,0.06857142857142857,IS,
+93,display_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,display,5,7,True,0.06857142857142857,IS,
+94,at_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,at,5,2,True,0.06857142857142857,IS,
+95,the_8,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,the,5,3,True,0.06857142857142857,IS,
+96,nearby_0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,nearby,5,6,True,0.06857142857142857,IS,
+97,department_1,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,department,5,10,True,0.06857142857142857,IS,
+98,store._0,,0,[],,a_VictoriaandAlbertMuseum_2,A1BASVXQK125PD,0,store.,5,6,True,0.06857142857142857,IS,
+0,Peyton_0,80.0,1,[8],a_SuperBowl50_2_qa_8 a_SuperBowl50_2_qa_11 a_SuperBowl50_2_qa_14 ,a_SuperBowl50_2,A1BASVXQK125PD,1,Peyton,1,6,True,0.0,NR,0.04555808656036447
+1,Manning_0,130.0,2,"[16, 19]",a_SuperBowl50_2_qa_8 a_SuperBowl50_2_qa_11 a_SuperBowl50_2_qa_14 ,a_SuperBowl50_2,A1BASVXQK125PD,2,Manning,1,7,True,0.0,NR,0.07403189066059225
+2,became_0,69.0,1,[22],,a_SuperBowl50_2,A1BASVXQK125PD,1,became,1,6,True,0.0,NR,0.03929384965831435
+3,the_0,194.0,3,"[2, 3, 24]",,a_SuperBowl50_2,A1BASVXQK125PD,3,the,1,3,True,0.0,NR,0.11047835990888383
+4,first_0,,0,[],,a_SuperBowl50_2,A1BASVXQK125PD,0,first,1,5,True,0.0,NR,
+5,quarterback_0,62.0,1,[64],,a_SuperBowl50_2,A1BASVXQK125PD,1,quarterback,1,11,True,0.0,NR,0.03530751708428246
+6,ever_0,188.0,2,"[41, 47]",,a_SuperBowl50_2,A1BASVXQK125PD,2,ever,1,4,True,0.0,NR,0.1070615034168565
+7,to_0,51.0,1,[36],,a_SuperBowl50_2,A1BASVXQK125PD,1,to,1,2,True,0.0,NR,0.029043280182232345
+8,lead_0,50.0,1,[33],,a_SuperBowl50_2,A1BASVXQK125PD,1,lead,1,4,True,0.0,NR,0.02847380410022779
+9,two._0,159.0,2,"[34, 60]",a_SuperBowl50_2_qa_9 a_SuperBowl50_2_qa_10 ,a_SuperBowl50_2,A1BASVXQK125PD,2,two.,1,4,True,0.0,NR,0.09054669703872438
+10,different_0,140.0,1,[54],,a_SuperBowl50_2,A1BASVXQK125PD,1,different,2,9,True,0.0,NR,0.07972665148063782
+11,teams_0,139.0,2,"[6, 17]",,a_SuperBowl50_2,A1BASVXQK125PD,2,teams,2,5,True,0.0,NR,0.07915717539863326
+12,to_1,,0,[],,a_SuperBowl50_2,A1BASVXQK125PD,0,to,2,2,True,0.0,NR,
+13,multiple_0,160.0,2,"[15, 18]",,a_SuperBowl50_2,A1BASVXQK125PD,2,multiple,2,8,True,0.0,NR,0.09111617312072894
+14,Super_0,,0,[],,a_SuperBowl50_2,A1BASVXQK125PD,0,Super,2,5,True,0.0,NR,
+15,Bowls._0,,0,[],,a_SuperBowl50_2,A1BASVXQK125PD,0,Bowls.,2,6,True,0.0,NR,
+16,He_0,80.0,1,[46],,a_SuperBowl50_2,A1BASVXQK125PD,1,He,3,2,True,0.0,NR,0.04555808656036447
+17,is_0,,0,[],,a_SuperBowl50_2,A1BASVXQK125PD,0,is,3,2,True,0.0,NR,
+18,also_0,,0,[],,a_SuperBowl50_2,A1BASVXQK125PD,0,also,3,4,True,0.0,NR,
+19,the_1,,0,[],,a_SuperBowl50_2,A1BASVXQK125PD,0,the,3,3,True,0.0,NR,
+20,oldest_0,51.0,1,[43],,a_SuperBowl50_2,A1BASVXQK125PD,1,oldest,3,6,True,0.0,NR,0.029043280182232345
+21,quarterback_1,,0,[],,a_SuperBowl50_2,A1BASVXQK125PD,0,quarterback,3,11,True,0.0,NR,
+22,ever_1,,0,[],,a_SuperBowl50_2,A1BASVXQK125PD,0,ever,3,4,True,0.0,NR,
+23,to_2,79.0,1,[14],,a_SuperBowl50_2,A1BASVXQK125PD,1,to,3,2,True,0.0,NR,0.044988610478359906
+24,play_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,play,3,4,True,0.0,NR,
+25,in_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,in,3,2,True,0.0,NR,
+26,a_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,a,3,1,True,0.0,NR,
+27,Super_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Super,3,5,True,0.0,NR,
+28,Bowl_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Bowl,3,4,True,0.0,NR,
+29,at_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,at,3,2,True,0.0,NR,
+30,age_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,age,3,3,True,0.0,NR,
+31,39._0,64.0,1,[45],a_SuperBowl50_2_qa_0 a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_15 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,1,39.,3,3,True,0.0,NR,0.03644646924829157
+32,The_2,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,The,4,3,True,0.0,NR,
+33,past_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,past,4,4,True,0.0,NR,
+34,record_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,record,4,6,True,0.0,NR,
+35,was_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,was,4,3,True,0.0,NR,
+36,held_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,held,4,4,True,0.0,NR,
+37,by_0,60.0,1,[55],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,1,by,4,2,True,0.0,NR,0.03416856492027335
+38,John_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,John,4,4,True,0.0,NR,
+39,"Elway,_0",,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,"Elway,",4,6,True,0.0,NR,
+40,who_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,who,4,3,True,0.0,NR,
+41,led_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,led,4,3,True,0.0,NR,
+42,the_3,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,the,4,3,True,0.0,NR,
+43,Broncos_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_4 a_SuperBowl50_2_qa_5 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Broncos,4,7,True,0.0,NR,
+44,to_3,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,to,4,2,True,0.0,NR,
+45,victory_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,victory,4,7,True,0.0,NR,
+46,in_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,in,4,2,True,0.0,NR,
+47,Super_2,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_13 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Super,4,5,True,0.0,NR,
+48,Bowl_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_13 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Bowl,4,4,True,0.0,NR,
+49,XxxXill_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_13 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,XxxXill,4,7,True,0.0,NR,
+50,at_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,at,4,2,True,0.0,NR,
+51,age_1,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,age,4,3,True,0.0,NR,
+52,38_0,,0,[],a_SuperBowl50_2_qa_1 a_SuperBowl50_2_qa_2 a_SuperBowl50_2_qa_6 a_SuperBowl50_2_qa_7 a_SuperBowl50_2_qa_12 a_SuperBowl50_2_qa_16 ,a_SuperBowl50_2,A1BASVXQK125PD,0,38,4,2,True,0.0,NR,
+53,and_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,and,4,3,True,0.0,NR,
+54,is_1,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,is,4,2,True,0.0,NR,
+55,currently_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,currently,4,9,True,0.0,NR,
+56,Denver's_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Denver's,4,8,True,0.0,NR,
+57,Executive_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Executive,4,9,True,0.0,NR,
+58,Vice_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Vice,4,4,True,0.0,NR,
+59,President_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,President,4,9,True,0.0,NR,
+60,of_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,of,4,2,True,0.0,NR,
+61,Football_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Football,4,8,True,0.0,NR,
+62,Operations_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Operations,4,10,True,0.0,NR,
+63,and_1,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,and,4,3,True,0.0,NR,
+64,General_0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,General,4,7,True,0.0,NR,
+65,Manager._0,,0,[],a_SuperBowl50_2_qa_3 ,a_SuperBowl50_2,A1BASVXQK125PD,0,Manager.,4,8,True,0.0,NR,
+0,The_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,0,The,1,3,False,0.04782608695652174,NR,
+1,most_0,165.0,2,"[56, 57]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,2,most,1,4,False,0.04782608695652174,NR,0.012658227848101266
+2,frequent_0,208.0,2,"[47, 58]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,2,frequent,1,8,False,0.04782608695652174,NR,0.015957038741848867
+3,musical_0,224.0,3,"[37, 110, 113]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,3,musical,1,7,False,0.04782608695652174,NR,0.01718450326045263
+4,contributor_0,186.0,3,"[7, 60, 73]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,3,contributor,1,11,False,0.04782608695652174,NR,0.014269275028768699
+5,during_0,72.0,1,[5],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,1,during,1,6,False,0.04782608695652174,NR,0.005523590333716916
+6,the_1,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,0,the,1,3,False,0.04782608695652174,NR,
+7,first_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,0,first,1,5,False,0.04782608695652174,NR,
+8,15_0,63.0,1,[66],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,1,15,1,2,False,0.04782608695652174,NR,0.0048331415420023015
+9,years_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,0,years,1,5,False,0.04782608695652174,NR,
+10,was_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,0,was,1,3,False,0.04782608695652174,NR,
+11,Dudley_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,0,Dudley,1,6,False,0.04782608695652174,NR,
+12,"Simpson,_0",250.0,4,"[35, 42, 55, 76]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,4,"Simpson,",1,8,False,0.04782608695652174,NR,0.019179133103183737
+13,who_0,207.0,3,"[11, 52, 54]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,3,who,1,3,False,0.04782608695652174,NR,0.015880322209436134
+14,is_0,133.0,2,"[12, 38]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,2,is,1,2,False,0.04782608695652174,NR,0.010203298810893748
+15,also_0,396.0,6,"[44, 48, 74, 109, 112, 214]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,6,also,1,4,False,0.04782608695652174,NR,0.030379746835443037
+16,well_0,295.0,4,"[45, 49, 111, 114]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,4,well,1,4,False,0.04782608695652174,NR,0.02263137706175681
+17,known_0,279.0,4,"[46, 50, 217, 218]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,4,known,1,5,False,0.04782608695652174,NR,0.02140391254315305
+18,for_0,74.0,1,[84],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,1,for,1,3,False,0.04782608695652174,NR,0.0056770233985423855
+19,his_0,175.0,2,"[6, 14]",a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,2,his,1,3,False,0.04782608695652174,NR,0.013425393172228616
+20,theme_0,83.0,1,[219],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,1,theme,1,5,False,0.04782608695652174,NR,0.006367472190257
+21,and__0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,0,and,1,3,False,0.04782608695652174,NR,
+22,incidental_0,88.0,1,[220],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,1,incidental,1,10,False,0.04782608695652174,NR,0.006751054852320675
+23,music_0,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,0,music,1,5,False,0.04782608695652174,NR,
+24,for_1,,0,[],a_DoctorWho_3_qa_0 ,a_DoctorWho_3,A1BASVXQK125PD,0,for,1,3,False,0.04782608695652174,NR,
+25,Blake's_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,Blake's,1,7,False,0.04782608695652174,NR,
+26,"7,_0",93.0,1,[133],,a_DoctorWho_3,A1BASVXQK125PD,1,"7,",1,2,False,0.04782608695652174,NR,0.0071346375143843494
+27,and_0,298.0,4,"[40, 43, 75, 77]",,a_DoctorWho_3,A1BASVXQK125PD,4,and,1,3,False,0.04782608695652174,NR,0.022861526658995015
+28,for_2,83.0,1,[135],,a_DoctorWho_3,A1BASVXQK125PD,1,for,1,3,False,0.04782608695652174,NR,0.006367472190257
+29,his_1,211.0,3,"[39, 136, 213]",,a_DoctorWho_3,A1BASVXQK125PD,3,his,1,3,False,0.04782608695652174,NR,0.016187188339087073
+30,haunting_0,331.0,5,"[13, 79, 108, 115, 216]",,a_DoctorWho_3,A1BASVXQK125PD,5,haunting,1,8,False,0.04782608695652174,NR,0.025393172228615268
+31,theme_1,230.0,3,"[23, 51, 116]",,a_DoctorWho_3,A1BASVXQK125PD,3,theme,1,5,False,0.04782608695652174,NR,0.017644802454929037
+32,music_1,178.0,2,"[83, 86]",,a_DoctorWho_3,A1BASVXQK125PD,2,music,1,5,False,0.04782608695652174,NR,0.01365554276946682
+33,and_1,146.0,2,"[82, 224]",,a_DoctorWho_3,A1BASVXQK125PD,2,and,1,3,False,0.04782608695652174,NR,0.011200613732259302
+34,score_0,112.0,1,[26],,a_DoctorWho_3,A1BASVXQK125PD,1,score,1,5,False,0.04782608695652174,NR,0.008592251630226314
+35,for_3,134.0,2,"[27, 28]",,a_DoctorWho_3,A1BASVXQK125PD,2,for,1,3,False,0.04782608695652174,NR,0.010280015343306482
+36,the_2,124.0,2,"[222, 229]",,a_DoctorWho_3,A1BASVXQK125PD,2,the,1,3,False,0.04782608695652174,NR,0.009512850019179134
+37,original_0,69.0,1,[228],,a_DoctorWho_3,A1BASVXQK125PD,1,original,1,8,False,0.04782608695652174,NR,0.005293440736478711
+38,1970s_0,204.0,3,"[33, 101, 158]",,a_DoctorWho_3,A1BASVXQK125PD,3,1970s,1,5,False,0.04782608695652174,NR,0.015650172612197928
+39,version_0,346.0,4,"[90, 91, 102, 125]",,a_DoctorWho_3,A1BASVXQK125PD,4,version,1,7,False,0.04782608695652174,NR,0.02654392021480629
+40,of_0,110.0,1,[134],,a_DoctorWho_3,A1BASVXQK125PD,1,of,1,2,False,0.04782608695652174,NR,0.008438818565400843
+41,The_3,597.0,6,"[105, 124, 129, 130, 131, 132]",,a_DoctorWho_3,A1BASVXQK125PD,6,The,1,3,False,0.04782608695652174,NR,0.04579976985040276
+42,Tomorrow_0,692.0,8,"[3, 107, 127, 128, 145, 178, 197, 205]",,a_DoctorWho_3,A1BASVXQK125PD,8,Tomorrow,1,8,False,0.04782608695652174,NR,0.05308784042961258
+43,People._0,283.0,3,"[21, 143, 144]",,a_DoctorWho_3,A1BASVXQK125PD,3,People.,1,7,False,0.04782608695652174,NR,0.02171077867280399
+44,Simpson's_0,531.0,7,"[15, 32, 118, 123, 138, 141, 142]",,a_DoctorWho_3,A1BASVXQK125PD,7,Simpson's,2,9,False,0.04782608695652174,NR,0.040736478711162254
+45,first_1,74.0,2,"[0, 31]",,a_DoctorWho_3,A1BASVXQK125PD,2,first,2,5,False,0.04782608695652174,NR,0.0056770233985423855
+46,Doctor_0,52.0,1,[87],,a_DoctorWho_3,A1BASVXQK125PD,1,Doctor,2,6,False,0.04782608695652174,NR,0.003989259685462217
+47,Who_1,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,Who,2,3,False,0.04782608695652174,NR,
+48,score_1,168.0,2,"[29, 30]",,a_DoctorWho_3,A1BASVXQK125PD,2,score,2,5,False,0.04782608695652174,NR,0.012888377445339471
+49,was_1,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,was,2,3,False,0.04782608695652174,NR,
+50,Planet_0,138.0,2,"[126, 159]",a_DoctorWho_3_qa_1 ,a_DoctorWho_3,A1BASVXQK125PD,2,Planet,2,6,False,0.04782608695652174,NR,0.010586881472957423
+51,of_1,131.0,1,[162],a_DoctorWho_3_qa_1 ,a_DoctorWho_3,A1BASVXQK125PD,1,of,2,2,False,0.04782608695652174,NR,0.010049865746068278
+52,Giants_0,691.0,8,"[93, 94, 95, 98, 200, 208, 209, 210]",a_DoctorWho_3_qa_1 ,a_DoctorWho_3,A1BASVXQK125PD,8,Giants,2,6,False,0.04782608695652174,NR,0.05301112389719985
+53,(1964)_0,985.0,13,"[97, 172, 174, 175, 176, 179, 180, 198, 201, 202, 204, 207, 212]",,a_DoctorWho_3,A1BASVXQK125PD,13,(1964),2,6,False,0.04782608695652174,NR,0.07556578442654392
+54,and_2,475.0,6,"[146, 171, 177, 182, 203, 206]",,a_DoctorWho_3,A1BASVXQK125PD,6,and,2,3,False,0.04782608695652174,NR,0.0364403528960491
+55,he_0,120.0,2,"[20, 165]",,a_DoctorWho_3,A1BASVXQK125PD,2,he,2,2,False,0.04782608695652174,NR,0.009205983889528193
+56,went_0,352.0,4,"[2, 16, 153, 157]",,a_DoctorWho_3,A1BASVXQK125PD,4,went,2,4,False,0.04782608695652174,NR,0.0270042194092827
+57,on_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,on,2,2,False,0.04782608695652174,NR,
+58,to_0,52.0,1,[152],,a_DoctorWho_3,A1BASVXQK125PD,1,to,2,2,False,0.04782608695652174,NR,0.003989259685462217
+59,write_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,write,2,5,False,0.04782608695652174,NR,
+60,music_2,257.0,3,"[96, 154, 155]",,a_DoctorWho_3,A1BASVXQK125PD,3,music,2,5,False,0.04782608695652174,NR,0.01971614883007288
+61,for_4,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,for,2,3,False,0.04782608695652174,NR,
+62,many_0,195.0,2,"[122, 227]",,a_DoctorWho_3,A1BASVXQK125PD,2,many,2,4,False,0.04782608695652174,NR,0.014959723820483314
+63,adventures_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,adventures,2,10,False,0.04782608695652174,NR,
+64,of_2,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,of,2,2,False,0.04782608695652174,NR,
+65,the_4,,0,[],a_DoctorWho_3_qa_2 ,a_DoctorWho_3,A1BASVXQK125PD,0,the,2,3,False,0.04782608695652174,NR,
+66,1960s_0,135.0,1,[187],a_DoctorWho_3_qa_2 ,a_DoctorWho_3,A1BASVXQK125PD,1,1960s,2,5,False,0.04782608695652174,NR,0.010356731875719217
+67,and_3,252.0,4,"[89, 150, 181, 186]",a_DoctorWho_3_qa_2 ,a_DoctorWho_3,A1BASVXQK125PD,4,and,2,3,False,0.04782608695652174,NR,0.019332566168009206
+68,"1970s,_1",498.0,5,"[147, 149, 184, 185, 190]",a_DoctorWho_3_qa_2 ,a_DoctorWho_3,A1BASVXQK125PD,5,"1970s,",2,6,False,0.04782608695652174,NR,0.038204833141542
+69,including_0,298.0,4,"[18, 19, 148, 166]",,a_DoctorWho_3,A1BASVXQK125PD,4,including,2,9,False,0.04782608695652174,NR,0.022861526658995015
+70,most_1,130.0,1,[1],,a_DoctorWho_3,A1BASVXQK125PD,1,most,2,4,False,0.04782608695652174,NR,0.009973149213655544
+71,of_3,53.0,1,[168],,a_DoctorWho_3,A1BASVXQK125PD,1,of,2,2,False,0.04782608695652174,NR,0.004065976217874952
+72,the_5,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,the,2,3,False,0.04782608695652174,NR,
+73,stories_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,stories,2,7,False,0.04782608695652174,NR,
+74,of_4,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,of,2,2,False,0.04782608695652174,NR,
+75,the_6,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,the,2,3,False,0.04782608695652174,NR,
+76,Jon_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,Jon,2,3,False,0.04782608695652174,NR,
+77,Pertwee/Tom_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,Pertwee/Tom,2,11,False,0.04782608695652174,NR,
+78,Baker_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,Baker,2,5,False,0.04782608695652174,NR,
+79,"periods,_0",,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,"periods,",2,8,False,0.04782608695652174,NR,
+80,ending_0,60.0,1,[163],,a_DoctorWho_3,A1BASVXQK125PD,1,ending,2,6,False,0.04782608695652174,NR,0.004602991944764097
+81,with_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,with,2,4,False,0.04782608695652174,NR,
+82,The_7,,0,[],a_DoctorWho_3_qa_3 ,a_DoctorWho_3,A1BASVXQK125PD,0,The,2,3,False,0.04782608695652174,NR,
+83,Horns_0,54.0,1,[191],a_DoctorWho_3_qa_3 ,a_DoctorWho_3,A1BASVXQK125PD,1,Horns,2,5,False,0.04782608695652174,NR,0.004142692750287687
+84,of_5,,0,[],a_DoctorWho_3_qa_3 ,a_DoctorWho_3,A1BASVXQK125PD,0,of,2,2,False,0.04782608695652174,NR,
+85,Nimon_0,,0,[],a_DoctorWho_3_qa_3 ,a_DoctorWho_3,A1BASVXQK125PD,0,Nimon,2,5,False,0.04782608695652174,NR,
+86,(1979)._0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,(1979).,2,7,False,0.04782608695652174,NR,
+87,He_1,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,He,3,2,False,0.04782608695652174,NR,
+88,also._1,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,also.,3,5,False,0.04782608695652174,NR,
+89,made_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,made,4,4,False,0.04782608695652174,NR,
+90,a_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,a,4,1,False,0.04782608695652174,NR,
+91,cameo_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,cameo,4,5,False,0.04782608695652174,NR,
+92,appearance_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,appearance,4,10,False,0.04782608695652174,NR,
+93,in_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,in,4,2,False,0.04782608695652174,NR,
+94,The_8,,0,[],a_DoctorWho_3_qa_4 ,a_DoctorWho_3,A1BASVXQK125PD,0,The,4,3,False,0.04782608695652174,NR,
+95,Talons_0,,0,[],a_DoctorWho_3_qa_4 ,a_DoctorWho_3,A1BASVXQK125PD,0,Talons,4,6,False,0.04782608695652174,NR,
+96,of_6,,0,[],a_DoctorWho_3_qa_4 ,a_DoctorWho_3,A1BASVXQK125PD,0,of,4,2,False,0.04782608695652174,NR,
+97,Weng-Chiang_0,144.0,2,"[193, 196]",a_DoctorWho_3_qa_4 ,a_DoctorWho_3,A1BASVXQK125PD,2,Weng-Chiang,4,11,False,0.04782608695652174,NR,0.011047180667433832
+98,(as_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,(as,4,3,False,0.04782608695652174,NR,
+99,a_1,51.0,1,[194],,a_DoctorWho_3,A1BASVXQK125PD,1,a,4,1,False,0.04782608695652174,NR,0.003912543153049482
+100,Music_3,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,Music,4,5,False,0.04782608695652174,NR,
+101,hall_0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,hall,4,4,False,0.04782608695652174,NR,
+102,conductor)._0,,0,[],,a_DoctorWho_3,A1BASVXQK125PD,0,conductor).,4,11,False,0.04782608695652174,NR,
+0,The_0,,0,[],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,0,The,1,3,False,0.391025641025641,NR,
+1,Standard_0,88.0,1,[33],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,1,Standard,1,8,False,0.391025641025641,NR,0.009480715363068304
+2,Industrial_0,133.0,2,"[34, 77]",a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,2,Industrial,1,10,False,0.391025641025641,NR,0.014328808446455505
+3,Classification_0,244.0,3,"[30, 36, 59]",a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,3,Classification,1,14,False,0.391025641025641,NR,0.026287438052143935
+4,and_0,138.0,2,"[37, 41]",a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,2,and,1,3,False,0.391025641025641,NR,0.014867485455720749
+5,the_1,62.0,1,[38],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,1,the,1,3,False,0.391025641025641,NR,0.006679594914889032
+6,newer_0,,0,[],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,0,newer,1,5,False,0.391025641025641,NR,
+7,North_0,,0,[],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,0,North,1,5,False,0.391025641025641,NR,
+8,American_0,73.0,1,[55],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,1,American,1,8,False,0.391025641025641,NR,0.00786468433527257
+9,Industry_0,53.0,1,[53],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,1,Industry,1,8,False,0.391025641025641,NR,0.005709976298211592
+10,Classification_1,,0,[],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,0,Classification,1,14,False,0.391025641025641,NR,
+11,System_0,,0,[],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,0,System,1,6,False,0.391025641025641,NR,
+12,have_0,,0,[],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,0,have,1,4,False,0.391025641025641,NR,
+13,a_0,,0,[],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,0,a,1,1,False,0.391025641025641,NR,
+14,classification_2,50.0,1,[60],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,1,classification,1,14,False,0.391025641025641,NR,0.0053867700926524455
+15,system_1,140.0,1,[63],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,1,system,1,6,False,0.391025641025641,NR,0.015082956259426848
+16,for_0,,0,[],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,0,for,1,3,False,0.391025641025641,NR,
+17,companies_0,307.0,4,"[26, 27, 42, 68]",a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,4,companies,1,9,False,0.391025641025641,NR,0.033074768368886016
+18,that_0,219.0,3,"[25, 46, 69]",a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,3,that,1,4,False,0.391025641025641,NR,0.02359405300581771
+19,perform_0,,0,[],a_Construction_2_qa_2 ,a_Construction_2,A1BASVXQK125PD,0,perform,1,7,False,0.391025641025641,NR,
+20,or_0,,0,[],,a_Construction_2,A1BASVXQK125PD,0,or,1,2,False,0.391025641025641,NR,
+21,otherwise_0,446.0,4,"[11, 94, 121, 122]",,a_Construction_2,A1BASVXQK125PD,4,otherwise,1,9,False,0.391025641025641,NR,0.04804998922645982
+22,engage_0,285.0,3,"[81, 82, 123]",,a_Construction_2,A1BASVXQK125PD,3,engage,1,6,False,0.391025641025641,NR,0.03070458952811894
+23,in_0,,0,[],,a_Construction_2,A1BASVXQK125PD,0,in,1,2,False,0.391025641025641,NR,
+24,construction._0,157.0,2,"[61, 62]",,a_Construction_2,A1BASVXQK125PD,2,construction.,1,13,False,0.391025641025641,NR,0.016914458090928678
+25,To_0,,0,[],,a_Construction_2,A1BASVXQK125PD,0,To,2,2,False,0.391025641025641,NR,
+26,recognize_0,112.0,2,"[64, 66]",,a_Construction_2,A1BASVXQK125PD,2,recognize,2,9,False,0.391025641025641,NR,0.012066365007541479
+27,the_2,106.0,1,[28],,a_Construction_2,A1BASVXQK125PD,1,the,2,3,False,0.391025641025641,NR,0.011419952596423184
+28,differences_0,154.0,2,"[23, 73]",,a_Construction_2,A1BASVXQK125PD,2,differences,2,11,False,0.391025641025641,NR,0.016591251885369532
+29,of_0,63.0,1,[24],,a_Construction_2,A1BASVXQK125PD,1,of,2,2,False,0.391025641025641,NR,0.006787330316742082
+30,companies_1,,0,[],,a_Construction_2,A1BASVXQK125PD,0,companies,2,9,False,0.391025641025641,NR,
+31,in_1,,0,[],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,0,in,2,2,False,0.391025641025641,NR,
+32,this_0,,0,[],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,0,this,2,4,False,0.391025641025641,NR,
+33,"sector,_0",617.0,7,"[10, 80, 93, 95, 96, 97, 119]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,7,"sector,",2,7,False,0.391025641025641,NR,0.06647274294333118
+34,it_0,311.0,3,"[124, 131, 132]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,3,it,2,2,False,0.391025641025641,NR,0.03350570997629821
+35,is_0,219.0,3,"[12, 13, 133]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,3,is,2,2,False,0.391025641025641,NR,0.02359405300581771
+36,divided_0,201.0,3,"[14, 83, 87]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,3,divided,2,7,False,0.391025641025641,NR,0.02165481577246283
+37,into_0,73.0,1,[88],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,1,into,2,4,False,0.391025641025641,NR,0.00786468433527257
+38,three_0,240.0,3,"[15, 16, 89]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,3,three,2,5,False,0.391025641025641,NR,0.025856496444731737
+39,subsectors:_0,333.0,3,"[17, 92, 146]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,3,subsectors:,2,11,False,0.391025641025641,NR,0.035875888817065285
+40,building_0,,0,[],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,0,building,2,8,False,0.391025641025641,NR,
+41,"construction,_1",58.0,1,[22],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,1,"construction,",2,13,False,0.391025641025641,NR,0.006248653307476837
+42,heavy_0,77.0,1,[72],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,1,heavy,2,5,False,0.391025641025641,NR,0.008295625942684766
+43,and_1,55.0,1,[6],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,1,and,2,3,False,0.391025641025641,NR,0.00592544710191769
+44,civil_0,53.0,1,[9],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,1,civil,2,5,False,0.391025641025641,NR,0.005709976298211592
+45,engineering_0,393.0,3,"[98, 118, 129]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,3,engineering,2,11,False,0.391025641025641,NR,0.042340012928248225
+46,"construction,_2",1192.0,13,"[85, 86, 101, 102, 103, 116, 117, 126, 127, 136, 137, 138, 140]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,13,"construction,",2,13,False,0.391025641025641,NR,0.1284205990088343
+47,and_2,71.0,1,[139],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,1,and,2,3,False,0.391025641025641,NR,0.0076492135315664725
+48,specialty_0,430.0,5,"[90, 91, 115, 144, 147]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,5,specialty,2,9,False,0.391025641025641,NR,0.046326222796811034
+49,trade_0,112.0,2,"[19, 148]",a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,2,trade,2,5,False,0.391025641025641,NR,0.012066365007541479
+50,contractors._0,56.0,1,[20],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,1,contractors.,2,12,False,0.391025641025641,NR,0.006033182503770739
+51,There_0,88.0,1,[21],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,1,There,3,5,False,0.391025641025641,NR,0.009480715363068304
+52,are_0,,0,[],a_Construction_2_qa_0 ,a_Construction_2,A1BASVXQK125PD,0,are,3,3,False,0.391025641025641,NR,
+53,also._0,,0,[],a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,0,also.,3,5,False,0.391025641025641,NR,
+54,categories_0,,0,[],a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,0,categories,4,10,False,0.391025641025641,NR,
+55,for_1,88.0,1,[154],a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,1,for,4,3,False,0.391025641025641,NR,0.009480715363068304
+56,construction_3,732.0,8,"[2, 3, 4, 135, 141, 142, 143, 153]",a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,8,construction,4,12,False,0.391025641025641,NR,0.0788623141564318
+57,service_0,77.0,1,[149],a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,1,service,4,7,False,0.391025641025641,NR,0.008295625942684766
+58,firms_0,124.0,2,"[104, 105]",a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,2,firms,4,5,False,0.391025641025641,NR,0.013359189829778064
+59,"(e.g.,_0",60.0,1,[106],a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,1,"(e.g.,",4,6,False,0.391025641025641,NR,0.006464124111182934
+60,"engineering,_1",73.0,1,[113],a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,1,"engineering,",4,12,False,0.391025641025641,NR,0.00786468433527257
+61,architecture)_0,124.0,2,"[109, 112]",a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,2,architecture),4,13,False,0.391025641025641,NR,0.013359189829778064
+62,and_3,94.0,1,[110],a_Construction_2_qa_1 ,a_Construction_2,A1BASVXQK125PD,1,and,4,3,False,0.391025641025641,NR,0.010127127774186598
+63,construction_4,,0,[],a_Construction_2_qa_1 a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,construction,4,12,False,0.391025641025641,NR,
+64,managers_0,,0,[],a_Construction_2_qa_1 a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,managers,4,8,False,0.391025641025641,NR,
+65,(firms_0,177.0,2,"[5, 152]",a_Construction_2_qa_1 a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,2,(firms,4,6,False,0.391025641025641,NR,0.01906916612798966
+66,engaged_0,188.0,2,"[1, 151]",a_Construction_2_qa_1 a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,2,engaged,4,7,False,0.391025641025641,NR,0.020254255548373196
+67,in_2,,0,[],a_Construction_2_qa_1 a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,in,4,2,False,0.391025641025641,NR,
+68,managing_0,,0,[],a_Construction_2_qa_1 a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,managing,4,8,False,0.391025641025641,NR,
+69,construction_5,,0,[],a_Construction_2_qa_1 a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,construction,4,12,False,0.391025641025641,NR,
+70,projects_0,58.0,1,[107],a_Construction_2_qa_1 a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,1,projects,4,8,False,0.391025641025641,NR,0.006248653307476837
+71,without_0,,0,[],a_Construction_2_qa_1 a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,without,4,7,False,0.391025641025641,NR,
+72,assuming_0,,0,[],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,assuming,4,8,False,0.391025641025641,NR,
+73,direct_0,78.0,1,[8],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,1,direct,4,6,False,0.391025641025641,NR,0.008403361344537815
+74,financial_0,,0,[],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,financial,4,9,False,0.391025641025641,NR,
+75,responsibility_0,,1,[0],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,1,responsibility,4,14,False,0.391025641025641,NR,
+76,for_2,,0,[],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,for,4,3,False,0.391025641025641,NR,
+77,completion_0,,0,[],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,completion,4,10,False,0.391025641025641,NR,
+78,of_1,,0,[],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,of,4,2,False,0.391025641025641,NR,
+79,the_3,,0,[],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,the,4,3,False,0.391025641025641,NR,
+80,construction_6,,0,[],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,construction,4,12,False,0.391025641025641,NR,
+81,project)._0,,0,[],a_Construction_2_qa_3 ,a_Construction_2,A1BASVXQK125PD,0,project).,4,9,False,0.391025641025641,NR,
+0,During_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,During,1,6,False,0.0,NR,
+1,the_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,the,1,3,False,0.0,NR,
+2,divestment_0,269.0,3,"[27, 28, 30]",,a_HarvardUniversity_2,A1BASVXQK125PD,3,divestment,1,10,False,0.0,NR,0.016343641776535633
+3,from_0,51.0,1,[29],,a_HarvardUniversity_2,A1BASVXQK125PD,1,from,1,4,False,0.0,NR,0.0030986086639528524
+4,South_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,South,1,5,False,0.0,NR,
+5,Africa_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,Africa,1,6,False,0.0,NR,
+6,movement_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,movement,1,8,False,0.0,NR,
+7,in_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,in,1,2,False,0.0,NR,
+8,the_1,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,the,1,3,False,0.0,NR,
+9,late_0,,0,[],a_HarvardUniversity_2_qa_0 ,a_HarvardUniversity_2,A1BASVXQK125PD,0,late,1,4,False,0.0,NR,
+10,"1980s,_0",,0,[],a_HarvardUniversity_2_qa_0 ,a_HarvardUniversity_2,A1BASVXQK125PD,0,"1980s,",1,6,False,0.0,NR,
+11,student_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,student,1,7,False,0.0,NR,
+12,activists_0,111.0,2,"[23, 67]",,a_HarvardUniversity_2,A1BASVXQK125PD,2,activists,1,9,False,0.0,NR,0.006744030621544444
+13,erected_0,244.0,3,"[24, 31, 32]",,a_HarvardUniversity_2,A1BASVXQK125PD,3,erected,1,7,False,0.0,NR,0.01482471596087247
+14,a_0,78.0,1,[25],,a_HarvardUniversity_2,A1BASVXQK125PD,1,a,1,1,False,0.0,NR,0.004739048544869068
+15,symbolic_0,112.0,2,"[17, 20]",,a_HarvardUniversity_2,A1BASVXQK125PD,2,symbolic,1,8,False,0.0,NR,0.0068047876541709705
+16,"""shantytown""_0",215.0,2,"[18, 19]",,a_HarvardUniversity_2,A1BASVXQK125PD,2,"""shantytown""",1,12,False,0.0,NR,0.013062762014703203
+17,on_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,on,1,2,False,0.0,NR,
+18,Harvard_0,59.0,1,[33],,a_HarvardUniversity_2,A1BASVXQK125PD,1,Harvard,1,7,False,0.0,NR,0.0035846649249650646
+19,Yard_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,Yard,1,4,False,0.0,NR,
+20,and_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,and,1,3,False,0.0,NR,
+21,blockaded_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,blockaded,1,9,False,0.0,NR,
+22,a_1,84.0,1,[51],,a_HarvardUniversity_2,A1BASVXQK125PD,1,a,1,1,False,0.0,NR,0.005103590740628228
+23,speech_0,556.0,5,"[8, 15, 47, 52, 68]",,a_HarvardUniversity_2,A1BASVXQK125PD,5,speech,1,6,False,0.0,NR,0.033780910140348744
+24,given_0,282.0,3,"[22, 53, 71]",,a_HarvardUniversity_2,A1BASVXQK125PD,3,given,1,5,False,0.0,NR,0.017133483200680477
+25,by_0,203.0,3,"[72, 73, 117]",,a_HarvardUniversity_2,A1BASVXQK125PD,3,by,1,2,False,0.0,NR,0.012333677623184883
+26,South_1,470.0,5,"[21, 74, 93, 100, 118]",,a_HarvardUniversity_2,A1BASVXQK125PD,5,South,1,5,False,0.0,NR,0.028555805334467464
+27,African_0,717.0,8,"[75, 77, 90, 91, 92, 101, 109, 110]",,a_HarvardUniversity_2,A1BASVXQK125PD,8,African,1,7,False,0.0,NR,0.043562792393219515
+28,Vice_0,308.0,3,"[76, 102, 112]",,a_HarvardUniversity_2,A1BASVXQK125PD,3,Vice,1,4,False,0.0,NR,0.018713166048970168
+29,Consul_0,178.0,2,"[60, 65]",,a_HarvardUniversity_2,A1BASVXQK125PD,2,Consul,1,6,False,0.0,NR,0.01081475180752172
+30,Duke_0,249.0,2,"[36, 61]",a_HarvardUniversity_2_qa_1 ,a_HarvardUniversity_2,A1BASVXQK125PD,2,Duke,1,4,False,0.0,NR,0.015128501124005104
+31, Kent-Brown._0,328.0,3,"[34, 43, 62]",a_HarvardUniversity_2_qa_1 ,a_HarvardUniversity_2,A1BASVXQK125PD,3, Kent-Brown.,1,12,False,0.0,NR,0.019928306701500698
+32,The_2,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,The,2,3,False,0.0,NR,
+33,Harvard_1,369.0,4,"[10, 11, 14, 50]",,a_HarvardUniversity_2,A1BASVXQK125PD,4,Harvard,2,7,False,0.0,NR,0.022419345039188285
+34,Management_0,343.0,4,"[7, 12, 13, 70]",,a_HarvardUniversity_2,A1BASVXQK125PD,4,Management,2,10,False,0.0,NR,0.020839662190898597
+35,Company_0,1334.0,7,"[5, 6, 26, 127, 128, 157, 170]",,a_HarvardUniversity_2,A1BASVXQK125PD,7,Company,2,7,False,0.0,NR,0.08104988152378638
+36,repeatedly_0,2423.0,17,"[56, 57, 58, 83, 88, 89, 96, 98, 99, 105, 106, 119, 125, 129, 130, 131, 140]",,a_HarvardUniversity_2,A1BASVXQK125PD,17,repeatedly,2,10,False,0.0,NR,0.14721429005407377
+37,refused_0,714.0,7,"[4, 59, 103, 104, 113, 123, 141]",,a_HarvardUniversity_2,A1BASVXQK125PD,7,refused,2,7,False,0.0,NR,0.04338052129533994
+38,to_0,79.0,1,[143],,a_HarvardUniversity_2,A1BASVXQK125PD,1,to,2,2,False,0.0,NR,0.0047998055774955955
+39,"divest,_0",,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,"divest,",2,7,False,0.0,NR,
+40,stating_0,118.0,2,"[64, 115]",,a_HarvardUniversity_2,A1BASVXQK125PD,2,stating,2,7,False,0.0,NR,0.007169329849930129
+41,that_0,205.0,2,"[63, 148]",,a_HarvardUniversity_2,A1BASVXQK125PD,2,that,2,4,False,0.0,NR,0.012455191688437936
+42,“operating_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,“operating,2,10,False,0.0,NR,
+43,expenses_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,expenses,2,8,False,0.0,NR,
+44,must_0,68.0,1,[156],,a_HarvardUniversity_2,A1BASVXQK125PD,1,must,2,4,False,0.0,NR,0.0041314782186038035
+45,not_0,,1,[0],,a_HarvardUniversity_2,A1BASVXQK125PD,1,not,2,3,False,0.0,NR,
+46,be_0,469.0,4,"[1, 85, 153, 154]",,a_HarvardUniversity_2,A1BASVXQK125PD,4,be,2,2,False,0.0,NR,0.02849504830184094
+47,subject_0,1065.0,11,"[2, 84, 86, 87, 94, 95, 97, 132, 133, 171, 176]",,a_HarvardUniversity_2,A1BASVXQK125PD,11,subject,2,7,False,0.0,NR,0.06470623974725075
+48,to_1,343.0,4,"[139, 175, 178, 196]",,a_HarvardUniversity_2,A1BASVXQK125PD,4,to,2,2,False,0.0,NR,0.020839662190898597
+49,financially_0,592.0,5,"[120, 138, 142, 164, 179]",,a_HarvardUniversity_2,A1BASVXQK125PD,5,financially,2,11,False,0.0,NR,0.0359681633149037
+50,unrealistic_0,399.0,5,"[114, 122, 144, 145, 166]",,a_HarvardUniversity_2,A1BASVXQK125PD,5,unrealistic,2,11,False,0.0,NR,0.02424205601798408
+51,strictures_0,262.0,3,"[121, 146, 147]",,a_HarvardUniversity_2,A1BASVXQK125PD,3,strictures,2,10,False,0.0,NR,0.015918342548149948
+52,or_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,or,2,2,False,0.0,NR,
+53,carping_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,carping,2,7,False,0.0,NR,
+54,by_1,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,by,2,2,False,0.0,NR,
+55,the_3,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,the,2,3,False,0.0,NR,
+56,unsophisticated_0,64.0,1,[155],,a_HarvardUniversity_2,A1BASVXQK125PD,1,unsophisticated,2,15,False,0.0,NR,0.0038884500880976974
+57,or_1,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,or,2,2,False,0.0,NR,
+58,by_2,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,by,2,2,False,0.0,NR,
+59,special_0,546.0,5,"[162, 172, 174, 195, 201]",,a_HarvardUniversity_2,A1BASVXQK125PD,5,special,2,7,False,0.0,NR,0.03317333981408348
+60,interest_0,809.0,7,"[136, 137, 160, 161, 165, 200, 202]",,a_HarvardUniversity_2,A1BASVXQK125PD,7,interest,2,8,False,0.0,NR,0.049152439394859956
+61,"groups.""_0",534.0,5,"[151, 167, 183, 184, 199]",,a_HarvardUniversity_2,A1BASVXQK125PD,5,"groups.""",2,8,False,0.0,NR,0.03244425542256516
+62,"However,_0",,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,"However,",2,8,False,0.0,NR,
+63,the_4,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,the,2,3,False,0.0,NR,
+64,university_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,university,2,10,False,0.0,NR,
+65,did_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,did,2,3,False,0.0,NR,
+66,eventually_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,eventually,2,10,False,0.0,NR,
+67,reduce_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,reduce,2,6,False,0.0,NR,
+68,its_0,182.0,1,[194],,a_HarvardUniversity_2,A1BASVXQK125PD,1,its,2,3,False,0.0,NR,0.011057779938027828
+69,South_2,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,South,2,5,False,0.0,NR,
+70,African_1,195.0,2,"[193, 203]",,a_HarvardUniversity_2,A1BASVXQK125PD,2,African,2,7,False,0.0,NR,0.011847621362172671
+71,holdings_0,765.0,6,"[180, 181, 182, 204, 205, 206]",,a_HarvardUniversity_2,A1BASVXQK125PD,6,holdings,2,8,False,0.0,NR,0.046479129959292785
+72,by_3,67.0,1,[185],,a_HarvardUniversity_2,A1BASVXQK125PD,1,by,2,2,False,0.0,NR,0.004070721185977277
+73,$230_0,,0,[],a_HarvardUniversity_2_qa_2 ,a_HarvardUniversity_2,A1BASVXQK125PD,0,$230,2,4,False,0.0,NR,
+74,million_0,,0,[],a_HarvardUniversity_2_qa_2 ,a_HarvardUniversity_2,A1BASVXQK125PD,0,million,2,7,False,0.0,NR,
+75,(out_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,(out,2,4,False,0.0,NR,
+76,of_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,of,2,2,False,0.0,NR,
+77,$400_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,$400,2,4,False,0.0,NR,
+78,million)_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,million),2,8,False,0.0,NR,
+79,in_1,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,in,2,2,False,0.0,NR,
+80,response_0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,response,2,8,False,0.0,NR,
+81,to_2,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,to,2,2,False,0.0,NR,
+82,the_5,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,the,2,3,False,0.0,NR,
+83,pressure._0,,0,[],,a_HarvardUniversity_2,A1BASVXQK125PD,0,pressure.,2,9,False,0.0,NR,
+0,In_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,In,1,2,True,0.018315018315018316,NR,
+1,competitive_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,competitive,1,11,True,0.018315018315018316,NR,
+2,"sports,_0",,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,"sports,",1,7,True,0.018315018315018316,NR,
+3,doping_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,doping,1,6,True,0.018315018315018316,NR,
+4,is_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,is,1,2,True,0.018315018315018316,NR,
+5,the_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,the,1,3,True,0.018315018315018316,NR,
+6,use_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,use,1,3,True,0.018315018315018316,NR,
+7,of_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,of,1,2,True,0.018315018315018316,NR,
+8,banned_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,banned,1,6,True,0.018315018315018316,NR,
+9,performance-enhancing_0,61.0,1,[20],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,1,performance-enhancing,1,21,True,0.018315018315018316,NR,0.0027737359039650784
+10,drugs_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,drugs,1,5,True,0.018315018315018316,NR,
+11,by_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,by,1,2,True,0.018315018315018316,NR,
+12,athletic_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,athletic,1,8,True,0.018315018315018316,NR,
+13,competitors._0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,competitors.,1,12,True,0.018315018315018316,NR,
+14,The_1,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,The,2,3,True,0.018315018315018316,NR,
+15,term_0,102.0,2,"[36, 37]",meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,2,term,2,4,True,0.018315018315018316,NR,0.004638050200072754
+16,doping_1,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,doping,2,6,True,0.018315018315018316,NR,
+17,is_1,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,is,2,2,True,0.018315018315018316,NR,
+18,widely_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,widely,2,6,True,0.018315018315018316,NR,
+19,used_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,used,2,4,True,0.018315018315018316,NR,
+20,by_1,65.0,1,[17],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,1,by,2,2,True,0.018315018315018316,NR,0.0029556202255365586
+21,organizations_0,124.0,1,[21],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,1,organizations,2,13,True,0.018315018315018316,NR,0.005638413968715897
+22,which_0,,0,[],meco_para_3_qa_1 ,meco_para_3,A1BASVXQK125PD,0,which,2,5,True,0.018315018315018316,NR,
+23,regulate_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,regulate,2,8,True,0.018315018315018316,NR,
+24,sporting_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,sporting,2,8,True,0.018315018315018316,NR,
+25,competitions._0,429.0,2,"[8, 35]",,meco_para_3,A1BASVXQK125PD,2,competitions.,2,13,True,0.018315018315018316,NR,0.019507093488541287
+26,The_2,107.0,1,[38],,meco_para_3,A1BASVXQK125PD,1,The,3,3,True,0.018315018315018316,NR,0.004865405602037105
+27,use_1,,0,[],,meco_para_3,A1BASVXQK125PD,0,use,3,3,True,0.018315018315018316,NR,
+28,of_1,,0,[],,meco_para_3,A1BASVXQK125PD,0,of,3,2,True,0.018315018315018316,NR,
+29,drugs_1,131.0,2,"[15, 48]",,meco_para_3,A1BASVXQK125PD,2,drugs,3,5,True,0.018315018315018316,NR,0.0059567115314659875
+30,to_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,to,3,2,True,0.018315018315018316,NR,
+31,enhance_0,135.0,2,"[16, 47]",,meco_para_3,A1BASVXQK125PD,2,enhance,3,7,True,0.018315018315018316,NR,0.006138595853037468
+32,performance_0,138.0,2,"[22, 43]",,meco_para_3,A1BASVXQK125PD,2,performance,3,11,True,0.018315018315018316,NR,0.006275009094216078
+33,is_2,222.0,3,"[65, 91, 93]",,meco_para_3,A1BASVXQK125PD,3,is,3,2,True,0.018315018315018316,NR,0.010094579847217169
+34,largely_0,398.0,4,"[45, 66, 92, 94]",,meco_para_3,A1BASVXQK125PD,4,largely,3,7,True,0.018315018315018316,NR,0.018097489996362313
+35,considered_0,59.0,1,[33],,meco_para_3,A1BASVXQK125PD,1,considered,3,10,True,0.018315018315018316,NR,0.002682793743179338
+36,"unethical,_0",315.0,3,"[34, 130, 131]",,meco_para_3,A1BASVXQK125PD,3,"unethical,",3,10,True,0.018315018315018316,NR,0.014323390323754093
+37,and_0,122.0,2,"[29, 133]",,meco_para_3,A1BASVXQK125PD,2,and,3,3,True,0.018315018315018316,NR,0.005547471807930157
+38,is_3,147.0,2,"[9, 28]",,meco_para_3,A1BASVXQK125PD,2,is,3,2,True,0.018315018315018316,NR,0.00668424881775191
+39,therefore_0,175.0,3,"[7, 10, 134]",,meco_para_3,A1BASVXQK125PD,3,therefore,3,9,True,0.018315018315018316,NR,0.007957439068752273
+40,prohibited_0,445.0,4,"[14, 40, 41, 42]",,meco_para_3,A1BASVXQK125PD,4,prohibited,3,10,True,0.018315018315018316,NR,0.02023463077482721
+41,by_2,,0,[],,meco_para_3,A1BASVXQK125PD,0,by,3,2,True,0.018315018315018316,NR,
+42,most_0,185.0,1,[89],,meco_para_3,A1BASVXQK125PD,1,most,3,4,True,0.018315018315018316,NR,0.008412149872680975
+43,international_0,342.0,5,"[26, 44, 62, 63, 64]",,meco_para_3,A1BASVXQK125PD,5,international,3,13,True,0.018315018315018316,NR,0.015551109494361587
+44,sports_1,275.0,1,[24],,meco_para_3,A1BASVXQK125PD,1,sports,3,6,True,0.018315018315018316,NR,0.012504547108039287
+45,"organizations,_1",76.0,1,[32],,meco_para_3,A1BASVXQK125PD,1,"organizations,",3,14,True,0.018315018315018316,NR,0.0034558021098581304
+46,including_0,221.0,3,"[30, 31, 132]",,meco_para_3,A1BASVXQK125PD,3,including,3,9,True,0.018315018315018316,NR,0.0100491087668243
+47,the_3,,0,[],,meco_para_3,A1BASVXQK125PD,0,the,3,3,True,0.018315018315018316,NR,
+48,International_1,565.0,6,"[3, 12, 57, 83, 118, 135]",,meco_para_3,A1BASVXQK125PD,6,International,3,13,True,0.018315018315018316,NR,0.025691160421971625
+49,Olympic_0,276.0,4,"[11, 13, 49, 58]",,meco_para_3,A1BASVXQK125PD,4,Olympic,3,7,True,0.018315018315018316,NR,0.012550018188432157
+50,Committee._0,216.0,3,"[27, 61, 88]",,meco_para_3,A1BASVXQK125PD,3,Committee.,3,10,True,0.018315018315018316,NR,0.009821753364859949
+51,"Furthermore,_0",,0,[],,meco_para_3,A1BASVXQK125PD,0,"Furthermore,",4,12,True,0.018315018315018316,NR,
+52,athletes_0,111.0,2,"[23, 68]",,meco_para_3,A1BASVXQK125PD,2,athletes,4,8,True,0.018315018315018316,NR,0.0050472899236085845
+53,who_0,98.0,1,[25],,meco_para_3,A1BASVXQK125PD,1,who,4,3,True,0.018315018315018316,NR,0.004456165878501273
+54,take_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,take,4,4,True,0.018315018315018316,NR,
+55,explicit._0,67.0,1,[78],,meco_para_3,A1BASVXQK125PD,1,explicit.,4,9,True,0.018315018315018316,NR,0.003046562386322299
+56,measures_0,503.0,4,"[54, 79, 97, 129]",,meco_para_3,A1BASVXQK125PD,4,measures,5,8,True,0.018315018315018316,NR,0.02287195343761368
+57,to_1,134.0,2,"[6, 128]",,meco_para_3,A1BASVXQK125PD,2,to,5,2,True,0.018315018315018316,NR,0.006093124772644598
+58,evade_0,264.0,3,"[50, 82, 113]",,meco_para_3,A1BASVXQK125PD,3,evade,5,5,True,0.018315018315018316,NR,0.012004365223717716
+59,detection_0,296.0,4,"[84, 85, 120, 127]",,meco_para_3,A1BASVXQK125PD,4,detection,5,9,True,0.018315018315018316,NR,0.01345943979628956
+60,exacerbate_0,326.0,4,"[59, 60, 87, 96]",,meco_para_3,A1BASVXQK125PD,4,exacerbate,5,10,True,0.018315018315018316,NR,0.014823572208075664
+61,the_4,,0,[],,meco_para_3,A1BASVXQK125PD,0,the,5,3,True,0.018315018315018316,NR,
+62,ethical_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,ethical,5,7,True,0.018315018315018316,NR,
+63,violation_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,violation,5,9,True,0.018315018315018316,NR,
+64,with_0,57.0,1,[69],,meco_para_3,A1BASVXQK125PD,1,with,5,4,True,0.018315018315018316,NR,0.002591851582393598
+65,overt_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,overt,5,5,True,0.018315018315018316,NR,
+66,deception_0,152.0,1,[77],,meco_para_3,A1BASVXQK125PD,1,deception,5,9,True,0.018315018315018316,NR,0.006911604219716261
+67,and_1,66.0,1,[76],,meco_para_3,A1BASVXQK125PD,1,and,5,3,True,0.018315018315018316,NR,0.003001091305929429
+68,cheating._0,698.0,5,"[52, 74, 75, 80, 98]",,meco_para_3,A1BASVXQK125PD,5,cheating.,5,9,True,0.018315018315018316,NR,0.03173881411422336
+69,Despite_0,350.0,4,"[73, 81, 86, 117]",,meco_para_3,A1BASVXQK125PD,4,Despite,6,7,True,0.018315018315018316,NR,0.015914878137504546
+70,its_0,330.0,2,"[2, 4]",,meco_para_3,A1BASVXQK125PD,2,its,6,3,True,0.018315018315018316,NR,0.015005456529647144
+71,prevalence_0,159.0,2,"[56, 121]",,meco_para_3,A1BASVXQK125PD,2,prevalence,6,10,True,0.018315018315018316,NR,0.007229901782466352
+72,in_1,77.0,1,[99],,meco_para_3,A1BASVXQK125PD,1,in,6,2,True,0.018315018315018316,NR,0.0035012731902510003
+73,the_5,132.0,1,[136],,meco_para_3,A1BASVXQK125PD,1,the,6,3,True,0.018315018315018316,NR,0.006002182611858858
+74,headlines_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,headlines,6,9,True,0.018315018315018316,NR,
+75,"recently,_0",,0,[],,meco_para_3,A1BASVXQK125PD,0,"recently,",6,9,True,0.018315018315018316,NR,
+76,doping_2,121.0,2,"[124, 125]",,meco_para_3,A1BASVXQK125PD,2,doping,6,6,True,0.018315018315018316,NR,0.0055020007275372864
+77,is_4,63.0,1,[105],,meco_para_3,A1BASVXQK125PD,1,is,6,2,True,0.018315018315018316,NR,0.0028646780647508183
+78,not_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,not,6,3,True,0.018315018315018316,NR,
+79,a_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,a,6,1,True,0.018315018315018316,NR,
+80,new_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,new,6,3,True,0.018315018315018316,NR,
+81,phenomenon;_0,392.0,5,"[51, 115, 176, 177, 248]",,meco_para_3,A1BASVXQK125PD,5,phenomenon;,6,11,True,0.018315018315018316,NR,0.017824663514005093
+82,in_2,,0,[],,meco_para_3,A1BASVXQK125PD,0,in,6,2,True,0.018315018315018316,NR,
+83,"fact,_0",287.0,2,"[72, 122]",,meco_para_3,A1BASVXQK125PD,2,"fact,",6,5,True,0.018315018315018316,NR,0.013050200072753728
+84,it_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,it,6,2,True,0.018315018315018316,NR,
+85,is_5,,0,[],,meco_para_3,A1BASVXQK125PD,0,is,6,2,True,0.018315018315018316,NR,
+86,as_0,68.0,1,[112],,meco_para_3,A1BASVXQK125PD,1,as,6,2,True,0.018315018315018316,NR,0.0030920334667151692
+87,old_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,old,6,3,True,0.018315018315018316,NR,
+88,as_1,,0,[],,meco_para_3,A1BASVXQK125PD,0,as,6,2,True,0.018315018315018316,NR,
+89,sport_0,71.0,1,[138],,meco_para_3,A1BASVXQK125PD,1,sport,6,5,True,0.018315018315018316,NR,0.0032284467078937795
+90,itself._0,,0,[],,meco_para_3,A1BASVXQK125PD,0,itself.,6,7,True,0.018315018315018316,NR,
+91,From_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,From,7,4,True,0.018315018315018316,NR,
+92,the_6,93.0,1,[71],,meco_para_3,A1BASVXQK125PD,1,the,7,3,True,0.018315018315018316,NR,0.004228810476536922
+93,use_2,,0,[],,meco_para_3,A1BASVXQK125PD,0,use,7,3,True,0.018315018315018316,NR,
+94,of_2,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,of,7,2,True,0.018315018315018316,NR,
+95,substances_0,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,substances,7,10,True,0.018315018315018316,NR,
+96,in_3,147.0,2,"[178, 249]",meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,A1BASVXQK125PD,2,in,7,2,True,0.018315018315018316,NR,0.00668424881775191
+97,ancient_0,506.0,4,"[116, 146, 175, 250]",meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,A1BASVXQK125PD,4,ancient,7,7,True,0.018315018315018316,NR,0.02300836667879229
+98,chariot_0,276.0,2,"[145, 162]",meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,A1BASVXQK125PD,2,chariot,7,7,True,0.018315018315018316,NR,0.012550018188432157
+99,races_0,177.0,1,[55],meco_para_3_qa_2 meco_para_3_qa_3 ,meco_para_3,A1BASVXQK125PD,1,races,7,5,True,0.018315018315018316,NR,0.008048381229538014
+100,to_2,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,to,7,2,True,0.018315018315018316,NR,
+101,more_0,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,more,7,4,True,0.018315018315018316,NR,
+102,recent_0,224.0,3,"[100, 111, 137]",meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,3,recent,7,6,True,0.018315018315018316,NR,0.01018552200800291
+103,controversies_0,321.0,4,"[102, 110, 139, 174]",meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,4,controversies,7,13,True,0.018315018315018316,NR,0.014596216806111314
+104,in_4,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,in,7,2,True,0.018315018315018316,NR,
+105,baseball_0,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,baseball,7,8,True,0.018315018315018316,NR,
+106,and_2,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,and,7,3,True,0.018315018315018316,NR,
+107,"cycling,_0",,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,"cycling,",7,8,True,0.018315018315018316,NR,
+108,popular_0,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,popular,7,7,True,0.018315018315018316,NR,
+109,views_0,145.0,1,[179],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,1,views,7,5,True,0.018315018315018316,NR,0.006593306656966169
+110,among_0,613.0,2,"[1, 147]",meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,2,among,7,5,True,0.018315018315018316,NR,0.027873772280829393
+111,athletes_1,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,athletes,7,8,True,0.018315018315018316,NR,
+112,have_0,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,have,7,4,True,0.018315018315018316,NR,
+113,varied_0,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,varied,7,6,True,0.018315018315018316,NR,
+114,widely_1,140.0,2,"[159, 160]",meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,2,widely,7,6,True,0.018315018315018316,NR,0.006365951255001819
+115,over_0,115.0,2,"[101, 140]",meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,2,over,7,4,True,0.018315018315018316,NR,0.005229174245180065
+116,the_7,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,the,7,3,True,0.018315018315018316,NR,
+117,years._0,73.0,1,[109],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,1,years.,7,6,True,0.018315018315018316,NR,0.0033193888686795197
+118,In_5,,0,[],meco_para_3_qa_2 ,meco_para_3,A1BASVXQK125PD,0,In,8,2,True,0.018315018315018316,NR,
+119,recent_1,,0,[],,meco_para_3,A1BASVXQK125PD,0,recent,8,6,True,0.018315018315018316,NR,
+120,"decades,_0",80.0,1,[202],,meco_para_3,A1BASVXQK125PD,1,"decades,",8,8,True,0.018315018315018316,NR,0.0036376864314296106
+121,authorities_0,194.0,3,"[203, 204, 251]",,meco_para_3,A1BASVXQK125PD,3,authorities,8,11,True,0.018315018315018316,NR,0.008821389596216806
+122,and_3,472.0,1,[189],,meco_para_3,A1BASVXQK125PD,1,and,8,3,True,0.018315018315018316,NR,0.021462349945434705
+123,sporting_1,395.0,6,"[0, 149, 187, 188, 205, 206]",,meco_para_3,A1BASVXQK125PD,6,sporting,8,8,True,0.018315018315018316,NR,0.017961076755183703
+124,organizations_2,128.0,2,"[144, 165]",,meco_para_3,A1BASVXQK125PD,2,organizations,8,13,True,0.018315018315018316,NR,0.005820298290287377
+125,have_1,,0,[],,meco_para_3,A1BASVXQK125PD,0,have,8,4,True,0.018315018315018316,NR,
+126,tried_0,68.0,1,[226],,meco_para_3,A1BASVXQK125PD,1,tried,8,5,True,0.018315018315018316,NR,0.0030920334667151692
+127,to_3,81.0,1,[141],,meco_para_3,A1BASVXQK125PD,1,to,8,2,True,0.018315018315018316,NR,0.003683157511822481
+128,strictly_0,271.0,2,"[155, 196]",,meco_para_3,A1BASVXQK125PD,2,strictly,8,8,True,0.018315018315018316,NR,0.012322662786467806
+129,regulate_1,141.0,2,"[156, 197]",,meco_para_3,A1BASVXQK125PD,2,regulate,8,8,True,0.018315018315018316,NR,0.006411422335394689
+130,the_8,,0,[],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,0,the,8,3,True,0.018315018315018316,NR,
+131,use_3,,0,[],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,0,use,8,3,True,0.018315018315018316,NR,
+132,of_3,99.0,1,[201],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,1,of,8,2,True,0.018315018315018316,NR,0.004501636958894144
+133,drugs_2,132.0,2,"[247, 268]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,2,drugs,8,5,True,0.018315018315018316,NR,0.006002182611858858
+134,in_6,69.0,1,[269],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,1,in,8,2,True,0.018315018315018316,NR,0.003137504547108039
+135,sport._1,435.0,4,"[233, 266, 267, 270]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,4,sport.,8,6,True,0.018315018315018316,NR,0.019779919970898507
+136,The_9,341.0,4,"[211, 213, 225, 256]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,4,The,9,3,True,0.018315018315018316,NR,0.015505638413968716
+137,primary_0,688.0,7,"[166, 167, 190, 207, 210, 212, 232]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,7,primary,9,7,True,0.018315018315018316,NR,0.03128410331029465
+138,reasons_0,60.0,1,[231],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,1,reasons,9,7,True,0.018315018315018316,NR,0.002728264823572208
+139,for_0,97.0,1,[195],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,1,for,9,3,True,0.018315018315018316,NR,0.004410694798108403
+140,this_0,,0,[],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,0,this,9,4,True,0.018315018315018316,NR,
+141,ban_0,73.0,1,[227],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,1,ban,9,3,True,0.018315018315018316,NR,0.0033193888686795197
+142,are_0,71.0,1,[158],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,1,are,9,3,True,0.018315018315018316,NR,0.0032284467078937795
+143,the_10,64.0,1,[142],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,1,the,9,3,True,0.018315018315018316,NR,0.0029101491451436886
+144,health_0,241.0,2,"[153, 157]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,2,health,9,6,True,0.018315018315018316,NR,0.010958530374681702
+145,risks_0,,0,[],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,0,risks,9,5,True,0.018315018315018316,NR,
+146,of_4,,0,[],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,0,of,9,2,True,0.018315018315018316,NR,
+147,performance-enhancing_1,330.0,3,"[219, 239, 252]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,3,performance-enhancing,9,21,True,0.018315018315018316,NR,0.015005456529647144
+148,"drugs,_3",566.0,7,"[214, 220, 221, 224, 234, 255, 271]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,7,"drugs,",9,6,True,0.018315018315018316,NR,0.025736631502364497
+149,the_11,257.0,3,"[209, 237, 257]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,3,the,9,3,True,0.018315018315018316,NR,0.011686067660967624
+150,equality_0,378.0,3,"[191, 194, 200]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,3,equality,9,8,True,0.018315018315018316,NR,0.01718806838850491
+151,of_5,,0,[],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,0,of,9,2,True,0.018315018315018316,NR,
+152,opportunity_0,108.0,2,"[151, 246]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,2,opportunity,9,11,True,0.018315018315018316,NR,0.004910876682429974
+153,for_1,,0,[],meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,0,for,9,3,True,0.018315018315018316,NR,
+154,"athletes,_2",173.0,2,"[154, 245]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,2,"athletes,",9,9,True,0.018315018315018316,NR,0.007866496907966532
+155,and_4,148.0,2,"[228, 244]",meco_para_3_qa_0 ,meco_para_3,A1BASVXQK125PD,2,and,9,3,True,0.018315018315018316,NR,0.00672971989814478
+156,the_12,,0,[],,meco_para_3,A1BASVXQK125PD,0,the,9,3,True,0.018315018315018316,NR,
+157,positive_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,positive,9,8,True,0.018315018315018316,NR,
+158,example_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,example,9,7,True,0.018315018315018316,NR,
+159,to_4,63.0,1,[222],,meco_para_3,A1BASVXQK125PD,1,to,9,2,True,0.018315018315018316,NR,0.0028646780647508183
+160,the_13,131.0,2,"[223, 254]",,meco_para_3,A1BASVXQK125PD,2,the,9,3,True,0.018315018315018316,NR,0.0059567115314659875
+161,public_0,328.0,4,"[180, 181, 235, 238]",,meco_para_3,A1BASVXQK125PD,4,public,9,6,True,0.018315018315018316,NR,0.014914514368861403
+162,set_0,322.0,3,"[192, 236, 265]",,meco_para_3,A1BASVXQK125PD,3,set,9,3,True,0.018315018315018316,NR,0.014641687886504183
+163,by_3,231.0,3,"[208, 215, 258]",,meco_para_3,A1BASVXQK125PD,3,by,9,2,True,0.018315018315018316,NR,0.010503819570753001
+164,drug-free_0,70.0,1,[259],,meco_para_3,A1BASVXQK125PD,1,drug-free,9,9,True,0.018315018315018316,NR,0.0031829756275009095
+165,sport._2,142.0,1,[150],,meco_para_3,A1BASVXQK125PD,1,sport.,9,6,True,0.018315018315018316,NR,0.006456893415787559
+166,Anti-doping_0,116.0,1,[260],,meco_para_3,A1BASVXQK125PD,1,Anti-doping,10,11,True,0.018315018315018316,NR,0.0052746453255729355
+167,authorities_1,404.0,5,"[169, 170, 183, 184, 230]",,meco_para_3,A1BASVXQK125PD,5,authorities,10,11,True,0.018315018315018316,NR,0.018370316478719534
+168,have_2,,0,[],,meco_para_3,A1BASVXQK125PD,0,have,10,4,True,0.018315018315018316,NR,
+169,repeatedly_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,repeatedly,10,10,True,0.018315018315018316,NR,
+170,emphasized_0,69.0,1,[253],,meco_para_3,A1BASVXQK125PD,1,emphasized,10,10,True,0.018315018315018316,NR,0.003137504547108039
+171,that_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,that,10,4,True,0.018315018315018316,NR,
+172,using_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,using,10,5,True,0.018315018315018316,NR,
+173, performance-enhancing_0,129.0,2,"[182, 264]",,meco_para_3,A1BASVXQK125PD,2, performance-enhancing,10,22,True,0.018315018315018316,NR,0.005865769370680248
+174,drugs_4,74.0,1,[199],,meco_para_3,A1BASVXQK125PD,1,drugs,10,5,True,0.018315018315018316,NR,0.00336485994907239
+175,goes_0,53.0,1,[216],,meco_para_3,A1BASVXQK125PD,1,goes,10,4,True,0.018315018315018316,NR,0.002409967260822117
+176,against_0,579.0,4,"[217, 240, 261, 262]",,meco_para_3,A1BASVXQK125PD,4,against,10,7,True,0.018315018315018316,NR,0.02632775554747181
+177,the_14,138.0,2,"[198, 241]",,meco_para_3,A1BASVXQK125PD,2,the,10,3,True,0.018315018315018316,NR,0.006275009094216078
+178,‘spirit_0,,0,[],,meco_para_3,A1BASVXQK125PD,0,‘spirit,10,7,True,0.018315018315018316,NR,
+179,of_6,,0,[],,meco_para_3,A1BASVXQK125PD,0,of,10,2,True,0.018315018315018316,NR,
+180,sport’._0,,0,[],,meco_para_3,A1BASVXQK125PD,0,sport’.,10,7,True,0.018315018315018316,NR,

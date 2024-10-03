@@ -67,3 +67,11 @@ def visualize_sentence_subplot(tokens_all, web_saliency_all, meco_saliency_all, 
     # ax.legend(handles=handles, labels=labels)
     plt.savefig(outfile, bbox_inches='tight', dpi=300)
     plt.close()
+
+def visualize_spacial_fixation():
+    """
+        TO-DO
+
+        Implement visualization of the order of fixations
+    """
+    pass

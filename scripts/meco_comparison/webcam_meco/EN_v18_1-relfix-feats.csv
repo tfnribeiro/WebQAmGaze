@@ -1,176 +1,962 @@
-,word_id_orig,TRT,FixCount,scanPath,Span_word_is_in,text_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
-0,The_0,,0,[],,meco_para_11,0,The,1,3,False,0.25,NR,
-1,International_0,244.0,2,"[4, 5]",,meco_para_11,2,International,1,13,False,0.25,NR,0.0938822624086187
-2,Union_0,137.0,1,[6],,meco_para_11,1,Union,1,5,False,0.25,NR,0.052712581762216236
-3,for_0,,0,[],,meco_para_11,0,for,1,3,False,0.25,NR,
-4,Conservation_0,,0,[],,meco_para_11,0,Conservation,1,12,False,0.25,NR,
-5,of_0,,0,[],,meco_para_11,0,of,1,2,False,0.25,NR,
-6,Nature_0,,0,[],,meco_para_11,0,Nature,1,6,False,0.25,NR,
-7,is_0,,0,[],,meco_para_11,0,is,1,2,False,0.25,NR,
-8,an__0,,0,[],meco_para_11_qa_0 ,meco_para_11,0,an,1,2,False,0.25,NR,
-9,international_1,333.0,3,"[31, 35, 54]",meco_para_11_qa_0 ,meco_para_11,3,international,1,13,False,0.25,NR,0.1281262023855329
-10,organization_0,70.0,1,[36],meco_para_11_qa_0 ,meco_para_11,1,organization,1,12,False,0.25,NR,0.026933435936898807
-11,working_0,,0,[],,meco_para_11,0,working,1,7,False,0.25,NR,
-12,in_0,69.0,1,[60],,meco_para_11,1,in,1,2,False,0.25,NR,0.02654867256637168
-13,the_1,69.0,1,[3],,meco_para_11,1,the,1,3,False,0.25,NR,0.02654867256637168
-14,field_0,140.0,1,[61],,meco_para_11,1,field,1,5,False,0.25,NR,0.053866871873797614
-15,of_1,341.0,1,[244],,meco_para_11,1,of,1,2,False,0.25,NR,0.13120430934974991
-16,nature_1,,0,[],,meco_para_11,0,nature,1,6,False,0.25,NR,
-17,conservation_1,,0,[],,meco_para_11,0,conservation,1,12,False,0.25,NR,
-18,and_0,,0,[],,meco_para_11,0,and,1,3,False,0.25,NR,
-19,the_2,,0,[],,meco_para_11,0,the,1,3,False,0.25,NR,
-20,sustainable_0,272.0,3,"[34, 50, 51]",,meco_para_11,3,sustainable,1,11,False,0.25,NR,0.10465563678337822
-21,use_0,243.0,2,"[30, 33]",,meco_para_11,2,use,1,3,False,0.25,NR,0.09349749903809157
-22,of_2,303.0,2,"[53, 55]",,meco_para_11,2,of,1,2,False,0.25,NR,0.11658330126971912
-23,natural_0,132.0,2,"[37, 56]",,meco_para_11,2,natural,1,7,False,0.25,NR,0.050788764909580605
-24,resources._0,246.0,2,"[58, 96]",,meco_para_11,2,resources.,1,10,False,0.25,NR,0.09465178914967295
-25,It_0,,0,[],,meco_para_11,0,It,2,2,False,0.25,NR,
-26,is_1,,0,[],,meco_para_11,0,is,2,2,False,0.25,NR,
-27,involved_0,275.0,2,"[19, 80]",,meco_para_11,2,involved,2,8,False,0.25,NR,0.12471655328798185
-28,in_1,,0,[],,meco_para_11,0,in,2,2,False,0.25,NR,
-29,data_0,173.0,1,[8],,meco_para_11,1,data,2,4,False,0.25,NR,0.07845804988662132
-30,gathering_0,161.0,2,"[7, 131]",,meco_para_11,2,gathering,2,9,False,0.25,NR,0.07301587301587302
-31,and_1,65.0,1,[44],,meco_para_11,1,and,2,3,False,0.25,NR,0.02947845804988662
-32,"analysis,_0",621.0,3,"[12, 27, 48]",,meco_para_11,3,"analysis,",2,9,False,0.25,NR,0.2816326530612245
-33,"research,_0",133.0,1,[28],,meco_para_11,1,"research,",2,9,False,0.25,NR,0.06031746031746032
-34,field_1,52.0,1,[57],,meco_para_11,1,field,2,5,False,0.25,NR,0.023582766439909298
-35,"projects,_0",95.0,1,[52],,meco_para_11,1,"projects,",2,9,False,0.25,NR,0.04308390022675737
-36,"advocacy,_0",66.0,1,[115],,meco_para_11,1,"advocacy,",2,9,False,0.25,NR,0.029931972789115645
-37,and_2,129.0,2,"[38, 97]",,meco_para_11,2,and,2,3,False,0.25,NR,0.058503401360544216
-38,education._0,435.0,5,"[17, 20, 62, 79, 81]",,meco_para_11,5,education.,2,10,False,0.25,NR,0.19727891156462585
-39,Its_0,134.0,1,[100],,meco_para_11,1,Its,3,3,False,0.25,NR,0.014074151874803067
-40,mission_0,334.0,3,"[9, 42, 63]",,meco_para_11,3,mission,3,7,False,0.25,NR,0.035080348702867345
-41,is_2,68.0,1,[10],,meco_para_11,1,is,3,2,False,0.25,NR,0.007142106921541855
-42,to_0,74.0,1,[130],,meco_para_11,1,to,3,2,False,0.25,NR,0.0077722928263837835
-43,"‘influence,_0",538.0,4,"[45, 89, 171, 172]",,meco_para_11,4,"‘influence,",3,11,False,0.25,NR,0.05650666946749291
-44,encourage_0,449.0,3,"[29, 47, 67]",,meco_para_11,3,encourage,3,9,False,0.25,NR,0.047158911879004305
-45,and_3,,0,[],,meco_para_11,0,and,3,3,False,0.25,NR,
-46,assist_0,590.0,3,"[75, 93, 95]",,meco_para_11,3,assist,3,6,False,0.25,NR,0.06196828064278962
-47,societies_0,,0,[],,meco_para_11,0,societies,3,9,False,0.25,NR,
-48,throughout_0,199.0,2,"[138, 139]",meco_para_11_qa_2 ,meco_para_11,2,throughout,3,10,False,0.25,NR,0.020901165843923958
-49,the_3,162.0,2,"[40, 116]",meco_para_11_qa_2 ,meco_para_11,2,the,3,3,False,0.25,NR,0.017015019430732067
-50,world_0,105.0,1,[98],meco_para_11_qa_2 ,meco_para_11,1,world,3,5,False,0.25,NR,0.011028253334733746
-51,to_1,205.0,2,"[21, 99]",meco_para_11_qa_2 ,meco_para_11,2,to,3,2,False,0.25,NR,0.021531351748765887
-52,conserve_0,412.0,4,"[41, 82, 83, 101]",meco_para_11_qa_2 ,meco_para_11,4,conserve,3,8,False,0.25,NR,0.043272765465812414
-53,nature_2,1254.0,7,"[2, 23, 64, 84, 102, 104, 105]",meco_para_11_qa_2 ,meco_para_11,7,nature,3,6,False,0.25,NR,0.13170885411196304
-54,and_4,1172.0,7,"[11, 24, 88, 108, 121, 134, 170]",meco_para_11_qa_2 ,meco_para_11,7,and,3,3,False,0.25,NR,0.12309631341245668
-55,to_2,746.0,6,"[25, 65, 70, 107, 133, 178]",meco_para_11_qa_2 ,meco_para_11,6,to,3,2,False,0.25,NR,0.07835311416867977
-56,ensure_0,723.0,7,"[26, 46, 69, 90, 91, 125, 173]",meco_para_11_qa_2 ,meco_para_11,7,ensure,3,6,False,0.25,NR,0.07593740153345237
-57,that_0,337.0,2,"[68, 92]",meco_para_11_qa_2 ,meco_para_11,2,that,3,4,False,0.25,NR,0.03539544165528831
-58,any_0,62.0,1,[74],meco_para_11_qa_2 ,meco_para_11,1,any,3,3,False,0.25,NR,0.0065119210166999265
-59,use_1,,0,[],meco_para_11_qa_2 ,meco_para_11,0,use,3,3,False,0.25,NR,
-60,of_3,,0,[],meco_para_11_qa_2 ,meco_para_11,0,of,3,2,False,0.25,NR,
-61,natural_1,,0,[],meco_para_11_qa_2 ,meco_para_11,0,natural,3,7,False,0.25,NR,
-62,resources_1,,0,[],meco_para_11_qa_2 ,meco_para_11,0,resources,3,9,False,0.25,NR,
-63,is_3,273.0,2,"[78, 140]",meco_para_11_qa_2 ,meco_para_11,2,is,3,2,False,0.25,NR,0.028673458670307742
-64,equitable_0,227.0,2,"[77, 117]",meco_para_11_qa_2 ,meco_para_11,2,equitable,3,9,False,0.25,NR,0.023842033399852955
-65,and_5,172.0,1,[118],meco_para_11_qa_2 ,meco_para_11,1,and,3,3,False,0.25,NR,0.01806532927213528
-66,ecologically_0,489.0,3,"[86, 87, 143]",meco_para_11_qa_2 ,meco_para_11,3,ecologically,3,12,False,0.25,NR,0.05136015124461716
-67,sustainable’._0,796.0,7,"[71, 72, 85, 106, 109, 160, 177]",meco_para_11_qa_2 ,meco_para_11,7,sustainable’.,3,13,False,0.25,NR,0.08360466337569583
-68,Over_0,229.0,1,[179],meco_para_11_qa_2 ,meco_para_11,1,Over,4,4,False,0.25,NR,0.03158620689655173
-69,the_4,,0,[],meco_para_11_qa_2 ,meco_para_11,0,the,4,3,False,0.25,NR,
-70,past_0,237.0,1,[73],meco_para_11_qa_2 ,meco_para_11,1,past,4,4,False,0.25,NR,0.0326896551724138
-71,"decades,_0",,0,[],meco_para_11_qa_2 ,meco_para_11,0,"decades,",4,8,False,0.25,NR,
-72,the_5,,0,[],meco_para_11_qa_2 ,meco_para_11,0,the,4,3,False,0.25,NR,
-73,organization_1,377.0,2,"[151, 165]",,meco_para_11,2,organization,4,12,False,0.25,NR,0.052
-74,has_0,131.0,2,"[150, 152]",,meco_para_11,2,has,4,3,False,0.25,NR,0.01806896551724138
-75,widened_0,251.0,4,"[141, 149, 153, 154]",,meco_para_11,4,widened,4,7,False,0.25,NR,0.03462068965517241
-76,its_1,,0,[],,meco_para_11,0,its,4,3,False,0.25,NR,
-77,focus_0,502.0,2,"[119, 142]",,meco_para_11,2,focus,4,5,False,0.25,NR,0.06924137931034482
-78,beyond_0,177.0,1,[144],,meco_para_11,1,beyond,4,6,False,0.25,NR,0.024413793103448277
-79,conservation_2,1461.0,7,"[0, 1, 122, 145, 146, 159, 161]",,meco_para_11,7,conservation,4,12,False,0.25,NR,0.20151724137931035
-80,ecology_0,614.0,2,"[180, 181]",,meco_para_11,2,ecology,4,7,False,0.25,NR,0.0846896551724138
-81,and_6,73.0,1,[174],,meco_para_11,1,and,4,3,False,0.25,NR,0.010068965517241379
-82,now_0,205.0,2,"[111, 126]",,meco_para_11,2,now,4,3,False,0.25,NR,0.028275862068965516
-83,incorporates_0,471.0,2,"[128, 148]",,meco_para_11,2,incorporates,4,12,False,0.25,NR,0.0649655172413793
-84,issues_0,,0,[],,meco_para_11,0,issues,4,6,False,0.25,NR,
-85,related_0,139.0,1,[166],,meco_para_11,1,related,4,7,False,0.25,NR,0.019172413793103447
-86,to_3,74.0,1,[167],,meco_para_11,1,to,4,2,False,0.25,NR,0.010206896551724139
-87,sustainable_1,241.0,1,[169],,meco_para_11,1,sustainable,4,11,False,0.25,NR,0.03324137931034483
-88,development_0,505.0,2,"[156, 176]",,meco_para_11,2,development,4,11,False,0.25,NR,0.0696551724137931
-89,in_2,235.0,2,"[158, 215]",,meco_para_11,2,in,4,2,False,0.25,NR,0.032413793103448274
-90,its_2,143.0,1,[193],,meco_para_11,1,its,4,3,False,0.25,NR,0.01972413793103448
-91,projects._1,1185.0,5,"[162, 194, 207, 216, 228]",,meco_para_11,5,projects.,4,9,False,0.25,NR,0.16344827586206898
-92,Unlike_0,100.0,1,[110],,meco_para_11,1,Unlike,5,6,False,0.25,NR,0.015269506794930525
-93,many_0,272.0,1,[123],,meco_para_11,1,many,5,4,False,0.25,NR,0.041533058482211026
-94,other_0,1893.0,7,"[112, 127, 135, 137, 164, 175, 182]",,meco_para_11,7,other,5,5,False,0.25,NR,0.2890517636280348
-95,international_2,245.0,1,[184],,meco_para_11,1,international,5,13,False,0.25,NR,0.03741029164757978
-96,environmental_0,164.0,2,"[168, 183]",,meco_para_11,2,environmental,5,13,False,0.25,NR,0.02504199114368606
-97,"organizations,_0",202.0,2,"[157, 188]",,meco_para_11,2,"organizations,",5,14,False,0.25,NR,0.030844403725759657
-98,it_1,284.0,3,"[189, 226, 235]",,meco_para_11,3,it,5,2,False,0.25,NR,0.043365399297602684
-99,does_0,1024.0,3,"[190, 192, 206]",,meco_para_11,3,does,5,4,False,0.25,NR,0.15635974958008855
-100,not_0,,0,[],,meco_para_11,0,not,5,3,False,0.25,NR,
-101,aim_0,167.0,2,"[195, 237]",,meco_para_11,2,aim,5,3,False,0.25,NR,0.025500076347533974
-102,to_4,,0,[],,meco_para_11,0,to,5,2,False,0.25,NR,
-103,mobilize_0,204.0,1,[197],,meco_para_11,1,mobilize,5,8,False,0.25,NR,0.031149793861658268
-104,the_6,501.0,1,[209],,meco_para_11,1,the,5,3,False,0.25,NR,0.07650022904260192
-105,public_0,415.0,3,"[113, 132, 136]",,meco_para_11,3,public,5,6,False,0.25,NR,0.06336845319896167
-106,in_3,,0,[],,meco_para_11,0,in,5,2,False,0.25,NR,
-107,support_0,,0,[],,meco_para_11,0,support,5,7,False,0.25,NR,
-108,of_4,,0,[],,meco_para_11,0,of,5,2,False,0.25,NR,
-109,nature_3,670.0,4,"[185, 201, 202, 210]",,meco_para_11,4,nature,5,6,False,0.25,NR,0.10230569552603451
-110,conservation._3,408.0,3,"[186, 187, 242]",,meco_para_11,3,conservation.,5,13,False,0.25,NR,0.062299587723316535
-111,"Instead,_0",744.0,6,"[191, 205, 214, 225, 234, 243]",,meco_para_11,6,"Instead,",6,8,False,0.25,NR,0.13546977421704298
-112,the_7,,0,[],,meco_para_11,0,the,6,3,False,0.25,NR,
-113,organization_2,69.0,1,[240],,meco_para_11,1,organization,6,12,False,0.25,NR,0.012563729060451567
-114,tries_0,66.0,1,[199],,meco_para_11,1,tries,6,5,False,0.25,NR,0.012017479970866714
-115,to_5,142.0,2,"[196, 208]",,meco_para_11,2,to,6,2,False,0.25,NR,0.025855790240349598
-116,influence_0,433.0,5,"[163, 200, 217, 218, 238]",,meco_para_11,5,influence,6,9,False,0.25,NR,0.07884195193008012
-117,the_8,,0,[],,meco_para_11,0,the,6,3,False,0.25,NR,
-118,actions_0,,0,[],,meco_para_11,0,actions,6,7,False,0.25,NR,
-119,of_5,,0,[],,meco_para_11,0,of,6,2,False,0.25,NR,
-120,"governments,_0",,0,[],,meco_para_11,0,"governments,",6,12,False,0.25,NR,
-121,business_0,546.0,3,"[224, 232, 233]",,meco_para_11,3,business,6,8,False,0.25,NR,0.09941733430444283
-122,and_7,,0,[],,meco_para_11,0,and,6,3,False,0.25,NR,
-123,other_1,380.0,1,[245],,meco_para_11,1,other,6,5,False,0.25,NR,0.06919155134741442
-124,stakeholders_0,106.0,1,[198],,meco_para_11,1,stakeholders,6,12,False,0.25,NR,0.01930080116533139
-125,by_0,,0,[],,meco_para_11,0,by,6,2,False,0.25,NR,
-126,providing_0,417.0,2,"[229, 230]",,meco_para_11,2,providing,6,9,False,0.25,NR,0.07592862345229424
-127,information_0,105.0,1,[239],,meco_para_11,1,information,6,11,False,0.25,NR,0.019118718135469774
-128,and_8,,0,[],,meco_para_11,0,and,6,3,False,0.25,NR,
-129,"advice,_0",177.0,1,[220],,meco_para_11,1,"advice,",6,7,False,0.25,NR,0.03222869628550619
-130,and_9,231.0,1,[221],,meco_para_11,1,and,6,3,False,0.25,NR,0.042061179898033506
-131,through_0,1399.0,3,"[203, 211, 222]",,meco_para_11,3,through,6,7,False,0.25,NR,0.25473415877640204
-132,building_0,677.0,4,"[204, 213, 223, 241]",,meco_para_11,4,building,6,8,False,0.25,NR,0.12327021121631464
-133,partnerships._0,,0,[],,meco_para_11,0,partnerships.,6,13,False,0.25,NR,
-134,The_9,,0,[],,meco_para_11,0,The,7,3,False,0.25,NR,
-135,organization_3,,0,[],,meco_para_11,0,organization,7,12,False,0.25,NR,
-136,is_4,,0,[],,meco_para_11,0,is,7,2,False,0.25,NR,
-137,best_0,,0,[],,meco_para_11,0,best,7,4,False,0.25,NR,
-138,known_0,,0,[],,meco_para_11,0,known,7,5,False,0.25,NR,
-139,to_6,,0,[],,meco_para_11,0,to,7,2,False,0.25,NR,
-140,the_10,,0,[],,meco_para_11,0,the,7,3,False,0.25,NR,
-141,wider_0,,0,[],,meco_para_11,0,wider,7,5,False,0.25,NR,
-142,public_1,,0,[],,meco_para_11,0,public,7,6,False,0.25,NR,
-143,for_1,,0,[],,meco_para_11,0,for,7,3,False,0.25,NR,
-144,compiling_0,,0,[],meco_para_11_qa_3 ,meco_para_11,0,compiling,7,9,False,0.25,NR,
-145,and_10,,0,[],meco_para_11_qa_3 ,meco_para_11,0,and,7,3,False,0.25,NR,
-146,publishing_0,,0,[],meco_para_11_qa_3 ,meco_para_11,0,publishing,7,10,False,0.25,NR,
-147,the_11,,0,[],meco_para_11_qa_3 ,meco_para_11,0,the,7,3,False,0.25,NR,
-148,Red_0,,0,[],meco_para_11_qa_3 ,meco_para_11,0,Red,7,3,False,0.25,NR,
-149,List_0,,0,[],meco_para_11_qa_3 ,meco_para_11,0,List,7,4,False,0.25,NR,
-150,of_6,,0,[],meco_para_11_qa_3 ,meco_para_11,0,of,7,2,False,0.25,NR,
-151,Threatened_0,200.0,1,[247],meco_para_11_qa_3 ,meco_para_11,1,Threatened,7,10,False,0.25,NR,1.0
-152,"Species,_0",,0,[],meco_para_11_qa_3 ,meco_para_11,0,"Species,",7,8,False,0.25,NR,
-153,which_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,which,7,5,False,0.25,NR,
-154,assesses_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,assesses,7,8,False,0.25,NR,
-155,the_12,,0,[],meco_para_11_qa_1 ,meco_para_11,0,the,7,3,False,0.25,NR,
-156,conservation_4,,0,[],meco_para_11_qa_1 ,meco_para_11,0,conservation,7,12,False,0.25,NR,
-157,status_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,status,7,6,False,0.25,NR,
-158,of_7,,0,[],meco_para_11_qa_1 ,meco_para_11,0,of,7,2,False,0.25,NR,
-159,species_1,,0,[],meco_para_11_qa_1 ,meco_para_11,0,species,7,7,False,0.25,NR,
-160,worldwide._0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,worldwide.,7,10,False,0.25,NR,
-161,"Today,_0",,0,[],meco_para_11_qa_1 ,meco_para_11,0,"Today,",8,6,False,0.25,NR,
-162,the_13,,0,[],meco_para_11_qa_1 ,meco_para_11,0,the,8,3,False,0.25,NR,
-163,organization_4,,0,[],meco_para_11_qa_1 ,meco_para_11,0,organization,8,12,False,0.25,NR,
-164,employs_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,employs,8,7,False,0.25,NR,
-165,approximately_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,approximately,8,13,False,0.25,NR,
-166,one_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,one,8,3,False,0.25,NR,
-167,thousand_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,thousand,8,8,False,0.25,NR,
-168,full-time_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,full-time,8,9,False,0.25,NR,
-169,staff_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,staff,8,5,False,0.25,NR,
-170,in_4,,0,[],meco_para_11_qa_1 ,meco_para_11,0,in,8,2,False,0.25,NR,
-171,more_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,more,8,4,False,0.25,NR,
-172,than_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,than,8,4,False,0.25,NR,
-173,fifty_0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,fifty,8,5,False,0.25,NR,
-174,countries._0,,0,[],meco_para_11_qa_1 ,meco_para_11,0,countries.,8,10,False,0.25,NR,
+,word_id_orig,TRT,FixCount,Scan_path,Span_word_is_in,text_id,worker_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
+0,When_0,178.0,2,"[6, 21]",a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,2,When,1,4,True,0.0,IS,0.024606027094277026
+1,Sky_0,199.0,2,"[4, 7]",a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,2,Sky,1,3,True,0.0,IS,0.02750898534697263
+2,Digital_0,134.0,2,"[3, 9]",a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,2,Digital,1,7,True,0.0,IS,0.018523638374343378
+3,was_0,68.0,1,[10],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,1,was,1,3,True,0.0,IS,0.009400055294442908
+4,launched_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,launched,1,8,True,0.0,IS,
+5,in_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,in,1,2,True,0.0,IS,
+6,1998_0,,0,[],a_SkyUnitedKingdom_1_qa_0 a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,1998,1,4,True,0.0,IS,
+7,the_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,the,1,3,True,0.0,IS,
+8,new_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,new,1,3,True,0.0,IS,
+9,service_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,service,1,7,True,0.0,IS,
+10,used_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,used,1,4,True,0.0,IS,
+11,the_1,103.0,1,[34],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,1,the,1,3,True,0.0,IS,0.014238319048935582
+12,Astra_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,Astra,1,5,True,0.0,IS,
+13,2A_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,2A,1,2,True,0.0,IS,
+14,satellite_0,244.0,2,"[36, 37]",a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,2,satellite,1,9,True,0.0,IS,0.03372961017417749
+15,which_0,172.0,2,"[14, 35]",a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,2,which,1,5,True,0.0,IS,0.02377661045064971
+16,was_1,245.0,1,[11],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,1,was,1,3,True,0.0,IS,0.03386784628144871
+17,located_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,located,1,7,True,0.0,IS,
+18,at_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,at,1,2,True,0.0,IS,
+19,the_2,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,the,1,3,True,0.0,IS,
+20,28.5°E_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,28.5°E,1,6,True,0.0,IS,
+21,orbital_0,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,orbital,1,7,True,0.0,IS,
+22,"position,_0",,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,"position,",1,9,True,0.0,IS,
+23,unlike_0,208.0,2,"[17, 18]",a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,2,unlike,1,6,True,0.0,IS,0.028753110312413604
+24,the_3,,0,[],a_SkyUnitedKingdom_1_qa_1 ,a_SkyUnitedKingdom_1,p14-lab-control,0,the,1,3,True,0.0,IS,
+25,analogue_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,analogue,1,8,True,0.0,IS,
+26,service_1,379.0,3,"[46, 47, 52]",,a_SkyUnitedKingdom_1,p14-lab-control,3,service,1,7,True,0.0,IS,0.052391484655792096
+27,which_1,142.0,2,"[29, 56]",,a_SkyUnitedKingdom_1,p14-lab-control,2,which,1,5,True,0.0,IS,0.01962952723251313
+28,was_2,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,was,1,3,True,0.0,IS,
+29,broadcast_0,240.0,1,[90],,a_SkyUnitedKingdom_1,p14-lab-control,1,broadcast,1,9,True,0.0,IS,0.03317666574509262
+30,from_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,from,1,4,True,0.0,IS,
+31,19.2°E._0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,19.2°E.,1,7,True,0.0,IS,
+32,This_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,This,2,4,True,0.0,IS,
+33,was_3,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,was,2,3,True,0.0,IS,
+34,subsequently_0,100.0,1,[20],,a_SkyUnitedKingdom_1,p14-lab-control,1,subsequently,2,12,True,0.0,IS,0.013823610727121923
+35,followed_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,followed,2,8,True,0.0,IS,
+36,by_0,67.0,1,[53],,a_SkyUnitedKingdom_1,p14-lab-control,1,by,2,2,True,0.0,IS,0.009261819187171689
+37,more_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,more,2,4,True,0.0,IS,
+38,Astra_1,175.0,1,[55],,a_SkyUnitedKingdom_1,p14-lab-control,1,Astra,2,5,True,0.0,IS,0.024191318772463367
+39,satellites_0,67.0,1,[27],,a_SkyUnitedKingdom_1,p14-lab-control,1,satellites,2,10,True,0.0,IS,0.009261819187171689
+40,as_0,136.0,2,"[25, 58]",,a_SkyUnitedKingdom_1,p14-lab-control,2,as,2,2,True,0.0,IS,0.018800110588885817
+41,well_0,73.0,1,[24],,a_SkyUnitedKingdom_1,p14-lab-control,1,well,2,4,True,0.0,IS,0.010091235830799005
+42,as_1,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,as,2,2,True,0.0,IS,
+43, Eutelsat's_0,190.0,3,"[30, 40, 95]",a_SkyUnitedKingdom_1_qa_2 ,a_SkyUnitedKingdom_1,p14-lab-control,3, Eutelsat's,2,11,True,0.0,IS,0.026264860381531654
+44,Eurobird_0,210.0,3,"[41, 42, 43]",a_SkyUnitedKingdom_1_qa_2 ,a_SkyUnitedKingdom_1,p14-lab-control,3,Eurobird,2,8,True,0.0,IS,0.02902958252695604
+45,1_0,,0,[],a_SkyUnitedKingdom_1_qa_2 ,a_SkyUnitedKingdom_1,p14-lab-control,0,1,2,1,True,0.0,IS,
+46,(now_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,(now,2,4,True,0.0,IS,
+47,Eutelsat_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,Eutelsat,2,8,True,0.0,IS,
+48,33C)_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,33C),2,4,True,0.0,IS,
+49,at_1,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,at,2,2,True,0.0,IS,
+50,"28.5°E),_0",406.0,3,"[63, 71, 72]",,a_SkyUnitedKingdom_1,p14-lab-control,3,"28.5°E),",2,8,True,0.0,IS,0.05612385955211501
+51,enabled_0,,1,[0],,a_SkyUnitedKingdom_1,p14-lab-control,1,enabled,2,7,True,0.0,IS,
+52,the_4,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,the,2,3,True,0.0,IS,
+53,company_0,500.0,3,"[26, 91, 92]",,a_SkyUnitedKingdom_1,p14-lab-control,3,company,2,7,True,0.0,IS,0.06911805363560962
+54,to_0,68.0,1,[94],,a_SkyUnitedKingdom_1,p14-lab-control,1,to,2,2,True,0.0,IS,0.009400055294442908
+55,launch_0,351.0,2,"[59, 97]",,a_SkyUnitedKingdom_1,p14-lab-control,2,launch,2,6,True,0.0,IS,0.048520873652197954
+56,a__0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,a,2,1,True,0.0,IS,
+57,new_1,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,new,2,3,True,0.0,IS,
+58,all-digital_0,316.0,3,"[48, 60, 61]",,a_SkyUnitedKingdom_1,p14-lab-control,3,all-digital,2,11,True,0.0,IS,0.04368260989770528
+59,"service,_2",,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,"service,",2,8,True,0.0,IS,
+60,"Sky,_1",,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,"Sky,",2,4,True,0.0,IS,
+61,with_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,with,2,4,True,0.0,IS,
+62,the_5,306.0,1,[70],,a_SkyUnitedKingdom_1,p14-lab-control,1,the,2,3,True,0.0,IS,0.042300248824993086
+63,potential_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,potential,2,9,True,0.0,IS,
+64,to_1,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,to,2,2,True,0.0,IS,
+65,carry_0,77.0,1,[1],,a_SkyUnitedKingdom_1,p14-lab-control,1,carry,2,5,True,0.0,IS,0.010644180259883881
+66,hundreds_0,336.0,4,"[78, 79, 93, 99]",a_SkyUnitedKingdom_1_qa_3 ,a_SkyUnitedKingdom_1,p14-lab-control,4,hundreds,2,8,True,0.0,IS,0.04644733204312967
+67,of_0,72.0,1,[81],,a_SkyUnitedKingdom_1,p14-lab-control,1,of,2,2,True,0.0,IS,0.009952999723527785
+68,television_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,television,2,10,True,0.0,IS,
+69,and__0,304.0,3,"[15, 66, 67]",,a_SkyUnitedKingdom_1,p14-lab-control,3,and,2,3,True,0.0,IS,0.04202377661045065
+70,radio_0,95.0,1,[16],,a_SkyUnitedKingdom_1,p14-lab-control,1,radio,2,5,True,0.0,IS,0.013132430190765827
+71,channels._0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,channels.,2,9,True,0.0,IS,
+72,The_6,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,The,3,3,True,0.0,IS,
+73,old_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,old,3,3,True,0.0,IS,
+74,position_1,308.0,2,"[74, 75]",,a_SkyUnitedKingdom_1,p14-lab-control,2,position,3,8,True,0.0,IS,0.042576721039535526
+75,was_4,53.0,1,[73],,a_SkyUnitedKingdom_1,p14-lab-control,1,was,3,3,True,0.0,IS,0.00732651368537462
+76,shared_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,shared,3,6,True,0.0,IS,
+77,with_1,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,with,3,4,True,0.0,IS,
+78,broadcasters_0,69.0,1,[64],,a_SkyUnitedKingdom_1,p14-lab-control,1,broadcasters,3,12,True,0.0,IS,0.009538291401714128
+79,from_1,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,from,3,4,True,0.0,IS,
+80,several_0,71.0,1,[82],,a_SkyUnitedKingdom_1,p14-lab-control,1,several,3,7,True,0.0,IS,0.009814763616256566
+81,European_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,European,3,8,True,0.0,IS,
+82,"countries,_0",,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,"countries,",3,10,True,0.0,IS,
+83,while_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,while,3,5,True,0.0,IS,
+84,the_7,101.0,1,[76],,a_SkyUnitedKingdom_1,p14-lab-control,1,the,3,3,True,0.0,IS,0.013961846834393143
+85,new_2,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,new,3,3,True,0.0,IS,
+86,position_2,95.0,1,[100],,a_SkyUnitedKingdom_1,p14-lab-control,1,position,3,8,True,0.0,IS,0.013132430190765827
+87,at_2,70.0,1,[85],,a_SkyUnitedKingdom_1,p14-lab-control,1,at,3,2,True,0.0,IS,0.009676527508985348
+88,28.5°F_0,,0,[],a_SkyUnitedKingdom_1_qa_4 ,a_SkyUnitedKingdom_1,p14-lab-control,0,28.5°F,3,6,True,0.0,IS,
+89,came_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,came,3,4,True,0.0,IS,
+90,to_2,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,to,3,2,True,0.0,IS,
+91,be_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,be,3,2,True,0.0,IS,
+92,used_1,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,used,3,4,True,0.0,IS,
+93,almost_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,almost,3,6,True,0.0,IS,
+94,exclusively_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,exclusively,3,11,True,0.0,IS,
+95,for_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,for,3,3,True,0.0,IS,
+96,channels_1,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,channels,3,8,True,0.0,IS,
+97,that_0,66.0,1,[77],,a_SkyUnitedKingdom_1,p14-lab-control,1,that,3,4,True,0.0,IS,0.00912358307990047
+98,broadcast_1,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,broadcast,3,9,True,0.0,IS,
+99,to_3,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,to,3,2,True,0.0,IS,
+100,the_8,132.0,1,[86],,a_SkyUnitedKingdom_1,p14-lab-control,1,the,3,3,True,0.0,IS,0.01824716615980094
+101,United_0,,0,[],,a_SkyUnitedKingdom_1,p14-lab-control,0,United,3,6,True,0.0,IS,
+102,Kingdom._0,108.0,1,[89],,a_SkyUnitedKingdom_1,p14-lab-control,1,Kingdom.,3,8,True,0.0,IS,0.014929499585291679
+0,Chloroplasts_0,206.0,3,"[3, 6, 13]",,a_Chloroplast_2,p14-lab-control,3,Chloroplasts,1,12,True,0.050955414012738856,IS,0.0166410857096696
+1,have_0,481.0,4,"[7, 12, 46, 51]",,a_Chloroplast_2,p14-lab-control,4,have,1,4,True,0.050955414012738856,IS,0.03885612731238387
+2,their_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,their,1,5,True,0.050955414012738856,IS,
+3,own_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,own,1,3,True,0.050955414012738856,IS,
+4,"DNA,_0",,0,[],,a_Chloroplast_2,p14-lab-control,0,"DNA,",1,4,True,0.050955414012738856,IS,
+5,often_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,often,1,5,True,0.050955414012738856,IS,
+6,abbreviated_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,abbreviated,1,11,True,0.050955414012738856,IS,
+7,as_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,as,1,2,True,0.050955414012738856,IS,
+8,"ctDNA,_0",,0,[],a_Chloroplast_2_qa_0 ,a_Chloroplast_2,p14-lab-control,0,"ctDNA,",1,6,True,0.050955414012738856,IS,
+9,or_0,,0,[],a_Chloroplast_2_qa_0 ,a_Chloroplast_2,p14-lab-control,0,or,1,2,True,0.050955414012738856,IS,
+10,cpDNA._0,,0,[],a_Chloroplast_2_qa_0 ,a_Chloroplast_2,p14-lab-control,0,cpDNA.,1,6,True,0.050955414012738856,IS,
+11,It_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,It,2,2,True,0.050955414012738856,IS,
+12,is_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,is,2,2,True,0.050955414012738856,IS,
+13,also_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,also,2,4,True,0.050955414012738856,IS,
+14,known_0,517.0,5,"[14, 47, 52, 61, 145]",,a_Chloroplast_2,p14-lab-control,5,known,2,5,True,0.050955414012738856,IS,0.041764278213102836
+15,as_1,315.0,3,"[40, 45, 144]",,a_Chloroplast_2,p14-lab-control,3,as,2,2,True,0.050955414012738856,IS,0.025446320381290896
+16,the_0,884.0,6,"[8, 38, 44, 49, 155, 156]",a_Chloroplast_2_qa_1 ,a_Chloroplast_2,p14-lab-control,6,the,2,3,True,0.050955414012738856,IS,0.07141126100654334
+17,plastome._0,313.0,3,"[130, 150, 151]",a_Chloroplast_2_qa_1 ,a_Chloroplast_2,p14-lab-control,3,plastome.,2,9,True,0.050955414012738856,IS,0.025284756442362066
+18,Its_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,Its,3,3,True,0.050955414012738856,IS,
+19,existence_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,existence,3,9,True,0.050955414012738856,IS,
+20,was_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,was,3,3,True,0.050955414012738856,IS,
+21,first_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,first,3,5,True,0.050955414012738856,IS,
+22,proved_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,proved,3,6,True,0.050955414012738856,IS,
+23,in_0,201.0,1,[139],,a_Chloroplast_2,p14-lab-control,1,in,3,2,True,0.050955414012738856,IS,0.016237175862347523
+24,"1962,_0",136.0,1,[31],a_Chloroplast_2_qa_2 ,a_Chloroplast_2,p14-lab-control,1,"1962,",3,5,True,0.050955414012738856,IS,0.010986347847160514
+25,and_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,and,3,3,True,0.050955414012738856,IS,
+26,first_1,,0,[],,a_Chloroplast_2,p14-lab-control,0,first,3,5,True,0.050955414012738856,IS,
+27,sequenced_0,632.0,5,"[28, 29, 60, 69, 73]",,a_Chloroplast_2,p14-lab-control,5,sequenced,3,9,True,0.050955414012738856,IS,0.051054204701510626
+28,in_1,205.0,2,"[15, 70]",,a_Chloroplast_2,p14-lab-control,2,in,3,2,True,0.050955414012738856,IS,0.016560303740205187
+29,1986—when_0,1287.0,12,"[10, 16, 41, 42, 43, 85, 87, 131, 132, 146, 153, 154]",a_Chloroplast_2_qa_3 ,a_Chloroplast_2,p14-lab-control,12,1986—when,3,9,True,0.050955414012738856,IS,0.1039663947007028
+30,two_0,,0,[],a_Chloroplast_2_qa_4 ,a_Chloroplast_2,p14-lab-control,0,two,3,3,True,0.050955414012738856,IS,
+31,Japanese_0,70.0,1,[149],a_Chloroplast_2_qa_4 ,a_Chloroplast_2,p14-lab-control,1,Japanese,3,8,True,0.050955414012738856,IS,0.0056547378625090875
+32,research_0,67.0,1,[62],a_Chloroplast_2_qa_4 ,a_Chloroplast_2,p14-lab-control,1,research,3,8,True,0.050955414012738856,IS,0.005412391954115841
+33,teams_0,320.0,2,"[35, 36]",a_Chloroplast_2_qa_4 ,a_Chloroplast_2,p14-lab-control,2,teams,3,5,True,0.050955414012738856,IS,0.025850230228612974
+34,sequenced_1,967.0,11,"[23, 24, 25, 26, 34, 57, 58, 136, 137, 140, 141]",,a_Chloroplast_2,p14-lab-control,11,sequenced,3,9,True,0.050955414012738856,IS,0.07811616447208983
+35,the_1,276.0,3,"[32, 37, 143]",,a_Chloroplast_2,p14-lab-control,3,the,3,3,True,0.050955414012738856,IS,0.02229582357217869
+36,chloroplast_0,143.0,2,"[81, 82]",,a_Chloroplast_2,p14-lab-control,2,chloroplast,3,11,True,0.050955414012738856,IS,0.011551821633411423
+37,DNA_1,203.0,3,"[83, 84, 97]",,a_Chloroplast_2,p14-lab-control,3,DNA,3,3,True,0.050955414012738856,IS,0.016398739801276357
+38,of_0,104.0,1,[68],,a_Chloroplast_2,p14-lab-control,1,of,3,2,True,0.050955414012738856,IS,0.008401324824299216
+39,liverwort_0,272.0,1,[72],,a_Chloroplast_2,p14-lab-control,1,liverwort,3,9,True,0.050955414012738856,IS,0.021972695694321028
+40,and_1,,0,[],,a_Chloroplast_2,p14-lab-control,0,and,3,3,True,0.050955414012738856,IS,
+41,tobacco._0,,0,[],,a_Chloroplast_2,p14-lab-control,0,tobacco.,3,8,True,0.050955414012738856,IS,
+42,Since_0,130.0,2,"[17, 76]",,a_Chloroplast_2,p14-lab-control,2,Since,4,5,True,0.050955414012738856,IS,0.01050165603037402
+43,"then,_0",268.0,2,"[18, 100]",,a_Chloroplast_2,p14-lab-control,2,"then,",4,5,True,0.050955414012738856,IS,0.021649567816463364
+44,hundreds_0,227.0,3,"[19, 27, 91]",,a_Chloroplast_2,p14-lab-control,3,hundreds,4,8,True,0.050955414012738856,IS,0.01833750706842233
+45,of_1,,0,[],,a_Chloroplast_2,p14-lab-control,0,of,4,2,True,0.050955414012738856,IS,
+46,chloroplast_1,316.0,4,"[22, 30, 78, 142]",,a_Chloroplast_2,p14-lab-control,4,chloroplast,4,11,True,0.050955414012738856,IS,0.025527102350755313
+47,DNAs_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,DNAs,4,4,True,0.050955414012738856,IS,
+48,from_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,from,4,4,True,0.050955414012738856,IS,
+49,various_0,239.0,2,"[108, 109]",,a_Chloroplast_2,p14-lab-control,2,various,4,7,True,0.050955414012738856,IS,0.019306890701995316
+50,species_0,94.0,1,[110],,a_Chloroplast_2,p14-lab-control,1,species,4,7,True,0.050955414012738856,IS,0.007593505129655061
+51,have_1,73.0,1,[99],,a_Chloroplast_2,p14-lab-control,1,have,4,4,True,0.050955414012738856,IS,0.005897083770902334
+52,been_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,been,4,4,True,0.050955414012738856,IS,
+53,"sequenced,_2",890.0,6,"[74, 75, 88, 89, 112, 113]",,a_Chloroplast_2,p14-lab-control,6,"sequenced,",4,10,True,0.050955414012738856,IS,0.07189595282332983
+54,but_0,306.0,3,"[1, 77, 90]",,a_Chloroplast_2,p14-lab-control,3,but,4,3,True,0.050955414012738856,IS,0.024719282656111157
+55,they're_0,340.0,5,"[0, 101, 133, 134, 135]",,a_Chloroplast_2,p14-lab-control,5,they're,4,7,True,0.050955414012738856,IS,0.027465869617901286
+56,mostly_0,335.0,2,"[55, 56]",,a_Chloroplast_2,p14-lab-control,2,mostly,4,6,True,0.050955414012738856,IS,0.027061959770579208
+57,those_0,63.0,1,[92],,a_Chloroplast_2,p14-lab-control,1,those,4,5,True,0.050955414012738856,IS,0.005089264076258179
+58,of_2,,0,[],,a_Chloroplast_2,p14-lab-control,0,of,4,2,True,0.050955414012738856,IS,
+59,land_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,land,4,4,True,0.050955414012738856,IS,
+60,plants_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,plants,4,6,True,0.050955414012738856,IS,
+61,and_2,151.0,1,[107],,a_Chloroplast_2,p14-lab-control,1,and,4,3,True,0.050955414012738856,IS,0.012198077389126746
+62,green_0,74.0,1,[106],,a_Chloroplast_2,p14-lab-control,1,green,4,5,True,0.050955414012738856,IS,0.00597786574036675
+63,"algae—glaucophytes,_0",167.0,1,[111],,a_Chloroplast_2,p14-lab-control,1,"algae—glaucophytes,",4,19,True,0.050955414012738856,IS,0.013490588900557396
+64,red_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,red,4,3,True,0.050955414012738856,IS,
+65,"algae,_0",,0,[],,a_Chloroplast_2,p14-lab-control,0,"algae,",4,6,True,0.050955414012738856,IS,
+66,and_3,,0,[],,a_Chloroplast_2,p14-lab-control,0,and,4,3,True,0.050955414012738856,IS,
+67,other_0,153.0,2,"[20, 64]",,a_Chloroplast_2,p14-lab-control,2,other,4,5,True,0.050955414012738856,IS,0.012359641328055579
+68,algal_0,105.0,1,[102],,a_Chloroplast_2,p14-lab-control,1,algal,4,5,True,0.050955414012738856,IS,0.008482106793763633
+69,groups_0,139.0,2,"[21, 104]",,a_Chloroplast_2,p14-lab-control,2,groups,4,6,True,0.050955414012738856,IS,0.01122869375555376
+70,are_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,are,4,3,True,0.050955414012738856,IS,
+71,extremely_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,extremely,4,9,True,0.050955414012738856,IS,
+72,"underrepresented,_0",,0,[],,a_Chloroplast_2,p14-lab-control,0,"underrepresented,",4,17,True,0.050955414012738856,IS,
+73,potentially_0,63.0,1,[118],,a_Chloroplast_2,p14-lab-control,1,potentially,4,11,True,0.050955414012738856,IS,0.005089264076258179
+74,introducing_0,135.0,2,"[119, 120]",,a_Chloroplast_2,p14-lab-control,2,introducing,4,11,True,0.050955414012738856,IS,0.010905565877696099
+75,some_0,70.0,1,[121],,a_Chloroplast_2,p14-lab-control,1,some,4,4,True,0.050955414012738856,IS,0.0056547378625090875
+76,bias_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,bias,4,4,True,0.050955414012738856,IS,
+77,in_2,68.0,1,[122],,a_Chloroplast_2,p14-lab-control,1,in,4,2,True,0.050955414012738856,IS,0.005493173923580257
+78,views_0,,0,[],,a_Chloroplast_2,p14-lab-control,0,views,4,5,True,0.050955414012738856,IS,
+79,of_3,,0,[],,a_Chloroplast_2,p14-lab-control,0,of,4,2,True,0.050955414012738856,IS,
+80,"""typical""_0",,0,[],,a_Chloroplast_2,p14-lab-control,0,"""typical""",4,9,True,0.050955414012738856,IS,
+81,chloroplast_2,178.0,1,[115],,a_Chloroplast_2,p14-lab-control,1,chloroplast,4,11,True,0.050955414012738856,IS,0.014379190564665967
+82,DNA_2,,0,[],,a_Chloroplast_2,p14-lab-control,0,DNA,4,3,True,0.050955414012738856,IS,
+83,structure_0,133.0,1,[127],,a_Chloroplast_2,p14-lab-control,1,structure,4,9,True,0.050955414012738856,IS,0.010744001938767267
+84,and__0,,0,[],,a_Chloroplast_2,p14-lab-control,0,and,4,3,True,0.050955414012738856,IS,
+85,content._0,63.0,1,[128],,a_Chloroplast_2,p14-lab-control,1,content.,4,8,True,0.050955414012738856,IS,0.005089264076258179
+0,The_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,The,1,3,True,0.17763157894736842,IS,
+1,Harvard_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,Harvard,1,7,True,0.17763157894736842,IS,
+2,Business_0,167.0,2,"[2, 3]",,a_HarvardUniversity_1,p14-lab-control,2,Business,1,8,True,0.17763157894736842,IS,0.0105462582886012
+3,School_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,School,1,6,True,0.17763157894736842,IS,
+4,and_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,and,1,3,True,0.17763157894736842,IS,
+5,many_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,many,1,4,True,0.17763157894736842,IS,
+6,of_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,of,1,2,True,0.17763157894736842,IS,
+7,the_1,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,the,1,3,True,0.17763157894736842,IS,
+8,university's_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,university's,1,12,True,0.17763157894736842,IS,
+9,athletics_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,athletics,1,9,True,0.17763157894736842,IS,
+10,"facilities,_0",,0,[],,a_HarvardUniversity_1,p14-lab-control,0,"facilities,",1,11,True,0.17763157894736842,IS,
+11,including_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,including,1,9,True,0.17763157894736842,IS,
+12,Harvard_1,70.0,1,[17],,a_HarvardUniversity_1,p14-lab-control,1,Harvard,1,7,True,0.17763157894736842,IS,0.004420587306599305
+13,"Stadium,_0",638.0,3,"[4, 18, 29]",,a_HarvardUniversity_1,p14-lab-control,3,"Stadium,",1,8,True,0.17763157894736842,IS,0.040290495737290814
+14,are_0,237.0,1,[41],,a_HarvardUniversity_1,p14-lab-control,1,are,1,3,True,0.17763157894736842,IS,0.014966845595200505
+15,located_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,located,1,7,True,0.17763157894736842,IS,
+16,on_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,on,1,2,True,0.17763157894736842,IS,
+17,a_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,a,1,1,True,0.17763157894736842,IS,
+18,358-acre_0,132.0,2,"[110, 120]",,a_HarvardUniversity_1,p14-lab-control,2,358-acre,1,8,True,0.17763157894736842,IS,0.008335964635301547
+19,(145_0,210.0,3,"[12, 121, 122]",,a_HarvardUniversity_1,p14-lab-control,3,(145,1,4,True,0.17763157894736842,IS,0.013261761919797915
+20,ha)_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,ha),1,3,True,0.17763157894736842,IS,
+21,campus_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,campus,1,6,True,0.17763157894736842,IS,
+22,opposite_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,opposite,1,8,True,0.17763157894736842,IS,
+23,the_2,205.0,1,[34],,a_HarvardUniversity_1,p14-lab-control,1,the,1,3,True,0.17763157894736842,IS,0.012946005683612252
+24,Cambridge_0,2300.0,9,"[24, 25, 26, 28, 35, 36, 38, 39, 70]",,a_HarvardUniversity_1,p14-lab-control,9,Cambridge,1,9,True,0.17763157894736842,IS,0.14524786864540576
+25,campus_1,1092.0,4,"[5, 27, 30, 40]",,a_HarvardUniversity_1,p14-lab-control,4,campus,1,6,True,0.17763157894736842,IS,0.06896116198294916
+26,in_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,in,1,2,True,0.17763157894736842,IS,
+27,Allston._0,529.0,6,"[7, 8, 9, 42, 72, 109]",a_HarvardUniversity_1_qa_0 ,a_HarvardUniversity_1,p14-lab-control,6,Allston.,1,8,True,0.17763157894736842,IS,0.03340700978844332
+28,The_3,70.0,1,[20],,a_HarvardUniversity_1,p14-lab-control,1,The,2,3,True,0.17763157894736842,IS,0.004420587306599305
+29,John_0,926.0,7,"[21, 43, 63, 132, 133, 134, 135]",a_HarvardUniversity_1_qa_1 ,a_HarvardUniversity_1,p14-lab-control,7,John,2,4,True,0.17763157894736842,IS,0.058478054941585096
+30,W._0,688.0,8,"[11, 44, 90, 91, 119, 125, 127, 145]",a_HarvardUniversity_1_qa_1 ,a_HarvardUniversity_1,p14-lab-control,8,W.,2,2,True,0.17763157894736842,IS,0.04344805809914746
+31,Weeks_0,554.0,5,"[117, 130, 144, 146, 147]",a_HarvardUniversity_1_qa_1 ,a_HarvardUniversity_1,p14-lab-control,5,Weeks,3,5,True,0.17763157894736842,IS,0.03498579096937165
+32,Bridge_0,538.0,5,"[13, 113, 124, 142, 143]",a_HarvardUniversity_1_qa_1 ,a_HarvardUniversity_1,p14-lab-control,5,Bridge,3,6,True,0.17763157894736842,IS,0.03397537101357752
+33,is_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,is,3,2,True,0.17763157894736842,IS,
+34,a_1,66.0,1,[15],,a_HarvardUniversity_1,p14-lab-control,1,a,3,1,True,0.17763157894736842,IS,0.0041679823176507735
+35,pedestrian_0,171.0,1,[67],,a_HarvardUniversity_1,p14-lab-control,1,pedestrian,3,10,True,0.17763157894736842,IS,0.010798863277549732
+36,bridge_1,239.0,2,"[68, 69]",,a_HarvardUniversity_1,p14-lab-control,2,bridge,3,6,True,0.17763157894736842,IS,0.015093148089674772
+37,over_0,67.0,1,[85],,a_HarvardUniversity_1,p14-lab-control,1,over,3,4,True,0.17763157894736842,IS,0.004231133564887906
+38,the_4,64.0,1,[86],,a_HarvardUniversity_1,p14-lab-control,1,the,3,3,True,0.17763157894736842,IS,0.004041679823176508
+39,Charles_0,415.0,3,"[31, 71, 87]",,a_HarvardUniversity_1,p14-lab-control,3,Charles,3,7,True,0.17763157894736842,IS,0.02620776760341017
+40,River_0,582.0,2,"[32, 75]",,a_HarvardUniversity_1,p14-lab-control,2,River,3,5,True,0.17763157894736842,IS,0.03675402589201137
+41,connecting_0,360.0,3,"[55, 73, 136]",,a_HarvardUniversity_1,p14-lab-control,3,connecting,3,10,True,0.17763157894736842,IS,0.022734449005367856
+42,both_0,912.0,8,"[22, 54, 57, 64, 89, 106, 137, 138]",,a_HarvardUniversity_1,p14-lab-control,8,both,3,4,True,0.17763157894736842,IS,0.057593937480265235
+43,campuses._0,650.0,8,"[45, 46, 116, 118, 139, 140, 141, 150]",,a_HarvardUniversity_1,p14-lab-control,8,campuses.,3,9,True,0.17763157894736842,IS,0.041048310704136406
+44,The_5,268.0,2,"[114, 149]",,a_HarvardUniversity_1,p14-lab-control,2,The,4,3,True,0.17763157894736842,IS,0.016924534259551625
+45,Harvard_2,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,Harvard,4,7,True,0.17763157894736842,IS,
+46,Medical_0,399.0,4,"[82, 83, 93, 94]",,a_HarvardUniversity_1,p14-lab-control,4,Medical,4,7,True,0.17763157894736842,IS,0.02519734764761604
+47,"School,_1",,0,[],,a_HarvardUniversity_1,p14-lab-control,0,"School,",4,7,True,0.17763157894736842,IS,
+48,Harvard_3,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,Harvard,4,7,True,0.17763157894736842,IS,
+49,School_2,137.0,1,[1],,a_HarvardUniversity_1,p14-lab-control,1,School,4,6,True,0.17763157894736842,IS,0.008651720871487212
+50,of_1,241.0,2,"[88, 105]",,a_HarvardUniversity_1,p14-lab-control,2,of,4,2,True,0.17763157894736842,IS,0.015219450584149037
+51,Dental_0,74.0,1,[99],,a_HarvardUniversity_1,p14-lab-control,1,Dental,4,6,True,0.17763157894736842,IS,0.004673192295547837
+52,"Medicine,_0",298.0,3,"[58, 59, 151]",,a_HarvardUniversity_1,p14-lab-control,3,"Medicine,",4,9,True,0.17763157894736842,IS,0.018819071676665616
+53,and_1,600.0,5,"[51, 61, 66, 80, 81]",,a_HarvardUniversity_1,p14-lab-control,5,and,4,3,True,0.17763157894736842,IS,0.03789074834227976
+54,the_6,177.0,2,"[47, 50]",,a_HarvardUniversity_1,p14-lab-control,2,the,4,3,True,0.17763157894736842,IS,0.01117777076097253
+55,Harvard_4,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,Harvard,4,7,True,0.17763157894736842,IS,
+56,School_3,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,School,4,6,True,0.17763157894736842,IS,
+57,of_2,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,of,4,2,True,0.17763157894736842,IS,
+58,Public_0,70.0,1,[95],,a_HarvardUniversity_1,p14-lab-control,1,Public,4,6,True,0.17763157894736842,IS,0.004420587306599305
+59,Health_0,134.0,2,"[96, 103]",,a_HarvardUniversity_1,p14-lab-control,2,Health,4,6,True,0.17763157894736842,IS,0.008462267129775812
+60,are_1,69.0,1,[104],,a_HarvardUniversity_1,p14-lab-control,1,are,4,3,True,0.17763157894736842,IS,0.004357436059362172
+61,located_1,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,located,4,7,True,0.17763157894736842,IS,
+62,on_1,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,on,4,2,True,0.17763157894736842,IS,
+63,a_2,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,a,4,1,True,0.17763157894736842,IS,
+64,21-acre_0,102.0,1,[77],,a_HarvardUniversity_1,p14-lab-control,1,21-acre,4,7,True,0.17763157894736842,IS,0.00644142721818756
+65,(8.5_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,(8.5,4,4,True,0.17763157894736842,IS,
+66,ha)_1,172.0,1,[78],,a_HarvardUniversity_1,p14-lab-control,1,ha),4,3,True,0.17763157894736842,IS,0.010862014524786865
+67,campus_2,236.0,3,"[49, 52, 79]",,a_HarvardUniversity_1,p14-lab-control,3,campus,4,6,True,0.17763157894736842,IS,0.014903694347963372
+68,in_1,205.0,1,[92],,a_HarvardUniversity_1,p14-lab-control,1,in,4,2,True,0.17763157894736842,IS,0.012946005683612252
+69,the_7,205.0,1,[100],,a_HarvardUniversity_1,p14-lab-control,1,the,4,3,True,0.17763157894736842,IS,0.012946005683612252
+70,Longwood_0,,0,[],a_HarvardUniversity_1_qa_2 ,a_HarvardUniversity_1,p14-lab-control,0,Longwood,4,8,True,0.17763157894736842,IS,
+71,Medical_1,188.0,2,"[101, 102]",a_HarvardUniversity_1_qa_2 ,a_HarvardUniversity_1,p14-lab-control,2,Medical,4,7,True,0.17763157894736842,IS,0.011872434480580991
+72,and_2,68.0,1,[107],a_HarvardUniversity_1_qa_2 ,a_HarvardUniversity_1,p14-lab-control,1,and,4,3,True,0.17763157894736842,IS,0.00429428481212504
+73,Academic_0,,0,[],a_HarvardUniversity_1_qa_2 ,a_HarvardUniversity_1,p14-lab-control,0,Academic,4,8,True,0.17763157894736842,IS,
+74,Area_0,,0,[],a_HarvardUniversity_1_qa_2 ,a_HarvardUniversity_1,p14-lab-control,0,Area,4,4,True,0.17763157894736842,IS,
+75,approximately_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,approximately,4,13,True,0.17763157894736842,IS,
+76,3.3._0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,3.3.,4,4,True,0.17763157894736842,IS,
+77,miles_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,miles,5,5,True,0.17763157894736842,IS,
+78,(5.3_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,(5.3,5,4,True,0.17763157894736842,IS,
+79,km)_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,km),5,3,True,0.17763157894736842,IS,
+80,southwest_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,southwest,5,9,True,0.17763157894736842,IS,
+81,of_3,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,of,5,2,True,0.17763157894736842,IS,
+82,downtown_0,310.0,1,[108],,a_HarvardUniversity_1,p14-lab-control,1,downtown,5,8,True,0.17763157894736842,IS,0.019576886643511208
+83,Boston_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,Boston,5,6,True,0.17763157894736842,IS,
+84,and_3,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,and,5,3,True,0.17763157894736842,IS,
+85,3.3._1,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,3.3.,5,4,True,0.17763157894736842,IS,
+86,miles_1,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,miles,6,5,True,0.17763157894736842,IS,
+87,(5.3._1,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,(5.3.,6,5,True,0.17763157894736842,IS,
+88,km)_1,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,km),7,3,True,0.17763157894736842,IS,
+89,south_0,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,south,7,5,True,0.17763157894736842,IS,
+90,of_4,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,of,7,2,True,0.17763157894736842,IS,
+91,the_8,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,the,7,3,True,0.17763157894736842,IS,
+92,Cambridge_1,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,Cambridge,7,9,True,0.17763157894736842,IS,
+93,campus._3,,0,[],,a_HarvardUniversity_1,p14-lab-control,0,campus.,7,7,True,0.17763157894736842,IS,
+0,Luther's_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,Luther's,1,8,True,0.08208955223880597,IS,
+1,hymns_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,hymns,1,5,True,0.08208955223880597,IS,
+2,were_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,were,1,4,True,0.08208955223880597,IS,
+3,frequently_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,frequently,1,10,True,0.08208955223880597,IS,
+4,evoked_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,evoked,1,6,True,0.08208955223880597,IS,
+5,by_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,by,1,2,True,0.08208955223880597,IS,
+6,particular_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,particular,1,10,True,0.08208955223880597,IS,
+7,events_0,,0,[],a_MartinLuther_3_qa_0 ,a_MartinLuther_3,p14-lab-control,0,events,1,6,True,0.08208955223880597,IS,
+8,in_0,,0,[],a_MartinLuther_3_qa_0 ,a_MartinLuther_3,p14-lab-control,0,in,1,2,True,0.08208955223880597,IS,
+9,his_0,230.0,2,"[17, 18]",a_MartinLuther_3_qa_0 ,a_MartinLuther_3,p14-lab-control,2,his,1,3,True,0.08208955223880597,IS,0.009002309288034758
+10,life_0,,0,[],a_MartinLuther_3_qa_0 ,a_MartinLuther_3,p14-lab-control,0,life,1,4,True,0.08208955223880597,IS,
+11,and_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,and,1,3,True,0.08208955223880597,IS,
+12,the_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,the,1,3,True,0.08208955223880597,IS,
+13,unfolding_0,441.0,3,"[4, 5, 6]",,a_MartinLuther_3,p14-lab-control,3,unfolding,1,9,True,0.08208955223880597,IS,0.017260949547927514
+14,Reformation._0,614.0,2,"[7, 22]",,a_MartinLuther_3,p14-lab-control,2,Reformation.,1,12,True,0.08208955223880597,IS,0.024032251751536265
+15,This_0,170.0,1,[9],,a_MartinLuther_3,p14-lab-control,1,This,2,4,True,0.08208955223880597,IS,0.006653880778112646
+16,behavior_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,behavior,2,8,True,0.08208955223880597,IS,
+17,started_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,started,2,7,True,0.08208955223880597,IS,
+18,with_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,with,2,4,True,0.08208955223880597,IS,
+19,his_1,105.0,1,[13],,a_MartinLuther_3,p14-lab-control,1,his,2,3,True,0.08208955223880597,IS,0.004109749892363694
+20,learning_0,203.0,1,[14],,a_MartinLuther_3,p14-lab-control,1,learning,2,8,True,0.08208955223880597,IS,0.007945516458569807
+21,of_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,of,2,2,True,0.08208955223880597,IS,
+22,the_1,,0,[],,a_MartinLuther_3,p14-lab-control,0,the,2,3,True,0.08208955223880597,IS,
+23,execution_0,204.0,2,"[39, 40]",,a_MartinLuther_3,p14-lab-control,2,execution,2,9,True,0.08208955223880597,IS,0.007984656933735176
+24,of_1,220.0,3,"[19, 23, 41]",,a_MartinLuther_3,p14-lab-control,3,of,2,2,True,0.08208955223880597,IS,0.008610904536381072
+25,Johann_0,79.0,1,[19],,a_MartinLuther_3,p14-lab-control,1,Johann,2,6,True,0.08208955223880597,IS,0.003092097538064112
+26,Esch_0,205.0,1,[43],,a_MartinLuther_3,p14-lab-control,1,Esch,2,4,True,0.08208955223880597,IS,0.008023797408900545
+27,and_1,,0,[],,a_MartinLuther_3,p14-lab-control,0,and,2,3,True,0.08208955223880597,IS,
+28,Heinrich_0,66.0,1,[32],,a_MartinLuther_3,p14-lab-control,1,Heinrich,2,8,True,0.08208955223880597,IS,0.0025832713609143217
+29,"oes,_0",98.0,1,[132],,a_MartinLuther_3,p14-lab-control,1,"oes,",2,4,True,0.08208955223880597,IS,0.0038357665662061137
+30,the_2,105.0,1,[10],,a_MartinLuther_3,p14-lab-control,1,the,2,3,True,0.08208955223880597,IS,0.004109749892363694
+31,first_0,95.0,1,[12],,a_MartinLuther_3,p14-lab-control,1,first,2,5,True,0.08208955223880597,IS,0.0037183451407100084
+32,individuals_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,individuals,2,11,True,0.08208955223880597,IS,
+33,to_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,to,2,2,True,0.08208955223880597,IS,
+34,be_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,be,2,2,True,0.08208955223880597,IS,
+35,martyred_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,martyred,2,8,True,0.08208955223880597,IS,
+36,by_1,,0,[],,a_MartinLuther_3,p14-lab-control,0,by,2,2,True,0.08208955223880597,IS,
+37,the_3,67.0,1,[51],,a_MartinLuther_3,p14-lab-control,1,the,2,3,True,0.08208955223880597,IS,0.00262241183607969
+38,Roman_0,240.0,2,"[26, 27]",,a_MartinLuther_3,p14-lab-control,2,Roman,2,5,True,0.08208955223880597,IS,0.009393714039688441
+39,Catholic_0,606.0,7,"[28, 30, 57, 58, 71, 159, 163]",,a_MartinLuther_3,p14-lab-control,7,Catholic,2,8,True,0.08208955223880597,IS,0.023719127950213317
+40,Church_0,1114.0,7,"[44, 45, 46, 82, 133, 219, 220]",,a_MartinLuther_3,p14-lab-control,7,Church,2,6,True,0.08208955223880597,IS,0.04360248933422052
+41,for_0,340.0,4,"[83, 134, 221, 262]",a_MartinLuther_3_qa_1 ,a_MartinLuther_3,p14-lab-control,4,for,2,3,True,0.08208955223880597,IS,0.013307761556225293
+42,Lutheran_0,1743.0,16,"[0, 47, 60, 72, 84, 85, 86, 92, 107, 129, 130, 131, 152, 153, 164, 223]",a_MartinLuther_3_qa_1 ,a_MartinLuther_3,p14-lab-control,16,Lutheran,2,8,True,0.08208955223880597,IS,0.0682218482132373
+43,"views,_0",687.0,5,"[33, 48, 62, 154, 266]",a_MartinLuther_3_qa_1 ,a_MartinLuther_3,p14-lab-control,5,"views,",2,6,True,0.08208955223880597,IS,0.026889506438608164
+44,prompting_0,236.0,2,"[36, 239]",,a_MartinLuther_3,p14-lab-control,2,prompting,2,9,True,0.08208955223880597,IS,0.009237152139026967
+45,Luther_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,Luther,2,6,True,0.08208955223880597,IS,
+46,to_1,,0,[],,a_MartinLuther_3,p14-lab-control,0,to,2,2,True,0.08208955223880597,IS,
+47,write_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,write,2,5,True,0.08208955223880597,IS,
+48,the_4,,0,[],,a_MartinLuther_3,p14-lab-control,0,the,2,3,True,0.08208955223880597,IS,
+49,hymn_0,1018.0,7,"[24, 25, 53, 54, 68, 78, 79]",,a_MartinLuther_3,p14-lab-control,7,hymn,2,4,True,0.08208955223880597,IS,0.039845003718345144
+50,"""Ein_0",131.0,2,"[55, 80]",a_MartinLuther_3_qa_2 ,a_MartinLuther_3,p14-lab-control,2,"""Ein",2,4,True,0.08208955223880597,IS,0.0051274022466632745
+51,neues_0,645.0,6,"[56, 69, 70, 104, 158, 162]",a_MartinLuther_3_qa_2 ,a_MartinLuther_3,p14-lab-control,6,neues,2,5,True,0.08208955223880597,IS,0.025245606481662686
+52,Lied_0,242.0,3,"[122, 222, 229]",a_MartinLuther_3_qa_2 ,a_MartinLuther_3,p14-lab-control,3,Lied,2,4,True,0.08208955223880597,IS,0.009471994990019179
+53,wir_0,438.0,4,"[2, 59, 88, 182]",a_MartinLuther_3_qa_2 ,a_MartinLuther_3,p14-lab-control,4,wir,2,3,True,0.08208955223880597,IS,0.017143528122431407
+54,heben_0,420.0,6,"[91, 151, 181, 183, 193, 247]",a_MartinLuther_3_qa_2 ,a_MartinLuther_3,p14-lab-control,6,heben,2,5,True,0.08208955223880597,IS,0.016438999569454774
+55,"an""_0",826.0,6,"[73, 93, 124, 125, 150, 258]",a_MartinLuther_3_qa_2 ,a_MartinLuther_3,p14-lab-control,6,"an""",2,3,True,0.08208955223880597,IS,0.032330032486594384
+56,"(""A_0",594.0,6,"[114, 171, 232, 233, 257, 263]",,a_MartinLuther_3,p14-lab-control,6,"(""A",2,3,True,0.08208955223880597,IS,0.023249442248228894
+57,new_0,185.0,3,"[155, 256, 261]",,a_MartinLuther_3,p14-lab-control,3,new,2,3,True,0.08208955223880597,IS,0.007240987905593174
+58,song_0,338.0,3,"[34, 49, 63]",,a_MartinLuther_3,p14-lab-control,3,song,2,4,True,0.08208955223880597,IS,0.013229480605894555
+59,we_0,270.0,3,"[35, 65, 185]",,a_MartinLuther_3,p14-lab-control,3,we,2,2,True,0.08208955223880597,IS,0.010567928294649497
+60,"raise""),_0",,0,[],,a_MartinLuther_3,p14-lab-control,0,"raise""),",2,8,True,0.08208955223880597,IS,
+61,which_0,442.0,2,"[67, 118]",,a_MartinLuther_3,p14-lab-control,2,which,2,5,True,0.08208955223880597,IS,0.01730009002309288
+62,is_0,334.0,3,"[66, 190, 238]",,a_MartinLuther_3,p14-lab-control,3,is,2,2,True,0.08208955223880597,IS,0.013072918705233081
+63,generally_0,1097.0,11,"[77, 102, 111, 112, 119, 120, 157, 161, 166, 191, 226]",,a_MartinLuther_3,p14-lab-control,11,generally,2,9,True,0.08208955223880597,IS,0.04293710125640925
+64,known_0,393.0,4,"[109, 113, 167, 225]",,a_MartinLuther_3,p14-lab-control,4,known,2,5,True,0.08208955223880597,IS,0.015382206739989824
+65,in_1,235.0,2,"[106, 137]",,a_MartinLuther_3,p14-lab-control,2,in,2,2,True,0.08208955223880597,IS,0.0091980116638616
+66,English_0,863.0,9,"[90, 123, 136, 138, 139, 168, 169, 217, 246]",,a_MartinLuther_3,p14-lab-control,9,English,2,7,True,0.08208955223880597,IS,0.03377823006771302
+67,by_2,127.0,2,"[170, 250]",,a_MartinLuther_3,p14-lab-control,2,by,2,2,True,0.08208955223880597,IS,0.004970840346001801
+68,John_0,925.0,6,"[140, 179, 180, 184, 248, 249]",a_MartinLuther_3_qa_3 ,a_MartinLuther_3,p14-lab-control,6,John,2,4,True,0.08208955223880597,IS,0.03620493952796587
+69,CC._0,923.0,6,"[108, 142, 146, 147, 148, 149]",a_MartinLuther_3_qa_3 ,a_MartinLuther_3,p14-lab-control,6,CC.,2,3,True,0.08208955223880597,IS,0.03612665857763513
+70,Messenger's_0,894.0,10,"[75, 144, 177, 205, 236, 241, 242, 254, 264, 265]",a_MartinLuther_3_qa_3 ,a_MartinLuther_3,p14-lab-control,10,Messenger's,3,11,True,0.08208955223880597,IS,0.034991584797839446
+71,—_0,199.0,2,"[236, 255]",,a_MartinLuther_3,p14-lab-control,2,—,3,1,True,0.08208955223880597,IS,0.007788954557908333
+72,translation_0,94.0,1,[50],,a_MartinLuther_3,p14-lab-control,1,translation,3,11,True,0.08208955223880597,IS,0.0036792046655446395
+73,by_3,,0,[],,a_MartinLuther_3,p14-lab-control,0,by,3,2,True,0.08208955223880597,IS,
+74,the_5,,0,[],,a_MartinLuther_3,p14-lab-control,0,the,3,3,True,0.08208955223880597,IS,
+75,title_0,269.0,2,"[117, 207]",,a_MartinLuther_3,p14-lab-control,2,title,3,5,True,0.08208955223880597,IS,0.01052878781948413
+76,and_2,501.0,2,"[101, 208]",,a_MartinLuther_3,p14-lab-control,2,and,3,3,True,0.08208955223880597,IS,0.01960937805784962
+77,first_1,1449.0,6,"[189, 196, 209, 210, 212, 227]",,a_MartinLuther_3,p14-lab-control,6,first,3,5,True,0.08208955223880597,IS,0.05671454851461897
+78,line_0,624.0,3,"[211, 213, 214]",,a_MartinLuther_3,p14-lab-control,3,line,3,4,True,0.08208955223880597,IS,0.02442365650318995
+79,"""Flung_0",188.0,2,"[201, 204]",a_MartinLuther_3_qa_4 ,a_MartinLuther_3,p14-lab-control,2,"""Flung",3,6,True,0.08208955223880597,IS,0.007358409331089279
+80,to_2,149.0,2,"[215, 245]",a_MartinLuther_3_qa_4 ,a_MartinLuther_3,p14-lab-control,2,to,3,2,True,0.08208955223880597,IS,0.005831930799639908
+81,the_6,67.0,1,[252],a_MartinLuther_3_qa_4 ,a_MartinLuther_3,p14-lab-control,1,the,3,3,True,0.08208955223880597,IS,0.00262241183607969
+82,Heedless_0,63.0,1,[200],a_MartinLuther_3_qa_4 ,a_MartinLuther_3,p14-lab-control,1,Heedless,3,8,True,0.08208955223880597,IS,0.002465849935418216
+83,"Winds""_0",70.0,1,[253],a_MartinLuther_3_qa_4 ,a_MartinLuther_3,p14-lab-control,1,"Winds""",3,6,True,0.08208955223880597,IS,0.0027398332615757954
+84,and_3,108.0,1,[176],,a_MartinLuther_3,p14-lab-control,1,and,3,3,True,0.08208955223880597,IS,0.004227171317859798
+85,sung_0,475.0,4,"[76, 175, 178, 243]",,a_MartinLuther_3,p14-lab-control,4,sung,3,4,True,0.08208955223880597,IS,0.01859172570355004
+86,to_3,745.0,3,"[97, 100, 267]",,a_MartinLuther_3,p14-lab-control,3,to,3,2,True,0.08208955223880597,IS,0.029159653998199538
+87,the_7,894.0,6,"[95, 96, 156, 186, 187, 206]",,a_MartinLuther_3,p14-lab-control,6,the,3,3,True,0.08208955223880597,IS,0.034991584797839446
+88,tune_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,tune,3,4,True,0.08208955223880597,IS,
+89,Ibstone_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,Ibstone,3,7,True,0.08208955223880597,IS,
+90,composed_0,242.0,1,[203],,a_MartinLuther_3,p14-lab-control,1,composed,3,8,True,0.08208955223880597,IS,0.009471994990019179
+91,in_2,68.0,1,[202],,a_MartinLuther_3,p14-lab-control,1,in,3,2,True,0.08208955223880597,IS,0.0026615523112450586
+92,1875_0,,0,[],,a_MartinLuther_3,p14-lab-control,0,1875,3,4,True,0.08208955223880597,IS,
+93,by_4,,0,[],,a_MartinLuther_3,p14-lab-control,0,by,3,2,True,0.08208955223880597,IS,
+94,Maria_0,70.0,1,[198],,a_MartinLuther_3,p14-lab-control,1,Maria,3,5,True,0.08208955223880597,IS,0.0027398332615757954
+95,C._0,,0,[],,a_MartinLuther_3,p14-lab-control,0,C.,3,2,True,0.08208955223880597,IS,
+96,Tiddeman._0,66.0,1,[244],,a_MartinLuther_3,p14-lab-control,1,Tiddeman.,4,9,True,0.08208955223880597,IS,0.0025832713609143217
+0,In_0,,0,[],,a_Oxygen_1,p14-lab-control,0,In,1,2,False,0.018072289156626505,IS,
+1,1891_0,,0,[],a_Oxygen_1_qa_1 ,a_Oxygen_1,p14-lab-control,0,1891,1,4,False,0.018072289156626505,IS,
+2,Scottish_0,,0,[],,a_Oxygen_1,p14-lab-control,0,Scottish,1,8,False,0.018072289156626505,IS,
+3,chemist_0,,0,[],,a_Oxygen_1,p14-lab-control,0,chemist,1,7,False,0.018072289156626505,IS,
+4,James_0,,0,[],a_Oxygen_1_qa_0 ,a_Oxygen_1,p14-lab-control,0,James,1,5,False,0.018072289156626505,IS,
+5,Dewar_0,,0,[],a_Oxygen_1_qa_0 ,a_Oxygen_1,p14-lab-control,0,Dewar,1,5,False,0.018072289156626505,IS,
+6,was_0,,0,[],,a_Oxygen_1,p14-lab-control,0,was,1,3,False,0.018072289156626505,IS,
+7,able_0,,0,[],,a_Oxygen_1,p14-lab-control,0,able,1,4,False,0.018072289156626505,IS,
+8,to_0,,0,[],,a_Oxygen_1,p14-lab-control,0,to,1,2,False,0.018072289156626505,IS,
+9,produce_0,,0,[],,a_Oxygen_1,p14-lab-control,0,produce,1,7,False,0.018072289156626505,IS,
+10,enough_0,,0,[],,a_Oxygen_1,p14-lab-control,0,enough,1,6,False,0.018072289156626505,IS,
+11,liquid_0,,0,[],,a_Oxygen_1,p14-lab-control,0,liquid,1,6,False,0.018072289156626505,IS,
+12,oxygen_0,,0,[],,a_Oxygen_1,p14-lab-control,0,oxygen,1,6,False,0.018072289156626505,IS,
+13,to_1,,0,[],,a_Oxygen_1,p14-lab-control,0,to,1,2,False,0.018072289156626505,IS,
+14,study._0,778.0,2,"[5, 135]",,a_Oxygen_1,p14-lab-control,2,study.,1,6,False,0.018072289156626505,IS,0.04475894603612933
+15,The_0,207.0,2,"[6, 7]",,a_Oxygen_1,p14-lab-control,2,The,2,3,False,0.018072289156626505,IS,0.011908871246116672
+16,first_0,,0,[],,a_Oxygen_1,p14-lab-control,0,first,2,5,False,0.018072289156626505,IS,
+17,commercially_0,136.0,2,"[10, 11]",,a_Oxygen_1,p14-lab-control,2,commercially,2,12,False,0.018072289156626505,IS,0.00782418593947762
+18,viable_0,66.0,1,[12],,a_Oxygen_1,p14-lab-control,1,viable,2,6,False,0.018072289156626505,IS,0.0037970314118053157
+19,process_0,135.0,1,[13],,a_Oxygen_1,p14-lab-control,1,process,2,7,False,0.018072289156626505,IS,0.007766655160510874
+20,for_0,69.0,1,[14],,a_Oxygen_1,p14-lab-control,1,for,2,3,False,0.018072289156626505,IS,0.003969623748705558
+21,producing_0,169.0,2,"[15, 17]",,a_Oxygen_1,p14-lab-control,2,producing,2,9,False,0.018072289156626505,IS,0.009722701645380279
+22,—_0,302.0,2,"[16, 26]",,a_Oxygen_1,p14-lab-control,2,—,2,1,False,0.018072289156626505,IS,0.017374295247957656
+23,liquid_1,136.0,1,[27],,a_Oxygen_1,p14-lab-control,1,liquid,2,6,False,0.018072289156626505,IS,0.00782418593947762
+24,oxygen_1,,0,[],,a_Oxygen_1,p14-lab-control,0,oxygen,2,6,False,0.018072289156626505,IS,
+25,was_1,,0,[],,a_Oxygen_1,p14-lab-control,0,was,2,3,False,0.018072289156626505,IS,
+26,independently_0,679.0,4,"[3, 4, 33, 41]",,a_Oxygen_1,p14-lab-control,4,independently,2,13,False,0.018072289156626505,IS,0.03906339891842135
+27,developed_0,605.0,5,"[8, 9, 20, 21, 34]",,a_Oxygen_1,p14-lab-control,5,developed,2,9,False,0.018072289156626505,IS,0.034806121274882064
+28,in_1,379.0,3,"[22, 35, 134]",,a_Oxygen_1,p14-lab-control,3,in,2,2,False,0.018072289156626505,IS,0.021804165228397194
+29,1895_0,64.0,1,[137],a_Oxygen_1_qa_2 ,a_Oxygen_1,p14-lab-control,1,1895,2,4,False,0.018072289156626505,IS,0.0036819698538718216
+30,by_0,721.0,4,"[23, 24, 54, 55]",,a_Oxygen_1,p14-lab-control,4,by,2,2,False,0.018072289156626505,IS,0.04147969163502474
+31,German_0,751.0,2,"[45, 56]",,a_Oxygen_1,p14-lab-control,2,German,2,6,False,0.018072289156626505,IS,0.043205615004027156
+32,engineer_0,70.0,1,[25],,a_Oxygen_1,p14-lab-control,1,engineer,2,8,False,0.018072289156626505,IS,0.004027154527672305
+33,Carl_0,,0,[],,a_Oxygen_1,p14-lab-control,0,Carl,2,4,False,0.018072289156626505,IS,
+34,von_0,111.0,1,[28],,a_Oxygen_1,p14-lab-control,1,von,2,3,False,0.018072289156626505,IS,0.00638591646530894
+35,Linde_0,,0,[],,a_Oxygen_1,p14-lab-control,0,Linde,2,5,False,0.018072289156626505,IS,
+36,and_0,477.0,3,"[29, 30, 39]",,a_Oxygen_1,p14-lab-control,3,and,2,3,False,0.018072289156626505,IS,0.02744218156713842
+37,British_0,228.0,2,"[40, 133]",,a_Oxygen_1,p14-lab-control,2,British,2,7,False,0.018072289156626505,IS,0.013117017604418364
+38,engineer_1,206.0,2,"[1, 51]",,a_Oxygen_1,p14-lab-control,2,engineer,2,8,False,0.018072289156626505,IS,0.011851340467149925
+39,William_0,407.0,3,"[19, 42, 43]",,a_Oxygen_1,p14-lab-control,3,William,2,7,False,0.018072289156626505,IS,0.023415027039466116
+40,Hampson._0,442.0,4,"[44, 53, 138, 139]",,a_Oxygen_1,p14-lab-control,4,Hampson.,2,8,False,0.018072289156626505,IS,0.025428604303302266
+41,Both_0,171.0,1,[62],,a_Oxygen_1,p14-lab-control,1,Both,3,4,False,0.018072289156626505,IS,0.009837763203313773
+42,men_0,,0,[],,a_Oxygen_1,p14-lab-control,0,men,3,3,False,0.018072289156626505,IS,
+43,lowered_0,,0,[],,a_Oxygen_1,p14-lab-control,0,lowered,3,7,False,0.018072289156626505,IS,
+44,the_1,,0,[],,a_Oxygen_1,p14-lab-control,0,the,3,3,False,0.018072289156626505,IS,
+45,temperature_0,,0,[],,a_Oxygen_1,p14-lab-control,0,temperature,3,11,False,0.018072289156626505,IS,
+46,of_0,,0,[],,a_Oxygen_1,p14-lab-control,0,of,3,2,False,0.018072289156626505,IS,
+47,air_0,68.0,1,[49],,a_Oxygen_1,p14-lab-control,1,air,3,3,False,0.018072289156626505,IS,0.00391209296973881
+48,until_0,,0,[],,a_Oxygen_1,p14-lab-control,0,until,3,5,False,0.018072289156626505,IS,
+49,it_0,,0,[],,a_Oxygen_1,p14-lab-control,0,it,3,2,False,0.018072289156626505,IS,
+50,liquefied_0,135.0,2,"[52, 61]",,a_Oxygen_1,p14-lab-control,2,liquefied,3,9,False,0.018072289156626505,IS,0.007766655160510874
+51,and_1,202.0,2,"[92, 158]",,a_Oxygen_1,p14-lab-control,2,and,3,3,False,0.018072289156626505,IS,0.011621217351282936
+52,then_0,381.0,4,"[89, 90, 91, 104]",,a_Oxygen_1,p14-lab-control,4,then,3,4,False,0.018072289156626505,IS,0.021919226786330688
+53,distilled_0,237.0,3,"[105, 112, 140]",,a_Oxygen_1,p14-lab-control,3,distilled,3,9,False,0.018072289156626505,IS,0.013634794615119088
+54,the_2,338.0,4,"[63, 64, 77, 143]",,a_Oxygen_1,p14-lab-control,4,the,3,3,False,0.018072289156626505,IS,0.019445403290760558
+55,component_0,167.0,1,[48],,a_Oxygen_1,p14-lab-control,1,component,3,9,False,0.018072289156626505,IS,0.009607640087446785
+56,gases_0,514.0,3,"[36, 37, 38]",,a_Oxygen_1,p14-lab-control,3,gases,3,5,False,0.018072289156626505,IS,0.029570820388908067
+57,by_1,,0,[],,a_Oxygen_1,p14-lab-control,0,by,3,2,False,0.018072289156626505,IS,
+58,boiling_0,310.0,1,[67],,a_Oxygen_1,p14-lab-control,1,boiling,3,7,False,0.018072289156626505,IS,0.017834541479691636
+59,them_0,270.0,1,[59],,a_Oxygen_1,p14-lab-control,1,them,3,4,False,0.018072289156626505,IS,0.015533310321021747
+60,off_0,342.0,3,"[68, 70, 131]",,a_Oxygen_1,p14-lab-control,3,off,3,3,False,0.018072289156626505,IS,0.019675526406627546
+61,one_0,171.0,2,"[69, 130]",,a_Oxygen_1,p14-lab-control,2,one,3,3,False,0.018072289156626505,IS,0.009837763203313773
+62,at_0,375.0,2,"[74, 85]",,a_Oxygen_1,p14-lab-control,2,at,3,2,False,0.018072289156626505,IS,0.021574042112530202
+63,a_0,66.0,1,[86],,a_Oxygen_1,p14-lab-control,1,a,3,1,False,0.018072289156626505,IS,0.0037970314118053157
+64,time_0,,0,[],,a_Oxygen_1,p14-lab-control,0,time,3,4,False,0.018072289156626505,IS,
+65,and_2,,0,[],,a_Oxygen_1,p14-lab-control,0,and,3,3,False,0.018072289156626505,IS,
+66,capturing_0,166.0,1,[103],,a_Oxygen_1,p14-lab-control,1,capturing,3,9,False,0.018072289156626505,IS,0.009550109308480036
+67,them._1,336.0,4,"[78, 94, 110, 111]",,a_Oxygen_1,p14-lab-control,4,them.,3,5,False,0.018072289156626505,IS,0.019330341732827064
+68,"Later,_0",130.0,2,"[113, 159]",,a_Oxygen_1,p14-lab-control,2,"Later,",4,6,False,0.018072289156626505,IS,0.007479001265677137
+69,in_2,100.0,1,[155],,a_Oxygen_1,p14-lab-control,1,in,4,2,False,0.018072289156626505,IS,0.005753077896674721
+70,"1901,_0",508.0,2,"[58, 163]",,a_Oxygen_1,p14-lab-control,2,"1901,",4,5,False,0.018072289156626505,IS,0.029225635715107584
+71,oxyacetylene_0,,0,[],a_Oxygen_1_qa_3 ,a_Oxygen_1,p14-lab-control,0,oxyacetylene,4,12,False,0.018072289156626505,IS,
+72,welding_0,751.0,3,"[82, 144, 145]",a_Oxygen_1_qa_3 ,a_Oxygen_1,p14-lab-control,3,welding,4,7,False,0.018072289156626505,IS,0.043205615004027156
+73,was_2,806.0,2,"[72, 84]",,a_Oxygen_1,p14-lab-control,2,was,4,3,False,0.018072289156626505,IS,0.04636980784719825
+74,demonstrated_0,334.0,3,"[73, 128, 129]",,a_Oxygen_1,p14-lab-control,3,demonstrated,4,12,False,0.018072289156626505,IS,0.01921528017489357
+75,for_1,,0,[],,a_Oxygen_1,p14-lab-control,0,for,4,3,False,0.018072289156626505,IS,
+76,the_3,,0,[],,a_Oxygen_1,p14-lab-control,0,the,4,3,False,0.018072289156626505,IS,
+77,first_1,,0,[],,a_Oxygen_1,p14-lab-control,0,first,4,5,False,0.018072289156626505,IS,
+78,time_1,,0,[],,a_Oxygen_1,p14-lab-control,0,time,4,4,False,0.018072289156626505,IS,
+79,by_2,71.0,1,[109],,a_Oxygen_1,p14-lab-control,1,by,4,2,False,0.018072289156626505,IS,0.004084685306639052
+80,burning_0,630.0,7,"[107, 108, 114, 117, 119, 120, 160]",,a_Oxygen_1,p14-lab-control,7,burning,4,7,False,0.018072289156626505,IS,0.03624439074905074
+81,a_1,819.0,5,"[66, 81, 152, 153, 157]",,a_Oxygen_1,p14-lab-control,5,a,4,1,False,0.018072289156626505,IS,0.047117707973765965
+82,mixture_0,,0,[],,a_Oxygen_1,p14-lab-control,0,mixture,4,7,False,0.018072289156626505,IS,
+83,of_1,64.0,1,[124],,a_Oxygen_1,p14-lab-control,1,of,4,2,False,0.018072289156626505,IS,0.0036819698538718216
+84,acetylene_0,611.0,4,"[98, 99, 125, 126]",,a_Oxygen_1,p14-lab-control,4,acetylene,4,9,False,0.018072289156626505,IS,0.03515130594868254
+85,and_3,131.0,2,"[93, 127]",,a_Oxygen_1,p14-lab-control,2,and,4,3,False,0.018072289156626505,IS,0.007536532044643884
+86,compressed_0,72.0,1,[161],,a_Oxygen_1,p14-lab-control,1,compressed,4,10,False,0.018072289156626505,IS,0.004142216085605799
+87,O_0,,0,[],,a_Oxygen_1,p14-lab-control,0,O,4,1,False,0.018072289156626505,IS,
+88,2._0,,0,[],,a_Oxygen_1,p14-lab-control,0,2.,4,2,False,0.018072289156626505,IS,
+89,This_0,,0,[],,a_Oxygen_1,p14-lab-control,0,This,5,4,False,0.018072289156626505,IS,
+90,method_0,,0,[],,a_Oxygen_1,p14-lab-control,0,method,5,6,False,0.018072289156626505,IS,
+91,of_2,,0,[],,a_Oxygen_1,p14-lab-control,0,of,5,2,False,0.018072289156626505,IS,
+92,welding_1,130.0,2,"[116, 121]",,a_Oxygen_1,p14-lab-control,2,welding,5,7,False,0.018072289156626505,IS,0.007479001265677137
+93,and_4,772.0,6,"[79, 80, 95, 97, 101, 151]",,a_Oxygen_1,p14-lab-control,6,and,5,3,False,0.018072289156626505,IS,0.044413761362328844
+94,cutting_0,,0,[],,a_Oxygen_1,p14-lab-control,0,cutting,5,7,False,0.018072289156626505,IS,
+95,metal_0,66.0,1,[122],,a_Oxygen_1,p14-lab-control,1,metal,5,5,False,0.018072289156626505,IS,0.0037970314118053157
+96,later_1,,0,[],,a_Oxygen_1,p14-lab-control,0,later,5,5,False,0.018072289156626505,IS,
+97,became_0,,0,[],,a_Oxygen_1,p14-lab-control,0,became,5,6,False,0.018072289156626505,IS,
+98,common._0,,0,[],,a_Oxygen_1,p14-lab-control,0,common.,5,7,False,0.018072289156626505,IS,
+0,The_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,The,1,3,False,0.0,NR,
+1,University_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,University,1,10,False,0.0,NR,
+2,is_0,133.0,2,"[28, 63]",,a_HarvardUniversity_0,p14-lab-control,2,is,1,2,False,0.0,NR,0.004749151937154079
+3,organized_0,307.0,4,"[65, 66, 193, 194]",,a_HarvardUniversity_0,p14-lab-control,4,organized,1,9,False,0.0,NR,0.010962328155686485
+4,into_0,236.0,1,[9],,a_HarvardUniversity_0,p14-lab-control,1,into,1,4,False,0.0,NR,0.008427066595250847
+5,eleven_0,75.0,1,[50],a_HarvardUniversity_0_qa_3 ,a_HarvardUniversity_0,p14-lab-control,1,eleven,1,6,False,0.0,NR,0.002678093197643278
+6,separate_0,137.0,1,[48],,a_HarvardUniversity_0,p14-lab-control,1,separate,1,8,False,0.0,NR,0.004891983574361721
+7,academic_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,academic,1,8,False,0.0,NR,
+8,units—ten_0,1155.0,5,"[19, 56, 57, 73, 74]",,a_HarvardUniversity_0,p14-lab-control,5,units—ten,1,9,False,0.0,NR,0.04124263524370648
+9,faculties_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,faculties,1,9,False,0.0,NR,
+10,and_0,178.0,2,"[59, 60]",,a_HarvardUniversity_0,p14-lab-control,2,and,1,3,False,0.0,NR,0.006356007855740046
+11,the_1,304.0,3,"[5, 43, 61]",,a_HarvardUniversity_0,p14-lab-control,3,the,1,3,False,0.0,NR,0.010855204427780754
+12,Radcliffe_0,1156.0,10,"[6, 7, 26, 27, 29, 42, 44, 45, 62, 192]",,a_HarvardUniversity_0,p14-lab-control,10,Radcliffe,1,9,False,0.0,NR,0.04127834315300839
+13,Institute_0,710.0,5,"[32, 83, 189, 275, 276]",,a_HarvardUniversity_0,p14-lab-control,5,Institute,1,9,False,0.0,NR,0.025352615604356366
+14,for_0,673.0,7,"[34, 87, 181, 188, 224, 225, 274]",,a_HarvardUniversity_0,p14-lab-control,7,for,1,3,False,0.0,NR,0.02403142296018568
+15,Advanced_0,566.0,5,"[3, 35, 36, 185, 186]",,a_HarvardUniversity_0,p14-lab-control,5,Advanced,1,8,False,0.0,NR,0.020210676664881272
+16,Study—with_0,599.0,4,"[14, 38, 49, 179]",,a_HarvardUniversity_0,p14-lab-control,4,Study—with,1,10,False,0.0,NR,0.021389037671844312
+17,campuses_0,184.0,3,"[53, 72, 182]",,a_HarvardUniversity_0,p14-lab-control,3,campuses,1,8,False,0.0,NR,0.006570255311551509
+18,throughout_0,475.0,4,"[21, 55, 75, 184]",,a_HarvardUniversity_0,p14-lab-control,4,throughout,1,10,False,0.0,NR,0.016961256918407427
+19,the_2,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,the,1,3,False,0.0,NR,
+20,Boston_0,64.0,1,[24],a_HarvardUniversity_0_qa_0 ,a_HarvardUniversity_0,p14-lab-control,1,Boston,1,6,False,0.0,NR,0.002285306195322264
+21,metropolitan_0,895.0,6,"[31, 82, 172, 173, 190, 191]",,a_HarvardUniversity_0,p14-lab-control,6,metropolitan,1,12,False,0.0,NR,0.031958578825209784
+22,area:_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,area:,1,5,False,0.0,NR,
+23,its_0,497.0,3,"[88, 201, 222]",,a_HarvardUniversity_0,p14-lab-control,3,its,1,3,False,0.0,NR,0.017746830923049454
+24,209-acre_0,702.0,8,"[11, 12, 89, 177, 226, 270, 272, 273]",,a_HarvardUniversity_0,p14-lab-control,8,209-acre,1,8,False,0.0,NR,0.02506695232994108
+25,(85_0,485.0,4,"[37, 71, 202, 271]",,a_HarvardUniversity_0,p14-lab-control,4,(85,1,3,False,0.0,NR,0.01731833601142653
+26,ha)_0,1219.0,6,"[15, 39, 40, 41, 52, 105]",,a_HarvardUniversity_0,p14-lab-control,6,ha),1,3,False,0.0,NR,0.043527941439028744
+27,main_0,279.0,3,"[90, 91, 203]",,a_HarvardUniversity_0,p14-lab-control,3,main,1,4,False,0.0,NR,0.009962506695232994
+28,campus_0,475.0,3,"[16, 54, 180]",,a_HarvardUniversity_0,p14-lab-control,3,campus,1,6,False,0.0,NR,0.016961256918407427
+29,is_1,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,is,1,2,False,0.0,NR,
+30,centered_0,887.0,3,"[76, 78, 187]",,a_HarvardUniversity_0,p14-lab-control,3,centered,1,8,False,0.0,NR,0.0316729155507945
+31,on_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,on,1,2,False,0.0,NR,
+32,Harvard_0,209.0,2,"[79, 80]",a_HarvardUniversity_0_qa_4 ,a_HarvardUniversity_0,p14-lab-control,2,Harvard,1,7,False,0.0,NR,0.007462953044099268
+33,Yard_0,303.0,3,"[81, 99, 100]",a_HarvardUniversity_0_qa_4 ,a_HarvardUniversity_0,p14-lab-control,3,Yard,1,4,False,0.0,NR,0.010819496518478843
+34,in_0,155.0,2,"[175, 260]",,a_HarvardUniversity_0,p14-lab-control,2,in,1,2,False,0.0,NR,0.005534725941796108
+35,"Cambridge,_0",607.0,3,"[211, 212, 220]",,a_HarvardUniversity_0,p14-lab-control,3,"Cambridge,",1,10,False,0.0,NR,0.021674700946259597
+36,approximately_0,609.0,5,"[85, 221, 240, 241, 242]",,a_HarvardUniversity_0,p14-lab-control,5,approximately,1,13,False,0.0,NR,0.02174611676486342
+37,3_0,243.0,3,"[1, 103, 131]",,a_HarvardUniversity_0,p14-lab-control,3,3,1,1,False,0.0,NR,0.00867702196036422
+38,miles_0,916.0,6,"[68, 69, 70, 195, 235, 250]",,a_HarvardUniversity_0,p14-lab-control,6,miles,1,5,False,0.0,NR,0.0327084449205499
+39,(5_0,133.0,1,[149],,a_HarvardUniversity_0,p14-lab-control,1,(5,1,2,False,0.0,NR,0.004749151937154079
+40,km)_0,74.0,1,[196],,a_HarvardUniversity_0,p14-lab-control,1,km),1,3,False,0.0,NR,0.0026423852883413674
+41,northwest_0,232.0,2,"[18, 77]",,a_HarvardUniversity_0,p14-lab-control,2,northwest,1,9,False,0.0,NR,0.008284234958043207
+42,of_0,367.0,2,"[92, 197]",,a_HarvardUniversity_0,p14-lab-control,2,of,1,2,False,0.0,NR,0.013104802713801107
+43,Boston;_1,304.0,3,"[108, 208, 209]",,a_HarvardUniversity_0,p14-lab-control,3,Boston;,1,7,False,0.0,NR,0.010855204427780754
+44,the_3,70.0,1,[95],,a_HarvardUniversity_0,p14-lab-control,1,the,1,3,False,0.0,NR,0.002499553651133726
+45,business_0,376.0,4,"[113, 176, 210, 261]",,a_HarvardUniversity_0,p14-lab-control,4,business,1,8,False,0.0,NR,0.0134261738975183
+46,school_0,341.0,3,"[10, 239, 247]",,a_HarvardUniversity_0,p14-lab-control,3,school,1,6,False,0.0,NR,0.012176397071951436
+47,and__0,238.0,1,[102],,a_HarvardUniversity_0,p14-lab-control,1,and,1,3,False,0.0,NR,0.00849848241385467
+48,athletics_0,145.0,2,"[213, 248]",,a_HarvardUniversity_0,p14-lab-control,2,athletics,1,9,False,0.0,NR,0.005177646848777004
+49,"facilities,_0",397.0,3,"[114, 132, 249]",,a_HarvardUniversity_0,p14-lab-control,3,"facilities,",1,11,False,0.0,NR,0.014176039992858418
+50,including_0,746.0,7,"[115, 117, 150, 151, 163, 214, 251]",,a_HarvardUniversity_0,p14-lab-control,7,including,1,9,False,0.0,NR,0.02663810033922514
+51,Harvard_1,102.0,1,[118],,a_HarvardUniversity_0,p14-lab-control,1,Harvard,1,7,False,0.0,NR,0.003642206748794858
+52,"Stadium,_0",93.0,1,[206],,a_HarvardUniversity_0,p14-lab-control,1,"Stadium,",1,8,False,0.0,NR,0.0033208355650776646
+53,are_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,are,1,3,False,0.0,NR,
+54,located_0,543.0,4,"[110, 111, 112, 218]",,a_HarvardUniversity_0,p14-lab-control,4,located,1,7,False,0.0,NR,0.019389394750937334
+55,across_0,775.0,6,"[145, 219, 229, 259, 262, 268]",,a_HarvardUniversity_0,p14-lab-control,6,across,1,6,False,0.0,NR,0.02767362970898054
+56,the_4,270.0,2,"[243, 246]",,a_HarvardUniversity_0,p14-lab-control,2,the,1,3,False,0.0,NR,0.0096411355115158
+57,Charles_0,305.0,2,"[128, 129]",a_HarvardUniversity_0_qa_2 ,a_HarvardUniversity_0,p14-lab-control,2,Charles,1,7,False,0.0,NR,0.010890912337082663
+58,River_0,203.0,1,[233],,a_HarvardUniversity_0,p14-lab-control,1,River,1,5,False,0.0,NR,0.007248705588287806
+59,in_1,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,in,1,2,False,0.0,NR,
+60,the_5,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,the,1,3,False,0.0,NR,
+61,Allston_0,351.0,3,"[93, 138, 162]",,a_HarvardUniversity_0,p14-lab-control,3,Allston,1,7,False,0.0,NR,0.01253347616497054
+62,neighborhood_0,1327.0,10,"[116, 119, 133, 137, 140, 152, 165, 236, 252, 253]",,a_HarvardUniversity_0,p14-lab-control,10,neighborhood,1,12,False,0.0,NR,0.047384395643635065
+63,of_1,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,of,1,2,False,0.0,NR,
+64,Boston_2,314.0,3,"[97, 98, 207]",,a_HarvardUniversity_0,p14-lab-control,3,Boston,1,6,False,0.0,NR,0.011212283520799856
+65,and_1,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,and,1,3,False,0.0,NR,
+66,the_6,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,the,1,3,False,0.0,NR,
+67,"medical,_0",945.0,6,"[126, 244, 245, 257, 258, 267]",,a_HarvardUniversity_0,p14-lab-control,6,"medical,",1,8,False,0.0,NR,0.033743974290305304
+68,"dental,_0",1164.0,8,"[127, 146, 159, 231, 255, 256, 263, 277]",,a_HarvardUniversity_0,p14-lab-control,8,"dental,",1,7,False,0.0,NR,0.04156400642742367
+69,and_2,71.0,1,[160],,a_HarvardUniversity_0,p14-lab-control,1,and,1,3,False,0.0,NR,0.0025352615604356363
+70,public_0,73.0,1,[161],,a_HarvardUniversity_0,p14-lab-control,1,public,1,6,False,0.0,NR,0.0026066773790394573
+71,health_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,health,1,6,False,0.0,NR,
+72,schools_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,schools,1,7,False,0.0,NR,
+73,are_1,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,are,1,3,False,0.0,NR,
+74,in_2,135.0,2,"[134, 136]",,a_HarvardUniversity_0,p14-lab-control,2,in,1,2,False,0.0,NR,0.0048205677557579
+75,the_7,66.0,1,[58],,a_HarvardUniversity_0,p14-lab-control,1,the,1,3,False,0.0,NR,0.0023567220139260846
+76,Longwood_0,1102.0,10,"[17, 121, 124, 135, 141, 142, 166, 216, 237, 254]",,a_HarvardUniversity_0,p14-lab-control,10,Longwood,1,8,False,0.0,NR,0.03935011605070523
+77,Medical_1,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,Medical,1,7,False,0.0,NR,
+78,Area._0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,Area.,1,5,False,0.0,NR,
+79,Harvard's_0,613.0,6,"[157, 169, 171, 227, 228, 265]",,a_HarvardUniversity_0,p14-lab-control,6,Harvard's,2,9,False,0.0,NR,0.02188894840207106
+80,$37.6_0,,0,[],a_HarvardUniversity_0_qa_1 ,a_HarvardUniversity_0,p14-lab-control,0,$37.6,2,5,False,0.0,NR,
+81,billion_0,,0,[],a_HarvardUniversity_0_qa_1 ,a_HarvardUniversity_0,p14-lab-control,0,billion,2,7,False,0.0,NR,
+82,financial_0,51.0,1,[153],,a_HarvardUniversity_0,p14-lab-control,1,financial,2,9,False,0.0,NR,0.001821103374397429
+83,endowment_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,endowment,2,9,False,0.0,NR,
+84,is_2,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,is,2,2,False,0.0,NR,
+85,the_8,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,the,2,3,False,0.0,NR,
+86,largest_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,largest,2,7,False,0.0,NR,
+87,of_2,63.0,1,[167],,a_HarvardUniversity_0,p14-lab-control,1,of,2,2,False,0.0,NR,0.0022495982860203535
+88,any_0,,0,[],,a_HarvardUniversity_0,p14-lab-control,0,any,2,3,False,0.0,NR,
+89,academic_1,310.0,2,"[155, 168]",,a_HarvardUniversity_0,p14-lab-control,2,academic,2,8,False,0.0,NR,0.011069451883592216
+90,institution._0,273.0,2,"[154, 170]",,a_HarvardUniversity_0,p14-lab-control,2,institution.,2,12,False,0.0,NR,0.009748259239421532
+0,There_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,There,1,5,False,0.0,NR,
+1,are_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,are,1,3,False,0.0,NR,
+2,also_0,71.0,1,[170],,a_VictoriaAustralia_3,p14-lab-control,1,also,1,4,False,0.0,NR,0.0027046588701382804
+3,several_0,379.0,3,"[5, 26, 152]",,a_VictoriaAustralia_3,p14-lab-control,3,several,1,7,False,0.0,NR,0.014437545236371948
+4,smaller_0,405.0,3,"[27, 151, 226]",,a_VictoriaAustralia_3,p14-lab-control,3,smaller,1,7,False,0.0,NR,0.015427983695859205
+5,freight_0,100.0,1,[158],,a_VictoriaAustralia_3,p14-lab-control,1,freight,1,7,False,0.0,NR,0.0038093786903356064
+6,operators_0,94.0,1,[160],,a_VictoriaAustralia_3,p14-lab-control,1,operators,1,9,False,0.0,NR,0.0035808159689154698
+7,and_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,and,1,3,False,0.0,NR,
+8,numerous_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,numerous,1,8,False,0.0,NR,
+9,tourist_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,tourist,1,7,False,0.0,NR,
+10,railways_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,railways,1,8,False,0.0,NR,
+11,operating_0,137.0,1,[168],,a_VictoriaAustralia_3,p14-lab-control,1,operating,1,9,False,0.0,NR,0.005218848805759781
+12,over_0,441.0,2,"[24, 176]",,a_VictoriaAustralia_3,p14-lab-control,2,over,1,4,False,0.0,NR,0.016799360024380025
+13,lines_0,139.0,2,"[3, 25]",,a_VictoriaAustralia_3,p14-lab-control,2,lines,1,5,False,0.0,NR,0.005295036379566492
+14,which_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,which,1,5,False,0.0,NR,
+15,were_0,449.0,4,"[7, 28, 155, 171]",,a_VictoriaAustralia_3,p14-lab-control,4,were,1,4,False,0.0,NR,0.01710411031960687
+16,once_0,692.0,5,"[29, 156, 172, 186, 224]",,a_VictoriaAustralia_3,p14-lab-control,5,once,1,4,False,0.0,NR,0.026360900537122395
+17,parts_0,680.0,8,"[11, 15, 16, 17, 32, 161, 162, 173]",,a_VictoriaAustralia_3,p14-lab-control,8,parts,1,5,False,0.0,NR,0.025903775094282124
+18,of_0,66.0,1,[12],,a_VictoriaAustralia_3,p14-lab-control,1,of,1,2,False,0.0,NR,0.0025141899356215
+19,a__0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,a,1,1,False,0.0,NR,
+20,state-owned_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,state-owned,1,11,False,0.0,NR,
+21,system._0,613.0,3,"[165, 166, 192]",,a_VictoriaAustralia_3,p14-lab-control,3,system.,1,7,False,0.0,NR,0.023351491371757266
+22,Victorian_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,Victorian,2,9,False,0.0,NR,
+23,lines_1,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,lines,2,5,False,0.0,NR,
+24,mainly_0,408.0,1,[177],,a_VictoriaAustralia_3,p14-lab-control,1,mainly,2,6,False,0.0,NR,0.015542265056569273
+25,use_0,709.0,3,"[41, 178, 179]",,a_VictoriaAustralia_3,p14-lab-control,3,use,2,3,False,0.0,NR,0.027008494914479448
+26,the_0,173.0,1,[180],,a_VictoriaAustralia_3,p14-lab-control,1,the,2,3,False,0.0,NR,0.006590225134280599
+27,"1,600_0",178.0,2,"[42, 43]",a_VictoriaAustralia_3_qa_0 ,a_VictoriaAustralia_3,p14-lab-control,2,"1,600",2,5,False,0.0,NR,0.0067806940687973796
+28,mm_0,855.0,7,"[2, 30, 31, 44, 108, 185, 187]",a_VictoriaAustralia_3_qa_0 ,a_VictoriaAustralia_3,p14-lab-control,7,mm,2,2,False,0.0,NR,0.032570187802369435
+29,(5_0,690.0,6,"[13, 33, 45, 107, 109, 228]",a_VictoriaAustralia_3_qa_0 ,a_VictoriaAustralia_3,p14-lab-control,6,(5,2,2,False,0.0,NR,0.026284712963315682
+30,ft_0,508.0,6,"[46, 47, 85, 110, 139, 204]",a_VictoriaAustralia_3_qa_0 ,a_VictoriaAustralia_3,p14-lab-control,6,ft,2,2,False,0.0,NR,0.01935164374690488
+31,3_0,,0,[],a_VictoriaAustralia_3_qa_0 ,a_VictoriaAustralia_3,p14-lab-control,0,3,2,1,False,0.0,NR,
+32,in)_0,,0,[],a_VictoriaAustralia_3_qa_0 ,a_VictoriaAustralia_3,p14-lab-control,0,in),2,3,False,0.0,NR,
+33,broad_0,205.0,3,"[18, 163, 164]",a_VictoriaAustralia_3_qa_0 ,a_VictoriaAustralia_3,p14-lab-control,3,broad,2,5,False,0.0,NR,0.007809226315187993
+34,gauge._0,68.0,1,[167],a_VictoriaAustralia_3_qa_0 ,a_VictoriaAustralia_3,p14-lab-control,1,gauge.,2,6,False,0.0,NR,0.0025903775094282123
+35,"However,_0",175.0,2,"[21, 193]",,a_VictoriaAustralia_3,p14-lab-control,2,"However,",3,8,False,0.0,NR,0.006666412708087311
+36,the_1,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,the,3,3,False,0.0,NR,
+37,interstate_0,136.0,1,[37],,a_VictoriaAustralia_3,p14-lab-control,1,interstate,3,10,False,0.0,NR,0.005180755018856425
+38,trunk_0,578.0,3,"[61, 195, 215]",,a_VictoriaAustralia_3,p14-lab-control,3,trunk,3,5,False,0.0,NR,0.022018208830139805
+39,"routes,_0",2059.0,7,"[39, 40, 83, 140, 196, 197, 216]",,a_VictoriaAustralia_3,p14-lab-control,7,"routes,",3,7,False,0.0,NR,0.07843510723401013
+40,as_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,as,3,2,False,0.0,NR,
+41,well_0,311.0,1,[99],,a_VictoriaAustralia_3,p14-lab-control,1,well,3,4,False,0.0,NR,0.011847167726943735
+42,as_1,155.0,2,"[1, 202]",,a_VictoriaAustralia_3,p14-lab-control,2,as,3,2,False,0.0,NR,0.005904536970020189
+43,a_0,268.0,2,"[150, 181]",,a_VictoriaAustralia_3,p14-lab-control,2,a,3,1,False,0.0,NR,0.010209134890099425
+44,number_0,1728.0,15,"[66, 86, 106, 138, 142, 145, 146, 203, 221, 222, 229, 239, 243, 244, 248]",,a_VictoriaAustralia_3,p14-lab-control,15,number,3,6,False,0.0,NR,0.06582606376899927
+45,of_1,451.0,4,"[87, 101, 111, 249]",,a_VictoriaAustralia_3,p14-lab-control,4,of,3,2,False,0.0,NR,0.017180297893413583
+46,branch_0,91.0,1,[205],,a_VictoriaAustralia_3,p14-lab-control,1,branch,3,6,False,0.0,NR,0.0034665346082054017
+47,lines_2,269.0,1,[194],,a_VictoriaAustralia_3,p14-lab-control,1,lines,3,5,False,0.0,NR,0.01024722867700278
+48,in_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,in,3,2,False,0.0,NR,
+49,the_2,201.0,2,"[54, 175]",,a_VictoriaAustralia_3,p14-lab-control,2,the,3,3,False,0.0,NR,0.007656851167574569
+50,west_0,,0,[],a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,0,west,3,4,False,0.0,NR,
+51,of_2,,0,[],a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,0,of,3,2,False,0.0,NR,
+52,the_3,136.0,1,[210],a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,1,the,3,3,False,0.0,NR,0.005180755018856425
+53,state_0,130.0,2,"[79, 209]",a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,2,state,3,5,False,0.0,NR,0.0049521922974362885
+54,have_0,1119.0,4,"[62, 80, 96, 141]",a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,4,have,3,4,False,0.0,NR,0.04262694754485544
+55,been_0,890.0,5,"[63, 81, 200, 217, 218]",a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,5,been,3,4,False,0.0,NR,0.03390347034398689
+56,converted_0,764.0,8,"[60, 64, 98, 148, 149, 183, 219, 236]",a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,8,converted,3,9,False,0.0,NR,0.029103653194164032
+57,to_0,407.0,4,"[56, 123, 189, 242]",a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,4,to,3,2,False,0.0,NR,0.015504171269665917
+58,"1,435_0",270.0,3,"[143, 237, 247]",a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,3,"1,435",3,5,False,0.0,NR,0.010285322463906137
+59,mm_1,451.0,3,"[67, 238, 240]",a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,3,mm,3,2,False,0.0,NR,0.017180297893413583
+60,(4_0,62.0,1,[88],a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,1,(4,3,2,False,0.0,NR,0.0023618147880080757
+61,ft_1,,0,[],a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,0,ft,3,2,False,0.0,NR,
+62,8_0,131.0,2,"[52, 90]",a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,2,8,3,1,False,0.0,NR,0.004990286084339644
+63,%_0,,0,[],a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,0,%,3,1,False,0.0,NR,
+64,in)_1,164.0,2,"[53, 91]",a_VictoriaAustralia_3_qa_1 ,a_VictoriaAustralia_3,p14-lab-control,2,in),3,3,False,0.0,NR,0.006247381052150394
+65,standard_0,,0,[],a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,0,standard,3,8,False,0.0,NR,
+66,gauge._1,266.0,2,"[93, 116]",a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,2,gauge.,3,6,False,0.0,NR,0.010132947316292712
+67,Two_0,405.0,3,"[212, 213, 231]",a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,3,Two,4,3,False,0.0,NR,0.015427983695859205
+68,tourist_1,548.0,4,"[198, 214, 230, 235]",a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,4,tourist,4,7,False,0.0,NR,0.020875395223039123
+69,railways_1,,0,[],a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,0,railways,4,8,False,0.0,NR,
+70,operate_0,,0,[],a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,0,operate,4,7,False,0.0,NR,
+71,over_1,68.0,1,[253],a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,1,over,4,4,False,0.0,NR,0.0025903775094282123
+72,760_0,787.0,3,"[124, 125, 190]",a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,3,760,4,3,False,0.0,NR,0.029979810292941222
+73,mm_2,136.0,2,"[50, 126]",a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,2,mm,4,2,False,0.0,NR,0.005180755018856425
+74,(2_0,203.0,1,[89],a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,1,(2,4,2,False,0.0,NR,0.00773303874138128
+75,ft_2,179.0,2,"[51, 57]",a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,2,ft,4,2,False,0.0,NR,0.006818787855700735
+76,6__0,105.0,1,[206],a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,1,6,4,1,False,0.0,NR,0.003999847624852387
+77,in)_2,340.0,2,"[59, 208]",a_VictoriaAustralia_3_qa_1 a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,2,in),4,3,False,0.0,NR,0.012951887547141062
+78,narrow_0,,0,[],a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,0,narrow,4,6,False,0.0,NR,
+79,gauge_2,241.0,1,[115],a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,1,gauge,4,5,False,0.0,NR,0.009180602643708811
+80,"lines,_3",246.0,2,"[94, 95]",a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,2,"lines,",4,6,False,0.0,NR,0.00937107157822559
+81,which_1,379.0,4,"[117, 120, 121, 136]",a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,4,which,4,5,False,0.0,NR,0.014437545236371948
+82,are_1,239.0,2,"[137, 147]",a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,2,are,4,3,False,0.0,NR,0.009104415069902099
+83,the_4,,0,[],a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,0,the,4,3,False,0.0,NR,
+84,remnants_0,308.0,3,"[245, 246, 252]",a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,3,remnants,4,8,False,0.0,NR,0.011732886366233668
+85,of_3,,0,[],a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,0,of,4,2,False,0.0,NR,
+86,five_0,,0,[],a_VictoriaAustralia_3_qa_2 a_VictoriaAustralia_3_qa_4 ,a_VictoriaAustralia_3,p14-lab-control,0,five,4,4,False,0.0,NR,
+87,formerly_0,349.0,3,"[68, 103, 105]",a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,3,formerly,4,8,False,0.0,NR,0.013294731629271266
+88,government-_0,546.0,5,"[58, 69, 73, 75, 113]",a_VictoriaAustralia_3_qa_2 ,a_VictoriaAustralia_3,p14-lab-control,5,government-,4,11,False,0.0,NR,0.02079920764923241
+89,owned_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,owned,4,5,False,0.0,NR,
+90,lines_4,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,lines,4,5,False,0.0,NR,
+91,which_2,474.0,3,"[131, 132, 250]",,a_VictoriaAustralia_3,p14-lab-control,3,which,4,5,False,0.0,NR,0.018056454992190774
+92,were_1,1426.0,4,"[118, 134, 135, 251]",,a_VictoriaAustralia_3,p14-lab-control,4,were,4,4,False,0.0,NR,0.054321740124185745
+93,built_0,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,built,4,5,False,0.0,NR,
+94,in_1,,0,[],,a_VictoriaAustralia_3,p14-lab-control,0,in,4,2,False,0.0,NR,
+95,mountainous_0,,0,[],a_VictoriaAustralia_3_qa_3 ,a_VictoriaAustralia_3,p14-lab-control,0,mountainous,4,11,False,0.0,NR,
+96,areas._0,,0,[],a_VictoriaAustralia_3_qa_3 ,a_VictoriaAustralia_3,p14-lab-control,0,areas.,4,6,False,0.0,NR,
+0,In_0,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,In,1,2,False,0.0,NR,
+1,"Europe,_0",513.0,4,"[13, 38, 147, 148]",,a_FrenchandIndianWar_0,p14-lab-control,4,"Europe,",1,7,False,0.0,NR,0.022831456673639235
+2,the_0,197.0,2,"[15, 37]",,a_FrenchandIndianWar_0,p14-lab-control,2,the,1,3,False,0.0,NR,0.008767635408785437
+3,North_0,747.0,4,"[46, 150, 151, 155]",,a_FrenchandIndianWar_0,p14-lab-control,4,North,1,5,False,0.0,NR,0.033245805331790466
+4,American_0,1021.0,6,"[5, 25, 152, 153, 154, 156]",,a_FrenchandIndianWar_0,p14-lab-control,6,American,1,8,False,0.0,NR,0.04544038452979661
+5,theater_0,273.0,3,"[7, 141, 157]",,a_FrenchandIndianWar_0,p14-lab-control,3,theater,1,7,False,0.0,NR,0.01215007343450977
+6,of_0,105.0,1,[28],,a_FrenchandIndianWar_0,p14-lab-control,1,of,1,2,False,0.0,NR,0.004673105167119142
+7,the_1,62.0,1,[42],,a_FrenchandIndianWar_0,p14-lab-control,1,the,1,3,False,0.0,NR,0.002759357336775112
+8,Seven_0,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,Seven,1,5,False,0.0,NR,
+9,Years'_0,118.0,2,"[32, 36]",,a_FrenchandIndianWar_0,p14-lab-control,2,Years',1,6,False,0.0,NR,0.005251680092571988
+10,War_0,387.0,2,"[55, 146]",,a_FrenchandIndianWar_0,p14-lab-control,2,War,1,3,False,0.0,NR,0.017223730473096267
+11,usually_0,109.0,1,[144],,a_FrenchandIndianWar_0,p14-lab-control,1,usually,1,7,False,0.0,NR,0.004851128221104633
+12,is_0,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,is,1,2,False,0.0,NR,
+13,not_0,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,not,1,3,False,0.0,NR,
+14,given_0,305.0,4,"[72, 164, 165, 166]",,a_FrenchandIndianWar_0,p14-lab-control,4,given,1,5,False,0.0,NR,0.013574257866393697
+15,a__0,68.0,1,[18],,a_FrenchandIndianWar_0,p14-lab-control,1,a,1,1,False,0.0,NR,0.0030263919177533492
+16,separate_0,543.0,3,"[163, 168, 218]",,a_FrenchandIndianWar_0,p14-lab-control,3,separate,1,8,False,0.0,NR,0.02416662957853042
+17,name._0,271.0,2,"[170, 220]",,a_FrenchandIndianWar_0,p14-lab-control,2,name.,1,5,False,0.0,NR,0.012061061907517023
+18,The_2,516.0,1,[75],,a_FrenchandIndianWar_0,p14-lab-control,1,The,2,3,False,0.0,NR,0.022964973964128353
+19,entire_0,603.0,7,"[2, 26, 47, 139, 140, 158, 209]",,a_FrenchandIndianWar_0,p14-lab-control,7,entire,2,6,False,0.0,NR,0.026836975388312787
+20,international_0,69.0,1,[9],,a_FrenchandIndianWar_0,p14-lab-control,1,international,2,13,False,0.0,NR,0.003070897681249722
+21,conflict_0,136.0,2,"[33, 49]",,a_FrenchandIndianWar_0,p14-lab-control,2,conflict,2,8,False,0.0,NR,0.0060527838355066985
+22,is_1,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,is,2,2,False,0.0,NR,
+23,known_0,367.0,4,"[51, 52, 54, 143]",,a_FrenchandIndianWar_0,p14-lab-control,4,known,2,5,False,0.0,NR,0.01633361520316881
+24,as__0,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,as,2,2,False,0.0,NR,
+25,the_3,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,the,2,3,False,0.0,NR,
+26,Seven_1,94.0,1,[70],,a_FrenchandIndianWar_0,p14-lab-control,1,Seven,2,5,False,0.0,NR,0.004183541768659042
+27,Years'_1,397.0,2,"[56, 71]",,a_FrenchandIndianWar_0,p14-lab-control,2,Years',2,6,False,0.0,NR,0.017668788108059993
+28,War._1,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,War.,2,4,False,0.0,NR,
+29,"""Seven_0",789.0,4,"[58, 59, 74, 169]",,a_FrenchandIndianWar_0,p14-lab-control,4,"""Seven",3,6,False,0.0,NR,0.035115047398638126
+30,"Years""_0",136.0,2,"[60, 61]",,a_FrenchandIndianWar_0,p14-lab-control,2,"Years""",3,6,False,0.0,NR,0.0060527838355066985
+31,refers_0,204.0,3,"[171, 208, 234]",,a_FrenchandIndianWar_0,p14-lab-control,3,refers,3,6,False,0.0,NR,0.009079175753260046
+32,to_0,303.0,2,"[78, 215]",,a_FrenchandIndianWar_0,p14-lab-control,2,to,3,2,False,0.0,NR,0.013485246339400953
+33,events_0,406.0,3,"[142, 159, 197]",,a_FrenchandIndianWar_0,p14-lab-control,3,events,3,6,False,0.0,NR,0.01806933997952735
+34,in_1,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,in,3,2,False,0.0,NR,
+35,"Europe,_1",168.0,2,"[65, 66]",,a_FrenchandIndianWar_0,p14-lab-control,2,"Europe,",3,7,False,0.0,NR,0.0074769682673906275
+36,from_0,175.0,2,"[67, 162]",,a_FrenchandIndianWar_0,p14-lab-control,2,from,3,4,False,0.0,NR,0.007788508611865237
+37,the_4,168.0,1,[53],,a_FrenchandIndianWar_0,p14-lab-control,1,the,3,3,False,0.0,NR,0.0074769682673906275
+38,official_0,272.0,1,[83],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,1,official,3,8,False,0.0,NR,0.012105567671013397
+39,declaration_0,247.0,3,"[178, 179, 227]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,3,declaration,3,11,False,0.0,NR,0.010992923583604076
+40,of_1,66.0,1,[226],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,1,of,3,2,False,0.0,NR,0.0029373803907606034
+41,war_2,244.0,2,"[109, 180]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,2,war,3,3,False,0.0,NR,0.010859406293114958
+42,in_2,132.0,2,"[181, 195]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,2,in,3,2,False,0.0,NR,0.005874760781521207
+43,1756_0,894.0,5,"[88, 89, 182, 231, 232]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,5,1756,3,4,False,0.0,NR,0.03978815256575727
+44,to_1,208.0,1,[233],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,1,to,3,2,False,0.0,NR,0.009257198807245539
+45,the_5,272.0,4,"[90, 189, 190, 191]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,4,the,3,3,False,0.0,NR,0.012105567671013397
+46,signing_0,306.0,4,"[91, 123, 173, 183]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,4,signing,3,7,False,0.0,NR,0.013618763629890071
+47,of_2,136.0,2,"[198, 210]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,2,of,3,2,False,0.0,NR,0.0060527838355066985
+48,the_6,133.0,2,"[93, 94]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,2,the,3,3,False,0.0,NR,0.00591926654501758
+49,peace_0,69.0,1,[160],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,1,peace,3,5,False,0.0,NR,0.003070897681249722
+50,treaty_0,558.0,3,"[68, 69, 161]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,3,treaty,3,6,False,0.0,NR,0.024834216030976013
+51,in_3,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,0,in,3,2,False,0.0,NR,
+52,1763._0,343.0,2,"[187, 188]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,2,1763.,3,5,False,0.0,NR,0.015265476879255864
+53,These_0,879.0,6,"[205, 223, 224, 228, 229, 230]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,6,These,4,5,False,0.0,NR,0.039120566113311675
+54,dates_0,276.0,3,"[85, 86, 193]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,3,dates,4,5,False,0.0,NR,0.012283590724998888
+55,do_0,132.0,2,"[206, 222]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,2,do,4,2,False,0.0,NR,0.005874760781521207
+56,not_1,74.0,1,[207],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,1,not,4,3,False,0.0,NR,0.003293426498731586
+57,correspond_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,0,correspond,4,10,False,0.0,NR,
+58,with_0,122.0,2,"[107, 110]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,2,with,4,4,False,0.0,NR,0.005429703146557479
+59,the_7,64.0,1,[108],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,1,the,4,3,False,0.0,NR,0.002848368863767858
+60,fighting_0,550.0,6,"[62, 63, 64, 174, 184, 199]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,6,fighting,4,8,False,0.0,NR,0.024478169923005028
+61,on_0,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,0,on,4,2,False,0.0,NR,
+62,mainland_0,948.0,6,"[80, 111, 113, 124, 176, 185]",a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,6,mainland,4,8,False,0.0,NR,0.042191463794561394
+63,North_1,,0,[],a_FrenchandIndianWar_0_qa_0 ,a_FrenchandIndianWar_0,p14-lab-control,0,North,4,5,False,0.0,NR,
+64,"America,_0",,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,"America,",4,8,False,0.0,NR,
+65,where_0,503.0,2,"[98, 99]",,a_FrenchandIndianWar_0,p14-lab-control,2,where,4,5,False,0.0,NR,0.02238639903867551
+66,the_8,135.0,2,"[100, 118]",,a_FrenchandIndianWar_0,p14-lab-control,2,the,4,3,False,0.0,NR,0.006008278072010325
+67,fighting_1,336.0,5,"[1, 101, 103, 119, 120]",,a_FrenchandIndianWar_0,p14-lab-control,5,fighting,4,8,False,0.0,NR,0.014953936534781255
+68,between_0,340.0,5,"[104, 105, 106, 121, 242]",,a_FrenchandIndianWar_0,p14-lab-control,5,between,4,7,False,0.0,NR,0.015131959588766746
+69,the_9,201.0,1,[122],,a_FrenchandIndianWar_0,p14-lab-control,1,the,4,3,False,0.0,NR,0.00894565846277093
+70,two_0,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,two,4,3,False,0.0,NR,
+71,colonial_0,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,colonial,4,8,False,0.0,NR,
+72,powers_0,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,powers,4,6,False,0.0,NR,
+73,was_0,432.0,5,"[96, 126, 127, 175, 200]",,a_FrenchandIndianWar_0,p14-lab-control,5,was,4,3,False,0.0,NR,0.01922648983043304
+74,largely_0,693.0,4,"[81, 112, 201, 202]",,a_FrenchandIndianWar_0,p14-lab-control,4,largely,4,7,False,0.0,NR,0.030842494102986336
+75,concluded_0,103.0,1,[204],,a_FrenchandIndianWar_0,p14-lab-control,1,concluded,4,9,False,0.0,NR,0.004584093640126396
+76,in_4,155.0,2,"[203, 238]",,a_FrenchandIndianWar_0,p14-lab-control,2,in,4,2,False,0.0,NR,0.006898393341937781
+77,six_0,,0,[],a_FrenchandIndianWar_0_qa_1 ,a_FrenchandIndianWar_0,p14-lab-control,0,six,4,3,False,0.0,NR,
+78,"years,_0",819.0,5,"[0, 116, 130, 134, 135]",a_FrenchandIndianWar_0_qa_1 ,a_FrenchandIndianWar_0,p14-lab-control,5,"years,",4,6,False,0.0,NR,0.036450220303529304
+79,from_1,372.0,1,[132],,a_FrenchandIndianWar_0,p14-lab-control,1,from,4,4,False,0.0,NR,0.016556144020650674
+80,the_10,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,the,4,3,False,0.0,NR,
+81,Battle_0,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,p14-lab-control,0,Battle,4,6,False,0.0,NR,
+82,of_3,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,p14-lab-control,0,of,4,2,False,0.0,NR,
+83,Jumonville_0,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,p14-lab-control,0,Jumonville,4,10,False,0.0,NR,
+84,Glen_0,,0,[],a_FrenchandIndianWar_0_qa_3 ,a_FrenchandIndianWar_0,p14-lab-control,0,Glen,4,4,False,0.0,NR,
+85,in_5,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,in,4,2,False,0.0,NR,
+86,1754_0,65.0,1,[212],,a_FrenchandIndianWar_0,p14-lab-control,1,1754,4,4,False,0.0,NR,0.0028928746272642307
+87,to_2,916.0,4,"[95, 213, 214, 236]",,a_FrenchandIndianWar_0,p14-lab-control,4,to,4,2,False,0.0,NR,0.04076727936267747
+88,the_11,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,the,4,3,False,0.0,NR,
+89,capture_0,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,capture,4,7,False,0.0,NR,
+90,of_4,136.0,1,[237],,a_FrenchandIndianWar_0,p14-lab-control,1,of,4,2,False,0.0,NR,0.0060527838355066985
+91,Montreal_0,644.0,4,"[115, 129, 239, 241]",,a_FrenchandIndianWar_0,p14-lab-control,4,Montreal,4,8,False,0.0,NR,0.02866171169166407
+92,in_6,,0,[],,a_FrenchandIndianWar_0,p14-lab-control,0,in,4,2,False,0.0,NR,
+93,1760._0,444.0,1,[133],a_FrenchandIndianWar_0_qa_2 ,a_FrenchandIndianWar_0,p14-lab-control,1,1760.,4,5,False,0.0,NR,0.019760558992389515
+0,Six-time_0,,0,[],a_SuperBowl50_3_qa_0 a_SuperBowl50_3_qa_10 ,a_SuperBowl50_3,p14-lab-control,0,Six-time,1,8,True,0.05714285714285714,NR,
+1,Grammy_0,535.0,5,"[9, 10, 11, 22, 23]",,a_SuperBowl50_3,p14-lab-control,5,Grammy,1,6,True,0.05714285714285714,NR,0.14412715517241378
+2,winner_0,302.0,1,[26],,a_SuperBowl50_3,p14-lab-control,1,winner,1,6,True,0.05714285714285714,NR,0.08135775862068965
+3,and_0,541.0,3,"[13, 33, 34]",,a_SuperBowl50_3,p14-lab-control,3,and,1,3,True,0.05714285714285714,NR,0.14574353448275862
+4,Academy_0,65.0,1,[14],a_SuperBowl50_3_qa_2 ,a_SuperBowl50_3,p14-lab-control,1,Academy,1,7,True,0.05714285714285714,NR,0.017510775862068964
+5,Award_0,,0,[],a_SuperBowl50_3_qa_2 ,a_SuperBowl50_3,p14-lab-control,0,Award,1,5,True,0.05714285714285714,NR,
+6,nominee_0,66.0,1,[18],,a_SuperBowl50_3,p14-lab-control,1,nominee,1,7,True,0.05714285714285714,NR,0.017780172413793104
+7,Lady_0,,0,[],a_SuperBowl50_3_qa_5 a_SuperBowl50_3_qa_7 a_SuperBowl50_3_qa_9 ,a_SuperBowl50_3,p14-lab-control,0,Lady,1,4,True,0.05714285714285714,NR,
+8,Gaga_0,408.0,1,[20],a_SuperBowl50_3_qa_5 a_SuperBowl50_3_qa_7 a_SuperBowl50_3_qa_9 ,a_SuperBowl50_3,p14-lab-control,1,Gaga,1,4,True,0.05714285714285714,NR,0.10991379310344827
+9,performed_0,237.0,2,"[4, 6]",,a_SuperBowl50_3,p14-lab-control,2,performed,1,9,True,0.05714285714285714,NR,0.06384698275862069
+10,the_0,,0,[],a_SuperBowl50_3_qa_1 a_SuperBowl50_3_qa_3 ,a_SuperBowl50_3,p14-lab-control,0,the,1,3,True,0.05714285714285714,NR,
+11,national_0,,0,[],a_SuperBowl50_3_qa_1 a_SuperBowl50_3_qa_3 ,a_SuperBowl50_3,p14-lab-control,0,national,1,8,True,0.05714285714285714,NR,
+12,"anthem,_0",140.0,2,"[24, 25]",a_SuperBowl50_3_qa_1 a_SuperBowl50_3_qa_3 ,a_SuperBowl50_3,p14-lab-control,2,"anthem,",1,7,True,0.05714285714285714,NR,0.03771551724137931
+13,while_0,333.0,3,"[12, 27, 32]",,a_SuperBowl50_3,p14-lab-control,3,while,1,5,True,0.05714285714285714,NR,0.08970905172413793
+14,Academy_1,1085.0,4,"[28, 29, 30, 31]",,a_SuperBowl50_3,p14-lab-control,4,Academy,1,7,True,0.05714285714285714,NR,0.29229525862068967
+15,Award_1,,0,[],,a_SuperBowl50_3,p14-lab-control,0,Award,1,5,True,0.05714285714285714,NR,
+16,winner_1,,0,[],,a_SuperBowl50_3,p14-lab-control,0,winner,1,6,True,0.05714285714285714,NR,
+17,Marlee_0,,0,[],a_SuperBowl50_3_qa_6 a_SuperBowl50_3_qa_8 a_SuperBowl50_3_qa_11 ,a_SuperBowl50_3,p14-lab-control,0,Marlee,1,6,True,0.05714285714285714,NR,
+18,Matlin_0,,0,[],a_SuperBowl50_3_qa_6 a_SuperBowl50_3_qa_8 a_SuperBowl50_3_qa_11 ,a_SuperBowl50_3,p14-lab-control,0,Matlin,1,6,True,0.05714285714285714,NR,
+19,provided_0,,0,[],,a_SuperBowl50_3,p14-lab-control,0,provided,1,8,True,0.05714285714285714,NR,
+20,American_0,,0,[],a_SuperBowl50_3_qa_4 ,a_SuperBowl50_3,p14-lab-control,0,American,1,8,True,0.05714285714285714,NR,
+21,Sign_0,,0,[],a_SuperBowl50_3_qa_4 ,a_SuperBowl50_3,p14-lab-control,0,Sign,1,4,True,0.05714285714285714,NR,
+22,Language_0,,0,[],a_SuperBowl50_3_qa_4 ,a_SuperBowl50_3,p14-lab-control,0,Language,1,8,True,0.05714285714285714,NR,
+23,(ASL)_0,,0,[],,a_SuperBowl50_3,p14-lab-control,0,(ASL),1,5,True,0.05714285714285714,NR,
+24,translation._0,,0,[],,a_SuperBowl50_3,p14-lab-control,0,translation.,1,12,True,0.05714285714285714,NR,
+0,The_0,,0,[],,meco_para_11,p14-lab-control,0,The,1,3,False,0.25,NR,
+1,International_0,244.0,2,"[4, 5]",,meco_para_11,p14-lab-control,2,International,1,13,False,0.25,NR,0.007215519280813816
+2,Union_0,137.0,1,[6],,meco_para_11,p14-lab-control,1,Union,1,5,False,0.25,NR,0.0040513366453749705
+3,for_0,,0,[],,meco_para_11,p14-lab-control,0,for,1,3,False,0.25,NR,
+4,Conservation_0,,0,[],,meco_para_11,p14-lab-control,0,Conservation,1,12,False,0.25,NR,
+5,of_0,,0,[],,meco_para_11,p14-lab-control,0,of,1,2,False,0.25,NR,
+6,Nature_0,,0,[],,meco_para_11,p14-lab-control,0,Nature,1,6,False,0.25,NR,
+7,is_0,,0,[],,meco_para_11,p14-lab-control,0,is,1,2,False,0.25,NR,
+8,an__0,,0,[],meco_para_11_qa_0 ,meco_para_11,p14-lab-control,0,an,1,2,False,0.25,NR,
+9,international_1,333.0,3,"[31, 35, 54]",meco_para_11_qa_0 ,meco_para_11,p14-lab-control,3,international,1,13,False,0.25,NR,0.009847409510290986
+10,organization_0,70.0,1,[36],meco_para_11_qa_0 ,meco_para_11,p14-lab-control,1,organization,1,12,False,0.25,NR,0.0020700260231842913
+11,working_0,,0,[],,meco_para_11,p14-lab-control,0,working,1,7,False,0.25,NR,
+12,in_0,69.0,1,[60],,meco_para_11,p14-lab-control,1,in,1,2,False,0.25,NR,0.0020404542228530873
+13,the_1,69.0,1,[3],,meco_para_11,p14-lab-control,1,the,1,3,False,0.25,NR,0.0020404542228530873
+14,field_0,140.0,1,[61],,meco_para_11,p14-lab-control,1,field,1,5,False,0.25,NR,0.0041400520463685826
+15,of_1,341.0,1,[244],,meco_para_11,p14-lab-control,1,of,1,2,False,0.25,NR,0.01008398391294062
+16,nature_1,,0,[],,meco_para_11,p14-lab-control,0,nature,1,6,False,0.25,NR,
+17,conservation_1,,0,[],,meco_para_11,p14-lab-control,0,conservation,1,12,False,0.25,NR,
+18,and_0,,0,[],,meco_para_11,p14-lab-control,0,and,1,3,False,0.25,NR,
+19,the_2,,0,[],,meco_para_11,p14-lab-control,0,the,1,3,False,0.25,NR,
+20,sustainable_0,272.0,3,"[34, 50, 51]",,meco_para_11,p14-lab-control,3,sustainable,1,11,False,0.25,NR,0.008043529690087533
+21,use_0,243.0,2,"[30, 33]",,meco_para_11,p14-lab-control,2,use,1,3,False,0.25,NR,0.007185947480482612
+22,of_2,303.0,2,"[53, 55]",,meco_para_11,p14-lab-control,2,of,1,2,False,0.25,NR,0.008960255500354862
+23,natural_0,132.0,2,"[37, 56]",,meco_para_11,p14-lab-control,2,natural,1,7,False,0.25,NR,0.0039034776437189495
+24,resources._0,246.0,2,"[58, 96]",,meco_para_11,p14-lab-control,2,resources.,1,10,False,0.25,NR,0.007274662881476224
+25,It_0,,0,[],,meco_para_11,p14-lab-control,0,It,2,2,False,0.25,NR,
+26,is_1,,0,[],,meco_para_11,p14-lab-control,0,is,2,2,False,0.25,NR,
+27,involved_0,275.0,2,"[19, 80]",,meco_para_11,p14-lab-control,2,involved,2,8,False,0.25,NR,0.008132245091081146
+28,in_1,,0,[],,meco_para_11,p14-lab-control,0,in,2,2,False,0.25,NR,
+29,data_0,173.0,1,[8],,meco_para_11,p14-lab-control,1,data,2,4,False,0.25,NR,0.005115921457298321
+30,gathering_0,161.0,2,"[7, 131]",,meco_para_11,p14-lab-control,2,gathering,2,9,False,0.25,NR,0.0047610598533238705
+31,and_1,65.0,1,[44],,meco_para_11,p14-lab-control,1,and,2,3,False,0.25,NR,0.0019221670215282707
+32,"analysis,_0",621.0,3,"[12, 27, 48]",,meco_para_11,p14-lab-control,3,"analysis,",2,9,False,0.25,NR,0.018364088005677785
+33,"research,_0",133.0,1,[28],,meco_para_11,p14-lab-control,1,"research,",2,9,False,0.25,NR,0.0039330494440501535
+34,field_1,52.0,1,[57],,meco_para_11,p14-lab-control,1,field,2,5,False,0.25,NR,0.0015377336172226164
+35,"projects,_0",95.0,1,[52],,meco_para_11,p14-lab-control,1,"projects,",2,9,False,0.25,NR,0.0028093210314643954
+36,"advocacy,_0",66.0,1,[115],,meco_para_11,p14-lab-control,1,"advocacy,",2,9,False,0.25,NR,0.0019517388218594747
+37,and_2,129.0,2,"[38, 97]",,meco_para_11,p14-lab-control,2,and,2,3,False,0.25,NR,0.003814762242725337
+38,education._0,435.0,5,"[17, 20, 62, 79, 81]",,meco_para_11,p14-lab-control,5,education.,2,10,False,0.25,NR,0.01286373314407381
+39,Its_0,134.0,1,[100],,meco_para_11,p14-lab-control,1,Its,3,3,False,0.25,NR,0.0039626212443813575
+40,mission_0,334.0,3,"[9, 42, 63]",,meco_para_11,p14-lab-control,3,mission,3,7,False,0.25,NR,0.009876981310622191
+41,is_2,68.0,1,[10],,meco_para_11,p14-lab-control,1,is,3,2,False,0.25,NR,0.0020108824225218832
+42,to_0,74.0,1,[130],,meco_para_11,p14-lab-control,1,to,3,2,False,0.25,NR,0.0021883132245091082
+43,"‘influence,_0",538.0,4,"[45, 89, 171, 172]",,meco_para_11,p14-lab-control,4,"‘influence,",3,11,False,0.25,NR,0.01590962857818784
+44,encourage_0,449.0,3,"[29, 47, 67]",,meco_para_11,p14-lab-control,3,encourage,3,9,False,0.25,NR,0.013277738348710669
+45,and_3,,0,[],,meco_para_11,p14-lab-control,0,and,3,3,False,0.25,NR,
+46,assist_0,590.0,3,"[75, 93, 95]",,meco_para_11,p14-lab-control,3,assist,3,6,False,0.25,NR,0.017447362195410456
+47,societies_0,,0,[],,meco_para_11,p14-lab-control,0,societies,3,9,False,0.25,NR,
+48,throughout_0,199.0,2,"[138, 139]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,2,throughout,3,10,False,0.25,NR,0.005884788265909629
+49,the_3,162.0,2,"[40, 116]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,2,the,3,3,False,0.25,NR,0.004790631653655075
+50,world_0,105.0,1,[98],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,1,world,3,5,False,0.25,NR,0.0031050390347764373
+51,to_1,205.0,2,"[21, 99]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,2,to,3,2,False,0.25,NR,0.006062219067896854
+52,conserve_0,412.0,4,"[41, 82, 83, 101]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,4,conserve,3,8,False,0.25,NR,0.012183581736456115
+53,nature_2,1254.0,7,"[2, 23, 64, 84, 102, 104, 105]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,7,nature,3,6,False,0.25,NR,0.03708303761533002
+54,and_4,1172.0,7,"[11, 24, 88, 108, 121, 134, 170]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,7,and,3,3,False,0.25,NR,0.03465814998817128
+55,to_2,746.0,6,"[25, 65, 70, 107, 133, 178]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,6,to,3,2,False,0.25,NR,0.022060563047078305
+56,ensure_0,723.0,7,"[26, 46, 69, 90, 91, 125, 173]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,7,ensure,3,6,False,0.25,NR,0.02138041163946061
+57,that_0,337.0,2,"[68, 92]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,2,that,3,4,False,0.25,NR,0.009965696711615802
+58,any_0,62.0,1,[74],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,1,any,3,3,False,0.25,NR,0.0018334516205346582
+59,use_1,,0,[],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,0,use,3,3,False,0.25,NR,
+60,of_3,,0,[],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,0,of,3,2,False,0.25,NR,
+61,natural_1,,0,[],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,0,natural,3,7,False,0.25,NR,
+62,resources_1,,0,[],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,0,resources,3,9,False,0.25,NR,
+63,is_3,273.0,2,"[78, 140]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,2,is,3,2,False,0.25,NR,0.008073101490418736
+64,equitable_0,227.0,2,"[77, 117]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,2,equitable,3,9,False,0.25,NR,0.006712798675183345
+65,and_5,172.0,1,[118],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,1,and,3,3,False,0.25,NR,0.0050863496569671166
+66,ecologically_0,489.0,3,"[86, 87, 143]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,3,ecologically,3,12,False,0.25,NR,0.014460610361958837
+67,sustainable’._0,796.0,7,"[71, 72, 85, 106, 109, 160, 177]",meco_para_11_qa_2 ,meco_para_11,p14-lab-control,7,sustainable’.,3,13,False,0.25,NR,0.023539153063638515
+68,Over_0,229.0,1,[179],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,1,Over,4,4,False,0.25,NR,0.006771942275845754
+69,the_4,,0,[],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,0,the,4,3,False,0.25,NR,
+70,past_0,237.0,1,[73],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,1,past,4,4,False,0.25,NR,0.007008516678495387
+71,"decades,_0",,0,[],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,0,"decades,",4,8,False,0.25,NR,
+72,the_5,,0,[],meco_para_11_qa_2 ,meco_para_11,p14-lab-control,0,the,4,3,False,0.25,NR,
+73,organization_1,377.0,2,"[151, 165]",,meco_para_11,p14-lab-control,2,organization,4,12,False,0.25,NR,0.01114856872486397
+74,has_0,131.0,2,"[150, 152]",,meco_para_11,p14-lab-control,2,has,4,3,False,0.25,NR,0.0038739058433877455
+75,widened_0,251.0,4,"[141, 149, 153, 154]",,meco_para_11,p14-lab-control,4,widened,4,7,False,0.25,NR,0.007422521883132245
+76,its_1,,0,[],,meco_para_11,p14-lab-control,0,its,4,3,False,0.25,NR,
+77,focus_0,502.0,2,"[119, 142]",,meco_para_11,p14-lab-control,2,focus,4,5,False,0.25,NR,0.01484504376626449
+78,beyond_0,177.0,1,[144],,meco_para_11,p14-lab-control,1,beyond,4,6,False,0.25,NR,0.005234208658623137
+79,conservation_2,1461.0,7,"[0, 1, 122, 145, 146, 159, 161]",,meco_para_11,p14-lab-control,7,conservation,4,12,False,0.25,NR,0.043204400283889284
+80,ecology_0,614.0,2,"[180, 181]",,meco_para_11,p14-lab-control,2,ecology,4,7,False,0.25,NR,0.018157085403359356
+81,and_6,73.0,1,[174],,meco_para_11,p14-lab-control,1,and,4,3,False,0.25,NR,0.002158741424177904
+82,now_0,205.0,2,"[111, 126]",,meco_para_11,p14-lab-control,2,now,4,3,False,0.25,NR,0.006062219067896854
+83,incorporates_0,471.0,2,"[128, 148]",,meco_para_11,p14-lab-control,2,incorporates,4,12,False,0.25,NR,0.01392831795599716
+84,issues_0,,0,[],,meco_para_11,p14-lab-control,0,issues,4,6,False,0.25,NR,
+85,related_0,139.0,1,[166],,meco_para_11,p14-lab-control,1,related,4,7,False,0.25,NR,0.0041104802460373785
+86,to_3,74.0,1,[167],,meco_para_11,p14-lab-control,1,to,4,2,False,0.25,NR,0.0021883132245091082
+87,sustainable_1,241.0,1,[169],,meco_para_11,p14-lab-control,1,sustainable,4,11,False,0.25,NR,0.007126803879820204
+88,development_0,505.0,2,"[156, 176]",,meco_para_11,p14-lab-control,2,development,4,11,False,0.25,NR,0.014933759167258103
+89,in_2,235.0,2,"[158, 215]",,meco_para_11,p14-lab-control,2,in,4,2,False,0.25,NR,0.006949373077832979
+90,its_2,143.0,1,[193],,meco_para_11,p14-lab-control,1,its,4,3,False,0.25,NR,0.0042287674473621955
+91,projects._1,1185.0,5,"[162, 194, 207, 216, 228]",,meco_para_11,p14-lab-control,5,projects.,4,9,False,0.25,NR,0.035042583392476935
+92,Unlike_0,100.0,1,[110],,meco_para_11,p14-lab-control,1,Unlike,5,6,False,0.25,NR,0.0029571800331204164
+93,many_0,272.0,1,[123],,meco_para_11,p14-lab-control,1,many,5,4,False,0.25,NR,0.008043529690087533
+94,other_0,1893.0,7,"[112, 127, 135, 137, 164, 175, 182]",,meco_para_11,p14-lab-control,7,other,5,5,False,0.25,NR,0.055979418026969485
+95,international_2,245.0,1,[184],,meco_para_11,p14-lab-control,1,international,5,13,False,0.25,NR,0.00724509108114502
+96,environmental_0,164.0,2,"[168, 183]",,meco_para_11,p14-lab-control,2,environmental,5,13,False,0.25,NR,0.004849775254317483
+97,"organizations,_0",202.0,2,"[157, 188]",,meco_para_11,p14-lab-control,2,"organizations,",5,14,False,0.25,NR,0.005973503666903241
+98,it_1,284.0,3,"[189, 226, 235]",,meco_para_11,p14-lab-control,3,it,5,2,False,0.25,NR,0.008398391294061983
+99,does_0,1024.0,3,"[190, 192, 206]",,meco_para_11,p14-lab-control,3,does,5,4,False,0.25,NR,0.030281523539153064
+100,not_0,,0,[],,meco_para_11,p14-lab-control,0,not,5,3,False,0.25,NR,
+101,aim_0,167.0,2,"[195, 237]",,meco_para_11,p14-lab-control,2,aim,5,3,False,0.25,NR,0.0049384906553110956
+102,to_4,,0,[],,meco_para_11,p14-lab-control,0,to,5,2,False,0.25,NR,
+103,mobilize_0,204.0,1,[197],,meco_para_11,p14-lab-control,1,mobilize,5,8,False,0.25,NR,0.00603264726756565
+104,the_6,501.0,1,[209],,meco_para_11,p14-lab-control,1,the,5,3,False,0.25,NR,0.014815471965933287
+105,public_0,415.0,3,"[113, 132, 136]",,meco_para_11,p14-lab-control,3,public,5,6,False,0.25,NR,0.012272297137449728
+106,in_3,,0,[],,meco_para_11,p14-lab-control,0,in,5,2,False,0.25,NR,
+107,support_0,,0,[],,meco_para_11,p14-lab-control,0,support,5,7,False,0.25,NR,
+108,of_4,,0,[],,meco_para_11,p14-lab-control,0,of,5,2,False,0.25,NR,
+109,nature_3,670.0,4,"[185, 201, 202, 210]",,meco_para_11,p14-lab-control,4,nature,5,6,False,0.25,NR,0.01981310622190679
+110,conservation._3,408.0,3,"[186, 187, 242]",,meco_para_11,p14-lab-control,3,conservation.,5,13,False,0.25,NR,0.0120652945351313
+111,"Instead,_0",744.0,6,"[191, 205, 214, 225, 234, 243]",,meco_para_11,p14-lab-control,6,"Instead,",6,8,False,0.25,NR,0.0220014194464159
+112,the_7,,0,[],,meco_para_11,p14-lab-control,0,the,6,3,False,0.25,NR,
+113,organization_2,69.0,1,[240],,meco_para_11,p14-lab-control,1,organization,6,12,False,0.25,NR,0.0020404542228530873
+114,tries_0,66.0,1,[199],,meco_para_11,p14-lab-control,1,tries,6,5,False,0.25,NR,0.0019517388218594747
+115,to_5,142.0,2,"[196, 208]",,meco_para_11,p14-lab-control,2,to,6,2,False,0.25,NR,0.0041991956470309915
+116,influence_0,433.0,5,"[163, 200, 217, 218, 238]",,meco_para_11,p14-lab-control,5,influence,6,9,False,0.25,NR,0.012804589543411403
+117,the_8,,0,[],,meco_para_11,p14-lab-control,0,the,6,3,False,0.25,NR,
+118,actions_0,,0,[],,meco_para_11,p14-lab-control,0,actions,6,7,False,0.25,NR,
+119,of_5,,0,[],,meco_para_11,p14-lab-control,0,of,6,2,False,0.25,NR,
+120,"governments,_0",,0,[],,meco_para_11,p14-lab-control,0,"governments,",6,12,False,0.25,NR,
+121,business_0,546.0,3,"[224, 232, 233]",,meco_para_11,p14-lab-control,3,business,6,8,False,0.25,NR,0.016146202980837472
+122,and_7,,0,[],,meco_para_11,p14-lab-control,0,and,6,3,False,0.25,NR,
+123,other_1,380.0,1,[245],,meco_para_11,p14-lab-control,1,other,6,5,False,0.25,NR,0.011237284125857581
+124,stakeholders_0,106.0,1,[198],,meco_para_11,p14-lab-control,1,stakeholders,6,12,False,0.25,NR,0.0031346108351076414
+125,by_0,,0,[],,meco_para_11,p14-lab-control,0,by,6,2,False,0.25,NR,
+126,providing_0,417.0,2,"[229, 230]",,meco_para_11,p14-lab-control,2,providing,6,9,False,0.25,NR,0.012331440738112136
+127,information_0,105.0,1,[239],,meco_para_11,p14-lab-control,1,information,6,11,False,0.25,NR,0.0031050390347764373
+128,and_8,,0,[],,meco_para_11,p14-lab-control,0,and,6,3,False,0.25,NR,
+129,"advice,_0",177.0,1,[220],,meco_para_11,p14-lab-control,1,"advice,",6,7,False,0.25,NR,0.005234208658623137
+130,and_9,231.0,1,[221],,meco_para_11,p14-lab-control,1,and,6,3,False,0.25,NR,0.006831085876508162
+131,through_0,1399.0,3,"[203, 211, 222]",,meco_para_11,p14-lab-control,3,through,6,7,False,0.25,NR,0.041370948663354626
+132,building_0,677.0,4,"[204, 213, 223, 241]",,meco_para_11,p14-lab-control,4,building,6,8,False,0.25,NR,0.020020108824225218
+133,partnerships._0,,0,[],,meco_para_11,p14-lab-control,0,partnerships.,6,13,False,0.25,NR,
+134,The_9,,0,[],,meco_para_11,p14-lab-control,0,The,7,3,False,0.25,NR,
+135,organization_3,,0,[],,meco_para_11,p14-lab-control,0,organization,7,12,False,0.25,NR,
+136,is_4,,0,[],,meco_para_11,p14-lab-control,0,is,7,2,False,0.25,NR,
+137,best_0,,0,[],,meco_para_11,p14-lab-control,0,best,7,4,False,0.25,NR,
+138,known_0,,0,[],,meco_para_11,p14-lab-control,0,known,7,5,False,0.25,NR,
+139,to_6,,0,[],,meco_para_11,p14-lab-control,0,to,7,2,False,0.25,NR,
+140,the_10,,0,[],,meco_para_11,p14-lab-control,0,the,7,3,False,0.25,NR,
+141,wider_0,,0,[],,meco_para_11,p14-lab-control,0,wider,7,5,False,0.25,NR,
+142,public_1,,0,[],,meco_para_11,p14-lab-control,0,public,7,6,False,0.25,NR,
+143,for_1,,0,[],,meco_para_11,p14-lab-control,0,for,7,3,False,0.25,NR,
+144,compiling_0,,0,[],meco_para_11_qa_3 ,meco_para_11,p14-lab-control,0,compiling,7,9,False,0.25,NR,
+145,and_10,,0,[],meco_para_11_qa_3 ,meco_para_11,p14-lab-control,0,and,7,3,False,0.25,NR,
+146,publishing_0,,0,[],meco_para_11_qa_3 ,meco_para_11,p14-lab-control,0,publishing,7,10,False,0.25,NR,
+147,the_11,,0,[],meco_para_11_qa_3 ,meco_para_11,p14-lab-control,0,the,7,3,False,0.25,NR,
+148,Red_0,,0,[],meco_para_11_qa_3 ,meco_para_11,p14-lab-control,0,Red,7,3,False,0.25,NR,
+149,List_0,,0,[],meco_para_11_qa_3 ,meco_para_11,p14-lab-control,0,List,7,4,False,0.25,NR,
+150,of_6,,0,[],meco_para_11_qa_3 ,meco_para_11,p14-lab-control,0,of,7,2,False,0.25,NR,
+151,Threatened_0,200.0,1,[247],meco_para_11_qa_3 ,meco_para_11,p14-lab-control,1,Threatened,7,10,False,0.25,NR,0.005914360066240833
+152,"Species,_0",,0,[],meco_para_11_qa_3 ,meco_para_11,p14-lab-control,0,"Species,",7,8,False,0.25,NR,
+153,which_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,which,7,5,False,0.25,NR,
+154,assesses_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,assesses,7,8,False,0.25,NR,
+155,the_12,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,the,7,3,False,0.25,NR,
+156,conservation_4,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,conservation,7,12,False,0.25,NR,
+157,status_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,status,7,6,False,0.25,NR,
+158,of_7,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,of,7,2,False,0.25,NR,
+159,species_1,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,species,7,7,False,0.25,NR,
+160,worldwide._0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,worldwide.,7,10,False,0.25,NR,
+161,"Today,_0",,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,"Today,",8,6,False,0.25,NR,
+162,the_13,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,the,8,3,False,0.25,NR,
+163,organization_4,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,organization,8,12,False,0.25,NR,
+164,employs_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,employs,8,7,False,0.25,NR,
+165,approximately_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,approximately,8,13,False,0.25,NR,
+166,one_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,one,8,3,False,0.25,NR,
+167,thousand_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,thousand,8,8,False,0.25,NR,
+168,full-time_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,full-time,8,9,False,0.25,NR,
+169,staff_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,staff,8,5,False,0.25,NR,
+170,in_4,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,in,8,2,False,0.25,NR,
+171,more_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,more,8,4,False,0.25,NR,
+172,than_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,than,8,4,False,0.25,NR,
+173,fifty_0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,fifty,8,5,False,0.25,NR,
+174,countries._0,,0,[],meco_para_11_qa_1 ,meco_para_11,p14-lab-control,0,countries.,8,10,False,0.25,NR,

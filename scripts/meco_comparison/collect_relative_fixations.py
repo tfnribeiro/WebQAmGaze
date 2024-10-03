@@ -1,3 +1,9 @@
+from scipy.stats import spearmanr, entropy
+import pickle
+import yaml
+import pandas as pd
+import numpy as np
+import study
 from os.path import join, isfile, isdir, exists
 from os import listdir, mkdir
 
@@ -6,13 +12,6 @@ import seaborn as sns
 import sys
 
 sys.path.append('../')
-
-import study
-import numpy as np
-import pandas as pd
-import yaml
-import pickle
-from scipy.stats import spearmanr, entropy
 
 
 def word_per_minute(TRT, nwords):
@@ -23,7 +22,8 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
     quality = {}
     # fixations from the QAmGaze dataset
     for experiment_name in experiments:
-        lookup_table = pd.read_csv(f"../experiment_data/set_texts/text_settings_{experiment_name}.csv")
+        lookup_table = pd.read_csv(
+            f"../experiment_data/set_texts/text_settings_{experiment_name}.csv")
         quality[experiment_name] = []
         test_study = study.Study(experiment_name)
         set_n = int(experiment_name.split("_")[2].replace("v", ""))
@@ -35,10 +35,12 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
             if set_n == 1 and set_language == "EN":
                 # The experiment was split into two files (this appends the data)
                 test_study.load_data_from_folder(join("../experiment_data", experiment_name, "trialdata_2.csv"), True,
-                                                 join("../experiment_data", experiment_name, ),
+                                                 join("../experiment_data",
+                                                      experiment_name, ),
                                                  align_data=False)
             test_study.load_data_from_folder(join("../experiment_data", experiment_name, "trialdata.csv"), True,
-                                             join("../experiment_data", experiment_name, ),
+                                             join("../experiment_data",
+                                                  experiment_name, ),
                                              align_data=False)
         else:
             # Handle cases where the data has been moved.
@@ -49,22 +51,25 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
                 if exists(join(dir_path, "trialdata.csv")):
                     # Load the data from PsiTurk
                     test_study.load_data_from_folder(join(dir_path, "trialdata.csv"), True,
-                                                     join("../experiment_data", experiment_name, ),
+                                                     join(
+                                                         "../experiment_data", experiment_name, ),
                                                      align_data=False)
                 else:
                     test_study.load_data_from_folder(dir_path, False, join("../experiment_data", experiment_name, ),
                                                      align_data=False)
         # Align to avoid repeated targets.
-        test_study.align_loaded_data(export_target_dataframes=False, export_feature_dataframes=False)
+        test_study.align_loaded_data(
+            export_target_dataframes=False, export_feature_dataframes=False)
 
         all_workers = [
             worker for worker in test_study.experiment_list
             if not worker.features_series['fixation_error']
-               and not worker.features_series['target_error']
-               and worker.features_series['webgazer_sample_rate'] > 10
-               and worker.features_series['approved_flag'] > 0
-               and worker.features_series['screen_x'] > 1110
-               and worker.features_series['screen_y'] > 615]
+            and not worker.features_series['target_error']
+            and worker.features_series['webgazer_sample_rate'] > 10
+            and worker.features_series['approved_flag'] > 0
+            # and worker.features_series['avg_roi_last_val'] > 20
+            and worker.features_series['screen_x'] > 1110
+            and worker.features_series['screen_y'] > 615]
 
         if WORKERS is not None:
             # filenames with "link" are from volunteers, without from Mturk
@@ -88,9 +93,11 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
             # pdb.set_trace()
 
         for ii, selected_worker in enumerate(all_workers):
-            print(experiment_name, ii, selected_worker.features_series['worker_id'])
+            print(experiment_name, ii,
+                  selected_worker.features_series['worker_id'])
             df_out = pd.DataFrame()
-            quality[experiment_name].append(selected_worker.features_series['avg_roi_last_val'])
+            quality[experiment_name].append(
+                selected_worker.features_series['avg_roi_last_val'])
             # if not isfile(join(out_dir, f"{'_'.join(experiment_name.split('_')[1:])}_{ii}-relfix-feats.csv")):
             if True:
                 all_trials = [selected_worker.features_series['set_trials'][0]] if MECO else \
@@ -100,31 +107,54 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
                 for itrial, trial in enumerate(all_trials):
                     if MECO:
                         if 'meco' not in trial:
-                            import pdb;
+                            import pdb
                             pdb.set_trace()
                         # assert 'meco' in trial
                     try:
-                        df_worker = selected_worker.get_duration_fixation_on_word(trial)
+                        df_worker = selected_worker.get_duration_fixation_on_word(
+                            trial)
                     except IndexError:
-                        import pdb;
+                        import pdb
                         pdb.set_trace()
-                    df_worker = df_worker.rename(columns={'word_id': 'word_id_orig'})
+                    df_worker = df_worker.rename(
+                        columns={'word_id': 'word_id_orig'})
+                    df_worker["worker_id"] = selected_worker.worker_id
                     df_worker['countFix'] = df_worker['FixCount'].astype(int)
-                    df_worker['word_id'] = df_worker['word_id_orig'].apply(lambda x: x.split('_')[0])
+                    df_worker['word_id'] = df_worker['word_id_orig']
+                    if trial == "meco_para_7" and selected_worker.features_series.set_language == 'TR':
+                        # There is a word gettin removed because it has two trailing underscores.
+                        df_worker.loc[df_worker['word_id'].str.match(
+                            "__rengini_0"), "word_id"] = "rengini_0"
+                    df_worker['word_id'] = df_worker['word_id'].apply(
+                        lambda x: x.split('_')[0])
                     df_worker['sentence_id'] = 1
-                    df_worker['word_length'] = df_worker['word_id'].apply(lambda x: len(x))
+                    df_worker['word_length'] = df_worker['word_id'].apply(
+                        lambda x: len(x))
                     df_worker['TRT'] = df_worker['TRT'].astype(float)
                     df_worker['correct_answer'] = None
                     question = True if f"question_{itrial}_correct_flag" in selected_worker.features_series else False
                     df_worker['correct_answer'] = selected_worker.features_series[
-                                                      f"question_{itrial}_correct_flag"] == 1 if question else None
+                        f"question_{itrial}_correct_flag"] == 1 if question else None
                     df_worker['target_to_fixation_ratio'] = selected_worker.features_series[
                         f'question_{itrial}_target_to_fixation_ratio']
-                    df_worker['task_type'] = lookup_table.query("trial_name==@trial").iloc[0].task_type
+                    df_worker['task_type'] = lookup_table.query(
+                        "trial_name==@trial").iloc[0].task_type
 
                     for sen_num, (idx0, idx1) in enumerate(zip(df_worker.query("word_id.str.endswith('.')").index[:-1],
                                                                df_worker.query("word_id.str.endswith('.')").index[1:])):
-                        df_worker.loc[idx0 + 1:idx1, 'sentence_id'] = sen_num + 2
+                        df_worker.loc[idx0+1:idx1, 'sentence_id'] = sen_num + 2
+
+                    # Sentence 6 was terminated early in the WebQAmData, Trial 12 in DE.
+                    if trial == "meco_para_12" and selected_worker.features_series.set_language == 'DE':
+                        df_worker.loc[df_worker.sentence_id > 6,
+                                      "sentence_id"] = df_worker.loc[df_worker.sentence_id > 6, "sentence_id"] - 1
+
+                    # Sentence 1 is too long on WebQAmData, Trial 12 in ES.
+                    if trial == "meco_para_12" and selected_worker.features_series.set_language == 'ES':
+                        index_to_fix = df_worker.loc[df_worker.word_id_orig ==
+                                                     "oficial_0"].index[0]
+                        df_worker.loc[df_worker.index > index_to_fix,
+                                      "sentence_id"] = df_worker.loc[df_worker.index > index_to_fix, "sentence_id"] + 1
 
                     if MECO:
                         for sen_num, sentence in df_worker.groupby('sentence_id'):
@@ -161,7 +191,8 @@ def collect_fixations(experiments, MECO=False, FILTER_QUALITY=False, threshold=N
 
                 df_out.to_csv(join(out_dir, f"{'_'.join(experiment_name.split('_')[1:])}_{ii}-relfix-feats.csv"),
                               encoding="utf-8")
-    pickle.dump(quality, open(f'data_quality_{experiment_name.split("_")[1]}.p', 'wb'))
+    pickle.dump(quality, open(
+        f'data_quality_{experiment_name.split("_")[1]}.p', 'wb'))
 
 
 def average_features_id(language, experiments, WORKERS=None):
@@ -174,7 +205,8 @@ def average_features_id(language, experiments, WORKERS=None):
                        12: ['07', '10', '11', '13', '15']}
     elif language == 'es':
         all_texts = [12]
-        set_to_text = {12: ['01', '02', '03', '04', '05', '06', '07', '08', '09']}
+        set_to_text = {12: ['01', '02', '03',
+                            '04', '05', '06', '07', '08', '09']}
     elif language == 'de':
         if WORKERS == "volunteer_only":
             all_texts = [1]
@@ -205,7 +237,8 @@ def average_features_id(language, experiments, WORKERS=None):
         column_names_trt = []
         column_names_count = []
         # import ipdb;ipdb.set_trace()
-        experiments_subset = [experiment for experiment in experiments if any(id in experiment for id in set_id)]
+        experiments_subset = [experiment for experiment in experiments if any(
+            id in experiment for id in set_id)]
         print(experiments_subset)
         for experiment_name in sorted(experiments_subset):
             workers = [file for file in listdir(out_dir) if file.startswith('_'.join(experiment_name.split('_')[1:]))
@@ -222,24 +255,26 @@ def average_features_id(language, experiments, WORKERS=None):
                 column_names_rel.append(column_rel)
                 column_names_trt.append(column_trt)
                 column_names_count.append(column_count)
+                df_worker["word_id_text_id_task_key"] = df_worker["word_id_orig"] + \
+                    "_" + df_worker["text_id"] + "_" + df_worker["task_type"]
                 if len(df) > 0:
                     try:
-                        # print(df_worker)
-                        df = df.merge(df_worker[['word_id_orig', 'relFix', 'countFix', 'TRT']].rename(
+                        df = df.merge(df_worker[['word_id_text_id_task_key', 'relFix', 'countFix', 'TRT']].rename(
                             columns={'relFix': column_rel, 'TRT': column_trt, 'countFix': column_count}),
-                            on='word_id_orig', how='inner')
+                            on='word_id_text_id_task_key', how='left')
                     except KeyError:
-                        import pdb;
+                        import pdb
                         pdb.set_trace()
                 else:
-                    df = df_worker[['word_id_orig', 'relFix', 'word_id', 'countFix', 'TRT']].rename(
+                    df = df_worker[['word_id_text_id_task_key', 'word_id_orig', 'relFix', 'word_id', 'countFix', 'TRT']].rename(
                         columns={'relFix': column_rel, 'TRT': column_trt, 'countFix': column_count})
         df_out = pd.DataFrame(
             columns=['relFix', 'TRT', 'countFix', 'word_id', 'word_id_orig', 'text_id', 'sentence_id'])
         try:
             df_out['relFix'] = df[column_names_rel].mean(axis=1)
+            df_out['word_id_orig'] = df['word_id_orig']
         except KeyError:
-            import pdb;
+            import pdb
             pdb.set_trace()
         df_out['TRT'] = df[column_names_trt].mean(axis=1)
         df_out['countFix'] = df[column_names_count].mean(axis=1)
@@ -250,7 +285,8 @@ def average_features_id(language, experiments, WORKERS=None):
         df_out['word_length'] = df_worker['word_length']
         print(df_worker.loc[0, 'text_id'])
         print(df_worker.loc[0, 'text_id'].split('_')[2])
-        print(f"{experiment_name.split('_')[1]}_text{df_worker.loc[0, 'text_id'].split('_')[2]}-relfix-feats_avg.csv")
+        print(
+            f"{experiment_name.split('_')[1]}_text{df_worker.loc[0, 'text_id'].split('_')[2]}-relfix-feats_avg.csv")
         df_out.to_csv(join(out_dir,
                            f"{experiment_name.split('_')[1]}_text{df_worker.loc[0, 'text_id'].split('_')[2]}-relfix-feats_avg.csv"),
                       encoding="utf-8")
@@ -264,7 +300,8 @@ def average_features_set(language, experiments, FILTER_CORRECT_ANSWER, FILTER_QU
 
     nfix = []
 
-    entropy_dict = pd.DataFrame(columns=['entropy', 'task_type', 'set', 'error_rate', 'TRT'])
+    entropy_dict = pd.DataFrame(
+        columns=['entropy', 'task_type', 'set', 'error_rate', 'TRT'])
     error_rate = {}
     # average across experiment sets
     for experiment_name in sorted(experiments):
@@ -294,8 +331,10 @@ def average_features_set(language, experiments, FILTER_CORRECT_ANSWER, FILTER_QU
             # collecting true and wrong answers
             for text_id, subdf in df_worker.groupby("text_id"):
                 if text_id + '_' + experiment_name.split("_")[-1][-3:] not in entropy_dict.index:
-                    entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'error_rate'] = []
-                    entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'TRT'] = []
+                    entropy_dict.loc[text_id + '_' +
+                                     experiment_name.split("_")[-1][-3:], 'error_rate'] = []
+                    entropy_dict.loc[text_id + '_' +
+                                     experiment_name.split("_")[-1][-3:], 'TRT'] = []
                 entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'error_rate'].append(
                     subdf.iloc[0]['correct_answer'])
                 entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'TRT'].append(
@@ -342,9 +381,12 @@ def average_features_set(language, experiments, FILTER_CORRECT_ANSWER, FILTER_QU
 
         # # 2: average based on text_id
         for ii, text_id in enumerate(df):
-            df[text_id]['relFix'] = df[text_id][column_names_rel[text_id]].mean(axis=1)
-            df[text_id]['TRT'] = df[text_id][column_names_trt[text_id]].mean(axis=1)
-            df[text_id]['countFix'] = df[text_id][column_names_count[text_id]].mean(axis=1)
+            df[text_id]['relFix'] = df[text_id][column_names_rel[text_id]].mean(
+                axis=1)
+            df[text_id]['TRT'] = df[text_id][column_names_trt[text_id]].mean(
+                axis=1)
+            df[text_id]['countFix'] = df[text_id][column_names_count[text_id]].mean(
+                axis=1)
             df[text_id]['nWorkers'] = len(column_names_rel[text_id])
 
             entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'entropy'] = entropy(
@@ -352,7 +394,7 @@ def average_features_set(language, experiments, FILTER_CORRECT_ANSWER, FILTER_QU
             entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'task_type'] = df[text_id].iloc[0][
                 'task_type']
             entropy_dict.loc[text_id + '_' + experiment_name.split("_")[-1][-3:], 'set'] = experiment_name.split("_")[
-                                                                                               -1][-3:]
+                -1][-3:]
 
             if df[text_id].iloc[0]['task_type'] == 'IS':
                 print(text_id, len(column_names_rel[text_id]), 'Workers')
@@ -363,7 +405,7 @@ def average_features_set(language, experiments, FILTER_CORRECT_ANSWER, FILTER_QU
             if len(df_out) > 0:
                 df_out = pd.concat([df_out, df[text_id][
                     ['word_id', 'word_id_orig', 'text_id', 'sentence_id', 'word_length', 'relFix', 'TRT', 'countFix']]],
-                                   ignore_index=True)
+                    ignore_index=True)
             else:
                 df_out = df[text_id][
                     ['word_id', 'word_id_orig', 'text_id', 'sentence_id', 'word_length', 'relFix', 'TRT', 'countFix']]
@@ -374,7 +416,8 @@ def average_features_set(language, experiments, FILTER_CORRECT_ANSWER, FILTER_QU
         if len(df_out) > 0:
             filename = f"{'_'.join(experiment_name.split('_')[1:])}-relfix-feats_avg"
             filename = filename + '_correct' if FILTER_CORRECT_ANSWER else filename
-            filename = filename + f'_vision_{vision}' if FILTER_VISION else filename
+            filename = filename + \
+                f'_vision_{vision}' if FILTER_VISION else filename
 
             df_out.to_csv(join(out_dir, filename + '.csv'), encoding="utf-8")
 
@@ -408,6 +451,9 @@ if __name__ == '__main__':
         print(experiments)
         print()
 
+        MECO = False
+        WORKERS = None  # "mturk_only", "volunteer_only" or None (= "all")
+
         FILTER_QUALITY = False
         threshold = None
         if FILTER_QUALITY and threshold is not None:
@@ -417,11 +463,12 @@ if __name__ == '__main__':
         if not isdir(out_dir):
             mkdir(out_dir)
 
-        collect_fixations(experiments, MECO=MECO, FILTER_QUALITY=FILTER_QUALITY, threshold=threshold, WORKERS=WORKERS)
+        collect_fixations(experiments, MECO=MECO, FILTER_QUALITY=FILTER_QUALITY,
+                          threshold=threshold, WORKERS=WORKERS)
 
         FILTER_CORRECT_ANSWER = False
         FILTER_VISION = False
-        vision = 'normal' #"glasses", we only have this information for the data recorded at KU
+        vision = 'normal'  # "glasses", we only have this information for the data recorded at KU
 
         if MECO:
             # this function averages across MECO ids (relevant for WebQAmGaze dataset paper)

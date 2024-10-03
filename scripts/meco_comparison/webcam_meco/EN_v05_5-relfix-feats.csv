@@ -1,200 +1,952 @@
-,word_id_orig,TRT,FixCount,scanPath,Span_word_is_in,text_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
-0,Wine_0,,0,[],,meco_para_7,0,Wine,1,4,True,0.1518324607329843,NR,
-1,tasting_0,,0,[],,meco_para_7,0,tasting,1,7,True,0.1518324607329843,NR,
-2,is_0,,0,[],,meco_para_7,0,is,1,2,True,0.1518324607329843,NR,
-3,the_0,,0,[],,meco_para_7,0,the,1,3,True,0.1518324607329843,NR,
-4,sensory_0,206.0,2,"[35, 42]",,meco_para_7,2,sensory,1,7,True,0.1518324607329843,NR,0.2327683615819209
-5,examination_0,168.0,2,"[36, 44]",,meco_para_7,2,examination,1,11,True,0.1518324607329843,NR,0.18983050847457628
-6,and_0,,0,[],,meco_para_7,0,and,1,3,True,0.1518324607329843,NR,
-7,evaluation_0,136.0,1,[18],,meco_para_7,1,evaluation,1,10,True,0.1518324607329843,NR,0.1536723163841808
-8,of_0,273.0,3,"[11, 15, 17]",,meco_para_7,3,of,1,2,True,0.1518324607329843,NR,0.30847457627118646
-9,wine._1,102.0,1,[4],,meco_para_7,1,wine.,1,5,True,0.1518324607329843,NR,0.1152542372881356
-10,While_0,203.0,2,"[5, 10]",,meco_para_7,2,While,2,5,True,0.1518324607329843,NR,0.11020629750271443
-11,the_1,,0,[],,meco_para_7,0,the,2,3,True,0.1518324607329843,NR,
-12,practice_0,,0,[],,meco_para_7,0,practice,2,8,True,0.1518324607329843,NR,
-13,of_1,71.0,1,[117],,meco_para_7,1,of,2,2,True,0.1518324607329843,NR,0.03854505971769816
-14,wine_2,,0,[],,meco_para_7,0,wine,2,4,True,0.1518324607329843,NR,
-15,tasting_1,67.0,1,[34],,meco_para_7,1,tasting,2,7,True,0.1518324607329843,NR,0.03637350705754615
-16,is_1,,0,[],,meco_para_7,0,is,2,2,True,0.1518324607329843,NR,
-17,as_0,,0,[],,meco_para_7,0,as,2,2,True,0.1518324607329843,NR,
-18,ancient_0,172.0,2,"[57, 62]",,meco_para_7,2,ancient,2,7,True,0.1518324607329843,NR,0.09337676438653637
-19,as__0,,0,[],,meco_para_7,0,as,2,2,True,0.1518324607329843,NR,
-20,its_0,137.0,1,[47],,meco_para_7,1,its,2,3,True,0.1518324607329843,NR,0.0743756786102063
-21,"production,_0",236.0,3,"[14, 21, 22]",,meco_para_7,3,"production,",2,11,True,0.1518324607329843,NR,0.1281216069489685
-22,a_0,,0,[],,meco_para_7,0,a,2,1,True,0.1518324607329843,NR,
-23,more_0,70.0,1,[9],,meco_para_7,1,more,2,4,True,0.1518324607329843,NR,0.038002171552660155
-24,formalized_0,272.0,3,"[6, 7, 8]",,meco_para_7,3,formalized,2,10,True,0.1518324607329843,NR,0.1476655808903366
-25,methodology_0,,0,[],,meco_para_7,0,methodology,2,11,True,0.1518324607329843,NR,
-26,has_0,,0,[],,meco_para_7,0,has,2,3,True,0.1518324607329843,NR,
-27,slowly_0,,0,[],,meco_para_7,0,slowly,2,6,True,0.1518324607329843,NR,
-28,become_0,,0,[],,meco_para_7,0,become,2,6,True,0.1518324607329843,NR,
-29,established_0,239.0,3,"[37, 61, 63]",,meco_para_7,3,established,2,11,True,0.1518324607329843,NR,0.12975027144408252
-30,from_0,205.0,2,"[48, 64]",,meco_para_7,2,from,2,4,True,0.1518324607329843,NR,0.11129207383279044
-31,the_2,,0,[],,meco_para_7,0,the,2,3,True,0.1518324607329843,NR,
-32,late_0,,0,[],,meco_para_7,0,late,2,4,True,0.1518324607329843,NR,
-33,middle_0,170.0,2,"[12, 13]",,meco_para_7,2,middle,2,6,True,0.1518324607329843,NR,0.09229098805646037
-34,ages_0,,0,[],,meco_para_7,0,ages,2,4,True,0.1518324607329843,NR,
-35,onwards._0,,0,[],,meco_para_7,0,onwards.,2,8,True,0.1518324607329843,NR,
-36,"Modern,_0",,0,[],,meco_para_7,0,"Modern,",3,7,True,0.1518324607329843,NR,
-37,professional_0,,0,[],,meco_para_7,0,professional,3,12,True,0.1518324607329843,NR,
-38,wine_3,,0,[],,meco_para_7,0,wine,3,4,True,0.1518324607329843,NR,
-39,tasters_0,,0,[],,meco_para_7,0,tasters,3,7,True,0.1518324607329843,NR,
-40,use_0,,0,[],,meco_para_7,0,use,3,3,True,0.1518324607329843,NR,
-41,a_1,68.0,1,[68],,meco_para_7,1,a,3,1,True,0.1518324607329843,NR,0.03451776649746193
-42,constantly_0,169.0,1,[38],,meco_para_7,1,constantly,3,10,True,0.1518324607329843,NR,0.08578680203045685
-43,evolving_0,102.0,1,[54],,meco_para_7,1,evolving,3,8,True,0.1518324607329843,NR,0.05177664974619289
-44,specialized_0,338.0,3,"[41, 45, 53]",,meco_para_7,3,specialized,3,11,True,0.1518324607329843,NR,0.1715736040609137
-45,terminology_0,,0,[],,meco_para_7,0,terminology,3,11,True,0.1518324607329843,NR,
-46,which_0,102.0,1,[120],,meco_para_7,1,which,3,5,True,0.1518324607329843,NR,0.05177664974619289
-47,is_2,170.0,1,[33],,meco_para_7,1,is,3,2,True,0.1518324607329843,NR,0.08629441624365482
-48,used_0,,0,[],,meco_para_7,0,used,3,4,True,0.1518324607329843,NR,
-49,to_0,,0,[],,meco_para_7,0,to,3,2,True,0.1518324607329843,NR,
-50,describe_0,,0,[],,meco_para_7,0,describe,3,8,True,0.1518324607329843,NR,
-51,the_3,,0,[],,meco_para_7,0,the,3,3,True,0.1518324607329843,NR,
-52,range_0,68.0,1,[69],,meco_para_7,1,range,3,5,True,0.1518324607329843,NR,0.03451776649746193
-53,of_2,,0,[],,meco_para_7,0,of,3,2,True,0.1518324607329843,NR,
-54,perceived_0,272.0,2,"[39, 59]",,meco_para_7,2,perceived,3,9,True,0.1518324607329843,NR,0.13807106598984772
-55,"flavors,_0",170.0,2,"[40, 60]",,meco_para_7,2,"flavors,",3,8,True,0.1518324607329843,NR,0.08629441624365482
-56,aromas_0,137.0,2,"[26, 49]",,meco_para_7,2,aromas,3,6,True,0.1518324607329843,NR,0.06954314720812182
-57,and__0,238.0,2,"[25, 52]",,meco_para_7,2,and,3,3,True,0.1518324607329843,NR,0.12081218274111676
-58,general_0,67.0,1,[27],,meco_para_7,1,general,3,7,True,0.1518324607329843,NR,0.03401015228426396
-59,characteristics_0,69.0,1,[30],meco_para_7_qa_0 ,meco_para_7,1,characteristics,3,15,True,0.1518324607329843,NR,0.0350253807106599
-60,of_3,,0,[],meco_para_7_qa_0 ,meco_para_7,0,of,3,2,True,0.1518324607329843,NR,
-61,a_2,,0,[],meco_para_7_qa_0 ,meco_para_7,0,a,3,1,True,0.1518324607329843,NR,
-62,wine._4,,0,[],meco_para_7_qa_0 ,meco_para_7,0,wine.,3,5,True,0.1518324607329843,NR,
-63,In_0,,0,[],meco_para_7_qa_0 ,meco_para_7,0,In,4,2,True,0.1518324607329843,NR,
-64,recent_0,69.0,1,[108],meco_para_7_qa_0 ,meco_para_7,1,recent,4,6,True,0.1518324607329843,NR,0.08455882352941177
-65,"years,_0",137.0,2,"[115, 116]",meco_para_7_qa_0 ,meco_para_7,2,"years,",4,6,True,0.1518324607329843,NR,0.16789215686274508
-66,results_0,,0,[],meco_para_7_qa_0 ,meco_para_7,0,results,4,7,True,0.1518324607329843,NR,
-67,challenging_0,,0,[],meco_para_7_qa_0 ,meco_para_7,0,challenging,4,11,True,0.1518324607329843,NR,
-68,the_4,,0,[],meco_para_7_qa_0 ,meco_para_7,0,the,4,3,True,0.1518324607329843,NR,
-69,reliability_0,169.0,2,"[50, 51]",meco_para_7_qa_0 ,meco_para_7,2,reliability,4,11,True,0.1518324607329843,NR,0.20710784313725492
-70,of_4,,0,[],meco_para_7_qa_0 ,meco_para_7,0,of,4,2,True,0.1518324607329843,NR,
-71,wine_5,,0,[],meco_para_7_qa_0 ,meco_para_7,0,wine,4,4,True,0.1518324607329843,NR,
-72,tasting_2,103.0,1,[31],meco_para_7_qa_0 ,meco_para_7,1,tasting,4,7,True,0.1518324607329843,NR,0.12622549019607843
-73,in_1,,0,[],meco_para_7_qa_0 meco_para_7_qa_1 ,meco_para_7,0,in,4,2,True,0.1518324607329843,NR,
-74,both_0,102.0,1,[128],meco_para_7_qa_0 meco_para_7_qa_1 ,meco_para_7,1,both,4,4,True,0.1518324607329843,NR,0.125
-75,experts_0,,0,[],meco_para_7_qa_0 meco_para_7_qa_1 ,meco_para_7,0,experts,4,7,True,0.1518324607329843,NR,
-76,and_1,68.0,1,[119],meco_para_7_qa_0 ,meco_para_7,1,and,4,3,True,0.1518324607329843,NR,0.08333333333333333
-77,consumers_0,102.0,1,[2],meco_para_7_qa_0 ,meco_para_7,1,consumers,4,9,True,0.1518324607329843,NR,0.125
-78,have_0,66.0,1,[109],meco_para_7_qa_0 ,meco_para_7,1,have,4,4,True,0.1518324607329843,NR,0.08088235294117647
-79,surfaced._0,,0,[],meco_para_7_qa_0 ,meco_para_7,0,surfaced.,4,9,True,0.1518324607329843,NR,
-80,For_0,,0,[],meco_para_7_qa_0 ,meco_para_7,0,For,5,3,True,0.1518324607329843,NR,
-81,"example,_0",136.0,1,[86],meco_para_7_qa_0 ,meco_para_7,1,"example,",5,8,True,0.1518324607329843,NR,0.03926096997690531
-82,studies_0,,0,[],meco_para_7_qa_0 ,meco_para_7,0,studies,5,7,True,0.1518324607329843,NR,
-83,showed_0,,0,[],meco_para_7_qa_0 ,meco_para_7,0,showed,5,6,True,0.1518324607329843,NR,
-84,that_0,,0,[],,meco_para_7,0,that,5,4,True,0.1518324607329843,NR,
-85,people_0,102.0,1,[107],,meco_para_7,1,people,5,6,True,0.1518324607329843,NR,0.029445727482678985
-86,expect_0,,0,[],,meco_para_7,0,expect,5,6,True,0.1518324607329843,NR,
-87,more_1,,0,[],,meco_para_7,0,more,5,4,True,0.1518324607329843,NR,
-88,expensive_0,,0,[],,meco_para_7,0,expensive,5,9,True,0.1518324607329843,NR,
-89,wine_6,,0,[],,meco_para_7,0,wine,5,4,True,0.1518324607329843,NR,
-90,to_1,69.0,1,[110],,meco_para_7,1,to,5,2,True,0.1518324607329843,NR,0.01991916859122402
-91,have_1,344.0,3,"[111, 113, 114]",,meco_para_7,3,have,5,4,True,0.1518324607329843,NR,0.09930715935334873
-92,more_2,,0,[],,meco_para_7,0,more,5,4,True,0.1518324607329843,NR,
-93,desirable_0,,0,[],,meco_para_7,0,desirable,5,9,True,0.1518324607329843,NR,
-94,characteristics_1,,0,[],,meco_para_7,0,characteristics,5,15,True,0.1518324607329843,NR,
-95,than_0,,0,[],,meco_para_7,0,than,5,4,True,0.1518324607329843,NR,
-96,less_0,,0,[],,meco_para_7,0,less,5,4,True,0.1518324607329843,NR,
-97,expensive_1,,0,[],,meco_para_7,0,expensive,5,9,True,0.1518324607329843,NR,
-98,wine:_0,,0,[],,meco_para_7,0,wine:,5,5,True,0.1518324607329843,NR,
-99,When_0,,0,[],,meco_para_7,0,When,5,4,True,0.1518324607329843,NR,
-100,tasters_1,,1,[0],,meco_para_7,1,tasters,5,7,True,0.1518324607329843,NR,
-101,are_0,170.0,1,[1],,meco_para_7,1,are,5,3,True,0.1518324607329843,NR,0.04907621247113164
-102,given_0,69.0,1,[125],,meco_para_7,1,given,5,5,True,0.1518324607329843,NR,0.01991916859122402
-103,wine_7,203.0,2,"[112, 124]",,meco_para_7,2,wine,5,4,True,0.1518324607329843,NR,0.058602771362586605
-104,that_1,134.0,1,[122],,meco_para_7,1,that,5,4,True,0.1518324607329843,NR,0.03868360277136259
-105,they_0,67.0,1,[77],,meco_para_7,1,they,5,4,True,0.1518324607329843,NR,0.019341801385681295
-106,are_1,101.0,1,[88],,meco_para_7,1,are,5,3,True,0.1518324607329843,NR,0.02915704387990762
-107,falsely_0,,0,[],,meco_para_7,0,falsely,5,7,True,0.1518324607329843,NR,
-108,told_0,,0,[],,meco_para_7,0,told,5,4,True,0.1518324607329843,NR,
-109,is_3,,0,[],,meco_para_7,0,is,5,2,True,0.1518324607329843,NR,
-110,expensive_2,,0,[],,meco_para_7,0,expensive,5,9,True,0.1518324607329843,NR,
-111,they_1,,0,[],,meco_para_7,0,they,5,4,True,0.1518324607329843,NR,
-112,virtually_0,,0,[],,meco_para_7,0,virtually,5,9,True,0.1518324607329843,NR,
-113,always_0,203.0,2,"[78, 129]",,meco_para_7,2,always,5,6,True,0.1518324607329843,NR,0.058602771362586605
-114,report_0,,0,[],,meco_para_7,0,report,5,6,True,0.1518324607329843,NR,
-115,it_0,,0,[],,meco_para_7,0,it,5,2,True,0.1518324607329843,NR,
-116,as_1,,0,[],,meco_para_7,0,as,5,2,True,0.1518324607329843,NR,
-117,tasting_3,203.0,2,"[70, 126]",,meco_para_7,2,tasting,5,7,True,0.1518324607329843,NR,0.058602771362586605
-118,better_0,444.0,2,"[71, 104]",,meco_para_7,2,better,5,6,True,0.1518324607329843,NR,0.12817551963048499
-119,than_1,168.0,2,"[73, 105]",,meco_para_7,2,than,5,4,True,0.1518324607329843,NR,0.04849884526558892
-120,the_5,,0,[],,meco_para_7,0,the,5,3,True,0.1518324607329843,NR,
-121,very_0,,0,[],,meco_para_7,0,very,5,4,True,0.1518324607329843,NR,
-122,same_0,,0,[],,meco_para_7,0,same,5,4,True,0.1518324607329843,NR,
-123,wine_8,67.0,1,[89],,meco_para_7,1,wine,5,4,True,0.1518324607329843,NR,0.019341801385681295
-124,when_1,68.0,1,[99],,meco_para_7,1,when,5,4,True,0.1518324607329843,NR,0.019630484988452657
-125,they_2,375.0,2,"[79, 147]",,meco_para_7,2,they,5,4,True,0.1518324607329843,NR,0.10825635103926097
-126,are_2,169.0,1,[146],,meco_para_7,1,are,5,3,True,0.1518324607329843,NR,0.048787528868360276
-127,told_1,,0,[],,meco_para_7,0,told,5,4,True,0.1518324607329843,NR,
-128,that_2,,0,[],,meco_para_7,0,that,5,4,True,0.1518324607329843,NR,
-129,it_1,,0,[],,meco_para_7,0,it,5,2,True,0.1518324607329843,NR,
-130,is_4,,0,[],,meco_para_7,0,is,5,2,True,0.1518324607329843,NR,
-131,inexpensive._0,372.0,3,"[93, 123, 131]",,meco_para_7,3,inexpensive.,5,12,True,0.1518324607329843,NR,0.10739030023094688
-132,Other_0,170.0,2,"[76, 84]",,meco_para_7,2,Other,6,5,True,0.1518324607329843,NR,0.08208594881699662
-133,studies_1,273.0,1,[127],,meco_para_7,1,studies,6,7,True,0.1518324607329843,NR,0.13182037662964752
-134,show_0,,0,[],,meco_para_7,0,show,6,4,True,0.1518324607329843,NR,
-135,that_3,,0,[],,meco_para_7,0,that,6,4,True,0.1518324607329843,NR,
-136,tasters’_0,,0,[],,meco_para_7,0,tasters’,6,8,True,0.1518324607329843,NR,
-137,judgment_0,103.0,1,[90],,meco_para_7,1,judgment,6,8,True,0.1518324607329843,NR,0.049734427812650896
-138,can_0,,0,[],,meco_para_7,0,can,6,3,True,0.1518324607329843,NR,
-139,be_0,,0,[],,meco_para_7,0,be,6,2,True,0.1518324607329843,NR,
-140,prejudiced_0,372.0,3,"[80, 158, 159]",,meco_para_7,3,prejudiced,6,10,True,0.1518324607329843,NR,0.1796233703524867
-141,by_0,69.0,1,[130],,meco_para_7,1,by,6,2,True,0.1518324607329843,NR,0.03331723804925157
-142,knowing_0,408.0,2,"[136, 137]",,meco_para_7,2,knowing,6,7,True,0.1518324607329843,NR,0.1970062771607919
-143,details_0,,0,[],,meco_para_7,0,details,6,7,True,0.1518324607329843,NR,
-144,of_5,,0,[],,meco_para_7,0,of,6,2,True,0.1518324607329843,NR,
-145,a_3,270.0,2,"[83, 132]",,meco_para_7,2,a,6,1,True,0.1518324607329843,NR,0.13037180106228874
-146,"wine,_9",202.0,3,"[66, 74, 94]",,meco_para_7,3,"wine,",6,5,True,0.1518324607329843,NR,0.0975374215354901
-147,such_0,68.0,1,[95],,meco_para_7,1,such,6,4,True,0.1518324607329843,NR,0.03283437952679865
-148,as__1,,0,[],,meco_para_7,0,as,6,2,True,0.1518324607329843,NR,
-149,geographic_0,,0,[],,meco_para_7,0,geographic,6,10,True,0.1518324607329843,NR,
-150,"origin,_0",,0,[],meco_para_7_qa_2 ,meco_para_7,0,"origin,",6,7,True,0.1518324607329843,NR,
-151,"reputation,_0",,0,[],meco_para_7_qa_2 ,meco_para_7,0,"reputation,",6,11,True,0.1518324607329843,NR,
-152,or_0,,0,[],meco_para_7_qa_2 ,meco_para_7,0,or,6,2,True,0.1518324607329843,NR,
-153,other_1,,0,[],meco_para_7_qa_2 ,meco_para_7,0,other,6,5,True,0.1518324607329843,NR,
-154,considerations._0,136.0,2,"[91, 145]",meco_para_7_qa_2 ,meco_para_7,2,considerations.,6,15,True,0.1518324607329843,NR,0.0656687590535973
-155,Objective_0,918.0,9,"[92, 102, 138, 139, 141, 142, 153, 154, 161]",meco_para_7_qa_2 ,meco_para_7,9,Objective,7,9,True,0.1518324607329843,NR,0.30712612914018067
-156,wine_10,340.0,4,"[67, 72, 140, 143]",meco_para_7_qa_2 ,meco_para_7,4,wine,7,4,True,0.1518324607329843,NR,0.11375041820006691
-157,tasting_4,273.0,1,[75],meco_para_7_qa_2 ,meco_para_7,1,tasting,7,7,True,0.1518324607329843,NR,0.09133489461358314
-158,therefore_0,238.0,1,[96],meco_para_7_qa_2 ,meco_para_7,1,therefore,7,9,True,0.1518324607329843,NR,0.07962529274004684
-159,requires_0,,0,[],meco_para_7_qa_2 ,meco_para_7,0,requires,7,8,True,0.1518324607329843,NR,
-160,the_6,,0,[],meco_para_7_qa_2 ,meco_para_7,0,the,7,3,True,0.1518324607329843,NR,
-161,wine_11,,0,[],meco_para_7_qa_2 ,meco_para_7,0,wine,7,4,True,0.1518324607329843,NR,
-162,to_2,,0,[],meco_para_7_qa_2 ,meco_para_7,0,to,7,2,True,0.1518324607329843,NR,
-163,be_1,,0,[],meco_para_7_qa_2 ,meco_para_7,0,be,7,2,True,0.1518324607329843,NR,
-164,served_0,,0,[],meco_para_7_qa_2 ,meco_para_7,0,served,7,6,True,0.1518324607329843,NR,
-165,blind_0,68.0,1,[135],meco_para_7_qa_2 ,meco_para_7,1,blind,7,5,True,0.1518324607329843,NR,0.022750083640013383
-166,-_0,,0,[],meco_para_7_qa_2 ,meco_para_7,0,-,7,1,True,0.1518324607329843,NR,
-167,that_4,303.0,3,"[134, 162, 163]",meco_para_7_qa_2 ,meco_para_7,3,that,7,4,True,0.1518324607329843,NR,0.1013716962194714
-168,"is,_5",102.0,1,[148],meco_para_7_qa_2 ,meco_para_7,1,"is,",7,3,True,0.1518324607329843,NR,0.03412512546002008
-169,without_0,441.0,5,"[101, 144, 155, 166, 167]",meco_para_7_qa_2 ,meco_para_7,5,without,7,7,True,0.1518324607329843,NR,0.14754098360655737
-170,the_7,239.0,1,[152],meco_para_7_qa_2 ,meco_para_7,1,the,7,3,True,0.1518324607329843,NR,0.07995985279357645
-171,taster_0,67.0,1,[97],meco_para_7_qa_2 ,meco_para_7,1,taster,7,6,True,0.1518324607329843,NR,0.022415523586483774
-172,having_0,,0,[],meco_para_7_qa_2 ,meco_para_7,0,having,7,6,True,0.1518324607329843,NR,
-173,seen_0,,0,[],meco_para_7_qa_2 ,meco_para_7,0,seen,7,4,True,0.1518324607329843,NR,
-174,the_8,,0,[],meco_para_7_qa_2 ,meco_para_7,0,the,7,3,True,0.1518324607329843,NR,
-175,label_0,,0,[],,meco_para_7,0,label,7,5,True,0.1518324607329843,NR,
-176,or_1,,0,[],,meco_para_7,0,or,7,2,True,0.1518324607329843,NR,
-177,bottle_0,,0,[],,meco_para_7,0,bottle,7,6,True,0.1518324607329843,NR,
-178,shape._0,,0,[],,meco_para_7,0,shape.,7,6,True,0.1518324607329843,NR,
-179,Blind_1,,0,[],,meco_para_7,0,Blind,8,5,True,0.1518324607329843,NR,
-180,tasting_5,,0,[],,meco_para_7,0,tasting,8,7,True,0.1518324607329843,NR,
-181,may_0,273.0,1,[189],,meco_para_7,1,may,8,3,True,0.1518324607329843,NR,0.11313717364276833
-182,also_0,134.0,2,"[149, 172]",,meco_para_7,2,also,8,4,True,0.1518324607329843,NR,0.055532532117695814
-183,involve’_0,408.0,3,"[151, 168, 175]",,meco_para_7,3,involve’,8,8,True,0.1518324607329843,NR,0.1690841276419395
-184,serving_0,67.0,1,[183],,meco_para_7,1,serving,8,7,True,0.1518324607329843,NR,0.027766266058847907
-185,the_9,,0,[],,meco_para_7,0,the,8,3,True,0.1518324607329843,NR,
-186,wine_12,,0,[],,meco_para_7,0,wine,8,4,True,0.1518324607329843,NR,
-187,from_1,,0,[],,meco_para_7,0,from,8,4,True,0.1518324607329843,NR,
-188,a_4,,0,[],,meco_para_7,0,a,8,1,True,0.1518324607329843,NR,
-189,black_0,,0,[],meco_para_7_qa_3 ,meco_para_7,0,black,8,5,True,0.1518324607329843,NR,
-190,wine_13,,0,[],meco_para_7_qa_3 ,meco_para_7,0,wine,8,4,True,0.1518324607329843,NR,
-191,glass_0,,0,[],meco_para_7_qa_3 ,meco_para_7,0,glass,8,5,True,0.1518324607329843,NR,
-192,to_3,,0,[],meco_para_7_qa_3 ,meco_para_7,0,to,8,2,True,0.1518324607329843,NR,
-193,mask_0,70.0,1,[187],meco_para_7_qa_3 ,meco_para_7,1,mask,8,4,True,0.1518324607329843,NR,0.029009531703273934
-194,the_10,409.0,3,"[185, 186, 188]",meco_para_7_qa_3 ,meco_para_7,3,the,8,3,True,0.1518324607329843,NR,0.16949854952341484
-195,color_0,,0,[],meco_para_7_qa_3 ,meco_para_7,0,color,8,5,True,0.1518324607329843,NR,
-196,of_6,,0,[],meco_para_7_qa_3 ,meco_para_7,0,of,8,2,True,0.1518324607329843,NR,
-197,the_11,373.0,3,"[164, 178, 190]",meco_para_7_qa_3 ,meco_para_7,3,the,8,3,True,0.1518324607329843,NR,0.15457936179030252
-198,wine._14,679.0,5,"[156, 165, 173, 174, 180]",meco_para_7_qa_3 ,meco_para_7,5,wine.,8,5,True,0.1518324607329843,NR,0.2813924575217571
+,word_id_orig,TRT,FixCount,Scan_path,Span_word_is_in,text_id,worker_id,countFix,word_id,sentence_id,word_length,correct_answer,target_to_fixation_ratio,task_type,relFix
+0,Although_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,Although,1,8,True,0.0,IS,
+1,the_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+2,reciprocating_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,reciprocating,1,13,True,0.0,IS,
+3,steam_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,steam,1,5,True,0.0,IS,
+4,engine_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,engine,1,6,True,0.0,IS,
+5,is_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,is,1,2,True,0.0,IS,
+6,no_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,no,1,2,True,0.0,IS,
+7,longer_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,longer,1,6,True,0.0,IS,
+8,in_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,in,1,2,True,0.0,IS,
+9,widespread_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,widespread,1,10,True,0.0,IS,
+10,commercial_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,commercial,1,10,True,0.0,IS,
+11,"use,_0",,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,"use,",1,4,True,0.0,IS,
+12,various_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,various,1,7,True,0.0,IS,
+13,companies_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,companies,1,9,True,0.0,IS,
+14,are_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,are,1,3,True,0.0,IS,
+15,exploring_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,exploring,1,9,True,0.0,IS,
+16,or_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,or,1,2,True,0.0,IS,
+17,exploiting_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,exploiting,1,10,True,0.0,IS,
+18,the_1,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+19,potential_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,potential,1,9,True,0.0,IS,
+20,of_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,of,1,2,True,0.0,IS,
+21,the_2,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+22,engine_1,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,engine,1,6,True,0.0,IS,
+23,as_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,as,1,2,True,0.0,IS,
+24,an__0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,an,1,2,True,0.0,IS,
+25,alternative_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,alternative,1,11,True,0.0,IS,
+26,to_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,to,1,2,True,0.0,IS,
+27,internal_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,internal,1,8,True,0.0,IS,
+28,combustion_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,combustion,1,10,True,0.0,IS,
+29,engines._0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,engines.,1,8,True,0.0,IS,
+30,The_3,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,The,2,3,True,0.0,IS,
+31,company_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,company,2,7,True,0.0,IS,
+32,Energiprojekt_0,,0,[],a_Steamengine_3_qa_0 ,a_Steamengine_3,A3FPXYVABXB9IZ,0,Energiprojekt,2,13,True,0.0,IS,
+33,AB_0,,0,[],a_Steamengine_3_qa_0 ,a_Steamengine_3,A3FPXYVABXB9IZ,0,AB,2,2,True,0.0,IS,
+34,in_1,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,in,2,2,True,0.0,IS,
+35,Sweden_0,,0,[],a_Steamengine_3_qa_1 ,a_Steamengine_3,A3FPXYVABXB9IZ,0,Sweden,2,6,True,0.0,IS,
+36,has_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,has,2,3,True,0.0,IS,
+37,made_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,made,2,4,True,0.0,IS,
+38,progress_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,progress,2,8,True,0.0,IS,
+39,in_2,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,in,2,2,True,0.0,IS,
+40,using_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,using,2,5,True,0.0,IS,
+41,modern’_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,modern’,2,7,True,0.0,IS,
+42,materials_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,materials,2,9,True,0.0,IS,
+43,for_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,for,2,3,True,0.0,IS,
+44,harnessing_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,harnessing,2,10,True,0.0,IS,
+45,the_4,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+46,power_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,power,2,5,True,0.0,IS,
+47,of_1,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+48,steam._1,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,steam.,2,6,True,0.0,IS,
+49,The_5,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,The,3,3,True,0.0,IS,
+50,efficiency_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,efficiency,3,10,True,0.0,IS,
+51,of_2,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,of,3,2,True,0.0,IS,
+52,Energiprojekt's_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,Energiprojekt's,3,15,True,0.0,IS,
+53,steam_2,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,steam,3,5,True,0.0,IS,
+54,engine_2,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,engine,3,6,True,0.0,IS,
+55,reaches_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,reaches,3,7,True,0.0,IS,
+56,some_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,some,3,4,True,0.0,IS,
+57,27-30%_0,,0,[],a_Steamengine_3_qa_4 ,a_Steamengine_3,A3FPXYVABXB9IZ,0,27-30%,3,6,True,0.0,IS,
+58,on__0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,on,3,2,True,0.0,IS,
+59,high-pressure_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,high-pressure,3,13,True,0.0,IS,
+60,engines._1,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,engines.,3,8,True,0.0,IS,
+61,It_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,It,4,2,True,0.0,IS,
+62,is_1,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,is,4,2,True,0.0,IS,
+63,a__0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,a,4,1,True,0.0,IS,
+64,"single-step,_0",,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,"single-step,",4,12,True,0.0,IS,
+65,5-cylinder_0,,0,[],a_Steamengine_3_qa_2 ,a_Steamengine_3,A3FPXYVABXB9IZ,0,5-cylinder,4,10,True,0.0,IS,
+66,engine_3,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,engine,4,6,True,0.0,IS,
+67,(no_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,(no,4,3,True,0.0,IS,
+68,compound)_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,compound),4,9,True,0.0,IS,
+69,with_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,with,4,4,True,0.0,IS,
+70,superheated_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,superheated,4,11,True,0.0,IS,
+71,steam_3,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,steam,4,5,True,0.0,IS,
+72,and_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,and,4,3,True,0.0,IS,
+73,consumes_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,consumes,4,8,True,0.0,IS,
+74,approx._0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,approx.,4,7,True,0.0,IS,
+75,4_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,4,1,1,True,0.0,IS,
+76,kg_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,kg,1,2,True,0.0,IS,
+77,(88_0,,0,[],a_Steamengine_3_qa_3 ,a_Steamengine_3,A3FPXYVABXB9IZ,0,(88,1,3,True,0.0,IS,
+78,Ib)_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,Ib),1,3,True,0.0,IS,
+79,of_3,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,of,1,2,True,0.0,IS,
+80,steam_4,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,steam,1,5,True,0.0,IS,
+81,per_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,per,1,3,True,0.0,IS,
+82,kWh[not_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,kWh[not,1,7,True,0.0,IS,
+83,in_3,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,in,1,2,True,0.0,IS,
+84,citation_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,citation,1,8,True,0.0,IS,
+85,given]_0,,0,[],,a_Steamengine_3,A3FPXYVABXB9IZ,0,given],1,6,True,0.0,IS,
+0,Professional_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Professional,1,12,True,0.0,IS,
+1,sports_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,sports,1,6,True,0.0,IS,
+2,teams_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,teams,1,5,True,0.0,IS,
+3,in_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,in,1,2,True,0.0,IS,
+4,Southern_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Southern,1,8,True,0.0,IS,
+5,California_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,California,1,10,True,0.0,IS,
+6,include_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,include,1,7,True,0.0,IS,
+7,teams_1,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,teams,1,5,True,0.0,IS,
+8,from_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,from,1,4,True,0.0,IS,
+9,the_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+10,NFL_0,,0,[],a_SouthernCalifornia_3_qa_0 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,NFL,1,3,True,0.0,IS,
+11,(Los_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,(Los,1,4,True,0.0,IS,
+12,Angeles_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Angeles,1,7,True,0.0,IS,
+13,"Rams,_0",,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,"Rams,",1,5,True,0.0,IS,
+14,San_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,San,1,3,True,0.0,IS,
+15,Diego_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Diego,1,5,True,0.0,IS,
+16,Chargers);_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Chargers);,1,10,True,0.0,IS,
+17,NBA_0,,0,[],a_SouthernCalifornia_3_qa_1 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,NBA,1,3,True,0.0,IS,
+18,(Los_1,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,(Los,1,4,True,0.0,IS,
+19,Angeles_1,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Angeles,1,7,True,0.0,IS,
+20,"Lakers,_0",,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,"Lakers,",1,7,True,0.0,IS,
+21,Los_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Los,1,3,True,0.0,IS,
+22,Angeles_2,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Angeles,1,7,True,0.0,IS,
+23,Clippers);_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Clippers);,1,10,True,0.0,IS,
+24,MLB_0,,0,[],a_SouthernCalifornia_3_qa_2 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,MLB,1,3,True,0.0,IS,
+25,(Los_2,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,(Los,1,4,True,0.0,IS,
+26,Angeles_3,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Angeles,1,7,True,0.0,IS,
+27,"Dodgers,_0",,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,"Dodgers,",1,8,True,0.0,IS,
+28,Los_1,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Los,1,3,True,0.0,IS,
+29,Angeles_4,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Angeles,1,7,True,0.0,IS,
+30,Angels_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Angels,1,6,True,0.0,IS,
+31,of_0,,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,of,1,2,True,0.0,IS,
+32,"Anaheim,_0",,0,[],,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,"Anaheim,",1,8,True,0.0,IS,
+33,San_1,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,San,1,3,True,0.0,IS,
+34,Diego_1,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Diego,1,5,True,0.0,IS,
+35,Padres);_0,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Padres);,1,8,True,0.0,IS,
+36,NHL_0,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,NHL,1,3,True,0.0,IS,
+37,(Los_3,,0,[],a_SouthernCalifornia_3_qa_3 a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,(Los,1,4,True,0.0,IS,
+38,Angeles_5,,0,[],a_SouthernCalifornia_3_qa_3 a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Angeles,1,7,True,0.0,IS,
+39,"Kings,_0",,0,[],a_SouthernCalifornia_3_qa_3 a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,"Kings,",1,6,True,0.0,IS,
+40,Anaheim_1,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Anaheim,1,7,True,0.0,IS,
+41,Ducks);_0,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Ducks);,1,7,True,0.0,IS,
+42,and_0,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,and,1,3,True,0.0,IS,
+43,MLS_0,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,MLS,1,3,True,0.0,IS,
+44,(LA_0,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,(LA,1,3,True,0.0,IS,
+45,Galaxy)._0,,0,[],a_SouthernCalifornia_3_qa_4 ,a_SouthernCalifornia_3,A3FPXYVABXB9IZ,0,Galaxy).,1,8,True,0.0,IS,
+0,The_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,The,1,3,True,0.0,IS,
+1,"""West_0",,0,[],a_FresnoCalifornia_0_qa_4 ,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,"""West",1,5,True,0.0,IS,
+2,"Side""_0",,0,[],a_FresnoCalifornia_0_qa_4 ,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,"Side""",1,5,True,0.0,IS,
+3,of_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,of,1,2,True,0.0,IS,
+4,"Fresno,_0",,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,"Fresno,",1,7,True,0.0,IS,
+5,also_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,also,1,4,True,0.0,IS,
+6,often_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,often,1,5,True,0.0,IS,
+7,called_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,called,1,6,True,0.0,IS,
+8,"""Southwest_0",,0,[],a_FresnoCalifornia_0_qa_0 ,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,"""Southwest",1,10,True,0.0,IS,
+9,"Fresno"",_0",,0,[],a_FresnoCalifornia_0_qa_0 ,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,"Fresno"",",1,8,True,0.0,IS,
+10,is_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,is,1,2,True,0.0,IS,
+11,one_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,one,1,3,True,0.0,IS,
+12,of_1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,of,1,2,True,0.0,IS,
+13,the_1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+14,oldest_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,oldest,1,6,True,0.0,IS,
+15,neighborhoods_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,neighborhoods,1,13,True,0.0,IS,
+16,in_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,in,1,2,True,0.0,IS,
+17,the_2,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+18,city._0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,city.,1,5,True,0.0,IS,
+19,The_3,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,The,2,3,True,0.0,IS,
+20,neighborhood_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,neighborhood,2,12,True,0.0,IS,
+21,lies_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,lies,2,4,True,0.0,IS,
+22,southwest_0,,0,[],a_FresnoCalifornia_0_qa_1 ,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,southwest,2,9,True,0.0,IS,
+23,of_2,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+24,the_4,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+25,99_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,99,2,2,True,0.0,IS,
+26,freeway_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,freeway,2,7,True,0.0,IS,
+27,(which_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,(which,2,6,True,0.0,IS,
+28,divides_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,divides,2,7,True,0.0,IS,
+29,it_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,it,2,2,True,0.0,IS,
+30,from_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,from,2,4,True,0.0,IS,
+31,Downtown_0,136.0,1,[8],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,1,Downtown,2,8,True,0.0,IS,0.16094674556213018
+32,"Fresno),_0",67.0,1,[4],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,1,"Fresno),",2,8,True,0.0,IS,0.07928994082840236
+33,west_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,west,2,4,True,0.0,IS,
+34,of_3,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+35,the_5,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+36,41_0,68.0,1,[13],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,1,41,2,2,True,0.0,IS,0.08047337278106509
+37,freeway_1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,freeway,2,7,True,0.0,IS,
+38,and_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,and,2,3,True,0.0,IS,
+39,south_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,south,2,5,True,0.0,IS,
+40,of_4,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+41,Nielsen_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,Nielsen,2,7,True,0.0,IS,
+42,Ave_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,Ave,2,3,True,0.0,IS,
+43,(or_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,(or,2,3,True,0.0,IS,
+44,the_6,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+45,newly_0,134.0,2,"[6, 7]",,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,2,newly,2,5,True,0.0,IS,0.15857988165680473
+46,constructed_0,67.0,1,[5],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,1,constructed,2,11,True,0.0,IS,0.07928994082840236
+47,180_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,180,2,3,True,0.0,IS,
+48,"Freeway),_0",136.0,1,[14],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,1,"Freeway),",2,9,True,0.0,IS,0.16094674556213018
+49,and_1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,and,2,3,True,0.0,IS,
+50,extends_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,extends,2,7,True,0.0,IS,
+51,to_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,to,2,2,True,0.0,IS,
+52,the_7,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+53,city_1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,city,2,4,True,0.0,IS,
+54,limits_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,limits,2,6,True,0.0,IS,
+55,to_1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,to,2,2,True,0.0,IS,
+56,the_8,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+57,west_1,68.0,1,[2],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,1,west,2,4,True,0.0,IS,0.08047337278106509
+58,and_2,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,and,2,3,True,0.0,IS,
+59,south._1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,south.,2,6,True,0.0,IS,
+60,The_9,67.0,1,[11],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,1,The,3,3,True,0.0,IS,0.07928994082840236
+61,neighborhood_1,102.0,1,[10],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,1,neighborhood,3,12,True,0.0,IS,0.12071005917159763
+62,is_1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,is,3,2,True,0.0,IS,
+63,traditionally_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,traditionally,3,13,True,0.0,IS,
+64,considered_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,considered,3,10,True,0.0,IS,
+65,to_2,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,to,3,2,True,0.0,IS,
+66,be_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,be,3,2,True,0.0,IS,
+67,the_10,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,the,3,3,True,0.0,IS,
+68,center_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,center,3,6,True,0.0,IS,
+69,of_5,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,of,3,2,True,0.0,IS,
+70,Fresno's_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,Fresno's,3,8,True,0.0,IS,
+71,African-American_0,,0,[],a_FresnoCalifornia_0_qa_2 ,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,African-American,3,16,True,0.0,IS,
+72,community._0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,community.,3,10,True,0.0,IS,
+73,It_1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,It,4,2,True,0.0,IS,
+74,is_2,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,is,4,2,True,0.0,IS,
+75,culturally_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,culturally,4,10,True,0.0,IS,
+76,diverse_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,diverse,4,7,True,0.0,IS,
+77,and_3,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,and,4,3,True,0.0,IS,
+78,also_1,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,also,4,4,True,0.0,IS,
+79,includes_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,includes,4,8,True,0.0,IS,
+80,significant_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,significant,4,11,True,0.0,IS,
+81,Mexican-American_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,Mexican-American,4,16,True,0.0,IS,
+82,and_4,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,and,4,3,True,0.0,IS,
+83,Asian-American_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,Asian-American,4,14,True,0.0,IS,
+84,(principally_0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,(principally,4,12,True,0.0,IS,
+85,Hmong_0,,0,[],a_FresnoCalifornia_0_qa_3 ,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,Hmong,4,5,True,0.0,IS,
+86,or_0,,0,[],a_FresnoCalifornia_0_qa_3 ,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,or,4,2,True,0.0,IS,
+87,Laotian)_0,,0,[],a_FresnoCalifornia_0_qa_3 ,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,Laotian),4,8,True,0.0,IS,
+88,populations._0,,0,[],,a_FresnoCalifornia_0,A3FPXYVABXB9IZ,0,populations.,4,12,True,0.0,IS,
+0,Under_0,133.0,2,"[3, 4]",,a_ScottishParliament_0,A3FPXYVABXB9IZ,2,Under,1,5,True,0.0,IS,0.07392996108949416
+1,the_0,67.0,1,[2],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,the,1,3,True,0.0,IS,0.03724291272929405
+2,terms_0,67.0,1,[12],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,terms,1,5,True,0.0,IS,0.03724291272929405
+3,of_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,of,1,2,True,0.0,IS,
+4,the_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+5,Scotland_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,Scotland,1,8,True,0.0,IS,
+6,Act_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,Act,1,3,True,0.0,IS,
+7,"1978,_0",,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,"1978,",1,5,True,0.0,IS,
+8,an__0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,an,1,2,True,0.0,IS,
+9,elected_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,elected,1,7,True,0.0,IS,
+10,assembly_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,assembly,1,8,True,0.0,IS,
+11,would_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,would,1,5,True,0.0,IS,
+12,be_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,be,1,2,True,0.0,IS,
+13,set_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,set,1,3,True,0.0,IS,
+14,up_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,up,1,2,True,0.0,IS,
+15,in_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,in,1,2,True,0.0,IS,
+16,Edinburgh_0,135.0,2,"[6, 9]",a_ScottishParliament_0_qa_0 ,a_ScottishParliament_0,A3FPXYVABXB9IZ,2,Edinburgh,1,9,True,0.0,IS,0.07504168982768204
+17,provided_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,provided,1,8,True,0.0,IS,
+18,that_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,that,1,4,True,0.0,IS,
+19,the_2,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+20,majority_0,,0,[],a_ScottishParliament_0_qa_1 ,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,majority,1,8,True,0.0,IS,
+21,of_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,of,1,2,True,0.0,IS,
+22,the_3,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+23,Scottish_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,Scottish,1,8,True,0.0,IS,
+24,electorate_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,electorate,1,10,True,0.0,IS,
+25,voted_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,voted,1,5,True,0.0,IS,
+26,for_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,for,1,3,True,0.0,IS,
+27,it_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,it,1,2,True,0.0,IS,
+28,in_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,in,1,2,True,0.0,IS,
+29,a_0,69.0,1,[11],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,a,1,1,True,0.0,IS,0.03835464146748194
+30,referendum_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,referendum,1,10,True,0.0,IS,
+31,to_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,to,1,2,True,0.0,IS,
+32,be_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,be,1,2,True,0.0,IS,
+33,held_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,held,1,4,True,0.0,IS,
+34,on_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,on,1,2,True,0.0,IS,
+35,1_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,1,1,1,True,0.0,IS,
+36,March_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,March,1,5,True,0.0,IS,
+37,1979_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,1979,1,4,True,0.0,IS,
+38,that_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,that,1,4,True,0.0,IS,
+39,represented_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,represented,1,11,True,0.0,IS,
+40,at_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,at,1,2,True,0.0,IS,
+41,least_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,least,1,5,True,0.0,IS,
+42,40%_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,40%,1,3,True,0.0,IS,
+43,of_2,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,of,1,2,True,0.0,IS,
+44,the_4,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+45,total_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,total,1,5,True,0.0,IS,
+46,electorate._1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,electorate.,1,11,True,0.0,IS,
+47,The_5,66.0,1,[7],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,The,2,3,True,0.0,IS,0.03668704836020011
+48,1979_1,67.0,1,[8],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,1979,2,4,True,0.0,IS,0.03724291272929405
+49,Scottish_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,Scottish,2,8,True,0.0,IS,
+50,devolution_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,devolution,2,10,True,0.0,IS,
+51,referendum_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,referendum,2,10,True,0.0,IS,
+52,to_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,to,2,2,True,0.0,IS,
+53,establish_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,establish,2,9,True,0.0,IS,
+54,a_1,68.0,1,[21],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,a,2,1,True,0.0,IS,0.03779877709838799
+55,devolved_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,devolved,2,8,True,0.0,IS,
+56,Scottish_2,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,Scottish,2,8,True,0.0,IS,
+57,Assembly_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,Assembly,2,8,True,0.0,IS,
+58,failed._0,,0,[],a_ScottishParliament_0_qa_3 ,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,failed.,2,7,True,0.0,IS,
+59,Although_0,69.0,1,[15],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,Although,3,8,True,0.0,IS,0.03835464146748194
+60,the_6,101.0,1,[25],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,the,3,3,True,0.0,IS,0.05614230127848805
+61,vote_0,68.0,1,[14],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,vote,3,4,True,0.0,IS,0.03779877709838799
+62,was_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,was,3,3,True,0.0,IS,
+63,51.6%_0,,0,[],a_ScottishParliament_0_qa_2 ,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,51.6%,3,5,True,0.0,IS,
+64,in_2,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,in,3,2,True,0.0,IS,
+65,favour_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,favour,3,6,True,0.0,IS,
+66,of_3,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,of,3,2,True,0.0,IS,
+67,a_2,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,a,3,1,True,0.0,IS,
+68,Scottish_3,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,Scottish,3,8,True,0.0,IS,
+69,"Assembly,_2",271.0,2,"[18, 19]",,a_ScottishParliament_0,A3FPXYVABXB9IZ,2,"Assembly,",3,9,True,0.0,IS,0.15063924402445802
+70,this_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,this,3,4,True,0.0,IS,
+71,figure_0,68.0,1,[1],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,figure,3,6,True,0.0,IS,0.03779877709838799
+72,did_0,69.0,1,[16],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,did,3,3,True,0.0,IS,0.03835464146748194
+73,not_0,70.0,1,[23],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,not,3,3,True,0.0,IS,0.038910505836575876
+74,equal_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,equal,3,5,True,0.0,IS,
+75,the_7,69.0,1,[24],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,the,3,3,True,0.0,IS,0.03835464146748194
+76,40%_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,40%,3,3,True,0.0,IS,
+77,of_4,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,of,3,2,True,0.0,IS,
+78,the_8,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,the,3,3,True,0.0,IS,
+79,total_1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,total,3,5,True,0.0,IS,
+80,electorate_2,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,electorate,3,10,True,0.0,IS,
+81,threshold_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,threshold,3,9,True,0.0,IS,
+82,deemed_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,deemed,3,6,True,0.0,IS,
+83,necessary_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,necessary,3,9,True,0.0,IS,
+84,to_2,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,to,3,2,True,0.0,IS,
+85,pass_0,70.0,1,[22],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,pass,3,4,True,0.0,IS,0.038910505836575876
+86,the_9,68.0,1,[27],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,the,3,3,True,0.0,IS,0.03779877709838799
+87,"measure,_0",,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,"measure,",3,8,True,0.0,IS,
+88,as_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,as,3,2,True,0.0,IS,
+89,32.9%_0,,0,[],a_ScottishParliament_0_qa_4 ,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,32.9%,3,5,True,0.0,IS,
+90,of_5,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,of,3,2,True,0.0,IS,
+91,the_10,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,the,3,3,True,0.0,IS,
+92,eligible_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,eligible,3,8,True,0.0,IS,
+93,voting_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,voting,3,6,True,0.0,IS,
+94,population_0,68.0,1,[31],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,population,3,10,True,0.0,IS,0.03779877709838799
+95,did_1,69.0,2,"[0, 33]",,a_ScottishParliament_0,A3FPXYVABXB9IZ,2,did,3,3,True,0.0,IS,0.03835464146748194
+96,"not,_1",67.0,1,[34],,a_ScottishParliament_0,A3FPXYVABXB9IZ,1,"not,",3,4,True,0.0,IS,0.03724291272929405
+97,or_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,or,3,2,True,0.0,IS,
+98,had_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,had,3,3,True,0.0,IS,
+99,been_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,been,3,4,True,0.0,IS,
+100,unable_0,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,unable,3,6,True,0.0,IS,
+101,"to,_3",,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,"to,",3,3,True,0.0,IS,
+102,vote._1,,0,[],,a_ScottishParliament_0,A3FPXYVABXB9IZ,0,vote.,3,5,True,0.0,IS,
+0,Renewed_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,Renewed,1,7,True,0.0,IS,
+1,religious_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,religious,1,9,True,0.0,IS,
+2,warfare_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,warfare,1,7,True,0.0,IS,
+3,in_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,in,1,2,True,0.0,IS,
+4,the_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+5,1620s_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,1620s,1,5,True,0.0,IS,
+6,caused_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,caused,1,6,True,0.0,IS,
+7,the_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+8,political_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,political,1,9,True,0.0,IS,
+9,and_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,and,1,3,True,0.0,IS,
+10,military_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,military,1,8,True,0.0,IS,
+11,privileges_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,privileges,1,10,True,0.0,IS,
+12,of_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,of,1,2,True,0.0,IS,
+13,the_2,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,the,1,3,True,0.0,IS,
+14,Huguenots_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,Huguenots,1,9,True,0.0,IS,
+15,to_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,to,1,2,True,0.0,IS,
+16,be_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,be,1,2,True,0.0,IS,
+17,abolished_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,abolished,1,9,True,0.0,IS,
+18,following_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,following,1,9,True,0.0,IS,
+19,their_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,their,1,5,True,0.0,IS,
+20,defeat._0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,defeat.,1,7,True,0.0,IS,
+21,They_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,They,2,4,True,0.0,IS,
+22,retained_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,retained,2,8,True,0.0,IS,
+23,the_3,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+24,religious_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,religious,2,9,True,0.0,IS,
+25,provisions_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,provisions,2,10,True,0.0,IS,
+26,of_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+27,the_4,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+28,Edict_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,Edict,2,5,True,0.0,IS,
+29,of_2,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+30,Nantes_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,Nantes,2,6,True,0.0,IS,
+31,until_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,until,2,5,True,0.0,IS,
+32,the_5,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+33,rule_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,rule,2,4,True,0.0,IS,
+34,of_3,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+35,Louis_0,,0,[],a_Huguenot_0_qa_2 ,a_Huguenot_0,A3FPXYVABXB9IZ,0,Louis,2,5,True,0.0,IS,
+36,"XIV,_0",,0,[],a_Huguenot_0_qa_2 ,a_Huguenot_0,A3FPXYVABXB9IZ,0,"XIV,",2,4,True,0.0,IS,
+37,who_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,who,2,3,True,0.0,IS,
+38,progressively_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,progressively,2,13,True,0.0,IS,
+39,increased_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,increased,2,9,True,0.0,IS,
+40,persecution_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,persecution,2,11,True,0.0,IS,
+41,of_4,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+42,them_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,them,2,4,True,0.0,IS,
+43,until_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,until,2,5,True,0.0,IS,
+44,he_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,he,2,2,True,0.0,IS,
+45,issued_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,issued,2,6,True,0.0,IS,
+46,the_6,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+47,Edict_1,,0,[],a_Huguenot_0_qa_0 ,a_Huguenot_0,A3FPXYVABXB9IZ,0,Edict,2,5,True,0.0,IS,
+48,of_5,,0,[],a_Huguenot_0_qa_0 ,a_Huguenot_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+49,Fontainebleau_0,,0,[],a_Huguenot_0_qa_0 ,a_Huguenot_0,A3FPXYVABXB9IZ,0,Fontainebleau,2,13,True,0.0,IS,
+50,"(1685),_0",68.0,1,[2],a_Huguenot_0_qa_1 ,a_Huguenot_0,A3FPXYVABXB9IZ,1,"(1685),",2,7,True,0.0,IS,0.1827956989247312
+51,which_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,which,2,5,True,0.0,IS,
+52,abolished_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,abolished,2,9,True,0.0,IS,
+53,all_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,all,2,3,True,0.0,IS,
+54,legal_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,legal,2,5,True,0.0,IS,
+55,recognition_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,recognition,2,11,True,0.0,IS,
+56,of_6,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.0,IS,
+57,Protestantism_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,Protestantism,2,13,True,0.0,IS,
+58,in_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,in,2,2,True,0.0,IS,
+59,"France,_0",67.0,1,[4],,a_Huguenot_0,A3FPXYVABXB9IZ,1,"France,",2,7,True,0.0,IS,0.18010752688172044
+60,and_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,and,2,3,True,0.0,IS,
+61,forced_0,101.0,1,[3],,a_Huguenot_0,A3FPXYVABXB9IZ,1,forced,2,6,True,0.0,IS,0.271505376344086
+62,the_7,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.0,IS,
+63,Huguenots_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,Huguenots,2,9,True,0.0,IS,
+64,to_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,to,2,2,True,0.0,IS,
+65,convert._0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,convert.,2,8,True,0.0,IS,
+66,While_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,While,3,5,True,0.0,IS,
+67,nearly_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,nearly,3,6,True,0.0,IS,
+68,three-quarters_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,three-quarters,3,14,True,0.0,IS,
+69,eventually_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,eventually,3,10,True,0.0,IS,
+70,were_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,were,3,4,True,0.0,IS,
+71,killed_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,killed,3,6,True,0.0,IS,
+72,or_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,or,3,2,True,0.0,IS,
+73,"submitted,_0",,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,"submitted,",3,10,True,0.0,IS,
+74,roughly_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,roughly,3,7,True,0.0,IS,
+75,"500,000_0",,0,[],a_Huguenot_0_qa_3 ,a_Huguenot_0,A3FPXYVABXB9IZ,0,"500,000",3,7,True,0.0,IS,
+76,Huguenots_2,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,Huguenots,3,9,True,0.0,IS,
+77,had_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,had,3,3,True,0.0,IS,
+78,fled_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,fled,3,4,True,0.0,IS,
+79,France_1,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,France,3,6,True,0.0,IS,
+80,by_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,by,3,2,True,0.0,IS,
+81,the_8,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,the,3,3,True,0.0,IS,
+82,early_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,early,3,5,True,0.0,IS,
+83,18th_0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,18th,3,4,True,0.0,IS,
+84,century[citation_0,136.0,2,"[5, 6]",,a_Huguenot_0,A3FPXYVABXB9IZ,2,century[citation,3,16,True,0.0,IS,0.3655913978494624
+85,needed]._0,,0,[],,a_Huguenot_0,A3FPXYVABXB9IZ,0,needed].,3,8,True,0.0,IS,
+0,Between_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,Between,1,7,False,0.007352941176470588,NR,
+1,Bingen_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,Bingen,1,6,False,0.007352941176470588,NR,
+2,and_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,and,1,3,False,0.007352941176470588,NR,
+3,"Bonn,_0",,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,"Bonn,",1,5,False,0.007352941176470588,NR,
+4,the_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,the,1,3,False,0.007352941176470588,NR,
+5,Middle_0,135.0,2,"[6, 36]",a_Rhine_0_qa_0 a_Rhine_0_qa_4 ,a_Rhine_0,A3FPXYVABXB9IZ,2,Middle,1,6,False,0.007352941176470588,NR,0.019528424707073628
+6,Rhine_0,66.0,1,[21],a_Rhine_0_qa_0 a_Rhine_0_qa_4 ,a_Rhine_0,A3FPXYVABXB9IZ,1,Rhine,1,5,False,0.007352941176470588,NR,0.009547229856791552
+7,flows_0,69.0,1,[19],,a_Rhine_0,A3FPXYVABXB9IZ,1,flows,1,5,False,0.007352941176470588,NR,0.009981194850282078
+8,through_0,206.0,3,"[22, 23, 25]",,a_Rhine_0,A3FPXYVABXB9IZ,3,through,1,7,False,0.007352941176470588,NR,0.02979892955301606
+9,the_1,339.0,3,"[51, 52, 53]",,a_Rhine_0,A3FPXYVABXB9IZ,3,the,1,3,False,0.007352941176470588,NR,0.049038044264429335
+10,Rhine_1,69.0,1,[32],a_Rhine_0_qa_1 a_Rhine_0_qa_5 ,a_Rhine_0,A3FPXYVABXB9IZ,1,Rhine,1,5,False,0.007352941176470588,NR,0.009981194850282078
+11,"Gorge,_0",,0,[],a_Rhine_0_qa_1 a_Rhine_0_qa_5 ,a_Rhine_0,A3FPXYVABXB9IZ,0,"Gorge,",1,6,False,0.007352941176470588,NR,
+12,a_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,a,1,1,False,0.007352941176470588,NR,
+13,formation_0,70.0,1,[30],,a_Rhine_0,A3FPXYVABXB9IZ,1,formation,1,9,False,0.007352941176470588,NR,0.010125849848112252
+14,which_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,which,1,5,False,0.007352941176470588,NR,
+15,was_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,was,1,3,False,0.007352941176470588,NR,
+16,created_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,created,1,7,False,0.007352941176470588,NR,
+17,by_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,by,1,2,False,0.007352941176470588,NR,
+18,erosion._0,237.0,3,"[7, 8, 48]",a_Rhine_0_qa_2 ,a_Rhine_0,A3FPXYVABXB9IZ,3,erosion.,1,8,False,0.007352941176470588,NR,0.03428323448575148
+19,The_2,239.0,3,"[42, 45, 47]",,a_Rhine_0,A3FPXYVABXB9IZ,3,The,2,3,False,0.007352941176470588,NR,0.03457254448141183
+20,rate_0,304.0,3,"[24, 46, 49]",,a_Rhine_0,A3FPXYVABXB9IZ,3,rate,2,4,False,0.007352941176470588,NR,0.04397511934037321
+21,of_0,102.0,1,[50],,a_Rhine_0,A3FPXYVABXB9IZ,1,of,2,2,False,0.007352941176470588,NR,0.014754809778677854
+22,erosion_1,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,erosion,2,7,False,0.007352941176470588,NR,
+23,equaled_0,68.0,1,[56],,a_Rhine_0,A3FPXYVABXB9IZ,1,equaled,2,7,False,0.007352941176470588,NR,0.009836539852451903
+24,the_3,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,the,2,3,False,0.007352941176470588,NR,
+25,uplift_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,uplift,2,6,False,0.007352941176470588,NR,
+26,in_0,68.0,1,[29],,a_Rhine_0,A3FPXYVABXB9IZ,1,in,2,2,False,0.007352941176470588,NR,0.009836539852451903
+27,the_4,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,the,2,3,False,0.007352941176470588,NR,
+28,"region,_0",70.0,1,[54],,a_Rhine_0,A3FPXYVABXB9IZ,1,"region,",2,7,False,0.007352941176470588,NR,0.010125849848112252
+29,such_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,such,2,4,False,0.007352941176470588,NR,
+30,that_0,69.0,1,[28],,a_Rhine_0,A3FPXYVABXB9IZ,1,that,2,4,False,0.007352941176470588,NR,0.009981194850282078
+31,the_5,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,the,2,3,False,0.007352941176470588,NR,
+32,river_0,66.0,1,[44],,a_Rhine_0,A3FPXYVABXB9IZ,1,river,2,5,False,0.007352941176470588,NR,0.009547229856791552
+33,was_1,307.0,3,"[27, 43, 69]",,a_Rhine_0,A3FPXYVABXB9IZ,3,was,2,3,False,0.007352941176470588,NR,0.04440908433386374
+34,left_0,135.0,2,"[64, 70]",,a_Rhine_0,A3FPXYVABXB9IZ,2,left,2,4,False,0.007352941176470588,NR,0.019528424707073628
+35,at_0,103.0,1,[41],,a_Rhine_0,A3FPXYVABXB9IZ,1,at,2,2,False,0.007352941176470588,NR,0.01489946477650803
+36,about_0,69.0,1,[63],,a_Rhine_0,A3FPXYVABXB9IZ,1,about,2,5,False,0.007352941176470588,NR,0.009981194850282078
+37,its_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,its,2,3,False,0.007352941176470588,NR,
+38,original_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,original,2,8,False,0.007352941176470588,NR,
+39,level_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,level,2,5,False,0.007352941176470588,NR,
+40,while_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,while,2,5,False,0.007352941176470588,NR,
+41,the_6,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,the,2,3,False,0.007352941176470588,NR,
+42,surrounding_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,surrounding,2,11,False,0.007352941176470588,NR,
+43,lands_0,206.0,3,"[1, 40, 88]",,a_Rhine_0,A3FPXYVABXB9IZ,3,lands,2,5,False,0.007352941176470588,NR,0.02979892955301606
+44,raised._0,136.0,2,"[2, 60]",,a_Rhine_0,A3FPXYVABXB9IZ,2,raised.,2,7,False,0.007352941176470588,NR,0.019673079704903805
+45,The_7,271.0,4,"[26, 58, 59, 65]",,a_Rhine_0,A3FPXYVABXB9IZ,4,The,3,3,False,0.007352941176470588,NR,0.039201504411977436
+46,gorge_1,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,gorge,3,5,False,0.007352941176470588,NR,
+47,is_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,is,3,2,False,0.007352941176470588,NR,
+48,quite_0,340.0,3,"[61, 72, 118]",,a_Rhine_0,A3FPXYVABXB9IZ,3,quite,3,5,False,0.007352941176470588,NR,0.04918269926225951
+49,deep_0,341.0,4,"[62, 73, 100, 108]",,a_Rhine_0,A3FPXYVABXB9IZ,4,deep,3,4,False,0.007352941176470588,NR,0.04932735426008968
+50,and_1,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,and,3,3,False,0.007352941176470588,NR,
+51,is_1,168.0,1,[91],,a_Rhine_0,A3FPXYVABXB9IZ,1,is,3,2,False,0.007352941176470588,NR,0.024302039635469404
+52,the_8,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,the,3,3,False,0.007352941176470588,NR,
+53,stretch_0,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,stretch,3,7,False,0.007352941176470588,NR,
+54,of_1,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,of,3,2,False,0.007352941176470588,NR,
+55,the_9,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,the,3,3,False,0.007352941176470588,NR,
+56,river_1,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,river,3,5,False,0.007352941176470588,NR,
+57,which_1,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,which,3,5,False,0.007352941176470588,NR,
+58,is_2,134.0,2,"[68, 89]",a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,2,is,3,2,False,0.007352941176470588,NR,0.019383769709243454
+59,known_0,205.0,3,"[0, 57, 67]",a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,3,known,3,5,False,0.007352941176470588,NR,0.02965427455518588
+60,for_0,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,for,3,3,False,0.007352941176470588,NR,
+61,its_1,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,its,3,3,False,0.007352941176470588,NR,
+62,many_0,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,many,3,4,False,0.007352941176470588,NR,
+63,castles_0,,0,[],a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,0,castles,3,7,False,0.007352941176470588,NR,
+64,and_2,372.0,4,"[75, 77, 102, 107]",a_Rhine_0_qa_6 ,a_Rhine_0,A3FPXYVABXB9IZ,4,and,3,3,False,0.007352941176470588,NR,0.053811659192825115
+65,vineyards._0,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,vineyards.,3,10,False,0.007352941176470588,NR,
+66,It_0,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,It,4,2,False,0.007352941176470588,NR,
+67,is_3,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,is,4,2,False,0.007352941176470588,NR,
+68,a_1,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,a,4,1,False,0.007352941176470588,NR,
+69,UNESCO_0,67.0,1,[120],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,1,UNESCO,4,6,False,0.007352941176470588,NR,0.009691884854621727
+70,World_0,70.0,1,[95],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,1,World,4,5,False,0.007352941176470588,NR,0.010125849848112252
+71,Heritage_0,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,Heritage,4,8,False,0.007352941176470588,NR,
+72,Site_0,171.0,1,[128],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,1,Site,4,4,False,0.007352941176470588,NR,0.02473600462895993
+73,(2002)_0,68.0,1,[34],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,1,(2002),4,6,False,0.007352941176470588,NR,0.009836539852451903
+74,and_3,204.0,3,"[35, 115, 130]",a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,3,and,4,3,False,0.007352941176470588,NR,0.029509619557355708
+75,known_1,406.0,5,"[92, 101, 103, 116, 117]",a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,5,known,4,5,False,0.007352941176470588,NR,0.05872992911905106
+76,as__0,67.0,1,[93],a_Rhine_0_qa_3 a_Rhine_0_qa_6 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,1,as,4,2,False,0.007352941176470588,NR,0.009691884854621727
+77,"""the_0",70.0,1,[94],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,1,"""the",4,4,False,0.007352941176470588,NR,0.010125849848112252
+78,Romantic_0,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,Romantic,4,8,False,0.007352941176470588,NR,
+79,"Rhine"",_0",,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,"Rhine"",",4,7,False,0.007352941176470588,NR,
+80,with_0,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,with,4,4,False,0.007352941176470588,NR,
+81,more_0,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,more,4,4,False,0.007352941176470588,NR,
+82,than_0,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,than,4,4,False,0.007352941176470588,NR,
+83,40_0,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,40,4,2,False,0.007352941176470588,NR,
+84,castles_1,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,castles,4,7,False,0.007352941176470588,NR,
+85,and_4,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,and,4,3,False,0.007352941176470588,NR,
+86,ffortresses_0,,0,[],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,0,ffortresses,4,11,False,0.007352941176470588,NR,
+87,from_0,137.0,1,[129],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,1,from,4,4,False,0.007352941176470588,NR,0.01981773470273398
+88,the_10,340.0,4,"[105, 106, 122, 133]",a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,4,the,4,3,False,0.007352941176470588,NR,0.04918269926225951
+89,Middle_1,70.0,1,[121],a_Rhine_0_qa_3 a_Rhine_0_qa_7 ,a_Rhine_0,A3FPXYVABXB9IZ,1,Middle,4,6,False,0.007352941176470588,NR,0.010125849848112252
+90,Ages_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,Ages,4,4,False,0.007352941176470588,NR,
+91,and_5,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,and,4,3,False,0.007352941176470588,NR,
+92,many_1,67.0,1,[111],,a_Rhine_0,A3FPXYVABXB9IZ,1,many,4,4,False,0.007352941176470588,NR,0.009691884854621727
+93,quaint_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,quaint,4,6,False,0.007352941176470588,NR,
+94,and_6,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,and,4,3,False,0.007352941176470588,NR,
+95,lovely_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,lovely,4,6,False,0.007352941176470588,NR,
+96,country_0,,0,[],,a_Rhine_0,A3FPXYVABXB9IZ,0,country,4,7,False,0.007352941176470588,NR,
+97,villages._0,212.0,2,"[109, 114]",,a_Rhine_0,A3FPXYVABXB9IZ,2,villages.,4,9,False,0.007352941176470588,NR,0.030666859539997107
+0,"Nearby,_0",,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,"Nearby,",1,7,False,0.0,NR,
+1,in_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,in,1,2,False,0.0,NR,
+2,Ogrdd_0,,0,[],a_Warsaw_0_qa_0 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,Ogrdd,1,5,False,0.0,NR,
+3,Saski_0,,0,[],a_Warsaw_0_qa_0 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,Saski,1,5,False,0.0,NR,
+4,(the_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,(the,1,4,False,0.0,NR,
+5,Saxon_0,,0,[],a_Warsaw_0_qa_1 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,Saxon,1,5,False,0.0,NR,
+6,"Garden),_0",,0,[],a_Warsaw_0_qa_1 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,"Garden),",1,8,False,0.0,NR,
+7,the_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,the,1,3,False,0.0,NR,
+8,Summer_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,Summer,1,6,False,0.0,NR,
+9,Theatre_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,Theatre,1,7,False,0.0,NR,
+10,was__0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,was,1,3,False,0.0,NR,
+11,in_1,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,in,1,2,False,0.0,NR,
+12,operation_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,operation,1,9,False,0.0,NR,
+13,from_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,from,1,4,False,0.0,NR,
+14,1870_0,,0,[],a_Warsaw_0_qa_2 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,1870,1,4,False,0.0,NR,
+15,to_0,169.0,2,"[1, 2]",a_Warsaw_0_qa_2 ,a_Warsaw_0,A3FPXYVABXB9IZ,2,to,1,2,False,0.0,NR,0.06282527881040892
+16,"1939,_0",,0,[],a_Warsaw_0_qa_2 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,"1939,",1,5,False,0.0,NR,
+17,and_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,and,1,3,False,0.0,NR,
+18,in_2,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,in,1,2,False,0.0,NR,
+19,the_1,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,the,1,3,False,0.0,NR,
+20,inter-war_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,inter-war,1,9,False,0.0,NR,
+21,"period,_0",,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,"period,",1,7,False,0.0,NR,
+22,the_2,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,the,1,3,False,0.0,NR,
+23,theatre_1,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,theatre,1,7,False,0.0,NR,
+24,complex_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,complex,1,7,False,0.0,NR,
+25,also_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,also,1,4,False,0.0,NR,
+26,included_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,included,1,8,False,0.0,NR,
+27,"Momus,_0",,0,[],a_Warsaw_0_qa_3 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,"Momus,",1,6,False,0.0,NR,
+28,Warsaw's_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,Warsaw's,1,8,False,0.0,NR,
+29,first_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,first,1,5,False,0.0,NR,
+30,literary_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,literary,1,8,False,0.0,NR,
+31,"cabaret,_0",,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,"cabaret,",1,8,False,0.0,NR,
+32,and_1,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,and,1,3,False,0.0,NR,
+33,Leon_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,Leon,1,4,False,0.0,NR,
+34,Schiller's_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,Schiller's,1,10,False,0.0,NR,
+35,musical_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,musical,1,7,False,0.0,NR,
+36,theatre_2,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,theatre,1,7,False,0.0,NR,
+37,Melodram._0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,Melodram.,1,9,False,0.0,NR,
+38,The_3,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,The,2,3,False,0.0,NR,
+39,Wojciech_0,,0,[],a_Warsaw_0_qa_4 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,Wojciech,2,8,False,0.0,NR,
+40,Bogustawski_0,,0,[],a_Warsaw_0_qa_4 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,Bogustawski,2,11,False,0.0,NR,
+41,Theatre_3,,0,[],a_Warsaw_0_qa_4 ,a_Warsaw_0,A3FPXYVABXB9IZ,0,Theatre,2,7,False,0.0,NR,
+42,"(1922-26),_0",,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,"(1922-26),",2,10,False,0.0,NR,
+43,was_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,was,2,3,False,0.0,NR,
+44,the_4,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,the,2,3,False,0.0,NR,
+45,best_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,best,2,4,False,0.0,NR,
+46,example_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,example,2,7,False,0.0,NR,
+47,of_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,of,2,2,False,0.0,NR,
+48,“Polish_0,68.0,1,[3],,a_Warsaw_0,A3FPXYVABXB9IZ,1,“Polish,2,7,False,0.0,NR,0.025278810408921933
+49,monumental_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,monumental,2,10,False,0.0,NR,
+50,"theatre""._0",,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,"theatre"".",2,9,False,0.0,NR,
+51,From_1,68.0,1,[35],,a_Warsaw_0,A3FPXYVABXB9IZ,1,From,3,4,False,0.0,NR,0.025278810408921933
+52,the_5,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,the,3,3,False,0.0,NR,
+53,"mid-1930s,_0",,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,"mid-1930s,",3,10,False,0.0,NR,
+54,the_6,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,the,3,3,False,0.0,NR,
+55,Great_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,Great,3,5,False,0.0,NR,
+56,Theatre_4,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,Theatre,3,7,False,0.0,NR,
+57,building_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,building,3,8,False,0.0,NR,
+58,housed_0,68.0,1,[59],,a_Warsaw_0,A3FPXYVABXB9IZ,1,housed,3,6,False,0.0,NR,0.025278810408921933
+59,the_7,138.0,2,"[4, 47]",,a_Warsaw_0,A3FPXYVABXB9IZ,2,the,3,3,False,0.0,NR,0.051301115241635685
+60,Upati_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,Upati,3,5,False,0.0,NR,
+61,Institute_0,272.0,3,"[28, 30, 49]",,a_Warsaw_0,A3FPXYVABXB9IZ,3,Institute,3,9,False,0.0,NR,0.10111524163568773
+62,of_1,135.0,2,"[45, 50]",,a_Warsaw_0,A3FPXYVABXB9IZ,2,of,3,2,False,0.0,NR,0.05018587360594796
+63,Dramatic_0,239.0,3,"[29, 33, 42]",,a_Warsaw_0,A3FPXYVABXB9IZ,3,Dramatic,3,8,False,0.0,NR,0.08884758364312267
+64,Arts_0,138.0,2,"[39, 40]",,a_Warsaw_0,A3FPXYVABXB9IZ,2,Arts,3,4,False,0.0,NR,0.051301115241635685
+65,-_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,-,3,1,False,0.0,NR,
+66,the_8,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,the,3,3,False,0.0,NR,
+67,first_1,69.0,1,[44],,a_Warsaw_0,A3FPXYVABXB9IZ,1,first,3,5,False,0.0,NR,0.025650557620817842
+68,state-run_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,state-run,3,9,False,0.0,NR,
+69,academy_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,academy,3,7,False,0.0,NR,
+70,of_2,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,of,3,2,False,0.0,NR,
+71,dramatic_1,69.0,1,[64],,a_Warsaw_0,A3FPXYVABXB9IZ,1,dramatic,3,8,False,0.0,NR,0.025650557620817842
+72,"art,_0",,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,"art,",3,4,False,0.0,NR,
+73,with_0,271.0,3,"[20, 27, 31]",,a_Warsaw_0,A3FPXYVABXB9IZ,3,with,3,4,False,0.0,NR,0.10074349442379182
+74,an_0,172.0,3,"[0, 8, 15]",,a_Warsaw_0,A3FPXYVABXB9IZ,3,an,3,2,False,0.0,NR,0.06394052044609666
+75,acting_0,269.0,4,"[16, 72, 75, 77]",,a_Warsaw_0,A3FPXYVABXB9IZ,4,acting,3,6,False,0.0,NR,0.1
+76,department_0,273.0,4,"[9, 10, 51, 52]",,a_Warsaw_0,A3FPXYVABXB9IZ,4,department,3,10,False,0.0,NR,0.10148698884758364
+77,and_2,272.0,3,"[18, 38, 65]",,a_Warsaw_0,A3FPXYVABXB9IZ,3,and,3,3,False,0.0,NR,0.10111524163568773
+78,a_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,a,3,1,False,0.0,NR,
+79,stage_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,stage,3,5,False,0.0,NR,
+80,directing_0,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,directing,3,9,False,0.0,NR,
+81,department._1,,0,[],,a_Warsaw_0,A3FPXYVABXB9IZ,0,department.,3,11,False,0.0,NR,
+0,The_0,102.0,1,[2],,a_Steamengine_0,A3FPXYVABXB9IZ,1,The,1,3,True,0.03333333333333333,NR,0.021715988929103685
+1,heat_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,heat,1,4,True,0.03333333333333333,NR,
+2,required_0,69.0,1,[35],,a_Steamengine_0,A3FPXYVABXB9IZ,1,required,1,8,True,0.03333333333333333,NR,0.014690227804981904
+3,for_0,103.0,1,[21],,a_Steamengine_0,A3FPXYVABXB9IZ,1,for,1,3,True,0.03333333333333333,NR,0.021928890781349797
+4,boiling_0,101.0,1,[46],,a_Steamengine_0,A3FPXYVABXB9IZ,1,boiling,1,7,True,0.03333333333333333,NR,0.02150308707685757
+5,the_1,205.0,2,"[24, 39]",,a_Steamengine_0,A3FPXYVABXB9IZ,2,the,1,3,True,0.03333333333333333,NR,0.04364487971045348
+6,water_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,water,1,5,True,0.03333333333333333,NR,
+7,and_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,and,1,3,True,0.03333333333333333,NR,
+8,supplying_0,207.0,2,"[4, 17]",,a_Steamengine_0,A3FPXYVABXB9IZ,2,supplying,1,9,True,0.03333333333333333,NR,0.04407068341494571
+9,the_2,270.0,3,"[16, 18, 27]",,a_Steamengine_0,A3FPXYVABXB9IZ,3,the,1,3,True,0.03333333333333333,NR,0.057483500106450924
+10,steam_0,134.0,2,"[5, 6]",,a_Steamengine_0,A3FPXYVABXB9IZ,2,steam,1,5,True,0.03333333333333333,NR,0.02852884820097935
+11,can_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,can,1,3,True,0.03333333333333333,NR,
+12,be_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,be,1,2,True,0.03333333333333333,NR,
+13,derived_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,derived,1,7,True,0.03333333333333333,NR,
+14,from_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,from,1,4,True,0.03333333333333333,NR,
+15,various_0,69.0,1,[34],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,1,various,1,7,True,0.03333333333333333,NR,0.014690227804981904
+16,"sources,_0",102.0,1,[22],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,1,"sources,",1,8,True,0.03333333333333333,NR,0.021715988929103685
+17,most_0,307.0,3,"[25, 38, 47]",a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,3,most,1,4,True,0.03333333333333333,NR,0.06536086863955716
+18,commonly_0,,1,[0],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,1,commonly,1,8,True,0.03333333333333333,NR,
+19,from_1,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,from,1,4,True,0.03333333333333333,NR,
+20,burning_0,261.0,3,"[28, 30, 44]",a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,3,burning,1,7,True,0.03333333333333333,NR,0.05556738343623589
+21,combustible_0,182.0,2,"[20, 29]",a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,2,combustible,1,11,True,0.03333333333333333,NR,0.038748137108792845
+22,materials_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,materials,1,9,True,0.03333333333333333,NR,
+23,with_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,with,1,4,True,0.03333333333333333,NR,
+24,an_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,an,1,2,True,0.03333333333333333,NR,
+25,appropriate_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,appropriate,1,11,True,0.03333333333333333,NR,
+26,supply_0,103.0,1,[37],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,1,supply,1,6,True,0.03333333333333333,NR,0.021928890781349797
+27,of_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,of,1,2,True,0.03333333333333333,NR,
+28,air_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,air,1,3,True,0.03333333333333333,NR,
+29,in_0,66.0,1,[7],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,1,in,1,2,True,0.03333333333333333,NR,0.01405152224824356
+30,a_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,a,1,1,True,0.03333333333333333,NR,
+31,closed_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,closed,1,6,True,0.03333333333333333,NR,
+32,space_0,102.0,1,[43],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,1,space,1,5,True,0.03333333333333333,NR,0.021715988929103685
+33,(called_0,,0,[],a_Steamengine_0_qa_0 ,a_Steamengine_0,A3FPXYVABXB9IZ,0,(called,1,7,True,0.03333333333333333,NR,
+34,variously_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,variously,1,9,True,0.03333333333333333,NR,
+35,combustion_0,206.0,2,"[33, 73]",a_Steamengine_0_qa_1 ,a_Steamengine_0,A3FPXYVABXB9IZ,2,combustion,1,10,True,0.03333333333333333,NR,0.043857781562699594
+36,"chamber,_0",135.0,1,[74],a_Steamengine_0_qa_1 ,a_Steamengine_0,A3FPXYVABXB9IZ,1,"chamber,",1,8,True,0.03333333333333333,NR,0.028741750053225462
+37,firebox)._0,102.0,1,[41],,a_Steamengine_0,A3FPXYVABXB9IZ,1,firebox).,1,9,True,0.03333333333333333,NR,0.021715988929103685
+38,In_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,In,2,2,True,0.03333333333333333,NR,
+39,some_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,some,2,4,True,0.03333333333333333,NR,
+40,cases_0,205.0,1,[66],,a_Steamengine_0,A3FPXYVABXB9IZ,1,cases,2,5,True,0.03333333333333333,NR,0.04364487971045348
+41,the_3,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,the,2,3,True,0.03333333333333333,NR,
+42,heat_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,heat,2,4,True,0.03333333333333333,NR,
+43,source_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,source,2,6,True,0.03333333333333333,NR,
+44,is_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,is,2,2,True,0.03333333333333333,NR,
+45,a_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,a,2,1,True,0.03333333333333333,NR,
+46,nuclear_0,67.0,1,[71],,a_Steamengine_0,A3FPXYVABXB9IZ,1,nuclear,2,7,True,0.03333333333333333,NR,0.014264424100489675
+47,"reactor,_0",136.0,2,"[59, 72]",,a_Steamengine_0,A3FPXYVABXB9IZ,2,"reactor,",2,8,True,0.03333333333333333,NR,0.028954651905471578
+48,geothermal_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,geothermal,2,10,True,0.03333333333333333,NR,
+49,"energy,_0",,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,"energy,",2,7,True,0.03333333333333333,NR,
+50,solar_0,69.0,1,[75],a_Steamengine_0_qa_2 ,a_Steamengine_0,A3FPXYVABXB9IZ,1,solar,2,5,True,0.03333333333333333,NR,0.014690227804981904
+51,energy_1,102.0,1,[65],,a_Steamengine_0,A3FPXYVABXB9IZ,1,energy,2,6,True,0.03333333333333333,NR,0.021715988929103685
+52,or_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,or,2,2,True,0.03333333333333333,NR,
+53,waste_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,waste,2,5,True,0.03333333333333333,NR,
+54,heat_2,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,heat,2,4,True,0.03333333333333333,NR,
+55,from_2,67.0,1,[68],,a_Steamengine_0,A3FPXYVABXB9IZ,1,from,2,4,True,0.03333333333333333,NR,0.014264424100489675
+56,an_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,an,2,2,True,0.03333333333333333,NR,
+57,internal_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,internal,2,8,True,0.03333333333333333,NR,
+58,combustion_1,68.0,1,[70],,a_Steamengine_0,A3FPXYVABXB9IZ,1,combustion,2,10,True,0.03333333333333333,NR,0.014477325952735789
+59,engine_0,172.0,2,"[57, 69]",,a_Steamengine_0,A3FPXYVABXB9IZ,2,engine,2,6,True,0.03333333333333333,NR,0.036619118586331705
+60,or_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,or,2,2,True,0.03333333333333333,NR,
+61,industrial_0,203.0,1,[76],,a_Steamengine_0,A3FPXYVABXB9IZ,1,industrial,2,10,True,0.03333333333333333,NR,0.043219076005961254
+62,process._0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,process.,2,8,True,0.03333333333333333,NR,
+63,In_2,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,In,3,2,True,0.03333333333333333,NR,
+64,the_4,102.0,1,[63],,a_Steamengine_0,A3FPXYVABXB9IZ,1,the,3,3,True,0.03333333333333333,NR,0.021715988929103685
+65,case_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,case,3,4,True,0.03333333333333333,NR,
+66,of_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,of,3,2,True,0.03333333333333333,NR,
+67,model_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,model,3,5,True,0.03333333333333333,NR,
+68,or_2,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,or,3,2,True,0.03333333333333333,NR,
+69,toy_0,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,toy,3,3,True,0.03333333333333333,NR,
+70,steam_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,steam,3,5,True,0.03333333333333333,NR,
+71,"engines,_0",,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,"engines,",3,8,True,0.03333333333333333,NR,
+72,the_5,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,the,3,3,True,0.03333333333333333,NR,
+73,heat_3,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,heat,3,4,True,0.03333333333333333,NR,
+74,source_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,source,3,6,True,0.03333333333333333,NR,
+75,can_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,can,3,3,True,0.03333333333333333,NR,
+76,be_1,,0,[],,a_Steamengine_0,A3FPXYVABXB9IZ,0,be,3,2,True,0.03333333333333333,NR,
+77,an_2,102.0,1,[60],,a_Steamengine_0,A3FPXYVABXB9IZ,1,an,3,2,True,0.03333333333333333,NR,0.021715988929103685
+78,electric_0,304.0,3,"[52, 54, 77]",a_Steamengine_0_qa_3 ,a_Steamengine_0,A3FPXYVABXB9IZ,3,electric,3,8,True,0.03333333333333333,NR,0.06472216308281882
+79,heating_0,204.0,2,"[49, 80]",,a_Steamengine_0,A3FPXYVABXB9IZ,2,heating,3,7,True,0.03333333333333333,NR,0.04343197785820737
+80,element._0,70.0,1,[48],,a_Steamengine_0,A3FPXYVABXB9IZ,1,element.,3,8,True,0.03333333333333333,NR,0.014903129657228018
+0,The_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,The,1,3,True,0.017467248908296942,NR,
+1,Royal_0,69.0,1,[17],,a_Imperialism_0,A3FPXYVABXB9IZ,1,Royal,1,5,True,0.017467248908296942,NR,0.004372069446204537
+2,Geographical_0,68.0,1,[16],,a_Imperialism_0,A3FPXYVABXB9IZ,1,Geographical,1,12,True,0.017467248908296942,NR,0.004308706120897224
+3,Society_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,Society,1,7,True,0.017467248908296942,NR,
+4,of_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,of,1,2,True,0.017467248908296942,NR,
+5,London_0,102.0,1,[6],,a_Imperialism_0,A3FPXYVABXB9IZ,1,London,1,6,True,0.017467248908296942,NR,0.006463059181345837
+6,and_0,204.0,1,[19],,a_Imperialism_0,A3FPXYVABXB9IZ,1,and,1,3,True,0.017467248908296942,NR,0.012926118362691674
+7,other_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,other,1,5,True,0.017467248908296942,NR,
+8,geographical_1,172.0,2,"[20, 52]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,geographical,1,12,True,0.017467248908296942,NR,0.010898491952857687
+9,societies_0,67.0,1,[12],,a_Imperialism_0,A3FPXYVABXB9IZ,1,societies,1,9,True,0.017467248908296942,NR,0.0042453427955899126
+10,in_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,in,1,2,True,0.017467248908296942,NR,
+11,Europe_0,136.0,1,[3],,a_Imperialism_0,A3FPXYVABXB9IZ,1,Europe,1,6,True,0.017467248908296942,NR,0.008617412241794449
+12,had_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,had,1,3,True,0.017467248908296942,NR,
+13,great_0,68.0,1,[207],,a_Imperialism_0,A3FPXYVABXB9IZ,1,great,1,5,True,0.017467248908296942,NR,0.004308706120897224
+14,influence_0,68.0,1,[89],,a_Imperialism_0,A3FPXYVABXB9IZ,1,influence,1,9,True,0.017467248908296942,NR,0.004308706120897224
+15,and_1,102.0,1,[15],,a_Imperialism_0,A3FPXYVABXB9IZ,1,and,1,3,True,0.017467248908296942,NR,0.006463059181345837
+16,were_0,66.0,1,[208],,a_Imperialism_0,A3FPXYVABXB9IZ,1,were,1,4,True,0.017467248908296942,NR,0.004181979470282601
+17,able_0,69.0,1,[7],,a_Imperialism_0,A3FPXYVABXB9IZ,1,able,1,4,True,0.017467248908296942,NR,0.004372069446204537
+18,to_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,to,1,2,True,0.017467248908296942,NR,
+19,fund_0,67.0,1,[4],a_Imperialism_0_qa_4 ,a_Imperialism_0,A3FPXYVABXB9IZ,1,fund,1,4,True,0.017467248908296942,NR,0.0042453427955899126
+20,travelers_0,271.0,3,"[5, 21, 62]",,a_Imperialism_0,A3FPXYVABXB9IZ,3,travelers,1,9,True,0.017467248908296942,NR,0.017171461158281588
+21,who_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,who,1,3,True,0.017467248908296942,NR,
+22,would_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,would,1,5,True,0.017467248908296942,NR,
+23,come_0,68.0,1,[215],,a_Imperialism_0,A3FPXYVABXB9IZ,1,come,1,4,True,0.017467248908296942,NR,0.004308706120897224
+24,back_0,170.0,2,"[97, 206]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,back,1,4,True,0.017467248908296942,NR,0.010771765302243061
+25,with_0,67.0,1,[205],,a_Imperialism_0,A3FPXYVABXB9IZ,1,with,1,4,True,0.017467248908296942,NR,0.0042453427955899126
+26,tales_0,138.0,1,[139],,a_Imperialism_0,A3FPXYVABXB9IZ,1,tales,1,5,True,0.017467248908296942,NR,0.008744138892409074
+27,of_1,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,of,1,2,True,0.017467248908296942,NR,
+28,their_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,their,1,5,True,0.017467248908296942,NR,
+29,discoveries._0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,discoveries.,1,12,True,0.017467248908296942,NR,
+30,These_0,271.0,4,"[49, 94, 96, 209]",,a_Imperialism_0,A3FPXYVABXB9IZ,4,These,2,5,True,0.017467248908296942,NR,0.017171461158281588
+31,societies_1,815.0,9,"[9, 37, 39, 40, 45, 53, 54, 57, 64]",,a_Imperialism_0,A3FPXYVABXB9IZ,9,societies,2,9,True,0.017467248908296942,NR,0.05164111012545938
+32,also_0,139.0,2,"[11, 55]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,also,2,4,True,0.017467248908296942,NR,0.008807502217716385
+33,served_0,409.0,4,"[10, 22, 32, 33]",,a_Imperialism_0,A3FPXYVABXB9IZ,4,served,2,6,True,0.017467248908296942,NR,0.02591560005069066
+34,as_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,as,2,2,True,0.017467248908296942,NR,
+35,a_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,a,2,1,True,0.017467248908296942,NR,
+36,space_0,68.0,1,[75],,a_Imperialism_0,A3FPXYVABXB9IZ,1,space,2,5,True,0.017467248908296942,NR,0.004308706120897224
+37,for_0,102.0,1,[76],,a_Imperialism_0,A3FPXYVABXB9IZ,1,for,2,3,True,0.017467248908296942,NR,0.006463059181345837
+38,travellers_0,68.0,1,[214],,a_Imperialism_0,A3FPXYVABXB9IZ,1,travellers,2,10,True,0.017467248908296942,NR,0.004308706120897224
+39,to_1,67.0,1,[77],,a_Imperialism_0,A3FPXYVABXB9IZ,1,to,2,2,True,0.017467248908296942,NR,0.0042453427955899126
+40,share_0,408.0,5,"[88, 140, 185, 186, 192]",,a_Imperialism_0,A3FPXYVABXB9IZ,5,share,2,5,True,0.017467248908296942,NR,0.025852236725383348
+41,these_1,371.0,5,"[65, 126, 138, 191, 199]",,a_Imperialism_0,A3FPXYVABXB9IZ,5,these,2,5,True,0.017467248908296942,NR,0.0235077936890128
+42,stories.Political_0,408.0,5,"[29, 56, 71, 152, 163]",a_Imperialism_0_qa_2 ,a_Imperialism_0,A3FPXYVABXB9IZ,5,stories.Political,2,17,True,0.017467248908296942,NR,0.025852236725383348
+43,geographers_0,953.0,10,"[35, 41, 42, 48, 72, 73, 82, 83, 86, 171]",,a_Imperialism_0,A3FPXYVABXB9IZ,10,geographers,2,11,True,0.017467248908296942,NR,0.06038524901786846
+44,such_0,135.0,2,"[23, 24]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,such,2,4,True,0.017467248908296942,NR,0.008554048916487138
+45,as_1,170.0,2,"[25, 61]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,as,2,2,True,0.017467248908296942,NR,0.010771765302243061
+46,Friedrich_0,68.0,1,[110],,a_Imperialism_0,A3FPXYVABXB9IZ,1,Friedrich,2,9,True,0.017467248908296942,NR,0.004308706120897224
+47,Ratzel_0,136.0,2,"[74, 120]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,Ratzel,2,6,True,0.017467248908296942,NR,0.008617412241794449
+48,of_2,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,of,2,2,True,0.017467248908296942,NR,
+49,Germany_0,646.0,7,"[116, 122, 124, 125, 184, 224, 225]",a_Imperialism_0_qa_0 ,a_Imperialism_0,A3FPXYVABXB9IZ,7,Germany,2,7,True,0.017467248908296942,NR,0.040932708148523636
+50,and_2,713.0,8,"[78, 113, 115, 131, 137, 151, 201, 202]",,a_Imperialism_0,A3FPXYVABXB9IZ,8,and,2,3,True,0.017467248908296942,NR,0.04517805094411355
+51,Halford_0,1123.0,15,"[0, 60, 66, 67, 81, 87, 92, 132, 133, 136, 142, 162, 198, 200, 219]",,a_Imperialism_0,A3FPXYVABXB9IZ,15,Halford,2,7,True,0.017467248908296942,NR,0.07115701432011153
+52,Mackinder_0,1732.0,18,"[1, 28, 46, 70, 84, 85, 91, 134, 135, 154, 164, 170, 172, 173, 174, 175, 178, 223]",,a_Imperialism_0,A3FPXYVABXB9IZ,18,Mackinder,2,9,True,0.017467248908296942,NR,0.1097452794322646
+53,of_3,138.0,2,"[36, 216]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,of,2,2,True,0.017467248908296942,NR,0.008744138892409074
+54,Britain_0,,0,[],a_Imperialism_0_qa_1 ,a_Imperialism_0,A3FPXYVABXB9IZ,0,Britain,2,7,True,0.017467248908296942,NR,
+55,also_1,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,also,2,4,True,0.017467248908296942,NR,
+56,supported_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,supported,2,9,True,0.017467248908296942,NR,
+57,imperialism._0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,imperialism.,2,12,True,0.017467248908296942,NR,
+58,Ratzel_1,68.0,1,[146],,a_Imperialism_0,A3FPXYVABXB9IZ,1,Ratzel,3,6,True,0.017467248908296942,NR,0.004308706120897224
+59,believed_0,477.0,4,"[90, 107, 145, 190]",,a_Imperialism_0,A3FPXYVABXB9IZ,4,believed,3,8,True,0.017467248908296942,NR,0.030224306171587886
+60,expansion_0,613.0,5,"[111, 112, 118, 141, 143]",,a_Imperialism_0,A3FPXYVABXB9IZ,5,expansion,3,9,True,0.017467248908296942,NR,0.03884171841338233
+61,was_0,748.0,7,"[98, 114, 156, 158, 159, 165, 197]",,a_Imperialism_0,A3FPXYVABXB9IZ,7,was,3,3,True,0.017467248908296942,NR,0.04739576732986947
+62,necessary_0,887.0,8,"[30, 117, 127, 128, 155, 157, 177, 196]",a_Imperialism_0_qa_3 ,a_Imperialism_0,A3FPXYVABXB9IZ,8,necessary,3,9,True,0.017467248908296942,NR,0.05620326954758586
+63,for_1,173.0,2,"[43, 169]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,for,3,3,True,0.017467248908296942,NR,0.010961855278164997
+64,a__0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,a,3,1,True,0.017467248908296942,NR,
+65,state’s_0,136.0,2,"[44, 188]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,state’s,3,7,True,0.017467248908296942,NR,0.008617412241794449
+66,survival_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,survival,3,8,True,0.017467248908296942,NR,
+67,while_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,while,3,5,True,0.017467248908296942,NR,
+68,Mackinder_1,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,Mackinder,3,9,True,0.017467248908296942,NR,
+69,supported_1,68.0,1,[106],,a_Imperialism_0,A3FPXYVABXB9IZ,1,supported,3,9,True,0.017467248908296942,NR,0.004308706120897224
+70,Britain’s_0,339.0,4,"[148, 150, 182, 227]",,a_Imperialism_0,A3FPXYVABXB9IZ,4,Britain’s,3,9,True,0.017467248908296942,NR,0.02148016727917881
+71,imperial_0,578.0,5,"[99, 100, 101, 105, 203]",,a_Imperialism_0,A3FPXYVABXB9IZ,5,imperial,3,8,True,0.017467248908296942,NR,0.03662400202762641
+72,expansion;_1,442.0,4,"[144, 168, 194, 195]",,a_Imperialism_0,A3FPXYVABXB9IZ,4,expansion;,3,10,True,0.017467248908296942,NR,0.02800658978583196
+73,these_2,68.0,1,[221],,a_Imperialism_0,A3FPXYVABXB9IZ,1,these,3,5,True,0.017467248908296942,NR,0.004308706120897224
+74,two_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,two,3,3,True,0.017467248908296942,NR,
+75,arguments_0,68.0,1,[213],,a_Imperialism_0,A3FPXYVABXB9IZ,1,arguments,3,9,True,0.017467248908296942,NR,0.004308706120897224
+76,dominated_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,dominated,3,9,True,0.017467248908296942,NR,
+77,the_1,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,the,3,3,True,0.017467248908296942,NR,
+78,discipline_0,,0,[],,a_Imperialism_0,A3FPXYVABXB9IZ,0,discipline,3,10,True,0.017467248908296942,NR,
+79,for_2,69.0,1,[181],,a_Imperialism_0,A3FPXYVABXB9IZ,1,for,3,3,True,0.017467248908296942,NR,0.004372069446204537
+80,decades._0,136.0,2,"[103, 228]",,a_Imperialism_0,A3FPXYVABXB9IZ,2,decades.,3,8,True,0.017467248908296942,NR,0.008617412241794449
+0,Wine_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,Wine,1,4,True,0.1518324607329843,NR,
+1,tasting_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,tasting,1,7,True,0.1518324607329843,NR,
+2,is_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,is,1,2,True,0.1518324607329843,NR,
+3,the_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,the,1,3,True,0.1518324607329843,NR,
+4,sensory_0,206.0,2,"[35, 42]",,meco_para_7,A3FPXYVABXB9IZ,2,sensory,1,7,True,0.1518324607329843,NR,0.012522796352583587
+5,examination_0,168.0,2,"[36, 44]",,meco_para_7,A3FPXYVABXB9IZ,2,examination,1,11,True,0.1518324607329843,NR,0.010212765957446808
+6,and_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,and,1,3,True,0.1518324607329843,NR,
+7,evaluation_0,136.0,1,[18],,meco_para_7,A3FPXYVABXB9IZ,1,evaluation,1,10,True,0.1518324607329843,NR,0.008267477203647417
+8,of_0,273.0,3,"[11, 15, 17]",,meco_para_7,A3FPXYVABXB9IZ,3,of,1,2,True,0.1518324607329843,NR,0.016595744680851062
+9,wine._1,102.0,1,[4],,meco_para_7,A3FPXYVABXB9IZ,1,wine.,1,5,True,0.1518324607329843,NR,0.006200607902735562
+10,While_0,203.0,2,"[5, 10]",,meco_para_7,A3FPXYVABXB9IZ,2,While,2,5,True,0.1518324607329843,NR,0.012340425531914894
+11,the_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,the,2,3,True,0.1518324607329843,NR,
+12,practice_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,practice,2,8,True,0.1518324607329843,NR,
+13,of_1,71.0,1,[117],,meco_para_7,A3FPXYVABXB9IZ,1,of,2,2,True,0.1518324607329843,NR,0.004316109422492402
+14,wine_2,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,wine,2,4,True,0.1518324607329843,NR,
+15,tasting_1,67.0,1,[34],,meco_para_7,A3FPXYVABXB9IZ,1,tasting,2,7,True,0.1518324607329843,NR,0.004072948328267477
+16,is_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,is,2,2,True,0.1518324607329843,NR,
+17,as_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,as,2,2,True,0.1518324607329843,NR,
+18,ancient_0,172.0,2,"[57, 62]",,meco_para_7,A3FPXYVABXB9IZ,2,ancient,2,7,True,0.1518324607329843,NR,0.010455927051671733
+19,as__0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,as,2,2,True,0.1518324607329843,NR,
+20,its_0,137.0,1,[47],,meco_para_7,A3FPXYVABXB9IZ,1,its,2,3,True,0.1518324607329843,NR,0.008328267477203647
+21,"production,_0",236.0,3,"[14, 21, 22]",,meco_para_7,A3FPXYVABXB9IZ,3,"production,",2,11,True,0.1518324607329843,NR,0.014346504559270517
+22,a_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,a,2,1,True,0.1518324607329843,NR,
+23,more_0,70.0,1,[9],,meco_para_7,A3FPXYVABXB9IZ,1,more,2,4,True,0.1518324607329843,NR,0.00425531914893617
+24,formalized_0,272.0,3,"[6, 7, 8]",,meco_para_7,A3FPXYVABXB9IZ,3,formalized,2,10,True,0.1518324607329843,NR,0.016534954407294834
+25,methodology_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,methodology,2,11,True,0.1518324607329843,NR,
+26,has_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,has,2,3,True,0.1518324607329843,NR,
+27,slowly_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,slowly,2,6,True,0.1518324607329843,NR,
+28,become_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,become,2,6,True,0.1518324607329843,NR,
+29,established_0,239.0,3,"[37, 61, 63]",,meco_para_7,A3FPXYVABXB9IZ,3,established,2,11,True,0.1518324607329843,NR,0.01452887537993921
+30,from_0,205.0,2,"[48, 64]",,meco_para_7,A3FPXYVABXB9IZ,2,from,2,4,True,0.1518324607329843,NR,0.012462006079027355
+31,the_2,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,the,2,3,True,0.1518324607329843,NR,
+32,late_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,late,2,4,True,0.1518324607329843,NR,
+33,middle_0,170.0,2,"[12, 13]",,meco_para_7,A3FPXYVABXB9IZ,2,middle,2,6,True,0.1518324607329843,NR,0.01033434650455927
+34,ages_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,ages,2,4,True,0.1518324607329843,NR,
+35,onwards._0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,onwards.,2,8,True,0.1518324607329843,NR,
+36,"Modern,_0",,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,"Modern,",3,7,True,0.1518324607329843,NR,
+37,professional_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,professional,3,12,True,0.1518324607329843,NR,
+38,wine_3,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,wine,3,4,True,0.1518324607329843,NR,
+39,tasters_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,tasters,3,7,True,0.1518324607329843,NR,
+40,use_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,use,3,3,True,0.1518324607329843,NR,
+41,a_1,68.0,1,[68],,meco_para_7,A3FPXYVABXB9IZ,1,a,3,1,True,0.1518324607329843,NR,0.004133738601823709
+42,constantly_0,169.0,1,[38],,meco_para_7,A3FPXYVABXB9IZ,1,constantly,3,10,True,0.1518324607329843,NR,0.01027355623100304
+43,evolving_0,102.0,1,[54],,meco_para_7,A3FPXYVABXB9IZ,1,evolving,3,8,True,0.1518324607329843,NR,0.006200607902735562
+44,specialized_0,338.0,3,"[41, 45, 53]",,meco_para_7,A3FPXYVABXB9IZ,3,specialized,3,11,True,0.1518324607329843,NR,0.02054711246200608
+45,terminology_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,terminology,3,11,True,0.1518324607329843,NR,
+46,which_0,102.0,1,[120],,meco_para_7,A3FPXYVABXB9IZ,1,which,3,5,True,0.1518324607329843,NR,0.006200607902735562
+47,is_2,170.0,1,[33],,meco_para_7,A3FPXYVABXB9IZ,1,is,3,2,True,0.1518324607329843,NR,0.01033434650455927
+48,used_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,used,3,4,True,0.1518324607329843,NR,
+49,to_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,to,3,2,True,0.1518324607329843,NR,
+50,describe_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,describe,3,8,True,0.1518324607329843,NR,
+51,the_3,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,the,3,3,True,0.1518324607329843,NR,
+52,range_0,68.0,1,[69],,meco_para_7,A3FPXYVABXB9IZ,1,range,3,5,True,0.1518324607329843,NR,0.004133738601823709
+53,of_2,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,of,3,2,True,0.1518324607329843,NR,
+54,perceived_0,272.0,2,"[39, 59]",,meco_para_7,A3FPXYVABXB9IZ,2,perceived,3,9,True,0.1518324607329843,NR,0.016534954407294834
+55,"flavors,_0",170.0,2,"[40, 60]",,meco_para_7,A3FPXYVABXB9IZ,2,"flavors,",3,8,True,0.1518324607329843,NR,0.01033434650455927
+56,aromas_0,137.0,2,"[26, 49]",,meco_para_7,A3FPXYVABXB9IZ,2,aromas,3,6,True,0.1518324607329843,NR,0.008328267477203647
+57,and__0,238.0,2,"[25, 52]",,meco_para_7,A3FPXYVABXB9IZ,2,and,3,3,True,0.1518324607329843,NR,0.01446808510638298
+58,general_0,67.0,1,[27],,meco_para_7,A3FPXYVABXB9IZ,1,general,3,7,True,0.1518324607329843,NR,0.004072948328267477
+59,characteristics_0,69.0,1,[30],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,1,characteristics,3,15,True,0.1518324607329843,NR,0.004194528875379939
+60,of_3,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,of,3,2,True,0.1518324607329843,NR,
+61,a_2,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,a,3,1,True,0.1518324607329843,NR,
+62,wine._4,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,wine.,3,5,True,0.1518324607329843,NR,
+63,In_0,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,In,4,2,True,0.1518324607329843,NR,
+64,recent_0,69.0,1,[108],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,1,recent,4,6,True,0.1518324607329843,NR,0.004194528875379939
+65,"years,_0",137.0,2,"[115, 116]",meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,2,"years,",4,6,True,0.1518324607329843,NR,0.008328267477203647
+66,results_0,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,results,4,7,True,0.1518324607329843,NR,
+67,challenging_0,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,challenging,4,11,True,0.1518324607329843,NR,
+68,the_4,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,the,4,3,True,0.1518324607329843,NR,
+69,reliability_0,169.0,2,"[50, 51]",meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,2,reliability,4,11,True,0.1518324607329843,NR,0.01027355623100304
+70,of_4,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,of,4,2,True,0.1518324607329843,NR,
+71,wine_5,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,wine,4,4,True,0.1518324607329843,NR,
+72,tasting_2,103.0,1,[31],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,1,tasting,4,7,True,0.1518324607329843,NR,0.006261398176291793
+73,in_1,,0,[],meco_para_7_qa_0 meco_para_7_qa_1 ,meco_para_7,A3FPXYVABXB9IZ,0,in,4,2,True,0.1518324607329843,NR,
+74,both_0,102.0,1,[128],meco_para_7_qa_0 meco_para_7_qa_1 ,meco_para_7,A3FPXYVABXB9IZ,1,both,4,4,True,0.1518324607329843,NR,0.006200607902735562
+75,experts_0,,0,[],meco_para_7_qa_0 meco_para_7_qa_1 ,meco_para_7,A3FPXYVABXB9IZ,0,experts,4,7,True,0.1518324607329843,NR,
+76,and_1,68.0,1,[119],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,1,and,4,3,True,0.1518324607329843,NR,0.004133738601823709
+77,consumers_0,102.0,1,[2],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,1,consumers,4,9,True,0.1518324607329843,NR,0.006200607902735562
+78,have_0,66.0,1,[109],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,1,have,4,4,True,0.1518324607329843,NR,0.004012158054711246
+79,surfaced._0,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,surfaced.,4,9,True,0.1518324607329843,NR,
+80,For_0,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,For,5,3,True,0.1518324607329843,NR,
+81,"example,_0",136.0,1,[86],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,1,"example,",5,8,True,0.1518324607329843,NR,0.008267477203647417
+82,studies_0,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,studies,5,7,True,0.1518324607329843,NR,
+83,showed_0,,0,[],meco_para_7_qa_0 ,meco_para_7,A3FPXYVABXB9IZ,0,showed,5,6,True,0.1518324607329843,NR,
+84,that_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,that,5,4,True,0.1518324607329843,NR,
+85,people_0,102.0,1,[107],,meco_para_7,A3FPXYVABXB9IZ,1,people,5,6,True,0.1518324607329843,NR,0.006200607902735562
+86,expect_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,expect,5,6,True,0.1518324607329843,NR,
+87,more_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,more,5,4,True,0.1518324607329843,NR,
+88,expensive_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,expensive,5,9,True,0.1518324607329843,NR,
+89,wine_6,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,wine,5,4,True,0.1518324607329843,NR,
+90,to_1,69.0,1,[110],,meco_para_7,A3FPXYVABXB9IZ,1,to,5,2,True,0.1518324607329843,NR,0.004194528875379939
+91,have_1,344.0,3,"[111, 113, 114]",,meco_para_7,A3FPXYVABXB9IZ,3,have,5,4,True,0.1518324607329843,NR,0.020911854103343466
+92,more_2,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,more,5,4,True,0.1518324607329843,NR,
+93,desirable_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,desirable,5,9,True,0.1518324607329843,NR,
+94,characteristics_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,characteristics,5,15,True,0.1518324607329843,NR,
+95,than_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,than,5,4,True,0.1518324607329843,NR,
+96,less_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,less,5,4,True,0.1518324607329843,NR,
+97,expensive_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,expensive,5,9,True,0.1518324607329843,NR,
+98,wine:_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,wine:,5,5,True,0.1518324607329843,NR,
+99,When_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,When,5,4,True,0.1518324607329843,NR,
+100,tasters_1,,1,[0],,meco_para_7,A3FPXYVABXB9IZ,1,tasters,5,7,True,0.1518324607329843,NR,
+101,are_0,170.0,1,[1],,meco_para_7,A3FPXYVABXB9IZ,1,are,5,3,True,0.1518324607329843,NR,0.01033434650455927
+102,given_0,69.0,1,[125],,meco_para_7,A3FPXYVABXB9IZ,1,given,5,5,True,0.1518324607329843,NR,0.004194528875379939
+103,wine_7,203.0,2,"[112, 124]",,meco_para_7,A3FPXYVABXB9IZ,2,wine,5,4,True,0.1518324607329843,NR,0.012340425531914894
+104,that_1,134.0,1,[122],,meco_para_7,A3FPXYVABXB9IZ,1,that,5,4,True,0.1518324607329843,NR,0.008145896656534955
+105,they_0,67.0,1,[77],,meco_para_7,A3FPXYVABXB9IZ,1,they,5,4,True,0.1518324607329843,NR,0.004072948328267477
+106,are_1,101.0,1,[88],,meco_para_7,A3FPXYVABXB9IZ,1,are,5,3,True,0.1518324607329843,NR,0.006139817629179332
+107,falsely_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,falsely,5,7,True,0.1518324607329843,NR,
+108,told_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,told,5,4,True,0.1518324607329843,NR,
+109,is_3,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,is,5,2,True,0.1518324607329843,NR,
+110,expensive_2,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,expensive,5,9,True,0.1518324607329843,NR,
+111,they_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,they,5,4,True,0.1518324607329843,NR,
+112,virtually_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,virtually,5,9,True,0.1518324607329843,NR,
+113,always_0,203.0,2,"[78, 129]",,meco_para_7,A3FPXYVABXB9IZ,2,always,5,6,True,0.1518324607329843,NR,0.012340425531914894
+114,report_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,report,5,6,True,0.1518324607329843,NR,
+115,it_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,it,5,2,True,0.1518324607329843,NR,
+116,as_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,as,5,2,True,0.1518324607329843,NR,
+117,tasting_3,203.0,2,"[70, 126]",,meco_para_7,A3FPXYVABXB9IZ,2,tasting,5,7,True,0.1518324607329843,NR,0.012340425531914894
+118,better_0,444.0,2,"[71, 104]",,meco_para_7,A3FPXYVABXB9IZ,2,better,5,6,True,0.1518324607329843,NR,0.026990881458966564
+119,than_1,168.0,2,"[73, 105]",,meco_para_7,A3FPXYVABXB9IZ,2,than,5,4,True,0.1518324607329843,NR,0.010212765957446808
+120,the_5,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,the,5,3,True,0.1518324607329843,NR,
+121,very_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,very,5,4,True,0.1518324607329843,NR,
+122,same_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,same,5,4,True,0.1518324607329843,NR,
+123,wine_8,67.0,1,[89],,meco_para_7,A3FPXYVABXB9IZ,1,wine,5,4,True,0.1518324607329843,NR,0.004072948328267477
+124,when_1,68.0,1,[99],,meco_para_7,A3FPXYVABXB9IZ,1,when,5,4,True,0.1518324607329843,NR,0.004133738601823709
+125,they_2,375.0,2,"[79, 147]",,meco_para_7,A3FPXYVABXB9IZ,2,they,5,4,True,0.1518324607329843,NR,0.022796352583586626
+126,are_2,169.0,1,[146],,meco_para_7,A3FPXYVABXB9IZ,1,are,5,3,True,0.1518324607329843,NR,0.01027355623100304
+127,told_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,told,5,4,True,0.1518324607329843,NR,
+128,that_2,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,that,5,4,True,0.1518324607329843,NR,
+129,it_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,it,5,2,True,0.1518324607329843,NR,
+130,is_4,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,is,5,2,True,0.1518324607329843,NR,
+131,inexpensive._0,372.0,3,"[93, 123, 131]",,meco_para_7,A3FPXYVABXB9IZ,3,inexpensive.,5,12,True,0.1518324607329843,NR,0.022613981762917932
+132,Other_0,170.0,2,"[76, 84]",,meco_para_7,A3FPXYVABXB9IZ,2,Other,6,5,True,0.1518324607329843,NR,0.01033434650455927
+133,studies_1,273.0,1,[127],,meco_para_7,A3FPXYVABXB9IZ,1,studies,6,7,True,0.1518324607329843,NR,0.016595744680851062
+134,show_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,show,6,4,True,0.1518324607329843,NR,
+135,that_3,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,that,6,4,True,0.1518324607329843,NR,
+136,tasters’_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,tasters’,6,8,True,0.1518324607329843,NR,
+137,judgment_0,103.0,1,[90],,meco_para_7,A3FPXYVABXB9IZ,1,judgment,6,8,True,0.1518324607329843,NR,0.006261398176291793
+138,can_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,can,6,3,True,0.1518324607329843,NR,
+139,be_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,be,6,2,True,0.1518324607329843,NR,
+140,prejudiced_0,372.0,3,"[80, 158, 159]",,meco_para_7,A3FPXYVABXB9IZ,3,prejudiced,6,10,True,0.1518324607329843,NR,0.022613981762917932
+141,by_0,69.0,1,[130],,meco_para_7,A3FPXYVABXB9IZ,1,by,6,2,True,0.1518324607329843,NR,0.004194528875379939
+142,knowing_0,408.0,2,"[136, 137]",,meco_para_7,A3FPXYVABXB9IZ,2,knowing,6,7,True,0.1518324607329843,NR,0.024802431610942248
+143,details_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,details,6,7,True,0.1518324607329843,NR,
+144,of_5,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,of,6,2,True,0.1518324607329843,NR,
+145,a_3,270.0,2,"[83, 132]",,meco_para_7,A3FPXYVABXB9IZ,2,a,6,1,True,0.1518324607329843,NR,0.01641337386018237
+146,"wine,_9",202.0,3,"[66, 74, 94]",,meco_para_7,A3FPXYVABXB9IZ,3,"wine,",6,5,True,0.1518324607329843,NR,0.012279635258358663
+147,such_0,68.0,1,[95],,meco_para_7,A3FPXYVABXB9IZ,1,such,6,4,True,0.1518324607329843,NR,0.004133738601823709
+148,as__1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,as,6,2,True,0.1518324607329843,NR,
+149,geographic_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,geographic,6,10,True,0.1518324607329843,NR,
+150,"origin,_0",,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,"origin,",6,7,True,0.1518324607329843,NR,
+151,"reputation,_0",,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,"reputation,",6,11,True,0.1518324607329843,NR,
+152,or_0,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,or,6,2,True,0.1518324607329843,NR,
+153,other_1,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,other,6,5,True,0.1518324607329843,NR,
+154,considerations._0,136.0,2,"[91, 145]",meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,2,considerations.,6,15,True,0.1518324607329843,NR,0.008267477203647417
+155,Objective_0,918.0,9,"[92, 102, 138, 139, 141, 142, 153, 154, 161]",meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,9,Objective,7,9,True,0.1518324607329843,NR,0.05580547112462006
+156,wine_10,340.0,4,"[67, 72, 140, 143]",meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,4,wine,7,4,True,0.1518324607329843,NR,0.02066869300911854
+157,tasting_4,273.0,1,[75],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,1,tasting,7,7,True,0.1518324607329843,NR,0.016595744680851062
+158,therefore_0,238.0,1,[96],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,1,therefore,7,9,True,0.1518324607329843,NR,0.01446808510638298
+159,requires_0,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,requires,7,8,True,0.1518324607329843,NR,
+160,the_6,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,the,7,3,True,0.1518324607329843,NR,
+161,wine_11,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,wine,7,4,True,0.1518324607329843,NR,
+162,to_2,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,to,7,2,True,0.1518324607329843,NR,
+163,be_1,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,be,7,2,True,0.1518324607329843,NR,
+164,served_0,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,served,7,6,True,0.1518324607329843,NR,
+165,blind_0,68.0,1,[135],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,1,blind,7,5,True,0.1518324607329843,NR,0.004133738601823709
+166,-_0,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,-,7,1,True,0.1518324607329843,NR,
+167,that_4,303.0,3,"[134, 162, 163]",meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,3,that,7,4,True,0.1518324607329843,NR,0.018419452887537994
+168,"is,_5",102.0,1,[148],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,1,"is,",7,3,True,0.1518324607329843,NR,0.006200607902735562
+169,without_0,441.0,5,"[101, 144, 155, 166, 167]",meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,5,without,7,7,True,0.1518324607329843,NR,0.026808510638297874
+170,the_7,239.0,1,[152],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,1,the,7,3,True,0.1518324607329843,NR,0.01452887537993921
+171,taster_0,67.0,1,[97],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,1,taster,7,6,True,0.1518324607329843,NR,0.004072948328267477
+172,having_0,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,having,7,6,True,0.1518324607329843,NR,
+173,seen_0,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,seen,7,4,True,0.1518324607329843,NR,
+174,the_8,,0,[],meco_para_7_qa_2 ,meco_para_7,A3FPXYVABXB9IZ,0,the,7,3,True,0.1518324607329843,NR,
+175,label_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,label,7,5,True,0.1518324607329843,NR,
+176,or_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,or,7,2,True,0.1518324607329843,NR,
+177,bottle_0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,bottle,7,6,True,0.1518324607329843,NR,
+178,shape._0,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,shape.,7,6,True,0.1518324607329843,NR,
+179,Blind_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,Blind,8,5,True,0.1518324607329843,NR,
+180,tasting_5,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,tasting,8,7,True,0.1518324607329843,NR,
+181,may_0,273.0,1,[189],,meco_para_7,A3FPXYVABXB9IZ,1,may,8,3,True,0.1518324607329843,NR,0.016595744680851062
+182,also_0,134.0,2,"[149, 172]",,meco_para_7,A3FPXYVABXB9IZ,2,also,8,4,True,0.1518324607329843,NR,0.008145896656534955
+183,involve’_0,408.0,3,"[151, 168, 175]",,meco_para_7,A3FPXYVABXB9IZ,3,involve’,8,8,True,0.1518324607329843,NR,0.024802431610942248
+184,serving_0,67.0,1,[183],,meco_para_7,A3FPXYVABXB9IZ,1,serving,8,7,True,0.1518324607329843,NR,0.004072948328267477
+185,the_9,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,the,8,3,True,0.1518324607329843,NR,
+186,wine_12,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,wine,8,4,True,0.1518324607329843,NR,
+187,from_1,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,from,8,4,True,0.1518324607329843,NR,
+188,a_4,,0,[],,meco_para_7,A3FPXYVABXB9IZ,0,a,8,1,True,0.1518324607329843,NR,
+189,black_0,,0,[],meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,0,black,8,5,True,0.1518324607329843,NR,
+190,wine_13,,0,[],meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,0,wine,8,4,True,0.1518324607329843,NR,
+191,glass_0,,0,[],meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,0,glass,8,5,True,0.1518324607329843,NR,
+192,to_3,,0,[],meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,0,to,8,2,True,0.1518324607329843,NR,
+193,mask_0,70.0,1,[187],meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,1,mask,8,4,True,0.1518324607329843,NR,0.00425531914893617
+194,the_10,409.0,3,"[185, 186, 188]",meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,3,the,8,3,True,0.1518324607329843,NR,0.02486322188449848
+195,color_0,,0,[],meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,0,color,8,5,True,0.1518324607329843,NR,
+196,of_6,,0,[],meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,0,of,8,2,True,0.1518324607329843,NR,
+197,the_11,373.0,3,"[164, 178, 190]",meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,3,the,8,3,True,0.1518324607329843,NR,0.022674772036474163
+198,wine._14,679.0,5,"[156, 165, 173, 174, 180]",meco_para_7_qa_3 ,meco_para_7,A3FPXYVABXB9IZ,5,wine.,8,5,True,0.1518324607329843,NR,0.04127659574468085
